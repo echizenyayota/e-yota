@@ -1,0 +1,14 @@
+@@charset "UTF-8";
+
+/*
+Theme: Name: MY THEME
+Author: Hiroshi Fukui
+Description: This is my original theme
+Version: 1.0
+*/
+
+body {
+  margin: 0;
+  font-family: 'メイリオ','Hiragino Kaku Gothic Pro', 'sans-serif';
+  line-height: 1.5;
+}
