@@ -1,11 +1,13 @@
 <?php get_header(); ?>
 
-<div class="contents">
-  Contents
-</div>
+<div class="container">
+  <div class="contents">
+    Contents
+  </div>
 
-<div class="sub">
-  Sidebar
+  <div class="sub">
+    Sidebar
+  </div>
 </div>
 
 
