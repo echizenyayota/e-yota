@@ -14,7 +14,6 @@ body {
 }
 
 /* 基本構造 */
-
 @media (min-width: 768px) {
   .cotainer:after {
     cotent: '';

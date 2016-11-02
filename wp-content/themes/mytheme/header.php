@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>
+<body <?php body_class(); ?>>
 <header>
   <div class="site">
     <h1>
