@@ -54,3 +54,26 @@ body {
   color: #666666;
   font-size: 14px;
 }
+
+
+/* 概要　*/
+.gaiyou a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+
+.gaiyou a:hover {
+  background-color: #eeeeee;
+}
+
+.gaiyou h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.gaiyou p {
+  margin: 0;
+  font-size: 14px;
+}
