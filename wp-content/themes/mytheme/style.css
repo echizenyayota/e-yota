@@ -7,6 +7,8 @@ Description: This is my original theme
 Version: 1.0
 */
 
+/*　------------------------　全体　------------------------　*/
+
 body {
   margin: 0;
   font-family: 'メイリオ','Hiragino Kaku Gothic Pro', 'sans-serif';
@@ -31,6 +33,8 @@ body {
 
 }
 
+/*　------------------------　ヘッダー　------------------------　*/
+
 /* ヘッダー　*/
 
 .site h1 a {
@@ -48,6 +52,8 @@ body {
 }
 
 
+/*　------------------------　フッター　------------------------　*/
+
 /* フッター　*/
 .copyright p {
   margin: 0;
@@ -56,8 +62,12 @@ body {
 }
 
 
+/*　------------------------　記事の概要　------------------------　*/
+
 /* 概要　*/
 .gaiyou a {
+  padding: 20px 0;
+  border-bottom: dotted 2px #000000;
   display: block;
   color: #000000;
   text-decoration: none;
