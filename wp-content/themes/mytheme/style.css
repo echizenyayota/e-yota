@@ -87,3 +87,17 @@ body {
   margin: 0;
   font-size: 14px;
 }
+
+/*　------------------------　記事　------------------------　*/
+
+/* 記事 */
+.kiji h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.kiji p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
