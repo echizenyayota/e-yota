@@ -1,4 +1,4 @@
-@@charset "UTF-8";
+@charset "UTF-8";
 
 /*
 Theme: Name: MY THEME
@@ -17,8 +17,8 @@ body {
 
 /* 基本構造 */
 @media (min-width: 768px) {
-  .cotainer:after {
-    cotent: '';
+  .container:after {
+    content: "";
     display:block;
     clear:both;
   }
@@ -100,4 +100,33 @@ body {
 .kiji p {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+/*　------------------------　サイドバー　------------------------　*/
+
+/* メニュー */
+.mymenu h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: solid 2px #dddddd;
+  color: #666666;
+  font-size: 18px;
+}
+
+.mymenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mymenu li a {
+  display: block;
+  padding: 10px 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.mymenu li a:hover {
+  background-color: #eeeeee;
 }
