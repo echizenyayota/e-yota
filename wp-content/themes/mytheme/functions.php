@@ -2,7 +2,7 @@
 
 // 抜粋の文字数
 function my_length($length) {
-  return 50;
+  return 30;
 }
 add_filter('excerpt_mblength', 'my_length');
 
