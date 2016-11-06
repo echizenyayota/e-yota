@@ -203,3 +203,12 @@ header, footer, .container {
 .wp-caption-text a {
   color: #666666;
 }
+
+/* 画像の配置 */
+.aligncenter {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: : 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
