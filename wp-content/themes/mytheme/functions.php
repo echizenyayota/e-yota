@@ -11,3 +11,8 @@ function my_more($more) {
   return '...';
 }
 add_filter('excerpt_more', 'my_more');
+
+// コンテンツの最大幅
+if (!isset($content_width)) {
+  $content_width = 747;
+}
