@@ -15,8 +15,37 @@ body {
   line-height: 1.5;
 }
 
-/* 基本構造 */
+/*　------------------------　基本構造　------------------------　*/
+
+/* ヘッダーとフッターをバーの形にする設定 */
+header {
+  border-bottom: 1px solid  #dddddd;
+  background-color: #f6f6f6;
+}
+
+footer {
+  border-top: 1px solid  #dddddd;
+}
+
+.contents {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.sub {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
 @media (min-width: 768px) {
+  /* コンテンツとサイドバーを横に並べる設定 */
   .container:after {
     content: "";
     display:block;
