@@ -27,6 +27,7 @@ footer {
   border-top: 1px solid  #dddddd;
 }
 
+/* ボックスの上下に関する設定 */
 .contents {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -41,6 +42,13 @@ footer {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+/* ボックスの左右の余白 */
+header, footer, .container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 
 @media (min-width: 768px) {
   /* コンテンツとサイドバーを横に並べる設定 */
