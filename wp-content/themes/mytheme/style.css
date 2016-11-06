@@ -42,8 +42,6 @@ footer {
   padding-bottom: 15px;
 }
 
-
-
 @media (min-width: 768px) {
   /* コンテンツとサイドバーを横に並べる設定 */
   .container:after {
@@ -58,6 +56,13 @@ footer {
   .sub {
     float: left;
     width: 30%;
+  }
+  /* コンテンツとサイドバーの間隔に関する設定 */
+  .contents {
+    padding-right: 50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
 }
