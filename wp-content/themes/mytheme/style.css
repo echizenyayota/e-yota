@@ -217,3 +217,9 @@ header, footer, .container {
 a img {
   border: none;
 }
+
+/* 大きい画像用の設定 */
+img, .wp-caption {
+  max-width: 100%;
+  height: none;
+}
