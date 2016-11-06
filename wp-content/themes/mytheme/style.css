@@ -212,3 +212,8 @@ header, footer, .container {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Internet Explorer用の設定 */
+a img {
+  border: none;
+}
