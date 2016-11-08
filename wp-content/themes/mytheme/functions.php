@@ -35,3 +35,6 @@ function clear_ytwrapper($post_id) {
   $wp_embed->delete_oembed_caches($post_id);
 }
 add_action('pre_post_update', 'clear_ytwrapper');
+
+// アイキャッチ画像の指定
+add_theme_support('post-thumbnails');
