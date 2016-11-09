@@ -5,7 +5,7 @@
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
       <article <?php post_class('kiji'); ?>>
         <h1><?php the_title(); ?></h1>
-        <div class="kiji-data">
+        <div class="kiji-date">
           <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
             投稿日:<?php echo get_the_date(); ?>
           </time>
