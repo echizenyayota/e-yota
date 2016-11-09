@@ -165,6 +165,9 @@ header, footer, .container {
   .kiji p {
     font-size: 14px;
   }
+  .kiji-date {
+    font-size:10px;
+  }
 }
 
 
