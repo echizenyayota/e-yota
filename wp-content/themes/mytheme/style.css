@@ -89,7 +89,7 @@ header, footer, .container {
 
 .site h1 a {
   display:inline-block;
-  padding: 10px;
+  padding: 30px;
   background-color: #00a0e9;
   color: #ffffff;
   text-decoration: none;
@@ -97,10 +97,9 @@ header, footer, .container {
 
 .site h1 {
   margin: 0;
-  font-size: 30px;
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 100%
 }
-
 
 /*　------------------------　フッター　------------------------　*/
 
