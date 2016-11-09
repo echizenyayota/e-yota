@@ -6,6 +6,7 @@
       <article <?php post_class('kiji'); ?>>
         <h1><?php the_title(); ?></h1>
         <div class="kiji-date">
+          <i class="fa fa-pencil"></i>
           <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
             投稿日:<?php echo get_the_date(); ?>
           </time>
@@ -14,7 +15,7 @@
           <time datetime="<?php echo get_the_modified_date( 'Y-m-d' ); ?>">
             更新日:<?php echo get_the_modified_date(); ?>
           </time>
-        <?php endif; ?>
+          <?php endif; ?>
         </div>
         <?php if (has_post_thumbnail()) : ?>
           <div class="catch">

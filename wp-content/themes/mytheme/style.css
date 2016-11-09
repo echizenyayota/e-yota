@@ -151,6 +151,13 @@ header, footer, .container {
   margin-bottom: 20px;
 }
 
+/* 投稿日・更新日　*/
+.kiji-date {
+  margin-bottom: 15px;
+  color: #666666;
+  font-size: 12px;
+}
+
 @media(max-width: 599px) {
   .kiji h1 {
     font-size: 24px;
@@ -159,6 +166,8 @@ header, footer, .container {
     font-size: 14px;
   }
 }
+
+
 
 /*　------------------------　サイドバー　------------------------　*/
 
