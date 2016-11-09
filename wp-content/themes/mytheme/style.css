@@ -224,6 +224,11 @@ img, .wp-caption {
   height: none;
 }
 
+. catch {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /*　------------------------　外部コンテンツ　------------------------　*/
 
 iframe {

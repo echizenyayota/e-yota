@@ -30,8 +30,8 @@ add_filter('oembed_dataparse','ytwrapper',10,3);
 //YouTubeのビデオ: キャッシュをクリア
 function clear_ytwrapper($post_id) {
   global $wp_embed;
-  var_dump($wp_embed);
-  exit;
+  // var_dump($wp_embed);
+  // exit;
   $wp_embed->delete_oembed_caches($post_id);
 }
 add_action('pre_post_update', 'clear_ytwrapper');
