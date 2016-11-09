@@ -9,10 +9,12 @@
           <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
             投稿日:<?php echo get_the_date(); ?>
           </time>
+          <?php if (get_the_modified_date( 'Y-m-d' ) > get_the_date( 'Y-m-d' )) : ?>
             |
           <time datetime="<?php echo get_the_modified_date( 'Y-m-d' ); ?>">
-            投稿日:<?php echo get_the_modified_date(); ?>
+            更新日:<?php echo get_the_modified_date(); ?>
           </time>
+        <?php endif; ?>
         </div>
         <?php if (has_post_thumbnail()) : ?>
           <div class="catch">
