@@ -170,6 +170,37 @@ header, footer, .container {
   }
 }
 
+/* タグ　*/
+.kiji-tag ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kiji-tag li a {
+  display: block;
+  padding: 10px 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.kiji-tag li a:hover {
+  background-color: #eeeeee;
+}
+
+.kiji-tag ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.kiji-tag li {
+  float: left;
+  width: auto;
+}
+
+
 
 /*　------------------------　サイドバー　------------------------　*/
 
