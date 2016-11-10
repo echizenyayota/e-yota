@@ -171,6 +171,10 @@ header, footer, .container {
 }
 
 /* タグ　*/
+.kiji-tag {
+  margin-bottom: 18px;
+}
+
 .kiji-tag ul {
   margin: 0;
   padding: 0;
@@ -179,14 +183,18 @@ header, footer, .container {
 
 .kiji-tag li a {
   display: block;
-  padding: 10px 5px;
-  color: #000000;
-  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  padding: 3px 5px;
+  border-radius:2px;
+  background-color: #75dbe7;
+  color: #ffffff;
+  font-size: 12px;
   text-decoration: none;
 }
 
 .kiji-tag li a:hover {
-  background-color: #eeeeee;
+  background-color: #94ecf6;
 }
 
 .kiji-tag ul:after {
