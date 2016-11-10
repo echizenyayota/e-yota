@@ -216,14 +216,14 @@ header, footer, .container, .sub-header {
 }
 
 .bread li a {
-  display: block;
-  padding: 10px 5px;
-  color: #000000;
+  display: inline-block;;
+  padding: 5px 5px;
+  color: #888888;
   font-size: 12px;
   text-decoration: none;
 }
 
-.bread li a:hover {
+.bread li a[href]:hover {
   background-color: #eeeeee;
 }
 
@@ -236,6 +236,17 @@ header, footer, .container, .sub-header {
 .bread li {
   float: left;
   width: auto;
+}
+
+.bread li:after {
+  content: '\003e';
+  margin-left: 2px;
+  margin-right: 2px;
+  color: #888888;
+}
+
+.bread li:last-child:after {
+  content:none;
 }
 
 
