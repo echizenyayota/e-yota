@@ -17,9 +17,12 @@
     <meta property="og:title" content="<?php the_title(); ?>">
     <meta property="og:type" content="<?php the_permalink(); ?>">
     <meta property="og:type" content="<?php echo wp_trim_words ($post->post_content, 100, '...'); ?>">
-  <?php endif; ?>
+  <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
-  <?php if (has_post_thumbnail() ) : ?>
+  <?php if (has_post_thumbnail() ) : // サムネイル画像に関する情報?>
+    <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
+    <meta property="og:image" content="<?php echo $postthumb[0]; ?>">
+  <?php elseif (preg_match('/wp-image-(\d+)/s', $post->post_content, $thumbid) ) : // サムネイル画像がない場合?>
     <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
     <meta property="og:image" content="<?php echo $postthumb[0]; ?>">
   <?php else : ?>
