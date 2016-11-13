@@ -43,6 +43,12 @@ footer {
   padding-bottom: 15px;
 }
 
+@media(max-width: 599px) {
+  .contents {
+    padding-top: 10px;
+  }
+}
+
 /* ボックスの左右の余白 */
 header, footer, .container, .sub-header {
   padding-left: 10px;
@@ -258,7 +264,11 @@ header, footer, .container, .sub-header {
   text-indent: -9999px;
 }
 
-
+@media(max-width: 599px) {
+  .bread li:last-child {
+    text-indent: -9999px;
+  }
+}
 
 
 
