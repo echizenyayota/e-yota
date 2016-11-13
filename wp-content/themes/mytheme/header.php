@@ -20,7 +20,7 @@
   <?php endif; ?>
 
   <?php if (has_post_thumbnail() ) : ?>
-    <?php $postthumb ="wp_get_attachment_image_src( get_post_thumbnail_id(), 'large');" ?>
+    <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
     <meta property="og:image" content="<?php echo $postthumb[0]; ?>">
   <?php else : ?>
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic.jpg">
