@@ -4,7 +4,7 @@
 <div class="bread">
   <ol>
     <li>
-      <a href="<?php echo home_url(); ?>">TOP</a>
+      <a href="<?php echo home_url(); ?>"><i class="fa fa-home"></i><span>TOP</span></a>
     </li>
     <li>
       <?php if ( has_category()) : ?>

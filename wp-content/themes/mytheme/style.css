@@ -249,6 +249,15 @@ header, footer, .container, .sub-header {
   content:none;
 }
 
+.bread i {
+  font-size: 14px;
+}
+
+.bread span {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
 
 
 
