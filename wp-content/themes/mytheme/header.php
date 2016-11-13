@@ -29,6 +29,9 @@
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic.jpg">
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
+  <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
+  <meta property="og:locale" content="ja_jp">
+
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
