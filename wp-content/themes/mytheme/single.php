@@ -52,6 +52,20 @@
 
         <?php the_content(); ?>
 
+        <div class="share">
+          <ul>
+            <li>
+              <a href="" class="share-tw"><i class="fa fa-twitter"></i>Twitterでシェア</a>
+            </li>
+            <li>
+              <a href="" class="share-fb"><i class="fa fa-facebook"></i>Facebookでシェア</a>
+            </li>
+            <li>
+              <a href="" class="share-gp"><i class="fa fa-google-plus"></i>Google+でシェア</a>
+            </li>
+          </ul>
+        </div>
+
       </article>
     <?php endwhile; endif; ?>
   </div>
