@@ -55,13 +55,15 @@
         <div class="share">
           <ul>
             <li>
-              <a href="" class="share-tw"><i class="fa fa-twitter"></i>Twitterでシェア</a>
+              <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() . ' - ' . get_bloginfo('name') ); ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=echizenya_yota"
+            	onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw"><i class="fa fa-twitter"></i>Twitterでシェア</a>
             </li>
             <li>
-              <a href="" class="share-fb"><i class="fa fa-facebook"></i>Facebookでシェア</a>
+              <a href="http://www.facebook.com/share.php?u=<?php echo urlencode( get_permalink() ); ?>"
+            	onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-fb"><i class="fa fa-facebook"></i>Facebookでシェア</a>
             </li>
             <li>
-              <a href="" class="share-gp"><i class="fa fa-google-plus"></i>Google+でシェア</a>
+              <a href="https://plus.google.com/share?url=<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-gp"><i class="fa fa-google-plus"></i>Google+でシェア</a>
             </li>
           </ul>
         </div>
