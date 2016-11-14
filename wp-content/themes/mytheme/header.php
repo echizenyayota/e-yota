@@ -23,6 +23,7 @@
       ?>
       <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
     <?php endif; ?>
+    <!-- 運用前に外部公開してhttps://developers.facebook.com/tools/debug/で確認。ローカル開発環境では確認できない -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php the_title(); ?>">
     <meta property="og:type" content="<?php the_permalink(); ?>">
