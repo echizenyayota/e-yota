@@ -320,6 +320,19 @@ header, footer, .container, .sub-header {
   background-color: #dd4b39;
 }
 
+@media(max-width: 599px) {
+  .share span {
+    display: inline-block;
+    text-indent: -9999px;
+    /*overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;*/
+  }
+  .share li a {
+    padding: 8px 10px;
+  }
+}
+
 
 /*　------------------------　サイドバー　------------------------　*/
 
