@@ -33,6 +33,10 @@
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:locale" content="ja_jp">
 
+  <!-- 実際に運用するときにhttps://cards-dev.twitter.com/validatorに申請 -->
+  <meta name="twitter:site" content="@echizenya_yota">
+  <meta name="twitter:card" content="summary_large_image">
+
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
