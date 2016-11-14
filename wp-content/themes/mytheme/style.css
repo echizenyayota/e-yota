@@ -297,11 +297,10 @@ header, footer, .container, .sub-header {
 }
 
 .share ul:after {
-  content: none;
-  display:block;
-  clear:both;
+  content: "";
+  display: block;
+  clear: both;
 }
-
 
 .share li {
   float: left;
