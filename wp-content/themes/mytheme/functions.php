@@ -38,3 +38,10 @@ add_action('pre_post_update', 'clear_ytwrapper');
 
 // アイキャッチ画像の指定
 add_theme_support('post-thumbnails');
+
+// 編集画面の設定(h1を削除)
+function editor_setting($init) {
+  $init['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;Preformatted=pre';
+  return $init;
+}
+add_filter('tiny_mce_before_init', 'editor_setting');
