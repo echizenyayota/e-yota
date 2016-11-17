@@ -213,6 +213,28 @@ header, footer, .container, .sub-header {
 	line-height: 1;
 }
 
+/* 注意書き */
+.attention	{position: relative;
+	margin: 40px 0 30px;
+	padding: 20px;
+	border-radius: 10px;
+	border: dotted 2px #ff0000;
+	background-color: #ffefef;
+	font-size: 14px;
+	clear: both;
+}
+
+.attention:before	{position: absolute;
+	left: 20px;
+	top: -15px;
+	content: '\f071';
+	background-color: #ffffff;
+	color: #ff0000;
+	font-family: 'FontAwesome';
+	font-size: 26px;
+	line-height: 1;
+}
+
 .kiji h2:before {
   position: absolute;
   left: 0px;
