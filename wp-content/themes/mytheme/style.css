@@ -179,6 +179,14 @@ header, footer, .container, .sub-header {
   line-height: 1;
 }
 
+.kiji h3 {
+  margin-top: 25px;
+  padding-left: 10px;
+  border-left: 10px solid #a5e2fe;
+  font-size: 18px;
+  clear: both;
+}
+
 /* 投稿日・更新日　*/
 .kiji-date {
   margin-bottom: 15px;
