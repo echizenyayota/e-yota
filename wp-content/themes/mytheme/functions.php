@@ -63,7 +63,7 @@ add_filter('tiny_mce_before_init', 'editor_setting');
 
 // スタイルメニューを有効化
 function add_stylemenu($buttons) {
-  array_splice($buttons, 1, 0, 'style');
+  array_splice($buttons, 1, 0, 'styleselect');
   return $buttons;
 }
 add_filter('mce_buttons_2', 'add_stylemenu');
