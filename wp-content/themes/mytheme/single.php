@@ -50,7 +50,9 @@
           </div>
         <?php endif; ?>
 
-        <?php the_content(); ?>
+        <div class="kiji-body">
+          <?php the_content(); ?>
+        </div>
 
         <div class="share">
           <ul>

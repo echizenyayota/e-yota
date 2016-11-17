@@ -199,9 +199,27 @@ header, footer, .container, .sub-header {
     padding-left: 6px;
     font-size: 15px;;
   }
-
 }
 
+/* 番号なしリスト */
+.kiji-body ul {
+  list-style: none;
+}
+
+.kiji-body li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.kiji-body li:before {
+  position: absolute;;
+  left: 0px;
+  top: 3px;
+  content: '\f152';
+  color: #aaaaaa;
+  font-family: 'FontAwesome';
+  line-height: 1;
+}
 
 
 /* 投稿日・更新日　*/
