@@ -157,6 +157,28 @@ header, footer, .container, .sub-header {
   margin-bottom: 20px;
 }
 
+/* 小見出し */
+.kiji h2 {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 32px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #00a0e9;
+  font-size: 24px;
+  clear: both;
+}
+
+.kiji h2:before {
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  content: '\f14a';
+  color: #00a0e9;
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  line-height: 1;
+}
+
 /* 投稿日・更新日　*/
 .kiji-date {
   margin-bottom: 15px;
