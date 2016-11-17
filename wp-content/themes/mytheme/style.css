@@ -187,6 +187,23 @@ header, footer, .container, .sub-header {
   clear: both;
 }
 
+@media(max-width: 599px) {
+  .kiji h2 {
+    padding-left: 21px;
+    font-size: 18px;
+  }
+  .kiji h2:before {
+    font-size: 20px;
+  }
+  .kiji h3:before {
+    padding-left: 6px;
+    font-size: 15px;;
+  }
+
+}
+
+
+
 /* 投稿日・更新日　*/
 .kiji-date {
   margin-bottom: 15px;
