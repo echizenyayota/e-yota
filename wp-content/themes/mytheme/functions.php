@@ -68,6 +68,17 @@ function add_stylemenu($buttons) {
 }
 add_filter('mce_buttons_2', 'add_stylemenu');
 
-// エディタスタイルシート
+// エディタスタイルシート EdgeとIEでも読み込めるようにする
 add_editor_style(get_template_directory_uri() . '/editor-style.css?ver=' . date('U'));
 add_editor_style('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+// サムネイル画像
+function mythummb( $size ) {
+  if (has_post_thumbnail() ) {
+    $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), '$size');
+    $url = $postthumb[0];
+  } else {
+    $url = get_template_directory_uri() . '/picnic.jpg';
+  }
+  return $url;
+}
