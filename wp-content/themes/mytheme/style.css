@@ -551,18 +551,30 @@ blockquote:after {
 }
 
 /* ページネーション */
+.pagination  {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
 .pagination ul {
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.pagination li a {
+.pagination li a, .pagination li > span {
   display: block;
-  padding: 10px 5px;
+  margin: 0 5px;
+  padding: 6px 8px;
+  border: solid 1px #cccccc;
   color: #000000;
   font-size: 14px;
   text-decoration: none;
+}
+
+.pagination li > span {
+  background-color: #efefef;
 }
 
 .pagination li a:hover {
