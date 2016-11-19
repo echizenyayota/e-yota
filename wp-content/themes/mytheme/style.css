@@ -143,6 +143,10 @@ header, footer, .container, .sub-header {
   font-size: 14px;
 }
 
+.gaiyou .kiji-date {
+  margin-bottom: 8px;
+}
+
 /*　------------------------　記事　------------------------　*/
 
 /* 記事 */
