@@ -26,21 +26,10 @@
     <!-- 運用前に外部公開してhttps://developers.facebook.com/tools/debug/で確認。ローカル開発環境では確認できない -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php the_title(); ?>">
-    <meta property="og:type" content="<?php the_permalink(); ?>">
+    <meta property="og:url" content="<?php the_permalink(); ?>">
     <meta property="og:description" content="<?php echo wp_trim_words ($post->post_content, 100, '...'); ?>">
+    <meta property="og:image" content="<?php echo mythumb( 'large' ); ?>">
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
-
-  <?php if (has_post_thumbnail() ) : // サムネイル画像に関する情報?>
-    <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
-    <meta property="og:image" content="<?php echo $postthumb[0]; ?>">
-    <meta property="og:image:width" content="<?php echo $postthumb[1]; ?>" />
-    <meta property="og:image:height" content="<?php echo $postthumb[2]; ?>" />
-  <?php elseif (preg_match('/wp-image-(\d+)/s', $post->post_content, $thumbid) ) : // サムネイル画像がない場合?>
-    <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
-    <meta property="og:image" content="<?php echo $postthumb[0]; ?>">
-  <?php else : ?>
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic.jpg">
-  <?php endif; // サムネイル画像に関する情報ここまで?>
 
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:locale" content="ja_jp">
@@ -59,5 +48,5 @@
         <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
       </h1>
     </div>
-  <div>
+  </div>
 </header>
