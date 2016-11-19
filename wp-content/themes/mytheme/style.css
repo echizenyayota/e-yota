@@ -599,7 +599,24 @@ blockquote:after {
   background-color: transparent;
 }
 
+@media (max-width: 599px) {
+  .pagination-index li a,
+  .pagination-index li > span {
+    margin: 0;
+    padding: 6px 7px;
+    border-left: none;
+    font-size: 12px;
 
+  }
+  .pagination-index li:first-child a,
+  .pagination-index li:first-child > span {
+    border-left: 1px solid #cccccc;
+  }
+  .pagination-index li .dots {
+    border-right-color: #cccccc;
+  }
+
+}
 
 
 /*　------------------------　サイドバー　------------------------　*/
