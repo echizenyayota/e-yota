@@ -76,6 +76,80 @@ h3 {
   }
 }
 
+/* 補足情報 */
+.point {
+  position: relative;
+  margin: 40px 0 30px;
+  padding: 25px 20px 20px;
+  border-radius: 10px;
+  background-color: #cfedb7;
+  font-size: 14px;
+  clear: both;
+}
+
+.point:before	{
+  position: absolute;
+	left: 15px;
+	top: -15px;
+	content: '\f0eb';
+	z-index: 2;
+	width: 32px;
+	height: 32px;
+	padding-top: 3px;
+	border-radius: 16px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #5ab80e;
+	color: #ffffff;
+	font-family: 'FontAwesome';
+	font-size: 26px;
+	line-height: 1;
+	text-align: center;
+}
+
+.point:after	{
+  position: absolute;
+	left: 32px;
+	top: -8px;
+	z-index: 1;
+	content: 'POINT';
+	padding: 3px 10px 3px 20px;
+	border-radius: 5px;
+	background-color: #5ab80e;
+	color: #ffffff;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+}
+
+/* 注意書き */
+.attention	{
+  position: relative;
+	margin: 40px 0 30px;
+	padding: 20px;
+	border-radius: 10px;
+	border: dotted 2px #ff0000;
+	background-color: #ffefef;
+	font-size: 14px;
+	clear: both;
+}
+
+.attention:before	{
+  position: absolute;
+	left: 20px;
+	top: -15px;
+	content: '\f071';
+	background-color: #ffffff;
+	color: #ff0000;
+	font-family: 'FontAwesome';
+	font-size: 26px;
+	line-height: 1;
+}
+
+
+
+
 
 
 
@@ -164,7 +238,8 @@ h3 {
 	text-align: center;
 }
 
-.point:after	{position: absolute;
+.point:after	{
+  position: absolute;
 	left: 32px;
 	top: -8px;
 	z-index: 1;
@@ -179,7 +254,8 @@ h3 {
 }
 
 /* 注意書き */
-.attention	{position: relative;
+.attention	{
+  position: relative;
 	margin: 40px 0 30px;
 	padding: 20px;
 	border-radius: 10px;
@@ -189,7 +265,8 @@ h3 {
 	clear: both;
 }
 
-.attention:before	{position: absolute;
+.attention:before	{
+  position: absolute;
 	left: 20px;
 	top: -15px;
 	content: '\f071';
