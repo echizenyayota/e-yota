@@ -74,8 +74,15 @@ add_editor_style('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.
 
 // サムネイル画像
 function mythumb( $size ) {
+
+  global $post;
+
   if (has_post_thumbnail() ) {
     $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), '$size');
+    $url = $postthumb[0];
+    // 小かっこは、パターンにマッチした部分文字列を取得したい場合に使います。https://goo.gl/nqdwvE 
+  } elseif(preg_match('/wp-image-(\d+)/s', $post->post_content, $thumbid)) {
+    $postthumb = wp_get_attachment_image_src( $thumbid[1], $size);
     $url = $postthumb[0];
   } else {
     $url = get_template_directory_uri() . '/picnic.jpg';
