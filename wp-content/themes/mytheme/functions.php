@@ -67,3 +67,6 @@ function add_stylemenu($buttons) {
   return $buttons;
 }
 add_filter('mce_buttons_2', 'add_stylemenu');
+
+// エディタスタイルシート
+add_editor_style();
