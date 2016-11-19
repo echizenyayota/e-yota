@@ -9,143 +9,107 @@ Version: 1.0
 
 /*　------------------------　全体　------------------------　*/
 
-body {
-  margin: 0;
+.mce-content-body {
+  max-width: 747px;
   font-family: 'メイリオ','Hiragino Kaku Gothic Pro', 'sans-serif';
   line-height: 1.5;
 }
 
-/*　------------------------　基本構造　------------------------　*/
-
-/* ヘッダーとフッターをバーの形にする設定 */
-header {
-  border-bottom: 1px solid  #dddddd;
-  background-color: #f6f6f6;
-}
-
-footer {
-  border-top: 1px solid  #dddddd;
-}
-
-/* ボックスの上下に関する設定 */
-.contents {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.sub {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-footer {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-@media(max-width: 599px) {
-  .contents {
-    padding-top: 10px;
-  }
-}
-
-/* ボックスの左右の余白 */
-header, footer, .container, .sub-header {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-@media (min-width: 768px) {
-  /* コンテンツとサイドバーを横に並べる設定 */
-  .container:after {
-    content: "";
-    display:block;
-    clear:both;
-  }
-  .contents {
-    float: left;
-    width: 70%;
-  }
-  .sub {
-    float: left;
-    width: 30%;
-  }
-  /* コンテンツとサイドバーの間隔に関する設定 */
-  .contents {
-    padding-right: 50px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-}
-@media(min-width: 1040px) {
-  /* 全体の横幅 */
-  .container, .header-inner, .footer-inner, .sub-header  {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/*　------------------------　ヘッダー　------------------------　*/
-
-/* ヘッダー　*/
-
-.site h1 a {
-  display:inline-block;
-  padding: 10px;
-  background-color: #00a0e9;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.site h1 {
-  margin: 0;
-  font-family: 'Noto Sans Japanese', sans-serif;
-  font-size: 24px;
-}
-
-/*　------------------------　フッター　------------------------　*/
-
-/* フッター　*/
-.copyright p {
-  margin: 0;
-  color: #666666;
-  font-size: 14px;
-}
-
-
-/*　------------------------　記事の概要　------------------------　*/
-
-/* 概要　*/
-.gaiyou a {
-  padding: 20px 0;
-  border-bottom: dotted 2px #000000;
-  display: block;
-  color: #000000;
-  text-decoration: none;
-}
-
-.gaiyou a:hover {
-  background-color: #eeeeee;
-}
-
-.gaiyou h1 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.gaiyou p {
-  margin: 0;
-  font-size: 14px;
-}
 
 /*　------------------------　記事　------------------------　*/
 
 /* 記事 */
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 599px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+/* 小見出し */
+
+h2 {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 32px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #00a0e9;
+  font-size: 24px;
+  clear: both;
+}
+
+h2:before {
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  content: '\f14a';
+  color: #00a0e9;
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  line-height: 1;
+}
+
+h3 {
+  margin-top: 25px;
+  padding-left: 10px;
+  border-left: 10px solid #a5e2fe;
+  font-size: 18px;
+  clear: both;
+}
+
+@media(max-width: 599px) {
+  h2 {
+    padding-left: 21px;
+    font-size: 18px;
+  }
+  h2:before {
+    font-size: 20px;
+  }
+  h3 {
+    padding-left: 6px;
+    font-size: 15px;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+  .kiji h2 {
+    padding-left: 21px;
+    font-size: 18px;
+  }
+  .kiji h2:before {
+    font-size: 20px;
+  }
+  .kiji h3:before {
+    padding-left: 6px;
+    font-size: 15px;;
+  }
+}
+
+
+
+
+
+
+
+
+
 .kiji h1 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -179,7 +143,8 @@ header, footer, .container, .sub-header {
   clear: both;
 }
 
-.point:before	{position: absolute;
+.point:before	{
+  position: absolute;
 	left: 15px;
 	top: -15px;
 	content: '\f0eb';
