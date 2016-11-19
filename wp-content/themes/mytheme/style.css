@@ -132,6 +132,25 @@ header, footer, .container, .sub-header {
   background-color: #eeeeee;
 }
 
+.gaiyou a:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.gaiyou img {
+  float: left;
+  width: 200px;
+}
+
+.gaiyou .text {
+  float: none;
+  width : auto;
+  margin-left: 230px;
+
+}
+
+
 .gaiyou h1 {
   margin-top: 0;
   margin-bottom: 10px;
