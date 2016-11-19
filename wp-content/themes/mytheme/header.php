@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"
 
-  <?php if ( is_single() ) : // 記事の個別ページ用のメタデータ?>
+  <?php if ( is_single() || is_page() ) : // 記事の個別ページ用のメタデータ?>
     <meta name="description" content="<?php echo wp_trim_words($post->post_content, 100, '...'); ?>">
     <?php if (has_tag()) : ?>
       <?php
