@@ -592,6 +592,14 @@ blockquote:after {
   width: auto;
 }
 
+/* 記事一覧のページネーション */
+.pagination-index li .dots {
+  padding: 6px 2px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+
 
 
 /*　------------------------　サイドバー　------------------------　*/
