@@ -5,7 +5,6 @@
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
       <article <?php post_class('gaiyou'); ?>>
         <a href="<?php the_permalink(); ?>">
-
           <img src="<?php echo mythumb('medium'); ?>">
 
           <div class="text">
@@ -18,10 +17,14 @@
 
             <?php the_excerpt(); ?>
          </div>
-         
         </a>
       </article>
     <?php endwhile; endif; ?>
+    <div class="pagination pagination-index">
+      <?php echo paginate_links( array(
+        'type' => 'list'
+      )); ?>
+    </div>
   </div>
 
   <div class="sub">
