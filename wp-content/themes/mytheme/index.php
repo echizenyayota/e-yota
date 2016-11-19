@@ -22,7 +22,9 @@
     <?php endwhile; endif; ?>
     <div class="pagination pagination-index">
       <?php echo paginate_links( array(
-        'type' => 'list'
+        'type' => 'list',
+        'end_size' => '2',
+        'mid_size' => '3',
       )); ?>
     </div>
   </div>
