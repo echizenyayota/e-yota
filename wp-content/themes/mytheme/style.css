@@ -767,3 +767,20 @@ iframe {
 	height: 100%;
 }
 */
+
+/*　------------------------　カテゴリー　/ タグ　------------------------　*/
+
+.contents > h1 {
+  margin-top: 0;
+  font-size: 34px;
+}
+
+@media (max-width: 599px) {
+  .contents > h1 {
+    font-size: 22px;
+  }
+  .archive .bread li:last-child {
+    text-indent: 0
+  }
+
+}
