@@ -35,8 +35,6 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <?php
       $allcats = get_categories();
-      // var_dump($allcats);
-      // exit;
       $kwds = [];
       foreach ($allcats as $allcat) {
         $kwds[] = $allcat->name;
@@ -49,7 +47,7 @@
     <meta property="og:url" content="<?php echo $url; ?>">
     <meta property="og:description" content="<?php bloginfo('description'); ?>">
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic-top.jpg">
-  <?php endif; ?>
+  <?php endif; // トップページ用のメタデータ（ここまで）　?>
 
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:locale" content="ja_jp">
