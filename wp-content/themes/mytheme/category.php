@@ -8,10 +8,10 @@
     <li>
       <?php
         if ($cat) {
-          $catadata = get_category($cat);
+          $catdata = get_category($cat);
         }
-        if ($catadata->parent) {
-          echo get_category_parents($catadata->parent, true, '</li><li>');
+        if ($catdata->parent) {
+          echo get_category_parents($catdata->parent, true, '</li><li>');
         }
       ?>
       <a><?php single_term_title(); ?></a>
