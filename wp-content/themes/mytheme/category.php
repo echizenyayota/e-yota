@@ -1,5 +1,24 @@
 <?php get_header(); ?>
-
+<div class="sub-header">
+<div class="bread">
+  <ol>
+    <li>
+      <a href="<?php echo home_url(); ?>"><i class="fa fa-home"></i><span>TOP</span></a>
+    </li>
+    <li>
+      <?php
+        if ($cat) {
+          $catadata = get_category($cat);
+        }
+        if ($catadata->parent) {
+          echo get_category_parents($catadata->parent, true, '</li><li>');
+        }
+      ?>
+      <a><?php single_term_title(); ?></a>
+    </li>
+</ol>
+</div>
+</div>
 <div class="container">
   <div class="contents">
 
