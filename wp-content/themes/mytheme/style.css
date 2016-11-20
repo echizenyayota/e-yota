@@ -225,6 +225,22 @@ header, footer, .container, .sub-header {
   background-position: 50% 50%;
 }
 
+@media (max-width: 599px) {
+  .gaiyou-large a {
+    padding: 10px 0;
+  }
+  .gaiyou-large h1 {
+    font-size: 18px;
+  }
+  .gaiyou-large p {
+    font-size: 12px;
+  }
+  .gaiyou-large .thumb {
+    height: 200px;
+  }
+}
+
+
 
 /*　------------------------　記事　------------------------　*/
 
