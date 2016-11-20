@@ -31,6 +31,26 @@
     <meta property="og:image" content="<?php echo mythumb( 'large' ); ?>">
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
+  <?php if (is_home()): // トップページ用のメタデータ　?>
+    <meta name="description" content="<?php bloginfo('description'); ?>">
+    <?php
+      $allcats = get_categories();
+      // var_dump($allcats);
+      // exit;
+      $kwds = [];
+      foreach ($allcats as $allcat) {
+        $kwds[] = $allcat->name;
+      }
+    ?>
+    <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?php bloginfo('name'); ?>">
+    <?php $url = home_url(); ?>
+    <meta property="og:url" content="<?php echo $url; ?>">
+    <meta property="og:description" content="<?php bloginfo('description'); ?>">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic-top.jpg">
+  <?php endif; ?>
+
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:locale" content="ja_jp">
 

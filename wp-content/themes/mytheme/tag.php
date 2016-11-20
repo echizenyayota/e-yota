@@ -12,8 +12,6 @@
             $tagdata = get_tags($tag);
           }
           if ($tagdata) {
-            // $terms =
-            // echo $terms;
             single_tag_title();
           }
         ?>
