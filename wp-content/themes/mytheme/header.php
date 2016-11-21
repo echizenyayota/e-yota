@@ -55,8 +55,8 @@
           $categoryname = single_cat_title('',false);
           $termid = get_cat_ID($categoryname);
           // $termid = single_cat_title( '', true );
-          var_dump($termid);
-          exit;
+          // var_dump($termid);
+          // exit;
           $taxname = 'category';
         } elseif(is_tag() ) {
           $termid = single_tag_title();
