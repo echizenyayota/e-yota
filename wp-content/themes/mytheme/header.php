@@ -52,7 +52,8 @@
   <?php if (is_category() || is_tag() ): // カテゴリー・タグ用のメタデータ ?>
     <?php
         if (is_category() ) {
-          $categoryname = single_cat_title('',true);
+          $categoryname = single_cat_title('',false);
+          // $categoryname = single_cat_title('',true);
           // var_dump($categoryname);
           // exit;
           $termid = get_cat_ID($categoryname);
