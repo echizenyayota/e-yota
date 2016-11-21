@@ -49,12 +49,51 @@
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic-top.jpg">
   <?php endif; // トップページ用のメタデータ（ここまで）　?>
 
-  <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
-  <meta property="og:locale" content="ja_jp">
+  <?php if (is_category() || is_tag() ): // カテゴリー・タグ用のメタデータ ?>
+    <?php
+        if (is_category() ) {
+          $categoryname = single_cat_title('',false);
+          $termid = get_cat_ID($categoryname);
+          // $termid = single_cat_title( '', true );
+          var_dump($termid);
+          exit;
+          $taxname = 'category';
+        } elseif(is_tag() ) {
+          $termid = single_tag_title();
+          // var_dump($termid);
+          // exit;
+          $taxname = 'post_tag';
+        }
+    ?>
 
-  <!-- 実際に運用するときにhttps://cards-dev.twitter.com/validatorに申請 -->
-  <meta name="twitter:site" content="@echizenya_yota">
-  <meta name="twitter:card" content="summary_large_image">
+    <meta property="description" content="<?php single_term_title(); ?>に関する記事一覧です">
+
+    <?php
+      $childcats = get_categories( array('child_of'=> $termid));
+      // var_dump($childcats);
+      // exit;
+      $kwds = [];
+      foreach ($childcats as $childcat) {
+        $kwds[] = $childcat->name;
+      }
+    ?>
+
+    <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?php single_term_title(); ?> | <?php bloginfo('name'); ?>">
+    <meta property="og:url" content="<?php get_term_link($termid, $taxname); ?>">
+    <meta property="og:description" content="<?php single_term_title(); ?> に関する記事の一覧です。">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic-top.jpg">
+
+    <?php endif; // カテゴリー・タグ用のここまで　?>
+
+    <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
+    <meta property="og:locale" content="ja_jp">
+
+    <!-- 実際に運用するときにhttps://cards-dev.twitter.com/validatorに申請 -->
+    <meta name="twitter:site" content="@echizenya_yota">
+    <meta name="twitter:card" content="summary_large_image">
 
   <?php wp_head(); ?>
 </head>
