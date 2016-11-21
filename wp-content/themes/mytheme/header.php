@@ -117,5 +117,13 @@
         <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
       </h1>
     </div>
+    <?php
+      wp_nav_menu( array(
+        'theme_location' => 'sitenav',
+        'container' => 'nav',
+        'container_class' => 'mainmenu',
+        'container_id' => 'mainmenu'
+      ));
+    ?>
   </div>
 </header>
