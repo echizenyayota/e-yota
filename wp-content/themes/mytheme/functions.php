@@ -89,3 +89,5 @@ function mythumb( $size ) {
   }
   return $url;
 }
+// カスタムメニュー
+register_nav_menu( 'site_nav', 'サイトナビゲーション');
