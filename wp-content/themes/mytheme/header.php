@@ -98,7 +98,7 @@
     <meta property="og:description" content="<?php single_term_title(); ?> に関する記事の一覧です。">
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic-top.jpg">
 
-    <?php endif; // カテゴリー・タグ用のここまで　?>
+  <?php endif; // カテゴリー・タグ用のここまで　?>
 
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <meta property="og:locale" content="ja_jp">
