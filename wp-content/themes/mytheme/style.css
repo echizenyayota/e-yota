@@ -729,7 +729,11 @@ blockquote:after {
   margin-left: 75px;
 }
 
-
+.mymenu-thumb li span {
+  display: block;
+  color: #666666;
+  font-size: 12px;
+}
 
 /*　------------------------　画像　------------------------　*/
 
