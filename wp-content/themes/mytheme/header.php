@@ -117,13 +117,18 @@
         <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
       </h1>
     </div>
-    <?php
-      wp_nav_menu( array(
-        'theme_location' => 'sitenav',
-        'container' => 'nav',
-        'container_class' => 'mainmenu',
-        'container_id' => 'mainmenu'
-      ));
-    ?>
+    <div class="sitenav">
+      <button type="button" id=navbtn>
+        <i class="fa fa-bars"></i><span>Menu</span>
+      </button>
+      <?php
+        wp_nav_menu( array(
+          'theme_location' => 'sitenav',
+          'container' => 'nav',
+          'container_class' => 'mainmenu',
+          'container_id' => 'mainmenu'
+        ));
+      ?>
+   </div>
   </div>
 </header>

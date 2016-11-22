@@ -803,3 +803,38 @@ iframe {
 .mainmenu li a:hover {
   background-color: #eeeeee;
 }
+
+/*　------------------------　トグルボタン　------------------------　*/
+
+.header-inner {
+  position: relative;
+}
+
+#navbtn {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  padding: 6px 12px;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#navbtn:hover {
+  background-color: #dddddd;
+}
+
+#navbtn:focus {
+  outline: none;
+}
+
+#navbtn i {
+  color: #888888;
+  font-size: 18px;
+}
+
+#navbtn span {
+  display: inline-block;
+  text-indent: -9999px;
+}
