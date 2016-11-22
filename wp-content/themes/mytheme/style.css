@@ -786,6 +786,10 @@ iframe {
 
 /*　------------------------　ナビゲーションメニュー　------------------------　*/
 
+#mainmenu {
+  display: none;
+}
+
 .mainmenu ul {
   margin: 0;
   padding: 0;

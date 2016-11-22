@@ -91,7 +91,9 @@ function mythumb( $size ) {
 }
 // カスタムメニュー
 register_nav_menu( 'sitenav', 'サイトナビゲーション');
-// add_action( 'after_setup_theme', 'register_my_menu' );
-// function register_my_menu() {
-//   register_nav_menu('primary', 'サイトナビゲーション');
-// }
+
+// トグルボタン
+function navbtn_scripts() {
+  wp_enqueue_script('navbtn-script', get_template_directory_uri() . '/navbtn.js', array('jquery'));
+}
+add_action( 'wp_enqueue_scripts', 'navbtn_scripts');
