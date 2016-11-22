@@ -90,4 +90,8 @@ function mythumb( $size ) {
   return $url;
 }
 // カスタムメニュー
-register_nav_menu( 'site_nav', 'サイトナビゲーション');
+register_nav_menu( 'sitenav', 'サイトナビゲーション');
+// add_action( 'after_setup_theme', 'register_my_menu' );
+// function register_my_menu() {
+//   register_nav_menu('primary', 'サイトナビゲーション');
+// }
