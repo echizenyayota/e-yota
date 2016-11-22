@@ -782,5 +782,24 @@ iframe {
   .archive .bread li:last-child {
     text-indent: 0
   }
+}
 
+/*　------------------------　ナビゲーションメニュー　------------------------　*/
+
+.mainmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mainmenu ul a {
+  display: block;
+  padding: 10px 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.mainmenu li a:hover {
+  background-color: #eeeeee;
 }
