@@ -808,6 +808,45 @@ iframe {
   background-color: #eeeeee;
 }
 
+@media (min-width: 768px) {
+  /* サイト名とナビゲーションを横に並べる設定 */
+  .header-inner:after {
+    content: "";
+    display:block;
+    clear: both;
+  }
+  .site {
+    float: left;
+    width: auto;
+  }
+  .sitenav {
+    float: right;
+    width: auto;
+  }
+  /* ナビゲーションメニューのリンクを横に並べる設定 */
+  #mainmenu {
+    display: block !important;
+  }
+  .mainmenu {
+    margin-top: 10px;
+  }
+  .mainmenu:after {
+    content: "";
+    display:block;
+    clear: both;
+  }
+  .mainmenu li {
+    float: left;
+    width: auto;
+  }
+  .mainmenu li a {
+    padding: 10px 15px;
+  }
+  /* トグルボタン */
+  #navbtn {
+    display: none;
+  }
+}
 /*　------------------------　トグルボタン　------------------------　*/
 
 .header-inner {
