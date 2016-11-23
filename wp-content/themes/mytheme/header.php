@@ -51,50 +51,32 @@
 
   <?php if (is_category() || is_tag() ): // カテゴリー・タグ用のメタデータ ?>
     <?php
-        if (is_category() ) {
+        if (is_category()) {
           $categoryname = single_cat_title('',false);
-          // $categoryname = single_cat_title('',true);
-          // var_dump($categoryname);
-          // exit;
           $termid = get_cat_ID($categoryname);
-          // var_dump($termid);
-          // exit;
-          // $termid = single_cat_title( '', true );
-          // var_dump($termid);
-          // exit;
-          $taxname = 'category';
-        } elseif(is_tag() ) {
-          $termid = single_tag_title();
-          // var_dump($termid);
-          // exit;
-          $taxname = 'post_tag';
+        } elseif(is_tag()) {
+          $posttags = get_the_tags();
+            foreach($posttags as $tag) {
+              $termid = $tag->term_id;
+            }
         }
-        // if (is_category() ) {
-        //   $termid = $cat;
-        //   $taxname = 'category';
-        // } elseif(is_tag()) {
-        //   $termid = $tag_id;
-        //   $taxname = 'post_tag';
-        // }
-    ?>
+  ?>
 
     <meta property="description" content="<?php single_term_title(); ?>に関する記事一覧です">
 
     <?php
-      $childcats = get_categories( array('child_of'=> $termid));
-      // var_dump($childcats);
-      // exit;
+      $categories = get_the_category();
       $kwds = [];
-      foreach ($childcats as $childcat) {
-        $kwds[] = $childcat->name;
-      }
+      foreach($categories as $category) {
+        $category = $category->name;
+        array_push($kwds, $category);
     ?>
 
     <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?php single_term_title(); ?> | <?php bloginfo('name'); ?>">
-    <meta property="og:url" content="<?php // echo get_term_link($termid, $taxname); ?>">
+    <meta property="og:url" content="<?php echo get_term_link($termid); ?>">
     <meta property="og:description" content="<?php single_term_title(); ?> に関する記事の一覧です。">
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/picnic-top.jpg">
 
