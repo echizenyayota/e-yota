@@ -70,6 +70,7 @@
       foreach($categories as $category) {
         $category = $category->name;
         array_push($kwds, $category);
+      }
     ?>
 
     <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
