@@ -1,20 +1,30 @@
 <?php
-  $myposts = get_posts( array(
-    'post_type' => 'post',
-    `posts_per_page` =>'5',
-  ));
+  $location_name = 'pickupnav';
+  $locations = get_nav_menu_locations();
+  // var_dump($locations);
+  // exit;
+  // $myposts = wp_get_nav_menu_object($locations[$location_name]);
+  //
+  // var_dump($myposts);
+  // exit;
+  $myposts = wp_get_nav_menu_items($locations[$location_name]);
+  // var_dump($myposts);
+  // exit;
   if ($myposts) : ?>
 
 <aside class="mymenu">
   <h2>おすすめ記事</h2>
   <ul>
-    <?php foreach($myposts as $post): setup_postdata($post); ?>
+    <?php foreach($myposts as $post):
+       if ($post->object == 'post'):
+       $post = get_post($post->object_id);
+       setup_postdata($post); ?>
       <li>
         <a href="<?php the_permalink(); ?>">
           <?php the_title(); ?>
         </a>
       </li>
-    <?php endforeach; ?>
+    <?php endif; endforeach; ?>
   </ul>
 </aside>
 <?php wp_reset_postdata(); endif; ?>
