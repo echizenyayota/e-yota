@@ -1,12 +1,14 @@
 <?php
   $myposts = get_posts( array(
     'post_type' => 'post',
-    `posts_per_page` =>'5'
+    `posts_per_page` =>'6',
+    'meta_key' => 'postviews',
+    'orderby' => 'meta_value_num',
   ));
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-thumb">
-  <h2>新着記事</h2>
+  <h2>人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
