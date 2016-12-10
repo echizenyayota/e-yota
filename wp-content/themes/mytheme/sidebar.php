@@ -1,15 +1,7 @@
 <?php
   $location_name = 'pickupnav';
   $locations = get_nav_menu_locations();
-  // var_dump($locations);
-  // exit;
-  // $myposts = wp_get_nav_menu_object($locations[$location_name]);
-  //
-  // var_dump($myposts);
-  // exit;
   $myposts = wp_get_nav_menu_items($locations[$location_name]);
-  // var_dump($myposts);
-  // exit;
   if ($myposts) : ?>
 
 <aside class="mymenu">
