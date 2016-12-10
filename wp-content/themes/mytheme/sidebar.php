@@ -4,11 +4,11 @@
 
   // var_dump($locations);
   // exit;
-  
+
   $myposts = wp_get_nav_menu_items($locations[$location_name]);
   if ($myposts) : ?>
 
-<aside class="mymenu">
+<aside class="mymenu mymenu-large">
   <h2>おすすめ記事</h2>
   <ul>
     <?php foreach($myposts as $post):
@@ -17,7 +17,10 @@
        setup_postdata($post); ?>
       <li>
         <a href="<?php the_permalink(); ?>">
-          <?php the_title(); ?>
+          <div class="thumb" style="background-image: url(<?php echo mythumb('medium'); ?>)"></div>
+          <div class="text">
+            <?php the_title(); ?>
+          </div>
         </a>
       </li>
     <?php endif; endforeach; ?>
