@@ -108,3 +108,6 @@ add_action( 'wp_enqueue_scripts', 'navbtn_scripts');
 //   exit;
 // }
 // add_action('template_redirect', 'redirect_404');
+
+// 前後の記事に関するメタデータの出力を禁止（Firefox対策）
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
