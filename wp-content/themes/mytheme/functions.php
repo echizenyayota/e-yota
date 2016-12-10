@@ -97,3 +97,14 @@ function navbtn_scripts() {
   wp_enqueue_script('navbtn-script', get_template_directory_uri() . '/navbtn.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'navbtn_scripts');
+
+// /*  存在しないページを指定された場合は 404 ページを表示する  */
+// function redirect_404() {
+//   //メインページ・シングルページ・アーカイブ・固定ページ 以外の指定の場合 404 ページを表示する
+//   if(is_home() || is_single() || is_category() || is_tag() || is_page()) {
+//     return;
+//   }
+//   include(TEMPLATEPATH . '/404.php');
+//   exit;
+// }
+// add_action('template_redirect', 'redirect_404');
