@@ -86,7 +86,7 @@
           ));
           if ($myposts) : ?>
 
-        <aside class="mymenu mymenu-thumb">
+        <aside class="mymenu mymenu-thumb mymenu-related">
           <h2>関連記事</h2>
           <ul>
             <?php foreach($myposts as $post): setup_postdata($post); ?>

@@ -791,6 +791,69 @@ blockquote:after {
   font-size: 12px;
 }
 
+.mymenu-related {
+  margin: 40px 0 0;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  background-color: : #f6f6f6;
+}
+
+.mymenu-related h2 {
+  padding: 0 0 0 7px;
+  border-left: 8px solid #bac6cb;
+  border-bottom: none;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.mymenu-related h2:before {
+  content: none;
+}
+
+.mymenu-related li a {
+  border: none;
+  color: #000000;
+}
+
+@media (max-width: 599px) {
+  .mymenu-related {
+    padding: 10px;
+  }
+  .mymenu-related li .thumb {
+    width: 80px;
+    height: 50px;
+  }
+  .mymenu-related li .text {
+    margin-left: 95px;
+  }
+}
+
+@media (min-width: 600px) {
+  .mymenu-related ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .mymenu-related li {
+    float: left;
+    width: 20%;
+    padding: 0 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+  }
+  .mymenu-related li .thumb {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+  .mymenu-related li .text {
+    margin-left: 0;
+  }
+}
+
+
+
 /*　------------------------　画像　------------------------　*/
 
 /* 画像のキャプション */
