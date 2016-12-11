@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 <div class="sub-header">
+  <div class="ad1">
+    <p><img src="" width=320 height="50" ></p>
+  </div>
 <div class="bread">
   <ol>
     <li>
