@@ -898,25 +898,27 @@ blockquote:after {
   clear: both;
 }
 
-.ad2 p {
+.ad2 {
   float: left;
   width 50%;
 }
 
-.ad3 p {
+.ad3 {
   float: right;
   width: 50%;
 }
 
 @media (max-width: 768px) {
   .ad2 {
-    margin-left: auto;
-    margin-right: auto;
+    float:none;
+    width:100%;
+  }
+  .ad2 p {
+    text-align: center;
   }
   .ad3 {
     display: none;
-  }
-}
+  }}
 
 
 
