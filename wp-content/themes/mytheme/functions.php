@@ -124,5 +124,15 @@ register_sidebar( array(
   'after_title' => '</h2>'
 ));
 
+register_sidebar( array(
+  'id' => 'ad',
+  'name' => '広告',
+  'description' => 'サイドバーに表示する広告を指定',
+  'before_widget' => '<aside id="%1$s" class="myad widget %2$s">',
+  'after_widget' => '</aside>',
+  'before_title' => '<h2 class="widgettitle">',
+  'after_title' => '</h2>'
+));
+
 // 検索フォーム
  add_theme_support ('html5', array('search-form'));

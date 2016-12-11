@@ -1,3 +1,5 @@
+<?php dynamic_sidebar('ad'); ?>
+
 <?php
   $location_name = 'pickup';
   $locations = get_nav_menu_locations();
