@@ -898,12 +898,12 @@ blockquote:after {
   clear: both;
 }
 
-.ad2 {
+.ad2 p {
   float: left;
   width 50%;
 }
 
-.ad3 {
+.ad3 p {
   float: right;
   width: 50%;
 }
