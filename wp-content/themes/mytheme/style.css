@@ -691,14 +691,13 @@ blockquote:after {
   border-radius: 5px;
 }
 
-/*.widget_archive li {
-  margin: 0;
-}*/
-
+/* テキストウィジェット */
 .widget_archive li a {
-  font-size: 14px;
+  font-size: 1px;
   padding: 3px 5px;
 }
+
+
 
 /*　------------------------　サイドバー　------------------------　*/
 
