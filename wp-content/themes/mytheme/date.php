@@ -41,4 +41,3 @@
 </div>
 
 <?php get_footer(); ?>
-Contact GitHub API Training Shop Blog About
