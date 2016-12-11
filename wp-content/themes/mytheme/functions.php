@@ -112,3 +112,14 @@ add_action( 'wp_enqueue_scripts', 'navbtn_scripts');
 
 // 前後の記事に関するメタデータの出力を禁止（Firefox対策）
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+// ウイジェットエリア
+register_sidebar( array(
+  'id' => 'submenu',
+  'name' => 'サブメニュー',
+  'description' => 'サイドバーに表示するウイジェットを指定',
+  'before_widget' => '<aside id="%1$s" class="mymenu widget %2$s">',
+  'after_widget' => '</aside>',
+  'before_title' => '<h2 class="widgettitle">',
+  'after_title' => '</h2>'
+));
