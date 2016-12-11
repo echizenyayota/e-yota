@@ -908,7 +908,7 @@ blockquote:after {
   width: 50%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .ad2 {
     margin-left: auto;
     margin-right: auto;
