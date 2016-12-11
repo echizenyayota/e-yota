@@ -12,6 +12,11 @@
 </div>
 </div>
 <div class="container">
+  <div class="container">
+    <div class="ad1">
+      <p><img src="" width=320 height="50" ></p>
+    </div>
+  </div>
   <div class="contents">
 
     <h1>"<?php echo get_search_query(); ?>"に関する記事</h1>
