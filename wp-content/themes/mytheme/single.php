@@ -55,11 +55,11 @@
         </div>
 
         <div class="google-ad">
-          <div class="ad1">
-            <img src="banner_1.png" width=300 height="250">
-          </div>
           <div class="ad2">
-            <img src="banner_2.png" width=300 height="250">
+            <img src="" width=300 height="250">
+          </div>
+          <div class="ad3">
+            <img src="" width=300 height="250">
           </div>
         </div>
 
