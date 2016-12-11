@@ -887,6 +887,25 @@ blockquote:after {
 }
 
 /* Google Adsence */
+
+.google-mobile {
+  padding: 0;
+}
+
+.google-mobile:after {
+  content:none;
+  display: block;
+  clear: both;
+}
+
+.ad1 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .ad1 {
+    display: none
+  }
+}
 .google-ad {
   padding: 15px 0;
   margin-bottom: 10px 0;
