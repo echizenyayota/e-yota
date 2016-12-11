@@ -682,6 +682,7 @@ blockquote:after {
 }
 
 .mymenu-large li a {
+  /*position: relative;*/
   margin-bottom: 10px;
   padding: 0px;
 }
@@ -698,10 +699,36 @@ blockquote:after {
 }
 
 .mymenu-large li .text {
+  /*position: absolute;*/
   padding: 5px 10px;
+  /*width: 100%;*/
   background-color: rgba(0,0,0,0.5);
   color: #ffffff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media(min-width: 400px) and (max-width: 767px) {
+  .mymenu-large ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .mymenu-large li {
+    float:left;
+    width:50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  /*.mymenu-large li:nth-child(odd) {
+    clear:both;
+    padding-right: 7px;
+  }
+  .mymenu-large li:nth-child(even) {
+    clear:both;
+    padding-left: 7px;
+  }*/
 }
 
 
