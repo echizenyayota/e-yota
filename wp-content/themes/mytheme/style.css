@@ -672,6 +672,25 @@ blockquote:after {
 
 }
 
+/* テキストウィジェット */
+.admin {
+  margin-left: 5px;
+}
+
+.textwidget {
+  font-size: 12px;
+  color: #000000;
+}
+
+.textwidget a {
+  /*text-decoration: none;*/
+  color: #000000;
+}
+
+.textwidget img {
+  border-radius: 5px;
+}
+
 
 /*　------------------------　サイドバー　------------------------　*/
 
