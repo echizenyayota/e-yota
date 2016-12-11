@@ -718,8 +718,8 @@ blockquote:after {
   .mymenu-large li {
     float:left;
     width:50%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    /*-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;*/
   }
   /*.mymenu-large li:nth-child(odd) {
     clear:both;
