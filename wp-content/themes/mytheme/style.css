@@ -882,6 +882,39 @@ blockquote:after {
   text-align: center;
 }
 
+/* Google Adsence */
+.google-ad {
+  padding: 15px 0;
+  margin-bottom: 10px 0;
+}
+
+.google-ad:after {
+  content:none;
+  display: block;
+  clear: both;
+}
+
+.ad1 {
+  float: left;
+  width 50%;
+}
+
+.ad2 {
+  float: right;
+  width: 50%;
+}
+
+@media (max-width: 599px) {
+  .ad1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ad2 {
+    display: none;
+  }
+}
+
+
 
 /*　------------------------　画像　------------------------　*/
 
