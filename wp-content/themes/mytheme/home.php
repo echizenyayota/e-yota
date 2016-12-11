@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 
 <div class="container">
+  <div class="ad1">
+    <p><img src="" width=320 height="50" ></p>
+  </div>
+</div>
+
+<div class="container">
   <div class="contents">
     <?php if (have_posts()): the_post(); ?>
       <?php get_template_part('gaiyou', 'large'); ?>
