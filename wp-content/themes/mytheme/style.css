@@ -897,10 +897,10 @@ blockquote:after {
 }
 
 /* アーカイブウィジェット */
-.widget_archive li a {
+/*.mymenu .widget .widget_archive li a {
   font-size: 12px;
   padding: 3px 5px;
-}
+}*/
 
 
 /* 広告 */
