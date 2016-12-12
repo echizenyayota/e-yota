@@ -59,6 +59,15 @@
           <?php the_content(); ?>
         </div>
 
+        <div class="google-ad">
+          <div class="ad2">
+            <p><img src="" width=300 height="250"></p>
+          </div>
+          <div class="ad3">
+            <p><img src="" width=300 height="250"></p>
+          </div>
+        </div>
+
         <div class="share">
           <ul>
             <li>
