@@ -85,7 +85,7 @@ function mythumb( $size ) {
     $postthumb = wp_get_attachment_image_src( $thumbid[1], $size);
     $url = $postthumb[0];
   } else {
-    $url = get_template_directory_uri() . '/picnic.jpg';
+    $url = get_template_directory_uri() . '/ecoteki-image.jpg';
   }
   return $url;
 }
