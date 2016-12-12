@@ -42,7 +42,7 @@
       )); ?>
     </div>
   </div>
-
+  
   <div class="sub">
     <?php get_sidebar(); ?>
   </div>
