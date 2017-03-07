@@ -97,6 +97,11 @@ function mythumb( $size ) {
   }
   return $url;
 }
+
+function the_mythumb() {
+  echo esc_url( mythumb() );
+}
+
 // カスタムメニュー
 register_nav_menu( 'sitenav', 'サイトナビゲーション');
 register_nav_menu( 'pickup', 'おすすめ記事');
