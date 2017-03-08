@@ -19,7 +19,7 @@
        setup_postdata($post); ?>
       <li>
         <a href="<?php the_permalink(); ?>">
-          <div class="thumb" style="background-image: url(<?php echo mythumb('medium'); ?>)"></div>
+          <div class="thumb" style="background-image: url(<?php echo the_mythumb('medium'); ?>)"></div>
           <div class="text">
             <?php the_title(); ?>
           </div>
