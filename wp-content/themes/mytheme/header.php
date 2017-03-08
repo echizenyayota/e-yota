@@ -24,7 +24,7 @@
     <meta property="og:title" content="<?php the_title(); ?>">
     <meta property="og:url" content="<?php the_permalink(); ?>">
     <meta property="og:description" content="<?php echo wp_trim_words ($post->post_content, 100, '...'); ?>">
-    <meta property="og:image" content="<?php echo mythumb( 'large' ); ?>">
+    <meta property="og:image" content="<?php echo the_mythumb( 'large' ); ?>">
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
   <?php if (is_home()): // トップページ用のメタデータ　?>
