@@ -46,7 +46,7 @@
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
         <a href="<?php the_permalink(); ?>">
-        <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
+        <div class="thumb" style="background-image: url(<?php echo the_mythumb('thumbnail'); ?>)"></div>
         <div class="text">
           <?php the_title(); ?>
           <?php if (has_category()) : ?>
