@@ -1,7 +1,7 @@
 <article <?php post_class('gaiyou-large'); ?>>
   <a href="<?php the_permalink(); ?>">
 
-    <div class="thumb" style="background-image: url(<?php echo mythumb('large'); ?>)"></div>
+    <div class="thumb" style="background-image: url(<?php echo the_mythumb('large'); ?>)"></div>
 
     <div class="text">
       <h1><?php the_title(); ?></h1>
