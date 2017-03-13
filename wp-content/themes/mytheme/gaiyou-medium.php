@@ -1,6 +1,6 @@
 <article <?php post_class('gaiyou'); ?>>
   <a href="<?php the_permalink(); ?>">
-    <img src="<?php echo mythumb('medium'); ?>">
+    <img src="<?php the_mythumb('medium'); ?>">
 
     <div class="text">
       <h1><?php the_title(); ?></h1>
