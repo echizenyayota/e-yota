@@ -98,7 +98,7 @@ function mythumb( $size ) {
   return $url;
 }
 
-// mythumb()関数の無害化
+// mythumb()関数をエスケープ
 function the_mythumb() {
   echo esc_url( mythumb() );
 }
