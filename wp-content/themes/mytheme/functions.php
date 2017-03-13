@@ -100,7 +100,7 @@ function mythumb( $size ) {
 
 // mythumb()関数の無害化
 function the_mythumb() {
-  echo esc_url( mythumb() );
+  echo esc_url( mythumb( $size ) );
 }
 
 // カスタムメニュー

@@ -356,3 +356,13 @@
 [24-Feb-2017 02:13:10 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 320
 [24-Feb-2017 02:13:11 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 500
 [24-Feb-2017 02:13:16 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 500
+[13-Mar-2017 12:32:44 UTC] PHP Warning:  Missing argument 1 for mythumb(), called in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 103 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 84
+[13-Mar-2017 12:32:44 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 93
+[13-Mar-2017 12:33:34 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 103
+[13-Mar-2017 12:33:43 UTC] PHP Warning:  Missing argument 1 for mythumb(), called in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 103 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 84
+[13-Mar-2017 12:33:43 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 93
+[13-Mar-2017 12:33:53 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 103
+[13-Mar-2017 12:40:50 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 103
+[13-Mar-2017 12:42:38 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/gaiyou-medium.php on line 1
+[13-Mar-2017 12:42:38 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 103
+[13-Mar-2017 12:42:49 UTC] PHP Notice:  Undefined variable: size in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 103

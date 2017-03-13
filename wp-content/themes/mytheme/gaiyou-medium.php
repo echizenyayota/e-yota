@@ -1,3 +1,4 @@
+<?php var_dump(the_mythumb()); exit; ?>
 <article <?php post_class('gaiyou'); ?>>
   <a href="<?php the_permalink(); ?>">
     <img src="<?php echo mythumb('medium'); ?>">
