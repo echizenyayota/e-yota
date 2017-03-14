@@ -50,7 +50,7 @@
           <div class="catch">
             <?php the_post_thumbnail( 'large' ); ?>
             <p class="wp-caption-text">
-              <?php echo get_post( get_post_thumbnail_id() )->post_excerpt; ?>
+              <?php echo esc_html( get_post( get_post_thumbnail_id() )->post_excerpt ); ?>
             </p>
           </div>
         <?php endif; ?>
