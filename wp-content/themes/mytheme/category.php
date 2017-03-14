@@ -16,6 +16,7 @@
           $catdata = get_category($cat);
         }
         if ($catdata->parent) {
+          // get_category_parentsはエスケープしない
           echo get_category_parents($catdata->parent, true, '</li><li>');
         }
       ?>
