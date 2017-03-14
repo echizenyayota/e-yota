@@ -39,8 +39,8 @@
     <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?php bloginfo('name'); ?>">
-    <?php $url = home_url(); ?>
-    <meta property="og:url" content="<?php echo $url; ?>">
+    <?php $url = esc_url( home_url() ); ?>
+    <meta property="og:url" content="<?php echo $url ; ?>">
     <meta property="og:description" content="<?php bloginfo('description'); ?>">
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/ecoteki-top.jpg">
   <?php endif; // トップページ用のメタデータ（ここまで）　?>
