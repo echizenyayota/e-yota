@@ -359,3 +359,4 @@
 [14-Mar-2017 04:21:11 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/gaiyou-medium.php on line 1
 [14-Mar-2017 04:22:25 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/gaiyou-medium.php on line 1
 [14-Mar-2017 04:37:50 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/gaiyou-medium.php on line 1
+[14-Mar-2017 08:29:16 UTC] PHP Warning:  Unexpected character in input:  '' (ASCII=8) state=0 in /var/www/wordpress/wp-content/themes/mytheme/category.php on line 20

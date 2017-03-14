@@ -16,8 +16,9 @@
           $catdata = get_category($cat);
         }
         if ($catdata->parent) {
-          // get_category_parentsはエスケープしない
-          echo get_category_parents($catdata->parent, true, '</li><li>');
+          // get_category_parentsでエスケープする
+          // echo get_category_parents($catdata->parent, true, '</li><li>');
+          echo esc_html ( get_category_parents($catdata->parent, true, '</li><li>') );
         }
       ?>
       <a><?php single_term_title(); ?></a>
