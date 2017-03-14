@@ -98,11 +98,7 @@ function mythumb( $size ) {
   return $url;
 }
 
-<<<<<<< HEAD
-// mythumb()関数をエスケープ
-=======
 // mythumb()関数の無害化 GitとGitHubの動作確認
->>>>>>> 9ab202e276773befe9170ee9b4ad7ee51bbd4c8b
 function the_mythumb() {
   echo esc_url( mythumb() );
 }
