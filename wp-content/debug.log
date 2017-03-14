@@ -358,3 +358,4 @@
 [24-Feb-2017 02:13:16 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 500
 [14-Mar-2017 04:21:11 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/gaiyou-medium.php on line 1
 [14-Mar-2017 04:22:25 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/gaiyou-medium.php on line 1
+[14-Mar-2017 04:37:50 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/gaiyou-medium.php on line 1
