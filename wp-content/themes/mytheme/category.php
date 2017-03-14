@@ -36,6 +36,7 @@
 
     <?php endwhile; endif; ?>
     <div class="pagination pagination-index">
+      <!-- paginate_linksはサニタイズしない -->
       <?php echo paginate_links( array(
         'type' => 'list',
         'end_size' => '2',
