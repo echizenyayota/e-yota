@@ -14,7 +14,7 @@
     <li>
       <?php if ( has_category()) : ?>
         <?php $postcat = get_the_category(); ?>
-        <?php echo get_category_parents( $postcat[0], true, '</li><li>'); ?>
+        <?php echo esc_html( get_category_parents( $postcat[0], true, '</li><li>') ); ?>
       <?php endif; ?>
       <a><?php the_title(); ?></a>
     </li>
