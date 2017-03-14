@@ -96,7 +96,7 @@ function mythumb( $size ) {
   } else {
     $url = get_template_directory_uri() . '/ecoteki-image.png';
   }
-  return $url;
+  return esc_url( $url );
 
 }
 
