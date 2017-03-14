@@ -73,7 +73,7 @@
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="<?php single_term_title(); ?> | <?php bloginfo('name'); ?>">
-    <meta property="og:url" content="<?php echo get_term_link($termid); ?>">
+    <meta property="og:url" content="<?php echo esc_url ( get_term_link($termid) ); ?>">
     <meta property="og:description" content="<?php single_term_title(); ?> に関する記事の一覧です。">
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/ecoteki-top.jpg">
 
