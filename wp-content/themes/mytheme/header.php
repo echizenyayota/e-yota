@@ -85,6 +85,7 @@
     <!-- 実際に運用するときにhttps://cards-dev.twitter.com/validatorに申請 -->
     <meta name="twitter:site" content="@echizenya_yota">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/ecoteki_favicon.ico" />
 
   <?php wp_head(); ?>
 </head>
