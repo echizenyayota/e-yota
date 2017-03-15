@@ -375,10 +375,11 @@ header, footer, .container, .sub-header {
 
 /* 番号なしリスト */
 .kiji-body ul {
-  list-style: none;
+  /*list-style: none;*/
 }
 
 .kiji-body li {
+  list-style: none;
   position: relative;
   padding-left: 20px;
 }
