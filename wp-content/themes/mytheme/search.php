@@ -3,7 +3,7 @@
 <div class="bread">
   <ol>
     <li>
-      <a href="<?php echo home_url(); ?>"><i class="fa fa-home"></i><span>TOP</span></a>
+      <a href="<?php echo esc_url( home_url() ); ?>"><i class="fa fa-home"></i><span>TOP</span></a>
     </li>
     <li>
       <a>検索結果</a>
