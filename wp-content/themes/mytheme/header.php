@@ -20,7 +20,7 @@
       <meta name="<?php echo esc_attr( 'keywords' ); ?>" content="<?php echo implode(',', $kwds); ?>">
     <?php endif; ?>
     <!-- 運用前に外部公開してhttps://developers.facebook.com/tools/debug/で確認。ローカル開発環境では確認できない -->
-    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="article">
+    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="<?php echo esc_attr( 'article' ); ?>">
     <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php the_title(); ?>">
     <meta property="<?php echo esc_attr( 'og:url' ); ?>" content="<?php the_permalink(); ?>">
     <meta property="<?php echo esc_attr( 'og:description' ); ?>" content="<?php echo wp_html_excerpt ($post->post_content, 100, '...'); ?>">
@@ -37,7 +37,7 @@
       }
     ?>
     <meta name="<?php echo esc_attr( 'keywords' ); ?>" content="<?php echo implode(',', $kwds); ?>">
-    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="website">
+    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="<?php echo esc_attr( 'website' ); ?>">
     <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php bloginfo('name'); ?>">
     <?php $url = esc_url( home_url() ); ?>
     <meta property="<?php echo esc_attr( 'og:url' ); ?>" content="<?php echo $url ; ?>">
@@ -71,7 +71,7 @@
 
     <meta name="<?php echo esc_attr( 'keywords' ); ?>" content="<?php echo implode(',', $kwds); ?>">
 
-    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="website">
+    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="<?php echo esc_attr( 'website' ); ?>">
     <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php single_term_title(); ?> | <?php bloginfo('name'); ?>">
     <meta property="<?php echo esc_attr( 'og:url' ); ?>" content="<?php echo esc_url ( get_term_link($termid) ); ?>">
     <meta property="<?php echo esc_attr( 'og:description' ); ?>" content="<?php single_term_title(); ?> に関する記事の一覧です。">
@@ -80,11 +80,11 @@
   <?php endif; // カテゴリー・タグ用のここまで　?>
 
     <meta property="<?php echo esc_attr( 'og:site_name' ); ?>" content="<?php bloginfo('name'); ?>">
-    <meta property="<?php echo esc_attr( 'og:locale' ); ?>" content="ja_jp">
+    <meta property="<?php echo esc_attr( 'og:locale' ); ?>" content="<?php echo esc_attr( 'ja_jp' ); ?>">
 
     <!-- 実際に運用するときにhttps://cards-dev.twitter.com/validatorに申請 -->
-    <meta name="<?php echo esc_attr( 'twitter:site' ); ?>" content="@echizenya_yota">
-    <meta name="<?php echo esc_attr( 'twitter:card' ); ?>" content="summary_large_image">
+    <meta name="<?php echo esc_attr( 'twitter:site' ); ?>" content="<?php echo esc_attr( '@echizenya_yota' ); ?>">
+    <meta name="<?php echo esc_attr( 'twitter:card' ); ?>" content="<?php echo esc_attr( 'summary_large_image' ); ?>">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/ecoteki_favicon.ico" />
 
   <?php wp_head(); ?>
