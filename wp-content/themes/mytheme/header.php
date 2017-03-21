@@ -20,11 +20,11 @@
       <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
     <?php endif; ?>
     <!-- 運用前に外部公開してhttps://developers.facebook.com/tools/debug/で確認。ローカル開発環境では確認できない -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="<?php the_title(); ?>">
-    <meta property="og:url" content="<?php the_permalink(); ?>">
-    <meta property="og:description" content="<?php echo wp_html_excerpt ($post->post_content, 100, '...'); ?>">
-    <meta property="og:image" content="<?php echo mythumb( 'large' ); ?>">
+    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="article">
+    <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php the_title(); ?>">
+    <meta property="<?php echo esc_attr( 'og:url' ); ?>" content="<?php the_permalink(); ?>">
+    <meta property="<?php echo esc_attr( 'og:description' ); ?>" content="<?php echo wp_html_excerpt ($post->post_content, 100, '...'); ?>">
+    <meta property="<?php echo esc_attr( 'og:image' ); ?>" content="<?php echo mythumb( 'large' ); ?>">
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
   <?php if (is_home()): // トップページ用のメタデータ　?>
@@ -37,12 +37,12 @@
       }
     ?>
     <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="<?php bloginfo('name'); ?>">
+    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="website">
+    <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php bloginfo('name'); ?>">
     <?php $url = esc_url( home_url() ); ?>
-    <meta property="og:url" content="<?php echo $url ; ?>">
-    <meta property="og:description" content="<?php bloginfo('description'); ?>">
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/ecoteki-top.jpg">
+    <meta property="<?php echo esc_attr( 'og:url' ); ?>" content="<?php echo $url ; ?>">
+    <meta property="<?php echo esc_attr( 'og:description' ); ?>" content="<?php bloginfo('description'); ?>">
+    <meta property="<?php echo esc_attr( 'og:image' ); ?>" content="<?php echo get_template_directory_uri(); ?>/ecoteki-top.jpg">
   <?php endif; // トップページ用のメタデータ（ここまで）　?>
 
   <?php if (is_category() || is_tag() ): // カテゴリー・タグ用のメタデータ ?>
@@ -58,7 +58,7 @@
         }
   ?>
 
-    <meta property="description" content="<?php single_term_title(); ?>に関する記事一覧です">
+    <meta property="<?php echo esc_attr( 'og:description' ); ?>" content="<?php single_term_title(); ?>に関する記事一覧です">
 
     <?php
       $categories = get_the_category();
@@ -71,16 +71,16 @@
 
     <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="<?php single_term_title(); ?> | <?php bloginfo('name'); ?>">
-    <meta property="og:url" content="<?php echo esc_url ( get_term_link($termid) ); ?>">
-    <meta property="og:description" content="<?php single_term_title(); ?> に関する記事の一覧です。">
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/ecoteki-top.jpg">
+    <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="website">
+    <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php single_term_title(); ?> | <?php bloginfo('name'); ?>">
+    <meta property="<?php echo esc_attr( 'og:url' ); ?>" content="<?php echo esc_url ( get_term_link($termid) ); ?>">
+    <meta property="<?php echo esc_attr( 'og:description' ); ?>" content="<?php single_term_title(); ?> に関する記事の一覧です。">
+    <meta property="<?php echo esc_attr( 'og:image' ); ?>" content="<?php echo get_template_directory_uri(); ?>/ecoteki-top.jpg">
 
   <?php endif; // カテゴリー・タグ用のここまで　?>
 
-    <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
-    <meta property="og:locale" content="ja_jp">
+    <meta property="<?php echo esc_attr( 'og:site_name' ); ?>" content="<?php bloginfo('name'); ?>">
+    <meta property="<?php echo esc_attr( 'og:locale' ); ?>" content="ja_jp">
 
     <!-- 実際に運用するときにhttps://cards-dev.twitter.com/validatorに申請 -->
     <meta name="twitter:site" content="@echizenya_yota">
