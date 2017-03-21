@@ -7,7 +7,7 @@
 
       <div class="kiji-date">
         <i class="fa fa-pencil"></i>
-        <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">投稿日:<?php echo get_the_date( 'Y-m-d' ); ?></time>
+        <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">投稿日:<?php echo get_the_date(); ?></time>
       </div>
 
       <?php the_excerpt(); ?>
