@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"
 
   <?php if ( is_single() || is_page() ) : // 記事の個別ページ用のメタデータ?>
-    <meta name="description" content="<?php echo wp_trim_words($post->post_content, 100, '...'); ?>">
+    <meta name="description" content="<?php echo wp_html_excerpt($post->post_content, 100, '...'); ?>">
     <?php if (has_tag()) : ?>
       <?php
         $tags = get_the_tags();
@@ -23,7 +23,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php the_title(); ?>">
     <meta property="og:url" content="<?php the_permalink(); ?>">
-    <meta property="og:description" content="<?php echo wp_trim_words ($post->post_content, 100, '...'); ?>">
+    <meta property="og:description" content="<?php echo wp_html_excerpt ($post->post_content, 100, '...'); ?>">
     <meta property="og:image" content="<?php echo mythumb( 'large' ); ?>">
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
