@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>"
 
   <?php if ( is_single() || is_page() ) : // 記事の個別ページ用のメタデータ?>
-    <meta name="description" content="<?php echo wp_html_excerpt($post->post_content, 100, '...'); ?>">
+    <meta name="<?php echo esc_attr( 'description' ); ?>" content="<?php echo wp_html_excerpt($post->post_content, 100, '...'); ?>">
     <?php if (has_tag()) : ?>
       <?php
         $tags = get_the_tags();
@@ -17,7 +17,7 @@
           $kwds[] = $tag->name;
         }
       ?>
-      <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
+      <meta name="<?php echo esc_attr( 'keywords' ); ?>" content="<?php echo implode(',', $kwds); ?>">
     <?php endif; ?>
     <!-- 運用前に外部公開してhttps://developers.facebook.com/tools/debug/で確認。ローカル開発環境では確認できない -->
     <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="article">
@@ -28,7 +28,7 @@
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
   <?php if (is_home()): // トップページ用のメタデータ　?>
-    <meta name="description" content="<?php bloginfo('description'); ?>">
+    <meta name="<?php echo esc_attr( 'description' ); ?>" content="<?php bloginfo('description'); ?>">
     <?php
       $allcats = get_categories();
       $kwds = [];
@@ -36,7 +36,7 @@
         $kwds[] = $allcat->name;
       }
     ?>
-    <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
+    <meta name="<?php echo esc_attr( 'keywords' ); ?>" content="<?php echo implode(',', $kwds); ?>">
     <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="website">
     <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php bloginfo('name'); ?>">
     <?php $url = esc_url( home_url() ); ?>
@@ -69,7 +69,7 @@
       }
     ?>
 
-    <meta name="keywords" content="<?php echo implode(',', $kwds); ?>">
+    <meta name="<?php echo esc_attr( 'keywords' ); ?>" content="<?php echo implode(',', $kwds); ?>">
 
     <meta property="<?php echo esc_attr( 'og:type' ); ?>" content="website">
     <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php single_term_title(); ?> | <?php bloginfo('name'); ?>">
@@ -83,8 +83,8 @@
     <meta property="<?php echo esc_attr( 'og:locale' ); ?>" content="ja_jp">
 
     <!-- 実際に運用するときにhttps://cards-dev.twitter.com/validatorに申請 -->
-    <meta name="twitter:site" content="@echizenya_yota">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="<?php echo esc_attr( 'twitter:site' ); ?>" content="@echizenya_yota">
+    <meta name="<?php echo esc_attr( 'twitter:card' ); ?>" content="summary_large_image">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/ecoteki_favicon.ico" />
 
   <?php wp_head(); ?>
