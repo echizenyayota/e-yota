@@ -35,7 +35,7 @@
 
         <div class="kiji-date">
           <i class="fa fa-pencil"></i>
-          <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
+          <time datetime="<?php the_time('c'); ?>">
             投稿日:<?php echo get_the_date(); ?>
           </time>
           <?php if (get_the_modified_date( 'Y-m-d' ) > get_the_date( 'Y-m-d' )) : ?>
