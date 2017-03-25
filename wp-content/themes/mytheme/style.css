@@ -1071,6 +1071,26 @@ iframe {
   background-color: #eeeeee;
 }
 
+.menu-item-has-children {
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ccc;
+}
+
+.sub-menu li {
+  position: relative;
+}
+
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
 @media (min-width: 768px) {
   /* サイト名とナビゲーションを横に並べる設定 */
   .header-inner:after {
