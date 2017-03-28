@@ -370,3 +370,4 @@
 [21-Mar-2017 07:02:26 UTC] PHP Parse error:  syntax error, unexpected '" content="' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /var/www/wordpress/wp-content/themes/mytheme/header.php on line 82
 [28-Mar-2017 07:25:54 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /var/www/wordpress/wp-content/themes/mytheme/single.php on line 58
 [28-Mar-2017 07:26:08 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /var/www/wordpress/wp-content/themes/mytheme/single.php on line 54
+[28-Mar-2017 08:29:18 UTC] PHP Notice:  Undefined offset: 1 in /var/www/wordpress/wp-admin/includes/dashboard.php on line 1227
