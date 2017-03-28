@@ -176,6 +176,7 @@ header, footer, .container, .sub-header {
   }
   .gaiyou h1 {
     font-size 16px;
+    word-wrap: break-word;
   }
   .gaiyou p {
     visibility: hidden;
@@ -247,6 +248,7 @@ header, footer, .container, .sub-header {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 36px;
+  word-wrap: break-word;
 }
 
 .kiji p {
