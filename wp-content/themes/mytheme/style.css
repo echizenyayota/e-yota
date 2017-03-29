@@ -715,7 +715,7 @@ blockquote:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  word-wrap: break-word;
+  /*word-wrap: break-word;*/
 }
 
 @media(min-width: 400px) and (max-width: 767px) {
