@@ -13,11 +13,12 @@ body {
   margin: 0;
   font-family: 'メイリオ','Hiragino Kaku Gothic Pro', 'sans-serif';
   line-height: 1.5;
+  word-wrap : break-word;
 }
 
-.text h1 {
+/*.text h1 {
   word-wrap: break-word;
-}
+}*/
 
 /*　------------------------　基本構造　------------------------　*/
 
@@ -251,7 +252,7 @@ header, footer, .container, .sub-header {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 36px;
-  word-wrap: break-word;
+  /*word-wrap: break-word;*/
 }
 
 .kiji p {
@@ -691,6 +692,7 @@ blockquote:after {
   /*position: relative;*/
   margin-bottom: 10px;
   padding: 0px;
+  width:100%;
 }
 
 .mymenu-large li a:hover {
