@@ -1106,9 +1106,9 @@ iframe {
     display:block;
     clear: both;
   }
-  /*.sub-menu {
+  .sub-menu ul {
     position: relative;
-  }*/
+  }
   .site {
     float: left;
     width: auto;
