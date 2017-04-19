@@ -1110,6 +1110,10 @@ iframe {
     スマホのナビメニューが被らないようにするがならない
     position: relative;
   }*/
+  /*.sub-menu li {
+    スマホのナビメニューが被らないようにするがならない
+    position: relative;
+  }*/
   .site {
     float: left;
     width: auto;
