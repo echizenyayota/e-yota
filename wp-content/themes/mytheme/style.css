@@ -1106,9 +1106,10 @@ iframe {
     display:block;
     clear: both;
   }
-  .sub-menu ul {
+  /*.sub-menu ul {
+    スマホのナビメニューが被らないようにするがならない
     position: relative;
-  }
+  }*/
   .site {
     float: left;
     width: auto;
