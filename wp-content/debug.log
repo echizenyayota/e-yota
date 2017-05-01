@@ -371,3 +371,7 @@
 [28-Mar-2017 07:25:54 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /var/www/wordpress/wp-content/themes/mytheme/single.php on line 58
 [28-Mar-2017 07:26:08 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /var/www/wordpress/wp-content/themes/mytheme/single.php on line 54
 [28-Mar-2017 08:29:18 UTC] PHP Notice:  Undefined offset: 1 in /var/www/wordpress/wp-admin/includes/dashboard.php on line 1227
+[28-Apr-2017 10:18:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /var/www/wordpress/wp-includes/wp-db.php on line 1538
+[28-Apr-2017 10:18:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /var/www/wordpress/wp-includes/wp-db.php on line 1568
+[28-Apr-2017 10:18:27 UTC] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /var/www/wordpress/wp-includes/wp-db.php on line 1568
+[01-May-2017 10:29:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/wordpress/wp-content/themes/mytheme/search.php on line 22
