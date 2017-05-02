@@ -376,3 +376,4 @@
 [28-Apr-2017 10:18:27 UTC] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /var/www/wordpress/wp-includes/wp-db.php on line 1568
 [01-May-2017 10:29:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/wordpress/wp-content/themes/mytheme/search.php on line 22
 [01-May-2017 11:18:35 UTC] PHP Notice:  Undefined offset: 1 in /var/www/wordpress/wp-admin/includes/dashboard.php on line 1227
+[02-May-2017 02:26:22 UTC] PHP Fatal error:  Call to undefined function get_search_title() in /var/www/wordpress/wp-content/themes/mytheme/search.php on line 25

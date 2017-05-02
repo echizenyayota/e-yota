@@ -22,6 +22,7 @@
     <h1>"
       <?php
         // echo esc_attr( get_search_query() );
+        // get_search_query();
         the_search_query();
       ?>"
     に関する記事
