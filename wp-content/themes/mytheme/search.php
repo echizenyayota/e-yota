@@ -19,7 +19,13 @@
   </div>
   <div class="contents">
 
-    <h1>"<?php echo esc_attr( get_search_query() ); ?>"に関する記事</h1>
+    <h1>"
+      <?php
+        the_search_query();
+      ?>
+      "に関する記事
+
+    </h1>
 
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
 
@@ -28,7 +34,7 @@
     <?php endwhile; ?>
 
     <?php else: ?>
-      <p>お探しの記事は見つかりませんでした。</p>
+      <p>お探しのキーワードに関する記事は見つかりませんでした。</p>
       <?php get_search_form(); ?>
     <?php endif; ?>
     <div class="pagination pagination-index">
