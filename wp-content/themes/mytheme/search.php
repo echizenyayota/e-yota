@@ -19,13 +19,18 @@
   </div>
   <div class="contents">
 
-    <h1>"<?php echo  esc_attr( get_search_query() ); ?>"に関する記事</h1>
+    <h1>"<?php echo esc_attr( get_search_query() ); ?>"に関する記事</h1>
 
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
 
       <?php get_template_part('gaiyou', 'medium'); ?>
 
-    <?php endwhile; endif; ?>
+    <?php endwhile; ?>
+
+    <?php else: ?>
+      <p>お探しの記事は見つかりませんでした。</p>
+      <?php get_search_form(); ?>
+    <?php endif; ?>
     <div class="pagination pagination-index">
       <?php echo paginate_links( array(
         'type' => 'list',
