@@ -11,16 +11,18 @@
       <a href="<?php echo esc_url(home_url()); ?>"><i class="fa fa-home"></i><span>TOP</span></a>
     </li>
     <li>
-      <?php
-        if ($cat) {
-          $catdata = get_category($cat);
-        }
-        if ($catdata->parent) {
-          // get_category_parentsでエスケープする
-          // echo get_category_parents($catdata->parent, true, '</li><li>');
-          echo esc_html ( get_category_parents($catdata->parent, true, '</li><li>') );
-        }
-      ?>
+      <a href="
+        <?php
+          if ($cat) {
+            $catdata = get_category($cat);
+          }
+          if ($catdata->parent) {
+            // get_category_parentsでエスケープする
+            // echo get_category_parents($catdata->parent, true, '</li><li>');
+            echo esc_html ( get_category_parents($catdata->parent, true, '</li><li>') );
+          }
+        ?>
+      "></a>
       <a><?php single_term_title(); ?></a>
     </li>
 </ol>
