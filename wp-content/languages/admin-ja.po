@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-03 15:13:35+0000\n"
+"PO-Revision-Date: 2017-06-19 07:12:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -225,6 +225,10 @@ msgstr "開発者をより一層ハッピーに %s"
 #: wp-admin/users.php:167 wp-admin/users.php:207
 msgid "Sorry, you are not allowed to delete users."
 msgstr "ユーザーを削除する権限がありません。"
+
+#: wp-admin/user-new.php:23 wp-admin/user-new.php:117
+msgid "Sorry, you are not allowed to create users."
+msgstr "ユーザーを作成する権限がありません。"
 
 #: wp-admin/customize.php:163
 msgid "The Customizer allows you to preview changes to your site before publishing them. You can navigate to different pages on your site within the preview. Edit shortcuts are shown for some editable elements."
@@ -466,9 +470,9 @@ msgstr "インストール済みプラグインの検索ではプラグイン名
 msgid "Custom Logo"
 msgstr "カスタムロゴ"
 
-#: wp-admin/user-new.php:23 wp-admin/user-new.php:117
-msgid "Sorry, you are not allowed to create users."
-msgstr "ユーザーを作成する権限がありません。"
+#: wp-admin/users.php:317 wp-admin/users.php:348
+msgid "Sorry, you are not allowed to remove users."
+msgstr "ユーザーを削除する権限がありません。"
 
 #: wp-admin/user-new.php:16 wp-admin/user-new.php:56
 msgid "Sorry, you are not allowed to add users to this network."
@@ -660,10 +664,6 @@ msgstr "現在のエディターの内容を最新のバックアップで置き
 #: wp-admin/includes/template.php:1523
 msgid "Close media attachment panel"
 msgstr "メディア添付パネルを閉じる"
-
-#: wp-admin/users.php:317 wp-admin/users.php:348
-msgid "Sorry, you are not allowed to remove users."
-msgstr "ユーザーを削除する権限がありません。"
 
 #: wp-admin/includes/ms.php:1096
 msgid "Info"
@@ -2020,7 +2020,7 @@ msgstr "https://wpdocs.osdn.jp/First_Steps_With_WordPress"
 
 #: wp-admin/edit-form-advanced.php:436
 msgid "<strong>Format</strong> &mdash; Post Formats designate how your theme will display a specific post. For example, you could have a <em>standard</em> blog post with a title and paragraphs, or a short <em>aside</em> that omits the title and contains a short text blurb. Please refer to the Codex for <a href=\"https://codex.wordpress.org/Post_Formats#Supported_Formats\">descriptions of each post format</a>. Your theme could enable all or some of 10 possible formats."
-msgstr "<strong>フォーマット</strong> &mdash; 投稿フォーマットはある投稿がテーマでどのように表示されるかを指定します。たとえば、<em>標準</em>フォーマットのブログ投稿ではタイトルと段落が表示され、<em>アサイド</em>フォーマットではタイトル部分は省略し、短いテキストのみが表示されるという具合です。Codex の<a href=\"http://wpdocs.sourceforge.jp/Post_Formats#Supported_Formats\">各投稿フォーマットの説明</a>を参考にしてください。テーマ内では10個のフォーマットすべて、または一部のみを有効化できます。"
+msgstr "<strong>フォーマット</strong> &mdash; 投稿フォーマットはある投稿がテーマでどのように表示されるかを指定します。たとえば、<em>標準</em>フォーマットのブログ投稿ではタイトルと段落が表示され、<em>アサイド</em>フォーマットではタイトル部分は省略し、短いテキストのみが表示されるという具合です。Codex の<a href=\"https://wpdocs.osdn.jp/Post_Formats#Supported_Formats\">各投稿フォーマットの説明</a>を参考にしてください。テーマ内では10個のフォーマットすべて、または一部のみを有効化できます。"
 
 #: wp-admin/options-writing.php:177
 msgid "WordPress is not notifying any <a href=\"https://codex.wordpress.org/Update_Services\">Update Services</a> because of your site&#8217;s <a href=\"%s\">visibility settings</a>."
@@ -2032,7 +2032,7 @@ msgstr "<a href=\"https://wpdocs.osdn.jp/Posts_Tags_Screen\">タグの解説</a>
 
 #: wp-admin/options-writing.php:45
 msgid "<a href=\"https://codex.wordpress.org/Settings_Writing_Screen\">Documentation on Writing Settings</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Settings_Writing_Screen\">投稿設定の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Settings_Writing_Screen\">投稿設定の解説</a>"
 
 #: wp-admin/edit-form-advanced.php:396
 msgid "<a href=\"https://codex.wordpress.org/Pages_Add_New_Screen\">Documentation on Adding New Pages</a>"
@@ -2056,238 +2056,238 @@ msgstr "<a href=\"https://wpdocs.osdn.jp/Appearance_Background_SubPanel\">カス
 
 #: wp-admin/plugin-editor.php:155
 msgid "<a href=\"https://codex.wordpress.org/Plugins_Editor_Screen\">Documentation on Editing Plugins</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Plugins_Editor_SubPanel\">プラグイン編集の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Plugins_Editor_SubPanel\">プラグイン編集の解説</a>"
 
 #: wp-admin/widgets.php:76
 msgid "<a href=\"https://codex.wordpress.org/Appearance_Widgets_Screen\">Documentation on Widgets</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Appearance_Widgets_SubPanel\">ウィジェットの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Appearance_Widgets_SubPanel\">ウィジェットの解説</a>"
 
 #: wp-admin/index.php:98
 msgid "<a href=\"https://codex.wordpress.org/Dashboard_Screen\">Documentation on Dashboard</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Dashboard_Screen#Dashboard\">ダッシュボードの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Dashboard_Screen\">ダッシュボードの解説</a>"
 
 #: wp-admin/edit-tags.php:268
 msgid "<a href=\"https://codex.wordpress.org/Links_Link_Categories_Screen\">Documentation on Link Categories</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Links_Link_Categories_SubPanel\">リンクカテゴリーの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Links_Link_Categories_SubPanel\">リンクカテゴリーの解説</a>"
 
 #: wp-admin/edit.php:228
 msgid "<a href=\"https://codex.wordpress.org/Posts_Screen\">Documentation on Managing Posts</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Posts_Edit_SubPanel\">投稿管理の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Posts_Edit_SubPanel\">投稿管理の解説</a>"
 
 #: wp-admin/edit-tags.php:266
 msgid "<a href=\"https://codex.wordpress.org/Posts_Categories_Screen\">Documentation on Categories</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Posts_Categories_SubPanel\">カテゴリーの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Posts_Categories_SubPanel\">カテゴリーの解説</a>"
 
 #: wp-admin/plugin-install.php:98
 msgid "<a href=\"https://codex.wordpress.org/Plugins_Add_New_Screen\">Documentation on Installing Plugins</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Plugins_Add_New_SubPanel\"> プラグイン新規追加の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Plugins_Add_New_SubPanel\">プラグイン新規追加の解説</a>"
 
 #: wp-admin/user-new.php:213
 msgid "<a href=\"https://codex.wordpress.org/Users_Add_New_Screen\">Documentation on Adding New Users</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Users_Add_New_SubPanel\">ユーザー新規追加の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Users_Add_New_SubPanel\">ユーザー新規追加の解説</a>"
 
 #: wp-admin/options-reading.php:38
 msgid "<a href=\"https://codex.wordpress.org/Settings_Reading_Screen\">Documentation on Reading Settings</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Settings_Reading_SubPanel\">表示設定の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Settings_Reading_SubPanel\">表示設定の解説</a>"
 
 #: wp-admin/edit-link-form.php:65
 msgid "<a href=\"https://codex.wordpress.org/Links_Add_New_Screen\">Documentation on Creating Links</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Links_Add_New_Screen\">リンクの新規追加の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Links_Add_New_Screen\">リンク新規追加の解説</a>"
 
 #: wp-admin/options-discussion.php:28
 msgid "<a href=\"https://codex.wordpress.org/Settings_Discussion_Screen\">Documentation on Discussion Settings</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Settings_Discussion_SubPanel\">ディスカッション設定の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Settings_Discussion_SubPanel\">ディスカッション設定の解説</a>"
 
 #: wp-admin/options-permalink.php:44
 msgid "<a href=\"https://codex.wordpress.org/Settings_Permalinks_Screen\">Documentation on Permalinks Settings</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Settings_Permalinks_SubPanel\">パーマリンク設定の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Settings_Permalinks_SubPanel\">パーマリンク設定の解説</a>"
 
 #: wp-admin/user-edit.php:61
 msgid "<a href=\"https://codex.wordpress.org/Users_Your_Profile_Screen\">Documentation on User Profiles</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Users_Your_Profile_SubPanel\">ユーザープロフィールの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Users_Your_Profile_SubPanel\">ユーザープロフィールの解説</a>"
 
 #: wp-admin/media-new.php:56
 msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen\">Documentation on Uploading Media Files</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Media_Add_New_SubPanel\">メディアファイルのアップロードについて</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Media_Add_New_SubPanel\">メディアファイルのアップロードの解説</a>"
 
 #: wp-admin/users.php:67
 msgid "<a href=\"https://codex.wordpress.org/Users_Screen\">Documentation on Managing Users</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Users_Authors_and_Users_SubPanel\">ユーザー管理の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Users_Authors_and_Users_SubPanel\">ユーザー管理の解説</a>"
 
 #: wp-admin/comment.php:51 wp-admin/edit-comments.php:185
 msgid "<a href=\"https://codex.wordpress.org/Administration_Screens#Comments\">Documentation on Comments</a>"
-msgstr "<a href=\"http://wpdocs.sourceforge.jp/Administration_Screens#Comments\">コメントの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Administration_Screens#Comments\">コメントの解説</a>"
 
 #: wp-admin/edit-form-advanced.php:381
 msgid "<a href=\"https://codex.wordpress.org/Posts_Add_New_Screen\">Documentation on Writing and Editing Posts</a>"
-msgstr "<a href=\"http://wpdocs.sourceforge.jp/Posts_Add_New_SubPanel\">投稿と編集の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Posts_Add_New_SubPanel\">投稿と編集の解説</a>"
 
 #: wp-admin/update-core.php:575
 msgid "<a href=\"https://codex.wordpress.org/Dashboard_Updates_Screen\">Documentation on Updating WordPress</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Tools_Upgrade_SubPanel\">WordPress のアップグレードについて</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Tools_Upgrade_SubPanel\">WordPress のアップグレードの解説</a>"
 
 #: wp-admin/options-media.php:34
 msgid "<a href=\"https://codex.wordpress.org/Settings_Media_Screen\">Documentation on Media Settings</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Settings_Media_SubPanel\">メディア設定の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Settings_Media_SubPanel\">メディア設定の解説</a>"
 
 #: wp-admin/options-general.php:45
 msgid "<a href=\"https://codex.wordpress.org/Settings_General_Screen\">Documentation on General Settings</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Settings_General_SubPanel\">一般設定の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Settings_General_SubPanel\">一般設定の解説</a>"
 
 #: wp-admin/export.php:54
 msgid "<a href=\"https://codex.wordpress.org/Tools_Export_Screen\">Documentation on Export</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Tools_Export_SubPanel\">エクスポートの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Tools_Export_SubPanel\">エクスポートの解説</a>"
 
 #: wp-admin/link-manager.php:66
 msgid "<a href=\"https://codex.wordpress.org/Links_Screen\">Documentation on Managing Links</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Links_Edit_SubPanel\">リンク管理の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Links_Edit_SubPanel\">リンク管理の解説</a>"
 
 #: wp-admin/custom-header.php:127
 msgid "<a href=\"https://codex.wordpress.org/Appearance_Header_Screen\">Documentation on Custom Header</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Appearance_Header_SubPanel\">ヘッダーのカスタマイズについて</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Appearance_Header_SubPanel\">ヘッダーカスタマイズの解説</a>"
 
 #: wp-admin/tools.php:28
 msgid "<a href=\"https://codex.wordpress.org/Tools_Screen\">Documentation on Tools</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Tools_SubPanel\">ツールの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Tools_SubPanel\">ツールの解説</a>"
 
 #: wp-admin/upload.php:66 wp-admin/upload.php:212
 msgid "<a href=\"https://codex.wordpress.org/Media_Library_Screen\">Documentation on Media Library</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Media_Library_SubPanel\">メディアライブラリの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Media_Library_SubPanel\">メディアライブラリの解説</a>"
 
 #: wp-admin/edit-form-advanced.php:397
 msgid "<a href=\"https://codex.wordpress.org/Pages_Screen#Editing_Individual_Pages\">Documentation on Editing Pages</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Pages_Edit_SubPanel#Editing_Individual_Pages\">固定ページ編集の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Pages_Edit_SubPanel#Editing_Individual_Pages\">固定ページ編集の解説</a>"
 
 #: wp-admin/edit-form-advanced.php:413 wp-admin/media.php:83
 msgid "<a href=\"https://codex.wordpress.org/Media_Add_New_Screen#Edit_Media\">Documentation on Edit Media</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Media_Add_New_SubPanel#Edit_Media\">メディア編集の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Media_Add_New_SubPanel#Edit_Media\">メディア編集の解説</a>"
 
 #: wp-admin/users.php:68
 msgid "<a href=\"https://codex.wordpress.org/Roles_and_Capabilities\">Descriptions of Roles and Capabilities</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Roles_and_Capabilities\">ユーザーの種類と権限の説明</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Roles_and_Capabilities\">ユーザーの種類と権限の説明</a>"
 
 #: wp-admin/options-permalink.php:45
 msgid "<a href=\"https://codex.wordpress.org/Using_Permalinks\">Documentation on Using Permalinks</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Using_Permalinks\">パーマリンクの使い方の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Using_Permalinks\">パーマリンクの使い方の解説</a>"
 
 #: wp-admin/edit-comments.php:187
 msgid "<a href=\"https://codex.wordpress.org/Keyboard_Shortcuts\">Documentation on Keyboard Shortcuts</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Keyboard_Shortcuts\">キーボードショートカットの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Keyboard_Shortcuts\">キーボードショートカットの解説</a>"
 
 #: wp-admin/plugin-editor.php:156
 msgid "<a href=\"https://codex.wordpress.org/Writing_a_Plugin\">Documentation on Writing Plugins</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Writing_a_Plugin\">プラグイン作成の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Writing_a_Plugin\">プラグイン作成の解説</a>"
 
 #: wp-admin/my-sites.php:47
 msgid "<a href=\"https://codex.wordpress.org/Dashboard_My_Sites_Screen\">Documentation on My Sites</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Dashboard_My_Sites_SubScreen\">参加サイトの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Dashboard_My_Sites_SubScreen\">参加サイトの解説</a>"
 
 #: wp-admin/user-edit.php:273
 msgid "<a href=\"https://codex.wordpress.org/Keyboard_Shortcuts\" target=\"_blank\">More information</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Keyboard_Shortcuts\" target=\"_blank\">詳細情報</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Keyboard_Shortcuts\" target=\"_blank\">詳細情報</a>"
 
 #: wp-admin/edit-comments.php:186
 msgid "<a href=\"https://codex.wordpress.org/Comment_Spam\">Documentation on Comment Spam</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Comment_Spam\">コメントスパムの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Comment_Spam\">コメントスパムの解説</a>"
 
 #: wp-admin/options-general.php:342
 msgid "<a href=\"https://codex.wordpress.org/Formatting_Date_and_Time\">Documentation on date and time formatting</a>."
-msgstr "<a href=\"http://wpdocs.osdn.jp/Formatting_Date_and_Time\">日付と時刻の書式の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Formatting_Date_and_Time\">日付と時刻の書式の解説</a>"
 
 #: wp-admin/update-core.php:183
 msgid "<strong>Important:</strong> before updating, please <a href=\"https://codex.wordpress.org/WordPress_Backups\">back up your database and files</a>. For help with updates, visit the <a href=\"https://codex.wordpress.org/Updating_WordPress\">Updating WordPress</a> Codex page."
-msgstr "<strong>重要:</strong> 更新の前に<a href=\"http://wpdocs.osdn.jp/WordPress_Backups\">データベースとファイルをバックアップ</a>してください。更新についてヘルプが必要な際は <a href=\"http://wpdocs.osdn.jp/Updating_WordPress\">WordPress のアップグレード</a> Codex ページをご覧ください。"
+msgstr "<strong>重要:</strong> 更新の前に<a href=\"https://wpdocs.osdn.jp/WordPress_Backups\">データベースとファイルをバックアップ</a>してください。更新についてヘルプが必要な際は <a href=\"https://wpdocs.osdn.jp/Updating_WordPress\">WordPress のアップグレード</a> Codex ページをご覧ください。"
 
 #: wp-admin/theme-install.php:119
 msgid "<a href=\"https://codex.wordpress.org/Using_Themes#Adding_New_Themes\">Documentation on Adding New Themes</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Using_Themes#Adding_New_Themes\">新規テーマ追加の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Using_Themes#Adding_New_Themes\">新規テーマ追加の解説</a>"
 
 #: wp-admin/theme-editor.php:39
 msgid "<a href=\"https://codex.wordpress.org/Theme_Development\">Documentation on Theme Development</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Theme_Development\">テーマ開発の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Theme_Development\">テーマ開発の解説</a>"
 
 #: wp-admin/theme-editor.php:40 wp-admin/themes.php:118
 msgid "<a href=\"https://codex.wordpress.org/Using_Themes\">Documentation on Using Themes</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Using_Themes\">テーマ利用の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Using_Themes\">テーマ利用の解説</a>"
 
 #: wp-admin/theme-editor.php:41
 msgid "<a href=\"https://codex.wordpress.org/Editing_Files\">Documentation on Editing Files</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Editing_Files\">ファイル編集の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Editing_Files\">ファイル編集の解説</a>"
 
 #: wp-admin/theme-editor.php:42
 msgid "<a href=\"https://codex.wordpress.org/Template_Tags\">Documentation on Template Tags</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Template_Tags\">テンプレートタグの解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Template_Tags\">テンプレートタグの解説</a>"
 
 #: wp-admin/plugins.php:417
 msgid "<a href=\"https://codex.wordpress.org/Managing_Plugins#Plugin_Management\">Documentation on Managing Plugins</a>"
-msgstr "<a href=\"http://wpdocs.osdn.jp/Managing_Plugins#Plugin_Management\">プラグイン管理の解説</a>"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Managing_Plugins#Plugin_Management\">プラグイン管理の解説</a>"
 
 #. translators: %s: the option/setting
 #: wp-admin/options.php:205
 msgid "The %s setting is unregistered. Unregistered settings are deprecated. See https://codex.wordpress.org/Settings_API"
-msgstr "設定 <code>%1$s</code> は登録されていません。未登録設定は非推奨です。http://wpdocs.osdn.jp/Settings_API をご覧ください。"
+msgstr "設定 <code>%1$s</code> は登録されていません。未登録設定は非推奨です。https://wpdocs.osdn.jp/Settings_API をご覧ください。"
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Minimum required MySQL version number, 4: Current PHP version
 #. number, 5: Current MySQL version number
 #: wp-admin/update-core.php:72 wp-admin/upgrade.php:81
 msgid "You cannot update because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
-msgstr "<a href=\"http://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降、MySQL %3$s 以降を必要とするため、更新を実行できません。現在稼働している PHP のバージョンは %4$s、MySQL のバージョンは %5$s です。"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降、MySQL %3$s 以降を必要とするため、更新を実行できません。現在稼働している PHP のバージョンは %4$s、MySQL のバージョンは %5$s です。"
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Current PHP version number
 #: wp-admin/update-core.php:75 wp-admin/upgrade.php:83
 msgid "You cannot update because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
-msgstr "<a href=\"http://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降を必要とするため、更新を実行できません。現在稼働しているバージョンは %3$s です。"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降を必要とするため、更新を実行できません。現在稼働しているバージョンは %3$s です。"
 
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number, 3: Current MySQL version number
 #: wp-admin/update-core.php:78 wp-admin/upgrade.php:85
 msgid "You cannot update because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
-msgstr "<a href=\"http://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は MySQL %2$s 以降を必要とするため、更新を実行できません。現在稼働しているバージョンは %3$s です。"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は MySQL %2$s 以降を必要とするため、更新を実行できません。現在稼働しているバージョンは %3$s です。"
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Minimum required MySQL version number, 4: Current PHP version
 #. number, 5: Current MySQL version number
 #: wp-admin/install.php:237
 msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
-msgstr "<a href=\"http://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降、MySQL %3$s 以降を必要とするため、インストールを実行できません。現在稼働している PHP のバージョンは %4$s、MySQL のバージョンは %5$s です。"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降、MySQL %3$s 以降を必要とするため、インストールを実行できません。現在稼働している PHP のバージョンは %4$s、MySQL のバージョンは %5$s です。"
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Current PHP version number
 #: wp-admin/install.php:240
 msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires PHP version %2$s or higher. You are running version %3$s."
-msgstr "<a href=\"http://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降を必要とするため、インストールを実行できません。現在稼働しているバージョンは %3$s です。"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は PHP %2$s 以降を必要とするため、インストールを実行できません。現在稼働しているバージョンは %3$s です。"
 
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number, 3: Current MySQL version number
 #: wp-admin/install.php:243
 msgid "You cannot install because <a href=\"https://codex.wordpress.org/Version_%1$s\">WordPress %1$s</a> requires MySQL version %2$s or higher. You are running version %3$s."
-msgstr "<a href=\"http://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は MySQL %2$s 以降を必要とするため、インストールを実行できません。現在稼働しているバージョンは %3$s です。"
+msgstr "<a href=\"https://wpdocs.osdn.jp/Version_%1$s\">WordPress %1$s</a> は MySQL %2$s 以降を必要とするため、インストールを実行できません。現在稼働しているバージョンは %3$s です。"
 
 #: wp-admin/widgets.php:81
 msgid "The theme you are currently using isn&#8217;t widget-aware, meaning that it has no sidebars that you are able to change. For information on making your theme widget-aware, please <a href=\"https://codex.wordpress.org/Widgetizing_Themes\">follow these instructions</a>."
-msgstr "現在使用中のテーマはウィジェットに対応していないため、このままではサイドバーの変更はできません。ウィジェットに対応するようにテーマを修正するには<a href=\"http://wpdocs.osdn.jp/Widgetizing_Themes\">こちらの解説を参照してください</a>。"
+msgstr "現在使用中のテーマはウィジェットに対応していないため、このままではサイドバーの変更はできません。ウィジェットに対応するようにテーマを修正するには<a href=\"https://wpdocs.osdn.jp/Widgetizing_Themes\">こちらの解説を参照してください</a>。"
 
 #: wp-admin/plugin-editor.php:292 wp-admin/theme-editor.php:279
 msgid "You need to make this file writable before you can save your changes. See <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">the Codex</a> for more information."
-msgstr "変更を保存するには事前にこのファイルを書き込み可能にする必要があります。詳しい情報は <a href=\"http://wpdocs.osdn.jp/Changing_File_Permissions\">Codex</a> を参照してください。"
+msgstr "変更を保存するには事前にこのファイルを書き込み可能にする必要があります。詳しい情報は <a href=\"https://wpdocs.osdn.jp/Changing_File_Permissions\">Codex</a> を参照してください。"
 
 #: wp-admin/options-writing.php:171
 msgid "When you publish a new post, WordPress automatically notifies the following site update services. For more about this, see <a href=\"https://codex.wordpress.org/Update_Services\">Update Services</a> on the Codex. Separate multiple service URLs with line breaks."
-msgstr "新しい投稿を公開すると、WordPress は次のサイト更新情報サービスに自動的に通知します。詳細は Codex の <a href=\"http://wpdocs.osdn.jp/Update_Services\">Update Services</a> を参照してください。複数のサービスの URL を入力する場合は改行で区切ります。"
+msgstr "新しい投稿を公開すると、WordPress は次のサイト更新情報サービスに自動的に通知します。詳細は Codex の <a href=\"https://wpdocs.osdn.jp/Update_Services\">Update Services</a> を参照してください。複数のサービスの URL を入力する場合は改行で区切ります。"
 
 #: wp-admin/options-permalink.php:257
 msgid "If your <code>.htaccess</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so these are the mod_rewrite rules you should have in your <code>.htaccess</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all."
-msgstr "<code>.htaccess</code> が<a href=\"http://wpdocs.osdn.jp/Changing_File_Permissions\">書き込み可能</a>ならこの操作は自動的に行われますが、そうでない場合は <code>.htaccess</code> ファイルに mod_rewrite ルールを書き込む必要があります。以下のフィールドをクリックし、<kbd>CTRL + a</kbd> ですべてのコードを選択してください。"
+msgstr "<code>.htaccess</code> が<a href=\"https://wpdocs.osdn.jp/Changing_File_Permissions\">書き込み可能</a>ならこの操作は自動的に行われますが、そうでない場合は <code>.htaccess</code> ファイルに mod_rewrite ルールを書き込む必要があります。以下のフィールドをクリックし、<kbd>CTRL + a</kbd> ですべてのコードを選択してください。"
 
 #: wp-admin/options-permalink.php:245
 msgid "If the root directory of your site were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so this is the url rewrite rule you should have in your <code>web.config</code> file. Create a new file, called <code>web.config</code> in the root directory of your site. Click in the field and press <kbd>CTRL + a</kbd> to select all. Then insert this code into the <code>web.config</code> file."
-msgstr "サイトのルートディレクトリが<a href=\"http://wpdocs.osdn.jp/Changing_File_Permissions\">書き込み可能</a>な場合はこの作業を自動に行うことができます。そうでない場合は以下の URL リライトルールを書き込んだ <code>web.config</code> というファイルを作成し、ルートディレクトリに置いてください。以下のフィールド内でクリックし、<kbd>Ctrl + a</kbd> を同時に押せばフィールドの内容をすべてを選択できます。その後、このコードを <code>web.config</code> ファイルに挿入してください。"
+msgstr "サイトのルートディレクトリが<a href=\"https://wpdocs.osdn.jp/Changing_File_Permissions\">書き込み可能</a>な場合はこの作業を自動に行うことができます。そうでない場合は以下の URL リライトルールを書き込んだ <code>web.config</code> というファイルを作成し、ルートディレクトリに置いてください。以下のフィールド内でクリックし、<kbd>Ctrl + a</kbd> を同時に押せばフィールドの内容をすべてを選択できます。その後、このコードを <code>web.config</code> ファイルに挿入してください。"
 
 #: wp-admin/options-permalink.php:238
 msgid "If your <code>web.config</code> file were <a href=\"https://codex.wordpress.org/Changing_File_Permissions\">writable</a>, we could do this automatically, but it isn&#8217;t so this is the url rewrite rule you should have in your <code>web.config</code> file. Click in the field and press <kbd>CTRL + a</kbd> to select all. Then insert this rule inside of the <code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code> element in <code>web.config</code> file."
-msgstr "<code>web.config</code> ファイルが<a href=\"http://wpdocs.osdn.jp/Changing_File_Permissions\">書き込み可能</a>ならこの操作は自動的に行われますが、そうでない場合は URL リライトルールを自分で書き込む必要があります。このフィールドをクリックし、<kbd>CTRL + a</kbd> ですべてのコードを選択して、<code>web.config</code> ファイルの <code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code> 要素に挿入してください。"
+msgstr "<code>web.config</code> ファイルが<a href=\"https://wpdocs.osdn.jp/Changing_File_Permissions\">書き込み可能</a>ならこの操作は自動的に行われますが、そうでない場合は URL リライトルールを自分で書き込む必要があります。このフィールドをクリックし、<kbd>CTRL + a</kbd> ですべてのコードを選択して、<code>web.config</code> ファイルの <code>/&lt;configuration&gt;/&lt;system.webServer&gt;/&lt;rewrite&gt;/&lt;rules&gt;</code> 要素に挿入してください。"
 
 #: wp-admin/includes/meta-boxes.php:628 wp-admin/includes/meta-boxes.php:682
 msgid "https://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments"
