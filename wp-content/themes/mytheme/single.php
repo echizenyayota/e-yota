@@ -2,7 +2,19 @@
 
 <div class="sub-header">
   <div class="ad1">
-    <p><img src="" width=320 height="50" ></p>
+    <p>
+      <!-- <img src="" width=320 height="50" > -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- e-yota_mobile -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4555449890300852"
+             data-ad-slot="4080387032"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </p>
   </div>
 <div class="bread">
   <ol>
@@ -64,10 +76,30 @@
 
         <div class="google-ad">
           <div class="ad2">
-            <p><a href="https://2017.kyoto.wordcamp.org/" target="_blank"><img src="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250.png" srcset="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250@2x.png 2x" alt="WordCamp Kyoto 2017" /></a></p>
+            <p>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- e-yota2 -->
+              <ins class="adsbygoogle"
+                   style="display:inline-block;width:300px;height:250px"
+                   data-ad-client="ca-pub-4555449890300852"
+                   data-ad-slot="1126920633"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </p>
           </div>
           <div class="ad3">
-            <p><a href="https://2017.kyoto.wordcamp.org/" target="_blank"><img src="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250.png" srcset="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250@2x.png 2x" alt="WordCamp Kyoto 2017" /></a>></p>
+            <p>
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- e-yota3 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-4555449890300852"
+                     data-ad-slot="2603653834"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </p>
           </div>
         </div>
 
