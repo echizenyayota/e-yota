@@ -64,10 +64,10 @@
 
         <div class="google-ad">
           <div class="ad2">
-            <p><img src="" width=300 height="250"></p>
+            <p><a href="https://2017.kyoto.wordcamp.org/" target="_blank"><img src="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250.png" srcset="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250@2x.png 2x" alt="WordCamp Kyoto 2017" /></a></p>
           </div>
           <div class="ad3">
-            <p><img src="" width=300 height="250"></p>
+            <p><a href="https://2017.kyoto.wordcamp.org/" target="_blank"><img src="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250.png" srcset="https://2017.kyoto.wordcamp.org/files/2017/05/banner-300x250@2x.png 2x" alt="WordCamp Kyoto 2017" /></a>></p>
           </div>
         </div>
 
