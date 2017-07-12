@@ -403,6 +403,14 @@ header, footer, .container, .sub-header {
   line-height: 1;
 }
 
+.kiji-body .amazonjs_info li {
+
+}
+
+
+.kiji-body .amazonjs_info li:before {
+
+}
 
 /* 引用 */
 blockquote {
