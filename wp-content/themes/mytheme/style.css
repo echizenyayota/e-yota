@@ -5,6 +5,7 @@ Theme: Name: MY THEME
 Author: Hiroshi Fukui
 Description: This is my original theme
 Version: 1.0
+Hello World!
 */
 
 /*　------------------------　全体　------------------------　*/
@@ -389,6 +390,7 @@ header, footer, .container, .sub-header {
   position: relative;
   padding-left: 20px;
 }
+
 
 .kiji-body li:before {
   position: absolute;
