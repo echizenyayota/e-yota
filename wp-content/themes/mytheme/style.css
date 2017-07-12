@@ -17,6 +17,10 @@ body {
   word-wrap : break-word;
 }
 
+pre {
+  color: red;
+}
+
 /*.text h1 {
   word-wrap: break-word;
 }*/
