@@ -922,6 +922,35 @@ blockquote:after {
   padding: 3px 5px;
 }
 
+/* タグクラウド */
+.tag-cloud-link li a {
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  padding: 3px 5px;
+  border-radius:2px;
+  background-color: #75dbe7;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
+.tag-cloud-link li a:hover {
+  background-color: #94ecf6;
+}
+
+.tag-cloud-link ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tag-cloud-link li {
+  float: left;
+  width: auto;
+}
+
 /* 広告 */
 
 .myad {
