@@ -920,7 +920,7 @@ blockquote:after {
   border-radius: 5px;
 }
 
-/* アーカイブウィジェット */
+/* ウィジェット */
 .widget_archive li a {
   font-size: 14px;
   padding: 3px 5px;
@@ -953,6 +953,11 @@ blockquote:after {
 .tag-cloud-link li {
   float: left;
   width: auto;
+}
+
+/* アーカイブ */
+label.screen-reader-text {
+  display: none;
 }
 
 /* 広告 */
