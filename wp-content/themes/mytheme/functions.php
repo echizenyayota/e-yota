@@ -156,7 +156,7 @@ add_action( 'widgets_init', 'mytheme_register_sidebar' );
 // 検索フォーム
  add_theme_support ('html5', array('search-form'));
 
-//パーマリンクカテゴリ削除
+// パーマリンクカテゴリ削除
 // add_filter('user_trailingslashit', 'remcat_function');
 // function remcat_function($link) {
 //     return str_replace("/category/", "/", $link);
