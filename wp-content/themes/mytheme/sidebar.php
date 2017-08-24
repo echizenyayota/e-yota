@@ -30,7 +30,6 @@
 </aside>
 <?php wp_reset_postdata(); endif; ?>
 
-<aside class="mymenu mymenu-thumb">
 <?php
   $myposts = get_posts( array(
     'post_type' => 'post',
@@ -39,6 +38,7 @@
     'orderby' => 'meta_value_num',
   ));
   if ($myposts) : ?>
+<aside class="mymenu mymenu-thumb">
   <h2>最新記事</h2>
   <ul>
   <?php
