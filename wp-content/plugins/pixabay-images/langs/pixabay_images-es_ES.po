@@ -29,12 +29,6 @@ msgstr "Configuración"
 msgid "Search"
 msgstr "Buscar"
 
-msgid "Insert image"
-msgstr "Insertar imagen"
-
-msgid "CC0 Image by"
-msgstr "Imagen CC0 por"
-
 msgid "All"
 msgstr "Todos"
 
@@ -50,15 +44,6 @@ msgstr "Pixabay Imágenes Configuración"
 msgid "Language"
 msgstr "Idioma"
 
-msgid "Images Per Page"
-msgstr "Imágenes por página"
-
-msgid "Image Types"
-msgstr "Tipo de imagen"
-
-msgid "Orientation"
-msgstr "Orientación"
-
 msgid "Attribution"
 msgstr "Atribución"
 
@@ -68,3 +53,5 @@ msgstr "Botón"
 msgid "Show Pixabay button next to \"Add Media\""
 msgstr "Mostre botón Pixabay lado de \"Añadir objeto\""
 
+msgid "Search for \"red roses\", \"flowers -red\", etc."
+msgstr ""

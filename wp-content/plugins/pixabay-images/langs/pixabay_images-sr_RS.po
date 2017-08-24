@@ -23,12 +23,6 @@ msgstr "Postavke"
 msgid "Search"
 msgstr "Traži"
 
-msgid "Insert image"
-msgstr "Ubaci sliku"
-
-msgid "CC0 Image by"
-msgstr "CC0 sliku napravio"
-
 msgid "All"
 msgstr "Svi"
 
@@ -44,15 +38,6 @@ msgstr "Pixabay Images postavke"
 msgid "Language"
 msgstr "Jezik"
 
-msgid "Images Per Page"
-msgstr "Slike po stranici"
-
-msgid "Image Types"
-msgstr "Vrste slika"
-
-msgid "Orientation"
-msgstr "Orijentacija"
-
 msgid "Attribution"
 msgstr "Atribucija"
 
@@ -61,3 +46,6 @@ msgstr "Taster"
 
 msgid "Show Pixabay button next to \"Add Media\""
 msgstr "Prikaži Pixabay taster pored  \"Dodaj medije\""
+
+msgid "Search for \"red roses\", \"flowers -red\", etc."
+msgstr ""
