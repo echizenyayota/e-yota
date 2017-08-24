@@ -89,8 +89,8 @@
           <?php if (has_category()) : ?>
             <?php $postcat = get_the_category(); ?>
             <span>
-              <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
               <?php echo $postcat[0]->name; ?>
+              <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
             </span>
           <?php endif; ?>
         </div>
