@@ -40,7 +40,43 @@
   ));
   if ($myposts) : ?>
 
+<!-- 最新の記事 -->
+<aside class="mymenu mymenu-thumb">
+  <h2>最新記事</h2>
+  <ul>
+  <?php
+    $args = array(
+      'posts_per_page' => 5 // 表示件数の指定
+    );
+    $posts = get_posts( $args );
+    foreach ( $posts as $post ): // ループの開始
+    setup_postdata( $post ); // 記事データの取得
+  ?>
+  <li>
+    <a href="<?php the_permalink(); ?>">
+      <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
+      <div class="text">
+        <?php the_title(); ?>
+        <?php if (has_category()) : ?>
+          <?php $postcat = get_the_category(); ?>
+          <span>
+            <?php echo $postcat[0]->name; ?>
+            <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
+          </span>
+        <?php endif; ?>
+      </div>
+    </a>
+  </li>
+  <?php
+    endforeach; // ループの終了
+    wp_reset_postdata(); // 直前のクエリを復元する
+  ?>
+  </ul>
+  </ul>
+</aside>
 
+
+<!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
   <h2>人気記事</h2>
   <ul>
