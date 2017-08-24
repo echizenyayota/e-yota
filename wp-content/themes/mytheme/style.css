@@ -17,9 +17,9 @@ body {
   word-wrap : break-word;
 }
 
-pre {
-  color: red;
-}
+/*pre {
+  color: black;
+}*/
 
 /*.text h1 {
   word-wrap: break-word;
@@ -939,7 +939,6 @@ blockquote:after {
   text-decoration: none;
 }
 
-
 .tag-cloud-link li a:hover {
   background-color: #94ecf6;
 }
@@ -954,6 +953,39 @@ blockquote:after {
   float: left;
   width: auto;
 }
+
+/* ウィジェットのタグにスタイルシートが当たらない
+
+.tagcloud {
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  padding: 3px 5px;
+  border-radius:2px;
+  background-color: #75dbe7;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.tagcloud li a:hover {
+  background-color: #94ecf6;
+}
+
+.tagcloud ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tagcloud li {
+  float: left;
+  width: auto;
+}
+
+*/
+
+
 
 /* アーカイブ */
 label.screen-reader-text {
