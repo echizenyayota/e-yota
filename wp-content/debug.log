@@ -378,3 +378,7 @@
 [01-May-2017 11:18:35 UTC] PHP Notice:  Undefined offset: 1 in /var/www/wordpress/wp-admin/includes/dashboard.php on line 1227
 [02-May-2017 02:26:22 UTC] PHP Fatal error:  Call to undefined function get_search_title() in /var/www/wordpress/wp-content/themes/mytheme/search.php on line 25
 [02-May-2017 06:25:04 UTC] PHP Notice:  Undefined offset: 1 in /var/www/wordpress/wp-admin/includes/dashboard.php on line 1227
+[01-Aug-2017 13:42:56 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /var/www/wordpress/wp-includes/wp-db.php on line 1538
+[01-Aug-2017 13:42:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /var/www/wordpress/wp-includes/wp-db.php on line 1568
+[01-Aug-2017 13:42:56 UTC] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /var/www/wordpress/wp-includes/wp-db.php on line 1568
+[24-Aug-2017 09:53:41 UTC] PHP Notice:  Undefined offset: 1 in /var/www/wordpress/wp-admin/includes/dashboard.php on line 1227
