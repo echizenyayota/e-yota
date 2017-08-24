@@ -382,3 +382,6 @@
 [01-Aug-2017 13:42:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /var/www/wordpress/wp-includes/wp-db.php on line 1568
 [01-Aug-2017 13:42:56 UTC] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /var/www/wordpress/wp-includes/wp-db.php on line 1568
 [24-Aug-2017 09:53:41 UTC] PHP Notice:  Undefined offset: 1 in /var/www/wordpress/wp-admin/includes/dashboard.php on line 1227
+[24-Aug-2017 12:44:46 UTC] WP_Community_Events::maybe_log_events_response: Valid response received. Details: {"api_url":"https:\/\/api.wordpress.org\/events\/1.0\/","request_args":{"body":{"number":5,"ip":"10.0.23.0","locale":"ja","timezone":"Asia\/Tokyo"}},"response_code":200,"response_body":{"location":{"ip":"111.87.58.70"},"events":"3 events trimmed."}}
+[24-Aug-2017 13:03:34 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 160
+[24-Aug-2017 13:03:53 UTC] PHP Fatal error:  Call to undefined function the_counttagcloud() in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 97

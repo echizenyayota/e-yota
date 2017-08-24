@@ -94,5 +94,4 @@
   </ul>
 </aside>
 <?php wp_reset_postdata(); endif; ?>
-
 <?php dynamic_sidebar('submenu'); ?>

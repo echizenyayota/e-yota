@@ -156,6 +156,18 @@ add_action( 'widgets_init', 'mytheme_register_sidebar' );
 // 検索フォーム
  add_theme_support ('html5', array('search-form'));
 
+ // テーマのタグクラウドのパラメータ変更
+function my_tag_cloud_filter($args) {
+    $myargs = array(
+        'smallest' => 10, // 最小文字サイズは 10pt
+        'largest' => 10, // 最大文字サイズは 10pt
+        'number' => 30,  // 一度に表示するのは30タグまで（0で無限)
+        'echo' => false,  // wordpress4.4以前の人はこの行は不要
+    );
+    return $myargs;
+}
+add_filter('widget_tag_cloud_args', 'my_tag_cloud_filter');
+
  // カテゴリーディレクトリの削除
  //パーマリンクカテゴリ削除
 // add_filter('user_trailingslashit', 'remcat_function');
