@@ -40,6 +40,7 @@
   ));
   if ($myposts) : ?>
 
+
 <aside class="mymenu mymenu-thumb">
   <h2>人気記事</h2>
   <ul>
@@ -51,7 +52,10 @@
           <?php the_title(); ?>
           <?php if (has_category()) : ?>
             <?php $postcat = get_the_category(); ?>
-            <span><?php echo $postcat[0]->name; ?></span>
+            <span>
+              <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
+              <?php echo $postcat[0]->name; ?>
+            </span>
           <?php endif; ?>
         </div>
         </a>
