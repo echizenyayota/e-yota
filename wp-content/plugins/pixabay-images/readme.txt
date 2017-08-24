@@ -3,8 +3,8 @@ Contributors: SimonStone, byrev
 Donate link: http://byrev.org/donate.php
 Tags: images, photos, pictures, cliparts, clip arts, illustrations, vectors, vector graphics, stock photos, stock images, stock pictures, royalty-free, public domain, pd, copyright-free, free, free images, cc0, cc, creative commons, commercial use, insert, search, upload, media
 Requires at least: 3.5.1
-Tested up to: 4.7
-Stable tag: 2.15
+Tested up to: 4.8.1
+Stable tag: 3.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,17 +12,18 @@ Find quality CC0 Public Domain images for commercial use, and add them to your b
 
 == Description ==
 
-[Pixabay Images](https://pixabay.com/blog/posts/p-36/) is a WordPress plugin that let's you pick CC0 public domain pictures from [Pixabay](https://pixabay.com/) and insert them with just a click anywhere on your blog. The images are safe to use, and paying attribution or linking back to the source is not required.
+[Pixabay Images](https://pixabay.com/blog/posts/p-50/) is a WordPress plugin that let's you pick CC0 public domain pictures from [Pixabay](https://pixabay.com/) and insert them with just a click anywhere on your blog. The images are safe to use, and paying attribution or linking back to the source is not required.
 
 Features include:
 
-* Search Pixabay's public domain pictures via "Add Media" button inside the editor.
+* Search Pixabay's CC0 public domain pictures via "Add Media" button inside the editor.
 * Filter search results by image type (clipart, photo) and/or orientation (horizontal, vertical).
-* Preview images in paginated search results.
+* Infinite scrolling through large preview images in search results.
 * Direct image uploads to WordPress' media library.
-* Use of standard media dialogues for editing and inserting images.
+* Use of standard media dialogue for inserting images.
+* Unobtrusive integration into WordPress.
 
-For more information, check out [Pixabay.com](https://pixabay.com/blog/posts/p-36/).
+For more information, check out [Pixabay.com](https://pixabay.com/blog/posts/p-50/).
 
 == Installation ==
 
@@ -46,17 +47,14 @@ Read Pixabay's [FAQ](https://pixabay.com/service/faq/) and/or their [Terms of Us
 
 = Why am I not getting search results on Internet Explorer? =
 
-The plugin works on all modern browsers; Internet Explorer version 10 or higer is required.
+The plugin works on all modern browsers; Internet Explorer version 9 or higer is required.
 
 == Screenshots ==
 
-1. Optional Pixabay Images button inside the WordPress blog post editor.
-2. Search results in WordPress' new Media Manager.
-3. Preview image on hover with a selection of three different sizes and a link to the original image on Pixabay.
-4. Standard media dialogue for selected image.
-5. Search results in popup window.
-6. Preview image in popup window with a selection of three different sizes and a link to the original image on Pixabay.
-7. Standard media dialogue in popup window for selected image.
+1. Pixabay Images window with search results.
+2. Optional button inside the WordPress editor.
+3. Search results in WordPress' new Media Manager.
+4. Standard media dialogue for uploaded image.
 
 == Changelog ==
 
@@ -150,6 +148,13 @@ The plugin works on all modern browsers; Internet Explorer version 10 or higer i
 = 2.15 =
 
 * Compatibility tested for WordPress 4.7
+
+= 3.0 =
+
+* Compatibility tested for WordPress 4.8.1
+* Modernized layout and improved handling.
+* Endless scroll for search results.
+* Larger preview images.
 
 == Upgrade Notice ==
 
