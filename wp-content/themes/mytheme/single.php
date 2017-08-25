@@ -21,6 +21,15 @@
 </div>
 
 <div class="container">
+  <div class="default_thumbnail">
+    <?php
+    // if (has_post_thumbnail()) {
+    //   the_post_thumbnail();
+    // }else {
+    //   echo '<img src="' . get_bloginfo('template_directory') . '/ecoteki-image.png' . '" width="500" height="350" alt="thumbnail" />';
+    // }
+  ?>
+  </div>
   <div class="contents">
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
       <article <?php post_class('kiji'); ?>>
