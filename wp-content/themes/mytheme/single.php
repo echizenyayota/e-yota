@@ -23,6 +23,7 @@
 <div class="container">
   <div class="default_thumbnail">
     <?php
+    // http://kachibito.net/wordpress/custom/saving-a-default-post-thumbnail.html
     // if (has_post_thumbnail()) {
     //   the_post_thumbnail();
     // }else {
