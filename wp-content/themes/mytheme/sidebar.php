@@ -52,8 +52,11 @@
   <li>
     <a href="<?php the_permalink(); ?>">
       <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
+    </a>
+    <a href="<?php the_permalink(); ?>">
       <div class="text">
         <?php the_title(); ?>
+    </a>
         <?php if (has_category()) : ?>
           <?php $postcat = get_the_category(); ?>
           <?php
@@ -64,13 +67,12 @@
             // exit;
           ?>
           <span>
-            <?php echo $postcat[0]->name; ?>
-            <!-- <a href="<?php echo esc_url( $category_link ); ?>"><?php echo $postcat[0]->name; ?></a> -->
+            <?php // echo $postcat[0]->name; ?>
+            <a href="<?php echo esc_url( $category_link ); ?>"><?php echo $postcat[0]->name; ?></a>
             <time datetime="<?php the_time('c'); ?>">投稿日:<?php echo get_the_date(); ?></time>
           </span>
         <?php endif; ?>
       </div>
-    </a>
   </li>
   <?php
     endforeach; // ループの終了
