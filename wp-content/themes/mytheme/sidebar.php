@@ -56,8 +56,16 @@
         <?php the_title(); ?>
         <?php if (has_category()) : ?>
           <?php $postcat = get_the_category(); ?>
+          <?php
+            // カテゴリーにリンクをつける
+            $category_id = get_cat_ID( $postcat[0]->name );
+            $category_link = get_category_link($category_id);
+            // var_dump($category_link);
+            // exit;
+          ?>
           <span>
             <?php echo $postcat[0]->name; ?>
+            <!-- <a href="<?php echo esc_url( $category_link ); ?>"><?php echo $postcat[0]->name; ?></a> -->
             <time datetime="<?php the_time('c'); ?>">投稿日:<?php echo get_the_date(); ?></time>
           </span>
         <?php endif; ?>

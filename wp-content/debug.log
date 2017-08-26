@@ -386,3 +386,32 @@
 [24-Aug-2017 13:03:34 UTC] PHP Parse error:  syntax error, unexpected 'function' (T_FUNCTION) in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 160
 [24-Aug-2017 13:03:53 UTC] PHP Fatal error:  Call to undefined function the_counttagcloud() in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 97
 [25-Aug-2017 09:55:18 UTC] WP_Community_Events::maybe_log_events_response: Valid response received. Details: {"api_url":"https:\/\/api.wordpress.org\/events\/1.0\/","request_args":{"body":{"number":5,"ip":"10.0.23.0","locale":"ja","timezone":"Asia\/Tokyo"}},"response_code":200,"response_body":{"location":{"ip":"106.184.21.104"},"events":"3 events trimmed."}}
+[26-Aug-2017 05:13:53 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:13:53 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:13:53 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:13:53 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:13:53 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:14:24 UTC] PHP Warning:  Missing argument 1 for get_category_link(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59 and defined in /var/www/wordpress/wp-includes/category-template.php on line 19
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 20
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 21
+[26-Aug-2017 05:14:24 UTC] PHP Warning:  Missing argument 1 for get_category_link(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59 and defined in /var/www/wordpress/wp-includes/category-template.php on line 19
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 20
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 21
+[26-Aug-2017 05:14:24 UTC] PHP Warning:  Missing argument 1 for get_category_link(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59 and defined in /var/www/wordpress/wp-includes/category-template.php on line 19
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 20
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 21
+[26-Aug-2017 05:14:24 UTC] PHP Warning:  Missing argument 1 for get_category_link(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59 and defined in /var/www/wordpress/wp-includes/category-template.php on line 19
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 20
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 21
+[26-Aug-2017 05:14:24 UTC] PHP Warning:  Missing argument 1 for get_category_link(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59 and defined in /var/www/wordpress/wp-includes/category-template.php on line 19
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 20
+[26-Aug-2017 05:14:24 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 21
+[26-Aug-2017 05:14:39 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:14:39 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:14:39 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:14:39 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:14:39 UTC] PHP Notice:  Undefined variable: category_id in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 59
+[26-Aug-2017 05:17:03 UTC] PHP Warning:  Missing argument 1 for get_category_link(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 60 and defined in /var/www/wordpress/wp-includes/category-template.php on line 19
+[26-Aug-2017 05:17:03 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 20
+[26-Aug-2017 05:17:03 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 21
+[26-Aug-2017 05:19:42 UTC] PHP Notice:  Array to string conversion in /var/www/wordpress/wp-includes/taxonomy.php on line 840
