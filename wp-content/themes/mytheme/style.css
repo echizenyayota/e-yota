@@ -557,11 +557,11 @@ blockquote:after {
   text-indent: -9999px;
 }
 
-@media(max-width: 599px) {
+/*@media(max-width: 599px) {
   .bread li:last-child {
     text-indent: -9999px;
   }
-}
+}*/
 
 /* シェアボタン */
 
