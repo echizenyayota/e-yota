@@ -27,7 +27,7 @@
     // if (has_post_thumbnail()) {
     //   the_post_thumbnail();
     // }else {
-    //   echo '<img src="' . get_bloginfo('template_directory') . '/ecoteki-image.png' . '" width="500" height="350" alt="thumbnail" />';
+    //   echo '<img src="' . get_bloginfo('template_directory') . '/ecoteki-image.png' . '" width="592" height="400" alt="thumbnail" />';
     // }
   ?>
   </div>
@@ -66,6 +66,8 @@
                 ; ?>
             </p>
           </div>
+        <?php else: ?>
+          <?php echo '<img src="' . get_bloginfo('template_directory') . '/ecoteki-image.png' . '" width="592" height="400" alt="thumbnail" />'; ?>
         <?php endif; ?>
 
         <div class="kiji-body">
