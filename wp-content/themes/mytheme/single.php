@@ -67,7 +67,9 @@
             </p>
           </div>
         <?php else: ?>
-          <?php echo '<img src="' . get_bloginfo('template_directory') . '/ecoteki-image.png' . '" width="592" height="400" alt="thumbnail" />'; ?>
+          <div class="catch">
+            <?php echo '<img src="' . get_bloginfo('template_directory') . '/ecoteki-image.png' . '" width="592" height="400" alt="thumbnail" />'; ?>
+          </div>
         <?php endif; ?>
 
         <div class="kiji-body">
