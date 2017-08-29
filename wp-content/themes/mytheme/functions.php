@@ -161,7 +161,7 @@ function my_tag_cloud_filter($args) {
     $myargs = array(
         'smallest' => 10, // 最小文字サイズは 10pt
         'largest' => 10, // 最大文字サイズは 10pt
-        'number' => 30,  // 一度に表示するのは30タグまで（0で無限)
+        'number' => 50,  // 一度に表示するのは30タグまで（0で無限)
         'echo' => false,  // wordpress4.4以前の人はこの行は不要
     );
     return $myargs;
