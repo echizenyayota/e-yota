@@ -23,7 +23,11 @@
     <meta property="<?php echo esc_attr( 'og:title' ); ?>" content="<?php the_title(); ?>">
     <meta property="<?php echo esc_attr( 'og:url' ); ?>" content="<?php the_permalink(); ?>">
     <meta property="<?php echo esc_attr( 'og:description' ); ?>" content="<?php echo wp_html_excerpt ($post->post_content, 100, '...'); ?>">
-    <meta property="<?php echo esc_attr( 'og:image' ); ?>" content="<?php echo mythumb( 'large' ); ?>">
+    <?php if (has_post_thumbnail()) : ?>
+      <meta property="<?php echo esc_attr( 'og:image' ); ?>" content="<?php echo mythumb( 'large' ); ?>">
+    <?php else: ?>
+      <meta property="<?php echo esc_attr( 'og:image' ); ?>" content="get_bloginfo('template_directory')　. '/ecoteki-image.png'">
+    <?php endif; ?>
   <?php endif; // 記事の個別ページ用のメタデータここまで?>
 
   <?php if (is_home()): // トップページ用のメタデータ　?>
