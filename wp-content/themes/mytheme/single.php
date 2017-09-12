@@ -102,9 +102,9 @@
               </a>
             </li>
             <li>
-              <a href="https://plus.google.com/share?url=<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-gp">
-                <i class="fa fa-google-plus"></i>
-                <span>Google+でシェア</span>
+              <a href="http://b.hatena.ne.jp/entry/s/<?php the_permalink(); ?>" onclick="window.open(this.href, 'SNS', 'width=900, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-gp">
+                <!-- <i class="fa fa-google-plus"></i> -->
+                <span>はてなブックマーク</span>
               </a>
             </li>
           </ul>

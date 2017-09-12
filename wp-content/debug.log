@@ -415,3 +415,4 @@
 [26-Aug-2017 05:17:03 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 20
 [26-Aug-2017 05:17:03 UTC] PHP Notice:  Undefined variable: category in /var/www/wordpress/wp-includes/category-template.php on line 21
 [26-Aug-2017 05:19:42 UTC] PHP Notice:  Array to string conversion in /var/www/wordpress/wp-includes/taxonomy.php on line 840
+[12-Sep-2017 07:34:37 UTC] WP_Community_Events::maybe_log_events_response: Valid response received. Details: {"api_url":"https:\/\/api.wordpress.org\/events\/1.0\/","request_args":{"body":{"number":5,"ip":"10.0.23.0","locale":"ja","timezone":"Asia\/Tokyo"}},"response_code":200,"response_body":{"location":{"ip":"106.184.21.49"},"events":"5 events trimmed."}}
