@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-02 00:06:20+0000\n"
+"PO-Revision-Date: 2017-10-09 07:51:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1050,7 +1050,7 @@ msgstr "サイトネットワーク名"
 
 #: wp-admin/includes/network.php:286
 msgid "Because your install is not new, the sites in your WordPress network must use sub-domains."
-msgstr "新規インストールではないため、WordPressのサイトネットワーク内のサイトはサブドメインを使用する必要があります。"
+msgstr "新規インストールではないため、WordPress のサイトネットワーク内のサイトはサブドメインを使用する必要があります。"
 
 #: wp-admin/includes/network.php:285
 msgid "Sub-domain Install"
