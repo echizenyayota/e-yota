@@ -109,11 +109,14 @@ function mythumb( $size ) {
 register_nav_menu( 'sitenav', 'サイトナビゲーション');
 register_nav_menu( 'pickup', 'おすすめ記事');
 
-// トグルボタン
-function navbtn_scripts() {
+// スタイルシートの読み込み
+function eyota_scripts() {
   wp_enqueue_script('navbtn-script', get_template_directory_uri() . '/navbtn.js', array('jquery'));
+  // wp_enqueue_style('eyota-style',  get_stylesheet_uri(), array('amazonjs-css'));
+
 }
-add_action( 'wp_enqueue_scripts', 'navbtn_scripts');
+
+add_action( 'wp_enqueue_scripts', 'eyota_scripts');
 
 // /*  存在しないページを指定された場合は 404 ページを表示する  */
 // function redirect_404() {
@@ -169,7 +172,6 @@ function my_tag_cloud_filter($args) {
 add_filter('widget_tag_cloud_args', 'my_tag_cloud_filter');
 
 // 画像サイズに「大」と「中」を含める
-add_filter('image_size_names_choose', 'my_media_insert_all_sizes');
 function my_media_insert_all_sizes( $default_sizes ){
 	$sizes = get_intermediate_image_sizes();
 	foreach( $sizes as $size ) {
