@@ -168,6 +168,19 @@ function my_tag_cloud_filter($args) {
 }
 add_filter('widget_tag_cloud_args', 'my_tag_cloud_filter');
 
+// 画像サイズに「大」と「中」を含める
+add_filter('image_size_names_choose', 'my_media_insert_all_sizes');
+function my_media_insert_all_sizes( $default_sizes ){
+	$sizes = get_intermediate_image_sizes();
+	foreach( $sizes as $size ) {
+		if( ! array_key_exists( $size, $default_sizes ) ) {
+			$default_sizes[ $size ] = ucfirst($size);
+		}
+	}
+    return $default_sizes;
+}
+
+
  // カテゴリーディレクトリの削除
  //パーマリンクカテゴリ削除
 // add_filter('user_trailingslashit', 'remcat_function');
