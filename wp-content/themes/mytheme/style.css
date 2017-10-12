@@ -1163,7 +1163,6 @@ iframe {
 
 .sub-menu {
   display: none;
-  position: absolute;
   top: 100%;
   left: 0;
   background-color: #ccc;
@@ -1214,6 +1213,11 @@ iframe {
   }
   .mainmenu li a {
     padding: 10px 15px;
+  }
+  /* スマホのサブメニューが被らないようにする */
+  .sub-menu {
+    position: absolute;
+    width: auto;
   }
   /* トグルボタン */
   #navbtn {
