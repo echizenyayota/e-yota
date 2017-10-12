@@ -415,10 +415,9 @@ header, footer, .container, .sub-header {
   line-height: 1;
 }
 
-.kiji-body .amazonjs_info li {
-
+.amazonjs_item .amazonjs_info ul li {
+  padding-left: 1.5em;
 }
-
 
 .kiji-body .amazonjs_info li:before {
 
