@@ -1166,6 +1166,10 @@ iframe {
   top: 100%;
   left: 0;
   background-color: #ccc;
+  /* サブメニューの幅を長くする */
+  min-width: 12em;
+  /* メニューを広告の前にだす */
+  z-index: 9;
 }
 
 .sub-menu li {
@@ -1174,10 +1178,6 @@ iframe {
 
 .menu-item-has-children:hover .sub-menu {
   display: block;
-  /* サブメニューの幅を長くする */
-  width: 12em;
-  /* メニューを広告の前にだす */
-  z-index: 9;
 }
 
 @media (min-width: 768px) {
@@ -1217,7 +1217,7 @@ iframe {
   /* スマホのサブメニューが被らないようにする */
   .sub-menu {
     position: absolute;
-    width: auto;
+    min-width: none;
   }
   /* トグルボタン */
   #navbtn {
