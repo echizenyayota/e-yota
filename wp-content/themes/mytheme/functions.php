@@ -1,10 +1,10 @@
 <?php
 
 // 子テーマの読み込み
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-}
+// add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+// function theme_enqueue_styles() {
+//     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+// }
 
 // 抜粋の文字数
 function my_length($length) {
@@ -110,10 +110,11 @@ register_nav_menu( 'sitenav', 'サイトナビゲーション');
 register_nav_menu( 'pickup', 'おすすめ記事');
 
 // トグルボタン
-function navbtn_scripts() {
+function eyota_scripts() {
   wp_enqueue_script('navbtn-script', get_template_directory_uri() . '/navbtn.js', array('jquery'));
+  wp_enqueue_style('eyota-style', get_stylesheet_uri());
 }
-add_action( 'wp_enqueue_scripts', 'navbtn_scripts');
+add_action( 'wp_enqueue_scripts', 'eyota_scripts', 99);
 
 // /*  存在しないページを指定された場合は 404 ページを表示する  */
 // function redirect_404() {
