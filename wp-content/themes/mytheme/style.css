@@ -1199,7 +1199,7 @@ iframe {
     display:block;
     clear: both;
   }
-  .mainmenu li {
+  .mainmenu .menu > li {
     float: left;
     width: auto;
   }
