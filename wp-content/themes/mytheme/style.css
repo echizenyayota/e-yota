@@ -17,6 +17,11 @@ body {
   word-wrap : break-word;
 }
 
+/* 画像縮尺を変える */
+img {
+  height: auto;
+}
+
 /*pre {
   color: red;
 }*/
