@@ -1,4 +1,4 @@
 .DS_Store
 wp-config.php
-wp_designbook.sql
+*.sql
 .htaccess
