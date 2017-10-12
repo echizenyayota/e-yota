@@ -1175,6 +1175,10 @@ iframe {
 
 .menu-item-has-children:hover .sub-menu {
   display: block;
+  /* サブメニューの幅を長くする */
+  width: 12em;
+  /* メニューを広告の前にだす */
+  z-index: 9;
 }
 
 @media (min-width: 768px) {
