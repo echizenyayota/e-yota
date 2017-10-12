@@ -22,9 +22,12 @@ img {
   height: auto;
 }
 
-/*pre {
-  color: red;
-}*/
+pre {
+  background: #eee;
+  padding: 0.5em;
+  border-radius: 2px;
+  overflow: auto;
+}
 
 /*.text h1 {
   word-wrap: break-word;
