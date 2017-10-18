@@ -162,7 +162,7 @@ function my_tag_cloud_filter($args) {
     $myargs = array(
         'smallest' => 10, // 最小文字サイズは 10pt
         'largest' => 10, // 最大文字サイズは 10pt
-        'number' => 60,  // 一度に表示するのは30タグまで（0で無限)
+        'number' => 60,  // 一度に表示するのは60タグまで（0で無限)
         'echo' => false,  // wordpress4.4以前の人はこの行は不要
         'orderby' => 'count', //使用頻度順
         'order' => 'DESC',  // 降順
