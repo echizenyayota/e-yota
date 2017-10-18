@@ -166,6 +166,7 @@ function my_tag_cloud_filter($args) {
         'echo' => false,  // wordpress4.4以前の人はこの行は不要
         'orderby' => 'count', //使用頻度順
         'order' => 'DESC',  // 降順
+        'show_count' => true, // タグの数を表示
     );
     return $myargs;
 }
