@@ -164,6 +164,8 @@ function my_tag_cloud_filter($args) {
         'largest' => 10, // 最大文字サイズは 10pt
         'number' => 60,  // 一度に表示するのは30タグまで（0で無限)
         'echo' => false,  // wordpress4.4以前の人はこの行は不要
+        'orderby' => 'count', //使用頻度順
+        'order' => 'DESC',  // 降順
     );
     return $myargs;
 }
@@ -182,25 +184,3 @@ function my_media_insert_all_sizes( $default_sizes ){
 	}
   return $default_sizes;
 }
-// echo get_option( 'my_dump_value' );
-// echo get_optionを使い終わったらdelete_optionを実行する
-// delete_option( 'my_dump_value' );
-// var_dump(get_intermediate_image_sizes());
-// var_dump($default_sizes);
-
-
-// パーマリンクカテゴリ削除
-// add_filter('user_trailingslashit', 'remcat_function');
-// function remcat_function($link) {
-//     return str_replace("/category/", "/", $link);
-// }
-// add_action('init', 'remcat_flush_rules');
-// function remcat_flush_rules() {
-//     global $wp_rewrite;
-//     $wp_rewrite->flush_rules();
-// }
-// add_filter('generate_rewrite_rules', 'remcat_rewrite');
-// function remcat_rewrite($wp_rewrite) {
-//     $new_rules = array('(.+)/page/(.+)/?' => 'index.php?category_name='.$wp_rewrite->preg_index(1).'&paged='.$wp_rewrite->preg_index(2));
-//     $wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
-// }
