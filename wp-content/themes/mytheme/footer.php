@@ -1,4 +1,7 @@
 <footer>
+<!-- 月別の記事 -->
+<aside id="archives" class="my-menyu-widget_archives">
+</aside>
   <div class="footer-inner">
     <div class="copyright">
       <p><?php bloginfo( 'description' ); ?></p>
