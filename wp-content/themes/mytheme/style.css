@@ -839,6 +839,11 @@ blockquote:after {
   color: #000000;
 }
 
+/* スタイルシートが反映されない
+.mymenu-archivess {
+  font-size: 10px;
+}*/
+
 @media (max-width: 599px) {
   .mymenu-related {
     padding: 10px;
