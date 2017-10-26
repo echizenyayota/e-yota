@@ -184,3 +184,39 @@ add_filter('widget_tag_cloud_args', 'my_tag_cloud_filter');
 //     $new_rules = array('(.+)/page/(.+)/?' => 'index.php?category_name='.$wp_rewrite->preg_index(1).'&paged='.$wp_rewrite->preg_index(2));
 //     $wp_rewrite->rules = $new_rules + $wp_rewrite->rules;
 // }
+
+// 月別アーカイブリスト
+function my_get_archives_link($link_html) {
+    if (is_day() || is_month() || is_year()) {
+        if (is_day()) {
+            $data = get_the_time('Y/m/d');
+        } elseif (is_month()) {
+            $data = get_the_time('Y/m');
+        } elseif (is_year()) {
+            $data = get_the_time('Y');
+        }
+
+        // var_dump($data);
+        // exit;
+
+        // Link to archive page
+        $link = esc_url(home_url($data));
+
+        // var_dump($link);
+        // exit;
+
+        // Check if the link is in string
+        $strpos = strpos($link_html, $link);
+
+        var_dump($strpos);  // boolean
+        // exit;
+
+        // Add class if link has been found
+        if ($strpos !== false) {
+            $link_html = str_replace('<li>', '<li class="current-archive">', $link_html);
+        }
+    }
+
+    return $link_html;
+}
+add_filter("get_archives_link", "my_get_archives_link");

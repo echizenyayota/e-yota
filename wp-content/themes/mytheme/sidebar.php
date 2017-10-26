@@ -103,3 +103,8 @@
 </aside>
 <?php wp_reset_postdata(); endif; ?>
 <?php dynamic_sidebar('submenu'); ?>
+
+<!-- 月別アーカイブリスト -->
+<?php
+  my_get_archives_link("2017年8月");
+?>
