@@ -186,37 +186,40 @@ add_filter('widget_tag_cloud_args', 'my_tag_cloud_filter');
 // }
 
 // 月別アーカイブリスト
-function my_get_archives_link($link_html) {
-    if (is_day() || is_month() || is_year()) {
-        if (is_day()) {
-            $data = get_the_time('Y/m/d');
-        } elseif (is_month()) {
-            $data = get_the_time('Y/m');
-        } elseif (is_year()) {
-            $data = get_the_time('Y');
-        }
+// function my_get_archives_link($link_html) {
+//     $data = get_the_time('Y年m月');
+//     var_dump($data);
+//     exit;
+//
+//     // Link to archive page
+//     $link = esc_url(home_url($data));
+//
+//     var_dump($link);
+//     exit;
+//
+//     // Check if the link is in string
+//     $strpos = strpos($link_html, $link);
+//
+//     // var_dump($strpos);  // boolean
+//     // exit;
+//
+//     // Add class if link has been found
+//     if ($strpos !== false) {
+//         $link_html = str_replace('<li>', '<li class="current-archive">', $link_html);
+//     }
+//
+//     return $link_html;
+// }
+// add_filter("get_archives_link", "my_get_archives_link");
 
-        // var_dump($data);
-        // exit;
+function add_nen_year_archives( $link_html ) {
+  $regex = array (
+      "/ title='([\d]{4})'/"  => " title='$1年'",
+      "/ ([\d]{4}) /"         => " $1年 ",
+      "/>([\d]{4})<\/a>/"        => ">$1年</a>"
+  );
 
-        // Link to archive page
-        $link = esc_url(home_url($data));
-
-        // var_dump($link);
-        // exit;
-
-        // Check if the link is in string
-        $strpos = strpos($link_html, $link);
-
-        var_dump($strpos);  // boolean
-        // exit;
-
-        // Add class if link has been found
-        if ($strpos !== false) {
-            $link_html = str_replace('<li>', '<li class="current-archive">', $link_html);
-        }
-    }
-
-    return $link_html;
+  $link_html = preg_replace( array_keys( $regex ), $regex, $link_html );
+  return $link_html;
 }
-add_filter("get_archives_link", "my_get_archives_link");
+add_filter( 'get_archives_link', 'add_nen_year_archives' );

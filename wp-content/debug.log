@@ -453,3 +453,49 @@
 [26-Oct-2017 13:03:54 UTC] WP_Community_Events::maybe_log_events_response: Valid response received. Details: {"api_url":"https:\/\/api.wordpress.org\/events\/1.0\/","request_args":{"body":{"number":5,"ip":"10.0.23.0","locale":"ja","timezone":"Asia\/Tokyo"}},"response_code":200,"response_body":{"location":{"ip":"106.184.21.207"},"events":"2 events trimmed."}}
 [26-Oct-2017 13:05:45 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 324
 [26-Oct-2017 13:09:40 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 324
+[26-Oct-2017 13:14:07 UTC] PHP Warning:  Missing argument 1 for my_get_archives_link(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 109 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 189
+[26-Oct-2017 13:14:07 UTC] PHP Notice:  Undefined variable: link_html in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 220
+[26-Oct-2017 13:18:30 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:18:30 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:18:30 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:18:30 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:18:30 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:18:30 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:18:30 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:19:11 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:19:11 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:19:11 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:19:11 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:19:11 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:19:11 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:19:11 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 195
+[26-Oct-2017 13:20:14 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 202
+[26-Oct-2017 13:20:14 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 202
+[26-Oct-2017 13:20:14 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 202
+[26-Oct-2017 13:20:14 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 202
+[26-Oct-2017 13:20:14 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 202
+[26-Oct-2017 13:20:14 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 202
+[26-Oct-2017 13:20:14 UTC] PHP Notice:  Undefined variable: data in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 202
+[27-Oct-2017 00:28:18 UTC] PHP Warning:  Missing argument 1 for add_nen_year_archives(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 110 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 214
+[27-Oct-2017 00:28:18 UTC] PHP Notice:  Undefined variable: link_html in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 220
+[27-Oct-2017 00:33:42 UTC] PHP Warning:  Missing argument 1 for add_nen_year_archives(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 110 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 214
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: format in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 227
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: format in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 229
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: format in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 231
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: before in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: title_text in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: text in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:45:03 UTC] PHP Notice:  Undefined variable: after in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:45:03 UTC] PHP Fatal error:  Call to undefined function add_nen_year_archives() in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 110
+[27-Oct-2017 00:46:24 UTC] PHP Warning:  Missing argument 1 for add_nen_year_archives(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 110 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 226
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: format in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 227
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: format in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 229
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: format in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 231
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: before in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: url in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: title_text in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: text in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 00:46:24 UTC] PHP Notice:  Undefined variable: after in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 234
+[27-Oct-2017 07:59:09 UTC] PHP Warning:  Missing argument 1 for add_nen_year_archives(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 110 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 215
+[27-Oct-2017 07:59:09 UTC] PHP Notice:  Undefined variable: link_html in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 222

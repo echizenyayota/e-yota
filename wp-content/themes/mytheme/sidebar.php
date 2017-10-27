@@ -106,5 +106,6 @@
 
 <!-- 月別アーカイブリスト -->
 <?php
-  my_get_archives_link("2017年8月");
+  // my_get_archives_link("http://wocker.dev/2017/03/");
+  add_nen_year_archives();
 ?>
