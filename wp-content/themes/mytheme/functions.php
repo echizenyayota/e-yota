@@ -185,3 +185,30 @@ function my_media_insert_all_sizes( $default_sizes ){
 	}
   return $default_sizes;
 }
+
+// 月別アーカイブリストの表示
+// function example_get_archives_link($link_html) {
+//     if (is_day() || is_month() || is_year()) {
+//         if (is_day()) {
+//             $data = get_the_time('Y/m/d');
+//         } elseif (is_month()) {
+//             $data = get_the_time('Y/m');
+//         } elseif (is_year()) {
+//             $data = get_the_time('Y');
+//         }
+//
+//         // Link to archive page
+//         $link = home_url($data);
+//
+//         // Check if the link is in string
+//         $strpos = strpos($link_html, $link);
+//
+//         // Add class if link has been found
+//         if ($strpos !== false) {
+//             $link_html = str_replace('<li>', '<li class="current-archive">', $link_html);
+//         }
+//     }
+//
+//     return $link_html;
+// }
+// add_filter("get_archives_link", "example_get_archives_link");
