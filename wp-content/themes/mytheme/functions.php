@@ -186,6 +186,23 @@ function my_media_insert_all_sizes( $default_sizes ){
   return $default_sizes;
 }
 
+
+// 月別アーカイブリストの表示
+// function my_archive_link( $link_html, $url, $text, $format, $before, $after){
+//
+// 	$after = str_replace( array('(',')'),'', $after );
+//
+// 	$link_html = '<li>
+//                  <a href="%1$s" class="rd-archive-link">
+// 				            <span class="rd-archive-date">%2$s</span>
+// 				            <span class="rd-archive-count"> %3$s</span>
+// 			            </a>
+//                </li>';
+//
+// 	return sprintf( $link_html, $url,$text, $after );
+// }
+// add_filter( 'get_archives_link','my_archive_link', 10, 6 );
+
 // 月別アーカイブリストの表示
 // function example_get_archives_link($link_html) {
 //     if (is_day() || is_month() || is_year()) {
