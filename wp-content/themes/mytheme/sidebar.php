@@ -113,5 +113,5 @@
       )
     );
   ?>
-  <!-- <?php // example_get_archives_link(); ?> -->
+  <!-- <?php // my_archive_link(); ?> -->
 </aside>
