@@ -191,7 +191,7 @@ function my_media_insert_all_sizes( $default_sizes ){
 // function my_archive_link( $link_html, $url, $text, $format, $before, $after){
 //
 // 	$after = str_replace( array('(',')'),'', $after );
-// 
+//
 // 	$link_html = '<li>
 //                  <a href="%1$s" class="rd-archive-link">
 // 				            <span class="rd-archive-date">%2$s</span>
@@ -199,7 +199,7 @@ function my_media_insert_all_sizes( $default_sizes ){
 // 			            </a>
 //                </li>';
 //
-// 	return sprintf( $link_html, $url,$text, $after );
+// 	return sprintf( $format, $link_html, $url,$text, $after );
 // }
 // add_filter( 'get_archives_link','my_archive_link', 10, 6 );
 
