@@ -932,8 +932,8 @@ blockquote:after {
   padding: 3px 5px;
 }
 
-/* タグクラウド  その1 */
-.tag-cloud-link li a {
+/* タグクラウド  間違い */
+/*.tag-cloud-link li a {
   display: block;
   margin-right: 5px;
   margin-bottom: 2px;
@@ -958,10 +958,13 @@ blockquote:after {
 .tag-cloud-link li {
   float: left;
   width: auto;
-}
+}*/
 
-/* タグクラウド  その2 */
-/*.tag-cloud-link a {
+
+/* タグクラウド  正解 */
+a.tag-cloud-link {
+  float: left;
+  width: auto;
   display: block;
   margin-right: 5px;
   margin-bottom: 2px;
@@ -973,76 +976,14 @@ blockquote:after {
   text-decoration: none;
 }
 
-.tag-cloud-link a:hover {
+a.tag-cloud-link:hover {
   background-color: #94ecf6;
 }
 
-.tag-cloud-link ul:after {
-  content: "";
-  display: block;
-  clear: both;
+.tagcloud {
+  overflow:hidden;
 }
 
-.tag-cloud-link {
-  float: left;
-  width: auto;
-}*/
-
-/* タグクラウド  その3 */
-/*a.tag-cloud-link {
-  display: block;
-  margin-right: 5px;
-  margin-bottom: 2px;
-  padding: 3px 5px;
-  border-radius:2px;
-  background-color: #75dbe7;
-  color: #ffffff;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.tag-cloud-link a:hover {
-  background-color: #94ecf6;
-}
-
-.tag-cloud-link ul:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.tag-cloud-link {
-  float: left;
-  width: auto;
-}*/
-
-/* タグクラウド  その4 */
-/*.tagcloud a {
-  display: block;
-  margin-right: 5px;
-  margin-bottom: 2px;
-  padding: 3px 5px;
-  border-radius:2px;
-  background-color: #75dbe7;
-  color: #ffffff;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.tagcloud a:hover {
-  background-color: #94ecf6;
-}
-
-.tagcloud:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.tagcloud a {
-  float: left;
-  width: auto;
-}*/
 
 /* ウィジェットのタグにスタイルシートが当たらない
 
