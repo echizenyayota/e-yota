@@ -160,9 +160,9 @@ add_action( 'widgets_init', 'mytheme_register_sidebar' );
  // テーマのタグクラウドのパラメータ変更
 function my_tag_cloud_filter($args) {
     $myargs = array(
-        'smallest' => 10, // 最小文字サイズは 10pt
-        'largest' => 10, // 最大文字サイズは 10pt
-        'number' => 80,  // 一度に表示するのは80タグまで（0で無限)
+        'smallest' => 9, // 最小文字サイズは 10pt
+        'largest' => 9, // 最大文字サイズは 10pt
+        'number' => 50,  // 一度に表示するのは80タグまで（0で無限)
         'echo' => false,  // wordpress4.4以前の人はこの行は不要
         'orderby' => 'count', //使用頻度順
         'order' => 'DESC',  // 降順
