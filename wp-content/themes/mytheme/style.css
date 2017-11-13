@@ -1016,6 +1016,33 @@ blockquote:after {
   width: auto;
 }*/
 
+/* タグクラウド  その4 */
+/*.tagcloud a {
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  padding: 3px 5px;
+  border-radius:2px;
+  background-color: #75dbe7;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.tagcloud a:hover {
+  background-color: #94ecf6;
+}
+
+.tagcloud:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tagcloud a {
+  float: left;
+  width: auto;
+}*/
 
 /* ウィジェットのタグにスタイルシートが当たらない
 
