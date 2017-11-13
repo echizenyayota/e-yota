@@ -988,6 +988,35 @@ blockquote:after {
   width: auto;
 }*/
 
+/* タグクラウド  その3 */
+/*a.tag-cloud-link {
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  padding: 3px 5px;
+  border-radius:2px;
+  background-color: #75dbe7;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.tag-cloud-link a:hover {
+  background-color: #94ecf6;
+}
+
+.tag-cloud-link ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tag-cloud-link {
+  float: left;
+  width: auto;
+}*/
+
+
 /* ウィジェットのタグにスタイルシートが当たらない
 
 .tagcloud {
