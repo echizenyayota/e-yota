@@ -113,8 +113,7 @@
       )
     );
   ?>
-  <!-- <?php // my_archive_link(); ?> -->
 </aside>
 
 <!-- 月別アーカイブリスト -->
-<?php // my_archive_link(); ?>
+<!-- <?php // my_archive_link(); ?> -->
