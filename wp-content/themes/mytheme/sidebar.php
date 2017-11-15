@@ -107,5 +107,5 @@
 <!-- 月別アーカイブリスト -->
 <?php
   // my_get_archives_link("http://wocker.dev/2017/03/");
-  add_nen_year_archives();
+  // add_nen_year_archives();
 ?>
