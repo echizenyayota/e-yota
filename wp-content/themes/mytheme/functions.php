@@ -212,14 +212,30 @@ add_filter('widget_tag_cloud_args', 'my_tag_cloud_filter');
 // }
 // add_filter("get_archives_link", "my_get_archives_link");
 
-function add_nen_year_archives( $link_html ) {
-  $regex = array (
-      "/ title='([\d]{4})'/"  => " title='$1年'",
-      "/ ([\d]{4}) /"         => " $1年 ",
-      "/>([\d]{4})<\/a>/"        => ">$1年</a>"
-  );
+// function add_nen_year_archives( $link_html ) {
+//   $regex = array (
+//       "/ title='([\d]{4})'/"  => " title='$1年'",
+//       "/ ([\d]{4}) /"         => " $1年 ",
+//       "/>([\d]{4})<\/a>/"        => ">$1年</a>"
+//   );
+//
+//   $link_html = preg_replace( array_keys( $regex ), $regex, $link_html );
+//   return $link_html;
+// }
+// add_filter( 'get_archives_link', 'add_nen_year_archives' );
 
-  $link_html = preg_replace( array_keys( $regex ), $regex, $link_html );
-  return $link_html;
+// 月別アーカイブリストその2
+function my_archive_link( $link_html, $url, $text, $format, $before, $after){
+
+	$after = str_replace( array('(',')'),'', $after );
+
+	$link_html = '<li>
+                          <a href="%1$s" class="rd-archive-link">
+							<span class="rd-archive-date">%2$s</span>
+							<span class="rd-archive-count"> %3$s</span>
+			  			   </a>
+                   </li>';
+
+	return sprintf($format, $link_html, $url,$text, $after );
+
 }
-add_filter( 'get_archives_link', 'add_nen_year_archives' );
