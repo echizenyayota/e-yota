@@ -102,18 +102,3 @@
 <?php wp_reset_postdata(); endif; ?>
 
 <?php dynamic_sidebar('submenu'); ?>
-
-<!-- 月別アーカイブリスト -->
-<aside class="mymenu mymenu-archives">
-  <?php
-    wp_get_archives(
-      array(
-        'show_post_count' => 1,
-        'format' => '',
-      )
-    );
-  ?>
-</aside>
-
-<!-- 月別アーカイブリスト -->
-<!-- <?php // my_archive_link(); ?> -->
