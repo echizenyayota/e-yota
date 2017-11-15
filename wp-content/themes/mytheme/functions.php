@@ -239,3 +239,4 @@ function my_archive_link( $link_html, $url, $text, $format, $before, $after){
 	return sprintf($format, $link_html, $url,$text, $after );
 
 }
+add_filter( 'get_archives_link','my_archive_link', 10, 6 );
