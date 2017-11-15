@@ -503,3 +503,4 @@
 [15-Nov-2017 06:35:47 UTC] PHP Notice:  Undefined variable: link_html in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 222
 [15-Nov-2017 06:38:20 UTC] PHP Warning:  Missing argument 1 for add_nen_year_archives(), called in /var/www/wordpress/wp-content/themes/mytheme/sidebar.php on line 110 and defined in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 215
 [15-Nov-2017 06:38:20 UTC] PHP Notice:  Undefined variable: link_html in /var/www/wordpress/wp-content/themes/mytheme/functions.php on line 222
+[15-Nov-2017 10:28:40 UTC] WP_Community_Events::maybe_log_events_response: Valid response received. Details: {"api_url":"https:\/\/api.wordpress.org\/events\/1.0\/","request_args":{"body":{"number":5,"ip":"10.0.23.0","locale":"ja","timezone":"Asia\/Tokyo"}},"response_code":200,"response_body":{"location":{"ip":"106.184.21.177"},"events":"5 events trimmed."}}
