@@ -230,9 +230,9 @@ function my_archive_link( $link_html, $url, $text, $format, $before, $after){
 	$after = str_replace( array('(',')'),'', $after );
 
 	$link_html = '<li>
-                          <a href="%1$s" class="rd-archive-link">
-							<span class="rd-archive-date">%2$s</span>
-							<span class="rd-archive-count"> %3$s</span>
+                  <a href="%1$s" class="rd-archive-link">
+							   　<span class="rd-archive-date">%2$s</span>
+							　　　<span class="rd-archive-count"> %3$s</span>
 			  			   </a>
                    </li>';
 
