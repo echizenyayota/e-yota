@@ -6,9 +6,9 @@
  * Text Domain: addquicktag
  * Domain Path: /languages
  * Description: Allows you to easily add custom Quicktags to the html- and visual-editor.
- * Version:     2.5.1
+ * Version:     2.5.2
  * Author:      Frank Bültge
- * Author URI:  http://bueltge.de
+ * Author URI:  https://bueltge.de
  * License:     GPLv2+
  * License URI: ./license.txt
  *
@@ -150,6 +150,10 @@ class Add_Quicktag {
 
 		// get current screen, post type
 		$screen = get_current_screen();
+		// No information about the backend page, return.
+		if ( ! isset( $screen->id ) ) {
+			return $qtags_init;
+		}
 
 		// Convert string to array from default core buttons
 		$buttons = explode( ',', $qtags_init[ 'buttons' ] );
@@ -157,7 +161,7 @@ class Add_Quicktag {
 		// loop about the options to check for each post type
 		foreach ( (array) $options[ 'core_buttons' ] as $button => $post_type ) {
 
-			// if the post type is inside the settings array active, the remove qtags
+			// if the post type is inside the settings array active, then remove qtags
 			if ( is_array( $post_type ) && array_key_exists( $screen->id, $post_type ) ) {
 
 				// If settings have key inside, then unset this button
@@ -180,7 +184,7 @@ class Add_Quicktag {
 	 * @since   2.0.0
 	 * @return  void
 	 */
-	public function uninstall() {
+	public static function uninstall() {
 
 		delete_site_option( self::$option_string );
 	}
@@ -255,7 +259,6 @@ class Add_Quicktag {
 	 * @return  void
 	 */
 	public function admin_enqueue_scripts() {
-
 		global $current_screen;
 
 		if ( isset( $current_screen->id ) &&
@@ -302,7 +305,11 @@ class Add_Quicktag {
 	 */
 	public function localize_plugin() {
 
-		load_plugin_textdomain( $this->get_textdomain(), FALSE, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain(
+			$this->get_textdomain(),
+			FALSE,
+			dirname( plugin_basename( __FILE__ ) ) . '/languages'
+		);
 	}
 
 	/**
@@ -326,7 +333,8 @@ class Add_Quicktag {
 		}
 
 		if ( ! function_exists( 'get_plugin_data' ) ) {
-			require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+			/** @noinspection */
+			require_once ABSPATH . '/wp-admin/includes/plugin.php';
 		}
 
 		$plugin_data = get_plugin_data( __FILE__ );
@@ -355,7 +363,7 @@ class Add_Quicktag {
 
 		// list only post types, there was used in UI
 		$args       = array( 'show_ui' => TRUE );
-		$post_types = get_post_types( $args, 'names' );
+		$post_types = get_post_types( $args );
 		// simplify the array
 		$post_types = array_values( $post_types );
 		// merge with strings from var
@@ -397,7 +405,7 @@ class Add_Quicktag {
 	 */
 	public function get_textdomain() {
 
-		return $this->get_plugin_data( 'TextDomain' );
+		return $this->get_plugin_data();
 	}
 
 	/**
