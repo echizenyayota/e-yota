@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-13 13:39:16+0000\n"
+"PO-Revision-Date: 2017-11-17 09:56:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -188,7 +188,7 @@ msgstr "努力を守るプロンプト"
 
 #: wp-admin/about.php:79
 msgid "Design Locking To Guard Your Changes"
-msgstr "変更を保護するデザイン固定"
+msgstr "変更を保護する、デザイン編集の衝突防止"
 
 #: wp-admin/privacy.php:38
 msgid "We take privacy and transparency very seriously. To learn more about what data we collect, and how we use it, please visit <a href=\"%s\">WordPress.org/about/privacy</a>."
@@ -246,7 +246,7 @@ msgstr "シンタックスハイライトとエラーチェック"
 msgid "Ever encounter a scenario where two designers walk into a project and designer A overrides designer B&#8217;s beautiful changes? WordPress 4.9&#8217;s design lock feature (similar to post locking) secures your draft design so that no one can make changes to it or erase all your hard work."
 msgstr ""
 "2人のデザイナーがプロジェクトに入り、デザイナー A がデザイナー B の美しい変更を上書きするといった場面に遭遇したことはありませんか\n"
-" ? WordPress 4.9 のデザイン固定機能 (投稿の固定と同様に) 、誰かがそれを変更したり、大変な努力を消してしまうことがないように、デザイン案を保護します。"
+" ? WordPress 4.9 のデザイン編集衝突防止機能 (投稿編集の衝突防止と同様に) は、誰かがそれを変更したり、大変な努力を消してしまうことがないように、デザイン案を保護します。"
 
 #: wp-admin/about.php:73
 msgid "Need to get some feedback on proposed site design changes? WordPress 4.9 gives you a preview link you can send to your team and customers so that you can collect and integrate feedback before you schedule the changes to go live. Can we say collaboration&#43;&#43;?"
@@ -270,7 +270,7 @@ msgstr "カスタマイザーワークフローの改善"
 
 #: wp-admin/about.php:44
 msgid "Welcome to an improved Customizer workflow with design drafts, locking, scheduling, and preview links. What&#8217;s more, code syntax highlighting and error checking will make for a clean and smooth site building experience. Finally, if all that wasn&#8217;t pretty great, we&#8217;ve got a great new Gallery widget and improvements to theme browsing and switching."
-msgstr "デザインの下書き、固定、予約公開、プレビューリンクにより改善されたカスタマイザーワークフローにようこそ。さらに、コードシンタックスハイライトとコードエラーのチェックにより、サイト構築の体験はよりクリーンでスムーズになります。最後に、もしこのすべてが素晴らしいものではなかったとしても、すてきな新しいギャラリーウィジェットと、テーマの閲覧と切り替えの改善があります。"
+msgstr "デザインの下書き、衝突防止、予約公開、プレビューリンクにより改善されたカスタマイザーワークフローにようこそ。さらに、コードシンタックスハイライトとコードエラーのチェックにより、サイト構築の体験はよりクリーンでスムーズになります。最後に、もしこのすべてが素晴らしいものではなかったとしても、すてきな新しいギャラリーウィジェットと、テーマの閲覧と切り替えの改善があります。"
 
 #. translators: %s: party popper emoji
 #: wp-admin/about.php:39
