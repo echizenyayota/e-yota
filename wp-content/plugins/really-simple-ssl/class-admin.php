@@ -2054,11 +2054,11 @@ public function settings_page() {
 
 public function img($type) {
   if ($type=='success') {
-    return "<img class='icons' src='" . trailingslashit(rsssl_url) . "img/check-icon.png' alt='success'>";
+    return "<img class='rsssl-icons' src='" . trailingslashit(rsssl_url) . "img/check-icon.png' alt='success'>";
   } elseif ($type=="error") {
-    return "<img class='icons' src='". trailingslashit(rsssl_url) . "img/cross-icon.png' alt='error'>";
+    return "<img class='rsssl-icons' src='". trailingslashit(rsssl_url) . "img/cross-icon.png' alt='error'>";
   } else {
-    return "<img class='icons' src='". trailingslashit(rsssl_url) ."img/warning-icon.png' alt='warning'>";
+    return "<img class='rsssl-icons' src='". trailingslashit(rsssl_url) ."img/warning-icon.png' alt='warning'>";
   }
 }
 
