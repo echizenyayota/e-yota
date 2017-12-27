@@ -1,21 +1,6 @@
 <?php get_header(); ?>
 
 <div class="sub-header">
-  <div class="ad1">
-    <p>
-      <!-- <img src="" width=320 height="50" > -->
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- e-yota_mobile -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-4555449890300852"
-             data-ad-slot="4080387032"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </p>
-  </div>
 <div class="bread">
   <ol>
     <li>
@@ -55,7 +40,21 @@
           </time>
           <?php endif; ?>
         </div>
-
+        <div class="ad1">
+          <p>
+            <!-- <img src="" width=320 height="50" > -->
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- e-yota_mobile -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4555449890300852"
+                   data-ad-slot="4080387032"
+                   data-ad-format="auto"></ins>
+              <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </p>
+        </div>
         <?php if (has_post_thumbnail()) : ?>
           <div class="catch">
             <?php the_post_thumbnail( 'large' ); ?>
