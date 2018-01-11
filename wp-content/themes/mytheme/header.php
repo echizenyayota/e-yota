@@ -99,7 +99,13 @@
 
       ga('create', 'UA-47572268-1', 'auto');
       ga('send', 'pageview');
-      </script>
+    </script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4555449890300852",
+        enable_page_level_ads: true
+      });
+    </script>
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
