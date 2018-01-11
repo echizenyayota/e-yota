@@ -131,41 +131,17 @@
           </ul>
         </div>
 
-        <?php
-          if (has_category()) {
-            $cats = get_the_category();
-            $catkwds = [];
-            foreach ($cats as $cat) {
-              $catkwds = $cat->term_id;
-            }
-          }
-         ?>
-        <?php
-          $myposts = get_posts( array(
-            'post_type' => 'post',
-            'posts_per_page' =>'4',
-            'post__not_in' => array($post->ID),
-            'category__in' => $catkwds,
-            'orderby' => 'rand',
-          ));
-          if ($myposts) : ?>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-format="autorelaxed"
+          data-ad-client="ca-pub-4555449890300852"
+          data-ad-slot="2289667369"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
 
-        <aside class="mymenu mymenu-thumb mymenu-related">
-          <h2>関連記事</h2>
-          <ul>
-            <?php foreach($myposts as $post): setup_postdata($post); ?>
-              <li>
-                <a href="<?php the_permalink(); ?>">
-                <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
-                <div class="text">
-                  <?php the_title(); ?>
-                </div>
-                </a>
-              </li>
-            <?php endforeach; ?>
-          </ul>
-        </aside>
-        <?php wp_reset_postdata(); endif; ?>
+        <?php wp_reset_postdata(); ?>
 
       </article>
     <?php endwhile; endif; ?>
