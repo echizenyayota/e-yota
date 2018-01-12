@@ -100,8 +100,8 @@
                      data-ad-client="ca-pub-4555449890300852"
                      data-ad-slot="2603653834"></ins>
                 <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </p>
           </div>
         </div>
