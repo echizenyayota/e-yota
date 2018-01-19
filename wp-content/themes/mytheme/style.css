@@ -1020,7 +1020,14 @@ label.screen-reader-text {
 .ad1 {
   text-align: center;
 }
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
+  .ad1 {
+    display: none
+  }
+} */
+
+@media (max-width: 768px) {
   .ad1 {
     display: none
   }
