@@ -1021,17 +1021,27 @@ label.screen-reader-text {
   text-align: center;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .ad1 {
-    display: none
+    display: none;
   }
-} */
+}
 
+/*
+こちらを有効にすると記事タイトルの下に広告表示が出現する
 @media (max-width: 768px) {
   .ad1 {
     display: none
   }
 }
+*/
+
+/* 広告ユニットと「おすすめ記事」の間に出現する広告を非表示にする */
+/* @media (max-width: 768px) {
+  #text-10 {
+    display: none;
+  }
+} */
 
 .google-ad {
   padding: 15px 0;
