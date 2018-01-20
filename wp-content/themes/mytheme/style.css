@@ -1037,11 +1037,11 @@ label.screen-reader-text {
 */
 
 /* 広告ユニットと「おすすめ記事」の間に出現する広告を非表示にする */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   #text-10 {
     display: none;
   }
-} */
+}
 
 .google-ad {
   padding: 15px 0;
