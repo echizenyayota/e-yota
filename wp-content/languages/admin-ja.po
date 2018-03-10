@@ -544,7 +544,7 @@ msgstr "最新の下書き"
 msgid "Your PHP code changes were rolled back due to an error on line %1$s of file %2$s. Please fix and try saving again."
 msgstr "%2$s ファイルの%1$s行目のエラーのため、PHP コードの変更をロールバックしました。修正し、もう一度保存してください。"
 
-#: wp-admin/includes/class-wp-users-list-table.php:492
+#: wp-admin/includes/class-wp-users-list-table.php:496
 msgctxt "name"
 msgid "Unknown"
 msgstr "不明"
@@ -2068,7 +2068,7 @@ msgstr "すべての下書きを表示"
 msgid "M jS Y"
 msgstr "Y年n月j日"
 
-#: wp-admin/includes/class-wp-users-list-table.php:566
+#: wp-admin/includes/class-wp-users-list-table.php:570
 msgctxt "no user roles"
 msgid "None"
 msgstr "なし"
@@ -2384,7 +2384,7 @@ msgstr[0] "お使いのテーマは%s個のメニューに対応しています�
 msgid "Live Preview &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; をライブプレビュー"
 
-#: wp-admin/includes/class-wp-users-list-table.php:505
+#: wp-admin/includes/class-wp-users-list-table.php:509
 msgid "%s post by this author"
 msgid_plural "%s posts by this author"
 msgstr[0] "この投稿者による %s 件の投稿"
