@@ -43,6 +43,8 @@ header {
 
 footer {
   border-top: 1px solid  #dddddd;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* ボックスの上下に関する設定 */
@@ -54,11 +56,6 @@ footer {
 .sub {
   padding-top: 30px;
   padding-bottom: 20px;
-}
-
-footer {
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 @media(max-width: 599px) {
@@ -134,6 +131,20 @@ header, footer, .container, .sub-header {
   font-size: 14px;
 }
 
+.widget_categories {
+  list-style:none;
+}
+.widgettitle {
+  font-size: 18px;
+}
+
+.widget_categories ul {
+  list-style:none;
+}
+
+.cat-item a {
+  font-size: 14px;
+}
 
 /*　------------------------　記事の概要　------------------------　*/
 
