@@ -186,6 +186,16 @@ function my_media_insert_all_sizes( $default_sizes ){
   return $default_sizes;
 }
 
+// ウィジェットメニューの整形（年月の右横に年月を並べる）
+function my_get_archives_link( $link_html, $url, $text, $format, $before, $after ) {
+	if ( 'html' == $format ) {
+		$link_html = "\t<li>$before<a href='$url'>$text$after</a></li>\n";
+	}
+	return $link_html;
+}
+
+add_filter( 'get_archives_link', 'my_get_archives_link', 10, 6 );
+
 
 // //そこそこ精度が良い関連記事コード
 // function get_related_posts($show_post = 5) {
