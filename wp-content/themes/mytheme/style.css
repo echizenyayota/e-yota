@@ -143,7 +143,12 @@ header, footer, .container, .sub-header {
 }
 
 .cat-item a {
+  padding: 3px 5px;
+  border-radius:2px;
+  background-color: #75dbe7;
+  color: #ffffff;
   font-size: 14px;
+  text-decoration: none;
 }
 
 /*　------------------------　記事の概要　------------------------　*/
