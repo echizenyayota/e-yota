@@ -151,15 +151,21 @@ header, footer, .container, .sub-header {
   text-decoration: none;
 }
 
-@media (min-width: 599px) {
-	.widget_categories > ul > li {
-		float: left;
+/* 6段の段組 */
+
+/* @media (min-width: 599px) {
+	.widget_categories > ul {
+		display: flex;
+		flex-wrap: wrap;
 	}
-	.widget_categories {
-		/* float 解除 */
-		overflow: hidden;
+} */
+
+/* @media (min-width: 599px) {
+	.widget_categories > ul {
+		display: flex;
+		flex-wrap: wrap;
 	}
-}
+} */
 
 /*　------------------------　記事の概要　------------------------　*/
 
