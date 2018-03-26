@@ -151,6 +151,16 @@ header, footer, .container, .sub-header {
   text-decoration: none;
 }
 
+@media (min-width: 599px) {
+	.widget_categories > ul > li {
+		float: left;
+	}
+	.widget_categories {
+		/* float 解除 */
+		overflow: hidden;
+	}
+}
+
 /*　------------------------　記事の概要　------------------------　*/
 
 /* 概要　*/
