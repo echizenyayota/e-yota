@@ -151,26 +151,15 @@ header, footer, .container, .sub-header {
   text-decoration: none;
 }
 
-/* 6段の段組 */
-
-/*
 @media (min-width: 599px) {
+	/*
+	カテゴリー ウィジェットの 3 段組
+	*/
 	.widget_categories > ul > li {
 		float: left;
-	}
-	.widget_categories {
-		overflow: hidden;
+		width: calc(100% / 3);
 	}
 }
-*/
-
-
-/* @media (min-width: 599px) {
-	.widget_categories > ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
-} */
 
 /*　------------------------　記事の概要　------------------------　*/
 
