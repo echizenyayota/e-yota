@@ -202,6 +202,14 @@ function my_get_archives_link( $link_html, $url, $text, $format, $before, $after
 
 add_filter( 'get_archives_link', 'my_get_archives_link', 10, 6 );
 
+// フッター部分にあるカテゴリーメニューの記事数を水色に装飾する
+function my_list_categories( $output ) {
+	$output = preg_replace( '/<\/a>\s(\(\d+\))/', ' $1</a>', $output );
+	return $output;
+}
+
+add_filter ( 'wp_list_categories', 'my_list_categories' );
+
 
 // //そこそこ精度が良い関連記事コード
 // function get_related_posts($show_post = 5) {
