@@ -194,6 +194,7 @@ function my_media_insert_all_sizes( $default_sizes ){
 
 // ウィジェットメニューの整形（年月の右横に年月を並べる）
 function my_get_archives_link( $link_html, $url, $text, $format, $before, $after ) {
+
 	if ( 'html' == $format ) {
     $link_html = "\t<li>$before<a href='$url'>$text$after</a></li>\n";
 	}
