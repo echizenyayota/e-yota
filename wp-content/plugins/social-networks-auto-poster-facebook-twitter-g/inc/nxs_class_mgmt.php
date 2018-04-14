@@ -232,11 +232,12 @@ if (!class_exists('nxs_adminMgmt')){
             .nxs_ti_fp {background-image: url('<?php echo NXS_PLURL; ?>img/fp16.png');}  .nxs_ti_yt {background-image: url('<?php echo NXS_PLURL; ?>img/yt16.png');} 
             .nxs_ti_bg {background-image: url('<?php echo NXS_PLURL; ?>img/bg16.png');}  .nxs_ti_pn {background-image: url('<?php echo NXS_PLURL; ?>img/pn16.png');} 
             .nxs_ti_ig {background-image: url('<?php echo NXS_PLURL; ?>img/ig16.png');}  .nxs_ti_xi {background-image: url('<?php echo NXS_PLURL; ?>img/xi16.png');} 
+            .nxs_ti_fb {background-image: url('<?php echo NXS_PLURL; ?>img/fb16.png');} 
           </style>
         
         <div style="padding-bottom: 12px;"><a href="https://www.nextscripts.com/snap-api-premium-for-wordpress/">SNAP Premium API</a> adds autoposting to:</div> 
         <div style="padding-bottom: 15px;">
-        <span class="nxs_txtIcon nxs_ti_gp">Google+</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_pn">Pinterest</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_ig">Instagram</span>, <span class="nxs_txtIcon nxs_ti_bg">Blogger</span>,&nbsp;&nbsp;&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_yt">YouTube</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_li">LinkedIn</span>, <br/><span class="nxs_txtIcon nxs_ti_fp">Flipboard</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_rd">Reddit</span>,&nbsp;&nbsp;&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_xi">Xing</span></div>
+        <span class="nxs_txtIcon nxs_ti_fb">Facebook</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_gp">Google+</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_pn">Pinterest</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_ig">Instagram</span>, <span class="nxs_txtIcon nxs_ti_bg">Blogger</span>,&nbsp;&nbsp;&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_yt">YouTube</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_li">LinkedIn</span>, <br/><span class="nxs_txtIcon nxs_ti_fp">Flipboard</span>,&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_rd">Reddit</span>,&nbsp;&nbsp;&nbsp;&nbsp;<span class="nxs_txtIcon nxs_ti_xi">Xing</span></div>
         
         <div align="center">
         <a  href="https://www.nextscripts.com/snap-api-premium-for-wordpress/" target="_blank" class="NXSButton" id="nxs_snapUPG">Get<?php if (!function_exists('ns_SMASV41')) { ?> SNAP Pro Plugin with <?php } ?> SNAP API</a></div>
