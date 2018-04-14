@@ -1,11 +1,11 @@
 === NextScripts: Social Networks Auto-Poster ===
 
-Contributors: NextScripts
+Contributors: NextScripts, okapy
 Donate link: https://www.nextscripts.com/social-networks-auto-poster-for-wordpress
 Tags: automation, autopost, auto-post, auto post, socialnetworks, socialnetwork, social networks, social network, facebook, Flipboard, google, google+, Flickr, twitter, google plus, pinterest, 500px, tumblr, blogger, blogspot, linkedin, reddit, reddit.com, plugin, links, Post, posts, api, automatic, seo, scoop.it, integration, bookmark, bookmarks, admin, images, image, social, sharing, share, repost, re-post, wordpress.com, StumbleUpon, Diigo, vBulletin, Plurk, forums, vKontakte, open graph, LiveJournal, SETT, YouTube, Telegram, Instagram, xing, medium, yo, Weibo, mailchimp, line, Odnoklassniki, ok.ru
 Requires at least: 3.4
 Tested up to: 4.9.5
-Stable tag: 4.2.1
+Stable tag: 4.2.2
 License: GPLv2 or later
 
 Automatically publishes blogposts to profiles/pages/groups on Facebook, Twitter, Instagram, Google+, Pinterest, LinkedIn, Blogger, Tumblr ... 22 more
@@ -183,6 +183,11 @@ Please see more <a href="https://www.nextscripts.com/faq/">Frequently asked ques
 = Details = 
 
 == Changelog ==
+
+= 4.2.2 [04/13/2018] =
+
+* New - [Facebook] Support for Premium Facebook API. (Beta - Only Groups are supported at this time)
+* Improvement/Bug Fix - [Facebook] Possible workaround for "Posts to pages are posted as profile name, not as page name".
 
 = 4.2.1 [04/04/2018] =
 

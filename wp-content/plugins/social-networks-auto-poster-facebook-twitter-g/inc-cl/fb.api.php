@@ -14,7 +14,24 @@ if (!class_exists("nxs_class_SNAP_FB")) { class nxs_class_SNAP_FB {
     function doPostToNT($options, $message){ $badOut = array('Warning'=>'', 'Error'=>''); $wprg = array('sslverify'=>false, 'timeout' => 30); 
       //## Check settings
       if (!is_array($options)) { $badOut['Error'] = 'No Options'; return $badOut; }      
-      if (empty($options['accessToken']) && empty($options['pageAccessToken']) && empty($options['tpt'])) { $badOut['Error'] = 'No Auth Token Found/Not configured'; return $badOut; }
+      if (empty($options['accessToken']) && empty($options['pageAccessToken']) && empty($options['tpt']) && empty($options['uPass'])) { $badOut['Error'] = 'No Auth Token Found/Not configured'; return $badOut; }
+      
+      if (!empty($message['pText'])) $msg = $message['pText']; else $msg = nxs_doFormatMsg($options['msgFormat'], $message); 
+      $msg = strip_tags($msg); $msg = str_ireplace('&lt;(")','<(")', $msg); //## FB Smiles FIX 3
+      if (substr($msg, 0, 1)=='@') $msg = ' '.$msg; // ERROR] couldn't open file fix                                                                                            
+      
+      if (!empty($options['uPass'])) {
+          
+          if (!class_exists('nxsAPI_FB')) { $badOut['Error'] = 'Premium Facebook API Library not found'; return $badOut; }
+          
+          $opVal = array(); $opNm = md5('nxs_snap_fb'.$options['uName'].$options['uPass']); $opVal = nxs_getOption($opNm); if (!empty($opVal) & is_array($opVal)) $options = array_merge($options, $opVal); // prr($opVal);
+          if (!empty($message['pText'])) $msg = $message['pText']; else $msg = nxs_doFormatMsg($options['msgFormat'], $message); $message['pText'] = $msg; $message['postType'] = $options['postType'];
+          if ( $message['postType']=='I' ||  $message['postType']=='A') { if (isset($message['imageURL'])) $imgURL = trim(nxs_getImgfrOpt($message['imageURL'], $options['imgSize'])); else $imgURL = ''; }             
+          $email = $options['uName'];  $pass = (substr($options['uPass'], 0, 5)=='n5g9a' || substr($options['uPass'], 0, 5)=='g9c1a')?nsx_doDecode(substr($options['uPass'], 5)):$options['uPass'];          
+      
+          $nt = new nxsAPI_FB(); if(!empty($options['ck'])) $nt->ck = $options['ck'];  $nt->debug = false; $nt->sid = array('cn'=>$options['uName'],'xs'=>$pass); $res = $nt->post($options['pgID'], $message);
+          if (!empty($res) && is_array($res) && !empty($res['isPosted'])) return $res; else return print_r($res, true);
+      }
       //## Make Post
       if (!empty($options['accessToken'])&& empty($options['pageAccessToken'])) $options['pageAccessToken'] = $options['accessToken'];      
       //## Get URL info.              
@@ -33,15 +50,11 @@ if (!class_exists("nxs_class_SNAP_FB")) { class nxs_class_SNAP_FB {
         }
       }             
       //prr($message); die();
-      if (!empty($message['pText'])) $msg = $message['pText']; else $msg = nxs_doFormatMsg($options['msgFormat'], $message); 
+      
       $imgURL = nxs_getImgfrOpt($message['imageURL']); $fbWhere = 'feed';       
       if ($options['imgUpl']!='2') $options['imgUpl'] = 'T'; else $options['imgUpl'] = 'A';      
-      if (!empty($options['fbURL']) && stripos($options['fbURL'], '/groups/')!=false) $options['destType'] = 'gr';
-      
+      if (!empty($options['fbURL']) && stripos($options['fbURL'], '/groups/')!=false) $options['destType'] = 'gr';      
       if (!empty($options['destType']) && $options['destType'] == 'pr') $page_id = $options['authUser']; else $page_id = $options['pgID'];        
-      $msg = strip_tags($msg); $msg = str_ireplace('&lt;(")','<(")', $msg); //## FB Smiles FIX 3
-      if (substr($msg, 0, 1)=='@') $msg = ' '.$msg; // ERROR] couldn't open file fix                                                                                            
-
       //## Own App Post
       if (empty($msg)) { if (function_exists('nxs_LogIt')) nxs_LogIt('W', 'Warning','FB - '.$options['nName'],'','Your FB message is empty.','','snap');  $msg = html_entity_decode("&#12288;");  }       //    $msg = html_entity_decode("&#128078;");
       if (!empty($options['pageAccessToken'])) { $mssg = array('access_token'=>$options['pageAccessToken'], 'method'=>'post', 'message'=>$msg);                                                             
