@@ -112,20 +112,19 @@
               <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() . ' - ' . get_bloginfo('name') ); ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=echizenya_yota"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw">
                 <i class="fa fa-twitter"></i>
-                <span>Twitterでシェア</span>
+                <span>Twitter</span>でツイート
               </a>
             </li>
             <li>
               <a href="http://www.facebook.com/share.php?u=<?php echo urlencode( get_permalink() ); ?>"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-fb">
                 <i class="fa fa-facebook"></i>
-                <span>Facebookでシェア</span>
+                <span>Facebook</span>でシェア
               </a>
             </li>
             <li>
-              <a href="https://plus.google.com/share?url=<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-gp">
-                <i class="fa fa-google-plus"></i>
-                <span>Google+でシェア</span>
+              <a href="//b.hatena.ne.jp/entry/<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=1000, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"  target="_blank" class="share-gp">
+                はてな<span>ブックマーク</span>
               </a>
             </li>
           </ul>
