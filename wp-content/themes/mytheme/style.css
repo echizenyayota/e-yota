@@ -637,12 +637,9 @@ blockquote:after {
   background-color: #3b5988;
 }
 
-.share-gp {
-  background-color: #dd4b39;
-}
-/* .share-hatena {
+.share-hatena {
   background-color: #008fde;
-} */
+}
 
 @media(max-width: 599px) {
   .share span {
