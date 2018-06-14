@@ -123,7 +123,7 @@
               </a>
             </li>
             <li>
-              <a href="//b.hatena.ne.jp/entry/<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=1000, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"  target="_blank" class="share-gp">
+              <a href="//b.hatena.ne.jp/entry/<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=1000, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"  target="_blank" class="share-hatena">
                 はてな<span>ブックマーク</span>
               </a>
             </li>
