@@ -211,137 +211,23 @@ function my_list_categories( $output ) {
 
 add_filter ( 'wp_list_categories', 'my_list_categories' );
 
+// 現在の投稿が属するカテゴリーのうち最下層のみのカテゴリー（オブジェクト）の配列を返す
+function get_the_term_descendants( $id, $taxonomy ) {
+	$terms = get_the_terms( $id, $taxonomy );
+	if ( ! is_array( $terms ) )
+		return array();
+	$descendants = $terms;
+	foreach( $terms as $key => $term ) {
+		foreach( $terms as $sub_term ) {
+			if ( $term->term_id == $sub_term->parent ) {
+				unset( $descendants[$key] );
+				break;
+			}
+		}
+	}
+	return array_values( $descendants );
+}
 
-// //そこそこ精度が良い関連記事コード
-// function get_related_posts($show_post = 5) {
-//   $post_id = get_post()->ID;
-//   // 個別記事、カスタム投稿 で表示する
-//   if (empty($post_id) || is_singular(array('page','attachment'))) return false;
-//
-//   $ex_show_post = get_post_meta($post_id, '_my_relatedposts_shownum', true); // 関連記事の表示数
-//   $rel_date = get_post_meta($post_id, '_my_relatedposts_update', true); // 関連記事の登録日
-//   $modified_date = mysql2date('Ymd', get_lastpostmodified(), false); // ブログの最終更新日
-//   $post_type = get_post()->post_type;
-//   $post_status = get_post()->post_status;
-//   $rel_ids = array();
-//   $taxes = get_object_taxonomies($post_type, 'names'); // 使用タクソノミを取得（カテゴリ＋カスタムタクソノミ）
-//   $tax_array = array();
-//
-//   if (isset($taxes)) {
-//     foreach ($taxes as $taxname) {
-//       $terms = get_the_terms($post_id, $taxname);
-//       if ($terms !== false) {
-//         foreach ($terms as $term) {
-//           $rel_ids[$taxname][] = $term->term_id; // タームIDを配列に入れる
-//         }
-//         $tax_array[] = array(
-//           'taxonomy' => $taxname, // categoryとかpost_tagとか
-//           'field' => 'term_id', // 'id' または 'slug'
-//           'terms' => $rel_ids[$taxname], // int または string または array
-//           'include_children' => 'false', // 子カテゴリを含まない
-//           'operator' => 'IN',
-//         );
-//       }
-//     }
-//   }
-//
-//   $args = array(
-//     'post__not_in' => array( $post_id ), // この記事を除外
-//     'posts_per_page' => -1, // 検索する記事数 -1で全ての記事
-//     'post_status' => 'publish', // 公開記事に限定
-//     'post_type' => $post_type, // ターゲットポストタイプ
-//     'tax_query' => array_merge( array('relation' => 'OR'), $tax_array )
-//   );
-//
-//   $rel_query = get_posts($args);
-//
-//   if ($rel_query !== false) {
-//   foreach ($rel_query as $rel) {
-//     $rel_point = 0;
-//     $set_id = $rel->ID;
-//     foreach ($taxes as $taxname) {
-//       $terms = get_the_terms($set_id, $taxname);
-//       if (is_array($terms)) {
-//         foreach ($terms as $term) {
-//           // 関連IDを含むかチェック
-//           if (isset($rel_ids[$taxname]) && in_array($term->term_id , $rel_ids[$taxname])) {
-//             $rel_point++;
-//             if($taxname === 'post_tag') $rel_point++; // タグの優先度を高くする
-//           }
-//         }
-//       }
-//     }
-//     $rel_with[$set_id] = intval($rel_point); // 関連度数
-//   }
-//   } else {
-//     return false;
-//   }
-//
-//   // 日時が未登録 or 登録日以降にブログが更新されている or 表示数が変わった ときに関連記事を登録する
-//   if(empty($rel_date) || $modified_date > $rel_date || $show_post !== $ex_show_post) {
-//     arsort($rel_with); // 関連度数でソート
-//     $i = 0;
-//     foreach ($rel_with as $key => $val) {
-//       if($i >= $show_post) {
-//         break;
-//       } else {
-//         $rel_posts[] = $key;
-//         $i++;
-//       }
-//     }
-//     // 記事が公開時のみカスタムフィールドに登録する
-//     if ($post_status === 'publish') {
-//       update_post_meta($post_id, '_my_relatedposts', $rel_posts);
-//       update_post_meta($post_id, '_my_relatedposts_update', date('Ymd'));
-//       update_post_meta($post_id, '_my_relatedposts_shownum', $show_post);
-//     }
-//   } else {
-//     $rel_posts = false;
-//   }
-//
-//   return $rel_posts;
-// }
-
-
-// 月別アーカイブリストの表示
-// function my_archive_link( $link_html, $url, $text, $format, $before, $after){
-//
-// 	$after = str_replace( array('(',')'),'', $after );
-//
-// 	$link_html = '<li>
-//                  <a href="%1$s" class="rd-archive-link">
-// 				            <span class="rd-archive-date">%2$s</span>
-// 				            <span class="rd-archive-count">%3$s</span>
-// 			            </a>
-//                </li>';
-//
-// 	return sprintf( $format, $link_html, $url,$text, $after );
-// }
-// add_filter( 'get_archives_link','my_archive_link', 10, 6 );
-
-// 月別アーカイブリストの表示
-// function example_get_archives_link($link_html) {
-//     if (is_day() || is_month() || is_year()) {
-//         if (is_day()) {
-//             $data = get_the_time('Y/m/d');
-//         } elseif (is_month()) {
-//             $data = get_the_time('Y/m');
-//         } elseif (is_year()) {
-//             $data = get_the_time('Y');
-//         }
-//
-//         // Link to archive page
-//         $link = home_url($data);
-//
-//         // Check if the link is in string
-//         $strpos = strpos($link_html, $link);
-//
-//         // Add class if link has been found
-//         if ($strpos !== false) {
-//             $link_html = str_replace('<li>', '<li class="current-archive">', $link_html);
-//         }
-//     }
-//
-//     return $link_html;
-// }
-// add_filter("get_archives_link", "example_get_archives_link");
+function get_the_category_descendants( $id = false ) {
+	return get_the_term_descendants( $id, 'category' );
+}
