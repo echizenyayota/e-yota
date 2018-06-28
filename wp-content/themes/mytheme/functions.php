@@ -214,11 +214,15 @@ add_filter ( 'wp_list_categories', 'my_list_categories' );
 // 現在の投稿が属するカテゴリーのうち最下層のみのカテゴリー（オブジェクト）の配列を返す
 function get_the_term_descendants( $id, $taxonomy ) {
 	$terms = get_the_terms( $id, $taxonomy );
+  // var_dump($terms);
 	if ( ! is_array( $terms ) )
 		return array();
 	$descendants = $terms;
 	foreach( $terms as $key => $term ) {
+    // var_dump($term);
 		foreach( $terms as $sub_term ) {
+      // var_dump($sub_term);
+      // var_dump($descendants[$key]);
 			if ( $term->term_id == $sub_term->parent ) {
 				unset( $descendants[$key] );
 				break;
