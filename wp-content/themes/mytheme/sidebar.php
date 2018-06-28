@@ -58,7 +58,7 @@
       <div class="text">
         <?php the_title(); ?>
         <?php if (has_category()) : ?>
-          <?php $postcat = get_the_category(); ?>
+          <?php $postcat = get_the_category_descendants(); ?>
           <span>
             <?php echo $postcat[0]->name; ?>
             <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
@@ -87,7 +87,7 @@
         <div class="text">
           <?php the_title(); ?>
           <?php if (has_category()) : ?>
-            <?php $postcat = get_the_category(); ?>
+            <?php $postcat = get_the_category_descendants(); ?>
             <span>
               <?php echo $postcat[0]->name; ?>
               <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
