@@ -117,13 +117,23 @@
               </a>
             </li>
             <li>
-              <a href="https://plus.google.com/share?url=<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-gp">
-                <i class="fa fa-google-plus"></i>
-                <span>Google+でシェア</span>
+              <a href="//b.hatena.ne.jp/entry/<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=1000, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"  target="_blank" class="share-hatena">
+                はてな<span>ブックマーク</span>
               </a>
+            </li>
             </li>
           </ul>
         </div>
+
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-format="autorelaxed"
+          data-ad-client="ca-pub-4555449890300852"
+          data-ad-slot="2289667369"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
 
       </article>
     <?php endwhile; endif; ?>
