@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+  <?php get_header(); ?>
 
 <div class="sub-header">
 <div class="bread">

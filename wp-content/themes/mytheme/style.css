@@ -643,8 +643,12 @@ blockquote:after {
 }
 
 @media(max-width: 599px) {
+  .share {
+    margin-bottom: 20px;
+  }
   .share span {
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
     text-indent: -9999px;
     /*overflow: hidden;
     text-indent: 100%;
