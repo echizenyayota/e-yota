@@ -381,7 +381,7 @@ header, footer, .container, .sub-header {
 .kiji h2:before {
   position: absolute;
   left: 0px;
-  top: 3px;
+  top: 9px;
   content: '\f14a';
   color: #00a0e9;
   font-family: 'FontAwesome';
@@ -596,6 +596,7 @@ blockquote:after {
 .share {
   margin-top: 40px;
   clear: both;
+  margin-bottom: 20px;
 }
 
 .share ul {
@@ -1214,9 +1215,9 @@ iframe {
   background-color: #eeeeee;
 }
 
-/* .menu-item-has-children {
+.menu-item-has-children {
   position: relative;
-} */
+}
 
 /* エミュレータ対策 */
 @media (min-width: 768px) {
