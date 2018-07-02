@@ -2,7 +2,9 @@
 <!-- 月別の記事 -->
   <div class="footer-inner">
     <aside>
-      <?php dynamic_sidebar('フッター1'); ?>
+      <ul>
+        <?php dynamic_sidebar('フッター1'); ?>
+      </ul>
     </aside>
     <div class="copyright">
       <p><?php bloginfo( 'description' ); ?></p>
