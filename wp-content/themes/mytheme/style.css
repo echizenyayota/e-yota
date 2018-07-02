@@ -768,8 +768,8 @@ blockquote:after {
     clear: both;
   }
   .mymenu-large li {
-    float:left;
-    width:50%;
+    /* float:left;
+    width:50%; */
     /*-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;*/
   }
