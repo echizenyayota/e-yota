@@ -952,6 +952,7 @@ blockquote:after {
 .textwidget img {
   border-radius: 5px;
   margin-right: 5px;
+  float: left;
 }
 
 /* ウィジェット */
@@ -1213,8 +1214,15 @@ iframe {
   background-color: #eeeeee;
 }
 
-.menu-item-has-children {
+/* .menu-item-has-children {
   position: relative;
+} */
+
+/* エミュレータ対策 */
+@media (min-width: 768px) {
+  .menu-item-has-children:hover .sub-menu {
+    display: block;
+  }
 }
 
 .sub-menu {
