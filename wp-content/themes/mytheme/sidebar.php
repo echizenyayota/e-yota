@@ -72,7 +72,6 @@
     wp_reset_postdata(); // 直前のクエリを復元する
   ?>
   </ul>
-  </ul>
 </aside>
 
 
