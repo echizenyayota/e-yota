@@ -1,7 +1,7 @@
 <footer>
 <!-- 月別の記事 -->
-<aside id="archives" class="my-menyu-widget_archives">
-</aside>
+<!-- <aside id="archives" class="my-menyu-widget_archives">
+</aside> -->
   <div class="footer-inner">
     <aside>
       <?php dynamic_sidebar('フッター1'); ?>
