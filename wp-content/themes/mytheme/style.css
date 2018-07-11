@@ -42,10 +42,11 @@ header {
 }
 
 footer {
-  border-top: 1px solid  #dddddd;
+  /* border-top: 1px solid  #dddddd;
   padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #F5F5F5;
+  padding-bottom: 15px; */
+  padding: 0;
+  /* background-color: #F5F5F5; */
 }
 
 /* ボックスの上下に関する設定 */
@@ -126,6 +127,12 @@ header, footer, .container, .sub-header {
 /*　------------------------　フッター　------------------------　*/
 
 /* フッター　*/
+.copyright {
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+}
+
 .copyright p {
   margin: 0;
   color: #666666;

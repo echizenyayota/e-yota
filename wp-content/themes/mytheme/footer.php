@@ -6,7 +6,9 @@
         <?php dynamic_sidebar('フッター1'); ?>
       </ul>
     </aside>
-    <div class="copyright">
+  </div>
+  <div class="copyright">
+    <div class="footer-inner">
       <p><?php bloginfo( 'description' ); ?></p>
       <p>Copyright &copy; <?php bloginfo( 'name' ); ?></p>
     </div>
