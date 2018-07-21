@@ -3,3 +3,5 @@ wp-config.php
 *.sql
 *.log
 .htaccess
+.htaccess_lscachebak_01
+.htaccess_lscachebak_orig
