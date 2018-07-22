@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - EWWW Image Optimizer - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-07-10 08:03:44+0000\n"
+"PO-Revision-Date: 2018-07-21 08:45:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - EWWW Image Optimizer - Stable (latest release)\n"
+
+#: common.php:7657
+msgid "If you use the File Optimization options within WP Rocket, you should also enter your ExactDN CNAME in the WP Rocket CDN settings (reserved for CSS and Javascript):"
+msgstr "WP Rocket 内でファイル最適化オプションを使用している場合、WP Rocket CDN 設定 (CSS と JavaScript に予約済み) 内に ExactDN CNAME を入力するべきです:"
+
+#: common.php:7671
+msgid "Plugins that remove query strings are unnecessary with ExactDN. You may remove them at your convenience."
+msgstr "ExactDN ではクエリー文字列を削除するプラグインは必要ありません。利便性のためプラグインを削除することができます。"
 
 #: aux-optimize.php:720
 msgid "You do not appear to have enough image credits to complete this operation."
