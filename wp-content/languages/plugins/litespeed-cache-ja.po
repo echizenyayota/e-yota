@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - LiteSpeed Cache - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-07-15 22:35:16+0000\n"
+"PO-Revision-Date: 2018-07-23 02:42:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,91 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - LiteSpeed Cache - Stable (latest release)\n"
+
+#: admin/tpl/setting/settings_media.php:104
+msgid "Automatically remove the original image backups after fetching optimized images."
+msgstr "最適化されたイメージを取得した後、元の画像バックアップを自動的に削除します。"
+
+#: admin/tpl/setting/settings_media.php:100
+msgid "Remove Original Backups"
+msgstr "オリジナルバックアップを削除する"
+
+#: admin/tpl/setting/settings_media.php:74
+msgid "Requests can only be sent when recovered credits is %s or more."
+msgstr "回収クレジットが %s 以上の場合にのみリクエストを送信できます。"
+
+#: admin/tpl/setting/settings_media.php:73
+msgid "Automatically request optimization via cron job."
+msgstr "cron ジョブによる最適化を自動的に要求します。"
+
+#: admin/tpl/setting/settings_media.php:69
+msgid "Optimize Automatically"
+msgstr "自動的に最適化する"
+
+#: admin/tpl/setting/settings_inc.check_adv_file.php:17
+msgid "You may need to uncheck this option if you are using multiple optimization plugins."
+msgstr "複数の最適化プラグインを使用している場合は、このオプションをオフにする必要があるかもしれません。"
+
+#: admin/tpl/inc/img_optm.summary.php:234
+msgid "The refresh button will calculate the total amount of disk space used by these backups."
+msgstr "リフレッシュボタンは、バックアップが使用するディスク容量の合計を計算します。"
+
+#: admin/tpl/inc/img_optm.summary.php:233
+msgid "A backup of each image is saved before it is optimized."
+msgstr "各画像のバックアップは、最適化される前に保存されます。"
+
+#: admin/tpl/inc/img_optm.summary.php:39
+msgid "Current Stage Status"
+msgstr "現在のステージの状態"
+
+#: admin/tpl/inc/img_optm.percentage_summary.php:29
+msgid "Congratulations, all done!"
+msgstr "おめでとう、すべて完了！"
+
+#: admin/tpl/inc/img_optm.level_info.php:40
+msgid "Next Level Credit"
+msgstr "次のレベルクレジット"
+
+#: admin/tpl/inc/img_optm.initialize.php:13
+msgid "Initialize Optimzation"
+msgstr "最適化の初期化"
+
+#: admin/tpl/api/quic.user_welcome.php:19
+msgid "Next"
+msgstr "次へ"
+
+#: admin/tpl/api/quic.register.php:37
+msgid "Register"
+msgstr "登録"
+
+#: admin/tpl/api/quic.login.php:36 admin/tpl/api/quic.register.php:39
+msgid "Back"
+msgstr "戻る"
+
+#: admin/tpl/api/quic.login.php:34
+msgid "Login"
+msgstr "ログイン"
+
+#: admin/tpl/api/quic.login.php:30
+msgid "Or"
+msgstr "または"
+
+#: admin/tpl/api/quic.login.php:17 admin/tpl/api/quic.register.php:17
+msgid "ERROR"
+msgstr "エラー"
+
+#: admin/tpl/inc/img_optm.level_info.php:36
+msgid "Next Level"
+msgstr "次のレベル"
+
+#: admin/admin-api.class.php:347
+msgid "Good news from LiteSpeed image server"
+msgstr "LiteSpeed image server からのお知らせ"
+
+#: admin/tpl/api/quic.login.php:7 admin/tpl/api/quic.register.php:7
+#: admin/tpl/api/quic.user_welcome.php:7
+msgid "Quic Cloud User Panel"
+msgstr "Quic Cloud ユーザーパネル"
 
 #: inc/img_optm.class.php:1713
 msgid "Switched images successfully."
@@ -584,7 +669,7 @@ msgstr "サーバーの最小許容値"
 #: admin/tpl/setting/settings_tuning.php:20
 #: admin/tpl/setting/settings_tuning.php:56
 msgid "NOTE"
-msgstr "注記"
+msgstr "注釈"
 
 #: admin/tpl/setting/network_settings_advanced.php:4
 msgid "Advanced Network"
@@ -1122,6 +1207,10 @@ msgstr "画像の通知に失敗しました"
 msgid "Images failed to fetch"
 msgstr "画像を取得できませんでした"
 
+#: admin/tpl/inc/img_optm.summary.php:257
+msgid "Images Pulled"
+msgstr "画像を戻しました"
+
 #: admin/tpl/inc/img_optm.level_info.php:17
 msgid "Credit recovers with each successful pull."
 msgstr "引き戻しが成功すると点数が回復します。"
@@ -1447,6 +1536,10 @@ msgstr "LiteSpeed Image Optimization サーバーと通信しました。"
 #: admin/admin-api.class.php:244
 msgid "IAPI Error %s"
 msgstr "IAPI エラー %s"
+
+#: admin/tpl/setting/settings_optimize.php:223
+msgid "If there is any JS error related to %1$s when enabled %2$s, please turn on this option."
+msgstr "%2$s が有効になっているときに %1$s に関連するJS エラーがあるなら、このオプションをオンにしてください。"
 
 #: admin/tpl/setting/settings_optimize.php:220
 msgid "Improve compatibility with inline JS by preventing jQuery optimization. (Recommended Setting: %s)"
@@ -2913,6 +3006,12 @@ msgstr "サイトのIP"
 msgid "Email Address"
 msgstr "メールアドレス"
 
+#: admin/tpl/api/quic.login.php:25 admin/tpl/api/quic.register.php:25
+#: admin/tpl/api/quic.user_welcome.php:15
+#: admin/tpl/api/quic.user_welcome.php:16
+msgid "Email"
+msgstr "Eメール"
+
 #: cli/litespeed-cache-cli-purge.class.php:186
 msgid "Purged the url!"
 msgstr "URL をパージしました！"
@@ -3175,6 +3274,10 @@ msgstr "環境レポートには、WordPress の設定に関する詳細情報�
 msgid "More information about the available commands can be found <a %s>here</a>."
 msgstr "利用可能なコマンドの詳細は、<a %s>こちら</a>を参照してください。"
 
+#: admin/tpl/setting/settings_inc.check_adv_file.php:14
+msgid "When this option is checked and this file is detected as belonging to another plugin, LiteSpeed's caching functionality will not work."
+msgstr "このオプションがチェックされ、このファイルが別のプラグインに属すると検出された場合、LiteSpeed のキャッシング機能は動作しません。"
+
 #: admin/tpl/setting/settings_inc.check_adv_file.php:13
 msgid "The advanced-cache.php file is used by many caching plugins to signal that a cache is active."
 msgstr "advanced-cache.phpファイルは、キャッシュがアクティブであることを知らせるために多くのキャッシュプラグインで使用されます。"
@@ -3190,7 +3293,7 @@ msgstr "LiteSpeed Cache は、LiteSpeed Web Server に組み込まれたペー�
 #: admin/tpl/setting/settings_purge.php:53
 #: thirdparty/lscwp-3rd-woocommerce.cls.php:858
 msgid "Note"
-msgstr "メモ"
+msgstr "注釈"
 
 #: admin/tpl/setting/settings_inc.login_cookie.php:19
 msgid "The server will determine if the user is logged in based on the existance of this cookie."
@@ -3712,6 +3815,10 @@ msgstr "URL は、REQUEST_URI  サーバー変数と比較されます。"
 #: admin/tpl/setting/settings_purge.php:57
 msgid "Select only the archive types that are currently used, the others can be left unchecked."
 msgstr "現在使用されているアーカイブタイプのみを選択し、他のタイプは未チェックのままにすることができます。"
+
+#: admin/tpl/inc/img_optm.initialize.php:20
+msgid "Notes"
+msgstr "注釈"
 
 #: admin/tpl/setting/settings_general.php:44
 msgid "Use Network Admin Setting"
