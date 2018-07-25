@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - EWWW Image Optimizer - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-07-21 08:45:14+0000\n"
+"PO-Revision-Date: 2018-07-24 01:27:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,13 +11,13 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - EWWW Image Optimizer - Stable (latest release)\n"
 
-#: common.php:7657
-msgid "If you use the File Optimization options within WP Rocket, you should also enter your ExactDN CNAME in the WP Rocket CDN settings (reserved for CSS and Javascript):"
-msgstr "WP Rocket 内でファイル最適化オプションを使用している場合、WP Rocket CDN 設定 (CSS と JavaScript に予約済み) 内に ExactDN CNAME を入力するべきです:"
-
 #: common.php:7671
 msgid "Plugins that remove query strings are unnecessary with ExactDN. You may remove them at your convenience."
 msgstr "ExactDN ではクエリー文字列を削除するプラグインは必要ありません。利便性のためプラグインを削除することができます。"
+
+#: common.php:7657
+msgid "If you use the File Optimization options within WP Rocket, you should also enter your ExactDN CNAME in the WP Rocket CDN settings (reserved for CSS and Javascript):"
+msgstr "WP Rocket 内でファイル最適化オプションを使用している場合、WP Rocket CDN 設定 (CSS と JavaScript に予約済み) 内に ExactDN CNAME を入力するべきです :"
 
 #: aux-optimize.php:720
 msgid "You do not appear to have enough image credits to complete this operation."
@@ -69,13 +69,13 @@ msgstr "削除に成功しました"
 msgid "Removal failed"
 msgstr "削除に失敗しました"
 
-#: common.php:8245
-msgid "Remove Rewrite Rules"
-msgstr "置き換えルールを削除"
-
 #: common.php:2002
 msgid "New thumbnails will be optimized by the EWWW Image Optimizer as they are generated. You may wish to disable the plugin and run a bulk optimize later to speed up the process."
 msgstr "新しいサムネイル画像は EWWW Image Optimizer プラグインによって生成される度に最適化されます。サムネイル画像の生成プロセスをより早く行うためには、プラグインを無効化して、後で一括最適化を行ってください。"
+
+#: common.php:8245
+msgid "Remove Rewrite Rules"
+msgstr "リライトルールを削除"
 
 #: common.php:8283
 msgid "Add ExactDN to increase website speeds dramatically!"
@@ -292,7 +292,7 @@ msgstr "プラグインの使われ方調査をとプラグインの改善のた
 
 #: common.php:8003
 msgid "*PDF optimization cannot be enabled because the fileinfo extension is missing."
-msgstr "※ PDF の最適化はファイル情報がかけているため有効化出来ません。"
+msgstr "※ PDF の最適化はファイル情報が欠けているため有効化出来ません。"
 
 #: ewww-image-optimizer.php:147
 msgid "Only one version of the EWWW Image Optimizer can be active at a time. Please deactivate other copies of the plugin."
@@ -391,13 +391,13 @@ msgstr "Stage 2 メモリ制限のため、処理が完了できませんでし�
 msgid "Detect Scaled Images"
 msgstr "サイズを変更する画像を調べます"
 
-#: common.php:8136 common.php:8140
-msgid "in pixels"
-msgstr "ピクセル単位で"
-
 #: common.php:8134
 msgid "*Imsanity settings override the EWWW resize dimensions."
 msgstr "※Imsanity プラグインの設定が EWWW のサイズ変換の次元を上書きします。"
+
+#: common.php:8136 common.php:8140
+msgid "in pixels"
+msgstr "ピクセル単位"
 
 #. translators: %s: human-readable file size
 #: common.php:6884
@@ -407,10 +407,6 @@ msgstr "合計サイズ: %s"
 #: common.php:6845
 msgid "Image Size"
 msgstr "画像サイズ"
-
-#: bulk.php:145
-msgid "Scan Again"
-msgstr "再度スキャン"
 
 #: common.php:8095
 msgid "Folders to ignore"
@@ -486,6 +482,10 @@ msgid "There is %d image ready to optimize."
 msgid_plural "There are %d images ready to optimize."
 msgstr[0] "%d 個の画像の最適化の準備が完了しました。"
 
+#: bulk.php:145
+msgid "Scan Again"
+msgstr "再スキャン"
+
 #: common.php:3578
 msgid "Could not validate API key, please copy and paste your key to ensure it is correct."
 msgstr "API キーを検証できませんでした。キーをコピーして貼り付けて、正しいことを確認してください。"
@@ -514,7 +514,7 @@ msgstr "最適化するフォルダ %s. を保存できませんでした。 そ
 
 #: common.php:3572
 msgid "Successfully validated API key, happy optimizing!"
-msgstr "API キーの検証に成功しました。ハッピーな最適化を !"
+msgstr "API キーの検証に成功しました。"
 
 #: unique.php:1624
 msgid "Unknown file type"
@@ -536,37 +536,37 @@ msgstr " %1$s (%2$s )  を減少"
 #. translators: %s: A link to the Dynamic Image Debugging page
 #: common.php:2038
 msgid "The EWWW Image Optimizer has detected excessive re-optimization of multiple images. Please turn on the Debugging setting, wait for approximately 12 hours, and then visit the %s page."
-msgstr "EWWW Image Optimizer は、複数のイメージの過剰な再最適化を検出しました。 デバッグ設定を有効にして約12 時間待ってから、 %s ページにアクセスしてください。"
+msgstr "EWWW Image Optimizer は、複数のイメージの過剰な再最適化を検出しました。 デバッグ設定を有効にしてから約12時間待ったあと、 %s ページにアクセスしてください。"
 
 #: common.php:8209
 msgid "WebP URLs"
 msgstr "WebP のURL"
 
-#: unique.php:475
-msgid "EWWW Image Optimizer requires exec() or an API key. Your system administrator has disabled the exec() function, ask them to enable it."
-msgstr "EWWW Image Optimizer には、exec（） またはAPI キーが必要です。 システム管理者がexec（） 関数を無効にしている場合は、有効にするように依頼してください。"
-
-#: common.php:8209
-msgid "If Force WebP is enabled, enter URL patterns that should be permitted for Alternative WebP Rewriting. One pattern per line, may be partial URLs, but must include the domain name."
-msgstr "Force WebP が有効になっている場合は、Alternative WebP Rewriting で許可する必要があるURL パターンを入力します。 1 行に1 パターン、部分的なURL でも構いませんが、ドメイン名を含める必要があります。"
-
 #: common.php:8205
 msgid "WebP images will be generated and saved for all JPG/PNG images regardless of their size. The Alternative WebP Rewriting will not check if a file exists, only that the domain matches the home url."
 msgstr "WebP イメージは、サイズに関係なくすべてのJPG / PNG イメージに対して生成され、保存されます。 代替WebP 書き換えでは、ファイルが存在するかどうかはチェックされず、ドメインがホームURL と一致することのみがチェックされます。"
+
+#: unique.php:475
+msgid "EWWW Image Optimizer requires exec() or an API key. Your system administrator has disabled the exec() function, ask them to enable it."
+msgstr "EWWW Image Optimizer には、exec() または API キーが必要です。 システム管理者が exec() 関数を無効にしている場合は、有効にするよう依頼してください。"
+
+#: common.php:8209
+msgid "If Force WebP is enabled, enter URL patterns that should be permitted for Alternative WebP Rewriting. One pattern per line, may be partial URLs, but must include the domain name."
+msgstr "強制 WebP が有効になっている場合は、Alternative WebP Rewriting で許可する必要があるURL パターンを入力します。 1行に1パターン、部分的な URL でも構いませんが、ドメイン名を含める必要があります。"
+
+#: common.php:7918
+msgid "WebP Settings"
+msgstr "WebP 設定"
 
 #: bulk.php:476 classes/class-ewww-flag.php:667
 #: classes/class-ewww-nextcellent.php:765 classes/class-ewww-nextgen.php:315
 #: common.php:2800
 msgid "Restoring"
-msgstr "復元"
+msgstr "復元中"
 
 #: common.php:8205
 msgid "Force WebP"
-msgstr "Force WebP"
-
-#: common.php:7918
-msgid "WebP Settings"
-msgstr "WebP 設定"
+msgstr "強制 WebP"
 
 #: common.php:2710
 msgid "No images found"
@@ -937,10 +937,6 @@ msgstr "背景色は、PNG に透過性がある場合にのみ使用されま�
 msgid "JPG is generally much better than PNG for photographic use because it compresses the image and discards data. PNGs with transparency are not converted by default."
 msgstr "JPG は画像を圧縮してデータを破棄するため、一般にPNG よりもはるかに優れています。 透過性を持つPNG はデフォルトでは変換されません。"
 
-#: common.php:8202
-msgid "JPG to WebP conversion is lossy, but quality loss is minimal. PNG to WebP conversion is lossless."
-msgstr "JPG からWEBP への変換は非可逆ですが、品質の損失は最小です。 PNG からWebP への変換はロスレスです。"
-
 #: common.php:8176
 msgid "Site or Network admins can use this to prevent other users from using the conversion links in the Media Library which bypass the settings below."
 msgstr "サイトまたはネットワークの管理者は、これを使用して、他のユーザーが以下の設定を迂回するメディアライブラリの変換リンクを使用できないようにすることができます。"
@@ -972,14 +968,6 @@ msgctxt "string will be something like \"media\" or \"nextgen\""
 msgid "Optimizing %1$s with a %2$d second pause between images."
 msgstr "各画像間 %2$d 秒の一時停止で %1$s を最適化します。"
 
-#. translators: 1-4: number(s) of images
-#. translators: 1-4: number of images
-#: classes/class-ewww-flag.php:117 classes/class-ewww-nextgen.php:565
-#: classes/class-ewwwio-cli.php:106 classes/class-ewwwio-cli.php:116
-#: classes/class-ewwwio-cli.php:182 classes/class-ewwwio-cli.php:206
-msgid "%1$d images have been selected (%2$d unoptimized), with %3$d resizes (%4$d unoptimized)."
-msgstr "%1$d 個の画像が選択されました（ %2$d は最適化されていません）。 %3$d はサイズ変更されていません（ %4$d は最適化されていません）。"
-
 #. translators: 1-6: jpegtran, optipng, pngout, pngquant, gifsicle, and cwebp
 #. (links) 7: Settings Page (link) 8: Installation Instructions (link)
 #: unique.php:579
@@ -991,11 +979,6 @@ msgctxt "abbreviation for Content Delivery Network"
 msgid "CDN:"
 msgstr "CDN:"
 
-#. translators: %s: Paypal (link)
-#: common.php:8279
-msgid "Contribute directly via %s."
-msgstr " %s 経由で直接貢献してください。"
-
 #: common.php:8277
 msgid "Write a review."
 msgstr "レビューを書く"
@@ -1003,15 +986,6 @@ msgstr "レビューを書く"
 #: common.php:8217
 msgid "Uses output buffering and libxml functionality from PHP. Use this if the Apache rewrite rules do not work, or if your images are served from a CDN."
 msgstr "PHP の出力バッファリングとlibxml 機能を使用します。 Apache の書き換えルールが機能しない場合や、イメージがCDN から提供されている場合は、これを使用してください。"
-
-#: common.php:8172
-msgid "Conversion is only available for images in the Media Library (except WebP). By default, all images have a link available in the Media Library for one-time conversion. Turning on individual conversion operations below will enable conversion filters any time an image is uploaded or modified."
-msgstr "変換は、メディアライブラリ内の画像（WebP を除く）でのみ利用可能です。 デフォルトでは、すべてのイメージには、メディアライブラリでワンタイム変換のためのリンクが用意されています。 以下の個々の変換操作をオンにすると、画像がアップロードまたは変更されるたびに変換フィルタが有効になります。"
-
-#. translators: %s: An operating system.
-#: unique.php:117
-msgid "Unfortunately, the EWWW Image Optimizer plugin does not work with %s"
-msgstr "残念ながら、EWWW Image Optimizer プラグインは %s では動作しません"
 
 #: mwebp.php:21
 msgid "The migration is split into two parts. First, the plugin needs to scan all folders for webp images. Once it has obtained the list of images to rename, it will proceed with the renaming"
@@ -1048,14 +1022,6 @@ msgstr "EWWW Image Optimizer はツールフォルダーを作成できません
 msgid "Please adjust permissions or create the folder"
 msgstr "パーミッションを調整するかフォルダーを作成してください。"
 
-#: ewww-image-optimizer.php:162
-msgid "The regular version of the EWWW Image Optimizer plugin is not permitted on WP Engine sites. However, the cloud version has been approved by WP Engine. Please deactivate EWWW Image Optimizer and install EWWW Image Optimizer Cloud to optimize your images."
-msgstr " 通常の EWWW Image Optimizer は WP エンジンのサイトでは使用できません。しかし、クラウドバージョンは WP エンジンによって承認されています。 EWWW Image Optimizer を無効にし、画像を最適化するために EWWW Image Optimizer Cloud をインストールしてください。"
-
-#: common.php:8197
-msgid "PNG is generally better than GIF, but animated images cannot be converted."
-msgstr "PNG は GIF よりよいです。しかし PNG はアニメーション画像に変換することができません。"
-
 #: common.php:8190
 msgid "JPG background color:"
 msgstr "JPG 背景色:"
@@ -1080,17 +1046,9 @@ msgstr "オリジナルは削除されません、また WebP 画像はサポー
 msgid "You can use the rewrite rules below to serve WebP images with Apache."
 msgstr "以下の書き換えルールを使用して、Apache で WebP 画像を提供することができます。"
 
-#: common.php:8202
-msgid "JPG/PNG to WebP"
-msgstr "JPG、PNG を WebP に"
-
 #: unique.php:2560
 msgid "You do not have permission to install image optimizer utilities."
 msgstr "あなたは image optimizer ユーティリティをインストールする権限がありません。"
-
-#: unique.php:115
-msgid "EWWW Image Optimizer is supported on Linux, FreeBSD, Mac OSX, and Windows"
-msgstr "EWWW Image Optimizer は、Linux、FreeBSD、Mac OSX 及び Windows をサポートしています。"
 
 #: mwebp.php:234
 msgid "Skipped:"
@@ -1114,6 +1072,48 @@ msgstr "サムネイル - %s"
 #. Description of the plugin/theme
 msgid "Reduce file sizes for images within WordPress including NextGEN Gallery and GRAND FlAGallery. Uses jpegtran, optipng/pngout, and gifsicle."
 msgstr "NextGEN Gallery や GRAND Flagallery を含む WordPress 内の画像のファイルサイズを縮小します。 jpegtran, optipng  / pngout, および gifsicle を使用しています。"
+
+#: common.php:8172
+msgid "Conversion is only available for images in the Media Library (except WebP). By default, all images have a link available in the Media Library for one-time conversion. Turning on individual conversion operations below will enable conversion filters any time an image is uploaded or modified."
+msgstr "変換は、メディアライブラリ内の画像 (WebP を除く) でのみ利用可能です。デフォルトでは、メディアライブラリ内のすべての画像にワンタイム変換のためのリンクが用意されています。 以下のそれぞれの変換操作をオンにすると、画像がアップロードまたは変更されるたびに変換フィルタが有効になります。"
+
+#. translators: 1-4: number(s) of images
+#. translators: 1-4: number of images
+#: classes/class-ewww-flag.php:117 classes/class-ewww-nextgen.php:565
+#: classes/class-ewwwio-cli.php:106 classes/class-ewwwio-cli.php:116
+#: classes/class-ewwwio-cli.php:182 classes/class-ewwwio-cli.php:206
+msgid "%1$d images have been selected (%2$d unoptimized), with %3$d resizes (%4$d unoptimized)."
+msgstr "%1$d枚の画像が選択され (%2$d枚は最適化されていません) 、 %3$d枚はリサイズです (%4$dは最適化されていません) 。"
+
+#: common.php:8202
+msgid "JPG/PNG to WebP"
+msgstr "JPG, PNG から WebP"
+
+#: common.php:8202
+msgid "JPG to WebP conversion is lossy, but quality loss is minimal. PNG to WebP conversion is lossless."
+msgstr "JPG から WebP への変換は非可逆ですが、品質の損失は最小です。 PNG からWebP への変換はロスレスです。"
+
+#: common.php:8197
+msgid "PNG is generally better than GIF, but animated images cannot be converted."
+msgstr "通常 PNG は GIF より良いですが、アニメーション画像を PNG に変換することができません。"
+
+#. translators: %s: Paypal (link)
+#: common.php:8279
+msgid "Contribute directly via %s."
+msgstr "%s 経由で直接貢献してください。"
+
+#: unique.php:115
+msgid "EWWW Image Optimizer is supported on Linux, FreeBSD, Mac OSX, and Windows"
+msgstr "EWWW Image Optimizer は Linux, FreeBSD, Mac OSX 及び Windows をサポートしています。"
+
+#. translators: %s: An operating system.
+#: unique.php:117
+msgid "Unfortunately, the EWWW Image Optimizer plugin does not work with %s"
+msgstr "残念ながら EWWW Image Optimizer プラグインは %s では動作しません"
+
+#: ewww-image-optimizer.php:162
+msgid "The regular version of the EWWW Image Optimizer plugin is not permitted on WP Engine sites. However, the cloud version has been approved by WP Engine. Please deactivate EWWW Image Optimizer and install EWWW Image Optimizer Cloud to optimize your images."
+msgstr "通常の EWWW Image Optimizer は WP Engine 上のサイトでは使用できませんが、クラウドバージョンは WP Engine によって承認済みです。画像を最適化するためには EWWW Image Optimizer を無効にし、EWWW Image Optimizer Cloud をインストールしてください。"
 
 #: common.php:2819 common.php:2821
 msgid "Settings"
@@ -1205,10 +1205,6 @@ msgstr "データベーススキーマが変更されました。あなたは新
 #: bulk.php:141
 msgid "There are no images to optimize."
 msgstr "最適化するための画像がありません。"
-
-#: common.php:4272 common.php:4337
-msgid "Previously Optimized"
-msgstr "以前に最適化されました"
 
 #: aux-optimize.php:155 aux-optimize.php:254 bulk.php:638 bulk.php:1225
 #: bulk.php:1244 bulk.php:1479 bulk.php:1687 classes/class-ewww-flag.php:548
@@ -1553,10 +1549,6 @@ msgstr "スキャンには時間がかかることがあります"
 msgid "One path per line, must be within %s. Use full paths, not relative paths."
 msgstr "1行に1つのパスが %s. 以内になければなりません。 相対パスではなく絶対パスを使用します。"
 
-#: common.php:8017
-msgid "When enabled, uploads to the Media Library will be transferred to Cloudinary after optimization. Cloudinary generates resizes, so only the full-size image is uploaded."
-msgstr "有効にすると、メディアライブラリへのアップロードは最適化後にCloudinary に転送されます。 Cloudny はサイズ変更を生成するので、フルサイズの画像のみがアップロードされます。"
-
 #: common.php:7961
 msgid "Use this to provide information for support purposes, or if you feel comfortable digging around in the code to fix a problem you are experiencing."
 msgstr "サポート目的のために情報を提供する場合や、発生している問題を解決するためにコードを掘り下げるのが快適である場合は、これを使用してください。"
@@ -1623,18 +1615,9 @@ msgstr "まだ画像をアップロードしていないようです。"
 msgid "The plugin keeps track of already optimized images to prevent re-optimization. There are %d images that have been optimized so far."
 msgstr "プラグインは、再最適化を防ぐために既に最適化された画像を追跡します。 これまでに最適化された %d 個の画像があります。"
 
-#: bulk.php:114 classes/class-ewww-flag.php:149
-#: classes/class-ewww-nextgen.php:597
-msgid "Choose how long to pause between images (in seconds, 0 = disabled)"
-msgstr "画像間で一時停止する時間を選択します（秒単位、0 =無効）"
-
 #: common.php:7909
 msgid "Requires Attention"
 msgstr "注意が必要です"
-
-#: common.php:8017
-msgid "Automatic Cloudinary upload"
-msgstr "自動的に Cloudinary にupload"
 
 #. translators: 1: Number of image credits used 2: Number of image credits
 #. available 3: days until subscription renewal
@@ -1731,3 +1714,20 @@ msgstr "WordPress やテーマ、プラグインはさまざまなサイズの�
 #: classes/class-ewww-flag.php:584 classes/class-ewwwio-cli.php:281
 msgid "Full size – %s"
 msgstr "最大サイズ - %s"
+
+#: bulk.php:114 classes/class-ewww-flag.php:149
+#: classes/class-ewww-nextgen.php:597
+msgid "Choose how long to pause between images (in seconds, 0 = disabled)"
+msgstr "画像間で一時停止する時間を選択 (秒単位、0 = 無効)"
+
+#: common.php:8017
+msgid "Automatic Cloudinary upload"
+msgstr "自動的に Cloudinary にアップロード"
+
+#: common.php:8017
+msgid "When enabled, uploads to the Media Library will be transferred to Cloudinary after optimization. Cloudinary generates resizes, so only the full-size image is uploaded."
+msgstr "有効にすると、メディアライブラリへのアップロードは最適化後に Cloudinary に転送されます。 Cloudny はサイズ変更を生成するので、フルサイズの画像のみがアップロードされます。"
+
+#: common.php:4272 common.php:4337
+msgid "Previously Optimized"
+msgstr "既に最適化済み"
