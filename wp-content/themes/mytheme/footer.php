@@ -1,14 +1,17 @@
 <footer>
-<!-- 月別の記事 -->
+<!-- カテゴリーメニュ -->
   <div class="footer-inner">
-    <aside>
+    <aside class="footer-category">
       <ul>
         <?php dynamic_sidebar('フッター1'); ?>
       </ul>
     </aside>
+  </div>
     <div class="copyright">
-      <p><?php bloginfo( 'description' ); ?></p>
-      <p>Copyright &copy; <?php bloginfo( 'name' ); ?></p>
+      <div class="footer-inner">
+        <p><?php bloginfo( 'description' ); ?></p>
+        <p>Copyright &copy; <?php bloginfo( 'name' ); ?></p>
+      </div>
     </div>
   </div>
 </footer>
