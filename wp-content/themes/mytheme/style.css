@@ -139,6 +139,10 @@ header, .container, .sub-header {
   padding: 0 10px;
 }
 
+.footer-category ul {
+  padding-left: 0;
+}
+
 .copyright p {
   margin: 0;
   color: #666666;
@@ -152,28 +156,63 @@ header, .container, .sub-header {
   font-size: 18px;
 }
 
-.widget_categories ul {
+footer .widget_categories ul {
   list-style:none;
+  font-size: 0;
 }
 
 .cat-item a {
-  padding: 3px 5px;
-  border-radius:2px;
-  background-color: #75dbe7;
-  color: #ffffff;
-  font-size: 14px;
+  color: #333;
   text-decoration: none;
 }
 
 
-@media (min-width: 599px) {
-	/*
-	カテゴリー ウィジェットの 3 段組
-	*/
-	.widget_categories > ul > li {
-		float: left;
-		width: calc(100% / 3);
-	}
+
+/*
+カテゴリー ウィジェットの 3 段組
+*/
+.widget_categories > ul li {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.widget_categories > ul > li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: top;
+	width: calc(100% / 6);
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.children {
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+.children li {
+  padding-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .widget_categories > ul > li {
+  	width: calc(100% / 3);
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 667px) {
+  .widget_categories > ul > li {
+  	width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px #ddd solid;
+  }
+  .widget_categories > ul > li:last-child {
+    border-bottom: none;  
+  }
+  .children {
+    display: none
+  }
 }
 
 /*　------------------------　記事の概要　------------------------　*/
