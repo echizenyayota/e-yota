@@ -127,11 +127,13 @@ header, .container, .sub-header {
 
 /* フッター　*/
 .copyright {
-	/* display: inline-block;
-	width: 100%; */
-	background-color: #333;
-  padding: 0 10px;
-  padding-bottom: 15px;
+  text-align: center;
+	background-color: #999;
+  padding: 10px 10px 15px;
+  color: #fff;
+}
+
+.copyright-menu a {
   color: #fff;
 }
 
@@ -145,7 +147,7 @@ header, .container, .sub-header {
 
 .copyright p {
   margin: 0;
-  color: #666666;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -164,6 +166,10 @@ footer .widget_categories ul {
 .cat-item a {
   color: #333;
   text-decoration: none;
+}
+
+.cat-item a:hover {
+  text-decoration: underline;
 }
 
 
@@ -204,11 +210,16 @@ footer .widget_categories ul {
 @media (max-width: 667px) {
   .widget_categories > ul > li {
   	width: 100%;
-    padding: 20px 0;
     border-bottom: 1px #ddd solid;
+    padding-bottom: 0;
+
+  }
+  .widget_categories > ul > li a {
+  	display: block;
+    padding: 20px 0;
   }
   .widget_categories > ul > li:last-child {
-    border-bottom: none;  
+    border-bottom: none;
   }
   .children {
     display: none
