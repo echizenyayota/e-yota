@@ -231,3 +231,10 @@ function get_the_term_descendants( $id, $taxonomy ) {
 function get_the_category_descendants( $id = false ) {
 	return get_the_term_descendants( $id, 'category' );
 }
+
+// jQueryをインライン化する
+// function load_inline_script() {
+//    wp_enqueue_script( 'load_inline_script', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.0', true );
+//    wp_add_inline_script( 'load_inline_script', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' );
+// }
+// add_action( 'wp_enqueue_scripts', 'load_inline_script' );
