@@ -3,4 +3,4 @@ Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 Allow: /wp-admin/images/w-logo-blue.png
 
-Sitemap: https://plu-plu.net/sitemap.xml
+Sitemap: https://e-yota.com/sitemap.xml

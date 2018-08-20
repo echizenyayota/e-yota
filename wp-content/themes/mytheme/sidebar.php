@@ -11,7 +11,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>#登美丘高校ダンス部</h2>
+  <h2>#高校ダンス部</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
