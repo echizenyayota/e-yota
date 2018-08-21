@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-01 00:55:38+0000\n"
+"PO-Revision-Date: 2018-08-21 00:28:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -139,7 +139,7 @@ msgstr "コメント Cookie のオプトインチェックボックスを表示�
 
 #: wp-admin/includes/template.php:1779
 msgid "Privacy Policy Page"
-msgstr "プライベートポリシーページ"
+msgstr "プライバシーポリシーページ"
 
 #. translators: %s: Page Title
 #: wp-admin/includes/misc.php:1242
@@ -1455,7 +1455,7 @@ msgstr "カスタムインストールスクリプト。"
 
 #: wp-admin/includes/plugin-install.php:602
 msgid "Active Installations:"
-msgstr "有効なインストール:"
+msgstr "有効インストール数:"
 
 #: wp-admin/includes/ms.php:983
 msgid "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
@@ -1513,7 +1513,7 @@ msgstr "説明はありません"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:608
 msgid "%s Active Installations"
-msgstr "%s の有効なインストール"
+msgstr "有効インストール数: %s"
 
 #: wp-admin/includes/class-theme-upgrader.php:69
 msgid "Theme installation failed."
@@ -4014,7 +4014,7 @@ msgstr "最大行表示エディターと集中執筆モード機能を有効化
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:616
 msgid "Untested with your version of WordPress"
-msgstr "お使いのバージョンの WordPress ではテストされていません"
+msgstr "使用中の WordPress バージョンで未検証"
 
 #: wp-admin/includes/dashboard.php:1333 wp-admin/index.php:75
 #: wp-admin/index.php:81
@@ -4152,7 +4152,7 @@ msgstr "WordPress の有名な5分間インストールプロセスへようこ�
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:620
 msgid "<strong>Compatible</strong> with your version of WordPress"
-msgstr "現在の WordPress バージョンと<strong>互換性あり</strong>"
+msgstr "使用中の WordPress バージョンと<strong>互換性あり</strong>"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:618
 msgid "<strong>Incompatible</strong> with your version of WordPress"
