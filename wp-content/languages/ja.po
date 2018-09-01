@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-24 22:32:40+0000\n"
+"PO-Revision-Date: 2018-08-31 06:32:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -9099,7 +9099,7 @@ msgstr "タグを表示"
 
 #: wp-includes/pluggable.php:1083 wp-includes/pluggable.php:1126
 msgid "You should specify a nonce action to be verified by using the first parameter."
-msgstr "最初のパラメーターを使って検証されるノンスアクションを明記する必要があります。"
+msgstr "最初の変数を使用して検証される nonce アクションを指定してください。"
 
 #. translators: 1: site URL, 2: login URL
 #: wp-activate.php:146
