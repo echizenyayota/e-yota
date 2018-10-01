@@ -239,3 +239,20 @@ function get_the_category_descendants( $id = false ) {
 //     }
 // }
 // add_action('wp_print_footer_scripts', 'delay_jquery_loading');
+?>
+
+<?php
+// jQueryをフッター部分で読み込む（失敗その2）
+if(!is_admin()){
+  function queue_cdn_jquery() {
+    wp_deregister_script('jquery');
+    wp_deregister_script('jquery-core');
+    wp_deregister_script('jquery-migrate');
+
+    wp_register_script('jquery', false, array('jquery-core', 'jquery-migrate'), '1.12.4', true);
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery-core', '//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.12.4', true);
+    wp_enqueue_script('jquery-migrate', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js', array(), '1.4.1', true);
+  }
+  add_action( 'wp_enqueue_scripts', 'queue_cdn_jquery' );
+}
