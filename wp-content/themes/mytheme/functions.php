@@ -179,7 +179,6 @@ function my_tag_cloud_filter($args) {
 add_filter('widget_tag_cloud_args', 'my_tag_cloud_filter');
 
 // 画像サイズに「大」と「中」を含める
-
 add_filter('image_size_names_choose', 'my_media_insert_all_sizes');
 function my_media_insert_all_sizes( $default_sizes ){
 	$sizes = get_intermediate_image_sizes();
@@ -232,9 +231,11 @@ function get_the_category_descendants( $id = false ) {
 	return get_the_term_descendants( $id, 'category' );
 }
 
-// jQueryをインライン化する
-// function load_inline_script() {
-//    wp_enqueue_script( 'load_inline_script', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.0', true );
-//    wp_add_inline_script( 'load_inline_script', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' );
+// jQueryをフッター部分で読み込む（失敗）
+// function delay_jquery_loading() {
+//     if ( !is_admin() ) {
+//         wp_deregister_script('jquery');
+//         wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.12.4', true);
+//     }
 // }
-// add_action( 'wp_enqueue_scripts', 'load_inline_script' );
+// add_action('wp_print_footer_scripts', 'delay_jquery_loading');
