@@ -74,8 +74,18 @@
   </ul>
 </aside>
 
-
-<!-- 人気の記事 -->
+<!-- 登美丘高校ダンス部人気の記事 -->
+<?php
+  // $the_slug = 'tomioka_highschool_danceclub';
+  // $args = array(
+  //   'name'           => $the_slug,
+  // 	'post_type'      => 'post',
+  // 	'post_status'    => 'publish',
+  // 	'posts_per_page' => 5
+  // );
+  // var_dump($args);
+  // $my_posts = get_posts( $args );
+?>
 <aside class="mymenu mymenu-thumb">
   <h2>人気記事</h2>
   <ul>
