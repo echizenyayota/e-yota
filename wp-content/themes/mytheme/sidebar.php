@@ -81,6 +81,8 @@
    'category_name' => $the_slug,
   	'post_type'      => 'post',
   	'post_status'    => 'publish',
+    'meta_key' => 'postviews',
+    'orderby' => 'meta_value_num',
   	'posts_per_page' => 5
   );
   // var_dump($args);
