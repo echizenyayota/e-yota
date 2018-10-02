@@ -78,13 +78,14 @@
 <?php
   // $the_slug = 'tomioka_highschool_danceclub';
   // $args = array(
-  //   'name'           => $the_slug,
+  //  'category_name' => $the_slug,
   // 	'post_type'      => 'post',
   // 	'post_status'    => 'publish',
   // 	'posts_per_page' => 5
   // );
   // var_dump($args);
   // $my_posts = get_posts( $args );
+  // var_dump($my_posts);
 ?>
 <aside class="mymenu mymenu-thumb">
   <h2>人気記事</h2>
