@@ -76,21 +76,21 @@
 
 <!-- 登美丘高校ダンス部人気の記事 -->
 <?php
-  // $the_slug = 'tomioka_highschool_danceclub';
-  // $args = array(
-  //  'category_name' => $the_slug,
-  // 	'post_type'      => 'post',
-  // 	'post_status'    => 'publish',
-  // 	'posts_per_page' => 5
-  // );
+  $the_slug = 'tomioka_highschool_danceclub';
+  $args = array(
+   'category_name' => $the_slug,
+  	'post_type'      => 'post',
+  	'post_status'    => 'publish',
+  	'posts_per_page' => 5
+  );
   // var_dump($args);
-  // $my_posts = get_posts( $args );
-  // var_dump($my_posts);
+  $tdc_posts = get_posts( $args );
+  // var_dump($tdc_posts);
 ?>
 <aside class="mymenu mymenu-thumb">
   <h2>人気記事</h2>
   <ul>
-    <?php foreach($myposts as $post): setup_postdata($post); ?>
+    <?php foreach($tdc_posts as $tdc_post): setup_postdata($tdc_post); ?>
       <li>
         <a href="<?php the_permalink(); ?>">
         <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
