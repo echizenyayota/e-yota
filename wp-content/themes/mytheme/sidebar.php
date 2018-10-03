@@ -92,7 +92,9 @@
 <aside class="mymenu mymenu-thumb">
   <h2>人気記事</h2>
   <ul>
+    <?php var_dump($tdc_posts); ?>
     <?php foreach($tdc_posts as $tdc_post): setup_postdata($tdc_post); ?>
+    <?php // foreach($tdc_posts as $tdc_post): ?>
       <li>
         <a href="<?php the_permalink(); ?>">
         <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
@@ -112,5 +114,6 @@
   </ul>
 </aside>
 <?php wp_reset_postdata(); endif; ?>
+<?php // endif; ?>
 
 <?php dynamic_sidebar('submenu'); ?>
