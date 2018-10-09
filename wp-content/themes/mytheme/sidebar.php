@@ -53,19 +53,33 @@
     setup_postdata( $post ); // 記事データの取得
   ?>
   <li>
-    <a href="<?php the_permalink(); ?>">
       <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
       <div class="text">
-        <?php the_title(); ?>
+        <a href="<?php the_permalink(); ?>">
+          <?php the_title(); ?>
+        </a>
         <?php if (has_category()) : ?>
-          <?php $postcat = get_the_category_descendants(); ?>
+          <?php
+            $postcat = get_the_category();
+            $catid = $postcat[1]->cat_ID;
+            $cat_link = get_category_link($catid);
+          ?>
           <span>
-            <?php echo $postcat[0]->name; ?>
-            <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
+            <a href="<?php echo esc_url($cat_link); ?>"><?php echo $postcat[1]->name; ?></a>
           </span>
         <?php endif; ?>
+
+        <?php
+          $year   = get_the_date( 'Y' );
+          $month  = get_the_date( 'm' );
+        ?>
+          <span>
+            <a href="<?php echo get_month_link( $year, $month ); ?>">
+              <?php echo get_the_date(); ?>
+            </a>
+          </span>
       </div>
-    </a>
+
   </li>
   <?php
     endforeach; // ループの終了

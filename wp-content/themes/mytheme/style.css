@@ -872,21 +872,27 @@ blockquote:after {
 
 .mymenu li a {
   display: block;
-  padding: 10px 5px;
-  color: #000000;
   font-size: 14px;
   text-decoration: none;
 }
 
 .mymenu li a:hover {
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
 }
 
 /* サムネイル画像を付けたメニューのデザイン */
-.mymenu-thumb li a {
+.mymenu-thumb li {
   padding: 5px 0;
   border-bottom: 1px dotted #dddddd;
   color: #2288bb;
+}
+
+.mymenu-thumb li a {
+  color: #28b;
+}
+
+.mymenu-thumb li:last-child {
+  border: none;
 }
 
 .mymenu-thumb li a:after {
