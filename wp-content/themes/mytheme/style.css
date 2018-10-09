@@ -500,14 +500,14 @@ footer .widget_categories ul {
 
 
 .kiji-body li:before {
-  position: absolute;
+  /* position: absolute;
   list-style: none;
   left: 0px;
   top: 3px;
   content: '\f152';
   color: #aaaaaa;
   font-family: 'FontAwesome';
-  line-height: 1;
+  line-height: 1; */
 }
 
 .amazonjs_item .amazonjs_info ul li {
