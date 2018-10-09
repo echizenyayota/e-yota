@@ -29,6 +29,10 @@ pre {
   overflow: auto;
 }
 
+body a {
+  color: #28b;
+}
+
 /*.text h1 {
   word-wrap: break-word;
 }*/
