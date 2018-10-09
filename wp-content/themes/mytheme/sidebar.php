@@ -53,7 +53,9 @@
     setup_postdata( $post ); // 記事データの取得
   ?>
   <li>
-      <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
+      <a href="<?php the_permalink(); ?>" class="img_link">
+        <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
+      </a>
       <div class="text">
         <a href="<?php the_permalink(); ?>">
           <?php the_title(); ?>
@@ -64,16 +66,15 @@
             $catid = $postcat[1]->cat_ID;
             $cat_link = get_category_link($catid);
           ?>
-          <span>
+          <span class="new_article">
             <a href="<?php echo esc_url($cat_link); ?>"><?php echo $postcat[1]->name; ?></a>
           </span>
         <?php endif; ?>
-
         <?php
           $year   = get_the_date( 'Y' );
           $month  = get_the_date( 'm' );
         ?>
-          <span>
+          <span class="new_article">
             <a href="<?php echo get_month_link( $year, $month ); ?>">
               <?php echo get_the_date(); ?>
             </a>

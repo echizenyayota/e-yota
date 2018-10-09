@@ -880,6 +880,16 @@ blockquote:after {
   /* background-color: #eeeeee; */
 }
 
+.mymenu .new_article {
+  display: inline;
+}
+
+.mymenu .new_article a {
+  color: #666;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
 /* サムネイル画像を付けたメニューのデザイン */
 .mymenu-thumb li {
   padding: 5px 0;
@@ -900,6 +910,12 @@ blockquote:after {
   display: block;
   clear: both;
 }
+
+.mymenu-thumb li a.img_link:after {
+  content: none;
+}
+
+
 
 .mymenu-thumb li .thumb {
   float: left;
