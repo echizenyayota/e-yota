@@ -112,7 +112,7 @@ header, .container, .sub-header {
 .site h1 a {
   display:inline-block;
   padding: 10px;
-  background-color: #00a0e9;
+  background-color: #000080;
   color: #ffffff;
   text-decoration: none;
 }
@@ -584,14 +584,14 @@ blockquote:after {
   margin-bottom: 2px;
   padding: 3px 5px;
   border-radius:2px;
-  background-color: #75dbe7;
+  background-color: #000080;
   color: #ffffff;
   font-size: 12px;
   text-decoration: none;
 }
 
 .kiji-tag li a:hover {
-  background-color: #94ecf6;
+  background-color: #0000cc;
 }
 
 .kiji-tag ul:after {
@@ -1068,14 +1068,14 @@ a.tag-cloud-link {
   margin-bottom: 2px;
   padding: 3px 5px;
   border-radius:2px;
-  background-color: #75dbe7;
+  background-color: #000080;
   color: #ffffff;
   font-size: 12px;
   text-decoration: none;
 }
 
 a.tag-cloud-link:hover {
-  background-color: #94ecf6;
+  background-color: #0000cc;
 }
 
 .tagcloud {
