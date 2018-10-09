@@ -370,7 +370,7 @@ footer .widget_categories ul {
   margin-top: 40px;
   padding-left: 32px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #00a0e9;
+  border-bottom: 2px solid #000080;
   font-size: 24px;
   clear: both;
 }
@@ -447,7 +447,7 @@ footer .widget_categories ul {
   left: 0px;
   top: 9px;
   content: '\f14a';
-  color: #00a0e9;
+  color: #000080;
   font-family: 'FontAwesome';
   font-size: 28px;
   line-height: 1;
@@ -456,7 +456,7 @@ footer .widget_categories ul {
 .kiji h3 {
   margin-top: 25px;
   padding-left: 10px;
-  border-left: 10px solid #a5e2fe;
+  border-left: 10px solid #000080;
   font-size: 18px;
   clear: both;
 }
