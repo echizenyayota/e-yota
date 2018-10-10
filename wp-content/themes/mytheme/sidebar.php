@@ -3,10 +3,6 @@
 <?php
   $location_name = 'pickup';
   $locations = get_nav_menu_locations();
-
-  // var_dump($locations);
-  // exit;
-
   $myposts = wp_get_nav_menu_items($locations[$location_name]);
   if ($myposts) : ?>
 
@@ -32,7 +28,9 @@
 
 
 <?php
+  $the_slug = 'tomioka_highschool_danceclub';
   $myposts = get_posts( array(
+    'category_name' => $the_slug,
     'post_type' => 'post',
     `posts_per_page` =>'6',
     'meta_key' => 'postviews',
@@ -90,18 +88,6 @@
 </aside>
 
 <!-- 登美丘高校ダンス部人気の記事 -->
-<?php
-  // $the_slug = 'tomioka_highschool_danceclub';
-  // $args = array(
-  //  'category_name' => $the_slug,
-  // 	'post_type'      => 'post',
-  // 	'post_status'    => 'publish',
-  // 	'posts_per_page' => 5
-  // );
-  // var_dump($args);
-  // $my_posts = get_posts( $args );
-  // var_dump($my_posts);
-?>
 <aside class="mymenu mymenu-thumb">
   <h2>人気記事</h2>
   <ul>
@@ -114,7 +100,7 @@
           <?php if (has_category()) : ?>
             <?php $postcat = get_the_category_descendants(); ?>
             <span>
-              <?php echo $postcat[0]->name; ?>
+              <?php // echo $postcat[0]->name; ?>
               <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
             </span>
           <?php endif; ?>
