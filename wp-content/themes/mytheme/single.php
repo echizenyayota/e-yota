@@ -22,10 +22,6 @@
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
       <article <?php post_class('kiji'); ?>>
 
-        <div class="kiji-tag">
-          <?php the_tags('<ul><li>', '</li><li>','</li></ul>'); ?>
-        </div>
-
         <h1><?php the_title(); ?></h1>
 
         <div class="kiji-date">
@@ -140,6 +136,9 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
+          <div class="kiji-tag">
+            <?php the_tags('<ul><li>', '</li><li>','</li></ul>'); ?>
+          </div>
         <?php wp_reset_postdata(); ?>
 
       </article>
