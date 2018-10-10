@@ -89,7 +89,7 @@
 
 <!-- 登美丘高校ダンス部人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>人気記事</h2>
+  <h2>登美丘高校ダンス部の人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
@@ -100,7 +100,12 @@
           <?php if (has_category()) : ?>
             <?php $postcat = get_the_category_descendants(); ?>
             <span>
-              <?php // echo $postcat[0]->name; ?>
+              <?php
+                $value = get_post_meta( get_the_ID(), 'postviews', true );
+                if( $value ){
+                  echo $value . 'PV';
+                }
+              ?>
               <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
             </span>
           <?php endif; ?>
