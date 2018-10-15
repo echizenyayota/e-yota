@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>#高校ダンス部</h2>
+  <h2>高校ダンス部おすすめ記事</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -89,7 +89,7 @@
 
 <!-- 登美丘高校ダンス部人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>登美丘高校ダンス部の人気記事</h2>
+  <h2>登美丘高校ダンス部おすすめ記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
@@ -101,11 +101,12 @@
             <?php $postcat = get_the_category_descendants(); ?>
             <span>
               <?php
-                $value = get_post_meta( get_the_ID(), 'postviews', true );
-                if( $value ){
-                  // echo $value . 'PV';
-                  echo intval($value) . 'PV';
-                }
+                // $value = get_post_meta( get_the_ID(), 'postviews', true );
+                // var_dump($value);
+                // if( $value ){
+                //   // echo $value . 'PV';
+                //   echo intval($value) . 'PV';
+                // }
               ?>
               <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
             </span>
