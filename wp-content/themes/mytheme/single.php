@@ -194,7 +194,7 @@
   if (!is_user_logged_in() ) {
     $count_key = 'postviews';
     // $count = get_post_meta($post->ID, $count_key, true);
-    (int)$count = get_post_meta($post->ID, $count_key);
+    (int)$count = get_post_meta($post->ID, $count_key, true);
     $count++;
     update_post_meta($post->ID, $count_key, $count);
   }
