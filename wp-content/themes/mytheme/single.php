@@ -193,8 +193,10 @@
 <?php // アクセス数の記録(ログインしているユーザーは除外)
   if (!is_user_logged_in() ) {
     $count_key = 'postviews';
-    // $count = get_post_meta($post->ID, $count_key, true);
-    (int)$count = get_post_meta($post->ID, $count_key, true);
+    $count = (int)get_post_meta($post->ID, $count_key, true);
+    if (!is_int($count)) {
+        $count = 0;
+    }
     $count++;
     update_post_meta($post->ID, $count_key, $count);
   }
