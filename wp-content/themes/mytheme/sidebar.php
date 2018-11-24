@@ -89,7 +89,7 @@
 
 <!-- 登美丘高校ダンス部人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>登美丘高校ダンス部おすすめ記事</h2>
+  <h2>登美丘高校ダンス部人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
