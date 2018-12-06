@@ -96,17 +96,18 @@
         <a href="<?php the_permalink(); ?>">
         <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
         <div class="text">
+            <span class="pv">
+             <?php
+               $value = get_post_meta( get_the_ID(), 'postviews', true );
+               if( $value ){
+                 echo intval($value) . 'PV';
+               }
+             ?>
+            </span>
           <?php the_title(); ?>
           <?php if (has_category()) : ?>
             <?php $postcat = get_the_category_descendants(); ?>
-             <span class="pv">
-              <?php
-                $value = get_post_meta( get_the_ID(), 'postviews', true );
-                if( $value ){
-                  echo intval($value) . 'PV';
-                }
-              ?>
-             </span>
+
              <span>
                  <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
              </span>
