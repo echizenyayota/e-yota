@@ -99,17 +99,17 @@
           <?php the_title(); ?>
           <?php if (has_category()) : ?>
             <?php $postcat = get_the_category_descendants(); ?>
-            <span>
+             <span class="pv">
               <?php
-                // $value = get_post_meta( get_the_ID(), 'postviews', true );
-                // var_dump($value);
-                // if( $value ){
-                //   // echo $value . 'PV';
-                //   echo intval($value) . 'PV';
-                // }
+                $value = get_post_meta( get_the_ID(), 'postviews', true );
+                if( $value ){
+                  echo intval($value) . 'PV';
+                }
               ?>
-              <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
-            </span>
+             </span>
+             <span>
+                 <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
+             </span>
           <?php endif; ?>
         </div>
         </a>
