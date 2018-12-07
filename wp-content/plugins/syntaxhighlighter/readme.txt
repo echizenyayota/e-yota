@@ -35,6 +35,14 @@ Try excluding this plugin's Javascript from any performance optimizations your s
 
 == ChangeLog ==
 
+= Version 3.4.0 =
+
+* Drop support for the Gutenberg plugin in favor of WordPress 5.0's native functionality (different function names).
+
+= Version 3.3.2 =
+
+* Gutenberg: If a language isn't selected in the block configuration, default to plain text.
+
 = Version 3.3.1 =
 
 * Make sure `wp-editor` script is loaded for Gutenberg.
