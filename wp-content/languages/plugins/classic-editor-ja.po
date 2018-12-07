@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Classic Editor - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-06 19:34:34+0000\n"
+"PO-Revision-Date: 2018-12-07 02:40:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,11 +11,16 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Classic Editor - Stable (latest release)\n"
 
-#: classic-editor.php:528
+#. translators: %s: post title
+#: classic-editor.php:679
+msgid "Edit &#8220;%s&#8221; in the Block Editor"
+msgstr "「%s」をブロックエディターで編集"
+
+#: classic-editor.php:533
 msgid "Switch to Block Editor"
 msgstr "ブロックエディターに切り替え"
 
-#: classic-editor.php:524 classic-editor.php:558
+#: classic-editor.php:529 classic-editor.php:563
 msgid "Switch to Classic Editor"
 msgstr "クラシックエディターに切り替え"
 
@@ -39,7 +44,7 @@ msgstr "デフォルトでは、ブロックエディターがクラッシック
 msgid "Allow site admins to change settings"
 msgstr "サイト管理者による設定の変更を許可"
 
-#: classic-editor.php:329 classic-editor.php:507
+#: classic-editor.php:329 classic-editor.php:512
 msgid "Editor"
 msgstr "エディター"
 
@@ -51,8 +56,8 @@ msgstr "いいえ"
 msgid "Yes"
 msgstr "はい"
 
-#: classic-editor.php:280 classic-editor.php:672 classic-editor.php:709
-#: classic-editor.php:720
+#: classic-editor.php:280 classic-editor.php:677 classic-editor.php:714
+#: classic-editor.php:725
 msgid "Block Editor"
 msgstr "ブロックエディター"
 
@@ -81,16 +86,16 @@ msgid "Enables the WordPress classic editor and the old-style Edit Post screen w
 msgstr "WordPress の旧エディターと、TinyMCE、メタボックスなどを含む以前のスタイルの投稿編集画面レイアウトを有効化します。この画面を拡張する古いプラグインをサポートします。"
 
 #. Plugin Name of the plugin
-#: classic-editor.php:276 classic-editor.php:346 classic-editor.php:679
-#: classic-editor.php:706 classic-editor.php:720
+#: classic-editor.php:276 classic-editor.php:346 classic-editor.php:684
+#: classic-editor.php:711 classic-editor.php:725
 msgid "Classic Editor"
 msgstr "Classic Editor"
 
 #. translators: %s: post title
-#: classic-editor.php:681
+#: classic-editor.php:686
 msgid "Edit &#8220;%s&#8221; in the Classic Editor"
 msgstr "「%s」をクラッシックエディターで編集"
 
-#: classic-editor.php:569
+#: classic-editor.php:574
 msgid "Settings"
 msgstr "設定"

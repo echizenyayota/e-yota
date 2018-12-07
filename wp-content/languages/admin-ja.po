@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-06 19:30:46+0000\n"
+"PO-Revision-Date: 2018-12-07 04:11:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -219,7 +219,7 @@ msgstr "WordPress 5.0への更新が無事完了しました ! 大きな変更�
 
 #: wp-admin/about.php:65
 msgid "Say Hello to the New Editor"
-msgstr "こんにちは、新エディターです"
+msgstr "こんにちは、新しいエディターです"
 
 #. translators: first post content, %s: site link
 #: wp-admin/includes/upgrade.php:178
@@ -1471,7 +1471,7 @@ msgstr "%s (サニタイズした投稿タイトル (スラッグ)。)"
 #. translators: %s: permalink structure tag
 #: wp-admin/options-permalink.php:230
 msgid "%s (The unique ID of the post, for example 423.)"
-msgstr "%s (投稿の単一なID、例: 423)"
+msgstr "%s (投稿の一意の ID、例: 423)"
 
 #. translators: %s: permalink structure tag
 #: wp-admin/options-permalink.php:228
@@ -3378,7 +3378,7 @@ msgstr "パスワード確認"
 #. Translators: 1: wp-config.php; 2: Secret key service URL.
 #: wp-admin/maint/repair.php:69
 msgid "While you are editing your %1$s file, take a moment to make sure you have all 8 keys and that they are unique. You can generate these using the <a href=\"%2$s\">WordPress.org secret key service</a>."
-msgstr "%1$s ファイルを編集する際は、8つのすべてのキーがユニーク(一意)であることを確認してください。これらのキーは <a href=\"%2$s\">WordPress.org 秘密鍵サービス</a>を使用して生成することもできます。"
+msgstr "%1$s ファイルを編集する際は、必ず8つのキーをすべて異なるものにしてください。これらは <a href=\"%2$s\">WordPress.org 秘密鍵サービス</a>を使用して生成することもできます。"
 
 #: wp-admin/includes/update.php:687
 #: wp-admin/includes/class-wp-comments-list-table.php:621
@@ -3978,7 +3978,7 @@ msgstr "Y年n月j日 @ H:i"
 #: wp-admin/includes/ajax-actions.php:3822
 #: wp-admin/includes/ajax-actions.php:3887
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
-msgstr "ファイルシステムに接続できませんした。資格情報を確認してください。"
+msgstr "ファイルシステムに接続できませんでした。アクセス情報を確認してください。"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:978
 msgid "Y/m/d g:i:s a"
@@ -7391,7 +7391,7 @@ msgstr "自由について"
 
 #: wp-admin/freedoms.php:89
 msgid "Don&#8217;t you wish all software came with these freedoms? So do we! For more information, check out the <a href=\"https://www.fsf.org/\">Free Software Foundation</a>."
-msgstr "すべてのソフトウェアがこのような自由を備えていたらなあと思いませんか ? 私たちも思います ! より詳しい情報は、<a href=\"https://www.fsf.org/\">フリーソフトウェア財団</a> を確認してください。"
+msgstr "すべてのソフトウェアにこのような自由があれば、と思いませんか ? 私たちもそう思います ! より詳しい情報については、<a href=\"https://www.fsf.org/\">フリーソフトウェア財団</a>でご確認ください。"
 
 #: wp-admin/includes/dashboard.php:34
 msgid "Your browser is out of date!"
@@ -7842,15 +7842,15 @@ msgstr "<strong>順序</strong> &mdash; 固定ページは通常アルファベ�
 
 #: wp-admin/includes/file.php:1705
 msgid "If you do not remember your credentials, you should contact your web host."
-msgstr "接続情報が思い出せない場合は、ホスティング担当者に問い合わせてください。"
+msgstr "アクセス情報が思い出せない場合は、ホスティング担当者に問い合わせてください。"
 
 #: wp-admin/includes/file.php:1699
 msgid "Please enter your FTP credentials to proceed."
-msgstr "次に進むには FTP の接続情報を入力してください。"
+msgstr "次に進むには FTP のアクセス情報を入力してください。"
 
 #: wp-admin/includes/file.php:1695
 msgid "Please enter your FTP or SSH credentials to proceed."
-msgstr "次に進むには FTP または SSH の接続情報を入力してください。"
+msgstr "次に進むには FTP または SSH のアクセス情報を入力してください。"
 
 #: wp-admin/user-edit.php:45
 msgid "Your profile contains information about you (your &#8220;account&#8221;) as well as some personal options related to using WordPress."
