@@ -147,7 +147,7 @@
         <?php wp_reset_postdata(); ?>
 
         <?php
-          $the_slug = 'paypal';
+          $the_slug = 'ihararikka';
           $myposts = get_posts( array(
             'category_name' => $the_slug,
             'post_type' => 'post',
@@ -157,7 +157,7 @@
           if ($myposts) : ?>
 
           <aside class="mymenu mymenu-thumb">
-            <h2>PayPalの関連記事</h2>
+            <h2>伊原六花さん関連記事</h2>
             <ul>
               <?php foreach($myposts as $post): setup_postdata($post); ?>
                 <li>

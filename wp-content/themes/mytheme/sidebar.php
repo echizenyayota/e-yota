@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>高校ダンス部おすすめ記事</h2>
+  <h2>PayPalと個人間送金</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -107,7 +107,6 @@
           <?php the_title(); ?>
           <?php if (has_category()) : ?>
             <?php $postcat = get_the_category_descendants(); ?>
-
              <span>
                  <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
              </span>
