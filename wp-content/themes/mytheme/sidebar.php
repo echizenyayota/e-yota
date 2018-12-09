@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>PayPalと個人間送金</h2>
+  <h2>おすすめ記事</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
