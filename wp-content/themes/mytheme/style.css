@@ -493,7 +493,7 @@ footer .widget_categories ul {
 }
 
 .kiji-body li {
-  list-style: none;
+  /* list-style: none; */
   position: relative;
   padding-left: 20px;
 }
