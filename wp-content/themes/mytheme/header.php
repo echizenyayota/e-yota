@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+  <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css"> -->
 
   <?php if ( is_single() || is_page() ) : // 記事の個別ページ用のメタデータ?>
     <meta name="<?php echo esc_attr( 'description' ); ?>" content="<?php echo wp_html_excerpt($post->post_content, 100, '...'); ?>">

@@ -86,7 +86,7 @@ function mythumb( $size ) {
   global $post;
 
   if (has_post_thumbnail() ) {
-    $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), '$size');
+    $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), $size);
     $url = $postthumb[0];
     // var_dump($url);
     // 小かっこは、パターンにマッチした部分文字列を取得したい場合に使います。https://goo.gl/nqdwvE
@@ -230,3 +230,6 @@ function get_the_term_descendants( $id, $taxonomy ) {
 function get_the_category_descendants( $id = false ) {
 	return get_the_term_descendants( $id, 'category' );
 }
+
+
+add_image_size('large-thumbnail', 650, 350, true);

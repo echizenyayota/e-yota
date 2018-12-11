@@ -13,4 +13,5 @@ wp-config.php
 .htaccess_lscachebak_orig
 robots.txt
 wp-content/cache/
+wp-content/uploads/
 
