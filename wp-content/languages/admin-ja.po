@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-07 04:11:01+0000\n"
+"PO-Revision-Date: 2018-12-13 12:01:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,6 +25,14 @@ msgstr "Asia/Tokyo"
 msgctxt "start of week"
 msgid "1"
 msgstr "1"
+
+#: wp-admin/post.php:44
+msgid "A post type mismatch has been detected."
+msgstr "投稿タイプの不一致が見つかりました。"
+
+#: wp-admin/includes/class-wp-screen.php:282 wp-admin/post.php:20
+msgid "A post ID mismatch has been detected."
+msgstr "投稿の ID の不一致が見つかりました。"
 
 #. translators: %s: An edit post link to use the classic editor.
 #: wp-admin/includes/template.php:1049
@@ -89,135 +97,135 @@ msgctxt "CSS Font Family for Editor Font"
 msgid "Noto Serif"
 msgstr "Noto Serif JP"
 
-#: wp-admin/about.php:426
+#: wp-admin/about.php:440
 msgid "Note to users of assistive technology: if you experience usability issues with the block editor, we recommend you continue to use the Classic Editor."
 msgstr "アシスティブ・テクノロジーを利用中の方へ: ブロックエディターで、編集にユーザビリティの問題が発生した場合、クラシックエディターの利用を継続することをおすすめします。"
 
-#: wp-admin/about.php:425
+#: wp-admin/about.php:439
 msgid "The Classic Editor plugin restores the previous WordPress editor and the Edit Post screen. It lets you keep using plugins that extend it, add old-style meta boxes, or otherwise depend on the previous editor. To install, visit your plugins page and click the &#8220;Install Now&#8221; button next to &#8220;Classic Editor&#8221;. After the plugin finishes installing, click &#8220;Activate&#8221;. That’s it!"
 msgstr "Classic Editor プラグインは以前の WordPress エディターと投稿編集画面をリストアします。これにより、拡張があるプラグイン、古いスタイルのメタボックスの追加など、以前のエディターに依存したものを使い続けることが出来ます。インストールするには、プラグインページを訪問し「Classic Editor」の隣りにある「今すぐインストール」ボタンををクリックします。プラグインのインストールが終わったら「有効化」をクリックします。たったこれだけです !"
 
-#: wp-admin/about.php:424
+#: wp-admin/about.php:438
 msgid "Prefer to stick with the familiar Classic Editor? No problem! Support for the Classic Editor plugin will remain in WordPress through 2021."
 msgstr "親しみのあるクラシックエディターを使い続けたいですか ? ご心配なく ! WordPress による Classic Editor プラグインのサポートは、2021年まで続きます。"
 
-#: wp-admin/about.php:409
+#: wp-admin/about.php:423
 msgid "Keep it Classic"
 msgstr "クラシックをキープ"
 
-#: wp-admin/about.php:400
+#: wp-admin/about.php:414
 msgid "Learn how to get started"
 msgstr "始める方法を知る"
 
-#: wp-admin/about.php:394
+#: wp-admin/about.php:408
 msgid "The new block paradigm opens up a path of exploration and imagination when it comes to solving user needs. With the unified block insertion flow, it&#8217;s easier for your clients and customers to find and use blocks for all types of content. Developers can focus on executing their vision and providing rich editing experiences, rather than fussing with difficult APIs."
 msgstr "新しいブロックのパラダイムは、ユーザーの要望を解決するための探求とイマジネーションの道を開きます。統合されたブロック挿入フローにより、クライアントは簡単に全コンテンツタイプのブロックを見つけて使用できます。開発者は、難しい API に悩まされず、ビジョンの実行とリッチな編集体験の提供に注力することができます。"
 
-#: wp-admin/about.php:386
+#: wp-admin/about.php:400
 msgid "Take advantage of a wide collection of APIs and interface components to easily create blocks with intuitive controls for your clients. Utilizing these components not only speeds up development work but also provide a more consistent, usable, and accessible interface to all users."
 msgstr "クライアントにとって直感的なコントロールをもたせたブロックを簡単に作ることができる、幅広い API とインターフェイスコンポーネントを活用しましょう。コンポーネントの利用は、開発作業を高速化するだけでなく、より一貫して使いやすい、誰にとってもアクセシブルなインターフェイスを提供します。"
 
-#: wp-admin/about.php:385
+#: wp-admin/about.php:399
 msgid "Compose"
 msgstr "構成"
 
-#: wp-admin/about.php:378
+#: wp-admin/about.php:392
 msgid "Blocks provide a comfortable way for users to change content directly, while also ensuring the content structure cannot be easily disturbed by accidental code edits. This allows the developer to control the output, building polished and semantic markup that is preserved through edits and not easily broken."
 msgstr "ブロックは、予期せぬコード編集によるコンテンツ構造の乱れが簡単には起こらないことを担保しながらも、コンテンツを直接変更することができる快適な方法をユーザーに提供します。そのため、開発者は出力を制御し、編集されず簡単には壊れない、洗練されたセマンティックなマークアップを作り上げることができます。"
 
-#: wp-admin/about.php:377
+#: wp-admin/about.php:391
 msgid "Protect"
 msgstr "保護"
 
-#: wp-admin/about.php:358
+#: wp-admin/about.php:372
 msgid "Give Twenty Nineteen a try"
 msgstr "Twenty Nineteen を試してみる"
 
-#: wp-admin/about.php:351
+#: wp-admin/about.php:365
 msgid "Twenty Nineteen is designed to work for a wide variety of use cases. Whether you’re running a photo blog, launching a new business, or supporting a non-profit, Twenty Nineteen is flexible enough to fit your needs."
 msgstr "Twenty Nineteen は幅広く多様な事例で使用できるようデザインされました。写真ブログの運営、新しいビジネスの立ち上げ、非営利団体のサポートなど、Twenty Nineteen はあなたのニーズに合うのに十分な柔軟性があります。"
 
-#: wp-admin/about.php:350
+#: wp-admin/about.php:364
 msgid "Versatile design for all sites"
 msgstr "すべてのサイト向けの多用途なデザイン"
 
-#: wp-admin/about.php:346
+#: wp-admin/about.php:360
 msgid "Featuring ample whitespace, and modern sans-serif headlines paired with classic serif body text, Twenty Nineteen is built to be beautiful on the go. It uses system fonts to increase loading speed. No more long waits on slow networks!"
 msgstr "たっぷりとった余白と、モダンなゴシック体の見出し、クラシックな明朝の本文テキストの組み合わせが特色の Twenty Nineteen は、出先でも美しくあるために造られました。システムフォントを使用して、読み込みスピードを向上させました。もう、遅いネットワークで長時間待つ必要はありません !"
 
-#: wp-admin/about.php:345
+#: wp-admin/about.php:359
 msgid "Simple, type-driven layout"
 msgstr "シンプルなタイポグラフィ主導のレイアウト"
 
-#: wp-admin/about.php:338
+#: wp-admin/about.php:352
 msgid "Twenty Nineteen features custom styles for the blocks available by default in 5.0. It makes extensive use of editor styles throughout the theme. That way, what you create in your content editor is what you see on the front of your site."
 msgstr "Twenty Nineteen は、5.0のデフォルトで利用可能なブロックへのカスタムスタイルが備わっています。テーマ全体でエディタースタイルを幅広く使用しています。これにより、コンテンツエディターで作った内容がサイトのフロントで見えるものと同じになります。"
 
-#: wp-admin/about.php:337
+#: wp-admin/about.php:351
 msgid "Designed for the block editor"
 msgstr "ブロックエディターのために設計"
 
-#: wp-admin/about.php:327
+#: wp-admin/about.php:341
 msgid "Introducing Twenty Nineteen, a new default theme that shows off the power of the new editor."
 msgstr "新しいエディターの実力をお披露目する新しいデフォルトテーマ、Twenty Nineteen をご紹介します。"
 
-#: wp-admin/about.php:321
+#: wp-admin/about.php:335
 msgid "The front-end of Twenty Nineteen on the left, and how it looks in the editor on the right."
 msgstr "左: Twenty Nineteen のフロントエンド、右: エディターでの見た目。"
 
-#: wp-admin/about.php:308
+#: wp-admin/about.php:322
 msgid "A Stunning New Default Theme"
 msgstr "美しい新デフォルトテーマ"
 
-#: wp-admin/about.php:298
+#: wp-admin/about.php:312
 msgid "Build your first post"
 msgstr "最初の投稿を作成"
 
-#: wp-admin/about.php:286
+#: wp-admin/about.php:300
 msgid "This new editing experience provides a more consistent treatment of design as well as content. If you&#8217;re building client sites, you can create reusable blocks. This lets your clients add new content anytime, while still maintaining a consistent look and feel."
 msgstr "この新しい編集体験は、コンテンツのみならずデザインにも一貫した対応を提供します。クライアントサイトを制作するなら、再利用ブロックを作成することができます。一貫した仕様をメンテナンスし続けながらも、クライアントはいつでも新しいコンテンツを追加することができます。"
 
-#: wp-admin/about.php:285
+#: wp-admin/about.php:299
 msgid "Freedom to Build, Freedom to Write"
 msgstr "創造の自由、執筆の自由"
 
-#: wp-admin/about.php:132
+#: wp-admin/about.php:146
 msgid "We have tons of blocks available by default, and more get added by the community every day. Here are a few of the blocks to help you get started:"
 msgstr "たくさんのブロックがデフォルトで利用可能なほか、コミュニティによるブロックが日々追加されています。使い始めるのにおすすめのブロックをいくつかご紹介します。"
 
-#: wp-admin/about.php:130 wp-admin/about.php:290
+#: wp-admin/about.php:144 wp-admin/about.php:304
 msgid "Your browser doesn&#8217;t support HTML5 video. Here is a %1$slink to the video%2$s instead."
 msgstr "お使いのブラウザでは HTML5 動画がサポートされていません。こちらが代わりの%1$s動画へのリンク%2$sです。"
 
-#: wp-admin/about.php:126
+#: wp-admin/about.php:140
 msgid "The new block-based editor won&#8217;t change the way any of your content looks to your visitors. What it will do is let you insert any type of multimedia in a snap and rearrange to your heart&#8217;s content. Each piece of content will be in its own block; a distinct wrapper for easy maneuvering. If you&#8217;re more of an HTML and CSS sort of person, then the blocks won&#8217;t stand in your way. WordPress is here to simplify the process, not the outcome."
 msgstr "新しいブロックエディターでも訪問者に対する Web サイトの見え方は変わりません。あらゆる種類のメディアをすばやく挿入し、満足のゆくまで配置を変更できます。コンテンツの各パーツは、それぞれのブロックの中にあって他のブロックと分離され、簡単に移動することができます。また HTML や CSS のスキルがある人に対してもブロックエディターが邪魔することはありません。WordPress は作成物でなく、プロセスを簡素化しました。"
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:139
 msgid "Building with Blocks"
 msgstr "ブロックで構築"
 
-#: wp-admin/about.php:118
+#: wp-admin/about.php:132
 msgid "Trust that your editor looks like your website."
 msgstr "サイトと同じ見た目で確認できるエディター。"
 
-#: wp-admin/about.php:109
+#: wp-admin/about.php:123
 msgid "Work across all screen sizes and devices."
 msgstr "すべての画面サイズと端末で動作します。"
 
-#: wp-admin/about.php:100
+#: wp-admin/about.php:114
 msgid "Create modern, multimedia-heavy layouts."
 msgstr "モダンなマルチメディアを多く含むレイアウトを作成。"
 
-#: wp-admin/about.php:91
+#: wp-admin/about.php:105
 msgid "Do more with fewer plugins."
 msgstr "より少ないプラグインで、より多機能に。"
 
-#: wp-admin/about.php:80
+#: wp-admin/about.php:94
 msgid "You&#8217;ve successfully upgraded to WordPress 5.0! We’ve made some big changes to the editor. Our new block-based editor is the first step toward an exciting new future with a streamlined editing experience across your site. You’ll have more flexibility with how content is displayed, whether you are building your first site, revamping your blog, or write code for a living."
 msgstr "WordPress 5.0への更新が無事完了しました ! 大きな変更点はエディターです。新しいブロックベースのエディターは、サイト全体に渡る効率的な編集体験がもたらす、わくわくする未来への第一歩です。初めてサイトを構築中の方、ブログをリニューアルする方、仕事でコードを書いている方、すべてのユーザーにとってコンテンツの見え方がもっと柔軟になりました。"
 
-#: wp-admin/about.php:65
+#: wp-admin/about.php:79
 msgid "Say Hello to the New Editor"
 msgstr "こんにちは、新しいエディターです"
 
@@ -259,7 +267,7 @@ msgstr "はじめまして。昼間はバイク便のメッセンジャーとし
 msgid "This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:"
 msgstr "これはサンプルページです。同じ位置に固定され、(多くのテーマでは) サイトナビゲーションメニューに含まれる点がブログ投稿とは異なります。まずは、サイト訪問者に対して自分のことを説明する自己紹介ページを作成するのが一般的です。たとえば以下のようなものです。"
 
-#: wp-admin/includes/post.php:2205
+#: wp-admin/includes/post.php:2227
 msgid "This action is still supported in the classic editor, but is deprecated in the block editor."
 msgstr "このアクションはクラシックエディターでは引き続きサポートされますが、ブロックエディターでは非推奨です。"
 
@@ -326,7 +334,7 @@ msgstr "WordPress について"
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
 
-#: wp-admin/about.php:429
+#: wp-admin/about.php:443
 msgid "Install the Classic Editor"
 msgstr "Classic Editor をインストール"
 
@@ -804,7 +812,7 @@ msgid "Report generated for"
 msgstr "レポート生成先"
 
 #. translators: %s: array index
-#: wp-admin/includes/ajax-actions.php:4117
+#: wp-admin/includes/ajax-actions.php:4121
 msgid "Exporter array at index %s does not include a friendly name."
 msgstr "インデックス %s のエクスポートツールの配列にフレンドリーネームが含まれていません。"
 
@@ -816,76 +824,76 @@ msgstr "このサイトのデータを消去する権限がありません。"
 msgid "Sorry, you are not allowed to export personal data on this site."
 msgstr "このサイトの個人データをエクスポートする権限がありません。 "
 
-#: wp-admin/includes/ajax-actions.php:4278
+#: wp-admin/includes/ajax-actions.php:4282
 msgid "Eraser index is out of range."
 msgstr "消去ツールインデックスが範囲外です。"
 
-#: wp-admin/includes/ajax-actions.php:4237
+#: wp-admin/includes/ajax-actions.php:4241
 msgid "Missing eraser index."
 msgstr "消去ツールインデックスがありません。"
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4162
+#: wp-admin/includes/ajax-actions.php:4166
 msgid "Expected done (boolean) in response array from exporter: %s."
 msgstr "エクスポートツール %s からのレスポンス配列に done (ブーリアン) が含まれていません。"
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4156
+#: wp-admin/includes/ajax-actions.php:4160
 msgid "Expected data array in response array from exporter: %s."
 msgstr "エクスポートツール %s からのレスポンス配列にデータ配列が含まれていません。"
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4150
+#: wp-admin/includes/ajax-actions.php:4154
 msgid "Expected data in response array from exporter: %s."
 msgstr "エクスポートツール %s からのレスポンス配列にデータが含まれていません。"
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4144
+#: wp-admin/includes/ajax-actions.php:4148
 msgid "Expected response as an array from exporter: %s."
 msgstr "エクスポートツールからのレスポンスに配列が含まれていません: %s。"
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4129
+#: wp-admin/includes/ajax-actions.php:4133
 msgid "Exporter callback is not a valid callback: %s."
 msgstr "不正なエクスポートツールのコールバック: %s。"
 
 #. translators: %s: exporter friendly name
-#: wp-admin/includes/ajax-actions.php:4123
+#: wp-admin/includes/ajax-actions.php:4127
 msgid "Exporter does not include a callback: %s."
 msgstr "エクスポートツールにコールバックが含まれていません: %s。"
 
 #. translators: %s: array index
-#: wp-admin/includes/ajax-actions.php:4111
+#: wp-admin/includes/ajax-actions.php:4115
 msgid "Expected an array describing the exporter at index %s."
 msgstr "インデックス %s にエクスポートツールを説明する配列が含まれていません。"
 
-#: wp-admin/includes/ajax-actions.php:4097
+#: wp-admin/includes/ajax-actions.php:4101
 msgid "Exporter index out of range."
 msgstr "エクスポートツールのインデックスが範囲外です。"
 
-#: wp-admin/includes/ajax-actions.php:4093
+#: wp-admin/includes/ajax-actions.php:4097
 msgid "Exporter index cannot be negative."
 msgstr "エクスポートツールのインデックスを負の値とすることはできません。"
 
-#: wp-admin/includes/ajax-actions.php:4087
+#: wp-admin/includes/ajax-actions.php:4091
 msgid "An exporter has improperly used the registration filter."
 msgstr "エクスポートツールが登録フィルターを不適切に使用しました。"
 
-#: wp-admin/includes/ajax-actions.php:4059
-#: wp-admin/includes/ajax-actions.php:4243
+#: wp-admin/includes/ajax-actions.php:4063
+#: wp-admin/includes/ajax-actions.php:4247
 msgid "Missing page index."
 msgstr "ページインデックスがありません。"
 
-#: wp-admin/includes/ajax-actions.php:4054
+#: wp-admin/includes/ajax-actions.php:4058
 msgid "Missing exporter index."
 msgstr "エクスポートツールインデックスがありません。"
 
-#: wp-admin/includes/ajax-actions.php:4045
+#: wp-admin/includes/ajax-actions.php:4049
 msgid "Invalid request type."
 msgstr "無効なリクエストタイプ。"
 
-#: wp-admin/includes/ajax-actions.php:4027
-#: wp-admin/includes/ajax-actions.php:4207
+#: wp-admin/includes/ajax-actions.php:4031
+#: wp-admin/includes/ajax-actions.php:4211
 msgid "Missing request ID."
 msgstr "リクエスト ID がありません。"
 
@@ -1060,7 +1068,7 @@ msgstr "エクスポートファイル生成の際の不正なリクエスト ID
 msgid "Unable to generate export file. ZipArchive not available."
 msgstr "エクスポートファイルを再生できません。ZipArchive が利用できません。"
 
-#: wp-admin/includes/ajax-actions.php:4050
+#: wp-admin/includes/ajax-actions.php:4054
 msgid "A valid email address must be given."
 msgstr "有効なメールアドレスが必要です。"
 
@@ -1150,72 +1158,72 @@ msgstr "確認リクエストの再送信に成功しました。"
 msgid "Unable to initiate confirmation request."
 msgstr "確認リクエストを開始できませんでした。"
 
-#: wp-admin/includes/ajax-actions.php:4032
-#: wp-admin/includes/ajax-actions.php:4213
-#: wp-admin/includes/ajax-actions.php:4227
+#: wp-admin/includes/ajax-actions.php:4036
+#: wp-admin/includes/ajax-actions.php:4217
+#: wp-admin/includes/ajax-actions.php:4231
 msgid "Invalid request ID."
 msgstr "不正なリクエスト ID。"
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4377
+#: wp-admin/includes/ajax-actions.php:4381
 msgid "Expected done flag in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s 消去ツール (インデックス %2$d) からのレスポンス配列に完了フラッグが含まれていません。"
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4366
+#: wp-admin/includes/ajax-actions.php:4370
 msgid "Expected messages key to reference an array in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s 消去ツール (インデックス%2$d) からのレスポンス配列に、配列を参照するメッセージキーが含まれていません。"
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4355
+#: wp-admin/includes/ajax-actions.php:4359
 msgid "Expected messages key in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s 消去ツール (インデックス%2$d) からのレスポンス配列にメッセージキーが含まれていません。"
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4344
+#: wp-admin/includes/ajax-actions.php:4348
 msgid "Expected items_retained key in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s 消去ツール (インデックス%2$d) からのレスポンス配列に items_retained キーが含まれていません。"
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4333
+#: wp-admin/includes/ajax-actions.php:4337
 msgid "Expected items_removed key in response array from %1$s eraser (index %2$d)."
 msgstr "%1$s 消去ツール (インデックス%2$d) からのレスポンス配列に items_removed キーが含まれていません。"
 
 #. translators: 1: eraser friendly name, 2: array index
-#: wp-admin/includes/ajax-actions.php:4322
+#: wp-admin/includes/ajax-actions.php:4326
 msgid "Did not receive array from %1$s eraser (index %2$d)."
 msgstr "%1$s 消去ツール (インデックス %2$d) から配列を受け取りませんでした。"
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4306
+#: wp-admin/includes/ajax-actions.php:4310
 msgid "Eraser array at index %d does not include a friendly name."
 msgstr "インデックス %d の消去ツール配列にフレンドリーネームが含まれていません。"
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4301
+#: wp-admin/includes/ajax-actions.php:4305
 msgid "Eraser callback at index %d is not a valid callback."
 msgstr "インデックス %d の消去ツールコールバックは有効なコールバックではありません。"
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4296
+#: wp-admin/includes/ajax-actions.php:4300
 msgid "Eraser array at index %d does not include a callback."
 msgstr "インデックス %d の消去配列にコールバックが含まれていません。"
 
 #. translators: %d: array index
-#: wp-admin/includes/ajax-actions.php:4291
+#: wp-admin/includes/ajax-actions.php:4295
 msgid "Expected an array describing the eraser at index %d."
 msgstr "インデックス %s に消去ツールを説明する配列が含まれていません。"
 
-#: wp-admin/includes/ajax-actions.php:4101
-#: wp-admin/includes/ajax-actions.php:4282
+#: wp-admin/includes/ajax-actions.php:4105
+#: wp-admin/includes/ajax-actions.php:4286
 msgid "Page index cannot be less than one."
 msgstr "ページインデックスは1以上でなければなりません。"
 
-#: wp-admin/includes/ajax-actions.php:4274
+#: wp-admin/includes/ajax-actions.php:4278
 msgid "Eraser index cannot be less than one."
 msgstr "消去ツールインデックスは1以上でなければなりません。"
 
-#: wp-admin/includes/ajax-actions.php:4233
+#: wp-admin/includes/ajax-actions.php:4237
 msgid "Invalid email address in request."
 msgstr "リクエストのメールアドレスが無効です。"
 
@@ -1303,7 +1311,7 @@ msgstr "https://wpdocs.osdn.jp/Giving_WordPress_Its_Own_Directory"
 msgid "Enter the address here if you <a href=\"%s\">want your site home page to be different from your WordPress installation directory</a>."
 msgstr "<a href=\"%s\">サイトのホームページとして WordPress のインストールディレクトリとは異なる場所を設定する場合</a>は、ここにアドレスを入力してください。"
 
-#: wp-admin/about.php:367
+#: wp-admin/about.php:381
 msgid "Developer Happiness"
 msgstr "開発者をハッピーに"
 
@@ -1508,12 +1516,12 @@ msgid "Theme Installation"
 msgstr "テーマのインストール"
 
 #. translators: %s: user's display name
-#: wp-admin/includes/post.php:1607
+#: wp-admin/includes/post.php:1628
 msgid "%s is already editing this post."
 msgstr "%s がすでにこの投稿を編集中です。"
 
 #. translators: %s: user's display name
-#: wp-admin/includes/post.php:1604
+#: wp-admin/includes/post.php:1625
 msgid "%s is already editing this post. Do you want to take over?"
 msgstr "%s がすでにこの投稿を編集中です。引き継ぎますか ?"
 
@@ -1944,7 +1952,7 @@ msgstr "パスワードが脆弱であることを理解した上で使用する
 msgid "Sorry, you are not allowed to edit this changeset."
 msgstr "このチェンジセットを編集する権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3497 wp-admin/update.php:172
+#: wp-admin/includes/ajax-actions.php:3501 wp-admin/update.php:172
 #: wp-admin/update.php:192
 msgid "Sorry, you are not allowed to update themes for this site."
 msgstr "このサイトのテーマを更新する権限がありません。"
@@ -2173,55 +2181,55 @@ msgstr "このサイトのリンクを編集する権限がありません。"
 msgid "Sorry, you are not allowed to manage privacy on this site."
 msgstr "このサイトでプライバシー設定を管理する権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3933
-#: wp-admin/includes/ajax-actions.php:3976 wp-admin/plugins.php:13
+#: wp-admin/includes/ajax-actions.php:3937
+#: wp-admin/includes/ajax-actions.php:3980 wp-admin/plugins.php:13
 msgid "Sorry, you are not allowed to manage plugins for this site."
 msgstr "このサイトのプラグインを管理する権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3903
+#: wp-admin/includes/ajax-actions.php:3907
 msgid "Plugin could not be deleted."
 msgstr "プラグインを削除できませんでした。"
 
-#: wp-admin/includes/ajax-actions.php:3865 wp-admin/plugins.php:249
+#: wp-admin/includes/ajax-actions.php:3869 wp-admin/plugins.php:249
 msgid "Sorry, you are not allowed to delete plugins for this site."
 msgstr "このサイトのプラグインを削除する権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3762 wp-admin/update.php:24
+#: wp-admin/includes/ajax-actions.php:3766 wp-admin/update.php:24
 #: wp-admin/update.php:50 wp-admin/update.php:71
 msgid "Sorry, you are not allowed to update plugins for this site."
 msgstr "このサイトのプラグインを更新する権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3657 wp-admin/update.php:96
+#: wp-admin/includes/ajax-actions.php:3661 wp-admin/update.php:96
 #: wp-admin/update.php:144 wp-admin/plugin-install.php:18
 msgid "Sorry, you are not allowed to install plugins on this site."
 msgstr "このサイトにプラグインをインストールする権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3647
-#: wp-admin/includes/ajax-actions.php:3748
-#: wp-admin/includes/ajax-actions.php:3853
+#: wp-admin/includes/ajax-actions.php:3651
+#: wp-admin/includes/ajax-actions.php:3752
+#: wp-admin/includes/ajax-actions.php:3857
 msgid "No plugin specified."
 msgstr "プラグインが指定されていません。"
 
-#: wp-admin/includes/ajax-actions.php:3624
+#: wp-admin/includes/ajax-actions.php:3628
 msgid "Theme could not be deleted."
 msgstr "テーマを削除できませんでした。"
 
-#: wp-admin/includes/ajax-actions.php:3588
+#: wp-admin/includes/ajax-actions.php:3592
 msgid "Sorry, you are not allowed to delete themes on this site."
 msgstr "このサイトのテーマを削除する権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3557
+#: wp-admin/includes/ajax-actions.php:3561
 msgid "Update failed."
 msgstr "更新に失敗しました。"
 
-#: wp-admin/includes/ajax-actions.php:3387 wp-admin/update.php:218
+#: wp-admin/includes/ajax-actions.php:3391 wp-admin/update.php:218
 #: wp-admin/update.php:247 wp-admin/theme-install.php:16
 msgid "Sorry, you are not allowed to install themes on this site."
 msgstr "このサイトにテーマをインストールする権限がありません。"
 
-#: wp-admin/includes/ajax-actions.php:3375
-#: wp-admin/includes/ajax-actions.php:3484
-#: wp-admin/includes/ajax-actions.php:3577
+#: wp-admin/includes/ajax-actions.php:3379
+#: wp-admin/includes/ajax-actions.php:3488
+#: wp-admin/includes/ajax-actions.php:3581
 msgid "No theme specified."
 msgstr "テーマが指定されていません。"
 
@@ -2450,7 +2458,7 @@ msgstr "テーマ ZIP ファイル"
 msgid "Attach to existing content"
 msgstr "既存コンテンツに添付"
 
-#: wp-admin/includes/post.php:1430
+#: wp-admin/includes/post.php:1451
 msgid "Click the image to edit or update"
 msgstr "編集または更新する画像をクリック"
 
@@ -2718,7 +2726,7 @@ msgid "Welcome to %s. This is your first post. Edit or delete it, then start blo
 msgstr "%s へようこそ。こちらは最初の投稿です。編集または削除し、ブログを始めてください。"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:558
+#: wp-admin/about.php:572
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>バージョン %s</strong> ではセキュリティ問題1件に対応しました。"
 
@@ -2735,15 +2743,15 @@ msgstr "<a href=\"%s\">Gravatar</a> でプロフィール画像を変更でき�
 msgid "Profile Picture"
 msgstr "プロフィール写真"
 
-#: wp-admin/about.php:555
+#: wp-admin/about.php:64 wp-admin/about.php:569
 msgid "Maintenance and Security Releases"
 msgstr "メンテナンスとセキュリティのリリース"
 
-#: wp-admin/about.php:552
+#: wp-admin/about.php:566
 msgid "Security Releases"
 msgstr "セキュリティリリース"
 
-#: wp-admin/about.php:549
+#: wp-admin/about.php:563
 msgid "Maintenance Releases"
 msgstr "メンテナンスリリース"
 
@@ -3005,11 +3013,11 @@ msgstr "バージョン %s を入手する"
 msgid "Toggle panel: %s"
 msgstr "パネルを閉じる: %s"
 
-#: wp-admin/includes/post.php:1645
+#: wp-admin/includes/post.php:1666
 msgid "Saving revision&hellip;"
 msgstr "リビジョンを保存中&hellip;"
 
-#: wp-admin/includes/post.php:1356
+#: wp-admin/includes/post.php:1377
 msgid "Edit permalink"
 msgstr "パーマリンクを編集"
 
@@ -3100,36 +3108,36 @@ msgstr "権限なし"
 msgid "An error occurred while updating %1$s: %2$s"
 msgstr "%1$s の更新中にエラーが発生しました: %2$s"
 
-#: wp-admin/includes/class-wp-screen.php:1242
+#: wp-admin/includes/class-wp-screen.php:1244
 msgid "View Mode"
 msgstr "表示モード"
 
-#: wp-admin/includes/class-wp-screen.php:1193
+#: wp-admin/includes/class-wp-screen.php:1195
 msgid "Pagination"
 msgstr "ページ送り"
 
-#: wp-admin/includes/class-wp-screen.php:1133
+#: wp-admin/includes/class-wp-screen.php:1135
 msgid "%s column"
 msgid_plural "%s columns"
 msgstr[0] "%s 列"
 
-#: wp-admin/includes/class-wp-screen.php:1037
+#: wp-admin/includes/class-wp-screen.php:1039
 msgid "Boxes"
 msgstr "ボックス"
 
-#: wp-admin/includes/class-wp-screen.php:928
+#: wp-admin/includes/class-wp-screen.php:930
 msgid "Additional settings"
 msgstr "追加設定"
 
-#: wp-admin/includes/class-wp-screen.php:710
+#: wp-admin/includes/class-wp-screen.php:712
 msgid "Items list"
 msgstr "項目一覧"
 
-#: wp-admin/includes/class-wp-screen.php:709
+#: wp-admin/includes/class-wp-screen.php:711
 msgid "Items list navigation"
 msgstr "項目一覧ナビゲーション"
 
-#: wp-admin/includes/class-wp-screen.php:708
+#: wp-admin/includes/class-wp-screen.php:710
 msgid "Filter items list"
 msgstr "項目一覧の絞り込み"
 
@@ -3366,7 +3374,7 @@ msgid "%s comment"
 msgid_plural "%s comments"
 msgstr[0] "%s件のコメント"
 
-#: wp-admin/includes/ajax-actions.php:3235
+#: wp-admin/includes/ajax-actions.php:3239
 msgid "Image could not be processed."
 msgstr "画像を処理できませんでした。"
 
@@ -3802,7 +3810,7 @@ msgstr "プラグインの削除"
 msgid "<span>Active:</span> %s"
 msgstr "<span>有効:</span> %s"
 
-#: wp-admin/includes/class-wp-screen.php:1153
+#: wp-admin/includes/class-wp-screen.php:1155
 msgid "Number of items per page:"
 msgstr "ページごとに表示する項目数:"
 
@@ -3971,12 +3979,12 @@ msgstr "メガバイト単位のサイズ"
 msgid "M j, Y @ H:i"
 msgstr "Y年n月j日 @ H:i"
 
-#: wp-admin/includes/ajax-actions.php:3427
-#: wp-admin/includes/ajax-actions.php:3546
-#: wp-admin/includes/ajax-actions.php:3606
-#: wp-admin/includes/ajax-actions.php:3701
-#: wp-admin/includes/ajax-actions.php:3822
-#: wp-admin/includes/ajax-actions.php:3887
+#: wp-admin/includes/ajax-actions.php:3431
+#: wp-admin/includes/ajax-actions.php:3550
+#: wp-admin/includes/ajax-actions.php:3610
+#: wp-admin/includes/ajax-actions.php:3705
+#: wp-admin/includes/ajax-actions.php:3826
+#: wp-admin/includes/ajax-actions.php:3891
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr "ファイルシステムに接続できませんでした。アクセス情報を確認してください。"
 
@@ -4064,7 +4072,7 @@ msgstr "言語を設定すると翻訳ファイルが自動的にダウンロー
 msgid "You cannot delete a theme while it has an active child theme."
 msgstr "使用中の子テーマがあるテーマは削除できません。"
 
-#: wp-admin/includes/class-wp-screen.php:930
+#: wp-admin/includes/class-wp-screen.php:932
 msgid "Enable full-height editor and distraction-free functionality."
 msgstr "最大行表示エディターと集中執筆モード機能を有効化します。"
 
@@ -4089,20 +4097,20 @@ msgstr "<strong> 投稿エディター </strong> &mdash; 投稿のテキスト�
 msgid "You can insert media files by clicking the icons above the post editor and following the directions. You can align or edit images using the inline formatting toolbar available in Visual mode."
 msgstr "投稿エディターの上部のアイコンをクリックし、指示に従うことによって、メディアファイルを挿入することができます。画像の位置合わせや編集はビジュアルモードで使用可能なインライン書式設定ツールバーを利用しておこなうことができます。"
 
-#: wp-admin/includes/ajax-actions.php:3093
+#: wp-admin/includes/ajax-actions.php:3097
 msgid "This preview is unavailable in the editor."
 msgstr "﻿このプレビューはエディタでは表示できません。"
 
-#: wp-admin/includes/ajax-actions.php:3199
+#: wp-admin/includes/ajax-actions.php:3203
 msgid "Could not log out user sessions. Please try again."
 msgstr "﻿ユーザーセッションをログアウトできませんでした。もう一度やり直してください。"
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/ajax-actions.php:3211
+#: wp-admin/includes/ajax-actions.php:3215
 msgid "%s has been logged out."
 msgstr "%s をログアウトしました。"
 
-#: wp-admin/includes/ajax-actions.php:3207
+#: wp-admin/includes/ajax-actions.php:3211
 msgid "You are now logged out everywhere else."
 msgstr "他のすべてでログアウトしました。"
 
@@ -4140,7 +4148,7 @@ msgctxt "theme editor"
 msgid "Editor"
 msgstr "テーマの編集"
 
-#: wp-admin/includes/class-wp-screen.php:1056
+#: wp-admin/includes/class-wp-screen.php:1058
 msgctxt "Welcome panel"
 msgid "Welcome"
 msgstr "ようこそ"
@@ -4317,7 +4325,7 @@ msgctxt "Plugin Installer"
 msgid "Beta Testing"
 msgstr "ベータテスト"
 
-#: wp-admin/includes/ajax-actions.php:3064
+#: wp-admin/includes/ajax-actions.php:3068
 msgid "%s failed to embed."
 msgstr "%s の埋め込みに失敗しました。"
 
@@ -4697,7 +4705,7 @@ msgstr "<strong>アクティビティ</strong> &mdash; 予約済み投稿、最�
 msgid "<strong>Screen Options</strong> &mdash; Use the Screen Options tab to choose which Dashboard boxes to show."
 msgstr "<strong>表示オプション</strong> &mdash; 表示オプションを使ってどのダッシュボードボックスを表示するか選んでください。"
 
-#: wp-admin/post.php:72
+#: wp-admin/post.php:78
 msgid "Unable to submit this form, please refresh and try again."
 msgstr "フォームを送信できません。リロードしてもう一度お試しください。"
 
@@ -5207,15 +5215,15 @@ msgstr "リビジョン間を移動するには、<strong>スライダーハン�
 msgid "Loading&hellip;"
 msgstr "読み込み中&hellip;"
 
-#: wp-admin/post.php:255
+#: wp-admin/post.php:261
 msgid "This item has already been deleted."
 msgstr "この項目はすでに削除されています。"
 
-#: wp-admin/post.php:237
+#: wp-admin/post.php:243
 msgid "The item you are trying to restore from the Trash no longer exists."
 msgstr "ゴミ箱から復元しようとしている項目が存在しません。"
 
-#: wp-admin/post.php:214
+#: wp-admin/post.php:220
 msgid "The item you are trying to move to the Trash no longer exists."
 msgstr "ゴミ箱に移動しようとしている項目が存在しません。"
 
@@ -5361,7 +5369,7 @@ msgstr "この画面では次のことができます。"
 msgid "This screen is used for managing your navigation menus."
 msgstr "この画面でナビゲーションメニューを管理できます。"
 
-#: wp-admin/includes/post.php:1646
+#: wp-admin/includes/post.php:1667
 msgid "Your latest changes were saved as a revision."
 msgstr "最近の変更をリビジョンとして保存しました。"
 
@@ -5452,7 +5460,7 @@ msgstr "ブラウザー内のこの投稿の下書きが以下のバージョン
 msgid "Draft created on %1$s at %2$s"
 msgstr "%1$s%2$sに下書き作成"
 
-#: wp-admin/post.php:224
+#: wp-admin/post.php:230
 msgid "You cannot move this item to the Trash. %s is currently editing."
 msgstr "この項目をゴミ箱へ移動することはできません。%s は現在編集中です。"
 
@@ -5580,7 +5588,7 @@ msgctxt "column name"
 msgid "Uploaded to"
 msgstr "アップロード先"
 
-#: wp-admin/includes/ajax-actions.php:2102 wp-admin/custom-background.php:451
+#: wp-admin/includes/ajax-actions.php:2106 wp-admin/custom-background.php:451
 #: wp-admin/custom-header.php:842
 msgid "The uploaded file is not a valid image. Please try again."
 msgstr "アップロードしたファイルは有効な画像ではありません。もう一度お試しください。"
@@ -5778,11 +5786,11 @@ msgstr "%sMB のファイル保存領域の上限を超えています。"
 msgid "Sorry, you have used your space allocation. Please delete some files to upload more files."
 msgstr "割り当てられたスペースを使い切ってしまったようです。ファイルを追加するには既存のファイルを削除してください。"
 
-#: wp-admin/includes/class-wp-screen.php:800
+#: wp-admin/includes/class-wp-screen.php:802
 msgid "Contextual Help Tab"
 msgstr "コンテクストヘルプタブ"
 
-#: wp-admin/includes/class-wp-screen.php:985
+#: wp-admin/includes/class-wp-screen.php:987
 msgid "Screen Options Tab"
 msgstr "表示オプションタブ"
 
@@ -6485,26 +6493,26 @@ msgid "Show Toolbar when viewing site"
 msgstr "サイトを見るときにツールバーを表示する"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs.
-#: wp-admin/about.php:563
+#: wp-admin/about.php:577
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> では%2$s個のバグを修正しました。"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:571
+#: wp-admin/about.php:585
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はいくつかのセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
 #. translators: %s: Codex URL
-#: wp-admin/about.php:575
+#: wp-admin/about.php:72 wp-admin/about.php:589
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "詳しくは<a href=\"%s\">リリースノート</a>をご覧ください。"
 
 #. translators: 1: WordPress version number, 2: plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:567
+#: wp-admin/about.php:581
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応し、%2$s個のバグを修正しました。"
@@ -6514,15 +6522,15 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "WordPress のダッシュボードへようこそ ! これはサイトにログインすると表示される画面で、ここから WordPress のすべてのサイト管理機能へアクセスできます。どの画面にいても画面のタイトルの上にあるヘルプタブをクリックすればヘルプ情報を得られます。"
 
 #. translators: %s: WordPress version number
-#: wp-admin/about.php:560
+#: wp-admin/about.php:68 wp-admin/about.php:574
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>バージョン %s</strong> では複数のセキュリティ問題に対応しました。"
 
-#: wp-admin/about.php:548
+#: wp-admin/about.php:562
 msgid "Maintenance Release"
 msgstr "メンテナンスリリース"
 
-#: wp-admin/about.php:551
+#: wp-admin/about.php:565
 msgid "Security Release"
 msgstr "セキュリティリリース"
 
@@ -6530,7 +6538,7 @@ msgstr "セキュリティリリース"
 msgid "What&#8217;s New"
 msgstr "新着情報"
 
-#: wp-admin/about.php:554
+#: wp-admin/about.php:568
 msgid "Maintenance and Security Release"
 msgstr "メンテナンスとセキュリティのリリース"
 
@@ -6542,7 +6550,7 @@ msgstr "この画面ではパーマリンク構造を選択できます。共通
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "WordPress %1$s へようこそ。<a href=\"%2$s\">詳細を読む</a>。"
 
-#: wp-admin/about.php:441
+#: wp-admin/about.php:455
 msgid "Return to Updates"
 msgstr "更新ページへ戻る"
 
@@ -6814,11 +6822,11 @@ msgstr "このサイトはマルチサイトインストールのため、サイ
 msgid "Welcome to WordPress %s"
 msgstr "WordPress %s へようこそ"
 
-#: wp-admin/about.php:441
+#: wp-admin/about.php:455
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "ダッシュボード &rarr; 更新へ戻る"
 
-#: wp-admin/about.php:444
+#: wp-admin/about.php:458
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ダッシュボード &rarr; ホームへ移動"
 
@@ -6960,7 +6968,7 @@ msgstr "エラー: 下書きとして保存された投稿へのコメントに�
 
 #: wp-admin/options-reading.php:22 wp-admin/edit-tags.php:233
 #: wp-admin/link-manager.php:51 wp-admin/options-writing.php:20
-#: wp-admin/includes/ms.php:977 wp-admin/includes/class-wp-screen.php:785
+#: wp-admin/includes/ms.php:977 wp-admin/includes/class-wp-screen.php:787
 #: wp-admin/my-sites.php:40 wp-admin/options-general.php:39
 #: wp-admin/comment.php:43 wp-admin/theme-editor.php:25
 #: wp-admin/plugin-editor.php:118 wp-admin/nav-menus.php:529
@@ -7129,8 +7137,8 @@ msgstr "作成者: %s"
 #: wp-admin/credits.php:25
 #: wp-admin/includes/class-wp-plugins-list-table.php:767
 #: wp-admin/includes/update.php:193 wp-admin/includes/update.php:218
-#: wp-admin/includes/ajax-actions.php:3772
-#: wp-admin/includes/ajax-actions.php:3815 wp-admin/freedoms.php:27
+#: wp-admin/includes/ajax-actions.php:3776
+#: wp-admin/includes/ajax-actions.php:3819 wp-admin/freedoms.php:27
 #: wp-admin/about.php:54
 msgid "Version %s"
 msgstr "バージョン %s"
@@ -7431,7 +7439,7 @@ msgid "<strong>Random:</strong> Show a different image on each page."
 msgstr "<strong>ランダム:</strong> それぞれのページで異なる画像を表示します。"
 
 #: wp-admin/includes/theme.php:265 wp-admin/includes/theme.php:295
-#: wp-admin/includes/class-wp-screen.php:1127 wp-admin/index.php:61
+#: wp-admin/includes/class-wp-screen.php:1129 wp-admin/index.php:61
 msgid "Layout"
 msgstr "レイアウト"
 
@@ -7452,7 +7460,7 @@ msgstr "%1$s / %2$s"
 msgid "%s Page Template"
 msgstr "%s 固定ページテンプレート"
 
-#: wp-admin/includes/ajax-actions.php:3874 wp-admin/plugins.php:467
+#: wp-admin/includes/ajax-actions.php:3878 wp-admin/plugins.php:467
 msgid "You cannot delete a plugin while it is active on the main site."
 msgstr "メインのサイトで有効になっているためプラグインを削除できません。"
 
@@ -7587,8 +7595,8 @@ msgid "Theme update failed."
 msgstr "テーマの更新に失敗しました。"
 
 #: wp-admin/includes/class-plugin-upgrader.php:54
-#: wp-admin/includes/ajax-actions.php:3806
-#: wp-admin/includes/ajax-actions.php:3833
+#: wp-admin/includes/ajax-actions.php:3810
+#: wp-admin/includes/ajax-actions.php:3837
 msgid "Plugin update failed."
 msgstr "プラグインの更新に失敗しました。"
 
@@ -8272,7 +8280,7 @@ msgstr "新しい WordPress サイト"
 msgid "My Site"
 msgstr "参加サイト"
 
-#: wp-admin/includes/post.php:727
+#: wp-admin/includes/post.php:747
 msgid "Sorry, you are not allowed to create pages on this site."
 msgstr "このサイトでページを作成する権限がありません。"
 
@@ -8288,7 +8296,7 @@ msgstr "ブログ強制停止時の際のカスタムメッセージ。"
 msgid "Custom site deleted message."
 msgstr "サイト削除時のカスタムメッセージ。"
 
-#: wp-admin/includes/post.php:729
+#: wp-admin/includes/post.php:749
 msgid "Sorry, you are not allowed to create posts or drafts on this site."
 msgstr "このサイトで投稿または下書きを作成する権限がありません。"
 
@@ -8372,12 +8380,12 @@ msgstr "選択したパスワード。"
 msgid "Yes, take me to my profile page"
 msgstr "はい、プロフィールページへ移動します。"
 
-#: wp-admin/post.php:266 wp-admin/post.php:269 wp-admin/upload.php:164
+#: wp-admin/post.php:272 wp-admin/post.php:275 wp-admin/upload.php:164
 #: wp-admin/edit.php:144 wp-admin/edit.php:147
 msgid "Error in deleting."
 msgstr "削除中にエラーが発生しました。"
 
-#: wp-admin/post.php:220 wp-admin/upload.php:137 wp-admin/edit.php:106
+#: wp-admin/post.php:226 wp-admin/upload.php:137 wp-admin/edit.php:106
 msgid "Sorry, you are not allowed to move this item to the Trash."
 msgstr "この項目をゴミ箱へ移動する権限がありません。 "
 
@@ -8393,15 +8401,15 @@ msgid "%s comment restored from the Trash"
 msgid_plural "%s comments restored from the Trash"
 msgstr[0] "%s件のコメントをゴミ箱から復元しました。"
 
-#: wp-admin/post.php:228 wp-admin/upload.php:140 wp-admin/edit.php:114
+#: wp-admin/post.php:234 wp-admin/upload.php:140 wp-admin/edit.php:114
 msgid "Error in moving to Trash."
 msgstr "ゴミ箱への移動中にエラーが発生しました。"
 
-#: wp-admin/post.php:243 wp-admin/upload.php:149 wp-admin/edit.php:125
+#: wp-admin/post.php:249 wp-admin/upload.php:149 wp-admin/edit.php:125
 msgid "Sorry, you are not allowed to restore this item from the Trash."
 msgstr "この項目をゴミ箱から復元する権限がありません。 "
 
-#: wp-admin/post.php:246 wp-admin/upload.php:152 wp-admin/edit.php:128
+#: wp-admin/post.php:252 wp-admin/upload.php:152 wp-admin/edit.php:128
 msgid "Error in restoring from Trash."
 msgstr "ゴミ箱からの復元中にエラーが発生しました。"
 
@@ -8611,7 +8619,7 @@ msgstr "すべて表示"
 msgid "Please enter a valid menu name."
 msgstr "メニュー名を入力してください。"
 
-#: wp-admin/about.php:444
+#: wp-admin/about.php:458
 msgid "Go to Dashboard"
 msgstr "ダッシュボードへ移動"
 
@@ -8729,7 +8737,7 @@ msgstr "利用できるウィジェット"
 msgid "Error in displaying the widget settings form."
 msgstr "ウィジェット設定フォーム表示のエラー。"
 
-#: wp-admin/includes/misc.php:1084 wp-admin/includes/post.php:1805
+#: wp-admin/includes/misc.php:1084 wp-admin/includes/post.php:1827
 #: wp-admin/widgets.php:342
 msgid "Error while saving."
 msgstr "保存中にエラー発生。"
@@ -9041,17 +9049,18 @@ msgstr "&#8220;%1$s&#8221; のリビジョン比較"
 msgid "View post"
 msgstr "投稿を表示"
 
-#: wp-admin/post.php:120
+#: wp-admin/post.php:126
 msgid "You can&#8217;t edit this item because it is in the Trash. Please restore it and try again."
 msgstr "この項目はゴミ箱に入っているため編集できません。元の状態に復元し、再度お試しください。"
 
-#: wp-admin/edit-tags.php:156 wp-admin/includes/post.php:1811
-#: wp-admin/async-upload.php:47 wp-admin/post.php:117 wp-admin/term.php:38
-#: wp-admin/media-upload.php:46
+#: wp-admin/edit-tags.php:156 wp-admin/includes/post.php:1833
+#: wp-admin/includes/class-wp-screen.php:282 wp-admin/async-upload.php:47
+#: wp-admin/post.php:20 wp-admin/post.php:44 wp-admin/post.php:123
+#: wp-admin/term.php:38 wp-admin/media-upload.php:46
 msgid "Sorry, you are not allowed to edit this item."
 msgstr "この項目を編集する権限がありません。"
 
-#: wp-admin/edit-tags.php:143 wp-admin/edit-tags.php:163 wp-admin/post.php:107
+#: wp-admin/edit-tags.php:143 wp-admin/edit-tags.php:163 wp-admin/post.php:113
 #: wp-admin/term.php:26
 msgid "You attempted to edit an item that doesn&#8217;t exist. Perhaps it was deleted?"
 msgstr "編集しようとした項目はありません。削除されたのかもしれません。"
@@ -9175,7 +9184,7 @@ msgstr "プラグインファイル"
 msgid "Select plugin to edit:"
 msgstr "編集するプラグインを選択:"
 
-#: wp-admin/includes/ajax-actions.php:4014 wp-admin/theme-editor.php:180
+#: wp-admin/includes/ajax-actions.php:4018 wp-admin/theme-editor.php:180
 #: wp-admin/plugin-editor.php:177
 msgid "File edited successfully."
 msgstr "ファイルの編集に成功しました。"
@@ -9600,7 +9609,7 @@ msgstr "お探しのユーザーは見つかりませんでした。"
 msgid "Update Themes"
 msgstr "テーマを更新"
 
-#: wp-admin/about.php:278
+#: wp-admin/about.php:292
 msgid "More"
 msgstr "続き"
 
@@ -9934,15 +9943,15 @@ msgstr "1列"
 msgid "Feature Filter"
 msgstr "特徴フィルター"
 
-#: wp-admin/includes/class-wp-screen.php:899
+#: wp-admin/includes/class-wp-screen.php:901
 msgid "Screen Options"
 msgstr "表示オプション"
 
-#: wp-admin/includes/class-wp-screen.php:925
+#: wp-admin/includes/class-wp-screen.php:927
 msgid "Disable accessibility mode"
 msgstr "アクセシビリティモードを無効にする"
 
-#: wp-admin/includes/class-wp-screen.php:925
+#: wp-admin/includes/class-wp-screen.php:927
 msgid "Enable accessibility mode"
 msgstr "アクセシビリティモードを有効にする"
 
@@ -10151,7 +10160,7 @@ msgstr "Just another %s site"
 msgid "Just another WordPress site"
 msgstr "Just another WordPress site"
 
-#: wp-admin/includes/post.php:608
+#: wp-admin/includes/post.php:628
 msgid "Auto Draft"
 msgstr "自動下書き"
 
@@ -11372,7 +11381,7 @@ msgstr "下のボタンをクリックすると、WordPress がローカルに�
 msgid "Export"
 msgstr "エクスポート"
 
-#: wp-admin/includes/class-wp-screen.php:1249
+#: wp-admin/includes/class-wp-screen.php:1251
 #: wp-admin/includes/class-wp-list-table.php:152
 msgid "Excerpt View"
 msgstr "抜粋表示"
@@ -11399,7 +11408,7 @@ msgid "%s post updated."
 msgid_plural "%s posts updated."
 msgstr[0] "%s件の投稿を更新しました。"
 
-#: wp-admin/edit-tags.php:100 wp-admin/post.php:261 wp-admin/themes.php:43
+#: wp-admin/edit-tags.php:100 wp-admin/post.php:267 wp-admin/themes.php:43
 #: wp-admin/upload.php:161 wp-admin/edit.php:140
 msgid "Sorry, you are not allowed to delete this item."
 msgstr "この項目を削除する権限がありません。"
@@ -11485,13 +11494,13 @@ msgid "Update Comment"
 msgstr "コメントを更新"
 
 #. translators: 1: Post edited date, 2: Post edited time
-#: wp-admin/includes/ajax-actions.php:2340 wp-admin/edit-form-advanced.php:523
+#: wp-admin/includes/ajax-actions.php:2344 wp-admin/edit-form-advanced.php:523
 msgid "Last edited on %1$s at %2$s"
 msgstr "最後の編集: %1$s %2$s"
 
 #. translators: 1: Name of most recent post author, 2: Post edited date, 3:
 #. Post edited time
-#: wp-admin/includes/ajax-actions.php:2338 wp-admin/edit-form-advanced.php:520
+#: wp-admin/includes/ajax-actions.php:2342 wp-admin/edit-form-advanced.php:520
 msgid "Last edited by %1$s on %2$s at %3$s"
 msgstr "最後の編集: %2$s %3$s - %1$s"
 

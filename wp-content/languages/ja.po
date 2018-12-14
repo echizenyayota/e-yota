@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-10 05:25:01+0000\n"
+"PO-Revision-Date: 2018-12-13 11:59:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,6 +35,15 @@ msgstr "number_format_thousands_sep"
 #: wp-includes/class-wp-locale.php:220
 msgid "number_format_decimal_point"
 msgstr "number_format_decimal_point"
+
+#: wp-includes/class-wp.php:293 wp-includes/ms-deprecated.php:275
+#: wp-includes/ms-deprecated.php:294
+msgid "A variable mismatch has been detected."
+msgstr "変数の不一致が見つかりました。"
+
+#: wp-activate.php:30
+msgid "A key value mismatch has been detected. Please follow the link provided in your activation email."
+msgstr "キーとバリューの不一致が見つかりました。登録お知らせメールに記載されたリンクをたどってください。"
 
 #. translators: ARIA label for the Block sidebar tab, selected.
 #: wp-includes/js/dist/edit-post.js:4256
@@ -3218,12 +3227,12 @@ msgid "User Requests"
 msgstr "ユーザーリクエスト"
 
 #. translators: deleted long text
-#: wp-includes/functions.php:5970
+#: wp-includes/functions.php:6005
 msgid "This content was deleted by the author."
 msgstr "このコンテンツは投稿者により削除されました。"
 
 #. translators: deleted text
-#: wp-includes/functions.php:5966
+#: wp-includes/functions.php:6001
 msgid "[deleted]"
 msgstr "[削除済み]"
 
@@ -3384,7 +3393,7 @@ msgstr "所有"
 msgid "Whether or not the post type can be viewed."
 msgstr "投稿タイプを表示させるかどうか。"
 
-#: wp-includes/functions.php:2629
+#: wp-includes/functions.php:2664
 msgid "The link you followed has expired."
 msgstr "辿ったリンクは期限が切れています。"
 
@@ -3395,7 +3404,7 @@ msgstr "もっと高いレベルの権限が必要です。"
 
 #: wp-includes/script-loader.php:870 wp-includes/script-loader.php:1302
 #: wp-includes/script-loader.php:1382 wp-includes/script-loader.php:1587
-#: wp-includes/class-wp-xmlrpc-server.php:3695 wp-includes/functions.php:2639
+#: wp-includes/class-wp-xmlrpc-server.php:3695 wp-includes/functions.php:2674
 #: wp-includes/class-wp-customize-manager.php:450
 msgid "Something went wrong."
 msgstr "何かがうまくいかなかったようです。"
@@ -4168,13 +4177,13 @@ msgstr "Nonce チェックに失敗しました。もう一度お試しくださ
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title
-#: wp-includes/functions.php:5829
+#: wp-includes/functions.php:5864
 msgid "[%s] Notice of Admin Email Change"
 msgstr "[%s] 管理者メールアドレス変更のお知らせ"
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/functions.php:5814
+#: wp-includes/functions.php:5849
 msgid ""
 "Hi,\n"
 "\n"
@@ -4200,7 +4209,7 @@ msgstr ""
 "###SITENAME### 一同\n"
 "###SITEURL###"
 
-#: wp-includes/functions.php:5750
+#: wp-includes/functions.php:5785
 msgid "Only UUID V4 is supported at this time."
 msgstr "現在 UUID バージョン4 のみをサポートしています。"
 
@@ -7553,13 +7562,13 @@ msgstr "<strong>エラー</strong>: 無効なユーザー名かメールアド�
 msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "%1$s %2$s %3$s %4$s のフィード"
 
-#: wp-includes/functions.php:5341 wp-includes/js/dist/components.js:32629
+#: wp-includes/functions.php:5376 wp-includes/js/dist/components.js:32629
 msgid "Close dialog"
 msgstr "ダイアログを閉じる"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
-#: wp-includes/functions.php:3923
+#: wp-includes/functions.php:3958
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "%2$s で呼び出された %1$s のコンストラクターメソッドはバージョン %3$s から<strong>非推奨</strong>になっています ! 代わりに %4$s を使ってください。"
 
@@ -7697,12 +7706,12 @@ msgstr "https://wpdocs.osdn.jp/Debugging_a_WordPress_Network"
 msgid "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
 msgstr "<a href=\"%s\" target=\"_blank\">バグレポート</a>ページをお読みください。ガイドラインの中に、何が問題だったのかを理解するために役に立つ情報があるかもしれません。"
 
-#: wp-includes/functions.php:4166
+#: wp-includes/functions.php:4201
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "http://wpdocs.osdn.jp/Debugging_in_WordPress"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:4165
+#: wp-includes/functions.php:4200
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "詳しくは <a href=\"%s\">WordPress のデバッグ</a>をご覧ください。"
 
@@ -8513,7 +8522,7 @@ msgid "The %s directory of the develop repository must be used for RTL."
 msgstr "RTL 言語の場合、開発リポジトリの %s ディレクトリを必ず使用する必要があります。"
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
-#: wp-includes/functions.php:3927
+#: wp-includes/functions.php:3962
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "呼び出された %1$s のコンストラクターメソッドはバージョン %2$s から<strong>非推奨</strong>になっています ! 代わりに %3$s を使ってください。"
 
@@ -10732,22 +10741,22 @@ msgstr "指定された文字列が見つかりませんでした。"
 msgid "Table"
 msgstr "テーブル"
 
-#: wp-includes/general-template.php:3957
+#: wp-includes/general-template.php:3975
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "コーヒー"
 
-#: wp-includes/general-template.php:3951
+#: wp-includes/general-template.php:3969
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "オーシャン"
 
-#: wp-includes/general-template.php:3945
+#: wp-includes/general-template.php:3963
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "エクトプラズム"
 
-#: wp-includes/general-template.php:3939
+#: wp-includes/general-template.php:3957
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "サンライズ"
@@ -10822,17 +10831,17 @@ msgstr "no-subset"
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "除外する項目の区切りとして %s の代わりにカンマを使ってください。"
 
-#: wp-includes/general-template.php:3933
+#: wp-includes/general-template.php:3951
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "ミッドナイト"
 
-#: wp-includes/general-template.php:3921
+#: wp-includes/general-template.php:3939
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "ライト"
 
-#: wp-includes/general-template.php:3910
+#: wp-includes/general-template.php:3928
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "デフォルト"
@@ -11026,7 +11035,7 @@ msgstr "%3$s年%1$s%2$s日 @ %4$s:%5$s"
 msgid "Your session has expired. You can log in again from this page or go to the login page."
 msgstr "セッションの期限が切れました。このページから再度ログインするか、ログインページへ移動してください。"
 
-#: wp-includes/functions.php:5358
+#: wp-includes/functions.php:5393
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "新しい画面でログインページを開きます。ログイン後、そちらを閉じてこのページに戻ってください。"
 
@@ -11051,7 +11060,7 @@ msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "検索 &hellip;"
 
-#: wp-includes/script-loader.php:1306 wp-includes/functions.php:5356
+#: wp-includes/script-loader.php:1306 wp-includes/functions.php:5391
 msgid "Session expired"
 msgstr "セッションの有効期限が切れました"
 
@@ -11857,6 +11866,11 @@ msgctxt "tag delimiter"
 msgid ","
 msgstr ","
 
+#: wp-includes/class-wp.php:293 wp-includes/ms-deprecated.php:275
+#: wp-includes/ms-deprecated.php:294
+msgid "Sorry, you are not allowed to view this item."
+msgstr "この項目を表示する権限がありません。"
+
 #: wp-includes/class-wp-xmlrpc-server.php:1490
 #: wp-includes/class-wp-xmlrpc-server.php:1514
 msgid "Sorry, one of the given taxonomies is not supported by the post type."
@@ -11988,7 +12002,7 @@ msgid "https://codex.wordpress.org/CSS"
 msgstr "http://wpdocs.osdn.jp/CSS"
 
 #. translators: 1: login URL, 2: username, 3: user email, 4: lost password URL
-#: wp-activate.php:105
+#: wp-activate.php:146
 msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
 msgstr "アカウントが有効化されました。ユーザー名「%2$s」を使って<a href=\"%1$s\">ログイン</a>できます。%3$s のメールをチェックして、パスワードとログイン方法をお読みください。メールが見つからない場合は、スパムフォルダーを確認してください。それでも1時間以内にメールが届かなければ、<a href=\"%4$s\">パスワードをリセット</a>できます。"
 
@@ -11998,7 +12012,7 @@ msgid "%1$s is your new site. <a href=\"%2$s\">Log in</a> as &#8220;%3$s&#8221; 
 msgstr "%1$s はあなたの新しいサイトです。設定したパスワードを使って、「%3$s」として<a href=\"%2$s\">ログイン</a>してください。"
 
 #. translators: 1: site URL, 2: username, 3: user email, 4: lost password URL
-#: wp-activate.php:114
+#: wp-activate.php:155
 msgid "Your site at %1$s is active. You may now log in to your site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
 msgstr "%1$s のあなたのサイトは有効化済みです。ユーザー名「%2$s」を使ってログインできます。%3$s のメールをチェックして、パスワードとログイン方法をお読みください。メールが見つからない場合は、スパムフォルダーを確認してください。それでも1時間以内にメールが届かなければ、<a href=\"%4$s\">パスワードをリセット</a>できます。"
 
@@ -12084,11 +12098,11 @@ msgstr "<strong>エラー</strong>: コメントを入力してください。"
 msgid "Could not load the preview image. Please reload the page and try again."
 msgstr "プレビュー画像を読み込むことができませんでした。ページを読み込み直してもう一度お試しください。"
 
-#: wp-includes/ms-deprecated.php:406
+#: wp-includes/ms-deprecated.php:411
 msgid "<strong>ERROR</strong>: problem creating site entry."
 msgstr "<strong>エラー</strong>: サイトエントリーの作成中に問題が発生しました。"
 
-#: wp-includes/ms-deprecated.php:399
+#: wp-includes/ms-deprecated.php:404
 msgid "<strong>ERROR</strong>: Site URL already taken."
 msgstr "<strong>エラー</strong>: そのサイト URL はすでに使われています。"
 
@@ -12100,16 +12114,16 @@ msgstr "サポートフォーラム"
 msgid "Documentation"
 msgstr "ドキュメンテーション"
 
-#: wp-includes/general-template.php:3829 wp-includes/formatting.php:3362
+#: wp-includes/general-template.php:3847 wp-includes/formatting.php:3362
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/wp-db.php:1577 wp-includes/functions.php:3800
+#: wp-includes/wp-db.php:1577 wp-includes/functions.php:3835
 #: wp-includes/ms-load.php:455
 msgid "Error establishing a database connection"
 msgstr "データベース接続確立エラー"
 
-#: wp-includes/functions.php:3796
+#: wp-includes/functions.php:3831
 msgid "Database Error"
 msgstr "データベースエラー"
 
@@ -12160,7 +12174,7 @@ msgstr "このファイルは画像ではありません。別のファイルを
 msgid "This is larger than the maximum size. Please try another."
 msgstr "ファイルサイズの上限を超えているようです。別のファイルをお試しください。"
 
-#: wp-includes/general-template.php:3927
+#: wp-includes/general-template.php:3945
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "ブルー"
@@ -12192,12 +12206,12 @@ msgid "You should specify a nonce action to be verified by using the first param
 msgstr "最初の変数を使用して検証される nonce アクションを指定してください。"
 
 #. translators: 1: site URL, 2: login URL
-#: wp-activate.php:146
+#: wp-activate.php:188
 msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a href=\"%2$s\">Log in</a>"
 msgstr "アカウントを有効化しました。<a href=\"%1$s\">サイトを表示する</a>か<a href=\"%2$s\">ログイン</a>してください。"
 
 #. translators: 1: login URL, 2: network home URL
-#: wp-activate.php:151
+#: wp-activate.php:193
 msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
 msgstr "アカウントを有効化しました。<a href=\"%1$s\">ログイン</a>するか、 <a href=\"%2$s\">ホームページ</a>に戻ってください。"
 
@@ -12297,13 +12311,13 @@ msgid "The user is already active."
 msgstr "このユーザーはすでに認証済みです。"
 
 #. translators: %s: version number
-#: wp-includes/functions.php:4162
+#: wp-includes/functions.php:4197
 msgid "(This message was added in version %s.)"
 msgstr "(このメッセージはバージョン %s で追加されました)"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message
-#: wp-includes/functions.php:4169
+#: wp-includes/functions.php:4204
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s が<strong>誤って</strong>呼び出されました。%2$s %3$s"
 
@@ -13494,7 +13508,7 @@ msgstr "<strong>エラー</strong>: WordPress %1$s には MySQL %2$s 以上が�
 msgid "Sidebar %d"
 msgstr "サイドバー %d"
 
-#: wp-includes/user.php:285 wp-includes/functions.php:5357
+#: wp-includes/user.php:285 wp-includes/functions.php:5392
 msgid "Please log in again."
 msgstr "もう一度ログインしてください。"
 
@@ -14505,11 +14519,11 @@ msgstr "ユーザーは HTTP 経由のリクエストをブロックしました
 msgid "Gray"
 msgstr "グレー"
 
-#: wp-includes/general-template.php:3744
+#: wp-includes/general-template.php:3762
 msgid "Next &raquo;"
 msgstr "次へ &raquo;"
 
-#: wp-includes/general-template.php:3743
+#: wp-includes/general-template.php:3761
 msgid "&laquo; Previous"
 msgstr "&laquo; 前へ"
 
@@ -14596,34 +14610,34 @@ msgstr "ログアウト"
 msgid "Log in"
 msgstr "ログイン"
 
-#: wp-includes/functions.php:4745
+#: wp-includes/functions.php:4780
 msgid "Manual Offsets"
 msgstr "時差を直接設定"
 
-#: wp-includes/functions.php:4737 wp-includes/functions.php:4741
+#: wp-includes/functions.php:4772 wp-includes/functions.php:4776
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:4692
+#: wp-includes/functions.php:4727
 msgid "Select a city"
 msgstr "町を選択してください"
 
 #. translators: 1: PHP function name, 2: version number
-#: wp-includes/functions.php:4056
+#: wp-includes/functions.php:4091
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s がバージョン %2$s から<strong>非推奨</strong>になった引数付きで呼び出されました。代替は用意されていません。"
 
 #. translators: 1: PHP function name, 2: version number, 3: optional message
 #. regarding the change
-#: wp-includes/functions.php:4053
+#: wp-includes/functions.php:4088
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s がバージョン %2$s から<strong>非推奨</strong>になった引数付きで呼び出されました。%3$s"
 
 #. translators: 1: PHP function name, 2: version number
 #. translators: 1: PHP file name, 2: version number
 #. translators: 1: WordPress hook name, 2: version number
-#: wp-includes/functions.php:3864 wp-includes/functions.php:3992
-#: wp-includes/functions.php:4115
+#: wp-includes/functions.php:3899 wp-includes/functions.php:4027
+#: wp-includes/functions.php:4150
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました。代替は用意されておりません。"
 
@@ -14632,30 +14646,30 @@ msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>�
 #. translators: 1: PHP file name, 2: version number, 3: alternative file name
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
-#: wp-includes/functions.php:3861 wp-includes/functions.php:3989
-#: wp-includes/functions.php:4112
+#: wp-includes/functions.php:3896 wp-includes/functions.php:4024
+#: wp-includes/functions.php:4147
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になっています ! 代わりに %3$s を使ってください。"
 
-#: wp-load.php:92 wp-includes/functions.php:2771
+#: wp-load.php:92 wp-includes/functions.php:2806
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; エラー"
 
-#: wp-includes/functions.php:2759
+#: wp-includes/functions.php:2794
 msgid "&laquo; Back"
 msgstr "&laquo; 戻る"
 
-#: wp-includes/functions.php:2634 wp-includes/ms-functions.php:2047
+#: wp-includes/functions.php:2669 wp-includes/ms-functions.php:2047
 msgid "Please try again."
 msgstr "もう一度お試しください。"
 
 #. translators: %s: logout URL
-#: wp-includes/functions.php:2625
+#: wp-includes/functions.php:2660
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "本当に<a href=\"%s\">ログアウト</a>しますか ?"
 
 #. translators: %s: site name
-#: wp-includes/functions.php:2618
+#: wp-includes/functions.php:2653
 msgid "You are attempting to log out of %s"
 msgstr "%s からログアウトしようとしています"
 
@@ -15068,7 +15082,7 @@ msgid "For some strange yet very annoying reason, this post could not be edited.
 msgstr "なにか面妖でとてもうっとうしい理由のため、この投稿は編集できませんでした。"
 
 #: wp-includes/admin-bar.php:830 wp-includes/class-wp-customize-widgets.php:412
-#: wp-includes/functions.php:3737 wp-includes/js/dist/blocks.js:5502
+#: wp-includes/functions.php:3772 wp-includes/js/dist/blocks.js:5502
 msgid "Widgets"
 msgstr "ウィジェット"
 
@@ -15795,31 +15809,31 @@ msgstr "タイトル"
 msgid "No posts found."
 msgstr "投稿が見つかりませんでした。"
 
-#: wp-activate.php:136 wp-includes/post-template.php:1619
+#: wp-activate.php:178 wp-includes/post-template.php:1619
 msgid "Password:"
 msgstr "パスワード"
 
-#: wp-activate.php:135 wp-signup.php:230
+#: wp-activate.php:177 wp-signup.php:230
 msgid "Username:"
 msgstr "ユーザー名:"
 
-#: wp-activate.php:124
+#: wp-activate.php:30 wp-activate.php:165
 msgid "An error occurred during the activation"
 msgstr "有効化の途中でエラーが発生しました。"
 
-#: wp-activate.php:99 wp-activate.php:132
+#: wp-activate.php:140 wp-activate.php:174
 msgid "Your account is now active!"
 msgstr "アカウント登録が完了しました !"
 
-#: wp-activate.php:87 wp-includes/script-loader.php:1578
+#: wp-activate.php:132 wp-includes/script-loader.php:1578
 #: wp-includes/script-loader.php:1579
 msgid "Activate"
 msgstr "有効化"
 
-#: wp-activate.php:83
+#: wp-activate.php:128
 msgid "Activation Key:"
 msgstr "有効化キー:"
 
-#: wp-activate.php:80
+#: wp-activate.php:125
 msgid "Activation Key Required"
 msgstr "有効化キーの入力"
