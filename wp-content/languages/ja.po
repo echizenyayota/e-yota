@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-16 13:49:29+0000\n"
+"PO-Revision-Date: 2019-01-08 02:55:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,23 +40,23 @@ msgstr "number_format_decimal_point"
 msgid "Editor tips"
 msgstr "編集者ヒント"
 
-#: wp-includes/js/dist/block-library.js:9106
+#: wp-includes/js/dist/block-library.js:9124
 msgctxt "content placeholder"
 msgid "Content…"
 msgstr "コンテンツ…"
 
-#: wp-includes/js/dist/block-library.js:7622
+#: wp-includes/js/dist/block-library.js:7640
 msgctxt "button label"
 msgid "Convert to link"
 msgstr "リンクに変換"
 
-#: wp-includes/js/dist/block-library.js:7619
+#: wp-includes/js/dist/block-library.js:7637
 msgctxt "button label"
 msgid "Try again"
 msgstr "もう一度お試しください"
 
 #. translators: %s: font size name
-#: wp-includes/js/dist/components.js:31027
+#: wp-includes/js/dist/components.js:31036
 msgid "Font size: %s"
 msgstr "フォントサイズ: %s"
 
@@ -79,11 +79,11 @@ msgstr "ブロック (選択済み)"
 msgid "Document (selected)"
 msgstr "文書 (選択済み)"
 
-#: wp-includes/js/dist/block-library.js:10537
+#: wp-includes/js/dist/block-library.js:10553
 msgid "Mark the excerpt of this content. Content before this block will be shown in the excerpt on your archives page."
 msgstr "コンテンツの抜粋を指定します。指定したブロックの前のコンテンツがアーカイブページで抜粋として表示されます。 "
 
-#: wp-includes/js/dist/block-library.js:11482
+#: wp-includes/js/dist/block-library.js:11498
 msgid "Create content, and save it for you and other contributors to reuse across your site. Update the block, and the changes apply everywhere it’s used."
 msgstr "コンテンツを作成し、自分や他の投稿者がサイトで再利用できるよう保存しましょう。ブロックを更新すると、再利用しているすべての場所で更新が適用されます。"
 
@@ -92,7 +92,7 @@ msgid "Top Toolbar"
 msgstr "トップツールバー"
 
 #. translators: %d: number of words
-#: wp-includes/js/dist/editor.js:29365
+#: wp-includes/js/dist/editor.js:29470
 msgid "%d word"
 msgid_plural "%d words"
 msgstr[0] "%d単語"
@@ -102,7 +102,7 @@ msgctxt "Google Font Name and Variants"
 msgid "Noto Serif:400,400i,700,700i"
 msgstr "Noto Serif JP:400,700"
 
-#: wp-includes/class-wp-editor.php:1271
+#: wp-includes/class-wp-editor.php:1272
 msgid "Classic Block Keyboard Shortcuts"
 msgstr "クラシックブロックのキーボードショートカット"
 
@@ -118,35 +118,35 @@ msgstr "この画像には alt 属性が指定されておらず、ファイル�
 msgid "Permalink"
 msgstr "パーマリンク"
 
-#: wp-includes/js/dist/editor.js:24842
+#: wp-includes/js/dist/editor.js:24932
 msgid "To edit the featured image, you need permission to upload media."
 msgstr "アイキャッチ画像を編集するには、メディアをアップロードする権限が必要です。"
 
-#: wp-includes/js/dist/editor.js:22840
+#: wp-includes/js/dist/editor.js:22930
 msgid "Given your current role, you can only link a video, you cannot upload."
 msgstr "現在の権限では、動画へのリンクのみ可能です。アップロードは許可されていません。"
 
-#: wp-includes/js/dist/editor.js:22838
+#: wp-includes/js/dist/editor.js:22928
 msgid "Given your current role, you can only link an image, you cannot upload."
 msgstr "現在の権限では、画像へのリンクのみ可能です。アップロードは許可されていません。"
 
-#: wp-includes/js/dist/editor.js:22836
+#: wp-includes/js/dist/editor.js:22926
 msgid "Given your current role, you can only link an audio, you cannot upload."
 msgstr "現在の権限では、音声ファイルへのリンクのみ可能です。アップロードは許可されていません。"
 
-#: wp-includes/js/dist/editor.js:22833
+#: wp-includes/js/dist/editor.js:22923
 msgid "Given your current role, you can only link a media file, you cannot upload."
 msgstr "現在の権限では、メディアファイルへのリンクのみ可能です。アップロードは許可されていません。"
 
-#: wp-includes/js/dist/editor.js:22812
+#: wp-includes/js/dist/editor.js:22902
 msgid "To edit this block, you need permission to upload media."
 msgstr "このブロックを編集するには、メディアをアップロードする権限が必要です。 "
 
-#: wp-includes/js/dist/editor.js:14841
+#: wp-includes/js/dist/editor.js:14940
 msgid "(selected block)"
 msgstr "(選択済みブロック)"
 
-#: wp-includes/js/dist/editor.js:16953
+#: wp-includes/js/dist/editor.js:17052
 msgid "Block tools"
 msgstr "ブロックツール"
 
@@ -170,49 +170,49 @@ msgstr "空のブロック。テキストを書き始めるか、スラッシュ
 msgid "Paragraph block"
 msgstr "段落ブロック"
 
-#: wp-includes/js/dist/editor.js:13888
+#: wp-includes/js/dist/editor.js:13987
 msgid "%s block selected."
 msgid_plural "%s blocks selected."
 msgstr[0] "%s個のブロックを選択しました。"
 
-#: wp-includes/js/dist/editor.js:23151
+#: wp-includes/js/dist/editor.js:23241
 msgid "Link selected"
 msgstr "リンクを選択しました"
 
-#: wp-includes/js/dist/editor.js:28203
+#: wp-includes/js/dist/editor.js:28300
 msgid "Start writing with text or HTML"
 msgstr "テキストまたは HTML で書き始める"
 
-#: wp-includes/js/dist/editor.js:28195
+#: wp-includes/js/dist/editor.js:28292
 msgid "Type text or HTML"
 msgstr "テキストまたは HTML を入力"
 
-#: wp-includes/js/dist/editor.js:19248
+#: wp-includes/js/dist/editor.js:19336
 #: wp-includes/js/dist/block-library.js:1732
 msgid "Start writing or type / to choose a block"
 msgstr "文章を入力、または / でブロックを選択"
 
-#: wp-includes/js/dist/editor.js:30124
+#: wp-includes/js/dist/editor.js:30229
 msgid "Block icon"
 msgstr "ブロックアイコン"
 
-#: wp-includes/js/dist/editor.js:14469
+#: wp-includes/js/dist/editor.js:14568
 msgid "Align text right"
 msgstr "右寄せ"
 
-#: wp-includes/js/dist/editor.js:14465
+#: wp-includes/js/dist/editor.js:14564
 msgid "Align text center"
 msgstr "中央寄せ"
 
-#: wp-includes/js/dist/editor.js:14461
+#: wp-includes/js/dist/editor.js:14560
 msgid "Align text left"
 msgstr "左寄せ"
 
-#: wp-includes/js/dist/block-library.js:10630
+#: wp-includes/js/dist/block-library.js:10646
 msgid "Page Break"
 msgstr "改ページ"
 
-#: wp-includes/js/dist/block-library.js:9264
+#: wp-includes/js/dist/block-library.js:9282
 msgid "Stack on mobile"
 msgstr "モバイルで重ねる"
 
@@ -220,7 +220,7 @@ msgstr "モバイルで重ねる"
 msgid "Custom Fields"
 msgstr "カスタムフィールド"
 
-#: wp-includes/js/dist/editor.js:27072
+#: wp-includes/js/dist/editor.js:27166
 msgid "Scheduled"
 msgstr "予約済み"
 
@@ -274,248 +274,248 @@ msgstr "インライン画像"
 msgid "media"
 msgstr "メディア"
 
-#: wp-includes/js/dist/block-library.js:13295
+#: wp-includes/js/dist/block-library.js:13311
 msgid "movie"
 msgstr "動画"
 
-#: wp-includes/js/dist/block-library.js:13285
+#: wp-includes/js/dist/block-library.js:13301
 msgid "Embed a video from your media library or upload a new one."
 msgstr "メディアライブラリから動画を埋め込むか、新しい動画をアップロードしてください。"
 
-#: wp-includes/js/dist/block-library.js:13239
+#: wp-includes/js/dist/block-library.js:13255
 msgid "Remove Poster Image"
 msgstr "ポスター画像を削除"
 
-#: wp-includes/js/dist/block-library.js:13199
+#: wp-includes/js/dist/block-library.js:13215
 msgid "Playback Controls"
 msgstr "プレイバックコントロール"
 
-#: wp-includes/js/dist/block-library.js:13195
+#: wp-includes/js/dist/block-library.js:13211
 msgid "Muted"
 msgstr "ミュート (消音)"
 
-#: wp-includes/js/dist/block-library.js:13185
+#: wp-includes/js/dist/block-library.js:13201
 msgid "Video Settings"
 msgstr "動画設定"
 
-#: wp-includes/js/dist/block-library.js:13181
+#: wp-includes/js/dist/block-library.js:13197
 msgid "Edit video"
 msgstr "動画の編集"
 
-#: wp-includes/js/dist/block-library.js:12929
+#: wp-includes/js/dist/block-library.js:12945
 msgid "Write…"
 msgstr "入力..."
 
-#: wp-includes/js/dist/block-library.js:12876
+#: wp-includes/js/dist/block-library.js:12892
 msgid "poetry"
 msgstr "ポエム"
 
-#: wp-includes/js/dist/block-library.js:12865
+#: wp-includes/js/dist/block-library.js:12881
 msgid "Insert poetry. Use special spacing formats. Or quote song lyrics."
 msgstr "詩を挿入します。特別な余白形式を使ったり、歌詞を引用したりできます。"
 
-#: wp-includes/js/dist/block-library.js:12864
+#: wp-includes/js/dist/block-library.js:12880
 msgid "Verse"
 msgstr "詩"
 
-#: wp-includes/js/dist/block-library.js:12828
+#: wp-includes/js/dist/block-library.js:12844
 msgid "New Column"
 msgstr "新規カラム"
 
-#: wp-includes/js/dist/block-library.js:12728
+#: wp-includes/js/dist/block-library.js:12744
 msgid "This block is deprecated. Please use the Columns block instead."
 msgstr "このブロックは非推奨です。代わりにカラムブロックを使用してください。"
 
-#: wp-includes/js/dist/block-library.js:12727
+#: wp-includes/js/dist/block-library.js:12743
 msgid "Text Columns (deprecated)"
 msgstr "テキストカラム (非推奨)"
 
-#: wp-includes/js/dist/block-library.js:12678
+#: wp-includes/js/dist/block-library.js:12694
 msgid "Template block used as a container."
 msgstr "コンテナとして使われるテンプレートブロック。"
 
-#: wp-includes/js/dist/block-library.js:12676
+#: wp-includes/js/dist/block-library.js:12692
 msgid "Reusable Template"
 msgstr "再利用テンプレート"
 
-#: wp-includes/js/dist/block-library.js:12596
+#: wp-includes/js/dist/block-library.js:12612
 msgid "Stripes"
 msgstr "ストライプ"
 
-#: wp-includes/js/dist/block-library.js:12570
+#: wp-includes/js/dist/block-library.js:12586
 msgid "Insert a table — perfect for sharing charts and data."
 msgstr "表の挿入。チャートとデータの共有に最適です。"
 
-#: wp-includes/js/dist/block-library.js:12468
+#: wp-includes/js/dist/block-library.js:12484
 msgid "Fixed width table cells"
 msgstr "固定幅のテーブルセル"
 
-#: wp-includes/js/dist/block-library.js:12465
+#: wp-includes/js/dist/block-library.js:12481
 msgid "Table Settings"
 msgstr "テーブル設定"
 
-#: wp-includes/js/dist/block-library.js:12462
+#: wp-includes/js/dist/block-library.js:12478
 msgid "Edit Table"
 msgstr "テーブルの編集"
 
-#: wp-includes/js/dist/block-library.js:12454
+#: wp-includes/js/dist/block-library.js:12470
 msgid "Create"
 msgstr "生成"
 
-#: wp-includes/js/dist/block-library.js:12447
+#: wp-includes/js/dist/block-library.js:12463
 msgid "Row Count"
 msgstr "行数"
 
-#: wp-includes/js/dist/block-library.js:12441
+#: wp-includes/js/dist/block-library.js:12457
 msgid "Column Count"
 msgstr "列数"
 
-#: wp-includes/js/dist/block-library.js:12352
+#: wp-includes/js/dist/block-library.js:12368
 msgid "Delete Column"
 msgstr "列の削除"
 
-#: wp-includes/js/dist/block-library.js:12347
+#: wp-includes/js/dist/block-library.js:12363
 msgid "Add Column After"
 msgstr "右に列を追加"
 
-#: wp-includes/js/dist/block-library.js:12342
+#: wp-includes/js/dist/block-library.js:12358
 msgid "Add Column Before"
 msgstr "左に列を追加"
 
-#: wp-includes/js/dist/block-library.js:12337
+#: wp-includes/js/dist/block-library.js:12353
 msgid "Delete Row"
 msgstr "行の削除"
 
-#: wp-includes/js/dist/block-library.js:12332
+#: wp-includes/js/dist/block-library.js:12348
 msgid "Add Row After"
 msgstr "下に行を追加"
 
-#: wp-includes/js/dist/block-library.js:12327
+#: wp-includes/js/dist/block-library.js:12343
 msgid "Add Row Before"
 msgstr "上に行を追加"
 
-#: wp-includes/js/dist/block-library.js:11827
+#: wp-includes/js/dist/block-library.js:11843
 msgid "Write subheading…"
 msgstr "小見出しを入力…"
 
-#: wp-includes/js/dist/block-library.js:11765
+#: wp-includes/js/dist/block-library.js:11781
 msgid "This block is deprecated. Please use the Paragraph block instead."
 msgstr "このブロックは非推奨です。代わりに段落ブロックを使用してください。"
 
-#: wp-includes/js/dist/block-library.js:11764
+#: wp-includes/js/dist/block-library.js:11780
 msgid "Subheading (deprecated)"
 msgstr "小見出し (非推奨)"
 
-#: wp-includes/js/dist/block-library.js:11720
+#: wp-includes/js/dist/block-library.js:11736
 msgid "Height in pixels"
 msgstr "ピクセル値での高さ "
 
-#: wp-includes/js/dist/block-library.js:11718
+#: wp-includes/js/dist/block-library.js:11734
 msgid "Spacer Settings"
 msgstr "余白の設定"
 
-#: wp-includes/js/dist/block-library.js:11668
+#: wp-includes/js/dist/block-library.js:11684
 msgid "Add white space between blocks and customize its height."
 msgstr "ブロックの間に、高さをカスタマイズ可能な余白を追加します。"
 
-#: wp-includes/js/dist/block-library.js:11667
+#: wp-includes/js/dist/block-library.js:11683
 msgid "Spacer"
 msgstr "スペーサー"
 
-#: wp-includes/js/dist/block-library.js:11635
+#: wp-includes/js/dist/block-library.js:11651
 msgid "Write shortcode here…"
 msgstr "ショートコードをここに入力…"
 
-#: wp-includes/js/dist/block-library.js:11578
+#: wp-includes/js/dist/block-library.js:11594
 msgid "Insert additional custom elements with a WordPress shortcode."
 msgstr "WordPress ショートコードで追加のカスタム要素を挿入します。"
 
-#: wp-includes/js/dist/block-library.js:11577
-#: wp-includes/js/dist/block-library.js:11631
+#: wp-includes/js/dist/block-library.js:11593
+#: wp-includes/js/dist/block-library.js:11647
 msgid "Shortcode"
 msgstr "ショートコード"
 
-#: wp-includes/js/dist/block-library.js:11532
+#: wp-includes/js/dist/block-library.js:11548
 msgid "Dots"
 msgstr "ドット"
 
-#: wp-includes/js/dist/block-library.js:11529
+#: wp-includes/js/dist/block-library.js:11545
 msgid "Wide Line"
 msgstr "幅広線"
 
-#: wp-includes/js/dist/block-library.js:11525
+#: wp-includes/js/dist/block-library.js:11541
 msgid "Short Line"
 msgstr "短い線"
 
-#: wp-includes/js/dist/block-library.js:11522
+#: wp-includes/js/dist/block-library.js:11538
 msgid "divider"
 msgstr "区切り線"
 
-#: wp-includes/js/dist/block-library.js:11522
+#: wp-includes/js/dist/block-library.js:11538
 msgid "horizontal-line"
 msgstr "水平線"
 
-#: wp-includes/js/dist/block-library.js:11511
+#: wp-includes/js/dist/block-library.js:11527
 msgid "Create a break between ideas or sections with a horizontal separator."
 msgstr "水平の区切りを使って、アイデアやセクションの間で改行します。"
 
-#: wp-includes/js/dist/block-library.js:11510
+#: wp-includes/js/dist/block-library.js:11526
 msgid "Separator"
 msgstr "区切り"
 
-#: wp-includes/js/dist/block-library.js:4315
+#: wp-includes/js/dist/block-library.js:4333
 msgctxt "block style"
 msgid "Large"
 msgstr "大"
 
-#: wp-includes/js/dist/block-library.js:4307
+#: wp-includes/js/dist/block-library.js:4325
 msgid "blockquote"
 msgstr "引用"
 
-#: wp-includes/js/dist/block-library.js:4296
+#: wp-includes/js/dist/block-library.js:4314
 msgid "Give quoted text visual emphasis. \"In quoting others, we cite ourselves.\" — Julio Cortázar"
 msgstr "引用テキストを視覚的に強調します。「他者の引用は、我々自身への引用である」—フリオ・コルタサル"
 
-#: wp-includes/js/dist/block-library.js:10999
+#: wp-includes/js/dist/block-library.js:11015
 msgid "Solid Color"
 msgstr "無地"
 
-#: wp-includes/js/dist/block-library.js:4311
-#: wp-includes/js/dist/block-library.js:10995
-#: wp-includes/js/dist/block-library.js:12592
+#: wp-includes/js/dist/block-library.js:4329
+#: wp-includes/js/dist/block-library.js:11011
+#: wp-includes/js/dist/block-library.js:12608
 msgctxt "block style"
 msgid "Regular"
 msgstr "通常"
 
-#: wp-includes/js/dist/block-library.js:10977
+#: wp-includes/js/dist/block-library.js:10993
 msgid "Give special visual emphasis to a quote from your text."
 msgstr "テキストの引用に特別な視覚的強調を加えます。"
 
-#: wp-includes/js/dist/block-library.js:10976
+#: wp-includes/js/dist/block-library.js:10992
 msgid "Pullquote"
 msgstr "プルクオート"
 
-#: wp-includes/js/dist/block-library.js:10906
+#: wp-includes/js/dist/block-library.js:10922
 msgid "Main Color"
 msgstr "メインカラー"
 
 #. translators: placeholder text used for the citation
-#: wp-includes/js/dist/block-library.js:4514
-#: wp-includes/js/dist/block-library.js:10894
+#: wp-includes/js/dist/block-library.js:4532
+#: wp-includes/js/dist/block-library.js:10910
 msgid "Write citation…"
 msgstr "引用元を入力..."
 
 #. translators: placeholder text used for the quote
-#: wp-includes/js/dist/block-library.js:4504
-#: wp-includes/js/dist/block-library.js:10889
+#: wp-includes/js/dist/block-library.js:4522
+#: wp-includes/js/dist/block-library.js:10905
 msgid "Write quote…"
 msgstr "引用を入力..."
 
-#: wp-includes/js/dist/block-library.js:10763
+#: wp-includes/js/dist/block-library.js:10779
 msgid "Write preformatted text…"
 msgstr "整形済みテキストを入力..."
 
-#: wp-includes/js/dist/block-library.js:10681
+#: wp-includes/js/dist/block-library.js:10697
 msgid "Add text that respects your spacing and tabs, and also allows styling."
 msgstr "スペースやタブを含むテキストを追加し、スタイリングして表示します。"
 
@@ -543,158 +543,158 @@ msgstr "先頭文字を大きな表示に切り替えます。"
 msgid "Showing large initial letter."
 msgstr "先頭文字を大きく表示します。"
 
-#: wp-includes/js/dist/block-library.js:10639
+#: wp-includes/js/dist/block-library.js:10655
 msgid "pagination"
 msgstr "ページネーション"
 
-#: wp-includes/js/dist/block-library.js:10639
+#: wp-includes/js/dist/block-library.js:10655
 msgid "next page"
 msgstr "次のページ"
 
-#: wp-includes/js/dist/block-library.js:10631
+#: wp-includes/js/dist/block-library.js:10647
 msgid "Separate your content into a multi-page experience."
 msgstr "コンテンツを複数のページに分けて表示します。"
 
-#: wp-includes/js/dist/block-library.js:10536
+#: wp-includes/js/dist/block-library.js:10552
 msgctxt "block name"
 msgid "More"
 msgstr "続きを読む"
 
-#: wp-includes/js/dist/block-library.js:10494
+#: wp-includes/js/dist/block-library.js:10510
 msgid "Hide the teaser before the \"More\" tag"
 msgstr "「続きを読む」タグの前のティザーを非表示"
 
-#: wp-includes/js/dist/block-library.js:10388
+#: wp-includes/js/dist/block-library.js:10404
 msgid "Your site doesn’t include support for this block."
 msgstr "サイトはこのブロックに対応していません。"
 
-#: wp-includes/js/dist/block-library.js:10387
+#: wp-includes/js/dist/block-library.js:10403
 msgid "Unrecognized Block"
 msgstr "認識できないブロック"
 
-#: wp-includes/js/dist/block-library.js:10360
+#: wp-includes/js/dist/block-library.js:10376
 msgid "Your site doesn’t include support for the \"%s\" block. You can leave this block intact or remove it entirely."
 msgstr "このサイトは \"%s\" ブロックに対応していません。ブロックをそのままにするか、完全に削除することができます。"
 
-#: wp-includes/js/dist/block-library.js:10358
+#: wp-includes/js/dist/block-library.js:10374
 msgid "Keep as HTML"
 msgstr "HTML として保持"
 
-#: wp-includes/js/dist/block-library.js:10352
+#: wp-includes/js/dist/block-library.js:10368
 msgid "Your site doesn’t include support for the \"%s\" block. You can leave this block intact, convert its content to a Custom HTML block, or remove it entirely."
 msgstr "このサイトは \"%s\" ブロックに対応していません。ブロックをそのままにするか、カスタム HTML ブロックに変換するか、完全に削除することができます。"
 
-#: wp-includes/js/dist/block-library.js:9003
+#: wp-includes/js/dist/block-library.js:9021
 msgid "Media area"
 msgstr "メディアエリア"
 
-#: wp-includes/js/dist/block-library.js:9368
+#: wp-includes/js/dist/block-library.js:9386
 msgid "Set media and words side-by-side for a richer layout."
 msgstr "画像と文章を横並びのリッチなレイアウトにします。"
 
-#: wp-includes/js/dist/block-library.js:9367
+#: wp-includes/js/dist/block-library.js:9385
 msgid "Media & Text"
 msgstr "メディアと文章"
 
-#: wp-includes/js/dist/block-library.js:9262
+#: wp-includes/js/dist/block-library.js:9280
 msgid "Media & Text Settings"
 msgstr "メディアと文章の設定"
 
-#: wp-includes/js/dist/block-library.js:9246
+#: wp-includes/js/dist/block-library.js:9264
 msgid "Show media on right"
 msgstr "メディアを右に表示"
 
-#: wp-includes/js/dist/block-library.js:9237
+#: wp-includes/js/dist/block-library.js:9255
 msgid "Show media on left"
 msgstr "メディアを左に表示"
 
-#: wp-includes/js/dist/block-library.js:10282
+#: wp-includes/js/dist/block-library.js:10298
 msgid "Write list…"
 msgstr "リストを入力..."
 
-#: wp-includes/js/dist/editor.js:20853
+#: wp-includes/js/dist/editor.js:20941
 msgid "Indent list item"
 msgstr "リスト項目をインデント"
 
-#: wp-includes/js/dist/editor.js:20846
+#: wp-includes/js/dist/editor.js:20934
 msgid "Outdent list item"
 msgstr "リスト項目のインデントを戻す"
 
-#: wp-includes/js/dist/editor.js:20834
+#: wp-includes/js/dist/editor.js:20922
 msgid "Convert to ordered list"
 msgstr "順序付きリストに変換"
 
-#: wp-includes/js/dist/editor.js:20822
+#: wp-includes/js/dist/editor.js:20910
 msgid "Convert to unordered list"
 msgstr "箇条書きリストに変換"
 
-#: wp-includes/js/dist/block-library.js:10116
+#: wp-includes/js/dist/block-library.js:10132
 msgid "numbered list"
 msgstr "番号付きリスト"
 
-#: wp-includes/js/dist/block-library.js:10108
+#: wp-includes/js/dist/block-library.js:10124
 msgid "Create a bulleted or numbered list."
 msgstr "番号なし、または番号付きのリストを作成します。"
 
-#: wp-includes/js/dist/block-library.js:10033
+#: wp-includes/js/dist/block-library.js:10049
 msgid "recent posts"
 msgstr "最近の投稿"
 
-#: wp-includes/js/dist/block-library.js:9992
+#: wp-includes/js/dist/block-library.js:10008
 msgid "Display a list of your most recent posts."
 msgstr "最近の投稿の一覧を表示します。"
 
-#: wp-includes/js/dist/block-library.js:9893
-#: wp-includes/js/dist/block-library.js:9991
+#: wp-includes/js/dist/block-library.js:9909
+#: wp-includes/js/dist/block-library.js:10007
 msgid "Latest Posts"
 msgstr "最新の記事"
 
-#: wp-includes/js/dist/block-library.js:9874
+#: wp-includes/js/dist/block-library.js:9890
 msgid "Display post date"
 msgstr "投稿日を表示"
 
-#: wp-includes/js/dist/block-library.js:9845
+#: wp-includes/js/dist/block-library.js:9861
 msgid "Latest Posts Settings"
 msgstr "最新の投稿設定"
 
-#: wp-includes/js/dist/block-library.js:9704
+#: wp-includes/js/dist/block-library.js:9722
 msgid "recent comments"
 msgstr "最近のコメント"
 
-#: wp-includes/js/dist/block-library.js:9691
+#: wp-includes/js/dist/block-library.js:9709
 msgid "Display a list of your most recent comments."
 msgstr "自分の最近のコメント一覧を表示します。"
 
-#: wp-includes/js/dist/block-library.js:9690
+#: wp-includes/js/dist/block-library.js:9708
 msgid "Latest Comments"
 msgstr "最新のコメント"
 
-#: wp-includes/js/dist/block-library.js:9658
+#: wp-includes/js/dist/block-library.js:9676
 msgid "Number of Comments"
 msgstr "コメント数"
 
-#: wp-includes/js/dist/block-library.js:9654
+#: wp-includes/js/dist/block-library.js:9672
 msgid "Display Excerpt"
 msgstr "抜粋を表示"
 
-#: wp-includes/js/dist/block-library.js:9650
+#: wp-includes/js/dist/block-library.js:9668
 msgid "Display Date"
 msgstr "日付を表示"
 
-#: wp-includes/js/dist/block-library.js:9646
+#: wp-includes/js/dist/block-library.js:9664
 msgid "Display Avatar"
 msgstr "アバターを表示"
 
-#: wp-includes/js/dist/block-library.js:9644
+#: wp-includes/js/dist/block-library.js:9662
 msgid "Latest Comments Settings"
 msgstr "最新のコメント設定"
 
-#: wp-includes/js/dist/block-library.js:3631
+#: wp-includes/js/dist/block-library.js:3644
 #: wp-includes/js/dist/format-library.js:499
 msgid "photo"
 msgstr "写真"
 
-#: wp-includes/js/dist/block-library.js:3617
+#: wp-includes/js/dist/block-library.js:3630
 msgid "Insert an image to make a visual statement."
 msgstr "画像を挿入し、視覚に訴えます。"
 
@@ -703,12 +703,12 @@ msgid "Image Dimensions"
 msgstr "画像の寸法"
 
 #: wp-includes/js/dist/block-library.js:3273
-#: wp-includes/js/dist/block-library.js:9275
+#: wp-includes/js/dist/block-library.js:9293
 msgid "Alternative text describes your image to people who can’t see it. Add a short description with its key details."
 msgstr "代替テキストは画像を見られない人々に対して、画像の情報を伝えるものです。詳細がわかるように短い説明を追加してください。"
 
 #: wp-includes/js/dist/block-library.js:3270
-#: wp-includes/js/dist/block-library.js:9272
+#: wp-includes/js/dist/block-library.js:9290
 msgid "Alt Text (Alternative Text)"
 msgstr "Alt テキスト (代替テキスト)"
 
@@ -716,209 +716,209 @@ msgstr "Alt テキスト (代替テキスト)"
 msgid "Image Settings"
 msgstr "画像設定"
 
-#: wp-includes/js/dist/block-library.js:3213
-#: wp-includes/js/dist/block-library.js:3226
+#: wp-includes/js/dist/block-library.js:3212
+#: wp-includes/js/dist/block-library.js:3225
 msgid "Edit image"
 msgstr "画像を編集"
 
-#: wp-includes/js/dist/block-library.js:8903
+#: wp-includes/js/dist/block-library.js:8921
 msgid "Write HTML…"
 msgstr "HTML を入力…"
 
-#: wp-includes/js/dist/block-library.js:8835
+#: wp-includes/js/dist/block-library.js:8853
 msgid "embed"
 msgstr "埋め込み"
 
-#: wp-includes/js/dist/block-library.js:8827
+#: wp-includes/js/dist/block-library.js:8845
 msgid "Add custom HTML code and preview it as you edit."
 msgstr "カスタム HTML コードを追加します。編集しながらプレビューが可能です。"
 
-#: wp-includes/js/dist/block-library.js:4131
+#: wp-includes/js/dist/block-library.js:4149
 msgid "subtitle"
 msgstr "サブタイトル"
 
-#: wp-includes/js/dist/block-library.js:4131
+#: wp-includes/js/dist/block-library.js:4149
 msgid "title"
 msgstr "タイトル"
 
-#: wp-includes/js/dist/block-library.js:4120
+#: wp-includes/js/dist/block-library.js:4138
 msgid "Introduce new sections and organize content to help visitors (and search engines) understand the structure of your content."
 msgstr "新しいセクションを紹介しコンテンツを整理することで、ビジター (と検索エンジン) のコンテンツ構造理解の手助けをしましょう。"
 
-#: wp-includes/js/dist/block-library.js:4119
+#: wp-includes/js/dist/block-library.js:4137
 msgid "Heading"
 msgstr "見出し"
 
 #. translators: %s: heading level e.g: "1", "2", "3"
-#: wp-includes/js/dist/block-library.js:3940
+#: wp-includes/js/dist/block-library.js:3958
 msgid "Heading %d"
 msgstr "見出し%d"
 
-#: wp-includes/js/dist/block-library.js:4057
+#: wp-includes/js/dist/block-library.js:4075
 msgid "Write heading…"
 msgstr "見出しを入力..."
 
-#: wp-includes/js/dist/block-library.js:4019
+#: wp-includes/js/dist/block-library.js:4037
 msgid "Text Alignment"
 msgstr "テキストの配置"
 
-#: wp-includes/js/dist/block-library.js:4010
+#: wp-includes/js/dist/block-library.js:4028
 msgid "Level"
 msgstr "レベル"
 
-#: wp-includes/js/dist/block-library.js:4009
+#: wp-includes/js/dist/block-library.js:4027
 msgid "Heading Settings"
 msgstr "見出し設定"
 
-#: wp-includes/js/dist/block-library.js:5250
+#: wp-includes/js/dist/block-library.js:5268
 msgid "photos"
 msgstr "写真"
 
-#: wp-includes/js/dist/block-library.js:5250
+#: wp-includes/js/dist/block-library.js:5268
 msgid "images"
 msgstr "画像"
 
-#: wp-includes/js/dist/block-library.js:5235
+#: wp-includes/js/dist/block-library.js:5253
 msgid "Display multiple images in a rich gallery."
 msgstr "リッチギャラリーに複数の画像を表示します。"
 
-#: wp-includes/js/dist/block-library.js:4791
+#: wp-includes/js/dist/block-library.js:4809
 msgid "Remove Image"
 msgstr "画像の削除"
 
-#: wp-includes/js/dist/block-library.js:5139
+#: wp-includes/js/dist/block-library.js:5157
 msgid "Upload an image"
 msgstr "画像のアップロード"
 
-#: wp-includes/js/dist/block-library.js:5099
+#: wp-includes/js/dist/block-library.js:5117
 msgid "Crop Images"
 msgstr "画像の切り抜き"
 
-#: wp-includes/js/dist/block-library.js:5079
+#: wp-includes/js/dist/block-library.js:5097
 msgid "Drag images, upload new ones or select files from your library."
 msgstr "画像をドラッグするか、新規アップロードするか、ライブラリーからファイルを選択してください。"
 
-#: wp-includes/js/dist/block-library.js:4982
+#: wp-includes/js/dist/block-library.js:5000
 msgid "Thumbnails are not cropped."
 msgstr "サムネイルがクロップされていません。"
 
-#: wp-includes/js/dist/block-library.js:4982
+#: wp-includes/js/dist/block-library.js:5000
 msgid "Thumbnails are cropped to align."
 msgstr "サムネイルを整列にあわせてクロップしました。"
 
-#: wp-includes/js/dist/block-library.js:8307
+#: wp-includes/js/dist/block-library.js:8325
 msgid "Show Download Button"
 msgstr "ダウンロードボタンを表示"
 
-#: wp-includes/js/dist/block-library.js:8305
+#: wp-includes/js/dist/block-library.js:8323
 msgid "Download Button Settings"
 msgstr "ダウンロードボタン設定"
 
-#: wp-includes/js/dist/block-library.js:8294
+#: wp-includes/js/dist/block-library.js:8312
 msgid "Text Link Settings"
 msgstr "テキストリンク設定"
 
-#: wp-includes/js/dist/block-library.js:8265
+#: wp-includes/js/dist/block-library.js:8283
 msgid "The download button is hidden."
 msgstr "ダウンロードボタンは非表示です。"
 
-#: wp-includes/js/dist/block-library.js:8265
+#: wp-includes/js/dist/block-library.js:8283
 msgid "The download button is visible."
 msgstr "ダウンロードボタンを表示中です。"
 
-#: wp-includes/js/dist/block-library.js:8654
+#: wp-includes/js/dist/block-library.js:8672
 msgctxt "button label"
 msgid "Download"
 msgstr "ダウンロード"
 
-#: wp-includes/js/dist/block-library.js:8619
+#: wp-includes/js/dist/block-library.js:8637
 msgid "pdf"
 msgstr "pdf"
 
-#: wp-includes/js/dist/block-library.js:8619
+#: wp-includes/js/dist/block-library.js:8637
 msgid "document"
 msgstr "文書"
 
-#: wp-includes/js/dist/block-library.js:8608
+#: wp-includes/js/dist/block-library.js:8626
 msgid "Add a link to a downloadable file."
 msgstr "ファイルをダウンロードするリンクを追加します。"
 
-#: wp-includes/js/dist/block-library.js:8566
+#: wp-includes/js/dist/block-library.js:8584
 msgid "Copy URL"
 msgstr "URL をコピー"
 
-#: wp-includes/js/dist/block-library.js:8535
+#: wp-includes/js/dist/block-library.js:8553
 msgid "Write file name…"
 msgstr "ファイル名を入力..."
 
-#: wp-includes/js/dist/block-library.js:8521
+#: wp-includes/js/dist/block-library.js:8539
 msgid "Edit file"
 msgstr "ファイルを編集"
 
-#: wp-includes/js/dist/block-library.js:8490
+#: wp-includes/js/dist/block-library.js:8508
 msgid "Drag a file, upload a new one or select a file from your library."
 msgstr "ファイルをドラッグするか、新規アップロードするか、ライブラリーからファイルを選択してください。"
 
 #. translators: %s: Name of service (e.g. VideoPress, YouTube)
-#: wp-includes/js/dist/block-library.js:8102
+#: wp-includes/js/dist/block-library.js:8120
 msgid "Add a block that displays content pulled from other sites, like Twitter, Instagram or YouTube."
 msgstr "Twitter、Instagram、YouTube など他サイトからコンテンツを引用表示するブロックを追加します。"
 
-#: wp-includes/js/dist/block-library.js:8224
+#: wp-includes/js/dist/block-library.js:8242
 msgid "Embed videos, images, tweets, audio, and other content from external sources."
 msgstr "動画、画像、ツイート、音声その他の外部のリソースのコンテンツを埋め込みます。"
 
-#: wp-includes/js/dist/block-library.js:8223
+#: wp-includes/js/dist/block-library.js:8241
 msgctxt "block title"
 msgid "Embed"
 msgstr "埋め込み"
 
-#: wp-includes/js/dist/block-library.js:7779
+#: wp-includes/js/dist/block-library.js:7797
 msgid "Previews for this are unavailable in the editor, sorry!"
 msgstr "このコンテンツはエディターではプレビューできません。"
 
-#: wp-includes/js/dist/block-library.js:7751
+#: wp-includes/js/dist/block-library.js:7769
 msgid "Embedded content from %s"
 msgstr "%s からの埋め込みコンテンツ"
 
-#: wp-includes/js/dist/block-library.js:7616
+#: wp-includes/js/dist/block-library.js:7634
 msgid "Sorry, we could not embed that content."
 msgstr "このコンテンツは埋め込むことができません。"
 
-#: wp-includes/js/dist/block-library.js:7614
+#: wp-includes/js/dist/block-library.js:7632
 msgctxt "button label"
 msgid "Embed"
 msgstr "埋め込み"
 
-#: wp-includes/js/dist/block-library.js:7609
+#: wp-includes/js/dist/block-library.js:7627
 msgid "Enter URL to embed here…"
 msgstr "埋め込む URL をここに入力..."
 
-#: wp-includes/js/dist/block-library.js:7994
+#: wp-includes/js/dist/block-library.js:8012
 msgid "%s URL"
 msgstr "%s URL"
 
-#: wp-includes/js/dist/block-library.js:7571
+#: wp-includes/js/dist/block-library.js:7589
 msgid "Embedding…"
 msgstr "埋め込み中..."
 
-#: wp-includes/js/dist/block-library.js:7550
+#: wp-includes/js/dist/block-library.js:7568
 msgid "Resize for smaller devices"
 msgstr "より小さな端末用にリサイズ"
 
-#: wp-includes/js/dist/block-library.js:7547
+#: wp-includes/js/dist/block-library.js:7565
 msgid "Media Settings"
 msgstr "メディア設定"
 
-#: wp-includes/js/dist/block-library.js:7543
+#: wp-includes/js/dist/block-library.js:7561
 msgid "Edit URL"
 msgstr "URL を編集"
 
-#: wp-includes/js/dist/block-library.js:7952
+#: wp-includes/js/dist/block-library.js:7970
 msgid "This embed may not preserve its aspect ratio when the browser is resized."
 msgstr "この埋め込みは、ブラウザのサイズ変更時にアスペクト比を保持しない場合があります。"
 
-#: wp-includes/js/dist/block-library.js:7952
+#: wp-includes/js/dist/block-library.js:7970
 msgid "This embed will preserve its aspect ratio when the browser is resized."
 msgstr "この埋め込みは、ブラウザのサイズ変更時にアスペクト比を保持します。"
 
@@ -1054,7 +1054,7 @@ msgstr "Instagram 投稿を埋め込みます。"
 
 #: wp-includes/js/dist/block-library.js:2164
 #: wp-includes/js/dist/block-library.js:2200
-#: wp-includes/js/dist/block-library.js:9376
+#: wp-includes/js/dist/block-library.js:9394
 msgid "image"
 msgstr "画像"
 
@@ -1069,7 +1069,7 @@ msgstr "YouTube 動画を埋め込みます。"
 #: wp-includes/js/dist/block-library.js:2147
 #: wp-includes/js/dist/block-library.js:2209
 #: wp-includes/js/dist/block-library.js:2416
-#: wp-includes/js/dist/block-library.js:9376
+#: wp-includes/js/dist/block-library.js:9394
 msgid "video"
 msgstr "動画"
 
@@ -1084,171 +1084,171 @@ msgstr "音楽"
 msgid "Embed a tweet."
 msgstr "ツイートを埋め込みます。 "
 
-#: wp-includes/js/dist/block-library.js:7403
+#: wp-includes/js/dist/block-library.js:7421
 msgid "Write title…"
 msgstr "タイトルを入力..."
 
-#: wp-includes/js/dist/block-library.js:7380
+#: wp-includes/js/dist/block-library.js:7394
 msgid "Drag an image or a video, upload a new one or select a file from your library."
 msgstr "画像または動画をドラッグするか、新規アップロードするか、ライブラリーからファイルを選択してください。"
 
-#: wp-includes/js/dist/block-library.js:7358
+#: wp-includes/js/dist/block-library.js:7372
 msgid "Background Opacity"
 msgstr "背景の透過率"
 
-#: wp-includes/js/dist/block-library.js:7355
+#: wp-includes/js/dist/block-library.js:7369
 msgid "Overlay Color"
 msgstr "オーバーレイの色"
 
-#: wp-includes/js/dist/block-library.js:7350
+#: wp-includes/js/dist/block-library.js:7364
 msgid "Overlay"
 msgstr "オーバーレイ"
 
-#: wp-includes/js/dist/block-library.js:7346
+#: wp-includes/js/dist/block-library.js:7360
 msgid "Fixed Background"
 msgstr "固定背景"
 
-#: wp-includes/js/dist/block-library.js:7344
+#: wp-includes/js/dist/block-library.js:7358
 msgid "Cover Settings"
 msgstr "カバー設定"
 
-#: wp-includes/js/dist/block-library.js:7338
-#: wp-includes/js/dist/block-library.js:8960
+#: wp-includes/js/dist/block-library.js:7352
+#: wp-includes/js/dist/block-library.js:8978
 msgid "Edit media"
 msgstr "メディアを編集"
 
-#: wp-includes/js/dist/block-library.js:7119
+#: wp-includes/js/dist/block-library.js:7137
 msgid "Add an image or video with a text overlay — great for headers."
 msgstr "テキストオーバーレイを含む画像または動画を追加します。ヘッダーに最適です。"
 
-#: wp-includes/js/dist/block-library.js:7118
-#: wp-includes/js/dist/block-library.js:7374
+#: wp-includes/js/dist/block-library.js:7136
+#: wp-includes/js/dist/block-library.js:7388
 msgid "Cover"
 msgstr "カバー"
 
-#: wp-includes/js/dist/block-library.js:6923
+#: wp-includes/js/dist/block-library.js:6941
 msgid "Add a block that displays content in multiple columns, then add whatever content blocks you’d like."
 msgstr "複数カラム表示のブロックを追加して、お好みのブロックを配置してください。"
 
-#: wp-includes/js/dist/block-library.js:7038
+#: wp-includes/js/dist/block-library.js:7056
 msgid "A single column within a columns block."
 msgstr "カラムブロック内の1つのカラム。"
 
-#: wp-includes/js/dist/block-library.js:6757
+#: wp-includes/js/dist/block-library.js:6775
 msgid "Display code snippets that respect your spacing and tabs."
 msgstr "余白やタグを考慮したコードスニペットを表示します。"
 
-#: wp-includes/js/dist/block-library.js:6735
+#: wp-includes/js/dist/block-library.js:6753
 msgid "Write code…"
 msgstr "コードを入力..."
 
-#: wp-includes/js/dist/block-library.js:13658
+#: wp-includes/js/dist/block-library.js:13674
 msgid "Use the classic WordPress editor."
 msgstr "従来の WordPress エディターを使用します。"
 
-#: wp-includes/js/dist/block-library.js:13657
+#: wp-includes/js/dist/block-library.js:13673
 msgctxt "block title"
 msgid "Classic"
 msgstr "クラシック"
 
-#: wp-includes/js/dist/block-library.js:13625
+#: wp-includes/js/dist/block-library.js:13641
 msgid "Classic"
 msgstr "クラシック"
 
-#: wp-includes/js/dist/block-library.js:13556
+#: wp-includes/js/dist/block-library.js:13572
 msgctxt "button to expand options"
 msgid "More"
 msgstr "さらに表示"
 
-#: wp-includes/js/dist/block-library.js:6660
+#: wp-includes/js/dist/block-library.js:6678
 msgid "Display a list of all categories."
 msgstr "すべてのカテゴリーをリスト表示します。"
 
-#: wp-includes/js/dist/block-library.js:6595
+#: wp-includes/js/dist/block-library.js:6613
 msgid "Show Hierarchy"
 msgstr "階層を表示"
 
-#: wp-includes/js/dist/block-library.js:6589
+#: wp-includes/js/dist/block-library.js:6607
 msgid "Categories Settings"
 msgstr "カテゴリー設定"
 
-#: wp-includes/js/dist/block-library.js:6285
+#: wp-includes/js/dist/block-library.js:6303
 msgctxt "block style"
 msgid "Squared"
 msgstr "角"
 
-#: wp-includes/js/dist/block-library.js:6282
+#: wp-includes/js/dist/block-library.js:6300
 msgid "Outline"
 msgstr "アウトライン"
 
-#: wp-includes/js/dist/block-library.js:6278
+#: wp-includes/js/dist/block-library.js:6296
 msgctxt "block style"
 msgid "Rounded"
 msgstr "角丸"
 
-#: wp-includes/js/dist/block-library.js:6260
+#: wp-includes/js/dist/block-library.js:6278
 msgid "Prompt visitors to take action with a custom button."
 msgstr "カスタムボタンで読者にアクションを促しましょう。"
 
-#: wp-includes/js/dist/block-library.js:6259
+#: wp-includes/js/dist/block-library.js:6277
 msgid "Button"
 msgstr "ボタン"
 
 #: wp-includes/js/dist/block-library.js:1686
-#: wp-includes/js/dist/block-library.js:6149
-#: wp-includes/js/dist/block-library.js:9278
-#: wp-includes/js/dist/block-library.js:10902
+#: wp-includes/js/dist/block-library.js:6167
+#: wp-includes/js/dist/block-library.js:9296
+#: wp-includes/js/dist/block-library.js:10918
 msgid "Color Settings"
 msgstr "色設定"
 
-#: wp-includes/js/dist/block-library.js:6132
-#: wp-includes/js/dist/block-library.js:8553
+#: wp-includes/js/dist/block-library.js:6150
+#: wp-includes/js/dist/block-library.js:8571
 msgid "Add text…"
 msgstr "テキストを追加…"
 
 #. translators: %s: title/name of the reusable block
-#: wp-includes/js/dist/block-library.js:11239
+#: wp-includes/js/dist/block-library.js:11255
 msgid "Reusable Block: %s"
 msgstr "再利用ブロック: %s"
 
-#: wp-includes/js/dist/block-library.js:11480
+#: wp-includes/js/dist/block-library.js:11496
 msgid "Reusable Block"
 msgstr "再利用ブロック"
 
-#: wp-includes/js/dist/block-library.js:11405
+#: wp-includes/js/dist/block-library.js:11421
 msgid "Block has been deleted or is unavailable."
 msgstr "ブロックは削除されたか、利用できません。"
 
-#: wp-includes/js/dist/block-library.js:5958
+#: wp-includes/js/dist/block-library.js:5976
 msgid "Embed a simple audio player."
 msgstr "シンプルな音声プレイヤーを埋め込みます。"
 
 #: wp-includes/js/dist/block-library.js:3467
-#: wp-includes/js/dist/block-library.js:4796
-#: wp-includes/js/dist/block-library.js:5921
-#: wp-includes/js/dist/block-library.js:7781
-#: wp-includes/js/dist/block-library.js:13248
+#: wp-includes/js/dist/block-library.js:4814
+#: wp-includes/js/dist/block-library.js:5939
+#: wp-includes/js/dist/block-library.js:7799
+#: wp-includes/js/dist/block-library.js:13264
 msgid "Write caption…"
 msgstr "キャプションを入力..."
 
-#: wp-includes/js/dist/block-library.js:5886
+#: wp-includes/js/dist/block-library.js:5904
 msgid "Audio Settings"
 msgstr "音声設定"
 
-#: wp-includes/js/dist/block-library.js:5882
+#: wp-includes/js/dist/block-library.js:5900
 msgid "Edit audio"
 msgstr "音声の編集"
 
-#: wp-includes/js/dist/block-library.js:5649
+#: wp-includes/js/dist/block-library.js:5667
 msgid "Display a monthly archive of your posts."
 msgstr "記事の月別アーカイブを表示します。"
 
-#: wp-includes/js/dist/block-library.js:5612
-#: wp-includes/js/dist/block-library.js:6599
+#: wp-includes/js/dist/block-library.js:5630
+#: wp-includes/js/dist/block-library.js:6617
 msgid "Show Post Counts"
 msgstr "投稿数を表示"
 
-#: wp-includes/js/dist/block-library.js:5602
+#: wp-includes/js/dist/block-library.js:5620
 msgid "Archives Settings"
 msgstr "アーカイブ設定"
 
@@ -1349,7 +1349,7 @@ msgstr "コードエディターを終了"
 msgid "Editing Code"
 msgstr "コードの編集"
 
-#: wp-includes/js/dist/edit-post.js:5073
+#: wp-includes/js/dist/edit-post.js:5074
 msgid "Editor settings"
 msgstr "エディター設定"
 
@@ -1364,7 +1364,7 @@ msgid "Close settings"
 msgstr "設定を閉じる"
 
 #. translators: %d: number of blocks
-#: wp-includes/js/dist/editor.js:29361
+#: wp-includes/js/dist/editor.js:29466
 msgid "%d block"
 msgid_plural "%d blocks"
 msgstr[0] "%d個のブロック"
@@ -1381,19 +1381,19 @@ msgstr "ステータスと公開状態"
 msgid "Click to change"
 msgstr "クリックして変更"
 
-#: wp-includes/js/dist/edit-post.js:5566
+#: wp-includes/js/dist/edit-post.js:5567
 msgid "Pin to toolbar"
 msgstr "ツールバーに固定"
 
-#: wp-includes/js/dist/edit-post.js:5566
+#: wp-includes/js/dist/edit-post.js:5567
 msgid "Unpin from toolbar"
 msgstr "ツールバーへの固定解除"
 
-#: wp-includes/js/dist/edit-post.js:5563
+#: wp-includes/js/dist/edit-post.js:5564
 msgid "Close plugin"
 msgstr "プラグインを閉じる"
 
-#: wp-includes/js/dist/edit-post.js:5561
+#: wp-includes/js/dist/edit-post.js:5562
 msgid "Editor plugins"
 msgstr "エディタープラグイン"
 
@@ -1401,7 +1401,7 @@ msgstr "エディタープラグイン"
 msgid "Advanced Panels"
 msgstr "詳細パネル"
 
-#: wp-includes/js/dist/edit-post.js:3910 wp-includes/js/dist/edit-post.js:4954
+#: wp-includes/js/dist/edit-post.js:3910 wp-includes/js/dist/edit-post.js:4955
 msgid "Discussion"
 msgstr "ディスカッション"
 
@@ -1417,16 +1417,16 @@ msgstr "ヒントを有効化"
 msgid "Enable Pre-publish Checks"
 msgstr "公開前チェックを有効化"
 
-#: wp-includes/js/dist/edit-post.js:5323
+#: wp-includes/js/dist/edit-post.js:5324
 msgid "Open publish panel"
 msgstr "公開パネルを開く"
 
-#: wp-includes/js/dist/edit-post.js:5299
+#: wp-includes/js/dist/edit-post.js:5300
 msgid "Editor content"
 msgstr "エディターコンテンツ"
 
 #. translators: accessibility text for the publish landmark region.
-#: wp-includes/js/dist/edit-post.js:5289
+#: wp-includes/js/dist/edit-post.js:5290
 msgid "Editor publish"
 msgstr "エディターの投稿パネル"
 
@@ -1630,43 +1630,43 @@ msgid "Document and block tools"
 msgstr "文書・ブロックツール"
 
 #. translators: %s: file name
-#: wp-includes/js/dist/editor.js:22467
+#: wp-includes/js/dist/editor.js:22557
 msgid "Error while uploading file %s to the media library."
 msgstr "ファイル %s をメディアライブラリへアップロード中にエラーが発生しました。"
 
-#: wp-includes/js/dist/editor.js:22377
+#: wp-includes/js/dist/editor.js:22467
 msgid "This file is empty."
 msgstr "このファイルは空です。"
 
-#: wp-includes/js/dist/editor.js:22351
+#: wp-includes/js/dist/editor.js:22441
 msgid "Sorry, this file type is not supported here."
 msgstr "このファイル形式はこの箇所で非対応です。"
 
-#: wp-includes/js/dist/editor.js:13217
+#: wp-includes/js/dist/editor.js:13316
 msgid "Untitled Reusable Block"
 msgstr "無題の再利用ブロック"
 
-#: wp-includes/js/dist/editor.js:13125
+#: wp-includes/js/dist/editor.js:13224
 msgid "Block deleted."
 msgstr "ブロックを削除しました。"
 
-#: wp-includes/js/dist/editor.js:13013
+#: wp-includes/js/dist/editor.js:13112
 msgid "Block created."
 msgstr "ブロックを作成しました。"
 
-#: wp-includes/js/dist/editor.js:13626
+#: wp-includes/js/dist/editor.js:13725
 msgid "Trashing failed"
 msgstr "ゴミ箱に入れられません"
 
-#: wp-includes/js/dist/editor.js:13549
+#: wp-includes/js/dist/editor.js:13648
 msgid "Updating failed"
 msgstr "更新に失敗しました"
 
-#: wp-includes/js/dist/editor.js:13547
+#: wp-includes/js/dist/editor.js:13646
 msgid "Scheduling failed"
 msgstr "予約投稿に失敗しました"
 
-#: wp-includes/js/dist/editor.js:13545 wp-includes/js/dist/editor.js:13546
+#: wp-includes/js/dist/editor.js:13644 wp-includes/js/dist/editor.js:13645
 msgid "Publishing failed"
 msgstr "公開に失敗しました"
 
@@ -1730,880 +1730,880 @@ msgstr "レッド"
 msgid "Pale pink"
 msgstr "ピンク"
 
-#: wp-includes/js/dist/editor.js:33373
+#: wp-includes/js/dist/editor.js:33481
 msgid "Additional CSS Class"
 msgstr "追加 CSS クラス"
 
-#: wp-includes/js/dist/editor.js:33277
+#: wp-includes/js/dist/editor.js:33385
 msgid "Anchors lets you link directly to a section on a page."
 msgstr "アンカーを使用すると、ページ上のセクションに直接リンクすることができます。"
 
-#: wp-includes/js/dist/editor.js:33276
+#: wp-includes/js/dist/editor.js:33384
 msgid "HTML Anchor"
 msgstr "HTML アンカー"
 
-#: wp-includes/js/dist/editor.js:22175
+#: wp-includes/js/dist/editor.js:22265
 #: wp-includes/js/dist/block-library.js:3320
 msgid "Link Settings"
 msgstr "リンク設定"
 
-#: wp-includes/js/dist/editor.js:23319
+#: wp-includes/js/dist/editor.js:23409
 msgid "Insert Link"
 msgstr "リンクを挿入"
 
-#: wp-includes/js/dist/editor.js:29083
+#: wp-includes/js/dist/editor.js:29188
 msgid "You have unsaved changes. If you proceed, they will be lost."
 msgstr "未保存の変更があります。続行すると失われます。"
 
-#: wp-includes/js/dist/editor.js:24115
+#: wp-includes/js/dist/editor.js:24205
 msgid "Reset the template"
 msgstr "テンプレートのリセット"
 
-#: wp-includes/js/dist/editor.js:24112
+#: wp-includes/js/dist/editor.js:24202
 msgid "Keep it as is"
 msgstr "変更しない"
 
-#: wp-includes/js/dist/editor.js:24109
+#: wp-includes/js/dist/editor.js:24199
 msgid "The content of your post doesn’t match the template assigned to your post type."
 msgstr "投稿の本文は投稿タイプに割り当てられたテンプレートと一致しません。"
 
-#: wp-includes/js/dist/editor.js:24100
+#: wp-includes/js/dist/editor.js:24190
 msgid "Resetting the template may result in loss of content, do you want to continue?"
 msgstr "テンプレートをリセットするとコンテンツが失われる可能性があります。続行しますか ?"
 
-#: wp-includes/js/dist/editor.js:28970
+#: wp-includes/js/dist/editor.js:29075
 msgid "Document Outline"
 msgstr "文書の概要"
 
-#: wp-includes/js/dist/editor.js:28962
+#: wp-includes/js/dist/editor.js:29067
 msgid "Paragraphs"
 msgstr "段落"
 
-#: wp-includes/js/dist/editor.js:28958
+#: wp-includes/js/dist/editor.js:29063
 msgid "Headings"
 msgstr "見出し"
 
-#: wp-includes/js/dist/editor.js:28952
+#: wp-includes/js/dist/editor.js:29057
 msgid "Document Statistics"
 msgstr "文書の統計情報"
 
-#: wp-includes/js/dist/editor.js:29012
+#: wp-includes/js/dist/editor.js:29117
 msgid "Content structure"
 msgstr "コンテンツ構造"
 
-#: wp-includes/js/dist/editor.js:29131
+#: wp-includes/js/dist/editor.js:29236
 msgid "Skip to the selected block"
 msgstr "選択したブロックをスキップ"
 
-#: wp-includes/js/dist/editor.js:32812
+#: wp-includes/js/dist/editor.js:32920
 msgid "View the autosave"
 msgstr "自動保存を表示"
 
-#: wp-includes/js/dist/editor.js:32809
+#: wp-includes/js/dist/editor.js:32917
 msgid "There is an autosave of this post that is more recent than the version below."
 msgstr "以下のバージョンよりも新しい自動保存された投稿があります。"
 
-#: wp-includes/js/dist/editor.js:25997
+#: wp-includes/js/dist/editor.js:26091
 msgid "Protected with a password you choose. Only those with the password can view this post."
 msgstr "任意のパスワードで保護します。パスワードを知っている閲覧者のみがこの記事を表示できます。"
 
-#: wp-includes/js/dist/editor.js:25993
+#: wp-includes/js/dist/editor.js:26087
 msgid "Only visible to site admins and editors."
 msgstr "サイト管理者と編集者にだけ表示されます。"
 
-#: wp-includes/js/dist/editor.js:25989
+#: wp-includes/js/dist/editor.js:26083
 msgid "Visible to everyone."
 msgstr "すべての人に表示されます。"
 
-#: wp-includes/js/dist/editor.js:26153
+#: wp-includes/js/dist/editor.js:26247
 msgid "Use a secure password"
 msgstr "安全なパスワードを使用"
 
-#: wp-includes/js/dist/editor.js:26147
+#: wp-includes/js/dist/editor.js:26241
 msgid "Create password"
 msgstr "パスワードを作成"
 
-#: wp-includes/js/dist/editor.js:26118
+#: wp-includes/js/dist/editor.js:26212
 msgid "Post Visibility"
 msgstr "公開状態"
 
-#: wp-includes/js/dist/editor.js:26057
+#: wp-includes/js/dist/editor.js:26151
 msgid "Would you like to privately publish this post now?"
 msgstr "今すぐ非公開で投稿しますか ?"
 
-#: wp-includes/js/dist/editor.js:28816
+#: wp-includes/js/dist/editor.js:28921
 msgid "Move to trash"
 msgstr "ゴミ箱に移動"
 
-#: wp-includes/js/dist/editor.js:28708 wp-includes/js/dist/editor.js:28713
+#: wp-includes/js/dist/editor.js:28813 wp-includes/js/dist/editor.js:28818
 msgid "Add title"
 msgstr "タイトルを追加"
 
-#: wp-includes/js/dist/editor.js:27950
+#: wp-includes/js/dist/editor.js:28045
 msgctxt "term"
 msgid "Available %s"
 msgstr "利用可能な%s"
 
-#: wp-includes/js/dist/editor.js:27949 wp-includes/js/dist/editor.js:27950
+#: wp-includes/js/dist/editor.js:28044 wp-includes/js/dist/editor.js:28045
 msgid "Terms"
 msgstr "項目"
 
-#: wp-includes/js/dist/editor.js:27949
+#: wp-includes/js/dist/editor.js:28044
 msgctxt "term"
 msgid "Search %s"
 msgstr "%sを検索"
 
-#: wp-includes/js/dist/editor.js:27944
+#: wp-includes/js/dist/editor.js:28039
 msgid "Parent Term"
 msgstr "親項目"
 
-#: wp-includes/js/dist/editor.js:27942 wp-includes/js/dist/editor.js:27943
+#: wp-includes/js/dist/editor.js:28037 wp-includes/js/dist/editor.js:28038
 msgid "Add new term"
 msgstr "新規項目を追加"
 
-#: wp-includes/js/dist/editor.js:27942 wp-includes/js/dist/editor.js:27943
+#: wp-includes/js/dist/editor.js:28037 wp-includes/js/dist/editor.js:28038
 msgid "Add new category"
 msgstr "新規カテゴリーを追加"
 
-#: wp-includes/js/dist/editor.js:26544
+#: wp-includes/js/dist/editor.js:26638
 msgctxt "term"
 msgid "Remove %s"
 msgstr "%sを削除"
 
-#: wp-includes/js/dist/editor.js:26543
+#: wp-includes/js/dist/editor.js:26637
 msgctxt "term"
 msgid "%s removed"
 msgstr "%sを削除しました"
 
-#: wp-includes/js/dist/editor.js:26542 wp-includes/js/dist/editor.js:27694
+#: wp-includes/js/dist/editor.js:26636 wp-includes/js/dist/editor.js:27789
 msgctxt "term"
 msgid "%s added"
 msgstr "%sを追加しました"
 
-#: wp-includes/js/dist/editor.js:26541 wp-includes/js/dist/editor.js:27694
+#: wp-includes/js/dist/editor.js:26635 wp-includes/js/dist/editor.js:27789
 msgid "Term"
 msgstr "項目"
 
-#: wp-includes/js/dist/editor.js:26541
+#: wp-includes/js/dist/editor.js:26635
 msgid "Tag"
 msgstr "タグ"
 
-#: wp-includes/js/dist/editor.js:26540
+#: wp-includes/js/dist/editor.js:26634
 msgid "Add New Term"
 msgstr "新規項目を追加"
 
-#: wp-includes/js/dist/editor.js:27188
+#: wp-includes/js/dist/editor.js:27282
 msgid "Switch to Draft"
 msgstr "下書きへ切り替え"
 
-#: wp-includes/js/dist/editor.js:27174
+#: wp-includes/js/dist/editor.js:27268
 msgid "Are you sure you want to unschedule this post?"
 msgstr "本当にこの投稿の予約を取り消しますか ?"
 
-#: wp-includes/js/dist/editor.js:27172
+#: wp-includes/js/dist/editor.js:27266
 msgid "Are you sure you want to unpublish this post?"
 msgstr "本当にこの投稿を未公開にしますか ?"
 
-#: wp-includes/js/dist/editor.js:27478
+#: wp-includes/js/dist/editor.js:27573
 msgid "Stick to the Front Page"
 msgstr "先頭に固定表示"
 
-#: wp-includes/js/dist/editor.js:26277
+#: wp-includes/js/dist/editor.js:26371
 msgid "Immediately"
 msgstr "今すぐ"
 
-#: wp-includes/js/dist/editor.js:27314
+#: wp-includes/js/dist/editor.js:27407
 msgid "Saving"
 msgstr "保存中"
 
-#: wp-includes/js/dist/editor.js:27314
+#: wp-includes/js/dist/editor.js:27407
 msgid "Autosaving"
 msgstr "自動保存中"
 
-#: wp-includes/js/dist/editor.js:25937
+#: wp-includes/js/dist/editor.js:26031
 msgid "Finished writing? That’s great, let’s get this published right now. Just click “Publish” and you’re good to go."
 msgstr "書き終えたら、さっそく公開してみましょう。あとは「公開する」をクリックするだけです。"
 
-#: wp-includes/js/dist/editor.js:25927
+#: wp-includes/js/dist/editor.js:26021
 msgid "Publish…"
 msgstr "公開する"
 
-#: wp-includes/js/dist/editor.js:26821
+#: wp-includes/js/dist/editor.js:26915
 msgid "Publish:"
 msgstr "公開:"
 
-#: wp-includes/js/dist/editor.js:26815
+#: wp-includes/js/dist/editor.js:26909
 msgid "Visibility:"
 msgstr "公開状態:"
 
-#: wp-includes/js/dist/editor.js:26808
+#: wp-includes/js/dist/editor.js:26902
 msgid "Double-check your settings before publishing."
 msgstr "公開する前に、設定を再確認しましょう。"
 
-#: wp-includes/js/dist/editor.js:26807
+#: wp-includes/js/dist/editor.js:26901
 msgid "Are you ready to publish?"
 msgstr "公開してもよいですか ?"
 
-#: wp-includes/js/dist/editor.js:26805
+#: wp-includes/js/dist/editor.js:26899
 msgid "Your work will be published at the specified date and time."
 msgstr "この投稿は設定日時に公開されます。"
 
-#: wp-includes/js/dist/editor.js:26804
+#: wp-includes/js/dist/editor.js:26898
 msgid "Are you ready to schedule?"
 msgstr "投稿を予約しますか ?"
 
-#: wp-includes/js/dist/editor.js:26802
+#: wp-includes/js/dist/editor.js:26896
 msgid "When you’re ready, submit your work for review, and an Editor will be able to approve it for you."
 msgstr "準備ができたらレビューをリクエストしましょう。編集者が承認して公開できます。"
 
-#: wp-includes/js/dist/editor.js:26801
+#: wp-includes/js/dist/editor.js:26895
 msgid "Are you ready to submit for review?"
 msgstr "レビューをリクエストする準備ができましたか ?"
 
-#: wp-includes/js/dist/editor.js:26955
+#: wp-includes/js/dist/editor.js:27049
 msgid "Copy Link"
 msgstr "リンクをコピー"
 
-#: wp-includes/js/dist/editor.js:26955 wp-includes/js/dist/edit-post.js:1057
-#: wp-includes/js/dist/block-library.js:8566
+#: wp-includes/js/dist/editor.js:27049 wp-includes/js/dist/edit-post.js:1057
+#: wp-includes/js/dist/block-library.js:8584
 msgid "Copied!"
 msgstr "コピーしました。"
 
 #. translators: %s: post type singular name
-#: wp-includes/js/dist/editor.js:26943
+#: wp-includes/js/dist/editor.js:27037
 msgid "%s address"
 msgstr "%sのアドレス"
 
-#: wp-includes/js/dist/editor.js:26938
+#: wp-includes/js/dist/editor.js:27032
 msgid "What’s next?"
 msgstr "次の操作"
 
-#: wp-includes/js/dist/editor.js:26928
+#: wp-includes/js/dist/editor.js:27022
 msgid "is now live."
 msgstr "を公開しました。"
 
-#: wp-includes/js/dist/editor.js:26928
+#: wp-includes/js/dist/editor.js:27022
 msgid "is now scheduled. It will go live on"
 msgstr "を予約しました。公開予定日:"
 
-#: wp-includes/js/dist/editor.js:26621
+#: wp-includes/js/dist/editor.js:26715
 msgid "Tags help users and search engines navigate your site and find your content. Add a few keywords to describe your post."
 msgstr "タグは、サーチエンジンがユーザーをあなたのサイトへ誘導したり、ユーザーがコンテンツを探す際の助けになります。いくつかのキーワードを足して投稿の説明をしてみましょう。"
 
-#: wp-includes/js/dist/editor.js:26617
+#: wp-includes/js/dist/editor.js:26711
 msgid "Add tags"
 msgstr "タグを追加"
 
-#: wp-includes/js/dist/editor.js:26731
+#: wp-includes/js/dist/editor.js:26825
 msgid "Apply the \"%1$s\" format."
 msgstr "「%1$s」形式を適用。"
 
-#: wp-includes/js/dist/editor.js:26728
+#: wp-includes/js/dist/editor.js:26822
 msgid "Your theme uses post formats to highlight different kinds of content, like images or videos. Apply a post format to see this special styling."
 msgstr "ご利用中のテーマでは投稿フォーマットを使用し、画像や動画といった異なる種類のコンテンツをハイライトしています。投稿フォーマットを適用し、独自のスタイルを確認してください。"
 
-#: wp-includes/js/dist/editor.js:26724
+#: wp-includes/js/dist/editor.js:26818
 msgid "Use a post format"
 msgstr "投稿フォーマットを使用"
 
-#: wp-includes/js/dist/editor.js:27093
+#: wp-includes/js/dist/editor.js:27187
 msgid "Always show pre-publish checks."
 msgstr "公開前チェックを常に表示する。"
 
-#: wp-includes/js/dist/editor.js:27085
+#: wp-includes/js/dist/editor.js:27179
 msgid "Close panel"
 msgstr "パネルを閉じる"
 
-#: wp-includes/js/dist/editor.js:25788
+#: wp-includes/js/dist/editor.js:25878
 msgid "Submit for Review"
 msgstr "レビュー待ちとして送信"
 
-#: wp-includes/js/dist/editor.js:25784
+#: wp-includes/js/dist/editor.js:25874
 msgid "Scheduling…"
 msgstr "予約中…"
 
-#: wp-includes/js/dist/editor.js:25782
+#: wp-includes/js/dist/editor.js:25872
 msgid "Updating…"
 msgstr "更新中…"
 
-#: wp-includes/js/dist/editor.js:25780
+#: wp-includes/js/dist/editor.js:25870
 msgid "Publishing…"
 msgstr "公開中…"
 
-#: wp-includes/js/dist/editor.js:25345
+#: wp-includes/js/dist/editor.js:25435
 msgid "Click “Preview” to load a preview of this page, so you can make sure you’re happy with your blocks."
 msgstr "「プレビュー」をクリックして、このページのプレビューを表示しましょう。ブロックが期待通り表示されているか確認できます。"
 
-#: wp-includes/js/dist/editor.js:25339
+#: wp-includes/js/dist/editor.js:25429
 msgctxt "imperative verb"
 msgid "Preview"
 msgstr "プレビュー"
 
-#: wp-includes/js/dist/editor.js:25225 wp-includes/js/dist/editor.js:25228
+#: wp-includes/js/dist/editor.js:25315 wp-includes/js/dist/editor.js:25318
 msgid "Generating preview…"
 msgstr "プレビューを生成中..."
 
-#: wp-includes/js/dist/editor.js:25743
+#: wp-includes/js/dist/editor.js:25833
 msgid "Allow Pingbacks & Trackbacks"
 msgstr "ピンバックとトラックバックを許可"
 
-#: wp-includes/js/dist/editor.js:28520
+#: wp-includes/js/dist/editor.js:28619
 msgid "Change Permalinks"
 msgstr "パーマリンクの変更"
 
-#: wp-includes/js/dist/editor.js:28492
+#: wp-includes/js/dist/editor.js:28591
 msgid "Permalink:"
 msgstr "パーマリンク:"
 
-#: wp-includes/js/dist/editor.js:28470
+#: wp-includes/js/dist/editor.js:28569
 msgid "Copy the permalink"
 msgstr "パーマリンクをコピー"
 
-#: wp-includes/js/dist/editor.js:28470
+#: wp-includes/js/dist/editor.js:28569
 msgid "Permalink copied"
 msgstr "パーマリンクをコピーしました"
 
-#: wp-includes/js/dist/editor.js:28329
+#: wp-includes/js/dist/editor.js:28426
 msgid "Edit post permalink"
 msgstr "投稿パーマリンクの編集"
 
-#: wp-includes/js/dist/editor.js:25598
+#: wp-includes/js/dist/editor.js:25688
 msgid "Take Over"
 msgstr "引き継ぐ"
 
 #. translators: %s: user's display name
-#: wp-includes/js/dist/editor.js:25588
+#: wp-includes/js/dist/editor.js:25678
 msgid "Another user is currently working on this post, which means you cannot make changes, unless you take over."
 msgstr "他のユーザーが現在この投稿を編集中です。引き継ぎの操作を行わない限り、変更を加えることはできません。"
 
 #. translators: %s: user's display name
-#: wp-includes/js/dist/editor.js:25588
+#: wp-includes/js/dist/editor.js:25678
 msgid "%s is currently working on this post, which means you cannot make changes, unless you take over."
 msgstr "%s さんが現在この投稿を編集中です。引き継ぎの操作を行わない限り、変更を加えることはできません。"
 
 #. translators: %s: user's display name
-#: wp-includes/js/dist/editor.js:25580
+#: wp-includes/js/dist/editor.js:25670
 msgid "Another user now has editing control of this post. Don’t worry, your changes up to this moment have been saved."
 msgstr "他のユーザーが現在この投稿のコントロールを編集中ですが、ご心配なく。これまでに加えた変更は保存されています。"
 
 #. translators: %s: user's display name
-#: wp-includes/js/dist/editor.js:25580
+#: wp-includes/js/dist/editor.js:25670
 msgid "%s now has editing control of this post. Don’t worry, your changes up to this moment have been saved."
 msgstr "%s さんが現在この投稿のコントロールを編集中ですが、ご心配なく。これまでに加えた変更は保存されています。"
 
-#: wp-includes/js/dist/editor.js:25576
+#: wp-includes/js/dist/editor.js:25666
 msgid "Avatar"
 msgstr "アバター"
 
-#: wp-includes/js/dist/editor.js:25568
+#: wp-includes/js/dist/editor.js:25658
 msgid "This post is already being edited."
 msgstr "この投稿は現在編集中です。"
 
-#: wp-includes/js/dist/editor.js:25568
+#: wp-includes/js/dist/editor.js:25658
 msgid "Someone else has taken over this post."
 msgstr "他の人がこの投稿の編集を引き継ぎました。"
 
-#: wp-includes/js/dist/editor.js:25169
+#: wp-includes/js/dist/editor.js:25259
 msgid "%d Revision"
 msgid_plural "%d Revisions"
 msgstr[0] "%d件のリビジョン"
 
-#: wp-includes/js/dist/editor.js:25059
+#: wp-includes/js/dist/editor.js:25149
 msgid "Post Format"
 msgstr "投稿フォーマット"
 
-#: wp-includes/js/dist/editor.js:25033
+#: wp-includes/js/dist/editor.js:25123
 msgid "Chat"
 msgstr "チャット"
 
-#: wp-includes/js/dist/editor.js:25021
+#: wp-includes/js/dist/editor.js:25111
 msgid "Standard"
 msgstr "標準"
 
-#: wp-includes/js/dist/editor.js:25006
+#: wp-includes/js/dist/editor.js:25096
 msgid "Aside"
 msgstr "アサイド"
 
-#: wp-includes/js/dist/editor.js:24894
-#: wp-includes/js/dist/block-library.js:13233
+#: wp-includes/js/dist/editor.js:24984
+#: wp-includes/js/dist/block-library.js:13249
 msgid "Replace image"
 msgstr "画像の置き換え"
 
-#: wp-includes/js/dist/editor.js:24873
+#: wp-includes/js/dist/editor.js:24963
 msgid "Edit or update the image"
 msgstr "画像の編集または更新"
 
-#: wp-includes/js/dist/editor.js:24702
+#: wp-includes/js/dist/editor.js:24792
 msgid "Learn more about manual excerpts"
 msgstr "手動抜粋の詳細"
 
-#: wp-includes/js/dist/editor.js:24694
+#: wp-includes/js/dist/editor.js:24784
 msgid "Write an excerpt (optional)"
 msgstr "抜粋を入力 (任意)"
 
-#: wp-includes/js/dist/editor.js:24661
+#: wp-includes/js/dist/editor.js:24751
 msgid "Allow Comments"
 msgstr "コメントを許可"
 
-#: wp-includes/js/dist/editor.js:20018
+#: wp-includes/js/dist/editor.js:20106
 msgid "(%s: %s)"
 msgstr "(%s: %s)"
 
-#: wp-includes/js/dist/editor.js:24404
+#: wp-includes/js/dist/editor.js:24494
 msgid "no parent"
 msgstr "親はありません"
 
-#: wp-includes/js/dist/editor.js:24399
+#: wp-includes/js/dist/editor.js:24489
 msgid "no title"
 msgstr "タイトルはありません"
 
-#: wp-includes/js/dist/editor.js:24300
+#: wp-includes/js/dist/editor.js:24390
 msgid "Order"
 msgstr "並び順"
 
-#: wp-includes/js/dist/editor.js:22830
+#: wp-includes/js/dist/editor.js:22920
 msgid "Drag a video, upload a new one or select a file from your library."
 msgstr "動画をドラッグするか、新規アップロードするか、ライブラリーからファイルを選択してください。"
 
-#: wp-includes/js/dist/editor.js:22828
+#: wp-includes/js/dist/editor.js:22918
 msgid "Drag an image, upload a new one or select a file from your library."
 msgstr "画像をドラッグするか、新規アップロードするか、ライブラリーからファイルを選択してください。"
 
-#: wp-includes/js/dist/editor.js:22826
+#: wp-includes/js/dist/editor.js:22916
 msgid "Drag an audio, upload a new one or select a file from your library."
 msgstr "音声ファイルをドラッグするか、新規アップロードするか、ライブラリーからファイルを選択してください。"
 
-#: wp-includes/js/dist/editor.js:22823
+#: wp-includes/js/dist/editor.js:22913
 msgid "Drag a media file, upload a new one or select a file from your library."
 msgstr "メディアファイルをドラッグするか、新規アップロードするか、ライブラリーからファイルを選択してください。"
 
-#: wp-includes/js/dist/editor.js:22663
+#: wp-includes/js/dist/editor.js:22753
 msgid "Paste or type URL"
 msgstr "URL を入力または貼り付け"
 
-#: wp-includes/js/dist/editor.js:17656 wp-includes/js/dist/edit-post.js:1156
+#: wp-includes/js/dist/editor.js:17755 wp-includes/js/dist/edit-post.js:1156
 msgid "Manage All Reusable Blocks"
 msgstr "すべての再利用ブロックを管理"
 
-#: wp-includes/js/dist/editor.js:17644
+#: wp-includes/js/dist/editor.js:17743
 msgid "Reusable"
 msgstr "再利用可能"
 
-#: wp-includes/js/dist/editor.js:17613
+#: wp-includes/js/dist/editor.js:17712
 msgctxt "blocks"
 msgid "Most Used"
 msgstr "よく使うもの"
 
-#: wp-includes/js/dist/editor.js:17606
+#: wp-includes/js/dist/editor.js:17705
 msgid "Available block types"
 msgstr "利用可能なブロックタイプ"
 
-#: wp-includes/js/dist/editor.js:17594 wp-includes/js/dist/editor.js:17597
+#: wp-includes/js/dist/editor.js:17693 wp-includes/js/dist/editor.js:17696
 msgid "Search for a block"
 msgstr "ブロックの検索"
 
-#: wp-includes/js/dist/editor.js:17546 wp-includes/js/dist/editor.js:27852
+#: wp-includes/js/dist/editor.js:17645 wp-includes/js/dist/editor.js:27947
 msgid "%d result found."
 msgid_plural "%d results found."
 msgstr[0] "%d件見つかりました"
 
-#: wp-includes/js/dist/editor.js:17278
+#: wp-includes/js/dist/editor.js:17377
 msgid "Inline Elements"
 msgstr "インライン要素"
 
-#: wp-includes/js/dist/editor.js:18209
+#: wp-includes/js/dist/editor.js:18308
 msgid "Add %s"
 msgstr "%sの追加"
 
-#: wp-includes/js/dist/editor.js:30520
+#: wp-includes/js/dist/editor.js:30625
 msgid "The editor has encountered an unexpected error."
 msgstr "エディターで予期しないエラーが発生しました。"
 
-#: wp-includes/js/dist/editor.js:30519
+#: wp-includes/js/dist/editor.js:30624
 msgid "Copy Error"
 msgstr "エラー文をコピー"
 
-#: wp-includes/js/dist/editor.js:30515
+#: wp-includes/js/dist/editor.js:30620
 msgid "Copy Post Text"
 msgstr "投稿内容をコピー"
 
-#: wp-includes/js/dist/editor.js:30511
+#: wp-includes/js/dist/editor.js:30616
 msgid "Attempt Recovery"
 msgstr "復旧を試みる"
 
-#: wp-includes/js/dist/editor.js:23492
+#: wp-includes/js/dist/editor.js:23582
 msgid "(Click to focus this heading)"
 msgstr "(この見出しをクリックしてください)"
 
-#: wp-includes/js/dist/editor.js:23538
+#: wp-includes/js/dist/editor.js:23628
 msgid "(Multiple H1 headings are not recommended)"
 msgstr "(複数の H1 見出しは非推奨です)"
 
-#: wp-includes/js/dist/editor.js:23533
+#: wp-includes/js/dist/editor.js:23623
 msgid "(Your theme may already use a H1 for the post title)"
 msgstr "(テーマによって H1 が投稿タイトルに使用されている可能性があります)"
 
-#: wp-includes/js/dist/editor.js:23528
+#: wp-includes/js/dist/editor.js:23618
 msgid "(Incorrect heading level)"
 msgstr "(見出しレベルに間違いがあります)"
 
-#: wp-includes/js/dist/editor.js:23523
+#: wp-includes/js/dist/editor.js:23613
 msgid "(Empty heading)"
 msgstr "(空白見出し)"
 
-#: wp-includes/js/dist/editor.js:15273
+#: wp-includes/js/dist/editor.js:15372
 msgid "This color combination may be hard for people to read. Try using a brighter background color and/or a darker text color."
 msgstr "この色の組み合わせは読みにくいため、より明るい背景色、より暗い文字色を試してください。"
 
-#: wp-includes/js/dist/editor.js:15273
+#: wp-includes/js/dist/editor.js:15372
 msgid "This color combination may be hard for people to read. Try using a darker background color and/or a brighter text color."
 msgstr "この色の組み合わせは読みにくいため、より暗い背景色、より明るい文字色を試してください。"
 
-#: wp-includes/js/dist/editor.js:19931
+#: wp-includes/js/dist/editor.js:20019
 msgid "(current %s: %s)"
 msgstr "(現在の %s: %s)"
 
-#: wp-includes/js/dist/editor.js:30177
+#: wp-includes/js/dist/editor.js:30282
 msgid "Transform To:"
 msgstr "変換:"
 
-#: wp-includes/js/dist/editor.js:30170
+#: wp-includes/js/dist/editor.js:30275
 msgid "Block Styles"
 msgstr "ブロックスタイル"
 
-#: wp-includes/js/dist/editor.js:30147
+#: wp-includes/js/dist/editor.js:30252
 msgid "Change type of %d block"
 msgid_plural "Change type of %d blocks"
 msgstr[0] "%d個のブロックのタイプを変更する"
 
-#: wp-includes/js/dist/editor.js:30147
+#: wp-includes/js/dist/editor.js:30252
 msgid "Change block type"
 msgstr "ブロックタイプを変更"
 
-#: wp-includes/js/dist/editor.js:29747
+#: wp-includes/js/dist/editor.js:29852
 msgid "Remove from Reusable Blocks"
 msgstr "再利用ブロックから削除"
 
-#: wp-includes/js/dist/editor.js:29666
+#: wp-includes/js/dist/editor.js:29771
 msgid "Convert to Regular Block"
 msgstr "通常のブロックへ変換"
 
-#: wp-includes/js/dist/editor.js:29662
+#: wp-includes/js/dist/editor.js:29767
 msgid "Add to Reusable Blocks"
 msgstr "再利用ブロックに追加"
 
-#: wp-includes/js/dist/editor.js:30014
+#: wp-includes/js/dist/editor.js:30119
 msgid "Remove Block"
 msgstr "ブロックを削除"
 
-#: wp-includes/js/dist/editor.js:29993
+#: wp-includes/js/dist/editor.js:30098
 msgid "Insert After"
 msgstr "後に挿入"
 
-#: wp-includes/js/dist/editor.js:29988
+#: wp-includes/js/dist/editor.js:30093
 msgid "Insert Before"
 msgstr "前に挿入"
 
-#: wp-includes/js/dist/editor.js:29983
+#: wp-includes/js/dist/editor.js:30088
 msgid "Duplicate"
 msgstr "複製"
 
-#: wp-includes/js/dist/editor.js:16164 wp-includes/js/dist/editor.js:16171
-#: wp-includes/js/dist/editor.js:29947
+#: wp-includes/js/dist/editor.js:16263 wp-includes/js/dist/editor.js:16270
+#: wp-includes/js/dist/editor.js:30052
 msgid "More options"
 msgstr "詳細設定"
 
-#: wp-includes/js/dist/editor.js:29947
+#: wp-includes/js/dist/editor.js:30052
 msgid "Hide options"
 msgstr "設定を非表示"
 
-#: wp-includes/js/dist/editor.js:29599
+#: wp-includes/js/dist/editor.js:29704
 msgid "Edit visually"
 msgstr "ビジュアル編集"
 
-#: wp-includes/js/dist/editor.js:29599
+#: wp-includes/js/dist/editor.js:29704
 msgid "Edit as HTML"
 msgstr "HTML として編集"
 
-#: wp-includes/js/dist/editor.js:14869 wp-includes/js/dist/editor.js:14944
+#: wp-includes/js/dist/editor.js:14968 wp-includes/js/dist/editor.js:15043
 msgid "Block Navigation"
 msgstr "ブロックナビゲーション"
 
 #. translators: 1: Number of selected blocks, 2: Position of selected blocks
-#: wp-includes/js/dist/editor.js:15599
+#: wp-includes/js/dist/editor.js:15698
 msgid "Move %1$d block from position %2$d down by one place"
 msgid_plural "Move %1$d blocks from position %2$d down by one place"
 msgstr[0] "%1$d個のブロックを%2$dの位置から1つ下に移動する"
 
 #. translators: 1: Number of selected blocks, 2: Position of selected blocks
-#: wp-includes/js/dist/editor.js:15594
+#: wp-includes/js/dist/editor.js:15693
 msgid "Move %1$d block from position %2$d up by one place"
 msgid_plural "Move %1$d blocks from position %2$d up by one place"
 msgstr[0] "%1$d個のブロックを%2$dの位置から1つ上に移動する"
 
-#: wp-includes/js/dist/editor.js:15589
+#: wp-includes/js/dist/editor.js:15688
 msgid "Blocks cannot be moved down as they are already at the bottom"
 msgstr "ブロックはすでに一番下にあるため、下に移動できません"
 
-#: wp-includes/js/dist/editor.js:15585
+#: wp-includes/js/dist/editor.js:15684
 msgid "Blocks cannot be moved up as they are already at the top"
 msgstr "ブロックはすでに一番上にあるため、上に移動できません"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/editor.js:15565
+#: wp-includes/js/dist/editor.js:15664
 msgid "Block %s is at the beginning of the content and can’t be moved up"
 msgstr "「%s」ブロックはすでに一番上にあるため、上に移動できません。"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/editor.js:15559
+#: wp-includes/js/dist/editor.js:15658
 msgid "Move %1$s block from position %2$d up to position %3$d"
 msgstr "%1$d個のブロックを%2$dの位置から%3$dの位置に移動する"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/editor.js:15553
+#: wp-includes/js/dist/editor.js:15652
 msgid "Block %s is at the end of the content and can’t be moved down"
 msgstr "「%s」ブロックはすでに一番下にあるため、下に移動できません。"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/editor.js:15547
+#: wp-includes/js/dist/editor.js:15646
 msgid "Move %1$s block from position %2$d down to position %3$d"
 msgstr "%1$sブロックを%2$dから%3$dへ移動"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/editor.js:15541
+#: wp-includes/js/dist/editor.js:15640
 msgid "Block %s is the only block, and cannot be moved"
 msgstr "ブロック「%s」は唯一のブロックなので削除できません。"
 
-#: wp-includes/js/dist/editor.js:18901
+#: wp-includes/js/dist/editor.js:18977
 msgid "Block: %s"
 msgstr "ブロック: %s"
 
-#: wp-includes/js/dist/editor.js:16439
+#: wp-includes/js/dist/editor.js:16538
 msgid "This block contains unexpected or invalid content."
 msgstr "このブロックには、想定されていないか無効なコンテンツが含まれています。"
 
 #. translators: Button to fix block content
-#: wp-includes/js/dist/editor.js:16432
+#: wp-includes/js/dist/editor.js:16531
 msgctxt "imperative verb"
 msgid "Resolve"
 msgstr "解決"
 
-#: wp-includes/js/dist/editor.js:16421 wp-includes/js/dist/editor.js:29798
+#: wp-includes/js/dist/editor.js:16520 wp-includes/js/dist/editor.js:29903
 msgid "Convert to Blocks"
 msgstr "ブロックへ変換"
 
 #. translators: Dialog title to fix block content
-#: wp-includes/js/dist/editor.js:16413
+#: wp-includes/js/dist/editor.js:16512
 msgid "Resolve Block"
 msgstr "ブロックの問題を解決"
 
-#: wp-includes/js/dist/editor.js:16406
+#: wp-includes/js/dist/editor.js:16505
 msgid "Convert to Classic Block"
 msgstr "クラシックブロックに変換"
 
-#: wp-includes/js/dist/editor.js:16500
+#: wp-includes/js/dist/editor.js:16599
 msgid "This block has encountered an error and cannot be previewed."
 msgstr "このブロックでエラーが発生したためプレビューできません。"
 
-#: wp-includes/js/dist/editor.js:17750 wp-includes/js/dist/editor.js:19280
-#: wp-includes/js/dist/editor.js:19379
+#: wp-includes/js/dist/editor.js:17849 wp-includes/js/dist/editor.js:19368
+#: wp-includes/js/dist/editor.js:19467
 msgid "Add block"
 msgstr "ブロックの追加"
 
-#: wp-includes/js/dist/editor.js:29424
+#: wp-includes/js/dist/editor.js:29529
 msgid "No block selected."
 msgstr "ブロックが選択されていません。"
 
-#: wp-includes/js/dist/editor.js:16323
+#: wp-includes/js/dist/editor.js:16422
 msgid "After Conversion"
 msgstr "変換後"
 
-#: wp-includes/js/dist/editor.js:16319 wp-includes/js/dist/editor.js:16437
+#: wp-includes/js/dist/editor.js:16418 wp-includes/js/dist/editor.js:16536
 msgid "Convert to HTML"
 msgstr "HTML に変換"
 
-#: wp-includes/js/dist/editor.js:16316
+#: wp-includes/js/dist/editor.js:16415
 msgid "Current"
 msgstr "現在"
 
-#: wp-includes/js/dist/editor.js:14586
+#: wp-includes/js/dist/editor.js:14685
 msgid "Change Alignment"
 msgstr "配置を変更"
 
-#: wp-includes/js/dist/editor.js:14559
+#: wp-includes/js/dist/editor.js:14658
 msgid "Full width"
 msgstr "全幅"
 
-#: wp-includes/js/dist/editor.js:14555
+#: wp-includes/js/dist/editor.js:14654
 msgid "Wide width"
 msgstr "幅広"
 
-#: wp-includes/js/dist/editor.js:14491
+#: wp-includes/js/dist/editor.js:14590
 msgid "Change Text Alignment"
 msgstr "テキストの配置を変更"
 
 #. translators: %s: error message describing the problem
-#: wp-includes/js/dist/components.js:34754
+#: wp-includes/js/dist/components.js:34765
 msgid "Error loading block: %s"
 msgstr "ブロック読み込みエラー: %s"
 
-#: wp-includes/js/dist/components.js:33464
+#: wp-includes/js/dist/components.js:33473
 msgid "Number of items"
 msgstr "項目数"
 
-#: wp-includes/js/dist/components.js:33458 wp-includes/js/dist/editor.js:27694
+#: wp-includes/js/dist/components.js:33467 wp-includes/js/dist/editor.js:27789
 msgid "Category"
 msgstr "カテゴリー"
 
 #. translators: label for ordering posts by title in descending order
-#: wp-includes/js/dist/components.js:33438
+#: wp-includes/js/dist/components.js:33447
 msgid "Z → A"
 msgstr "タイトル"
 
 #. translators: label for ordering posts by title in ascending order
-#: wp-includes/js/dist/components.js:33434
+#: wp-includes/js/dist/components.js:33443
 msgid "A → Z"
 msgstr "タイトル (逆順)"
 
-#: wp-includes/js/dist/components.js:33430
+#: wp-includes/js/dist/components.js:33439
 msgid "Oldest to Newest"
 msgstr "投稿日時 (古い記事を優先)"
 
-#: wp-includes/js/dist/components.js:33427
+#: wp-includes/js/dist/components.js:33436
 msgid "Newest to Oldest"
 msgstr "投稿日時 (新しい記事を優先)"
 
-#: wp-includes/js/dist/components.js:33424
+#: wp-includes/js/dist/components.js:33433
 msgid "Order by"
 msgstr "並び順"
 
-#: wp-includes/js/dist/components.js:32996
+#: wp-includes/js/dist/components.js:33005
 msgid "Dismiss this notice"
 msgstr "通知を無視"
 
 #. translators: 1: term name, 2: term position in a set of terms, 3: total term
 #. set count.
-#: wp-includes/js/dist/components.js:31287
+#: wp-includes/js/dist/components.js:31296
 msgid "%1$s (%2$s of %3$s)"
 msgstr "%1$s (%2$s/%3$s)"
 
-#: wp-includes/js/dist/components.js:32230
+#: wp-includes/js/dist/components.js:32239
 msgid "Remove item"
 msgstr "項目を削除"
 
-#: wp-includes/js/dist/components.js:32229
+#: wp-includes/js/dist/components.js:32238
 msgid "Item removed."
 msgstr "項目を削除しました。"
 
-#: wp-includes/js/dist/components.js:32228
+#: wp-includes/js/dist/components.js:32237
 msgid "Item added."
 msgstr "項目を追加しました。"
 
-#: wp-includes/js/dist/components.js:32194
+#: wp-includes/js/dist/components.js:32203
 msgid "Separate with commas"
 msgstr "カンマ区切りで複数入力"
 
-#: wp-includes/js/dist/components.js:32146
+#: wp-includes/js/dist/components.js:32155
 msgid "Add item"
 msgstr "項目を追加"
 
-#: wp-includes/js/dist/components.js:30953
-#: wp-includes/js/dist/components.js:31069
+#: wp-includes/js/dist/components.js:30962
+#: wp-includes/js/dist/components.js:31078
 #: wp-includes/js/dist/block-library.js:3319
 msgid "Reset"
 msgstr "リセット"
 
-#: wp-includes/js/dist/components.js:31007
+#: wp-includes/js/dist/components.js:31016
 msgctxt "font size name"
 msgid "Custom"
 msgstr "カスタム"
 
-#: wp-includes/js/dist/components.js:31007 wp-includes/js/dist/editor.js:8298
+#: wp-includes/js/dist/components.js:31016 wp-includes/js/dist/editor.js:8298
 msgctxt "font size name"
 msgid "Normal"
 msgstr "標準"
 
-#: wp-includes/js/dist/components.js:31058
+#: wp-includes/js/dist/components.js:31067
 msgid "Custom font size"
 msgstr "カスタムフォントサイズ"
 
 #. translators: accessibility text
-#: wp-includes/js/dist/components.js:30779 wp-includes/js/dist/editor.js:25343
+#: wp-includes/js/dist/components.js:30788 wp-includes/js/dist/editor.js:25433
 msgid "(opens in a new tab)"
 msgstr "(新しいタブで開く)"
 
-#: wp-includes/js/dist/components.js:29463
+#: wp-includes/js/dist/components.js:29468
 msgid "Minutes"
 msgstr "分"
 
-#: wp-includes/js/dist/components.js:29593
+#: wp-includes/js/dist/components.js:29598
 msgid "Calendar Help"
 msgstr "カレンダーのヘルプ"
 
-#: wp-includes/js/dist/components.js:29586
+#: wp-includes/js/dist/components.js:29591
 msgid "Go to the first (home) or last (end) day of a week."
 msgstr "1週間の初日 (home) または最終日 (end) に移動します。"
 
-#: wp-includes/js/dist/components.js:29584
+#: wp-includes/js/dist/components.js:29589
 msgid "Home/End"
 msgstr "Home/End"
 
-#: wp-includes/js/dist/components.js:29583
+#: wp-includes/js/dist/components.js:29588
 msgid "Home and End"
 msgstr "Home と End"
 
-#: wp-includes/js/dist/components.js:29582
+#: wp-includes/js/dist/components.js:29587
 msgid "Move backward (PgUp) or forward (PgDn) by one month."
 msgstr "1ヶ月ずつ後ろ (PgUp) および前 (PgDn) に移動します。"
 
-#: wp-includes/js/dist/components.js:29580
+#: wp-includes/js/dist/components.js:29585
 msgid "PgUp/PgDn"
 msgstr "PgUp/PgDn"
 
-#: wp-includes/js/dist/components.js:29579
+#: wp-includes/js/dist/components.js:29584
 msgid "Page Up and Page Down"
 msgstr "Page Up と Page Down"
 
-#: wp-includes/js/dist/components.js:29578
+#: wp-includes/js/dist/components.js:29583
 msgid "Move backward (up) or forward (down) by one week."
 msgstr "1週間ずつ後ろ (上) および前 (下) に移動します。"
 
-#: wp-includes/js/dist/components.js:29575
+#: wp-includes/js/dist/components.js:29580
 msgid "Up and Down Arrows"
 msgstr "十字キーの上下"
 
-#: wp-includes/js/dist/components.js:29574
+#: wp-includes/js/dist/components.js:29579
 msgid "Move backward (left) or forward (right) by one day."
 msgstr "1日ずつ後ろ (左) および前 (右) に移動します。"
 
-#: wp-includes/js/dist/components.js:29571
+#: wp-includes/js/dist/components.js:29576
 msgid "Left and Right Arrows"
 msgstr "十字キーの左右"
 
-#: wp-includes/js/dist/components.js:29570
+#: wp-includes/js/dist/components.js:29575
 msgid "Select the date in focus."
 msgstr "フォーカスする日にちを選択します。"
 
-#: wp-includes/js/dist/components.js:29567
+#: wp-includes/js/dist/components.js:29572
 msgctxt "keyboard button"
 msgid "Enter"
 msgstr "入力"
 
-#: wp-includes/js/dist/components.js:29566
+#: wp-includes/js/dist/components.js:29571
 msgid "Navigating with a keyboard"
 msgstr "キーボードでの操作"
 
-#: wp-includes/js/dist/components.js:29566
+#: wp-includes/js/dist/components.js:29571
 msgid "Click the desired day to select it."
 msgstr "希望日をクリックして選択します。"
 
-#: wp-includes/js/dist/components.js:29566
+#: wp-includes/js/dist/components.js:29571
 msgid "Click the right or left arrows to select other months in the past or the future."
 msgstr "左右の矢印をクリックして、未来または過去の月を選択します。"
 
-#: wp-includes/js/dist/components.js:29566
+#: wp-includes/js/dist/components.js:29571
 msgid "Click to Select"
 msgstr "クリックして選択"
 
@@ -2672,17 +2672,17 @@ msgid "Custom color picker"
 msgstr "カスタムカラーピッカー"
 
 #: wp-includes/js/dist/components.js:26577
-#: wp-includes/js/dist/components.js:31817 wp-includes/js/dist/editor.js:23054
+#: wp-includes/js/dist/components.js:31826 wp-includes/js/dist/editor.js:23144
 msgid "No results."
 msgstr "結果はありません。"
 
 #: wp-includes/js/dist/components.js:26575
-#: wp-includes/js/dist/components.js:31815 wp-includes/js/dist/editor.js:23052
+#: wp-includes/js/dist/components.js:31824 wp-includes/js/dist/editor.js:23142
 msgid "%d result found, use up and down arrow keys to navigate."
 msgid_plural "%d results found, use up and down arrow keys to navigate."
 msgstr[0] "%d件の結果が見つかりました。上下キーを使って操作できます。"
 
-#: wp-includes/post.php:252 wp-includes/js/dist/editor.js:13013
+#: wp-includes/post.php:252 wp-includes/js/dist/editor.js:13112
 msgid "Block updated."
 msgstr "ブロックを更新しました。"
 
@@ -2714,7 +2714,7 @@ msgstr "ブロックリストナビゲーション"
 msgid "Filter blocks list"
 msgstr "ブロックリストを絞り込む"
 
-#: wp-includes/post.php:243 wp-includes/js/dist/editor.js:17658
+#: wp-includes/post.php:243 wp-includes/js/dist/editor.js:17757
 msgid "No blocks found."
 msgstr "ブロックが見つかりません。"
 
@@ -2768,7 +2768,7 @@ msgstr "ブロック"
 msgid "M j, Y g:i a"
 msgstr "Y年n月j日 g:i A"
 
-#: wp-includes/js/dist/editor.js:28966
+#: wp-includes/js/dist/editor.js:29071
 msgid "Blocks"
 msgstr "ブロック"
 
@@ -3238,12 +3238,12 @@ msgid "User Requests"
 msgstr "ユーザーリクエスト"
 
 #. translators: deleted long text
-#: wp-includes/functions.php:6005
+#: wp-includes/functions.php:6052
 msgid "This content was deleted by the author."
 msgstr "このコンテンツは投稿者により削除されました。"
 
 #. translators: deleted text
-#: wp-includes/functions.php:6001
+#: wp-includes/functions.php:6048
 msgid "[deleted]"
 msgstr "[削除済み]"
 
@@ -3404,7 +3404,7 @@ msgstr "所有"
 msgid "Whether or not the post type can be viewed."
 msgstr "投稿タイプを表示させるかどうか。"
 
-#: wp-includes/functions.php:2664
+#: wp-includes/functions.php:2691
 msgid "The link you followed has expired."
 msgstr "辿ったリンクは期限が切れています。"
 
@@ -3415,7 +3415,7 @@ msgstr "もっと高いレベルの権限が必要です。"
 
 #: wp-includes/script-loader.php:869 wp-includes/script-loader.php:1301
 #: wp-includes/script-loader.php:1381 wp-includes/script-loader.php:1586
-#: wp-includes/class-wp-xmlrpc-server.php:3695 wp-includes/functions.php:2674
+#: wp-includes/class-wp-xmlrpc-server.php:3695 wp-includes/functions.php:2701
 #: wp-includes/class-wp-customize-manager.php:450
 msgid "Something went wrong."
 msgstr "何かがうまくいかなかったようです。"
@@ -3657,9 +3657,9 @@ msgid "Displays an image gallery."
 msgstr "画像ギャラリーを表示します。"
 
 #: wp-includes/widgets/class-wp-widget-media-gallery.php:25
-#: wp-includes/js/dist/editor.js:25009
-#: wp-includes/js/dist/block-library.js:5078
-#: wp-includes/js/dist/block-library.js:5234
+#: wp-includes/js/dist/editor.js:25099
+#: wp-includes/js/dist/block-library.js:5096
+#: wp-includes/js/dist/block-library.js:5252
 msgid "Gallery"
 msgstr "ギャラリー"
 
@@ -3788,7 +3788,7 @@ msgstr "変更を破棄"
 msgid "Please save your changes in order to share the preview."
 msgstr "プレビューを共有するには、変更を保存してください。"
 
-#: wp-includes/js/dist/editor.js:25927
+#: wp-includes/js/dist/editor.js:26021
 msgid "Schedule…"
 msgstr "予約…"
 
@@ -4188,13 +4188,13 @@ msgstr "Nonce チェックに失敗しました。もう一度お試しくださ
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title
-#: wp-includes/functions.php:5864
+#: wp-includes/functions.php:5911
 msgid "[%s] Notice of Admin Email Change"
 msgstr "[%s] 管理者メールアドレス変更のお知らせ"
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/functions.php:5849
+#: wp-includes/functions.php:5896
 msgid ""
 "Hi,\n"
 "\n"
@@ -4220,7 +4220,7 @@ msgstr ""
 "###SITENAME### 一同\n"
 "###SITEURL###"
 
-#: wp-includes/functions.php:5785
+#: wp-includes/functions.php:5812
 msgid "Only UUID V4 is supported at this time."
 msgstr "現在 UUID バージョン4 のみをサポートしています。"
 
@@ -4327,22 +4327,22 @@ msgid "Hour"
 msgstr "時"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:160
-#: wp-includes/js/dist/components.js:29445
+#: wp-includes/js/dist/components.js:29450
 msgid "Time"
 msgstr "時刻"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:146
-#: wp-includes/js/dist/components.js:29425
+#: wp-includes/js/dist/components.js:29430
 msgid "Day"
 msgstr "日"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:130
-#: wp-includes/js/dist/components.js:29393
+#: wp-includes/js/dist/components.js:29398
 msgid "Month"
 msgstr "月"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:127
-#: wp-includes/js/dist/components.js:29388
+#: wp-includes/js/dist/components.js:29393
 msgid "Date"
 msgstr "日付"
 
@@ -4553,7 +4553,7 @@ msgid "Some HTML tags are not permitted, including:"
 msgstr "次を含む一部の HTML タグは許可されていません:"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:53
-#: wp-includes/js/dist/block-library.js:8826
+#: wp-includes/js/dist/block-library.js:8844
 msgid "Custom HTML"
 msgstr "カスタム HTML"
 
@@ -5007,7 +5007,7 @@ msgid "Suggested image dimensions: %1$s by %2$s pixels."
 msgstr "推奨画像サイズ: %1$s×%2$sピクセル"
 
 #: wp-includes/script-loader.php:1027 wp-includes/functions.php:2161
-#: wp-includes/js/dist/editor.js:22338
+#: wp-includes/js/dist/editor.js:22428
 msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "セキュリティ上の理由によりこのファイル形式は許可されていません。"
 
@@ -5697,7 +5697,7 @@ msgstr "タクソノミーの REST ベースルート"
 msgid "+ %s"
 msgstr "+ %s"
 
-#: wp-includes/l10n.php:1409
+#: wp-includes/l10n.php:1422
 msgctxt "default site language"
 msgid "Site Default"
 msgstr "サイトデフォルト"
@@ -5813,7 +5813,7 @@ msgstr "動作するには ID が必要です。"
 msgid "Homepage"
 msgstr "ホームページ"
 
-#: wp-includes/js/dist/components.js:29450
+#: wp-includes/js/dist/components.js:29455
 msgid "Hours"
 msgstr "営業時間"
 
@@ -6562,9 +6562,9 @@ msgid "The REST API can no longer be completely disabled, the rest_authenticatio
 msgstr "REST API は完全に無効化することはできなくなりました。代わりに rest_authentication_errors を使って API へのアクセスを制限できます。"
 
 #: wp-includes/post.php:1526 wp-includes/js/dist/edit-post.js:3913
-#: wp-includes/js/dist/edit-post.js:5009
+#: wp-includes/js/dist/edit-post.js:5010
 msgid "Page Attributes"
-msgstr "固定ページの属性"
+msgstr "ページ属性"
 
 #: wp-includes/post.php:1526
 msgid "Post Attributes"
@@ -7042,7 +7042,7 @@ msgstr "こんにちは、%s さん"
 msgid "Edit selected menu"
 msgstr "選択されたメニューを編集"
 
-#: wp-includes/class-wp-editor.php:1285
+#: wp-includes/class-wp-editor.php:1286
 #: wp-includes/js/dist/format-library.js:1060
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "警告: リンクは挿入されましたが、エラーがあるかもしれません。テストしてください。"
@@ -7475,7 +7475,7 @@ msgstr "定数 %1$s は<strong>非推奨</strong>です。サブドメインの�
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "%1$s を手動で削除すると PHP の警告を引き起こす可能性があります。代わりに %2$s フィルターを使用してください。"
 
-#: wp-includes/class-wp-editor.php:1293
+#: wp-includes/class-wp-editor.php:1294
 msgid "The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo."
 msgstr "次のグループの書式ショートカットは、文字を入力する際、または段落内のプレーンテキストの周りに挿入した際に適用されます。esc キーを押すか「取消」ボタンで元に戻すことができます。"
 
@@ -7511,8 +7511,8 @@ msgid "Drag boxes here"
 msgstr "ボックスをここにドラッグ"
 
 #: wp-includes/script-loader.php:1308 wp-includes/blocks/latest-posts.php:36
-#: wp-includes/js/dist/block-library.js:6497
-#: wp-includes/js/dist/block-library.js:9942
+#: wp-includes/js/dist/block-library.js:6515
+#: wp-includes/js/dist/block-library.js:9958
 msgid "(Untitled)"
 msgstr "(タイトル無し)"
 
@@ -7573,13 +7573,13 @@ msgstr "<strong>エラー</strong>: 無効なユーザー名かメールアド�
 msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "%1$s %2$s %3$s %4$s のフィード"
 
-#: wp-includes/functions.php:5376 wp-includes/js/dist/components.js:32643
+#: wp-includes/functions.php:5403 wp-includes/js/dist/components.js:32652
 msgid "Close dialog"
 msgstr "ダイアログを閉じる"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
-#: wp-includes/functions.php:3958
+#: wp-includes/functions.php:3985
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "%2$s で呼び出された %1$s のコンストラクターメソッドはバージョン %3$s から<strong>非推奨</strong>になっています ! 代わりに %4$s を使ってください。"
 
@@ -7654,7 +7654,7 @@ msgstr "テンプレートが不足しています。独立したテーマには
 msgid "Invalid object type"
 msgstr "無効なオブジェクトの種類"
 
-#: wp-includes/class-wp-editor.php:1263 wp-includes/js/dist/editor.js:23212
+#: wp-includes/class-wp-editor.php:1263 wp-includes/js/dist/editor.js:23302
 msgid "Paste URL or type to search"
 msgstr "URL をペーストするか入力して検索"
 
@@ -7717,12 +7717,12 @@ msgstr "https://wpdocs.osdn.jp/Debugging_a_WordPress_Network"
 msgid "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
 msgstr "<a href=\"%s\" target=\"_blank\">バグレポート</a>ページをお読みください。ガイドラインの中に、何が問題だったのかを理解するために役に立つ情報があるかもしれません。"
 
-#: wp-includes/functions.php:4201
+#: wp-includes/functions.php:4228
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "http://wpdocs.osdn.jp/Debugging_in_WordPress"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:4200
+#: wp-includes/functions.php:4227
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "詳しくは <a href=\"%s\">WordPress のデバッグ</a>をご覧ください。"
 
@@ -8315,7 +8315,7 @@ msgid "%s <span class=\"screen-reader-text\">Comment</span>"
 msgid_plural "%s <span class=\"screen-reader-text\">Comments</span>"
 msgstr[0] "%s <span class=\"screen-reader-text\">コメント</span>"
 
-#: wp-includes/js/dist/block-library.js:10449
+#: wp-includes/js/dist/block-library.js:10465
 msgid "Read more"
 msgstr "もっと読む"
 
@@ -8376,7 +8376,7 @@ msgstr "%1$s は非推奨です。代わりに %2$s を使用してください�
 msgid "Clear Results"
 msgstr "結果をクリア"
 
-#: wp-includes/class-wp-editor.php:1291
+#: wp-includes/class-wp-editor.php:1292
 msgid "The following formatting shortcuts are replaced when pressing Enter. Press Escape or the Undo button to undo."
 msgstr "以下の書式ショートカットは Enter を押すと置換されます。取り消すには ESC キーまたは「取り消し」ボタンを使ってください。"
 
@@ -8390,7 +8390,7 @@ msgstr "セクションを閉じる: %s"
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
 #: wp-includes/script-loader.php:1884 wp-includes/formatting.php:3373
-#: wp-includes/js/dist/editor.js:28916
+#: wp-includes/js/dist/editor.js:29021
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "characters_including_spaces"
@@ -8508,7 +8508,7 @@ msgstr "サイト基本情報"
 msgid "Add to menu: %1$s (%2$s)"
 msgstr "メニューに追加: %1$s (%2$s)"
 
-#: wp-includes/class-wp-editor.php:1289
+#: wp-includes/class-wp-editor.php:1290
 msgid "When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo."
 msgstr "書式ショートカットに続けてスペースで新しい段落を始めると、その書式が自動的に適用されます。取り消すにはバックスペース、または ESC キーを押してください。"
 
@@ -8538,7 +8538,7 @@ msgid "The %s directory of the develop repository must be used for RTL."
 msgstr "RTL 言語の場合、開発リポジトリの %s ディレクトリを必ず使用する必要があります。"
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
-#: wp-includes/functions.php:3962
+#: wp-includes/functions.php:3989
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "呼び出された %1$s のコンストラクターメソッドはバージョン %2$s から<strong>非推奨</strong>になっています ! 代わりに %3$s を使ってください。"
 
@@ -8783,31 +8783,31 @@ msgstr "内容:"
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles"
 msgstr "新しい記事に対し他のブログからの通知 (ピンバック・トラックバック) を受け付ける"
 
-#: wp-includes/class-wp-editor.php:1282
+#: wp-includes/class-wp-editor.php:1283
 msgid "Ctrl + letter:"
 msgstr "Ctrl + 文字:"
 
-#: wp-includes/class-wp-editor.php:1281
+#: wp-includes/class-wp-editor.php:1282
 msgid "Cmd + letter:"
 msgstr "Cmd + 文字:"
 
-#: wp-includes/class-wp-editor.php:1280
+#: wp-includes/class-wp-editor.php:1281
 msgid "Shift + Alt + letter:"
 msgstr "Shift + Alt + 文字:"
 
-#: wp-includes/class-wp-editor.php:1279
+#: wp-includes/class-wp-editor.php:1280
 msgid "Ctrl + Alt + letter:"
 msgstr "Ctrl + Alt + 文字:"
 
-#: wp-includes/class-wp-editor.php:1275
+#: wp-includes/class-wp-editor.php:1276
 msgid "Inline toolbar (when an image, link or preview is selected)"
 msgstr "インラインツールバー (画像・リンク・プレビュー選択時)"
 
-#: wp-includes/class-wp-editor.php:1273
+#: wp-includes/class-wp-editor.php:1274
 msgid "Additional shortcuts,"
 msgstr "追加ショートカット、"
 
-#: wp-includes/class-wp-editor.php:1272
+#: wp-includes/class-wp-editor.php:1273
 msgid "Default shortcuts,"
 msgstr "デフォルトショートカット、"
 
@@ -9008,7 +9008,7 @@ msgstr "タイトル属性"
 #: wp-includes/widgets/class-wp-widget-media-image.php:136
 #: wp-includes/media-template.php:1008
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:100
-#: wp-includes/class-wp-editor.php:1724
+#: wp-includes/class-wp-editor.php:1725
 msgid "Open link in a new tab"
 msgstr "リンクを新しいタブで開く"
 
@@ -9238,7 +9238,7 @@ msgctxt "revision date format"
 msgid "F j, Y @ H:i:s"
 msgstr "Y年n月j日 H:i:s"
 
-#: wp-includes/media-template.php:820 wp-includes/class-wp-editor.php:1719
+#: wp-includes/media-template.php:820 wp-includes/class-wp-editor.php:1720
 #: wp-includes/class-wp-customize-nav-menus.php:1115
 msgid "Link Text"
 msgstr "リンク文字列"
@@ -9331,23 +9331,23 @@ msgstr "ウィジェットを下へ移動しました"
 msgid "Rich Text Area. Press Alt-Shift-H for help."
 msgstr "リッチテキストエリア。Alt-Shift-H キーでヘルプを表示できます。"
 
-#: wp-includes/class-wp-editor.php:1274
+#: wp-includes/class-wp-editor.php:1275
 msgid "Focus shortcuts:"
 msgstr "フォーカスショートカット:"
 
-#: wp-includes/class-wp-editor.php:1276
+#: wp-includes/class-wp-editor.php:1277
 msgid "Editor menu (when enabled)"
 msgstr "エディターメニュー (有効化時)"
 
-#: wp-includes/class-wp-editor.php:1277
+#: wp-includes/class-wp-editor.php:1278
 msgid "Editor toolbar"
 msgstr "エディターツールバー"
 
-#: wp-includes/class-wp-editor.php:1287
+#: wp-includes/class-wp-editor.php:1288
 msgid "To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons."
 msgstr "他のボタンにフォーカスを移動するにはタブまたは矢印キーを使ってください。エディターにフォーカスを戻すには ESC キーまたはいずれかのボタンを押してください。"
 
-#: wp-includes/class-wp-editor.php:1278
+#: wp-includes/class-wp-editor.php:1279
 msgid "Elements path"
 msgstr "要素のパス"
 
@@ -9369,12 +9369,12 @@ msgstr "エスケープして使うには %s にデータベース接続の設�
 msgid "You need to pass an array of types."
 msgstr "タイプの配列を渡す必要があります。"
 
-#: wp-includes/l10n.php:1401
+#: wp-includes/l10n.php:1414
 msgctxt "translations"
 msgid "Installed"
 msgstr "インストール済み"
 
-#: wp-includes/l10n.php:1435
+#: wp-includes/l10n.php:1448
 msgctxt "translations"
 msgid "Available"
 msgstr "利用可能"
@@ -9770,11 +9770,11 @@ msgstr "次のメディア項目を編集"
 msgid "Edit previous media item"
 msgstr "前のメディア項目を編集"
 
-#: wp-includes/media-template.php:258 wp-includes/js/dist/block-library.js:9910
+#: wp-includes/media-template.php:258 wp-includes/js/dist/block-library.js:9926
 msgid "Grid View"
 msgstr "グリッドビュー"
 
-#: wp-includes/media-template.php:255 wp-includes/js/dist/block-library.js:9901
+#: wp-includes/media-template.php:255 wp-includes/js/dist/block-library.js:9917
 msgid "List View"
 msgstr "リストビュー"
 
@@ -9790,7 +9790,7 @@ msgstr "アップローダーを閉じる"
 msgid "Close media panel"
 msgstr "メディアパネルを閉じる"
 
-#: wp-includes/class-wp-editor.php:1745
+#: wp-includes/class-wp-editor.php:1746
 msgid "Search or use up and down arrow keys to select an item."
 msgstr "検索もしくは上下矢印キーを使って項目を選択してください。"
 
@@ -9838,7 +9838,7 @@ msgstr "Address"
 msgid "If you&#8217;re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically."
 msgstr "Microsoft Word からリッチコンテンツを貼り付けたければ、この設定をオフにしてみてください。エディターは自動的に Word から貼り付けられたテキストの修飾を除去します。"
 
-#: wp-includes/class-wp-editor.php:1270 wp-includes/js/dist/edit-post.js:1090
+#: wp-includes/class-wp-editor.php:1271 wp-includes/js/dist/edit-post.js:1090
 #: wp-includes/js/dist/edit-post.js:3478
 msgid "Keyboard Shortcuts"
 msgstr "キーボードショートカット"
@@ -9888,7 +9888,7 @@ msgstr "時間"
 
 #: wp-includes/media.php:2182
 #: wp-includes/customize/class-wp-customize-date-time-control.php:151
-#: wp-includes/js/dist/components.js:29436
+#: wp-includes/js/dist/components.js:29441
 msgid "Year"
 msgstr "年"
 
@@ -9920,7 +9920,7 @@ msgstr "画像タイトル属性"
 msgid "Advanced Options"
 msgstr "上級者向け設定"
 
-#: wp-includes/media-template.php:959 wp-includes/js/dist/components.js:31071
+#: wp-includes/media-template.php:959 wp-includes/js/dist/components.js:31080
 msgid "Custom Size"
 msgstr "カスタムサイズ"
 
@@ -10299,8 +10299,8 @@ msgstr "トラックの順序を変更するにはドラッグ & ドロップし
 msgid "Add Subtitles"
 msgstr "字幕を追加"
 
-#: wp-includes/media.php:3593 wp-includes/js/dist/block-library.js:13224
-#: wp-includes/js/dist/block-library.js:13233
+#: wp-includes/media.php:3593 wp-includes/js/dist/block-library.js:13240
+#: wp-includes/js/dist/block-library.js:13249
 msgid "Select Poster Image"
 msgstr "ポスター画像を選択"
 
@@ -10370,24 +10370,24 @@ msgid "There are no associated subtitles."
 msgstr "関連付けられた字幕がありません。"
 
 #: wp-includes/media-template.php:1165
-#: wp-includes/js/dist/block-library.js:13222
+#: wp-includes/js/dist/block-library.js:13238
 msgid "Poster Image"
 msgstr "ポスター画像"
 
 #: wp-includes/media-template.php:1092 wp-includes/media-template.php:1181
-#: wp-includes/js/dist/block-library.js:5888
-#: wp-includes/js/dist/block-library.js:13187
+#: wp-includes/js/dist/block-library.js:5906
+#: wp-includes/js/dist/block-library.js:13203
 msgid "Autoplay"
 msgstr "自動再生"
 
 #: wp-includes/media-template.php:1085 wp-includes/media-template.php:1174
-#: wp-includes/js/dist/block-library.js:5909
-#: wp-includes/js/dist/block-library.js:13215
+#: wp-includes/js/dist/block-library.js:5927
+#: wp-includes/js/dist/block-library.js:13231
 msgid "Metadata"
 msgstr "メタデータ"
 
-#: wp-includes/js/dist/block-library.js:5906
-#: wp-includes/js/dist/block-library.js:13212
+#: wp-includes/js/dist/block-library.js:5924
+#: wp-includes/js/dist/block-library.js:13228
 msgid "Auto"
 msgstr "自動"
 
@@ -10453,8 +10453,8 @@ msgid "Tools"
 msgstr "ツール"
 
 #: wp-includes/js/dist/list-reusable-blocks.js:618
-#: wp-includes/js/dist/block-library.js:8489
-#: wp-includes/js/dist/block-library.js:8607
+#: wp-includes/js/dist/block-library.js:8507
+#: wp-includes/js/dist/block-library.js:8625
 msgid "File"
 msgstr "ファイル"
 
@@ -10470,7 +10470,7 @@ msgstr "テキスト色"
 msgid "Background color"
 msgstr "背景色"
 
-#: wp-includes/js/dist/editor.js:24475
+#: wp-includes/js/dist/editor.js:24565
 msgid "Template:"
 msgstr "テンプレート:"
 
@@ -10531,7 +10531,7 @@ msgid "Paste as text"
 msgstr "テキストとしてペースト"
 
 #: wp-includes/class-wp-editor.php:1120
-#: wp-includes/js/dist/block-library.js:10614
+#: wp-includes/js/dist/block-library.js:10630
 msgid "Page break"
 msgstr "改ページ"
 
@@ -10595,7 +10595,7 @@ msgstr "最後の下書きを復元"
 msgid "Visual aids"
 msgstr "ビジュアルエイド"
 
-#: wp-includes/class-wp-editor.php:1042 wp-includes/js/dist/editor.js:14543
+#: wp-includes/class-wp-editor.php:1042 wp-includes/js/dist/editor.js:14642
 msgid "Align left"
 msgstr "左寄せ"
 
@@ -10611,7 +10611,7 @@ msgstr "ペースト機能がプレーンテキストモードになりました
 msgid "Decrease indent"
 msgstr "インデントを減らす"
 
-#: wp-includes/class-wp-editor.php:1040 wp-includes/js/dist/editor.js:14547
+#: wp-includes/class-wp-editor.php:1040 wp-includes/js/dist/editor.js:14646
 msgid "Align center"
 msgstr "中央揃え"
 
@@ -10619,7 +10619,7 @@ msgstr "中央揃え"
 msgid "Clear formatting"
 msgstr "書式設定をクリア"
 
-#: wp-includes/js/dist/block-library.js:10116
+#: wp-includes/js/dist/block-library.js:10132
 msgid "bullet list"
 msgstr "番号なしリスト"
 
@@ -10636,7 +10636,7 @@ msgstr "インデントを増やす"
 msgid "Numbered list"
 msgstr "番号付きリスト"
 
-#: wp-includes/class-wp-editor.php:1041 wp-includes/js/dist/editor.js:14551
+#: wp-includes/class-wp-editor.php:1041 wp-includes/js/dist/editor.js:14650
 msgid "Align right"
 msgstr "右寄せ"
 
@@ -10651,13 +10651,13 @@ msgstr "ウィジェットを移動するエリアを選択:"
 
 #: wp-includes/class-wp-customize-widgets.php:685
 #: wp-includes/class-wp-customize-nav-menus.php:948
-#: wp-includes/js/dist/editor.js:15831
+#: wp-includes/js/dist/editor.js:15930
 msgid "Move up"
 msgstr "上へ移動"
 
 #: wp-includes/class-wp-customize-widgets.php:684
 #: wp-includes/class-wp-customize-nav-menus.php:949
-#: wp-includes/js/dist/editor.js:15848
+#: wp-includes/js/dist/editor.js:15947
 msgid "Move down"
 msgstr "下へ移動"
 
@@ -10721,7 +10721,7 @@ msgstr "https://ja.wordpress.org/support/"
 msgid "https://wordpress.org/"
 msgstr "https://ja.wordpress.org/"
 
-#: wp-includes/js/dist/editor.js:25024
+#: wp-includes/js/dist/editor.js:25114
 msgid "Status"
 msgstr "ステータス"
 
@@ -10753,7 +10753,7 @@ msgstr "列グループ"
 msgid "Could not find the specified string."
 msgstr "指定された文字列が見つかりませんでした。"
 
-#: wp-includes/js/dist/block-library.js:12569
+#: wp-includes/js/dist/block-library.js:12585
 msgid "Table"
 msgstr "テーブル"
 
@@ -11051,7 +11051,7 @@ msgstr "%3$s年%1$s%2$s日 @ %4$s:%5$s"
 msgid "Your session has expired. You can log in again from this page or go to the login page."
 msgstr "セッションの期限が切れました。このページから再度ログインするか、ログインページへ移動してください。"
 
-#: wp-includes/functions.php:5393
+#: wp-includes/functions.php:5420
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "新しい画面でログインページを開きます。ログイン後、そちらを閉じてこのページに戻ってください。"
 
@@ -11076,7 +11076,7 @@ msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "検索 &hellip;"
 
-#: wp-includes/script-loader.php:1305 wp-includes/functions.php:5391
+#: wp-includes/script-loader.php:1305 wp-includes/functions.php:5418
 msgid "Session expired"
 msgstr "セッションの有効期限が切れました"
 
@@ -11118,7 +11118,7 @@ msgstr "この画像のキャプション"
 msgid "Random Order"
 msgstr "ランダム"
 
-#: wp-includes/media.php:3549 wp-includes/js/dist/editor.js:22894
+#: wp-includes/media.php:3549 wp-includes/js/dist/editor.js:22984
 msgid "Insert from URL"
 msgstr "URL から挿入"
 
@@ -11146,7 +11146,7 @@ msgstr "項目は見つかりませんでした。"
 msgid "Reverse order"
 msgstr "順序を逆にする"
 
-#: wp-includes/js/dist/editor.js:24830
+#: wp-includes/js/dist/editor.js:24920
 msgid "Set featured image"
 msgstr "アイキャッチ画像を設定"
 
@@ -11190,9 +11190,9 @@ msgid "Manage Video"
 msgstr "動画の管理"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:25
-#: wp-includes/post.php:2479 wp-includes/js/dist/editor.js:22853
-#: wp-includes/js/dist/editor.js:25027
-#: wp-includes/js/dist/block-library.js:13284
+#: wp-includes/post.php:2479 wp-includes/js/dist/editor.js:22943
+#: wp-includes/js/dist/editor.js:25117
+#: wp-includes/js/dist/block-library.js:13300
 msgid "Video"
 msgstr "動画"
 
@@ -11223,9 +11223,9 @@ msgid "Insert into page"
 msgstr "固定ページに挿入"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:25
-#: wp-includes/post.php:2478 wp-includes/js/dist/editor.js:22849
-#: wp-includes/js/dist/editor.js:25030
-#: wp-includes/js/dist/block-library.js:5957
+#: wp-includes/post.php:2478 wp-includes/js/dist/editor.js:22939
+#: wp-includes/js/dist/editor.js:25120
+#: wp-includes/js/dist/block-library.js:5975
 msgid "Audio"
 msgstr "音声"
 
@@ -11246,11 +11246,11 @@ msgstr "&#8592; ライブラリへ戻る"
 msgid "Custom URL"
 msgstr "カスタム URL"
 
-#: wp-includes/media-template.php:740 wp-includes/js/dist/block-library.js:5093
-#: wp-includes/js/dist/block-library.js:6906
-#: wp-includes/js/dist/block-library.js:6990
-#: wp-includes/js/dist/block-library.js:9878
-#: wp-includes/js/dist/block-library.js:12803
+#: wp-includes/media-template.php:740 wp-includes/js/dist/block-library.js:5111
+#: wp-includes/js/dist/block-library.js:6924
+#: wp-includes/js/dist/block-library.js:7008
+#: wp-includes/js/dist/block-library.js:9894
+#: wp-includes/js/dist/block-library.js:12819
 msgid "Columns"
 msgstr "カラム"
 
@@ -11277,7 +11277,7 @@ msgstr "&#8592; ギャラリーをキャンセル"
 msgid "Upload Images"
 msgstr "画像をアップロード"
 
-#: wp-includes/media-template.php:715 wp-includes/js/dist/block-library.js:5091
+#: wp-includes/media-template.php:715 wp-includes/js/dist/block-library.js:5109
 msgid "Gallery Settings"
 msgstr "ギャラリーの設定"
 
@@ -11302,7 +11302,7 @@ msgid "Insert gallery"
 msgstr "ギャラリーを挿入"
 
 #: wp-includes/media-template.php:174 wp-includes/media-template.php:180
-#: wp-includes/js/dist/components.js:30337
+#: wp-includes/js/dist/components.js:30340
 msgid "Drop files to upload"
 msgstr "ファイルをドロップしてアップロード"
 
@@ -11310,7 +11310,7 @@ msgstr "ファイルをドロップしてアップロード"
 msgid "Create Gallery"
 msgstr "ギャラリーを作成"
 
-#: wp-includes/media.php:3515 wp-includes/js/dist/editor.js:22885
+#: wp-includes/media.php:3515 wp-includes/js/dist/editor.js:22975
 msgid "Media Library"
 msgstr "メディアライブラリ"
 
@@ -11368,15 +11368,15 @@ msgstr ""
 
 #: wp-includes/media-template.php:663 wp-includes/media-template.php:731
 #: wp-includes/media-template.php:974 wp-includes/js/dist/block-library.js:3140
-#: wp-includes/js/dist/block-library.js:4858
-#: wp-includes/js/dist/block-library.js:8286
+#: wp-includes/js/dist/block-library.js:4876
+#: wp-includes/js/dist/block-library.js:8304
 msgid "Media File"
 msgstr "メディアファイル"
 
 #: wp-includes/media-template.php:670 wp-includes/media-template.php:728
 #: wp-includes/media-template.php:977 wp-includes/js/dist/block-library.js:3143
-#: wp-includes/js/dist/block-library.js:4855
-#: wp-includes/js/dist/block-library.js:8289
+#: wp-includes/js/dist/block-library.js:4873
+#: wp-includes/js/dist/block-library.js:8307
 msgid "Attachment Page"
 msgstr "添付ファイルのページ"
 
@@ -11384,8 +11384,8 @@ msgstr "添付ファイルのページ"
 #: wp-includes/media-template.php:640 wp-includes/media-template.php:718
 #: wp-includes/media-template.php:866 wp-includes/media-template.php:970
 #: wp-includes/js/dist/block-library.js:3322
-#: wp-includes/js/dist/block-library.js:5104
-#: wp-includes/js/dist/block-library.js:8296
+#: wp-includes/js/dist/block-library.js:5122
+#: wp-includes/js/dist/block-library.js:8314
 msgid "Link To"
 msgstr "リンク先"
 
@@ -11487,7 +11487,7 @@ msgstr "投稿に挿入"
 msgid "Create a new gallery"
 msgstr "ギャラリーを作成"
 
-#: wp-includes/js/dist/block-library.js:13572
+#: wp-includes/js/dist/block-library.js:13588
 msgid "Insert Media"
 msgstr "メディアを挿入"
 
@@ -11572,7 +11572,7 @@ msgid "Colors"
 msgstr "色"
 
 #: wp-includes/script-loader.php:1296 wp-includes/script-loader.php:1470
-#: wp-includes/js/dist/editor.js:27330
+#: wp-includes/js/dist/editor.js:27423
 msgid "Saved"
 msgstr "保存しました"
 
@@ -11656,14 +11656,14 @@ msgstr "背景画像"
 
 #: wp-includes/class-wp-customize-manager.php:4996
 #: wp-includes/js/dist/block-library.js:1691
-#: wp-includes/js/dist/block-library.js:6153
-#: wp-includes/js/dist/block-library.js:9233
+#: wp-includes/js/dist/block-library.js:6171
+#: wp-includes/js/dist/block-library.js:9251
 msgid "Background Color"
 msgstr "背景色"
 
 #: wp-includes/js/dist/block-library.js:1695
-#: wp-includes/js/dist/block-library.js:6157
-#: wp-includes/js/dist/block-library.js:10910
+#: wp-includes/js/dist/block-library.js:6175
+#: wp-includes/js/dist/block-library.js:10926
 msgid "Text Color"
 msgstr "文字色"
 
@@ -11672,7 +11672,7 @@ msgid "Change image"
 msgstr "画像の変更"
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:113
-#: wp-includes/js/dist/editor.js:24832
+#: wp-includes/js/dist/editor.js:24922
 msgid "Remove image"
 msgstr "画像を削除"
 
@@ -11700,11 +11700,11 @@ msgstr "アップロードできるファイル"
 msgid "Remove"
 msgstr "削除"
 
-#: wp-includes/js/dist/editor.js:22873
+#: wp-includes/js/dist/editor.js:22963
 msgid "Upload"
 msgstr "アップロード"
 
-#: wp-includes/js/dist/editor.js:24828 wp-includes/js/dist/edit-post.js:3904
+#: wp-includes/js/dist/editor.js:24918 wp-includes/js/dist/edit-post.js:3904
 #: wp-includes/js/dist/edit-post.js:4685
 msgid "Featured Image"
 msgstr "アイキャッチ画像"
@@ -11836,7 +11836,7 @@ msgstr "キャッチフレーズ"
 msgid "Your latest posts"
 msgstr "最新の投稿"
 
-#: wp-includes/js/dist/editor.js:29439
+#: wp-includes/js/dist/editor.js:29544
 msgid "Styles"
 msgstr "スタイル"
 
@@ -12134,12 +12134,12 @@ msgstr "ドキュメンテーション"
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/wp-db.php:1577 wp-includes/functions.php:3835
+#: wp-includes/wp-db.php:1577 wp-includes/functions.php:3862
 #: wp-includes/ms-load.php:455
 msgid "Error establishing a database connection"
 msgstr "データベース接続確立エラー"
 
-#: wp-includes/functions.php:3831
+#: wp-includes/functions.php:3858
 msgid "Database Error"
 msgstr "データベースエラー"
 
@@ -12239,7 +12239,7 @@ msgstr "固定ページ一覧"
 msgid "All Posts"
 msgstr "投稿一覧"
 
-#: wp-includes/class-wp-editor.php:1133 wp-includes/js/dist/editor.js:25012
+#: wp-includes/class-wp-editor.php:1133 wp-includes/js/dist/editor.js:25102
 #: wp-includes/js/dist/format-library.js:1192
 #: wp-includes/js/dist/format-library.js:1292
 msgid "Link"
@@ -12272,8 +12272,8 @@ msgstr "濃灰"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:65
 #: wp-includes/widgets/class-wp-widget-media-video.php:66
 #: wp-includes/media-template.php:1082 wp-includes/media-template.php:1171
-#: wp-includes/js/dist/block-library.js:5896
-#: wp-includes/js/dist/block-library.js:13203
+#: wp-includes/js/dist/block-library.js:5914
+#: wp-includes/js/dist/block-library.js:13219
 msgid "Preload"
 msgstr "先読み"
 
@@ -12281,7 +12281,7 @@ msgstr "先読み"
 msgid "Poster"
 msgstr "ポスター"
 
-#: wp-includes/js/dist/editor.js:28956
+#: wp-includes/js/dist/editor.js:29061
 msgid "Words"
 msgstr "単語数:"
 
@@ -12298,11 +12298,11 @@ msgctxt "post format"
 msgid "Format"
 msgstr "フォーマット"
 
-#: wp-includes/class-wp-editor.php:1727
+#: wp-includes/class-wp-editor.php:1728
 msgid "Or link to existing content"
 msgstr "または既存のコンテンツにリンク"
 
-#: wp-includes/class-wp-editor.php:1713
+#: wp-includes/class-wp-editor.php:1714
 msgid "Enter the destination URL"
 msgstr "リンク先 URL を入力してください"
 
@@ -12327,13 +12327,13 @@ msgid "The user is already active."
 msgstr "このユーザーはすでに認証済みです。"
 
 #. translators: %s: version number
-#: wp-includes/functions.php:4197
+#: wp-includes/functions.php:4224
 msgid "(This message was added in version %s.)"
 msgstr "(このメッセージはバージョン %s で追加されました)"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message
-#: wp-includes/functions.php:4204
+#: wp-includes/functions.php:4231
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s が<strong>誤って</strong>呼び出されました。%2$s %3$s"
 
@@ -12365,7 +12365,7 @@ msgstr "音声"
 msgid "Invalid post format."
 msgstr "無効な投稿フォーマットです。"
 
-#: wp-includes/class-wp-editor.php:1744
+#: wp-includes/class-wp-editor.php:1745
 msgid "No search term specified. Showing recent items."
 msgstr "検索キーワードが指定されていません。最近の項目を表示しています。"
 
@@ -12486,7 +12486,7 @@ msgid "Large size image height"
 msgstr "大サイズ画像の高さ"
 
 #: wp-includes/js/dist/block-library.js:3333
-#: wp-includes/js/dist/block-library.js:8301
+#: wp-includes/js/dist/block-library.js:8319
 #: wp-includes/js/dist/format-library.js:1119
 msgid "Open in New Tab"
 msgstr "新しいタブで開く"
@@ -12621,7 +12621,7 @@ msgstr "Y年n月"
 msgid "Choose from the most used tags"
 msgstr "よく使われているタグから選択"
 
-#: wp-includes/js/dist/editor.js:22364
+#: wp-includes/js/dist/editor.js:22454
 msgid "This file exceeds the maximum upload size for this site."
 msgstr "このファイルは、このサイトのアップロードサイズ上限を超えています。"
 
@@ -12634,7 +12634,7 @@ msgstr "カテゴリー"
 msgid "All Tags"
 msgstr "すべてのタグ"
 
-#: wp-includes/taxonomy.php:518 wp-includes/js/dist/editor.js:27944
+#: wp-includes/taxonomy.php:518 wp-includes/js/dist/editor.js:28039
 msgid "Parent Category"
 msgstr "親カテゴリー"
 
@@ -12646,7 +12646,7 @@ msgstr "親カテゴリー:"
 msgid "Update Tag"
 msgstr "タグを更新"
 
-#: wp-includes/taxonomy.php:523 wp-includes/js/dist/editor.js:26540
+#: wp-includes/taxonomy.php:523 wp-includes/js/dist/editor.js:26634
 msgid "Add New Tag"
 msgstr "新規タグを追加"
 
@@ -13524,7 +13524,7 @@ msgstr "<strong>エラー</strong>: WordPress %1$s には MySQL %2$s 以上が�
 msgid "Sidebar %d"
 msgstr "サイドバー %d"
 
-#: wp-includes/user.php:285 wp-includes/functions.php:5392
+#: wp-includes/user.php:285 wp-includes/functions.php:5419
 msgid "Please log in again."
 msgstr "もう一度ログインしてください。"
 
@@ -13594,7 +13594,7 @@ msgstr "変更を保存する際にエラーが発生しました。"
 msgid "Submitted on:"
 msgstr "投稿日:"
 
-#: wp-includes/script-loader.php:1445 wp-includes/js/dist/editor.js:25996
+#: wp-includes/script-loader.php:1445 wp-includes/js/dist/editor.js:26090
 msgid "Password Protected"
 msgstr "パスワード保護"
 
@@ -13681,9 +13681,9 @@ msgstr "/"
 
 #: wp-includes/script-loader.php:1011
 #: wp-includes/widgets/class-wp-widget-media-image.php:25
-#: wp-includes/class-wp-editor.php:1089 wp-includes/js/dist/editor.js:22851
-#: wp-includes/js/dist/editor.js:25015
-#: wp-includes/js/dist/block-library.js:3616
+#: wp-includes/class-wp-editor.php:1089 wp-includes/js/dist/editor.js:22941
+#: wp-includes/js/dist/editor.js:25105
+#: wp-includes/js/dist/block-library.js:3629
 #: wp-includes/js/dist/format-library.js:498
 msgid "Image"
 msgstr "画像"
@@ -13958,13 +13958,13 @@ msgstr "選択したユーザーが見つかりません。"
 
 #: wp-includes/class-wp-locale.php:201
 #: wp-includes/customize/class-wp-customize-date-time-control.php:173
-#: wp-includes/js/dist/components.js:29485
+#: wp-includes/js/dist/components.js:29490
 msgid "PM"
 msgstr "PM"
 
 #: wp-includes/class-wp-locale.php:200
 #: wp-includes/customize/class-wp-customize-date-time-control.php:172
-#: wp-includes/js/dist/components.js:29479
+#: wp-includes/js/dist/components.js:29484
 msgid "AM"
 msgstr "AM"
 
@@ -14009,8 +14009,8 @@ msgstr "Page Break タグを挿入"
 msgid "Fill Screen"
 msgstr "フルスクリーン"
 
-#: wp-includes/js/dist/editor.js:25018
-#: wp-includes/js/dist/block-library.js:4295
+#: wp-includes/js/dist/editor.js:25108
+#: wp-includes/js/dist/block-library.js:4313
 msgid "Quote"
 msgstr "引用"
 
@@ -14030,11 +14030,11 @@ msgstr "スペルをチェック"
 msgid "Select all"
 msgstr "すべて選択"
 
-#: wp-includes/script-loader.php:1299 wp-includes/class-wp-editor.php:1284
+#: wp-includes/script-loader.php:1299 wp-includes/class-wp-editor.php:1285
 msgid "Action"
 msgstr "操作"
 
-#: wp-includes/class-wp-editor.php:1283
+#: wp-includes/class-wp-editor.php:1284
 msgid "Letter"
 msgstr "キー"
 
@@ -14048,7 +14048,7 @@ msgstr "リンク rel"
 msgid "Source"
 msgstr "ソース"
 
-#: wp-includes/media.php:3557 wp-includes/js/dist/block-library.js:5066
+#: wp-includes/media.php:3557 wp-includes/js/dist/block-library.js:5084
 msgid "Edit Gallery"
 msgstr "ギャラリーを編集"
 
@@ -14087,8 +14087,8 @@ msgstr "配置"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:70
 #: wp-includes/widgets/class-wp-widget-media-video.php:72
 #: wp-includes/media-template.php:1097 wp-includes/media-template.php:1186
-#: wp-includes/js/dist/block-library.js:5892
-#: wp-includes/js/dist/block-library.js:13191
+#: wp-includes/js/dist/block-library.js:5910
+#: wp-includes/js/dist/block-library.js:13207
 msgid "Loop"
 msgstr "繰り返し再生"
 
@@ -14096,7 +14096,7 @@ msgstr "繰り返し再生"
 msgid "Constrain proportions"
 msgstr "縦横比を保存"
 
-#: wp-includes/js/dist/block-library.js:10107
+#: wp-includes/js/dist/block-library.js:10123
 msgid "List"
 msgstr "リスト"
 
@@ -14146,7 +14146,7 @@ msgstr "枠線"
 msgid "Image description"
 msgstr "画像の説明"
 
-#: wp-includes/js/dist/block-library.js:11203
+#: wp-includes/js/dist/block-library.js:11219
 msgid "Name:"
 msgstr "名前:"
 
@@ -14179,7 +14179,7 @@ msgstr "下付き"
 msgid "Unlink"
 msgstr "リンク解除"
 
-#: wp-includes/js/dist/block-library.js:10116
+#: wp-includes/js/dist/block-library.js:10132
 msgid "ordered list"
 msgstr "番号つきリスト"
 
@@ -14206,8 +14206,8 @@ msgid "Bold"
 msgstr "太字"
 
 #: wp-includes/script-loader.php:854 wp-includes/class-wp-editor.php:1035
-#: wp-includes/js/dist/block-library.js:6736
-#: wp-includes/js/dist/block-library.js:6756
+#: wp-includes/js/dist/block-library.js:6754
+#: wp-includes/js/dist/block-library.js:6774
 #: wp-includes/js/dist/format-library.js:435
 msgid "Code"
 msgstr "ソースコード"
@@ -14240,7 +14240,7 @@ msgstr "見出し2"
 msgid "Heading 1"
 msgstr "見出し1"
 
-#: wp-includes/js/dist/block-library.js:10680
+#: wp-includes/js/dist/block-library.js:10696
 msgid "Preformatted"
 msgstr "整形済み"
 
@@ -14249,12 +14249,12 @@ msgstr "整形済み"
 msgid "Paragraph"
 msgstr "段落"
 
-#: wp-includes/js/dist/components.js:31010
+#: wp-includes/js/dist/components.js:31019
 msgid "Font Size"
 msgstr "文字サイズ"
 
-#: wp-includes/js/dist/editor.js:25073 wp-includes/js/dist/editor.js:26614
-#: wp-includes/js/dist/editor.js:26721
+#: wp-includes/js/dist/editor.js:25163 wp-includes/js/dist/editor.js:26708
+#: wp-includes/js/dist/editor.js:26815
 msgid "Suggestion:"
 msgstr "提案:"
 
@@ -14273,7 +14273,7 @@ msgstr "ページ設定"
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "このページを離れると、加えられた編集はすべて破棄されます。"
 
-#: wp-includes/js/dist/block-library.js:7027
+#: wp-includes/js/dist/block-library.js:7045
 msgid "Column"
 msgstr "列"
 
@@ -14338,7 +14338,7 @@ msgid "Insert row before"
 msgstr "行を上に挿入"
 
 #: wp-includes/script-loader.php:1259 wp-includes/class-wp-editor.php:1129
-#: wp-includes/class-wp-editor.php:1135 wp-includes/class-wp-editor.php:1709
+#: wp-includes/class-wp-editor.php:1135 wp-includes/class-wp-editor.php:1710
 msgid "Insert/edit link"
 msgstr "リンクの挿入/編集"
 
@@ -14442,83 +14442,83 @@ msgstr "日曜日"
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:167 wp-includes/class-wp-locale.php:195
-#: wp-includes/js/dist/components.js:29422
+#: wp-includes/js/dist/components.js:29427
 msgid "December"
 msgstr "12月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:166 wp-includes/class-wp-locale.php:194
-#: wp-includes/js/dist/components.js:29420
+#: wp-includes/js/dist/components.js:29425
 msgid "November"
 msgstr "11月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:165 wp-includes/class-wp-locale.php:193
-#: wp-includes/js/dist/components.js:29418
+#: wp-includes/js/dist/components.js:29423
 msgid "October"
 msgstr "10月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:164 wp-includes/class-wp-locale.php:192
-#: wp-includes/js/dist/components.js:29416
+#: wp-includes/js/dist/components.js:29421
 msgid "September"
 msgstr "9月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:163 wp-includes/class-wp-locale.php:191
-#: wp-includes/js/dist/components.js:29414
+#: wp-includes/js/dist/components.js:29419
 msgid "August"
 msgstr "8月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:162 wp-includes/class-wp-locale.php:190
-#: wp-includes/js/dist/components.js:29412
+#: wp-includes/js/dist/components.js:29417
 msgid "July"
 msgstr "7月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:161 wp-includes/class-wp-locale.php:189
-#: wp-includes/js/dist/components.js:29410
+#: wp-includes/js/dist/components.js:29415
 msgid "June"
 msgstr "6月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:160 wp-includes/class-wp-locale.php:188
-#: wp-includes/js/dist/components.js:29408
+#: wp-includes/js/dist/components.js:29413
 msgid "May"
 msgstr "5月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:159 wp-includes/class-wp-locale.php:187
-#: wp-includes/js/dist/components.js:29406
+#: wp-includes/js/dist/components.js:29411
 msgid "April"
 msgstr "4月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:158 wp-includes/class-wp-locale.php:186
-#: wp-includes/js/dist/components.js:29404
+#: wp-includes/js/dist/components.js:29409
 msgid "March"
 msgstr "3月"
 
 #. translators: month name
 #. translators: three-letter abbreviation of the month
 #: wp-includes/class-wp-locale.php:157 wp-includes/class-wp-locale.php:185
-#: wp-includes/js/dist/components.js:29402
+#: wp-includes/js/dist/components.js:29407
 msgid "February"
 msgstr "2月"
 
 #. translators: month name
 #: wp-includes/class-wp-locale.php:156 wp-includes/class-wp-locale.php:184
-#: wp-includes/js/dist/components.js:29400
+#: wp-includes/js/dist/components.js:29405
 msgid "January"
 msgstr "1月"
 
@@ -14626,34 +14626,34 @@ msgstr "ログアウト"
 msgid "Log in"
 msgstr "ログイン"
 
-#: wp-includes/functions.php:4780
+#: wp-includes/functions.php:4807
 msgid "Manual Offsets"
 msgstr "時差を直接設定"
 
-#: wp-includes/functions.php:4772 wp-includes/functions.php:4776
+#: wp-includes/functions.php:4799 wp-includes/functions.php:4803
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:4727
+#: wp-includes/functions.php:4754
 msgid "Select a city"
 msgstr "町を選択してください"
 
 #. translators: 1: PHP function name, 2: version number
-#: wp-includes/functions.php:4091
+#: wp-includes/functions.php:4118
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s がバージョン %2$s から<strong>非推奨</strong>になった引数付きで呼び出されました。代替は用意されていません。"
 
 #. translators: 1: PHP function name, 2: version number, 3: optional message
 #. regarding the change
-#: wp-includes/functions.php:4088
+#: wp-includes/functions.php:4115
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s がバージョン %2$s から<strong>非推奨</strong>になった引数付きで呼び出されました。%3$s"
 
 #. translators: 1: PHP function name, 2: version number
 #. translators: 1: PHP file name, 2: version number
 #. translators: 1: WordPress hook name, 2: version number
-#: wp-includes/functions.php:3899 wp-includes/functions.php:4027
-#: wp-includes/functions.php:4150
+#: wp-includes/functions.php:3926 wp-includes/functions.php:4054
+#: wp-includes/functions.php:4177
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました。代替は用意されておりません。"
 
@@ -14662,30 +14662,30 @@ msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>�
 #. translators: 1: PHP file name, 2: version number, 3: alternative file name
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
-#: wp-includes/functions.php:3896 wp-includes/functions.php:4024
-#: wp-includes/functions.php:4147
+#: wp-includes/functions.php:3923 wp-includes/functions.php:4051
+#: wp-includes/functions.php:4174
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になっています ! 代わりに %3$s を使ってください。"
 
-#: wp-load.php:92 wp-includes/functions.php:2806
+#: wp-load.php:92 wp-includes/functions.php:2833
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; エラー"
 
-#: wp-includes/functions.php:2794
+#: wp-includes/functions.php:2821
 msgid "&laquo; Back"
 msgstr "&laquo; 戻る"
 
-#: wp-includes/functions.php:2669 wp-includes/ms-functions.php:2047
+#: wp-includes/functions.php:2696 wp-includes/ms-functions.php:2047
 msgid "Please try again."
 msgstr "もう一度お試しください。"
 
 #. translators: %s: logout URL
-#: wp-includes/functions.php:2660
+#: wp-includes/functions.php:2687
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "本当に<a href=\"%s\">ログアウト</a>しますか ?"
 
 #. translators: %s: site name
-#: wp-includes/functions.php:2653
+#: wp-includes/functions.php:2680
 msgid "You are attempting to log out of %s"
 msgstr "%s からログアウトしようとしています"
 
@@ -14843,8 +14843,8 @@ msgstr "カレンダー"
 msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr "投稿の <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 
-#: wp-includes/js/dist/block-library.js:5604
-#: wp-includes/js/dist/block-library.js:6591
+#: wp-includes/js/dist/block-library.js:5622
+#: wp-includes/js/dist/block-library.js:6609
 msgid "Display as Dropdown"
 msgstr "ドロップダウンで表示"
 
@@ -15071,7 +15071,7 @@ msgstr "%s へのコメント"
 #: wp-includes/script-loader.php:978 wp-includes/script-loader.php:1263
 #: wp-includes/script-loader.php:1633
 #: wp-includes/class-wp-customize-nav-menus.php:276
-#: wp-includes/js/dist/components.js:34757
+#: wp-includes/js/dist/components.js:34768
 msgid "No results found."
 msgstr "見つかりませんでした。"
 
@@ -15083,7 +15083,7 @@ msgstr "次ページへ &raquo;"
 msgid "&laquo; Previous Page"
 msgstr "&laquo; 前ページへ"
 
-#: wp-includes/js/dist/components.js:33459
+#: wp-includes/js/dist/components.js:33468
 msgid "All"
 msgstr "すべて"
 
@@ -15098,7 +15098,7 @@ msgid "For some strange yet very annoying reason, this post could not be edited.
 msgstr "なにか面妖でとてもうっとうしい理由のため、この投稿は編集できませんでした。"
 
 #: wp-includes/admin-bar.php:830 wp-includes/class-wp-customize-widgets.php:412
-#: wp-includes/functions.php:3772 wp-includes/js/dist/blocks.js:5503
+#: wp-includes/functions.php:3799 wp-includes/js/dist/blocks.js:5503
 msgid "Widgets"
 msgstr "ウィジェット"
 
@@ -15127,7 +15127,7 @@ msgstr "タグが複数ある場合はコンマで区切ってください"
 msgid "Title:"
 msgstr "タイトル:"
 
-#: wp-includes/js/dist/block-library.js:8904
+#: wp-includes/js/dist/block-library.js:8922
 msgid "HTML"
 msgstr "HTML"
 
@@ -15199,7 +15199,7 @@ msgstr "テーマ"
 msgid "Sites"
 msgstr "サイト"
 
-#: wp-includes/js/dist/editor.js:23319
+#: wp-includes/js/dist/editor.js:23409
 msgid "Edit Link"
 msgstr "リンクの編集"
 
@@ -15301,7 +15301,7 @@ msgstr "ヘルプ"
 #: wp-includes/script-loader.php:1262 wp-includes/script-loader.php:1490
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:91
 #: wp-includes/blocks/latest-comments.php:31 wp-includes/media.php:3143
-#: wp-includes/js/dist/editor.js:23243 wp-includes/js/dist/editor.js:26936
+#: wp-includes/js/dist/editor.js:23333 wp-includes/js/dist/editor.js:27030
 #: wp-includes/js/dist/edit-post.js:4232
 msgid "(no title)"
 msgstr "(タイトルなし)"
@@ -15325,8 +15325,8 @@ msgstr "選択"
 #: wp-includes/script-loader.php:1013 wp-includes/script-loader.php:1107
 #: wp-includes/script-loader.php:1298 wp-includes/script-loader.php:1921
 #: wp-includes/class-wp-customize-manager.php:5301
-#: wp-includes/class-wp-editor.php:1056 wp-includes/class-wp-editor.php:1710
-#: wp-includes/js/dist/components.js:29589 wp-includes/js/dist/editor.js:23337
+#: wp-includes/class-wp-editor.php:1056 wp-includes/class-wp-editor.php:1711
+#: wp-includes/js/dist/components.js:29594 wp-includes/js/dist/editor.js:23427
 #: wp-includes/js/dist/edit-post.js:3485 wp-includes/js/dist/edit-post.js:3883
 msgid "Close"
 msgstr "閉じる"
@@ -15361,7 +15361,7 @@ msgid "Images"
 msgstr "画像"
 
 #: wp-includes/admin-bar.php:904 wp-includes/admin-bar.php:905
-#: wp-includes/media.php:3496 wp-includes/class-wp-editor.php:1731
+#: wp-includes/media.php:3496 wp-includes/class-wp-editor.php:1732
 msgid "Search"
 msgstr "検索"
 
@@ -15387,15 +15387,15 @@ msgstr "タグの追加もしくは削除"
 
 #: wp-includes/script-loader.php:1260 wp-includes/script-loader.php:1439
 #: wp-includes/script-loader.php:1520 wp-includes/media.php:3499
-#: wp-includes/js/dist/editor.js:25790
+#: wp-includes/js/dist/editor.js:25880
 msgid "Update"
 msgstr "更新"
 
-#: wp-includes/js/dist/editor.js:25792
+#: wp-includes/js/dist/editor.js:25882
 msgid "Schedule"
 msgstr "予約投稿"
 
-#: wp-includes/script-loader.php:1443 wp-includes/js/dist/editor.js:25988
+#: wp-includes/script-loader.php:1443 wp-includes/js/dist/editor.js:26082
 msgid "Public"
 msgstr "公開"
 
@@ -15404,7 +15404,7 @@ msgid "Public, Sticky"
 msgstr "公開 (先頭に固定表示)"
 
 #: wp-includes/script-loader.php:1442 wp-includes/post.php:802
-#: wp-includes/post.php:822 wp-includes/js/dist/editor.js:25992
+#: wp-includes/post.php:822 wp-includes/js/dist/editor.js:26086
 msgid "Private"
 msgstr "非公開"
 
@@ -15416,7 +15416,7 @@ msgstr "OK"
 msgid "Privately Published"
 msgstr "非公開"
 
-#: wp-includes/script-loader.php:1440 wp-includes/js/dist/editor.js:27339
+#: wp-includes/script-loader.php:1440 wp-includes/js/dist/editor.js:27434
 msgid "Save as Pending"
 msgstr "レビュー待ちとして保存"
 
@@ -15425,7 +15425,7 @@ msgid "Image URL"
 msgstr "画像の URL"
 
 #: wp-includes/media.php:4022 wp-includes/class-wp-editor.php:1106
-#: wp-includes/js/dist/editor.js:22846
+#: wp-includes/js/dist/editor.js:22936
 msgid "Media"
 msgstr "メディア"
 
@@ -15493,6 +15493,7 @@ msgid "Saved."
 msgstr "保存しました。"
 
 #: wp-includes/media.php:3495 wp-includes/media.php:3516
+#: wp-includes/class-wp-editor.php:1268
 msgid "Add Media"
 msgstr "メディアを追加"
 
@@ -15516,7 +15517,7 @@ msgstr "ファイル &#8220;%s&#8221; は存在しますか ?"
 msgid "Thumbnail"
 msgstr "サムネイル"
 
-#: wp-includes/class-wp-editor.php:1052 wp-includes/js/dist/editor.js:24019
+#: wp-includes/class-wp-editor.php:1052 wp-includes/js/dist/editor.js:24109
 msgid "Redo"
 msgstr "やり直し"
 
@@ -15532,7 +15533,7 @@ msgstr "ユーザー名"
 #: wp-includes/widgets/class-wp-widget-archives.php:43
 #: wp-includes/blocks/archives.php:35 wp-includes/general-template.php:1512
 #: wp-includes/theme-compat/sidebar.php:91
-#: wp-includes/js/dist/block-library.js:5648
+#: wp-includes/js/dist/block-library.js:5666
 msgid "Archives"
 msgstr "アーカイブ"
 
@@ -15566,7 +15567,7 @@ msgstr "返信"
 
 #: wp-includes/script-loader.php:1287 wp-includes/script-loader.php:1441
 #: wp-includes/class-wp-customize-manager.php:4622
-#: wp-includes/js/dist/editor.js:27339
+#: wp-includes/js/dist/editor.js:27434
 msgid "Save Draft"
 msgstr "下書きとして保存"
 
@@ -15580,7 +15581,7 @@ msgstr "内容"
 
 #: wp-includes/script-loader.php:1246 wp-includes/script-loader.php:1297
 #: wp-includes/script-loader.php:1429 wp-includes/media.php:3498
-#: wp-includes/class-wp-editor.php:1055 wp-includes/class-wp-editor.php:1756
+#: wp-includes/class-wp-editor.php:1055 wp-includes/class-wp-editor.php:1757
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -15595,9 +15596,9 @@ msgstr "最近のコメント"
 
 #: wp-includes/media-template.php:1246
 #: wp-includes/class-wp-customize-manager.php:4156
-#: wp-includes/class-wp-editor.php:1122 wp-includes/js/dist/editor.js:17053
+#: wp-includes/class-wp-editor.php:1122 wp-includes/js/dist/editor.js:17152
 #: wp-includes/js/dist/edit-post.js:4856
-#: wp-includes/js/dist/block-library.js:8893
+#: wp-includes/js/dist/block-library.js:8911
 msgid "Preview"
 msgstr "プレビュー"
 
@@ -15605,7 +15606,7 @@ msgstr "プレビュー"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/js/dist/editor.js:23344
+#: wp-includes/js/dist/editor.js:23434
 msgid "Submit"
 msgstr "送信"
 
@@ -15648,9 +15649,9 @@ msgstr "タグの編集"
 #: wp-includes/media-template.php:926 wp-includes/media-template.php:988
 #: wp-includes/media-template.php:1086 wp-includes/media-template.php:1175
 #: wp-includes/deprecated.php:688 wp-includes/js/dist/block-library.js:3137
-#: wp-includes/js/dist/block-library.js:4861
-#: wp-includes/js/dist/block-library.js:5912
-#: wp-includes/js/dist/block-library.js:13218
+#: wp-includes/js/dist/block-library.js:4879
+#: wp-includes/js/dist/block-library.js:5930
+#: wp-includes/js/dist/block-library.js:13234
 msgid "None"
 msgstr "なし"
 
@@ -15664,7 +15665,7 @@ msgstr "説明"
 msgid "Name"
 msgstr "名前"
 
-#: wp-includes/class-wp-editor.php:1092 wp-includes/js/dist/editor.js:29446
+#: wp-includes/class-wp-editor.php:1092 wp-includes/js/dist/editor.js:29551
 msgid "Advanced"
 msgstr "高度な設定"
 
@@ -15675,21 +15676,21 @@ msgstr "リンクターゲット"
 #: wp-includes/widgets/class-wp-widget-categories.php:30
 #: wp-includes/widgets/class-wp-widget-categories.php:47
 #: wp-includes/category-template.php:523
-#: wp-includes/theme-compat/sidebar.php:97 wp-includes/js/dist/editor.js:27949
-#: wp-includes/js/dist/editor.js:27950
-#: wp-includes/js/dist/block-library.js:6553
-#: wp-includes/js/dist/block-library.js:6607
-#: wp-includes/js/dist/block-library.js:6659
+#: wp-includes/theme-compat/sidebar.php:97 wp-includes/js/dist/editor.js:28044
+#: wp-includes/js/dist/editor.js:28045
+#: wp-includes/js/dist/block-library.js:6571
+#: wp-includes/js/dist/block-library.js:6625
+#: wp-includes/js/dist/block-library.js:6677
 msgid "Categories"
 msgstr "カテゴリー"
 
 #: wp-includes/script-loader.php:1469 wp-includes/class-wp-editor.php:1124
-#: wp-includes/js/dist/editor.js:28344
-#: wp-includes/js/dist/block-library.js:11218
+#: wp-includes/js/dist/editor.js:28441
+#: wp-includes/js/dist/block-library.js:11234
 msgid "Save"
 msgstr "保存"
 
-#: wp-includes/script-loader.php:1261 wp-includes/class-wp-editor.php:1759
+#: wp-includes/script-loader.php:1261 wp-includes/class-wp-editor.php:1760
 msgid "Add Link"
 msgstr "リンク追加"
 
@@ -15720,7 +15721,7 @@ msgstr "抜粋"
 
 #: wp-includes/script-loader.php:1285 wp-includes/script-loader.php:1437
 #: wp-includes/class-wp-customize-manager.php:4617
-#: wp-includes/js/dist/editor.js:25795 wp-includes/js/dist/edit-post.js:4394
+#: wp-includes/js/dist/editor.js:25885 wp-includes/js/dist/edit-post.js:4394
 msgid "Publish"
 msgstr "公開"
 
@@ -15729,13 +15730,13 @@ msgid "Comments"
 msgstr "コメント"
 
 #: wp-includes/class-wp-customize-widgets.php:751 wp-includes/media.php:3538
-#: wp-includes/class-wp-editor.php:1264 wp-includes/js/dist/editor.js:22669
-#: wp-includes/js/dist/block-library.js:6183
+#: wp-includes/class-wp-editor.php:1264 wp-includes/js/dist/editor.js:22759
+#: wp-includes/js/dist/block-library.js:6201
 #: wp-includes/js/dist/format-library.js:910
 msgid "Apply"
 msgstr "適用"
 
-#: wp-includes/class-wp-editor.php:1051 wp-includes/js/dist/editor.js:24057
+#: wp-includes/class-wp-editor.php:1051 wp-includes/js/dist/editor.js:24147
 msgid "Undo"
 msgstr "取り消し"
 
@@ -15751,8 +15752,8 @@ msgstr "%s前"
 
 #: wp-includes/class-wp-editor.php:1262
 #: wp-includes/class-walker-comment.php:236
-#: wp-includes/class-walker-comment.php:340 wp-includes/js/dist/editor.js:28514
-#: wp-includes/js/dist/block-library.js:11197
+#: wp-includes/class-walker-comment.php:340 wp-includes/js/dist/editor.js:28613
+#: wp-includes/js/dist/block-library.js:11213
 #: wp-includes/js/dist/format-library.js:950
 msgid "Edit"
 msgstr "編集"
@@ -15775,16 +15776,16 @@ msgstr "コメント"
 #: wp-includes/media-template.php:1049 wp-includes/media-template.php:1132
 #: wp-includes/media.php:3494 wp-includes/media.php:4017
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:86
-#: wp-includes/class-wp-editor.php:1139 wp-includes/class-wp-editor.php:1715
+#: wp-includes/class-wp-editor.php:1139 wp-includes/class-wp-editor.php:1716
 #: wp-includes/class-wp-customize-nav-menus.php:1111
-#: wp-includes/js/dist/editor.js:22662 wp-includes/js/dist/editor.js:23207
+#: wp-includes/js/dist/editor.js:22752 wp-includes/js/dist/editor.js:23297
 #: wp-includes/js/dist/edit-post.js:4821
-#: wp-includes/js/dist/block-library.js:8280
+#: wp-includes/js/dist/block-library.js:8298
 msgid "URL"
 msgstr "URL"
 
 #: wp-includes/class-wp-editor.php:1086 wp-includes/theme-compat/sidebar.php:27
-#: wp-includes/js/dist/editor.js:24605
+#: wp-includes/js/dist/editor.js:24695
 msgid "Author"
 msgstr "作成者"
 
@@ -15797,7 +15798,7 @@ msgstr "ログアウト"
 msgid "Visit Site"
 msgstr "サイトを表示"
 
-#: wp-includes/class-wp-editor.php:1649
+#: wp-includes/class-wp-editor.php:1650
 msgid "Y/m/d"
 msgstr "Y年n月j日"
 
@@ -15805,23 +15806,23 @@ msgstr "Y年n月j日"
 msgid "Draft"
 msgstr "下書き"
 
-#: wp-includes/post.php:801 wp-includes/js/dist/editor.js:25700
+#: wp-includes/post.php:801 wp-includes/js/dist/editor.js:25790
 msgid "Pending Review"
 msgstr "レビュー待ち"
 
 #: wp-includes/script-loader.php:1286 wp-includes/script-loader.php:1447
 #: wp-includes/post.php:803 wp-includes/post.php:823
-#: wp-includes/js/dist/editor.js:27072
+#: wp-includes/js/dist/editor.js:27166
 msgid "Published"
 msgstr "公開済み"
 
 #: wp-includes/media-template.php:382 wp-includes/media-template.php:563
 #: wp-includes/revision.php:34 wp-includes/class-wp-editor.php:1082
-#: wp-includes/js/dist/editor.js:23608
+#: wp-includes/js/dist/editor.js:23698
 msgid "Title"
 msgstr "タイトル"
 
-#: wp-includes/post.php:1521 wp-includes/js/dist/block-library.js:9894
+#: wp-includes/post.php:1521 wp-includes/js/dist/block-library.js:9910
 msgid "No posts found."
 msgstr "投稿が見つかりませんでした。"
 
