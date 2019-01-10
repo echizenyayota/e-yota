@@ -11,10 +11,6 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Nineteen\n"
 
-#. Description of the theme
-msgid "A new Gutenberg-ready theme."
-msgstr "Gutenberg 対応の新テーマ。"
-
 #. Theme Name of the theme
 msgid "Twenty Nineteen"
 msgstr "Twenty Nineteen"
@@ -101,7 +97,7 @@ msgstr "<span class=\"meta-nav\">投稿:</span><br><span class=\"post-title\">%t
 msgid "Twenty Nineteen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Nineteen テーマには WordPress version 4.7以降が必須ですが、現在バージョン%sをお使いです。アップグレードしてもう一度お試しください。"
 
-#: inc/template-functions.php:208
+#: inc/template-functions.php:209
 msgid "More"
 msgstr "続き"
 
@@ -158,9 +154,9 @@ msgstr "﻿ソーシャルリンクメニュー"
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: image.php:52 template-parts/content/content.php:49
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content.php:49
 #: template-parts/content/content-single.php:40
-#: template-parts/content/content-page.php:27
 msgid "Pages:"
 msgstr "ページ:"
 
@@ -251,7 +247,7 @@ msgstr "タグアーカイブ:"
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "<span class=\"screen-reader-text\">%sに</span>コメント"
 
-#: classes/class-twentynineteen-walker-comment.php:87
+#: classes/class-twentynineteen-walker-comment.php:95
 msgid "Edit"
 msgstr "編集"
 
@@ -334,12 +330,12 @@ msgstr "コメントを残す"
 msgid "Join the Conversation"
 msgstr "ディスカッションに参加"
 
-#: classes/class-twentynineteen-walker-comment.php:92
+#: classes/class-twentynineteen-walker-comment.php:100
 msgid "Your comment is awaiting moderation."
 msgstr "コメントは承認待ちです。"
 
 #. translators: 1: comment date, 2: comment time
-#: classes/class-twentynineteen-walker-comment.php:79
+#: classes/class-twentynineteen-walker-comment.php:87
 msgid "%1$s at %2$s"
 msgstr "%1$s%2$s"
 
@@ -348,10 +344,10 @@ msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "Y年n月"
 
-#. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:120 template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
 
@@ -360,7 +356,7 @@ msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
 msgid "%s Archives:"
 msgstr "%sアーカイブ: "
 
-#: classes/class-twentynineteen-walker-comment.php:59
+#: classes/class-twentynineteen-walker-comment.php:67
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">さんの発言:</span>"
 
