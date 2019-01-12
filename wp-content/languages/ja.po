@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-09 06:04:11+0000\n"
+"PO-Revision-Date: 2019-01-11 07:02:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2358,7 +2358,7 @@ msgstr "「%s」ブロックはすでに一番上にあるため、上に移動�
 #. selected block, 3: New position
 #: wp-includes/js/dist/editor.js:15658
 msgid "Move %1$s block from position %2$d up to position %3$d"
-msgstr "%1$d個のブロックを%2$dの位置から%3$dの位置に移動する"
+msgstr "%1$sブロックを%2$dの位置から%3$dの位置に移動する"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
 #: wp-includes/js/dist/editor.js:15652
@@ -11770,7 +11770,7 @@ msgstr "このタクソノミーではタームを作成する権限がありま
 #: wp-includes/taxonomy.php:2266 wp-includes/taxonomy.php:2409
 #: wp-includes/taxonomy.php:2610
 msgid "Invalid taxonomy."
-msgstr "不正なタクソノミー分類です。"
+msgstr "不正なタクソノミーです。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1960
 #: wp-includes/class-wp-xmlrpc-server.php:2063
