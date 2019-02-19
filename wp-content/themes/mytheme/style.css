@@ -450,9 +450,11 @@ footer .widget_categories ul {
   position: absolute;
   left: 0px;
   top: 9px;
+  display: none;
+  font-family: 'Font Awesome 5 Solid';
   content: '\f14a';
   color: #000080;
-  font-family: 'FontAwesome';
+  /* font-family: 'FontAwesome'; */
   font-size: 28px;
   line-height: 1;
 }
