@@ -454,8 +454,8 @@ footer .widget_categories ul {
   font-family: 'Font Awesome 5 Solid';
   content: '\f14a';
   color: #000080;
-  /* font-family: 'FontAwesome'; */
-  font-size: 28px;
+  padding-right: 5px;
+  font-size: 24px;
   line-height: 1;
 }
 
