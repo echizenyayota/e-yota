@@ -4,7 +4,7 @@
 <div class="bread">
   <ol>
     <li>
-      <a href="<?php echo esc_url( home_url() ); ?>"><i class="fa fa-home"></i><span>TOP</span></a>
+      <a href="<?php echo esc_url( home_url() ); ?>"><i class="fas fa-home"></i></i><span>TOP</span></a>
     </li>
     <li>
       <?php if ( has_category()) : ?>
@@ -25,7 +25,7 @@
         <h1><?php the_title(); ?></h1>
 
         <div class="kiji-date">
-          <i class="fa fa-pencil"></i>
+          <i class="fas fa-pencil-alt"></i>
           <time datetime="<?php the_time('c'); ?>">
             投稿日:<?php echo get_the_date(); ?>
           </time>
@@ -107,14 +107,14 @@
             <li>
               <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() . ' - ' . get_bloginfo('name') ); ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=echizenya_yota"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw">
-                <i class="fa fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
                 <span>Twitter</span>でツイート
               </a>
             </li>
             <li>
               <a href="http://www.facebook.com/share.php?u=<?php echo urlencode( get_permalink() ); ?>"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-fb">
-                <i class="fa fa-facebook"></i>
+                <i class="fab fa-facebook-f"></i>
                 <span>Facebook</span>でシェア
               </a>
             </li>
