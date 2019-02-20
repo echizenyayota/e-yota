@@ -454,9 +454,16 @@ footer .widget_categories ul {
   font-family: 'Font Awesome 5 Solid';
   content: '\f14a';
   color: #000080;
-  padding-right: 5px;
   font-size: 24px;
   line-height: 1;
+}
+
+.kiji h2 svg {
+  color: #000080;
+}
+
+.fa-check-square {
+    padding-right: 15px;
 }
 
 .kiji h3 {
