@@ -390,7 +390,8 @@ footer .widget_categories ul {
   clear: both;
 }
 
-.point:before	{position: absolute;
+.point:before	{
+    position: absolute;
 	left: 15px;
 	top: -15px;
 	content: '\f0eb';
@@ -404,13 +405,15 @@ footer .widget_categories ul {
 	box-sizing: border-box;
 	background-color: #5ab80e;
 	color: #ffffff;
-	font-family: 'FontAwesome';
+    display: none;
+    font-family: 'Font Awesome 5 Solid';
 	font-size: 26px;
 	line-height: 1;
 	text-align: center;
 }
 
-.point:after	{position: absolute;
+.point:after	{
+    position: absolute;
 	left: 32px;
 	top: -8px;
 	z-index: 1;
@@ -435,13 +438,15 @@ footer .widget_categories ul {
 	clear: both;
 }
 
-.attention:before	{position: absolute;
+.attention:before	{
+    position: absolute;
 	left: 20px;
 	top: -15px;
 	content: '\f071';
 	background-color: #ffffff;
 	color: #ff0000;
-	font-family: 'FontAwesome';
+	display: none;
+    font-family: 'Font Awesome 5 Solid';
 	font-size: 26px;
 	line-height: 1;
 }
@@ -507,18 +512,6 @@ footer .widget_categories ul {
   padding-left: 20px;
 }
 
-
-.kiji-body li:before {
-  /* position: absolute;
-  list-style: none;
-  left: 0px;
-  top: 3px;
-  content: '\f152';
-  color: #aaaaaa;
-  font-family: 'FontAwesome';
-  line-height: 1; */
-}
-
 .amazonjs_item .amazonjs_info ul li {
   padding-left: 1.5em;
 }
@@ -539,25 +532,31 @@ blockquote {
 }
 
 blockquote:before {
-  position: absolute;;
+  position: absolute;
   left: 10px;
   top: 10px;
   content: '\f10d';
   color: #aaaaaa;
   font-size: 30px;
-  font-family: 'FontAwesome';
+  display: none;
+  font-family: 'Font Awesome 5 Solid';
   line-height: 1;
 }
 
 blockquote:after {
-  position: absolute;;
+  position: absolute;
   right: 10px;
   bottom: 10px;
   content: '\f10e';
   color: #aaaaaa;
   font-size: 30px;
-  font-family: 'FontAwesome';
+  display: none;
+  font-family: 'Font Awesome 5 Solid';
   line-height: 1;
+}
+
+.fa-quote-right {
+    padding-left: 430px;
 }
 
 
