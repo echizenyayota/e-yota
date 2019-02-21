@@ -7,7 +7,7 @@
       <h1><?php the_title(); ?></h1>
 
       <div class="kiji-date">
-        <i class="fa fa-pencil"></i>
+        <i class="fas fa-pencil-alt"></i>
         <time datetime="<?php the_time('c'); ?>">投稿日:<?php echo get_the_date(); ?></time>
       </div>
 
