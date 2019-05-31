@@ -59,9 +59,9 @@
           $termid = get_cat_ID($categoryname);
         } elseif(is_tag()) {
           $posttags = get_the_tags();
-              foreach($posttags as $tag) {
-                $termid = $tag->term_id;
-              }
+          foreach($posttags as $tag) {
+            $termid = $tag->term_id;
+          }
         }
   ?>
 
