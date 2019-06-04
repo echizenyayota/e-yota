@@ -58,10 +58,7 @@
           $categoryname = single_cat_title('',false);
           $termid = get_cat_ID($categoryname);
         } elseif(is_tag()) {
-          $posttags = get_the_tags();
-          foreach($posttags as $tag) {
-            $termid = $tag_id;
-          }
+          $termid = $tag_id;
         }
   ?>
 
