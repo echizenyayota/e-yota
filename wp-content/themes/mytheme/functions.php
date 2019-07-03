@@ -234,3 +234,14 @@ function get_the_category_descendants( $id = false ) {
 
 
 add_image_size('large-thumbnail', 650, 350, true);
+
+// ページによってCSSやJavaScriptの読み込みを制御
+function performance_dequeue_scripts() {
+	if ( is_home() || is_archive() || is_tag() || is_category()) {
+		wp_deregister_style( 'wp-block-library' );
+		wp_deregister_script( 'jquery' );
+	}
+}
+if ( ! is_admin() ) {
+	add_action( 'wp_enqueue_scripts', 'performance_dequeue_scripts', 99 );
+}
