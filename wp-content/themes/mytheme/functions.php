@@ -237,7 +237,7 @@ add_image_size('large-thumbnail', 650, 350, true);
 
 // ページによってCSSやJavaScriptの読み込みを制御
 function performance_dequeue_scripts() {
-	if ( is_home() || is_archive() || is_tag() || is_category()) {
+	if ( is_home() || is_archive()) {
 		wp_deregister_style( 'wp-block-library' );
 		wp_deregister_script( 'jquery' );
 	}
