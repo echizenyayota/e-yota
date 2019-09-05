@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-07-24 13:42:24+0000\n"
+"PO-Revision-Date: 2019-09-05 01:45:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -618,7 +618,7 @@ msgstr "REST API は %s クエリーパラメータを正しく処理しませ�
 
 #: wp-admin/includes/class-wp-site-health.php:1710
 msgid "The REST API did not behave correctly"
-msgstr " REST API は正しく動作しませんでした"
+msgstr "REST API は正しく動作しませんでした"
 
 #. translators: 1: The HTTP response code returned. 2: The error message
 #. returned.
@@ -1016,7 +1016,7 @@ msgstr "新しいバージョンの WordPress が利用可能かどうか確認�
 #. translators: %s: Your current version of WordPress.
 #: wp-admin/includes/class-wp-site-health.php:199
 msgid "WordPress version %s"
-msgstr "WordPress バーション%s"
+msgstr "WordPress バージョン%s"
 
 #: wp-admin/js/site-health.js:25
 msgid "Site information has been added to your clipboard."
@@ -7050,7 +7050,7 @@ msgstr "調べる"
 
 #: wp-admin/plugin-editor.php:127
 msgid "The Documentation menu below the editor lists the PHP functions recognized in the plugin file. Clicking Look Up takes you to a web page about that particular function."
-msgstr "エディターの下にある「ドキュメンテーション」には、プラグインファイルの中で認識された PHP 関数一覧があります。「調べる」ボタンを使うと、その関数のページヘ移動します。"
+msgstr "エディターの下にある「ドキュメンテーション」には、プラグインファイルの中で認識された PHP 関数一覧があります。「調べる」ボタンを使うと、その関数のページへ移動します。"
 
 #: wp-admin/includes/misc.php:972
 #: wp-admin/includes/class-wp-posts-list-table.php:996

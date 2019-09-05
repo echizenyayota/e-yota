@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-16 11:03:13+0000\n"
+"PO-Revision-Date: 2019-09-05 01:38:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -6957,7 +6957,7 @@ msgstr "このタクソノミーが子を持つことがあるかどうか。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:291
 msgid "A human-readable description of the taxonomy."
-msgstr "タクソノミーの、人間が読める説明。"
+msgstr "人間が読めるタクソノミーの説明。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:285
 msgid "All capabilities used by the taxonomy."
