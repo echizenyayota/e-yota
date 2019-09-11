@@ -245,3 +245,9 @@ function performance_dequeue_scripts() {
 if ( ! is_admin() ) {
 	add_action( 'wp_enqueue_scripts', 'performance_dequeue_scripts', 99 );
 }
+
+// PWAアイコン表示用 'short_name'の記述を追加
+add_filter( 'web_app_manifest', function( $manifest ) {
+	$manifest['short_name'] = 'エコテキブログ';
+	return $manifest;
+} );
