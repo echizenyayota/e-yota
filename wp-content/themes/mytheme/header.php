@@ -2,7 +2,16 @@
 <html <?php language_attributes(); ?>>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="エコテキブログ">
+  <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-114x114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-144x144.png" sizes="144x144">
+
   <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
   <script>
     FontAwesomeConfig = { searchPseudoElements: true };
