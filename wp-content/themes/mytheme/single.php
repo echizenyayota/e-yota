@@ -139,11 +139,6 @@
           <div class="kiji-tag">
             <?php the_tags('<ul><li>', '</li><li>','</li></ul>'); ?>
           </div>
-          <div class="sakura-vps-ad">
-              <a href="https://px.a8.net/svt/ejp?a8mat=2ZS4XD+EEKKOI+D8Y+C7TC1" target="_blank" rel="nofollow">
-                <img border="0" width="728" height="90" alt="" src="https://www22.a8.net/svt/bgt?aid=181031665871&wid=001&eno=01&mid=s00000001717002052000&mc=1"></a>
-                <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=2ZS4XD+EEKKOI+D8Y+C7TC1" alt="">
-          </div>
         <?php wp_reset_postdata(); ?>
 
         <?php
