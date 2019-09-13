@@ -578,12 +578,12 @@ blockquote:after {
 
 /* タグ　*/
 .kiji-tag {
-  /* margin-bottom: 18px; */
+  margin-bottom: 30px;
   padding-top: 30px;
 }
 
 .kiji-tag ul {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   list-style: none;
 }
@@ -613,6 +613,11 @@ blockquote:after {
 .kiji-tag li {
   float: left;
   width: auto;
+}
+
+/* (追記) 関連記事 */
+aside .mymenu mymenu-thumb {
+	margin-top: 20px;
 }
 
 /* パンくずリスト */
