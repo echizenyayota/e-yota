@@ -578,7 +578,6 @@ blockquote:after {
 
 /* タグ　*/
 .kiji-tag {
-  /* margin-bottom: 18px; */
   padding-top: 30px;
 }
 
@@ -731,6 +730,11 @@ blockquote:after {
   .share li a {
     padding: 8px 10px;
   }
+}
+
+/* 特集記事 */
+.mymenu.mymenu-thumb {
+  margin-top: 30px;
 }
 
 /* ページネーション */
