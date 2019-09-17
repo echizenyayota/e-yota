@@ -445,7 +445,7 @@ footer .widget_categories ul {
 	background-color: #ffffff;
 	color: #ff0000;
 	display: none;
-    font-family: 'Font Awesome 5 Solid';
+  font-family: 'Font Awesome 5 Solid';
 	font-size: 26px;
 	line-height: 1;
 }
@@ -478,7 +478,12 @@ footer .widget_categories ul {
     font-size: 14px;
   }
   .kiji h2 {
-    padding-left: 21px;
+    /* padding-left: 21px; */
+    /* スマホのときに飾り罫線ができているかどうか確認 */
+    padding-left: 16px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #000080;
+    border-left: 10px solid #000080;
     font-size: 18px;
   }
   .kiji h2:before {
@@ -501,13 +506,6 @@ footer .widget_categories ul {
   padding-left: 20px;
 }
 
-.amazonjs_item .amazonjs_info ul li {
-  padding-left: 1.5em;
-}
-
-.kiji-body .amazonjs_info li:before {
-
-}
 
 /* 引用 */
 blockquote {
