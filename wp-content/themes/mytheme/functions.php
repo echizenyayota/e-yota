@@ -251,3 +251,5 @@ add_filter( 'web_app_manifest', function( $manifest ) {
 	$manifest['short_name'] = 'エコテキブログ';
 	return $manifest;
 } );
+
+
