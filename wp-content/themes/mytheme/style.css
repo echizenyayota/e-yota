@@ -369,9 +369,10 @@ footer .widget_categories ul {
 .kiji h2 {
   position: relative;
   margin-top: 40px;
-  padding-left: 32px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #000080;
+  padding-left: 16px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #000080;
+  border-left: 10px solid #000080;
   font-size: 24px;
   clear: both;
 }
@@ -388,7 +389,7 @@ footer .widget_categories ul {
 }
 
 .point:before	{
-    position: absolute;
+  position: absolute;
 	left: 15px;
 	top: -15px;
 	content: '\f0eb';
@@ -402,15 +403,15 @@ footer .widget_categories ul {
 	box-sizing: border-box;
 	background-color: #5ab80e;
 	color: #ffffff;
-    display: none;
-    font-family: 'Font Awesome 5 Solid';
+  display: none;
+  font-family: 'Font Awesome 5 Solid';
 	font-size: 26px;
 	line-height: 1;
 	text-align: center;
 }
 
 .point:after	{
-    position: absolute;
+  position: absolute;
 	left: 32px;
 	top: -8px;
 	z-index: 1;
@@ -425,7 +426,8 @@ footer .widget_categories ul {
 }
 
 /* 注意書き */
-.attention	{position: relative;
+.attention	{
+  position: relative;
 	margin: 40px 0 30px;
 	padding: 20px;
 	border-radius: 10px;
@@ -436,7 +438,7 @@ footer .widget_categories ul {
 }
 
 .attention:before	{
-    position: absolute;
+  position: absolute;
 	left: 20px;
 	top: -15px;
 	content: '\f071';
@@ -460,14 +462,6 @@ footer .widget_categories ul {
   line-height: 1;
 }
 
-.kiji h2 svg {
-  color: #000080;
-}
-
-.fa-check-square {
-    padding-right: 15px;
-}
-
 .kiji h3 {
   margin-top: 25px;
   padding-left: 10px;
@@ -482,8 +476,6 @@ footer .widget_categories ul {
   }
   .kiji p {
     font-size: 14px;
-  }
-}
   }
   .kiji h2 {
     padding-left: 21px;

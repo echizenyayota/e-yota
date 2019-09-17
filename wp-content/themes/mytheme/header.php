@@ -11,12 +11,8 @@
   <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-114x114.png" sizes="114x114">
   <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-120x120.png" sizes="120x120">
   <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-144x144.png" sizes="144x144">
+  
 
-  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-  <script>
-    FontAwesomeConfig = { searchPseudoElements: true };
-  </script>
-  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
   <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css"> -->
 
   <?php if ( is_single() || is_page() ) : // 記事の個別ページ用のメタデータ?>
@@ -142,7 +138,7 @@
     </div>
     <div class="sitenav">
       <button type="button" id=navbtn>
-        <i class="fa fa-bars"></i><span>Menu</span>
+        ナビメニュー
       </button>
       <?php
         wp_nav_menu( array(
