@@ -1,4 +1,4 @@
-<?php dynamic_sidebar('ad'); ?>
+<!-- <?php dynamic_sidebar('ad'); ?> -->
 
 <?php
   $location_name = 'pickup';
