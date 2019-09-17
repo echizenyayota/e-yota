@@ -3,7 +3,7 @@
 <div class="container">
   <div class="ad1">
     <p>
-      <img src="" width=320 height="50" >
+      <!-- <img src="" width=320 height="50" > -->
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- e-yota_mobile -->
         <ins class="adsbygoogle"
