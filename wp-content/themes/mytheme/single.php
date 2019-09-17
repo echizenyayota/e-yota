@@ -88,15 +88,15 @@
           </div>
           <div class="ad3">
             <p>
-              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
                 <!-- e-yota3 -->
-                <ins class="adsbygoogle"
+                <!-- <ins class="adsbygoogle"
                      style="display:inline-block;width:300px;height:250px"
                      data-ad-client="ca-pub-4555449890300852"
-                     data-ad-slot="2603653834"></ins>
-                <script>
+                     data-ad-slot="2603653834"></ins> -->
+                <!-- <script>
                   (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                </script> -->
             </p>
           </div>
         </div>

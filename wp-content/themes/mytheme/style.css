@@ -1201,10 +1201,10 @@ label.screen-reader-text {
   width 50%;
 }
 
-.ad3 {
+/* .ad3 {
   float: right;
   width: 50%;
-}
+} */
 
 @media (max-width: 768px) {
   .ad2 {
