@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Classic Editor - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-16 10:08:45+0000\n"
+"PO-Revision-Date: 2019-09-18 01:20:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -84,7 +84,7 @@ msgstr "はい"
 
 #: classic-editor.php:344
 msgid "Allow users to switch editors"
-msgstr "ユーザーにエディターの切り替えを許可します。"
+msgstr "ユーザーにエディターの切り替えを許可"
 
 #: classic-editor.php:343
 msgid "Default editor for all users"
