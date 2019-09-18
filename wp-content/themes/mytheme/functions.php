@@ -252,4 +252,17 @@ add_filter( 'web_app_manifest', function( $manifest ) {
 	return $manifest;
 } );
 
+// レンダリングを妨げるリソースの除外
+function add_defer_to_scripts( $tag, $handle) {
+  if ( !preg_match('/\b(async|defer)\b/', $tag) ) {
+    return str_replace(' src', 'defer src', $tag );
+  }
+  return $tag;
+}
+
+if ( !is_admin() ) {
+  add_filter('script_loader_tag', 'add_defer_to_scripts', 10, 2);
+}
+
+
 
