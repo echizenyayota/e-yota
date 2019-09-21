@@ -264,5 +264,24 @@ if ( !is_admin() ) {
   add_filter( 'script_loader_tag', 'add_defer_to_scripts', 10, 2 );
 }
 
+// dns-prefetchを追加
+// https://qiita.com/ryo_hisano/items/e525616e5026b015aafe
+// function ecoteki_resource_hints( $urls, $relation_type) {
+//   if ( 'dns-prefetch' === $relation_type ) {
+//     $urls = array_merge( $urls, array(
+//       "www.facebook.com",
+//       "twitter.com",
+//       "t.co",
+//       "p.twitter.com",
+//       "platform.twitter.com",
+//       "b.hatena.ne.jp",
+//       "www.youtube.com"
+//     ) );
+//   }
+//   return $urls;
+// }
+// add_filter( 'wp_resource_hints', 'ecoteki_resource_hints', 10, 2);
+
+
 
 
