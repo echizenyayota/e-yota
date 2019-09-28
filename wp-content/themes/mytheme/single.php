@@ -106,13 +106,13 @@
             <li>
               <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() . ' - ' . get_bloginfo('name') ); ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=echizenya_yota"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw">
-                <span>Twitter</span> ツイート
+                <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/twitter_icon.svg" alt="">-->ツイート 
               </a>
             </li>
             <li>
               <a href="http://www.facebook.com/share.php?u=<?php echo urlencode( get_permalink() ); ?>"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-fb">
-                <span>Facebook</span> シェア
+                シェア
               </a>
             </li>
             <li>
