@@ -697,12 +697,42 @@ blockquote:after {
   background-color: #55acee;
 }
 
+.share-tw::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(img/twitter_icon.svg);
+  background-size: contain;
+  vertical-align: middle;
+}
+
 .share-fb {
   background-color: #3b5988;
 }
 
+.share-fb::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(img/facebook_icon.svg);
+  background-size: contain;
+  vertical-align: middle;
+}
+
 .share-hatena {
   background-color: #008fde;
+}
+
+.share-hatena::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(img/hatena_icon.svg);
+  background-size: contain;
+  vertical-align: middle;
 }
 
 @media(max-width: 599px) {

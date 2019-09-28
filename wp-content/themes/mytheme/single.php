@@ -106,7 +106,7 @@
             <li>
               <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() . ' - ' . get_bloginfo('name') ); ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=echizenya_yota"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw">
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/twitter_icon.svg" alt="">-->ツイート 
+                ツイート 
               </a>
             </li>
             <li>
