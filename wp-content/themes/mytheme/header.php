@@ -114,13 +114,14 @@
       });
     </script>
     <!-- Google Adsense 自動広告-->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
+    <script data-ad-client="ca-pub-4555449890300852" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <!-- <script>
          (adsbygoogle = window.adsbygoogle || []).push({
               google_ad_client: "ca-pub-4555449890300852",
               enable_page_level_ads: true
          });
-    </script>
+    </script> -->
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
