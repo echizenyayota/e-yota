@@ -269,14 +269,7 @@ if ( !is_admin() ) {
 function ecoteki_resource_hints( $urls, $relation_type) {
   if ( 'dns-prefetch' === $relation_type ) {
     $urls = array_merge( $urls, array(
-      "www.facebook.com",
-      "twitter.com",
-      "t.co",
-      "p.twitter.com",
-      "picture.twitter.com",
-      "platform.twitter.com",
-      "b.hatena.ne.jp",
-      "www.youtube.com"
+      "https://www.google-analytics.com"
     ) );
   }
   return $urls;
