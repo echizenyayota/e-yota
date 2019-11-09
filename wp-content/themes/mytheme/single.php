@@ -136,6 +136,9 @@
           <div class="kiji-tag">
             <?php the_tags('<ul><li>', '</li><li>','</li></ul>'); ?>
           </div>
+          <div class="wco2019">
+            <a href="https://2019.osaka.wordcamp.org/" target="_blank"><img src="https://2019.osaka.wordcamp.org/files/2019/11/wco2019_728x90.png" alt="WordCamp Osaka 2019"/></a>
+          </div>
         <?php wp_reset_postdata(); ?>
 
         <?php

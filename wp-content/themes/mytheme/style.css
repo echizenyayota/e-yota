@@ -1194,10 +1194,10 @@ label.screen-reader-text {
   }
 }
 
-/* さくらインターネット広告 */
-/* .sakura-vps-ad {
-  margin-top: 20px;
-} */
+/* WordCamp Osaka 2019 */
+.wco2019 {
+  padding-top: 10px;
+}
 
 
 /*
@@ -1229,7 +1229,7 @@ label.screen-reader-text {
 
 .ad2 {
   float: left;
-  width 50%;
+  width: 50%;
 }
 
 /* .ad3 {
