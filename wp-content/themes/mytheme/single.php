@@ -139,8 +139,10 @@
           <div class="kiji-tag">
             <?php the_tags('<ul><li>', '</li><li>','</li></ul>'); ?>
           </div>
-          <div class="wco2019">
-            <a href="https://2019.osaka.wordcamp.org/" target="_blank"><img src="https://2019.osaka.wordcamp.org/files/2019/11/wco2019_728x90.png" alt="WordCamp Osaka 2019"/></a>
+          <div class="dmm-en">
+          <?php if( in_category('dmm-en') ) : ?>
+            <ins class="widget-banner"></ins><script class="widget-banner-script" src="https://widget-view.dmm.com/js/banner_placement.js?affiliate_id=echizenya35-001&banner_id=204_728_90"></script>
+            <?php endif; ?>
           </div>
         <?php wp_reset_postdata(); ?>
 

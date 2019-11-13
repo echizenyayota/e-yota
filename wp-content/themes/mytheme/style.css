@@ -1195,7 +1195,7 @@ label.screen-reader-text {
 }
 
 /* WordCamp Osaka 2019 */
-.wco2019 {
+.dmm-en {
   padding-top: 10px;
 }
 
@@ -1255,7 +1255,8 @@ label.screen-reader-text {
     text-align: center;
   }
   .ad3 p {
-    text-align: center;
+    /* text-align: center; */
+    display: none;
   }
 }
 
