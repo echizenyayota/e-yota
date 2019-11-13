@@ -1237,6 +1237,15 @@ label.screen-reader-text {
   width: 50%;
 } */
 
+/* WorCamp バナー */
+#custom_html-2 > .textwidget {
+  text-align: center;
+}
+
+#custom_html-2 > .textwidget img {
+  float: none;
+}
+
 @media (max-width: 768px) {
   .ad2 {
     float:none;
@@ -1246,7 +1255,7 @@ label.screen-reader-text {
     text-align: center;
   }
   .ad3 p {
-    display: none;
+    text-align: center;
   }
 }
 
