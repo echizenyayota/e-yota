@@ -88,6 +88,9 @@
           </div>
           <div class="ad3">
             <p>
+              <?php if( in_category('dmm-en') ) : ?>
+              <ins class="widget-banner"></ins><script class="widget-banner-script" src="https://widget-view.dmm.com/js/banner_placement.js?affiliate_id=echizenya35-001&banner_id=204_300_250"></script>
+              <?php endif; ?>
               <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
                 <!-- e-yota3 -->
                 <!-- <ins class="adsbygoogle"
