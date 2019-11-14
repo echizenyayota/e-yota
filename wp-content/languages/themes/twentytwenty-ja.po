@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-11-12 03:53:27+0000\n"
+"PO-Revision-Date: 2019-11-13 19:11:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Twenty\n"
+
+#. Description of the theme
+msgid "Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors."
+msgstr "2020年のデフォルトテーマは、ブロックエディターの柔軟性を最大限に活用するためにデザインしました。団体や企業も、グループやカラムブロックを使ってダイナミックなランディングページを作ることができます。中央寄せコンテンツカラムや細かいところまで気を配ったタイポグラフィは、通常のブログにもぴったりです。エディタースタイルの完備により、公開前にコンテンツがどのように表示されるかよく分かります。カスタマイザーで背景色やアクセントカラーを変更して、自分らしさを加えることもできます。選択した色に基づいてサイト上のすべての要素の色が自動的に計算され、読者にアクセシブルで高いコントラストの色合いを確実にお届けします。"
 
 #. Theme Name of the theme
 msgid "Twenty Twenty"
@@ -19,6 +23,10 @@ msgstr "Twenty Twenty"
 msgctxt "Theme starter content"
 msgid "The New UMoMA Opens its Doors"
 msgstr "現代美術館が新装オープン"
+
+#: template-parts/entry-author-bio.php:29
+msgid "View Archive <span aria-hidden=\"true\">&rarr;</span>"
+msgstr "アーカイブを表示 <span aria-hidden=\"true\">&rarr;</span>"
 
 #: classes/class-twentytwenty-customize.php:126
 msgid "Custom"
