@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.3.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-11-11 02:50:05+0000\n"
+"PO-Revision-Date: 2019-11-21 05:05:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -377,7 +377,7 @@ msgstr "カラムの配置を変更"
 
 #: wp-includes/js/dist/block-library.js:18454
 msgid "Create Table"
-msgstr "テーブルを作成"
+msgstr "表を作成"
 
 #: wp-includes/js/dist/block-library.js:18431
 msgid "Insert a table for sharing data."
@@ -2115,11 +2115,11 @@ msgstr "固定幅のテーブルセル"
 
 #: wp-includes/js/dist/block-library.js:18475
 msgid "Table Settings"
-msgstr "テーブル設定"
+msgstr "表の設定"
 
 #: wp-includes/js/dist/block-library.js:18464
 msgid "Edit table"
-msgstr "テーブルの編集"
+msgstr "表の編集"
 
 #: wp-includes/js/dist/block-library.js:18445
 msgid "Row Count"
@@ -12177,7 +12177,7 @@ msgstr "指定された文字列が見つかりませんでした。"
 #: wp-includes/js/dist/block-library.js:18426
 #: wp-includes/js/dist/block-library.js:18780
 msgid "Table"
-msgstr "テーブル"
+msgstr "表"
 
 #: wp-includes/general-template.php:4392
 msgctxt "admin color scheme"
@@ -14430,7 +14430,7 @@ msgstr "おめでとうございます ! 新しいサイト、%s の準備がほ
 #. translators: %s: Network title.
 #: wp-signup.php:342
 msgid "Get <em>another</em> %s site in seconds"
-msgstr "新しい %s ブログを今すぐ作成"
+msgstr "%s で追加サイトを今すぐ作成"
 
 #: wp-signup.php:129
 msgid "sitename"
