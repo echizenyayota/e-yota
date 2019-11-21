@@ -270,7 +270,8 @@ if ( !is_admin() ) {
 function ecoteki_resource_hints( $urls, $relation_type) {
   if ( 'dns-prefetch' === $relation_type ) {
     $urls = array_merge( $urls, array(
-      "https://www.google-analytics.com"
+      // https://webmasters.stackexchange.com/questions/119874/should-i-dns-prefetch-all-google-ads-domains
+      // "https://www.google-analytics.com"
     ) );
   }
   return $urls;
