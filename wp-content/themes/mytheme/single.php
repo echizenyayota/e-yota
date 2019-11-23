@@ -156,27 +156,27 @@
           ));
           if ($myposts) : ?>
 
-          <aside class="mymenu mymenu-thumb">
+          <!-- <aside class="mymenu mymenu-thumb">
             <h2>のんさん関連記事</h2>
             <ul>
-              <?php foreach($myposts as $post): setup_postdata($post); ?>
+              <?php // foreach($myposts as $post): setup_postdata($post); ?>
                 <li>
-                  <a href="<?php the_permalink(); ?>">
-                  <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
+                  <a href="<?php // the_permalink(); ?>">
+                  <div class="thumb" style="background-image: url(<?php // echo mythumb('thumbnail'); ?>)"></div>
                   <div class="text">
-                    <?php the_title(); ?>
-                    <?php if (has_category()) : ?>
-                      <?php $postcat = get_the_category_descendants(); ?>
+                    <?php // the_title(); ?>
+                    <?php // if (has_category()) : ?>
+                      <?php //$postcat = get_the_category_descendants(); ?>
                       <span>
-                        <time datetime="<?php the_time('c'); ?>"><?php echo get_the_date(); ?></time>
+                        <time datetime="<?php // the_time('c'); ?>"><?php // echo get_the_date(); ?></time>
                       </span>
-                    <?php endif; ?>
+                    <?php // endif; ?>
                   </div>
                   </a>
                 </li>
-              <?php endforeach; ?>
+              <?php // endforeach; ?>
             </ul>
-          </aside>
+          </aside> -->
           <?php wp_reset_postdata(); endif; ?>
 
       </article>
