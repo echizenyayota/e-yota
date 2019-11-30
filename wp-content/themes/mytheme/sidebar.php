@@ -32,7 +32,7 @@
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
-    `posts_per_page` =>'6',
+    'posts_per_page' =>'3',
     'meta_key' => 'postviews',
     'orderby' => 'meta_value_num',
   ));
