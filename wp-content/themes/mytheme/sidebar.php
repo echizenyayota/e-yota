@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'tomioka_highschool_danceclub';
+  $the_slug = 'gegege_no_nyobo';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
@@ -87,9 +87,9 @@
   </ul>
 </aside>
 
-<!-- 登美丘高校ダンス部人気の記事 -->
+<!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>登美丘高校ダンス部人気記事</h2>
+  <h2>ゲゲゲの女房人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
