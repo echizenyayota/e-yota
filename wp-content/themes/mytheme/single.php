@@ -139,11 +139,6 @@
           <div class="kiji-tag">
             <?php the_tags('<ul><li>', '</li><li>','</li></ul>'); ?>
           </div>
-          <div class="dmm-en">
-          <?php if( in_category('dmm-en') ) : ?>
-            <ins class="widget-banner"></ins><script class="widget-banner-script" src="https://widget-view.dmm.com/js/banner_placement.js?affiliate_id=echizenya35-001&banner_id=204_728_90"></script>
-            <?php endif; ?>
-          </div>
         <?php wp_reset_postdata(); ?>
 
         <?php
