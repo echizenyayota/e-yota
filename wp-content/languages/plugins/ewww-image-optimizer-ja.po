@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - EWWW Image Optimizer - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-12-10 15:11:22+0000\n"
+"PO-Revision-Date: 2019-12-30 21:14:04+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -57,6 +57,10 @@ msgstr "プレースホルダーとして Easy IO を使った低品質のバー
 msgid "When used with Easy IO and/or JS WebP Rewriting, the plugin will load the best available image size and format for each device."
 msgstr "Easy IO や JS WebP Rewriting を使用すると、プラグインは各デバイスに最適な画像サイズとフォーマットをロードします。"
 
+#: common.php:8927
+msgid "Improves actual and perceived loading time as images will be loaded only as they enter (or are about to enter) the viewport."
+msgstr "画像がビューポートに入る (または入ろうとしている) 時のみ読み込まれるため、読み込み速度を改善します。"
+
 #: common.php:8897
 msgid "Learn more about Easy IO"
 msgstr "Easy IO についてさらに詳しく"
@@ -65,6 +69,10 @@ msgstr "Easy IO についてさらに詳しく"
 msgid "Easy IO"
 msgstr "Easy IO"
 
+#: common.php:8884
+msgid "Then, let us know so we can find a fix for the problem."
+msgstr "次に、問題の解決策を見つけられるように、私たちにお知らせください。"
+
 #: common.php:8883
 msgid "Having problems? Try disabling Lazy Load and Include All Resources. Finally, disable Easy IO if problems remain."
 msgstr "お困りですか? 遅延読み込みを無効にして、すべてのリソースを含めるようにしてください。問題が残っている場合は、最終手段として Easy IO を無効にしてください。"
@@ -72,6 +80,10 @@ msgstr "お困りですか? 遅延読み込みを無効にして、すべての�
 #: common.php:8759 common.php:8882
 msgid "Easy Mode"
 msgstr "イージーモード"
+
+#: common.php:1047
+msgid "Suggested Easy IO Text:"
+msgstr "Easy IO 推奨テキスト:"
 
 #: unique.php:2742
 msgid "Image could not be converted to WebP."
@@ -101,6 +113,10 @@ msgstr "ファイルが見つかりませんでした。"
 msgid "Path traversal in filename not allowed."
 msgstr "ファイル名のパストラバーサルは許可されていません。"
 
+#: unique.php:186
+msgid "The free mode of EWWW Image Optimizer is only supported on Linux, FreeBSD, Mac OSX, Solaris, and Windows."
+msgstr "EWWW Image Optimizer の無料版は、Linux、FreeBSD、Mac OSX、Solaris、およびWindows でのみサポートされています。"
+
 #: bulk.php:236
 msgid "Skip compression and only attempt WebP conversion."
 msgstr "圧縮をスキップし、WebP 変換のみを試みます。"
@@ -115,6 +131,10 @@ msgstr "WebP のみ"
 msgid "For example, with a CDN URL of %1$s and a local URL of %2$s you would enter %3$s."
 msgstr "例えば、CDN の URL が %1$s でローカル URL が %2$s の場合は、%3$s を入力します。"
 
+#: common.php:9207
+msgid "Optionally include a folder with the URL if your CDN path is different from your local path."
+msgstr "CDN パスがローカルパスと異なる場合は、必要に応じて URL にフォルダーを含めてください。"
+
 #: common.php:9206
 msgid "Enter additional URL patterns, like a CDN URL, that should be permitted for JS WebP Rewriting. One URL per line, must include the domain name (cdn.example.com)."
 msgstr "「JS WebP Rewriting」に許可する必要のある追加の URL パターン (CDN URL など) を入力します。 1行につき1つの URL を入力し、URL にはドメイン名 (cdn.example.com) を含める必要があります。"
@@ -126,6 +146,10 @@ msgstr "未最適化"
 #: common.php:1569
 msgid "You may generate WebP images via the Bulk Optimizer."
 msgstr "Bulk Optimizer を介して WebP 画像を生成できます。"
+
+#: common.php:1566
+msgid "It looks like you already started optimizing your images, you will need to generate WebP images via the Bulk Optimizer."
+msgstr "画像の最適化をすでに開始しているようです。Bulk Optimizer を使用して WebP 画像を生成する必要があります。"
 
 #: aux-optimize.php:225
 msgid "All records have been removed from the optimization history."
@@ -143,13 +167,25 @@ msgstr "最適化の履歴を表示する。"
 msgid "Warning: this cannot be undone. Re-optimizing images will use additional API credits."
 msgstr "警告: これは元に戻せません。画像を再度最適化する際には、追加の API クレジットが使用されます。"
 
+#: bulk.php:80
+msgid "Warning: this cannot be undone and will cause a bulk optimize to re-optimize all images."
+msgstr "警告: これは元に戻すことはできず、一括最適化によりすべての画像が再最適化されます。"
+
 #: bulk.php:59
 msgid "Erase Optimization History"
 msgstr "最適化履歴を消去"
 
+#: bulk.php:56
+msgid "The optimization history prevents the plugin from re-optimizing images, but you may erase the history to reduce database size or to force the plugin to re-optimize all images."
+msgstr "最適化の履歴があると、プラグインで画像を再度最適化することができませんが、履歴を消去することで、データベースサイズを縮小したり、すべての画像をプラグインで再度最適化させることができます。"
+
 #: bulk.php:25
 msgid "Nothing has been optimized yet!"
 msgstr "まだ最適化された項目はありません。"
+
+#: common.php:9035
+msgid "Optimize the original version of images that have been scaled down by WordPress."
+msgstr "WordPress によって縮小された画像のオリジナルバージョンを最適化します。"
 
 #: common.php:9031
 msgid "Include Originals"
@@ -269,6 +305,18 @@ msgstr "オフロードされたメディア"
 msgid "EWWW Image Optimizer has detected a WooCommerce thumbnail regeneration. To optimize new thumbnails, you may run the Bulk Optimizer from the Media menu. This notice may be dismissed after the regeneration is complete."
 msgstr "EWWW Image OptimizerがWooCommerceのサムネイルの再生成を検出しました。新しいサムネイルを最適化するには、[メディア]メニューから[Bulk Optimizer]を実行します。この通知は、再生完了後に却下される可能性があります。"
 
+#: common.php:1630
+msgid "ShortPixel image optimization has been disabled to prevent conflicts with Easy IO (EWWW Image Optimizer)."
+msgstr "ShortPixel image optimization は、Easy IO (EWWW Image Optimizer) との競合を防ぐために無効化されています。"
+
+#: unique.php:555
+msgid "Sites that use Easy IO already have built-in image optimization and may dismiss this notice to disable local compression."
+msgstr "Easy IO を使用するサイトには既に画像最適化が組み込まれているため、この通知を無視してローカル圧縮を無効にすることができます。"
+
+#: bulk.php:899
+msgid "Images compressed by TinyJPG and TinyPNG have been skipped, refresh and use the Force Re-optimize option to override."
+msgstr "TinyJPG および TinyPNG で圧縮された画像はスキップされました。上書きするには、再読み込みを行い、「再最適化オプション」を使用してください。"
+
 #: common.php:9196
 msgid "JS WebP Rewriting"
 msgstr "JS WebP Rewriting"
@@ -284,6 +332,10 @@ msgstr "API キーまたは Easy IO サブスクリプションを使用する�
 #: common.php:8863
 msgid "These levels use the compression API."
 msgstr "これらのレベルは圧縮APIを使用します。"
+
+#: common.php:8862
+msgid "Purchase an API key to unlock these optimization levels. Achieve up to 80% compression and see the quality for yourself."
+msgstr "最適化レベルのロックを解除するには、API キーを購入してください。最大80% まで圧縮することができますが、品質はご自身で確認してください。"
 
 #: common.php:8820
 msgid "Color profiles are preserved when using the API or Easy IO."
@@ -555,6 +607,10 @@ msgstr "ユーザーが投稿した画像は、米国内の画像圧縮サーバ
 #: common.php:1046
 msgid "Suggested API Text:"
 msgstr "提案された API テキスト :"
+
+#: common.php:1045
+msgid "If you accept user-submitted images and use the API or Easy IO, those images may be transmitted to third-party servers in foreign countries. If Backup Originals is enabled, images are stored for 30 days. Otherwise, no images are stored on the API for longer than 30 minutes."
+msgstr "ユーザーが送信した画像に API または Easy IO を使用すると、それらの画像は海外のサードパーティサーバーに送信されます。オリジナルのバックアップが有効になっている場合、画像は30日間保存されます。それ以外の場合、API には長くても30分間しか画像が保存されません。"
 
 #: common.php:1043
 msgid "By default, the EWWW Image Optimizer does not store any personal data nor share it with anyone."
