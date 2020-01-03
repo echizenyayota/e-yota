@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.3.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-12-06 03:08:15+0000\n"
+"PO-Revision-Date: 2020-01-02 04:22:13+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -7919,7 +7919,7 @@ msgstr "オブジェクト作成者のアバター URL"
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1358
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:1323
 msgid "Avatar URL with image size of %d pixels."
-msgstr "画像サイズが%dピクセルのアバター URL"
+msgstr "画像サイズが%dピクセルのアバター URL。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1343
 msgid "Type of Comment for the object."
@@ -8009,7 +8009,7 @@ msgstr "そのコメントを削除できません。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:852
 msgid "The comment has already been trashed."
-msgstr "コメントはすでにゴミ箱にあります。"
+msgstr "コメントはすでにゴミ箱に移動済みです。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:745
 msgid "Updating comment failed."
