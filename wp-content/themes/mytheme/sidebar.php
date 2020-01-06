@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'oshin';
+  $the_slug = 'gegege_no_nyobo';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
