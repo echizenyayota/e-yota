@@ -855,8 +855,9 @@ blockquote:after {
   /*position: absolute;*/
   padding: 5px 10px;
   /*width: 100%;*/
-  background-color: rgba(0,0,0,0.5);
-  color: #ffffff;
+  /* background-color: rgba(0,0,0,0.5); */
+  color: #2288BB;
+  font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
