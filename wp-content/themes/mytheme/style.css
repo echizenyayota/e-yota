@@ -478,8 +478,6 @@ footer .widget_categories ul {
     font-size: 14px;
   }
   .kiji h2 {
-    /* padding-left: 21px; */
-    /* スマホのときに飾り罫線ができているかどうか確認 */
     padding-left: 16px;
     padding-bottom: 1px;
     border-bottom: 1px solid #000080;
@@ -740,12 +738,8 @@ blockquote:after {
     margin-bottom: 20px;
   }
   .share span {
-    /* display: inline-block; */
     display: none;
     text-indent: -9999px;
-    /*overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;*/
   }
   .share li a {
     padding: 8px 10px;
@@ -852,16 +846,12 @@ blockquote:after {
 }
 
 .mymenu-large li .text {
-  /*position: absolute;*/
   padding: 5px 10px;
-  /*width: 100%;*/
-  /* background-color: rgba(0,0,0,0.5); */
   color: #2288BB;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /*word-wrap: break-word;*/
 }
 
 @media(min-width: 400px) and (max-width: 767px) {
@@ -870,20 +860,6 @@ blockquote:after {
     display: block;
     clear: both;
   }
-  .mymenu-large li {
-    /* float:left;
-    width:50%; */
-    /*-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;*/
-  }
-  /*.mymenu-large li:nth-child(odd) {
-    clear:both;
-    padding-right: 7px;
-  }
-  .mymenu-large li:nth-child(even) {
-    clear:both;
-    padding-left: 7px;
-  }*/
 }
 
 
@@ -907,10 +883,6 @@ blockquote:after {
   display: block;
   font-size: 14px;
   text-decoration: none;
-}
-
-.mymenu li a:hover {
-  /* background-color: #eeeeee; */
 }
 
 .mymenu .new_article {
@@ -947,8 +919,6 @@ blockquote:after {
 .mymenu-thumb li a.img_link:after {
   content: none;
 }
-
-
 
 .mymenu-thumb li .thumb {
   float: left;
@@ -993,11 +963,6 @@ blockquote:after {
   border: none;
   color: #000000;
 }
-
-/* スタイルシートが反映されない
-.mymenu-archivess {
-  font-size: 10px;
-}*/
 
 @media (max-width: 599px) {
   .mymenu-related {
@@ -1073,7 +1038,6 @@ blockquote:after {
 }
 
 .textwidget a {
-  /*text-decoration: none;*/
   color: #000000;
 }
 
@@ -1089,36 +1053,7 @@ blockquote:after {
   padding: 3px 5px;
 }
 
-/* タグクラウド  間違い */
-/*.tag-cloud-link li a {
-  display: block;
-  margin-right: 5px;
-  margin-bottom: 2px;
-  padding: 3px 5px;
-  border-radius:2px;
-  background-color: #75dbe7;
-  color: #ffffff;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.tag-cloud-link li a:hover {
-  background-color: #94ecf6;
-}
-
-.tag-cloud-link ul:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.tag-cloud-link li {
-  float: left;
-  width: auto;
-}*/
-
-
-/* タグクラウド  正解 */
+/* タグクラウド */
 a.tag-cloud-link {
   float: left;
   width: auto;
@@ -1141,16 +1076,6 @@ a.tag-cloud-link:hover {
   overflow:hidden;
 }
 
-/*月別アーカイブリスト*/
-/*.mymenu-archives li {
-  list-style:none;
-  margin: 0;
-}
-
-.mymenu-archives a {
-  margin: 0;
-}*/
-
 /* アーカイブ */
 label.screen-reader-text {
   display: none;
@@ -1168,13 +1093,11 @@ label.screen-reader-text {
 
 
 /* 広告 */
-
 .myad {
   text-align: center;
 }
 
 /* Google Adsence */
-
 .google-mobile {
   padding: 0;
 }
@@ -1307,27 +1230,6 @@ img, .wp-caption {
 iframe {
   max-width: 100%;
 }
-
-/* YouTubeのビデオ(キャッシュをクリアした場合いらない) */
-/*
-.ytvideo	{
-  position: relative;
-	width: 100%;
-	height: 0;
-	padding-top: 56.25%;
-	overflow: hidden;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.ytvideo iframe	{
-  position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-*/
 
 /*　------------------------　カテゴリー　/ タグ　------------------------　*/
 
