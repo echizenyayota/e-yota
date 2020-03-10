@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'ohyasan_to_boku';
+  $the_slug = 'hanekonma';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
@@ -89,7 +89,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>大家さんと僕の人気記事</h2>
+  <h2>「おしん」の次は「はね駒」</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
