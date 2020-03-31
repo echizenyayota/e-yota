@@ -265,18 +265,8 @@ if ( !is_admin() ) {
   add_filter( 'script_loader_tag', 'add_defer_to_scripts', 10, 2 );
 }
 
-// function wp_targeted_link_rel( $text ) {
-//   // Don't run (more expensive) regex if no links with targets.
-//   if ( stripos( $text, 'target' ) !== false && stripos( $text, '<a ' ) !== false ) {
-//       if ( ! is_serialized( $text ) ) {
-//           $text = preg_replace_callback( '|<a\s([^>]*target\s*=[^>]*)>|i', 'wp_targeted_link_rel_callback', $text );
-//       }
-//   }
-
-//   return $text;
-// }
-
-// add_filter( 'the_content', 'wp_targeted_link_rel' );
+// wp_targeted_link_rel関数の活用で target属性がついているaタグにrel="noopener noreferrer"の追加
+add_filter( 'the_content', 'wp_targeted_link_rel' );
 
 
 
