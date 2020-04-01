@@ -13,7 +13,7 @@
  * * データベーステーブル接頭辞
  * * ABSPATH
  *
- * @link http://wpdocs.osdn.jp/wp-config.php_%E3%81%AE%E7%B7%A8%E9%9B%86
+ * @link https://ja.wordpress.org/support/article/editing-wp-config-php/
  *
  * @package WordPress
  */
@@ -77,9 +77,9 @@ $table_prefix = 'wp_';
  * この値を true にすると、開発中に注意 (notice) を表示します。
  * テーマおよびプラグインの開発者には、その開発環境においてこの WP_DEBUG を使用することを強く推奨します。
  *
- * その他のデバッグに利用できる定数については Codex をご覧ください。
+ * その他のデバッグに利用できる定数についてはドキュメンテーションをご覧ください。
  *
- * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
+ * @link https://ja.wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
 
@@ -87,8 +87,8 @@ define( 'WP_DEBUG', false );
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+	define( 'ABSPATH', __DIR__ . '/' );
 }
 
 /** Sets up WordPress vars and included files. */
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';
