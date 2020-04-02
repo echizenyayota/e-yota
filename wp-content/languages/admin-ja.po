@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-30 16:32:56+0000\n"
+"PO-Revision-Date: 2020-04-01 10:53:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -182,15 +182,15 @@ msgstr "最高の画像で、投稿やページをさらに活かす方法。"
 
 #: wp-admin/about.php:63
 msgid "Every major release adds more to the block editor."
-msgstr "メジャーリリースごとに、ブロックエディターをさらに追加していきます。"
+msgstr "メジャーリリースのたびにブロックエディターにさらに機能を追加。"
 
 #: wp-admin/about.php:46
 msgid "More ways to make your pages come alive. With easier ways to get it all done and looking better than ever&mdash;and boosts in speed you can feel."
-msgstr "すべてをもっと簡単に行うやり方とこれまでにない美しい見栄えで、ページを生き生きとさせるためのさらに多くの方法を提供。体感できるスピードの向上もです。"
+msgstr "ページを生き生きと見せる方法が増えました。より簡単な方法で、いまだかつてなく美しく、感じるスピードも向上します。"
 
 #: wp-admin/about.php:44
 msgid "Say hello to more and better."
-msgstr "さらに改善されたバージョンへようこそ。"
+msgstr "Hello, さらなる機能と向上"
 
 #. translators: %s: The options page name.
 #: wp-admin/options.php:220
@@ -11567,7 +11567,7 @@ msgstr "コメントの内容、名前、URL、メールアドレス、IP アド
 
 #: wp-admin/options-discussion.php:207 wp-admin/options-discussion.php:208
 msgid "Comment Blocklist"
-msgstr "コメントブラックリスト"
+msgstr "コメントブロックリスト"
 
 #: wp-admin/options-discussion.php:200
 msgid "When a comment contains any of these words in its content, name, URL, email, or IP address, it will be held in the <a href=\"edit-comments.php?comment_status=moderated\">moderation queue</a>. One word or IP address per line. It will match inside words, so &#8220;press&#8221; will match &#8220;WordPress&#8221;."
