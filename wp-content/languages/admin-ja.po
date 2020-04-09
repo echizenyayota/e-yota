@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-01 10:53:00+0000\n"
+"PO-Revision-Date: 2020-04-09 05:54:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5649,13 +5649,13 @@ msgstr "コメントはまだありません"
 #: wp-admin/includes/class-wp-list-table.php:681
 msgid "%s pending comment"
 msgid_plural "%s pending comments"
-msgstr[0] "%s 件の承認待ちのコメント"
+msgstr[0] "%s件の承認待ちコメント"
 
 #. translators: %s: Number of comments.
 #: wp-admin/includes/class-wp-list-table.php:675
 msgid "%s approved comment"
 msgid_plural "%s approved comments"
-msgstr[0] "%s 件の承認済みのコメント"
+msgstr[0] "%s件の承認済みコメント"
 
 #. translators: %s: Number of comments.
 #: wp-admin/includes/class-wp-list-table.php:669
@@ -5694,7 +5694,7 @@ msgstr[0] "お使いのテーマは%s個のメニューに対応しています�
 #: wp-admin/includes/class-wp-users-list-table.php:564
 msgid "%s post by this author"
 msgid_plural "%s posts by this author"
-msgstr[0] "この投稿者による %s 件の投稿"
+msgstr[0] "この投稿者による%s件の投稿"
 
 #. translators: %s: Theme name.
 #: wp-admin/includes/class-theme-installer-skin.php:96
