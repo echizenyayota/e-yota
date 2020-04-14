@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-09 05:54:10+0000\n"
+"PO-Revision-Date: 2020-04-13 08:30:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -821,7 +821,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/posts-categories-screen/
 #. translators: %s: Documentation URL.
 #: wp-admin/options-reading.php:169
 msgid "Your theme determines how content is displayed in browsers. <a href=\"%s\">Learn more about feeds</a>."
-msgstr "テーマによって、ブラウザでのコンテンツの表示方法が決まります。<a href=\"%s\">フィードについてさらに詳しく</a>。"
+msgstr "テーマによって、ブラウザーでのコンテンツの表示方法が決まります。<a href=\"%s\">フィードについてさらに詳しく</a>。"
 
 #: wp-admin/options-reading.php:159 wp-admin/options-reading.php:160
 msgid "For each post in a feed, include"

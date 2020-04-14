@@ -1734,7 +1734,7 @@ msgstr "追加:"
 msgid "Whether posts of this status may have floating published dates."
 msgstr "このステータスの投稿に浮動公開日を設定可能かどうか。"
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:392
+#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:415
 msgid "Sorry, you are not allowed to delete revisions of this post."
 msgstr "この投稿のリビジョンを削除する権限がありません。"
 
