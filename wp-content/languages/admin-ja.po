@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-13 08:30:11+0000\n"
+"PO-Revision-Date: 2020-04-15 06:16:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13566,7 +13566,7 @@ msgstr "スパムをすべて削除"
 #: wp-admin/includes/class-wp-comments-list-table.php:412
 #: wp-admin/includes/class-wp-posts-list-table.php:561
 msgid "Filter"
-msgstr "絞り込み検索"
+msgstr "絞り込み"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:396
 #: wp-admin/includes/class-wp-posts-list-table.php:1764

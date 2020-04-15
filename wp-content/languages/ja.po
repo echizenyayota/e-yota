@@ -11753,7 +11753,7 @@ msgstr "一括選択"
 
 #. translators: %s: Taxonomy label, %l: List of terms formatted as per
 #. $term_template.
-#: wp-includes/taxonomy.php:4341
+#: wp-includes/taxonomy.php:4343
 msgid "%s: %l."
 msgstr "%s: %l。"
 
@@ -15530,7 +15530,7 @@ msgstr "スタイルシートが見つかりません。"
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "親テーマが見つかりません。「%s」の親テーマをインストールしてください。"
 
-#: wp-includes/taxonomy.php:4414
+#: wp-includes/taxonomy.php:4416
 msgid "Invalid object ID."
 msgstr "無効なオブジェクト ID。"
 
