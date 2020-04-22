@@ -249,7 +249,7 @@ if ( ! is_admin() ) {
 
 // PWAアイコン表示用 'short_name'の記述を追加
 add_filter( 'web_app_manifest', function( $manifest ) {
-	$manifest['short_name'] = 'エコテキブログ';
+	$manifest['short_name'] = 'e_yota';
 	return $manifest;
 } );
 
