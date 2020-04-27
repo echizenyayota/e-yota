@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-15 06:16:12+0000\n"
+"PO-Revision-Date: 2020-04-26 02:11:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: WordPress - 5.4.x - Development - Administration\n"
 
@@ -5811,7 +5811,7 @@ msgstr "プラグインの更新に成功しました。"
 msgctxt "Active plugin installations"
 msgid "%s+ Million"
 msgid_plural "%s+ Million"
-msgstr[0] "%s万以上"
+msgstr[0] "%s百万以上"
 
 #. translators: 1: Error message, 2: Line number.
 #: wp-admin/link-parse-opml.php:89
@@ -6262,11 +6262,11 @@ msgstr "WordPress の有名な5分間インストールプロセスへようこ�
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:762
 msgid "<strong>Compatible</strong> with your version of WordPress"
-msgstr "使用中の WordPress バージョンと<strong>互換性あり</strong>"
+msgstr "使用中の WP バージョンと<strong>互換性あり</strong>"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:760
 msgid "<strong>Incompatible</strong> with your version of WordPress"
-msgstr "お使いの WordPress のバージョンと<strong>互換性がありません</strong>"
+msgstr "使用中の WP バージョンと<strong>非互換</strong>"
 
 #. translators: %s: Number of stars.
 #: wp-admin/includes/plugin-install.php:757
