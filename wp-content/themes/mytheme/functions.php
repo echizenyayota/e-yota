@@ -269,6 +269,22 @@ if ( !is_admin() ) {
 add_filter( 'the_content', 'wp_targeted_link_rel' );
 
 
+//  記事本文中target属性をもつaタグにスクリーンリーダーを読み込む
+function screen_reader( $text ) {
+  if ( stripos( $text, 'target' ) !== false && stripos( $text, '<a ' ) !== false ) {
+      // spanタグの追加
+      $after = '<span class="screen-reader-text"></span><span aria-hidden="true" class="dashicons dashicons-external"></span>';
+      $text = preg_replace( '|(<a\s[^>]*target\s*=[^>]*>.*)(</a>)|i', '${1}' . $after . '${2}', $text );
+  }
+  return $text;
+}
+
+if ( !is_admin() ) {
+  add_filter( 'the_content', 'screen_reader', 10, 2 );
+}
+
+
+
 
 
 
