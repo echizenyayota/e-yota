@@ -272,9 +272,28 @@ add_filter( 'the_content', 'wp_targeted_link_rel' );
 //  記事本文中target属性をもつaタグにスクリーンリーダーを読み込む
 function screen_reader( $text ) {
   if ( stripos( $text, 'target' ) !== false && stripos( $text, '<a ' ) !== false ) {
-      // spanタグの追加
-      $after = '<span class="screen-reader-text"></span><span aria-hidden="true" class="dashicons dashicons-external"></span>';
-      $text = preg_replace( '|(<a\s[^>]*target\s*=[^>]*>.*)(</a>)|i', '${1}' . $after . '${2}', $text );
+      // spanタグの追加(コンテンツに script/style タグを含まないことを前提にした場合)
+      // $after = '<span class="screen-reader-text">(新しいタブを開く)</span><span aria-hidden="true" class="dashicons dashicons-external"></span>';
+      // $text = preg_replace( '|(<a\s[^>]*target\s*=[^>]*>.*)(</a>)|i', '${1}' . $after . '${2}', $text );
+      // spanタグの追加(コンテンツに script/styleタグを含まないことを前提する場合)
+      $after = '<span class="screen-reader-text">(新しいタブで開く)</span><span aria-hidden="true" class="dashicons dashicons-external"></span>';
+
+      $script_and_style_regex = '/<(script|style).*?<\/\\1>/si';
+
+      preg_match_all( $script_and_style_regex, $text, $matches );
+      $extra_parts = $matches[0];
+      $html_parts  = preg_split( $script_and_style_regex, $text );
+      foreach ( $html_parts as &$part ) {
+        $part = preg_replace( '|(<a\s[^>]*target\s*=[^>]*>.*)(</a>)|i', '${1}' . $after . '${2}', $part );
+      }
+
+    $text = '';
+    for ( $i = 0; $i < count( $html_parts ); $i++ ) {
+      $text .= $html_parts[ $i ];
+      if ( isset( $extra_parts[ $i ] ) ) {
+        $text .= $extra_parts[ $i ];
+      }
+    }
   }
   return $text;
 }
