@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-16 08:35:12+0000\n"
+"PO-Revision-Date: 2020-06-13 08:57:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Seventeen\n"
 
@@ -62,6 +62,11 @@ msgstr "背景動画を一時停止"
 #: inc/customizer.php:109
 msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
 msgstr "2カラムレイアウトが割り当てられると、ページタイトルが一方のカラムに、コンテンツが他方のカラムにそれぞれ配置されます。"
+
+#. translators: %s: The section ID.
+#: inc/template-tags.php:158
+msgid "Front Page Section %s Placeholder"
+msgstr "フロントページセクション%sのプレースホルダー"
 
 #: single.php:34
 msgid "Next Post"
@@ -203,6 +208,16 @@ msgstr "検索"
 msgid "Previous Post"
 msgstr "過去の投稿"
 
+#. translators: %s: Post editor URL.
+#: template-parts/post/content-none.php:27
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%s\">ここから始めましょう</a>。"
+
+#. translators: Search query.
+#: search.php:22
+msgid "Search Results for: %s"
+msgstr "「%s」の検索結果"
+
 #: template-parts/post/content.php:64 template-parts/post/content-audio.php:91
 #: template-parts/post/content-image.php:68
 #: template-parts/post/content-video.php:90
@@ -268,6 +283,19 @@ msgstr "Proudly powered by %s"
 msgid "Footer Social Links Menu"
 msgstr "フッターソーシャルリンクメニュー"
 
+#. translators: 1: Number of comments, 2: Post title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "&ldquo;%2$s&rdquo; への%1$s件の返信"
+
+#. translators: %s: Post title.
+#: comments.php:37
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "&ldquo;%s&rdquo; への1件の返信"
+
 #. translators: %s: The current WordPress version.
 #: inc/back-compat.php:40 inc/back-compat.php:54 inc/back-compat.php:73
 msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
@@ -287,6 +315,11 @@ msgstr "検索:"
 #: template-parts/page/content-front-page-panels.php:45 functions.php:392
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" の</span>続きを読む"
+
+#. translators: %s: Post title.
+#: inc/template-tags.php:117
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "<span class=\"screen-reader-text\">\"%s\" を</span>編集"
 
 #. Author of the theme
 msgid "the WordPress team"
