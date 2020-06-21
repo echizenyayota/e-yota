@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Multibyte Patch
 Description: Multibyte functionality enhancement for the WordPress Japanese package.
-Version: 2.8.4
+Version: 2.8.5
 Plugin URI: https://eastcoder.com/code/wp-multibyte-patch/
 Author: Seisuke Kuraishi
 Author URI: https://tinybit.co.jp/
@@ -15,7 +15,7 @@ Domain Path: /languages
  * Multibyte functionality enhancement for the WordPress Japanese package.
  *
  * @package WP_Multibyte_Patch
- * @version 2.8.4
+ * @version 2.8.5
  * @author Seisuke Kuraishi <210pura@gmail.com>
  * @copyright Copyright (c) 2020 Seisuke Kuraishi, Tinybit Inc.
  * @license https://opensource.org/licenses/gpl-2.0.php GPLv2
@@ -244,7 +244,12 @@ class multibyte_patch {
 
 	public function get_comment_excerpt( $excerpt = '', $comment_ID = 0, $comment = '' ) {
 		$blog_encoding = $this->blog_encoding;
-		$excerpt = strip_tags( str_replace( array( "\n", "\r" ), ' ', $comment->comment_content ) );
+
+		if ( ! post_password_required( $comment->comment_post_ID ) ) {
+			$excerpt = strip_tags( str_replace( array( "\n", "\r" ), ' ', $comment->comment_content ) );
+		} else {
+			$excerpt = __( 'Password protected' );
+		}
 
 		if ( $this->mb_strlen( $excerpt, $blog_encoding ) > $this->conf['comment_excerpt_mblength'] )
 			$excerpt = mb_substr( $excerpt, 0, $this->conf['comment_excerpt_mblength'], $blog_encoding ) . '&hellip;';

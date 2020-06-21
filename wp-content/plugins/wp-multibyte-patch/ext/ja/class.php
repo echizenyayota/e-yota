@@ -3,7 +3,7 @@
  * WP Multibyte Patch Japanese Locale Extension
  *
  * @package WP_Multibyte_Patch
- * @version 2.8.4
+ * @version 2.8.5
  * @author Seisuke Kuraishi <210pura@gmail.com>
  * @copyright Copyright (c) 2020 Seisuke Kuraishi, Tinybit Inc.
  * @license https://opensource.org/licenses/gpl-2.0.php GPLv2
