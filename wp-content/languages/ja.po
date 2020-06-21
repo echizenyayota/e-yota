@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-10 04:20:42+0000\n"
+"PO-Revision-Date: 2020-06-19 01:20:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11602,7 +11602,7 @@ msgstr "日: %s"
 #. translators: Monthly archive title. %s: Month name and year.
 #: wp-includes/general-template.php:1576
 msgid "Month: %s"
-msgstr "月別: %s"
+msgstr "月: %s"
 
 #: wp-includes/general-template.php:1586
 msgctxt "post format archive title"
