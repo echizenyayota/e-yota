@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Sixteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-15 14:30:06+0000\n"
+"PO-Revision-Date: 2020-06-13 08:31:00+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Sixteen\n"
 
@@ -73,9 +73,9 @@ msgstr "<span class=\"screen-reader-text\">\"%s\" の</span>続きを読む"
 #: template-parts/content.php:53 template-parts/content-search.php:28
 #: template-parts/content-search.php:43 template-parts/content-single.php:47
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "<span class=\"screen-reader-text\">\"%s\"を</span>編集"
+msgstr "<span class=\"screen-reader-text\">\"%s\" を</span>編集"
 
-#: inc/customizer.php:345
+#: inc/customizer.php:347
 msgid "Red"
 msgstr "赤"
 
@@ -98,7 +98,7 @@ msgstr "検索 &hellip;"
 #: searchform.php:13
 msgctxt "label"
 msgid "Search for:"
-msgstr "検索対象:"
+msgstr "検索:"
 
 #: footer.php:30
 msgid "Footer Social Links Menu"
@@ -118,7 +118,7 @@ msgstr "注目"
 
 #: template-parts/content-none.php:33
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "お探しのものが見つからないようです。検索すると良いかもしれません。"
+msgstr "お探しのコンテンツを見つけられませんでした。検索をお試しください。"
 
 #: template-parts/content-none.php:28
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
@@ -144,7 +144,7 @@ msgstr "投稿者:"
 
 #: single.php:42
 msgid "Previous post:"
-msgstr "過去の投稿:"
+msgstr "前の投稿:"
 
 #: single.php:41
 msgid "Previous"
@@ -198,23 +198,23 @@ msgctxt "Used before post author name."
 msgid "Author"
 msgstr "投稿者"
 
-#: functions.php:209 inc/customizer.php:355
+#: functions.php:209 inc/customizer.php:357
 msgid "Yellow"
 msgstr "黄"
 
-#: inc/customizer.php:335
+#: inc/customizer.php:337
 msgid "Gray"
 msgstr "グレー"
 
-#: inc/customizer.php:325
+#: inc/customizer.php:327
 msgid "Dark"
-msgstr "ダーク"
+msgstr "ダークカラー"
 
 #: inc/customizer.php:221
 msgid "Main Text Color"
 msgstr "メインのテキストカラー"
 
-#: inc/customizer.php:315
+#: inc/customizer.php:317
 msgid "Default"
 msgstr "デフォルト"
 
@@ -252,7 +252,7 @@ msgstr "フルサイズ"
 #: image.php:58 template-parts/content-page.php:24
 #: template-parts/content.php:36 template-parts/content-single.php:26
 msgid "Pages:"
-msgstr "ページ:"
+msgstr "固定ページ:"
 
 #: image.php:26
 msgid "Next Image"
@@ -303,7 +303,7 @@ msgstr "on"
 #: functions.php:330
 msgctxt "Montserrat font: on or off"
 msgid "on"
-msgstr "off"
+msgstr "on"
 
 #: functions.php:267
 msgid "Sidebar"
@@ -337,7 +337,7 @@ msgstr[0] "「%2$s」への%1$s件のフィードバック"
 #: template-parts/content.php:40 template-parts/content-single.php:30
 #: search.php:46 archive.php:54 index.php:51
 msgid "Page"
-msgstr "ページ"
+msgstr "固定ページ"
 
 #: search.php:45 archive.php:53 index.php:50
 msgid "Next page"

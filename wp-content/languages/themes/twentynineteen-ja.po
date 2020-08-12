@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Nineteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-01-24 01:00:41+0000\n"
+"PO-Revision-Date: 2020-06-11 05:00:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Nineteen\n"
 
@@ -19,6 +19,18 @@ msgstr "2019年のデフォルトテーマは、ブロックエディターの�
 msgid "Twenty Nineteen"
 msgstr "Twenty Nineteen"
 
+#: classes/class-twentynineteen-walker-comment.php:96
+msgid "Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved."
+msgstr "あなたのコメントは管理者の承認待ちです。これはプレビューで、コメントは承認後に表示されます。"
+
+#: functions.php:153
+msgid "Dark Blue"
+msgstr "ダークブルー"
+
+#: functions.php:148
+msgid "Blue"
+msgstr "青"
+
 #. translators: %s: Parent post link.
 #: single.php:31
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
@@ -29,8 +41,8 @@ msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><br><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">投稿:</span><br><span class=\"post-title\">%title</span>"
 
-#: template-parts/content/content-excerpt.php:18
 #: template-parts/content/content.php:18
+#: template-parts/content/content-excerpt.php:18
 msgctxt "post"
 msgid "Featured"
 msgstr "おすすめ"
@@ -110,7 +122,7 @@ msgstr "小"
 msgid "S"
 msgstr "S"
 
-#: footer.php:37 functions.php:60
+#: functions.php:60 footer.php:37
 msgid "Footer Menu"
 msgstr "フッターメニュー"
 
@@ -127,7 +139,7 @@ msgstr "ページ"
 msgid "Add widgets here to appear in your footer."
 msgstr "フッターに表示するウィジェットを追加します。"
 
-#: template-parts/footer/footer-widgets.php:12 functions.php:190
+#: functions.php:190 template-parts/footer/footer-widgets.php:12
 msgid "Footer"
 msgstr "フッター"
 
@@ -159,14 +171,14 @@ msgid "Top Menu"
 msgstr "トップメニュー"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: template-parts/content/content-single.php:27
 #: template-parts/content/content.php:36
+#: template-parts/content/content-single.php:27
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" の</span>続きを読む"
 
-#: template-parts/content/content-single.php:40
+#: image.php:52 template-parts/content/content-page.php:27
 #: template-parts/content/content.php:49
-#: template-parts/content/content-page.php:27 image.php:52
+#: template-parts/content/content-single.php:40
 msgid "Pages:"
 msgstr "ページ:"
 
@@ -202,6 +214,10 @@ msgstr "次の投稿:"
 #: single.php:38
 msgid "Next Post"
 msgstr "次の投稿"
+
+#: search.php:22
+msgid "Search results for: "
+msgstr "検索結果:"
 
 #: inc/template-tags.php:234
 msgid "Older posts"
@@ -281,8 +297,8 @@ msgid "Category Archives: "
 msgstr "カテゴリーアーカイブ:"
 
 #. translators: %s: Post title. Only visible to screen readers.
-#: template-parts/header/entry-header.php:32
-#: template-parts/content/content-page.php:41 inc/template-tags.php:120
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
 
@@ -290,7 +306,7 @@ msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: template-parts/header/site-branding.php:46 functions.php:61
+#: functions.php:61 template-parts/header/site-branding.php:46
 msgid "Social Links Menu"
 msgstr "﻿ソーシャルリンクメニュー"
 
