@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Multibyte Patch
 Description: Multibyte functionality enhancement for the WordPress Japanese package.
-Version: 2.8.5
+Version: 2.9
 Plugin URI: https://eastcoder.com/code/wp-multibyte-patch/
 Author: Seisuke Kuraishi
 Author URI: https://tinybit.co.jp/
@@ -15,7 +15,7 @@ Domain Path: /languages
  * Multibyte functionality enhancement for the WordPress Japanese package.
  *
  * @package WP_Multibyte_Patch
- * @version 2.8.5
+ * @version 2.9
  * @author Seisuke Kuraishi <210pura@gmail.com>
  * @copyright Copyright (c) 2020 Seisuke Kuraishi, Tinybit Inc.
  * @license https://opensource.org/licenses/gpl-2.0.php GPLv2
@@ -485,8 +485,14 @@ class multibyte_patch {
 		if ( method_exists( $this, 'process_search_terms' ) && false !== $this->conf['patch_process_search_terms'] )
 			add_action( 'sanitize_comment_cookies', array( $this, 'process_search_terms' ) );
 
-		if ( method_exists( $this, 'wp_mail' ) && false !== $this->conf['patch_wp_mail'] )
-			add_action( 'phpmailer_init', array( $this, 'wp_mail' ) );
+		if ( method_exists( $this, 'wp_mail' ) && false !== $this->conf['patch_wp_mail'] ) {
+			if( $this->is_wp_required_version( '5.5-RC2' ) && method_exists( $this, 'patch_wp_mail_with_custom_phpmailer' ) ) {
+				add_filter( 'wp_mail', array( $this, 'patch_wp_mail_with_custom_phpmailer' ), 99 );
+			}
+			else {
+				add_action( 'phpmailer_init', array( $this, 'wp_mail' ) );
+			}
+		}
 
 		if ( method_exists( $this, 'admin_custom_css' ) && false !== $this->conf['patch_admin_custom_css'] ) {
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_custom_css' ), 99 );

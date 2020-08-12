@@ -3,7 +3,7 @@
  * WP Multibyte Patch Japanese Locale Extension
  *
  * @package WP_Multibyte_Patch
- * @version 2.8.5
+ * @version 2.9
  * @author Seisuke Kuraishi <210pura@gmail.com>
  * @copyright Copyright (c) 2020 Seisuke Kuraishi, Tinybit Inc.
  * @license https://opensource.org/licenses/gpl-2.0.php GPLv2
@@ -40,6 +40,29 @@ if ( class_exists( 'multibyte_patch' ) ) :
 			return $string;
 
 		return "=?$charset?B?" . base64_encode( $string ) . '?=';
+	}
+
+	public function patch_wp_mail_with_custom_phpmailer( $atts ) {
+		global $phpmailer;
+
+		if ( ! $phpmailer instanceof PHPMailer\PHPMailer\PHPMailer ) {
+			require_once ABSPATH . WPINC . '/PHPMailer/PHPMailer.php';
+			require_once ABSPATH . WPINC . '/PHPMailer/SMTP.php';
+			require_once ABSPATH . WPINC . '/PHPMailer/Exception.php';
+			require_once dirname( dirname( dirname( __FILE__ ) ) ) . '/includes/class-wpmp-phpmailer.php';
+
+			$phpmailer = new WPMP_PHPMailer( true );
+
+			$phpmailer::$validator = static function ( $email ) {
+				return (bool) is_email( $email );
+			};
+
+			if ( $phpmailer instanceof PHPMailer\PHPMailer\PHPMailer ) {
+				add_action( 'phpmailer_init', array( $this, 'wp_mail' ) );
+			}
+		}
+
+		return $atts;
 	}
 
 	public function get_phpmailer_properties( $phpmailer ) {
@@ -197,7 +220,6 @@ if ( class_exists( 'multibyte_patch' ) ) :
 		// mbstring functions are always required for ja.
 		$this->mbfunctions_required = true;
 
-		$this->conf['patch_wp_mail'] = true;
 		$this->conf['patch_incoming_trackback'] = true;
 		$this->conf['patch_incoming_pingback'] = true;
 		$this->conf['patch_process_search_terms'] = true;
