@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-14 06:16:49+0000\n"
+"PO-Revision-Date: 2020-08-18 05:31:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -358,7 +358,7 @@ msgstr "選択されていません"
 
 #: class-multisite.php:187
 msgid "Below you can set the multisite options for Really Simple SSL"
-msgstr "以下で Really Simple SSL のマルチサイトオプションを設定できます"
+msgstr "Really Simple SSL のマルチサイトの設定が行えます"
 
 #: class-multisite.php:176
 msgid "Enable SSL"
