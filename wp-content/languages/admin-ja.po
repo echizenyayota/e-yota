@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-15 00:30:20+0000\n"
+"PO-Revision-Date: 2020-08-21 06:36:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,6 +26,15 @@ msgstr "1"
 #: wp-admin/upgrade.php:154
 msgid "Continue"
 msgstr "次へ"
+
+#. translators: 1: post_max_size, 2: upload_max_filesize
+#: wp-admin/includes/class-wp-site-health.php:2055
+msgid "The \"%1$s\" value is smaller than \"%2$s\"."
+msgstr "\"%1$s\" の値が \"%2$s\" の値より小さくなっています。"
+
+#: wp-admin/includes/class-wp-debug-data.php:124
+msgid "Environment type"
+msgstr "環境タイプ"
 
 #: wp-admin/about.php:129
 msgid "Video: An image is added with an image block. In the block toolbar, an icon called \"Crop\" is selected, which changes the toolbar to show image resizing tools. First, zoom is used to zoom into the center of the image. Next, aspect ratio is clicked. This shows a dropdown of common aspect ratios. Square is chosen, and the image is moved within the new square outline. The crop is completed by clicking \"Apply.\""
@@ -273,23 +282,23 @@ msgstr "コメント内で許可されないキーワード"
 msgid "Plugin and theme auto-updates"
 msgstr "プラグインとテーマの自動更新"
 
-#: wp-admin/includes/class-wp-site-health.php:2418
+#: wp-admin/includes/class-wp-site-health.php:2427
 msgid "There appear to be no issues with plugin and theme auto-updates."
 msgstr "プラグインとテーマの自動更新には問題がないようです。"
 
-#: wp-admin/includes/class-wp-site-health.php:2412
+#: wp-admin/includes/class-wp-site-health.php:2421
 msgid "Auto-updates for themes appear to be disabled. This will prevent your site from receiving new versions automatically when available."
 msgstr "サイトの自動更新が無効になっているようです。これにより、新バージョンが利用可能になっても、サイトで自動的に使えるようにはなりません。"
 
-#: wp-admin/includes/class-wp-site-health.php:2407
+#: wp-admin/includes/class-wp-site-health.php:2416
 msgid "Auto-updates for plugins appear to be disabled. This will prevent your site from receiving new versions automatically when available."
 msgstr "プラグインの自動更新が無効になっているようです。これにより、新バージョンが利用可能になっても、サイトで自動的に使えるようにはなりません。"
 
-#: wp-admin/includes/class-wp-site-health.php:2402
+#: wp-admin/includes/class-wp-site-health.php:2411
 msgid "Auto-updates for plugins and themes appear to be disabled. This will prevent your site from receiving new versions automatically when available."
 msgstr "プラグインとテーマの自動更新が無効になっているようです。これにより、新バージョンが利用可能になっても、サイトで自動的に使えるようにはなりません。"
 
-#: wp-admin/includes/class-wp-site-health.php:2393
+#: wp-admin/includes/class-wp-site-health.php:2402
 msgid "Auto-updates for plugins and/or themes appear to be disabled, but settings are still set to be displayed. This could cause auto-updates to not work as expected."
 msgstr "プラグインやテーマの自動更新は無効化されているようですが、設定は以前として表示するように設定されています。自動更新は期待したとおりに動作しないかもしれません。"
 
@@ -319,13 +328,8 @@ msgstr "プラグインを編集する権限がありません。"
 
 #. translators: 1: post_max_size, 2: upload_max_filesize
 #: wp-admin/includes/class-wp-site-health.php:2064
-msgid "The settings for %1$s and %2$s are not the same, this could cause some problems when trying to upload files."
-msgstr "%1$s と %2$s の設定が異なるため、ファイルをアップロードするときに問題が発生する可能性があります。"
-
-#. translators: 1: post_max_size, 2: upload_max_filesize
-#: wp-admin/includes/class-wp-site-health.php:2055
-msgid "Mismatched \"%1$s\" and \"%2$s\" values."
-msgstr "\"%1$s\" と \"%2$s\" の値が一致しません。"
+msgid "The setting for %1$s is smaller than %2$s, this could cause some problems when trying to upload files."
+msgstr "%1$s の設定が %2$s よりも小さく、同じ値ではないため、ファイルをアップロードする際に問題が発生する可能性があります。"
 
 #. translators: 1: file_uploads, 2: 0
 #: wp-admin/includes/class-wp-site-health.php:2041
@@ -346,28 +350,28 @@ msgstr "%2$s の %1$s ディレクティブがサイトでのファイルアッ�
 msgid "Files can be uploaded."
 msgstr "ファイルをアップロードできます。"
 
-#: wp-admin/includes/class-wp-debug-data.php:558
+#: wp-admin/includes/class-wp-debug-data.php:564
 msgid "Max number of files allowed"
 msgstr "最大ファイル数"
 
-#: wp-admin/includes/class-wp-debug-data.php:554
+#: wp-admin/includes/class-wp-debug-data.php:560
 msgid "Max effective file size"
 msgstr "有効な最大ファイルサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:550
+#: wp-admin/includes/class-wp-debug-data.php:556
 msgid "Max size of an uploaded file"
 msgstr "アップロードファイルの最大サイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:546
+#: wp-admin/includes/class-wp-debug-data.php:552
 msgid "Max size of post data allowed"
 msgstr "post データの最大サイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:541
+#: wp-admin/includes/class-wp-debug-data.php:547
 #: wp-admin/includes/class-wp-site-health.php:2146
 msgid "File uploads"
 msgstr "ファイルアップロード"
 
-#: wp-admin/includes/class-wp-debug-data.php:524
+#: wp-admin/includes/class-wp-debug-data.php:530
 msgid "File upload settings"
 msgstr "ファイルアップロード設定"
 
@@ -514,7 +518,7 @@ msgstr "%s後に管理者のメール確認ページが再表示されます。"
 msgid "<a href=\"https://wordpress.org/support/article/plugins-themes-auto-updates/\">Learn more: Auto-updates documentation</a>"
 msgstr "<a href=\"https://ja.wordpress.org/support/article/plugins-themes-auto-updates/\">詳細: 自動更新ドキュメンテーション</a>"
 
-#: wp-admin/includes/class-wp-debug-data.php:1138 wp-admin/update-core.php:835
+#: wp-admin/includes/class-wp-debug-data.php:1144 wp-admin/update-core.php:835
 #: wp-admin/plugins.php:574 wp-admin/themes.php:196
 #: wp-admin/network/themes.php:311
 msgid "Auto-updates"
@@ -1011,33 +1015,33 @@ msgstr "現在のプラグインを削除できませんでした。"
 msgid "Removing the current plugin&#8230;"
 msgstr "現在のプラグインを削除中&#8230;"
 
-#: wp-admin/includes/class-wp-debug-data.php:1226
+#: wp-admin/includes/class-wp-debug-data.php:1232
 msgid "Auto-update"
 msgstr "自動更新"
 
-#: wp-admin/includes/class-wp-debug-data.php:987
-#: wp-admin/includes/class-wp-debug-data.php:1309
+#: wp-admin/includes/class-wp-debug-data.php:993
+#: wp-admin/includes/class-wp-debug-data.php:1315
 #: wp-admin/includes/class-wp-plugins-list-table.php:1100
 #: wp-admin/themes.php:680 wp-admin/js/updates.js:2836
 msgid "Auto-updates disabled"
 msgstr "自動更新無効"
 
-#: wp-admin/includes/class-wp-debug-data.php:985
-#: wp-admin/includes/class-wp-debug-data.php:1307
+#: wp-admin/includes/class-wp-debug-data.php:991
+#: wp-admin/includes/class-wp-debug-data.php:1313
 #: wp-admin/includes/class-wp-plugins-list-table.php:1098
 #: wp-admin/themes.php:682 wp-admin/js/updates.js:2825
 msgid "Auto-updates enabled"
 msgstr "自動更新有効"
 
-#: wp-admin/includes/class-wp-debug-data.php:765
+#: wp-admin/includes/class-wp-debug-data.php:771
 msgid "Are pretty permalinks supported?"
 msgstr "プリティパーマリンクには対応していますか ?"
 
-#: wp-admin/includes/class-wp-debug-data.php:108
+#: wp-admin/includes/class-wp-debug-data.php:114
 msgid "Is this site discouraging search engines?"
 msgstr "このサイトは検索エンジンを妨げていますか ?"
 
-#: wp-admin/includes/class-wp-debug-data.php:704
+#: wp-admin/includes/class-wp-debug-data.php:710
 msgid "PHP memory limit (only for admin screens)"
 msgstr "PHPメモリ制限 (管理画面のみ)"
 
@@ -1139,13 +1143,13 @@ msgstr "ゴミ箱にコメントはありません。"
 msgid "File is empty. Please upload something more substantial. This error could also be caused by uploads being disabled in your %1$s file or by %2$s being defined as smaller than %3$s in %1$s."
 msgstr "ファイルが空のようです。中身のあるファイルをアップロードしてください。このエラーは %1$s ファイルでアップロードができない設定になっているか、%1$s 内で %2$s が %3$s よりも小さく設定されているために発生している可能性もあります。"
 
-#: wp-admin/includes/class-wp-site-health.php:2571
+#: wp-admin/includes/class-wp-site-health.php:2580
 msgid "A test is unavailable"
 msgstr "テストは利用できません"
 
 #. translators: 1: The WordPress error message. 2: The WordPress error code.
 #: wp-admin/includes/class-wp-site-health.php:1955
-#: wp-admin/includes/class-wp-site-health.php:2458
+#: wp-admin/includes/class-wp-site-health.php:2467
 msgid "Error: %1$s (%2$s)"
 msgstr "エラー: %1$s (%2$s)"
 
@@ -1216,7 +1220,7 @@ msgstr "確認リクエストを再送"
 msgid "Delete Requests"
 msgstr "リクエストを削除"
 
-#: wp-admin/includes/class-wp-debug-data.php:853
+#: wp-admin/includes/class-wp-debug-data.php:859
 msgid "Table prefix"
 msgstr "テーブル接頭辞"
 
@@ -1628,28 +1632,28 @@ msgstr "右に回転"
 msgid "Rotate left"
 msgstr "左に回転"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:180
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:184
 msgid "All automatic updates are disabled."
 msgstr "すべての自動アップデートが無効です。"
 
-#: wp-admin/includes/class-wp-debug-data.php:865
+#: wp-admin/includes/class-wp-debug-data.php:871
 msgid "Database collation"
 msgstr "データベース照合"
 
-#: wp-admin/includes/class-wp-debug-data.php:859
+#: wp-admin/includes/class-wp-debug-data.php:865
 msgid "Database charset"
 msgstr "データベースの文字セット"
 
-#: wp-admin/includes/class-wp-debug-data.php:154
+#: wp-admin/includes/class-wp-debug-data.php:160
 msgid "Inactive Themes"
 msgstr "停止中のテーマ"
 
-#: wp-admin/includes/class-wp-debug-data.php:149
+#: wp-admin/includes/class-wp-debug-data.php:155
 msgid "Parent Theme"
 msgstr "親テーマ"
 
 #. translators: %s: wp-content directory name.
-#: wp-admin/includes/class-wp-debug-data.php:137
+#: wp-admin/includes/class-wp-debug-data.php:143
 #: wp-admin/includes/class-wp-plugins-list-table.php:669
 msgid "Drop-ins are single files, found in the %s directory, that replace or enhance WordPress features in ways that are not possible for traditional plugins."
 msgstr "ドロップインとは、普通のプラグインからでは実現できないやり方で WordPress の機能を置き換えたり強化したりする、%s ディレクトリに配置される単一ファイルのことです。"
@@ -1788,11 +1792,11 @@ msgctxt "Site Health"
 msgid "Info"
 msgstr "情報"
 
-#: wp-admin/includes/class-wp-debug-data.php:450
+#: wp-admin/includes/class-wp-debug-data.php:456
 msgid "Themes directory location"
 msgstr "テーマディレクトリの場所"
 
-#: wp-admin/includes/class-wp-debug-data.php:114
+#: wp-admin/includes/class-wp-debug-data.php:120
 msgctxt "comment status"
 msgid "Closed"
 msgstr "受け付けません"
@@ -1868,7 +1872,7 @@ msgstr "プラグインを管理"
 msgid "View Privacy Policy Guide."
 msgstr "プライバシーポリシーガイドを表示します。"
 
-#: wp-admin/includes/class-wp-debug-data.php:75
+#: wp-admin/includes/class-wp-debug-data.php:76
 msgid "User Language"
 msgstr "ユーザー言語"
 
@@ -1890,7 +1894,7 @@ msgid "[%s] Background Update Failed"
 msgstr "[%s] バックグラウンド更新に失敗しました"
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:119
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:123
 msgid "Could not confirm that the %s filter is available."
 msgstr "%s フィルターが利用可能か確認できませんでした。"
 
@@ -2121,19 +2125,19 @@ msgstr "このプラグインは正常なロードに失敗したため、リカ
 msgid "Go to the Themes screen"
 msgstr "テーマ画面へ移動"
 
-#: wp-admin/includes/class-wp-debug-data.php:1561
+#: wp-admin/includes/class-wp-debug-data.php:1567
 msgid "The directory size calculation has timed out. Usually caused by a very large number of sub-directories and files."
 msgstr "ディレクトリサイズの計算がタイムアウトしました。おそらくサブディレクトリやファイルの数が多すぎます。"
 
-#: wp-admin/includes/class-wp-debug-data.php:1605
+#: wp-admin/includes/class-wp-debug-data.php:1611
 msgid "Total size is not available. Some errors were encountered when determining the size of your installation."
 msgstr "合計サイズが不明です。インストールサイズの計算中にエラーが発生しました。"
 
-#: wp-admin/includes/class-wp-debug-data.php:1554
+#: wp-admin/includes/class-wp-debug-data.php:1560
 msgid "The size cannot be calculated. The directory is not accessible. Usually caused by invalid permissions."
 msgstr "サイズは計算できません。ディレクトリにアクセスできません。おそらくパーミッションが誤っています。"
 
-#: wp-admin/includes/class-wp-debug-data.php:240
+#: wp-admin/includes/class-wp-debug-data.php:246
 msgid "These settings alter where and how parts of WordPress are loaded."
 msgstr "この設定は WordPress のどの部品をどのようにロードするかを変更します。"
 
@@ -2173,20 +2177,20 @@ msgstr "すばらしい !"
 msgid "Secondary menu"
 msgstr "サブメニュー"
 
-#: wp-admin/includes/class-wp-site-health.php:2479
+#: wp-admin/includes/class-wp-site-health.php:2488
 msgid "The loopback request to your site completed successfully."
 msgstr "サイトへのループバックリクエストは正常に完了しました。"
 
 #. translators: %d: The HTTP response code returned.
-#: wp-admin/includes/class-wp-site-health.php:2471
+#: wp-admin/includes/class-wp-site-health.php:2480
 msgid "The loopback request returned an unexpected http status code, %d, it was not possible to determine if this will prevent features from working as expected."
 msgstr "ループバックリクエストは予期しない HTTP ステータスコード %d を返しました。これが機能の想定どおりの動作を妨げてるかは判断できませんでした。"
 
-#: wp-admin/includes/class-wp-site-health.php:2455
+#: wp-admin/includes/class-wp-site-health.php:2464
 msgid "The loopback request to your site failed, this means features relying on them are not currently working as expected."
 msgstr "サイトへのループバックリクエストは失敗しました。現在、依存する機能は想定どおりに動作していません。"
 
-#: wp-admin/includes/class-wp-site-health.php:2253
+#: wp-admin/includes/class-wp-site-health.php:2262
 msgid "No scheduled events exist on this site."
 msgstr "このサイトには予定されたイベントはありません。"
 
@@ -2618,500 +2622,500 @@ msgid "We were unable to check if any new versions of WordPress are available."
 msgstr "新しいバージョンの WordPress が利用可能かどうか確認できませんでした。"
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:472
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:476
 msgid "WordPress security and maintenance releases are blocked by the %s filter."
 msgstr "WordPress のセキュリティとメンテナンスリリースは %s フィルターによってブロックされています。"
 
 #. translators: %s: Name of the constant used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:460
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:464
 msgid "WordPress security and maintenance releases are blocked by %s."
 msgstr "WordPress のセキュリティとメンテナンスリリースは %s によってブロックされています。"
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:440
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:444
 msgid "WordPress development updates are blocked by the %s filter."
 msgstr "WordPress 開発アップデートは %s フィルターによってブロックされています。"
 
 #. translators: %s: Name of the constant used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:428
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:432
 msgid "WordPress development updates are blocked by the %s constant."
 msgstr "WordPress 開発アップデートは %s 定数によってブロックされています。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:404
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:408
 msgid "All of your WordPress files are writable."
 msgstr "すべての WordPress ファイルが書き込み可能です。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:399
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:403
 msgid "Some files are not writable by WordPress:"
 msgstr "一部のファイルが WordPress から書き込みできません:"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:373
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:377
 msgid "This could mean that connections are failing to WordPress.org."
 msgstr "これは WordPress.org への接続ができないことを示しています。"
 
 #. translators: %s: WordPress version.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:370
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:374
 msgid "Couldn't retrieve a list of the checksums for WordPress %s."
 msgstr "WordPress %s のチェックサムのリストの取得に失敗しました。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:323
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:327
 msgid "Your installation of WordPress doesn't require FTP credentials to perform updates."
 msgstr "この WordPress サイトでは更新の実行の際に FTP 情報が必要となりません。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:314
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:318
 msgid "(Your site is performing updates over FTP due to file ownership. Talk to your hosting company.)"
 msgstr "(このサイトではファイルの所有権の問題のため、更新が FTP 経由で行われます。詳細はホスティング会社にお尋ねください。)"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:313
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:317
 msgid "Your installation of WordPress prompts for FTP credentials to perform updates."
 msgstr "この WordPress サイトでは更新の実行の際に FTP 情報が必要となります。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:296
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:300
 msgid "No version control systems were detected."
 msgstr "バージョン管理システムは検出されませんでした。"
 
 #. translators: 1: Folder name. 2: Version control directory.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:287
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:291
 msgid "The folder %1$s was detected as being under version control (%2$s)."
 msgstr "フォルダー %1$s はバージョン管理 (%2$s) されていることが検出されました。"
 
 #. translators: 1: Folder name. 2: Version control directory. 3: Filter name.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:274
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:278
 msgid "The folder %1$s was detected as being under version control (%2$s), but the %3$s filter is allowing updates."
 msgstr "フォルダー %1$s はバージョン管理 (%2$s) されていることが検出されましたが、%3$s フィルターがアップデートを許可しています。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:219
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:223
 msgid "We'll try again with the next release."
 msgstr "次のリリースで再試行します。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:214
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:218
 msgid "A previous automatic background update could not occur."
 msgstr "前回のバックグラウンド自動アップデートは発生しませんでした。"
 
 #. translators: %s: Code of error shown.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:205
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:222
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:209
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:226
 msgid "The error code was %s."
 msgstr "エラーコードは %s です。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:202
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:206
 msgid "When you've been able to update using the \"Update Now\" button on Dashboard > Updates, we'll clear this error for future update attempts."
 msgstr "「ダッシュボード」>「更新」内の「今すぐ更新」ボタンを使用したアップデートが成功した場合、今後の更新試行のためにこのエラーをクリアします。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:201
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:216
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:205
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:220
 msgid "You would have received an email because of this."
 msgstr "これについてのメールを受け取っているはずです。"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:200
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:204
 msgid "A previous automatic background update ended with a critical failure, so updates are now disabled."
 msgstr "前回のバックグラウンド自動アップデートが失敗したため、アップデートは無効化されています。"
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:153
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:157
 msgid "The %s filter is enabled."
 msgstr "%s フィルターは有効化されています。"
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:132
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:136
 msgid "A plugin has prevented updates by disabling %s."
 msgstr "プラグインは %s を無効化してアップデートを防ぎました。"
 
 #. translators: %s: Name of the constant used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:73
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:77
 msgid "The %s constant is defined and enabled."
 msgstr "%s 定数は定義され有効化されています。"
 
-#: wp-admin/includes/class-wp-debug-data.php:1344
+#: wp-admin/includes/class-wp-debug-data.php:1350
 msgid "The must use plugins directory"
 msgstr "Must-use プラグインディレクトリ"
 
-#: wp-admin/includes/class-wp-debug-data.php:1093
+#: wp-admin/includes/class-wp-debug-data.php:1099
 msgid "Theme features"
 msgstr "テーマ機能"
 
-#: wp-admin/includes/class-wp-debug-data.php:1088
+#: wp-admin/includes/class-wp-debug-data.php:1094
 #: wp-admin/includes/class-theme-installer-skin.php:242
 msgid "Parent theme"
 msgstr "親テーマ"
 
-#: wp-admin/includes/class-wp-debug-data.php:1083
-#: wp-admin/includes/class-wp-debug-data.php:1180
+#: wp-admin/includes/class-wp-debug-data.php:1089
+#: wp-admin/includes/class-wp-debug-data.php:1186
 msgid "Author website"
 msgstr "投稿者サイト"
 
 #. translators: %s: Latest WordPress version number.
 #. translators: %s: Latest plugin version number.
 #. translators: %s: Latest theme version number.
-#: wp-admin/includes/class-wp-debug-data.php:53
-#: wp-admin/includes/class-wp-debug-data.php:947
-#: wp-admin/includes/class-wp-debug-data.php:1040
-#: wp-admin/includes/class-wp-debug-data.php:1154
-#: wp-admin/includes/class-wp-debug-data.php:1276
+#: wp-admin/includes/class-wp-debug-data.php:54
+#: wp-admin/includes/class-wp-debug-data.php:953
+#: wp-admin/includes/class-wp-debug-data.php:1046
+#: wp-admin/includes/class-wp-debug-data.php:1160
+#: wp-admin/includes/class-wp-debug-data.php:1282
 msgid "(Latest version: %s)"
 msgstr "(最新バージョン: %s)"
 
 #. translators: 1: Plugin version number. 2: Plugin author name.
 #. translators: 1: Theme version number. 2: Theme author name.
-#: wp-admin/includes/class-wp-debug-data.php:882
-#: wp-admin/includes/class-wp-debug-data.php:929
-#: wp-admin/includes/class-wp-debug-data.php:1258
+#: wp-admin/includes/class-wp-debug-data.php:888
+#: wp-admin/includes/class-wp-debug-data.php:935
+#: wp-admin/includes/class-wp-debug-data.php:1264
 msgid "Version %1$s by %2$s"
 msgstr "バージョン %1$s (作者: %2$s)"
 
-#: wp-admin/includes/class-wp-debug-data.php:877
-#: wp-admin/includes/class-wp-debug-data.php:924
-#: wp-admin/includes/class-wp-debug-data.php:1253
+#: wp-admin/includes/class-wp-debug-data.php:883
+#: wp-admin/includes/class-wp-debug-data.php:930
+#: wp-admin/includes/class-wp-debug-data.php:1259
 msgid "No version or author information is available."
 msgstr "利用可能なバージョンまたは作者情報がありません。"
 
-#: wp-admin/includes/class-wp-debug-data.php:825
+#: wp-admin/includes/class-wp-debug-data.php:831
 msgid "Server version"
 msgstr "サーバーバージョン"
 
-#: wp-admin/includes/class-wp-debug-data.php:820
+#: wp-admin/includes/class-wp-debug-data.php:826
 msgid "Extension"
 msgstr "拡張機能"
 
 #. translators: %s: .htaccess
-#: wp-admin/includes/class-wp-debug-data.php:784
+#: wp-admin/includes/class-wp-debug-data.php:790
 msgid "Your %s file contains only core WordPress features."
 msgstr "%s ファイルには WordPress コア機能のみが含まれています。"
 
 #. translators: %s: .htaccess
-#: wp-admin/includes/class-wp-debug-data.php:781
+#: wp-admin/includes/class-wp-debug-data.php:787
 msgid "Custom rules have been added to your %s file."
 msgstr "%s ファイルにカスタムルールが追加されました。"
 
-#: wp-admin/includes/class-wp-debug-data.php:788
+#: wp-admin/includes/class-wp-debug-data.php:794
 msgid ".htaccess rules"
 msgstr ".htaccess ルール"
 
-#: wp-admin/includes/class-wp-debug-data.php:756
+#: wp-admin/includes/class-wp-debug-data.php:762
 msgid "Is the Imagick library available?"
 msgstr "Imagick ライブラリが利用可能になっていますか ?"
 
-#: wp-admin/includes/class-wp-debug-data.php:747
+#: wp-admin/includes/class-wp-debug-data.php:753
 msgid "Is SUHOSIN installed?"
 msgstr "SUHOSIN はインストールされていますか ?"
 
-#: wp-admin/includes/class-wp-debug-data.php:732
-#: wp-admin/includes/class-wp-debug-data.php:737
+#: wp-admin/includes/class-wp-debug-data.php:738
+#: wp-admin/includes/class-wp-debug-data.php:743
 msgid "cURL version"
 msgstr "cURL バージョン"
 
-#: wp-admin/includes/class-wp-debug-data.php:723
+#: wp-admin/includes/class-wp-debug-data.php:729
 msgid "PHP post max size"
 msgstr "PHP 投稿の上限サイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:719
+#: wp-admin/includes/class-wp-debug-data.php:725
 msgid "Upload max filesize"
 msgstr "アップロードの上限ファイルサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:715
+#: wp-admin/includes/class-wp-debug-data.php:721
 msgid "Max input time"
 msgstr "最大入力時間 (max input time)"
 
-#: wp-admin/includes/class-wp-debug-data.php:700
-#: wp-admin/includes/class-wp-debug-data.php:709
+#: wp-admin/includes/class-wp-debug-data.php:706
+#: wp-admin/includes/class-wp-debug-data.php:715
 msgid "PHP memory limit"
 msgstr "PHP メモリ上限"
 
-#: wp-admin/includes/class-wp-debug-data.php:694
+#: wp-admin/includes/class-wp-debug-data.php:700
 msgid "PHP time limit"
 msgstr "PHP タイムリミット"
 
-#: wp-admin/includes/class-wp-debug-data.php:690
+#: wp-admin/includes/class-wp-debug-data.php:696
 msgid "PHP max input variables"
 msgstr "PHP 最大入力変数 (max input variables)"
 
 #. translators: %s: ini_get()
-#: wp-admin/includes/class-wp-debug-data.php:527
-#: wp-admin/includes/class-wp-debug-data.php:683
+#: wp-admin/includes/class-wp-debug-data.php:533
+#: wp-admin/includes/class-wp-debug-data.php:689
 msgid "Unable to determine some settings, as the %s function has been disabled."
 msgstr "%s 関数が無効化されているため、一部の設定を特定できません。"
 
-#: wp-admin/includes/class-wp-debug-data.php:680
+#: wp-admin/includes/class-wp-debug-data.php:686
 msgid "Server settings"
 msgstr "サーバー設定"
 
-#: wp-admin/includes/class-wp-debug-data.php:673
+#: wp-admin/includes/class-wp-debug-data.php:679
 msgid "Unable to determine PHP SAPI"
 msgstr "PHP SAPI の検出に失敗しました"
 
-#: wp-admin/includes/class-wp-debug-data.php:672
+#: wp-admin/includes/class-wp-debug-data.php:678
 msgid "PHP SAPI"
 msgstr "PHP SAPI"
 
-#: wp-admin/includes/class-wp-debug-data.php:639
+#: wp-admin/includes/class-wp-debug-data.php:645
 msgid "(Does not support 64bit values)"
 msgstr "(64ビット値はサポートしていません)"
 
-#: wp-admin/includes/class-wp-debug-data.php:639
+#: wp-admin/includes/class-wp-debug-data.php:645
 msgid "(Supports 64bit values)"
 msgstr "(64ビット値をサポートしています)"
 
-#: wp-admin/includes/class-wp-debug-data.php:646
+#: wp-admin/includes/class-wp-debug-data.php:652
 msgid "Unable to determine PHP version"
 msgstr "PHP バージョンの検出に失敗しました"
 
-#: wp-admin/includes/class-wp-debug-data.php:667
+#: wp-admin/includes/class-wp-debug-data.php:673
 msgid "PHP version"
 msgstr "PHP バージョン"
 
-#: wp-admin/includes/class-wp-debug-data.php:663
+#: wp-admin/includes/class-wp-debug-data.php:669
 msgid "Unable to determine what web server software is used"
 msgstr "使用されている Web サーバーソフトウェアを特定できません"
 
-#: wp-admin/includes/class-wp-debug-data.php:662
+#: wp-admin/includes/class-wp-debug-data.php:668
 msgid "Web server"
 msgstr "Web サーバー"
 
-#: wp-admin/includes/class-wp-debug-data.php:658
+#: wp-admin/includes/class-wp-debug-data.php:664
 msgid "Unable to determine server architecture"
 msgstr "サーバー構造の検出に失敗しました"
 
-#: wp-admin/includes/class-wp-debug-data.php:657
+#: wp-admin/includes/class-wp-debug-data.php:663
 msgid "Server architecture"
 msgstr "サーバー構造"
 
-#: wp-admin/includes/class-wp-debug-data.php:619
+#: wp-admin/includes/class-wp-debug-data.php:625
 msgid "Ghostscript version"
 msgstr "Ghostscript バージョン"
 
-#: wp-admin/includes/class-wp-debug-data.php:614
+#: wp-admin/includes/class-wp-debug-data.php:620
 msgid "Unable to determine if Ghostscript is installed"
 msgstr "Ghostscript のインストール状態を検出できません"
 
-#: wp-admin/includes/class-wp-debug-data.php:598
+#: wp-admin/includes/class-wp-debug-data.php:604
 msgid "GD version"
 msgstr "GD バージョン"
 
-#: wp-admin/includes/class-wp-debug-data.php:584
+#: wp-admin/includes/class-wp-debug-data.php:590
 msgid "Imagick Resource Limits"
 msgstr "Imagick リソースリミット"
 
-#: wp-admin/includes/class-wp-debug-data.php:518
+#: wp-admin/includes/class-wp-debug-data.php:524
 msgid "ImageMagick version string"
 msgstr "ImageMagick バージョン文字列"
 
-#: wp-admin/includes/class-wp-debug-data.php:513
+#: wp-admin/includes/class-wp-debug-data.php:519
 msgid "ImageMagick version number"
 msgstr "ImageMagick バージョン番号"
 
-#: wp-admin/includes/class-wp-debug-data.php:487
-#: wp-admin/includes/class-wp-debug-data.php:509
-#: wp-admin/includes/class-wp-debug-data.php:1589
+#: wp-admin/includes/class-wp-debug-data.php:493
+#: wp-admin/includes/class-wp-debug-data.php:515
+#: wp-admin/includes/class-wp-debug-data.php:1595
 msgid "Not available"
 msgstr "利用できません"
 
-#: wp-admin/includes/class-wp-debug-data.php:499
+#: wp-admin/includes/class-wp-debug-data.php:505
 msgid "Active editor"
 msgstr "使用中のエディター"
 
-#: wp-admin/includes/class-wp-debug-data.php:473
+#: wp-admin/includes/class-wp-debug-data.php:479
 msgid "Total installation size"
 msgstr "合計インストールサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:468
+#: wp-admin/includes/class-wp-debug-data.php:474
 msgid "Database size"
 msgstr "データベースの容量"
 
-#: wp-admin/includes/class-wp-debug-data.php:436
+#: wp-admin/includes/class-wp-debug-data.php:442
 msgid "WordPress directory size"
 msgstr "WordPress ディレクトリのサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:432
+#: wp-admin/includes/class-wp-debug-data.php:438
 msgid "WordPress directory location"
 msgstr "WordPress ディレクトリの場所"
 
-#: wp-admin/includes/class-wp-debug-data.php:463
+#: wp-admin/includes/class-wp-debug-data.php:469
 msgid "Plugins directory size"
 msgstr "プラグインディレクトリのサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:459
+#: wp-admin/includes/class-wp-debug-data.php:465
 msgid "Plugins directory location"
 msgstr "プラグインディレクトリの場所"
 
-#: wp-admin/includes/class-wp-debug-data.php:454
+#: wp-admin/includes/class-wp-debug-data.php:460
 msgid "Themes directory size"
 msgstr "テーマディレクトリのサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:1097
-#: wp-admin/includes/class-wp-debug-data.php:1185
+#: wp-admin/includes/class-wp-debug-data.php:1103
+#: wp-admin/includes/class-wp-debug-data.php:1191
 msgid "Theme directory location"
 msgstr "テーマディレクトリの場所"
 
-#: wp-admin/includes/class-wp-debug-data.php:445
+#: wp-admin/includes/class-wp-debug-data.php:451
 msgid "Uploads directory size"
 msgstr "アップロードディレクトリのサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:441
+#: wp-admin/includes/class-wp-debug-data.php:447
 msgid "Uploads directory location"
 msgstr "アップロードディレクトリの場所"
 
 #. translators: 1: The IP address WordPress.org resolves to. 2: The error
 #. returned by the lookup.
-#: wp-admin/includes/class-wp-debug-data.php:418
+#: wp-admin/includes/class-wp-debug-data.php:424
 msgid "Unable to reach WordPress.org at %1$s: %2$s"
 msgstr "WordPress.org (%1$s: %2$s) にアクセス不可"
 
-#: wp-admin/includes/class-wp-debug-data.php:410
+#: wp-admin/includes/class-wp-debug-data.php:416
 msgid "WordPress.org is reachable"
 msgstr "WordPress.org にアクセス可能"
 
-#: wp-admin/includes/class-wp-debug-data.php:409
 #: wp-admin/includes/class-wp-debug-data.php:415
+#: wp-admin/includes/class-wp-debug-data.php:421
 #: wp-admin/includes/class-wp-site-health.php:2156
 msgid "Communication with WordPress.org"
 msgstr "WordPress.org との通信"
 
-#: wp-admin/includes/class-wp-debug-data.php:392
+#: wp-admin/includes/class-wp-debug-data.php:398
 msgid "Network count"
 msgstr "ネットワーク数"
 
-#: wp-admin/includes/class-wp-debug-data.php:387
+#: wp-admin/includes/class-wp-debug-data.php:393
 msgid "Site count"
 msgstr "サイト数"
 
-#: wp-admin/includes/class-wp-debug-data.php:382
-#: wp-admin/includes/class-wp-debug-data.php:399
+#: wp-admin/includes/class-wp-debug-data.php:388
+#: wp-admin/includes/class-wp-debug-data.php:405
 msgid "User count"
 msgstr "ユーザー数"
 
-#: wp-admin/includes/class-wp-debug-data.php:358
+#: wp-admin/includes/class-wp-debug-data.php:364
 msgid "The themes directory"
 msgstr "テーマディレクトリ"
 
-#: wp-admin/includes/class-wp-debug-data.php:353
+#: wp-admin/includes/class-wp-debug-data.php:359
 msgid "The plugins directory"
 msgstr "plugins ディレクトリ"
 
-#: wp-admin/includes/class-wp-debug-data.php:348
+#: wp-admin/includes/class-wp-debug-data.php:354
 msgid "The uploads directory"
 msgstr "uploads ディレクトリ"
 
-#: wp-admin/includes/class-wp-debug-data.php:343
+#: wp-admin/includes/class-wp-debug-data.php:349
 msgid "The wp-content directory"
 msgstr "wp-content ディレクトリ"
 
-#: wp-admin/includes/class-wp-debug-data.php:339
-#: wp-admin/includes/class-wp-debug-data.php:344
-#: wp-admin/includes/class-wp-debug-data.php:349
-#: wp-admin/includes/class-wp-debug-data.php:354
-#: wp-admin/includes/class-wp-debug-data.php:359
-#: wp-admin/includes/class-wp-debug-data.php:1345
+#: wp-admin/includes/class-wp-debug-data.php:345
+#: wp-admin/includes/class-wp-debug-data.php:350
+#: wp-admin/includes/class-wp-debug-data.php:355
+#: wp-admin/includes/class-wp-debug-data.php:360
+#: wp-admin/includes/class-wp-debug-data.php:365
+#: wp-admin/includes/class-wp-debug-data.php:1351
 msgid "Not writable"
 msgstr "書き込み不可"
 
-#: wp-admin/includes/class-wp-debug-data.php:339
-#: wp-admin/includes/class-wp-debug-data.php:344
-#: wp-admin/includes/class-wp-debug-data.php:349
-#: wp-admin/includes/class-wp-debug-data.php:354
-#: wp-admin/includes/class-wp-debug-data.php:359
-#: wp-admin/includes/class-wp-debug-data.php:1345
+#: wp-admin/includes/class-wp-debug-data.php:345
+#: wp-admin/includes/class-wp-debug-data.php:350
+#: wp-admin/includes/class-wp-debug-data.php:355
+#: wp-admin/includes/class-wp-debug-data.php:360
+#: wp-admin/includes/class-wp-debug-data.php:365
+#: wp-admin/includes/class-wp-debug-data.php:1351
 msgid "Writable"
 msgstr "書き込み可能"
 
-#: wp-admin/includes/class-wp-debug-data.php:338
+#: wp-admin/includes/class-wp-debug-data.php:344
 msgid "The main WordPress directory"
 msgstr "WordPress のメインディレクトリ"
 
-#: wp-admin/includes/class-wp-debug-data.php:335
+#: wp-admin/includes/class-wp-debug-data.php:341
 msgid "Shows whether WordPress is able to write to the directories it needs access to."
 msgstr "WordPress がアクセスを必要とするディレクトリに書き込み可能かどうかを表示します。"
 
-#: wp-admin/includes/class-wp-debug-data.php:334
+#: wp-admin/includes/class-wp-debug-data.php:340
 msgid "Filesystem Permissions"
 msgstr "ファイルシステムパーミッション"
 
-#: wp-admin/includes/class-wp-debug-data.php:207
-#: wp-admin/includes/class-wp-debug-data.php:216
-#: wp-admin/includes/class-wp-debug-data.php:225
-#: wp-admin/includes/class-wp-debug-data.php:234
-#: wp-admin/includes/class-wp-debug-data.php:249
-#: wp-admin/includes/class-wp-debug-data.php:254
-#: wp-admin/includes/class-wp-debug-data.php:316
-#: wp-admin/includes/class-wp-debug-data.php:321
-#: wp-admin/includes/class-wp-debug-data.php:1084
-#: wp-admin/includes/class-wp-debug-data.php:1181
+#: wp-admin/includes/class-wp-debug-data.php:213
+#: wp-admin/includes/class-wp-debug-data.php:222
+#: wp-admin/includes/class-wp-debug-data.php:231
+#: wp-admin/includes/class-wp-debug-data.php:240
+#: wp-admin/includes/class-wp-debug-data.php:255
+#: wp-admin/includes/class-wp-debug-data.php:260
+#: wp-admin/includes/class-wp-debug-data.php:322
+#: wp-admin/includes/class-wp-debug-data.php:327
+#: wp-admin/includes/class-wp-debug-data.php:1090
+#: wp-admin/includes/class-wp-debug-data.php:1187
 msgid "Undefined"
 msgstr "未定義"
 
-#: wp-admin/includes/class-wp-debug-data.php:239
+#: wp-admin/includes/class-wp-debug-data.php:245
 msgid "WordPress Constants"
 msgstr "WordPress 定数"
 
-#: wp-admin/includes/class-wp-debug-data.php:189
+#: wp-admin/includes/class-wp-debug-data.php:195
 msgid "Database"
 msgstr "データベース"
 
-#: wp-admin/includes/class-wp-debug-data.php:184
+#: wp-admin/includes/class-wp-debug-data.php:190
 msgid "The options shown below relate to your server setup. If changes are required, you may need your web host&#8217;s assistance."
 msgstr "次のオプションはサーバー設定に関連します。変更が必要であれば Web 管理者の支援が必要かもしれません。"
 
-#: wp-admin/includes/class-wp-debug-data.php:183
+#: wp-admin/includes/class-wp-debug-data.php:189
 msgid "Server"
 msgstr "サーバー"
 
-#: wp-admin/includes/class-wp-debug-data.php:178
+#: wp-admin/includes/class-wp-debug-data.php:184
 msgid "Media Handling"
 msgstr "メディア処理"
 
-#: wp-admin/includes/class-wp-debug-data.php:172
+#: wp-admin/includes/class-wp-debug-data.php:178
 msgid "Inactive Plugins"
 msgstr "停止中のプラグイン"
 
-#: wp-admin/includes/class-wp-debug-data.php:166
+#: wp-admin/includes/class-wp-debug-data.php:172
 msgid "Active Plugins"
 msgstr "使用中のプラグイン"
 
-#: wp-admin/includes/class-wp-debug-data.php:160
+#: wp-admin/includes/class-wp-debug-data.php:166
 msgid "Must Use Plugins"
 msgstr "MU プラグイン"
 
-#: wp-admin/includes/class-wp-debug-data.php:144
+#: wp-admin/includes/class-wp-debug-data.php:150
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:844
 msgid "Active Theme"
 msgstr "現在のテーマ"
 
-#: wp-admin/includes/class-wp-debug-data.php:133
+#: wp-admin/includes/class-wp-debug-data.php:139
 msgid "Drop-ins"
 msgstr "ドロップイン"
 
-#: wp-admin/includes/class-wp-debug-data.php:127
+#: wp-admin/includes/class-wp-debug-data.php:133
 msgid "Directories and Sizes"
 msgstr "ディレクトリとサイズ"
 
-#: wp-admin/includes/class-wp-debug-data.php:118
+#: wp-admin/includes/class-wp-debug-data.php:104
 msgid "Is this a multisite?"
 msgstr "マルチサイトですか ?"
 
-#: wp-admin/includes/class-wp-debug-data.php:113
+#: wp-admin/includes/class-wp-debug-data.php:119
 msgid "Default comment status"
 msgstr "デフォルトコメントステータス"
 
-#: wp-admin/includes/class-wp-debug-data.php:103
+#: wp-admin/includes/class-wp-debug-data.php:109
 msgid "Can anyone register on this site?"
 msgstr "サイト上で誰でも会員登録ができますか ?"
 
-#: wp-admin/includes/class-wp-debug-data.php:98
+#: wp-admin/includes/class-wp-debug-data.php:99
 msgid "Is this site using HTTPS?"
 msgstr "サイトは HTTPS を使用していますか ?"
 
-#: wp-admin/includes/class-wp-debug-data.php:94
+#: wp-admin/includes/class-wp-debug-data.php:95
 msgid "No permalink structure set"
 msgstr "パーマリンク構造が設定されていません"
 
-#: wp-admin/includes/class-wp-debug-data.php:93
+#: wp-admin/includes/class-wp-debug-data.php:94
 msgid "Permalink structure"
 msgstr "パーマリンク構造"
 
-#: wp-admin/includes/class-wp-debug-data.php:88
+#: wp-admin/includes/class-wp-debug-data.php:89
 msgid "Site URL"
 msgstr "サイト URL"
 
-#: wp-admin/includes/class-wp-debug-data.php:83
+#: wp-admin/includes/class-wp-debug-data.php:84
 msgid "Home URL"
 msgstr "ホーム URL"
 
@@ -4790,7 +4794,7 @@ msgstr "インポーターの実行"
 msgid "Run %s"
 msgstr "%s の実行"
 
-#: wp-admin/includes/class-wp-debug-data.php:114
+#: wp-admin/includes/class-wp-debug-data.php:120
 msgctxt "comment status"
 msgid "Open"
 msgstr "受付中"
@@ -5931,7 +5935,7 @@ msgstr "%s スタイルシートには有効なテーマヘッダーが含まれ
 #. translators: %s: style.css
 #: wp-admin/includes/class-theme-upgrader.php:548
 msgid "The theme is missing the %s stylesheet."
-msgstr "テーマに %s スタイルシートにありません。"
+msgstr "テーマに %s スタイルシートがありません。"
 
 #: wp-admin/theme-install.php:196
 msgid "If you have marked themes as favorites on WordPress.org, you can browse them here."
@@ -8091,7 +8095,7 @@ msgstr "パッケージ内にファイルがありません。"
 msgid "To navigate between revisions, <strong>drag the slider handle left or right</strong> or <strong>use the Previous or Next buttons</strong>."
 msgstr "リビジョン間を移動するには、<strong>スライダーハンドルを左右にドラッグする</strong>か、 <strong>「前へ」「次へ」ボタンを使って</strong>ください。"
 
-#: wp-admin/includes/class-wp-debug-data.php:428
+#: wp-admin/includes/class-wp-debug-data.php:434
 #: wp-admin/includes/dashboard.php:1097 wp-admin/includes/dashboard.php:1287
 #: wp-admin/customize.php:147
 msgid "Loading&hellip;"
@@ -8353,7 +8357,7 @@ msgstr "更新ありがとうございます。<a href=\"%s\">サイトネット
 msgid "All right, sparky! You&#8217;ve made it through this part of the installation. WordPress can now communicate with your database. If you are ready, time now to&hellip;"
 msgstr "この部分のインストールは無事完了しました。WordPress は現在データベースと通信できる状態にあります。準備ができているなら&hellip;"
 
-#: wp-admin/includes/class-wp-debug-data.php:830
+#: wp-admin/includes/class-wp-debug-data.php:836
 msgid "Client version"
 msgstr "現在のバージョン"
 
@@ -9071,18 +9075,18 @@ msgstr "このサイトを永久に削除"
 msgid "I'm sure I want to permanently delete my site, and I am aware I can never get it back or use %s again."
 msgstr "このサイトを永久に削除します。また、%s は二度と復元して使用できないことを理解しています。"
 
-#: wp-admin/includes/class-wp-debug-data.php:194
-#: wp-admin/includes/class-wp-debug-data.php:204
-#: wp-admin/includes/class-wp-debug-data.php:213
-#: wp-admin/includes/class-wp-debug-data.php:222
-#: wp-admin/includes/class-wp-debug-data.php:231
-#: wp-admin/includes/class-wp-debug-data.php:271
-#: wp-admin/includes/class-wp-debug-data.php:276
-#: wp-admin/includes/class-wp-debug-data.php:286
-#: wp-admin/includes/class-wp-debug-data.php:291
-#: wp-admin/includes/class-wp-debug-data.php:542
-#: wp-admin/includes/class-wp-debug-data.php:1131
-#: wp-admin/includes/class-wp-debug-data.php:1219
+#: wp-admin/includes/class-wp-debug-data.php:200
+#: wp-admin/includes/class-wp-debug-data.php:210
+#: wp-admin/includes/class-wp-debug-data.php:219
+#: wp-admin/includes/class-wp-debug-data.php:228
+#: wp-admin/includes/class-wp-debug-data.php:237
+#: wp-admin/includes/class-wp-debug-data.php:277
+#: wp-admin/includes/class-wp-debug-data.php:282
+#: wp-admin/includes/class-wp-debug-data.php:292
+#: wp-admin/includes/class-wp-debug-data.php:297
+#: wp-admin/includes/class-wp-debug-data.php:548
+#: wp-admin/includes/class-wp-debug-data.php:1137
+#: wp-admin/includes/class-wp-debug-data.php:1225
 msgid "Disabled"
 msgstr "無効"
 
@@ -9182,7 +9186,7 @@ msgstr "さあ、始めましょう !"
 msgid "Table prefix (if you want to run more than one WordPress in a single database)"
 msgstr "テーブル接頭辞 (1つのデータベースに複数の WordPress を作動させる場合)"
 
-#: wp-admin/includes/class-wp-debug-data.php:841 wp-admin/setup-config.php:169
+#: wp-admin/includes/class-wp-debug-data.php:847 wp-admin/setup-config.php:169
 msgid "Database host"
 msgstr "データベースホスト"
 
@@ -9190,11 +9194,11 @@ msgstr "データベースホスト"
 msgid "Database password"
 msgstr "データベースのパスワード"
 
-#: wp-admin/includes/class-wp-debug-data.php:835 wp-admin/setup-config.php:167
+#: wp-admin/includes/class-wp-debug-data.php:841 wp-admin/setup-config.php:167
 msgid "Database username"
 msgstr "データベースのユーザー名"
 
-#: wp-admin/includes/class-wp-debug-data.php:847 wp-admin/setup-config.php:166
+#: wp-admin/includes/class-wp-debug-data.php:853 wp-admin/setup-config.php:166
 msgid "Database name"
 msgstr "データベース名"
 
@@ -9995,9 +9999,9 @@ msgstr "ユーザーを追加しました。"
 #. translators: %s: WordPress version.
 #. translators: %s: Plugin version.
 #. translators: %s: Theme version.
-#: wp-admin/includes/class-wp-debug-data.php:893
-#: wp-admin/includes/class-wp-debug-data.php:940
-#: wp-admin/includes/class-wp-debug-data.php:1269
+#: wp-admin/includes/class-wp-debug-data.php:899
+#: wp-admin/includes/class-wp-debug-data.php:946
+#: wp-admin/includes/class-wp-debug-data.php:1275
 #: wp-admin/includes/class-wp-plugins-list-table.php:1018
 #: wp-admin/includes/update.php:231 wp-admin/includes/update.php:271
 #: wp-admin/includes/ajax-actions.php:4442
@@ -10093,7 +10097,7 @@ msgstr "投稿名"
 msgid "This importer is not installed. Please install importers from <a href=\"%s\">the main site</a>."
 msgstr "このインポートツールはインストールされていません。<a href=\"%s\">メインのサイト</a>からインストールしてください。"
 
-#: wp-admin/includes/class-wp-debug-data.php:71
+#: wp-admin/includes/class-wp-debug-data.php:72
 #: wp-admin/options-general.php:166 wp-admin/network/site-new.php:257
 msgid "Site Language"
 msgstr "サイトの言語"
@@ -11148,18 +11152,18 @@ msgstr "詳細メニュー設定を表示"
 msgid "You have version %1$s installed. Update to %2$s."
 msgstr "現在お使いのバージョンは %1$s です。%2$s に更新します。"
 
-#: wp-admin/includes/class-wp-debug-data.php:199
-#: wp-admin/includes/class-wp-debug-data.php:204
-#: wp-admin/includes/class-wp-debug-data.php:213
-#: wp-admin/includes/class-wp-debug-data.php:222
-#: wp-admin/includes/class-wp-debug-data.php:231
-#: wp-admin/includes/class-wp-debug-data.php:271
-#: wp-admin/includes/class-wp-debug-data.php:276
-#: wp-admin/includes/class-wp-debug-data.php:286
-#: wp-admin/includes/class-wp-debug-data.php:291
-#: wp-admin/includes/class-wp-debug-data.php:542
-#: wp-admin/includes/class-wp-debug-data.php:1129
-#: wp-admin/includes/class-wp-debug-data.php:1217
+#: wp-admin/includes/class-wp-debug-data.php:205
+#: wp-admin/includes/class-wp-debug-data.php:210
+#: wp-admin/includes/class-wp-debug-data.php:219
+#: wp-admin/includes/class-wp-debug-data.php:228
+#: wp-admin/includes/class-wp-debug-data.php:237
+#: wp-admin/includes/class-wp-debug-data.php:277
+#: wp-admin/includes/class-wp-debug-data.php:282
+#: wp-admin/includes/class-wp-debug-data.php:292
+#: wp-admin/includes/class-wp-debug-data.php:297
+#: wp-admin/includes/class-wp-debug-data.php:548
+#: wp-admin/includes/class-wp-debug-data.php:1135
+#: wp-admin/includes/class-wp-debug-data.php:1223
 msgid "Enabled"
 msgstr "有効"
 
@@ -12318,7 +12322,7 @@ msgstr "カスタム:"
 msgid "This timezone is currently in standard time."
 msgstr "現在のこのタイムゾーンは標準時です。"
 
-#: wp-admin/includes/class-wp-debug-data.php:79
+#: wp-admin/includes/class-wp-debug-data.php:80
 #: wp-admin/options-general.php:224
 msgid "Timezone"
 msgstr "タイムゾーン"
@@ -13534,7 +13538,7 @@ msgstr "画像の代替テキスト 例:&#8220;The Mona Lisa&#8221;"
 msgid "File URL"
 msgstr "ファイルの URL"
 
-#: wp-admin/credits.php:30 wp-admin/includes/class-wp-debug-data.php:63
+#: wp-admin/credits.php:30 wp-admin/includes/class-wp-debug-data.php:64
 #: wp-admin/includes/class-wp-privacy-policy-content.php:721
 #: wp-admin/includes/media.php:518 wp-admin/includes/template.php:2014
 #: wp-admin/privacy.php:27 wp-admin/install.php:77 wp-admin/freedoms.php:33

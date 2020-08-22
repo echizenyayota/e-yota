@@ -351,7 +351,7 @@ msgstr "ネットワークプラグインを管理する権限がありません
 
 #. translators: 1. The REST API route being registered. 2. The argument name.
 #. 3. The suggested function name.
-#: wp-includes/rest-api.php:97
+#: wp-includes/rest-api.php:98
 msgid "The REST API route definition for %1$s is missing the required %2$s argument. For REST API routes that are intended to be public, use %3$s as the permission callback."
 msgstr "REST API ルート定義 %1$s に必須の引数 %2$s がありません。public REST API ルートに対してはパーミッションコールバックとして %3$s を使用してください。"
 
@@ -464,54 +464,54 @@ msgctxt "unit symbol"
 msgid "TB"
 msgstr "TB"
 
-#: wp-includes/general-template.php:4446
+#: wp-includes/general-template.php:4447
 msgctxt "admin color scheme"
 msgid "Modern"
 msgstr "モダン"
 
 #. translators: 1: Title prefix. 2: Title.
-#: wp-includes/general-template.php:1722
+#: wp-includes/general-template.php:1723
 msgctxt "archive title"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
 #. translators: %s: Taxonomy singular name.
-#: wp-includes/general-template.php:1703
+#: wp-includes/general-template.php:1704
 msgctxt "taxonomy term archive title prefix"
 msgid "%s:"
 msgstr "%s:"
 
-#: wp-includes/general-template.php:1695
+#: wp-includes/general-template.php:1696
 msgctxt "post type archive title prefix"
 msgid "Archives:"
 msgstr "アーカイブ:"
 
-#: wp-includes/general-template.php:1672
+#: wp-includes/general-template.php:1673
 msgctxt "date archive title prefix"
 msgid "Day:"
 msgstr "日:"
 
-#: wp-includes/general-template.php:1669
+#: wp-includes/general-template.php:1670
 msgctxt "date archive title prefix"
 msgid "Month:"
 msgstr "月:"
 
-#: wp-includes/general-template.php:1666
+#: wp-includes/general-template.php:1667
 msgctxt "date archive title prefix"
 msgid "Year:"
 msgstr "年:"
 
-#: wp-includes/general-template.php:1663
+#: wp-includes/general-template.php:1664
 msgctxt "author archive title prefix"
 msgid "Author:"
 msgstr "投稿者:"
 
-#: wp-includes/general-template.php:1660
+#: wp-includes/general-template.php:1661
 msgctxt "tag archive title prefix"
 msgid "Tag:"
 msgstr "タグ:"
 
-#: wp-includes/general-template.php:1657
+#: wp-includes/general-template.php:1658
 msgctxt "category archive title prefix"
 msgid "Category:"
 msgstr "カテゴリー:"
@@ -568,78 +568,78 @@ msgid "File URL:"
 msgstr "ファイルの URL:"
 
 #. translators: %s is the name of a JSON field expecting a valid uuid.
-#: wp-includes/rest-api.php:1768
+#: wp-includes/rest-api.php:1769
 msgid "%s is not a valid UUID."
 msgstr "%s は有効な UUID ではありません。"
 
-#: wp-includes/rest-api.php:1744
+#: wp-includes/rest-api.php:1745
 msgid "Invalid hex color."
 msgstr "無効な16進数色です。"
 
 #. translators: 1: Parameter, 2: Pattern.
-#: wp-includes/rest-api.php:1731
+#: wp-includes/rest-api.php:1732
 msgid "%1$s does not match pattern %2$s."
 msgstr "%1$s はパターン %2$s に一致しません。"
 
 #. translators: 1: Parameter, 2: Number of characters.
-#: wp-includes/rest-api.php:1720
+#: wp-includes/rest-api.php:1721
 msgid "%1$s must be at most %2$s character long."
 msgid_plural "%1$s must be at most %2$s characters long."
 msgstr[0] "%1$s は最大%2$s文字である必要があります。"
 
 #. translators: 1: Parameter, 2: Number of characters.
-#: wp-includes/rest-api.php:1708
+#: wp-includes/rest-api.php:1709
 msgid "%1$s must be at least %2$s character long."
 msgid_plural "%1$s must be at least %2$s characters long."
 msgstr[0] "%1$s は最低%2$s文字以上である必要があります。"
 
 #. translators: 1: Property of an object, 2: Parameter.
-#: wp-includes/rest-api.php:1632 wp-includes/rest-api.php:1639
+#: wp-includes/rest-api.php:1633 wp-includes/rest-api.php:1640
 msgid "%1$s is a required property of %2$s."
 msgstr "%1$s は %2$s の必須プロパティです。"
 
 #. translators: 1: Parameter
-#: wp-includes/rest-api.php:1616 wp-includes/rest-api.php:1868
+#: wp-includes/rest-api.php:1617 wp-includes/rest-api.php:1869
 msgid "%1$s has duplicate items."
 msgstr "%1$s の重複項目があります。"
 
 #. translators: 1: Parameter, 2: Number.
-#: wp-includes/rest-api.php:1611
+#: wp-includes/rest-api.php:1612
 msgid "%1$s must contain at most %2$s items."
 msgstr "%1$s には最大%2$s個の項目が含まれている必要があります。"
 
 #. translators: 1: Parameter, 2: Number.
-#: wp-includes/rest-api.php:1606
+#: wp-includes/rest-api.php:1607
 msgid "%1$s must contain at least %2$s items."
 msgstr "%1$s には最低%2$s個の項目が含まれている必要があります。"
 
 #. translators: 1. Parameter 2. The list of allowed types.
 #. translators: 1. Parameter. 2. The list of allowed types.
-#: wp-includes/rest-api.php:1582 wp-includes/rest-api.php:1852
+#: wp-includes/rest-api.php:1583 wp-includes/rest-api.php:1853
 msgid "The \"type\" schema keyword for %1$s can only be one of the built-in types: %2$l."
 msgstr "%1$s の type スキーマキーワードは組み込みタイプ %2$l でのみ使用できます。"
 
 #. translators: 1. Parameter
-#: wp-includes/rest-api.php:1564 wp-includes/rest-api.php:1835
+#: wp-includes/rest-api.php:1565 wp-includes/rest-api.php:1836
 msgid "The \"type\" schema keyword for %s is required."
 msgstr "%s の type スキーマキーワードが必要です。"
 
-#: wp-includes/rest-api.php:1527
+#: wp-includes/rest-api.php:1528
 msgid "Cannot stabilize objects. Convert the object to an array first."
 msgstr "オブジェクトを固定できません。まずオブジェクトを配列に変換してください。"
 
 #. translators: 1. Parameter. 2. List of allowed types.
-#: wp-includes/rest-api.php:1465
+#: wp-includes/rest-api.php:1466
 msgid "The \"type\" schema keyword for %1$s can only contain the built-in types: %2$l."
 msgstr "%1$s の type スキーマキーワードは組み込みタイプ %2$l のみを含むことができます。"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message.
 #. translators: 1: Theme name. 2: Theme slug.
-#: wp-includes/rest-api.php:636 wp-admin/includes/class-wp-debug-data.php:1049
-#: wp-admin/includes/class-wp-debug-data.php:1068
-#: wp-admin/includes/class-wp-debug-data.php:1165
-#: wp-admin/includes/class-wp-debug-data.php:1330
+#: wp-includes/rest-api.php:637 wp-admin/includes/class-wp-debug-data.php:1055
+#: wp-admin/includes/class-wp-debug-data.php:1074
+#: wp-admin/includes/class-wp-debug-data.php:1171
+#: wp-admin/includes/class-wp-debug-data.php:1336
 msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
@@ -1279,7 +1279,7 @@ msgstr "メールの確認リンクをクリックし、<a href=\"%s\">ログイ
 msgid "Password protected"
 msgstr "パスワード保護"
 
-#: wp-includes/rest-api.php:50
+#: wp-includes/rest-api.php:51
 msgid "Namespace must not start or end with a slash."
 msgstr "ネームスペースの文頭または文末に \"/\" を置くことはできません。"
 
@@ -1332,7 +1332,7 @@ msgstr "投稿ステータス「%1$s」は登録されていないため、こ�
 msgid "In reply to %s."
 msgstr "%s への返信。"
 
-#: wp-includes/general-template.php:2364
+#: wp-includes/general-template.php:2365
 msgid "Previous and next months"
 msgstr "前と次の月"
 
@@ -2281,7 +2281,7 @@ msgid "Could not retrieve site data."
 msgstr "サイトデータを取得できませんでした。"
 
 #. translators: %s: rest_api_init
-#: wp-includes/rest-api.php:58
+#: wp-includes/rest-api.php:59
 msgid "REST API routes must be registered on the %s action."
 msgstr "REST API ルートは %s アクションで登録しなければなりません。"
 
@@ -3311,7 +3311,7 @@ msgid "Installed"
 msgstr "インストール済み"
 
 #. translators: %s: Property of an object.
-#: wp-includes/rest-api.php:1653
+#: wp-includes/rest-api.php:1654
 msgid "%1$s is not a valid property of Object."
 msgstr "%1$s はオブジェクトのプロパティが有効ではありません。"
 
@@ -4605,22 +4605,22 @@ msgid "Displays an audio player."
 msgstr "音声プレーヤーを表示します。"
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:1789
+#: wp-includes/rest-api.php:1790
 msgid "%1$s must be less than or equal to %2$d"
 msgstr "%1$s は%2$d以下である必要があります"
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:1786
+#: wp-includes/rest-api.php:1787
 msgid "%1$s must be less than %2$d"
 msgstr "%1$s は%2$d未満である必要があります"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:1781
+#: wp-includes/rest-api.php:1782
 msgid "%1$s must be greater than or equal to %2$d"
 msgstr "%1$s は%2$d以上である必要があります"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:1778
+#: wp-includes/rest-api.php:1779
 msgid "%1$s must be greater than %2$d"
 msgstr "%1$s は%2$dよりも大きい必要があります"
 
@@ -5056,7 +5056,7 @@ msgid "Invalid slug."
 msgstr "無効なスラッグです。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:717
-#: wp-includes/rest-api.php:1756 wp-includes/user.php:3585
+#: wp-includes/rest-api.php:1757 wp-includes/user.php:3585
 #: wp-admin/network/site-new.php:96
 msgid "Invalid email address."
 msgstr "無効なメールアドレスです。"
@@ -5074,7 +5074,7 @@ msgstr "無効な JSONP コールバック関数です。"
 msgid "Invalid page template."
 msgstr "無効なページテンプレートです。"
 
-#: wp-includes/script-loader.php:1153 wp-includes/rest-api.php:1750
+#: wp-includes/script-loader.php:1153 wp-includes/rest-api.php:1751
 #: wp-includes/post.php:3793 wp-admin/includes/post.php:188
 msgid "Invalid date."
 msgstr "無効な日時です。"
@@ -5527,42 +5527,42 @@ msgid "Item selected."
 msgstr "項目を選択しました。"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1810
+#: wp-includes/rest-api.php:1811
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s は%2$d以上、%3$d以下でなければなりません。"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1805
+#: wp-includes/rest-api.php:1806
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s は%2$dより大きく、%3$d以内でなければなりません。"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1800
+#: wp-includes/rest-api.php:1801
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s は%2$d以上、%3$d未満でなければなりません。"
 
 #. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
-#: wp-includes/rest-api.php:1795
+#: wp-includes/rest-api.php:1796
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s は%2$dより大きく、%3$d未満でなければなりません。"
 
 #. translators: %s: IP address.
-#: wp-includes/rest-api.php:1762
+#: wp-includes/rest-api.php:1763
 msgid "%s is not a valid IP address."
 msgstr "%s は有効な IP アドレスではありません。"
 
 #. translators: 1: Parameter, 2: List of types.
 #. translators: 1: Parameter, 2: Type name.
-#: wp-includes/rest-api.php:1572 wp-includes/rest-api.php:1590
-#: wp-includes/rest-api.php:1623 wp-includes/rest-api.php:1669
-#: wp-includes/rest-api.php:1684 wp-includes/rest-api.php:1689
-#: wp-includes/rest-api.php:1694 wp-includes/rest-api.php:1700
+#: wp-includes/rest-api.php:1573 wp-includes/rest-api.php:1591
+#: wp-includes/rest-api.php:1624 wp-includes/rest-api.php:1670
+#: wp-includes/rest-api.php:1685 wp-includes/rest-api.php:1690
+#: wp-includes/rest-api.php:1695 wp-includes/rest-api.php:1701
 msgid "%1$s is not of type %2$s."
 msgstr "%1$s は %2$s タイプではありません。"
 
 #. translators: 1: Parameter, 2: List of valid values.
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1363
-#: wp-includes/rest-api.php:1678
+#: wp-includes/rest-api.php:1679
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s は %2$s に当てはまりません。"
 
@@ -7041,11 +7041,11 @@ msgstr "あらかじめ登録されているタクソノミーの削除は許可
 msgid "(Untitled)"
 msgstr "(無題)"
 
-#: wp-includes/rest-api.php:43
+#: wp-includes/rest-api.php:44
 msgid "Route must be specified."
 msgstr "ルートを指定する必要があります。"
 
-#: wp-includes/rest-api.php:40
+#: wp-includes/rest-api.php:41
 msgid "Routes must be namespaced with plugin or theme name and version."
 msgstr "ルートは、プラグイン名またはテーマ名とバージョンを使って名前空間の定義をする必要があります。"
 
@@ -7094,7 +7094,7 @@ msgstr "<strong>エラー</strong>: 無効なユーザー名かメールアド�
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Term name, 4: Taxonomy
 #. singular name.
-#: wp-includes/general-template.php:3106
+#: wp-includes/general-template.php:3107
 msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "%1$s %2$s %3$s %4$s のフィード"
 
@@ -7529,7 +7529,7 @@ msgstr "無効なショートコード名: %1$s。空白スペースや予約文
 msgid "Invalid shortcode name: Empty name given."
 msgstr "無効ショートコード名: 空の名前が指定されています。"
 
-#: wp-includes/rest-api.php:999
+#: wp-includes/rest-api.php:1000
 msgid "Cookie nonce is invalid"
 msgstr "Cookie nonce が不正です"
 
@@ -7537,18 +7537,18 @@ msgstr "Cookie nonce が不正です"
 #. message.
 #. translators: Developer debugging message. 1: PHP function name, 2: WordPress
 #. version number, 3: Explanatory message.
-#: wp-includes/rest-api.php:607 wp-includes/rest-api.php:632
+#: wp-includes/rest-api.php:608 wp-includes/rest-api.php:633
 msgid "%1$s (since %2$s; %3$s)"
 msgstr "%1$s (%2$s 以降。%3$s)"
 
 #. translators: 1: Function name, 2: WordPress version number.
-#: wp-includes/rest-api.php:586 wp-includes/rest-api.php:610
+#: wp-includes/rest-api.php:587 wp-includes/rest-api.php:611
 msgid "%1$s (since %2$s; no alternative available)"
 msgstr "%1$s (%2$s 以降。代替関数なし)"
 
 #. translators: 1: Function name, 2: WordPress version number, 3: New function
 #. name.
-#: wp-includes/rest-api.php:583
+#: wp-includes/rest-api.php:584
 msgid "%1$s (since %2$s; use %3$s instead)"
 msgstr "%1$s (%2$s 以降。代わりに %3$s を使ってください)"
 
@@ -7766,7 +7766,7 @@ msgid "Older comments"
 msgstr "過去のコメント"
 
 #. translators: Post calendar label. %s: Date.
-#: wp-includes/general-template.php:2337
+#: wp-includes/general-template.php:2338
 msgid "Posts published on %s"
 msgstr "%s に投稿を公開"
 
@@ -8872,52 +8872,52 @@ msgstr "%s に返信"
 msgid "The following values do not describe a valid date: year %1$s, month %2$s, day %3$s."
 msgstr "日付として正しい値ではありません: %1$s年 %2$s月 %3$s日。"
 
-#: wp-includes/general-template.php:1675
+#: wp-includes/general-template.php:1676
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "アサイド"
 
-#: wp-includes/general-template.php:1671 wp-includes/general-template.php:2335
+#: wp-includes/general-template.php:1672 wp-includes/general-template.php:2336
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "Y年n月j日"
 
-#: wp-includes/general-template.php:1679
+#: wp-includes/general-template.php:1680
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "画像"
 
-#: wp-includes/general-template.php:1677
+#: wp-includes/general-template.php:1678
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "ギャラリー"
 
-#: wp-includes/general-template.php:1683
+#: wp-includes/general-template.php:1684
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "引用"
 
-#: wp-includes/general-template.php:1681
+#: wp-includes/general-template.php:1682
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "動画"
 
-#: wp-includes/general-template.php:1685
+#: wp-includes/general-template.php:1686
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "リンク"
 
-#: wp-includes/general-template.php:1687
+#: wp-includes/general-template.php:1688
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "ステータス"
 
-#: wp-includes/general-template.php:1691
+#: wp-includes/general-template.php:1692
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "チャット"
 
-#: wp-includes/general-template.php:1689
+#: wp-includes/general-template.php:1690
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "音声"
@@ -10050,22 +10050,22 @@ msgstr "列グループ"
 msgid "Could not find the specified string."
 msgstr "指定された文字列が見つかりませんでした。"
 
-#: wp-includes/general-template.php:4518
+#: wp-includes/general-template.php:4519
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "コーヒー"
 
-#: wp-includes/general-template.php:4506
+#: wp-includes/general-template.php:4507
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "オーシャン"
 
-#: wp-includes/general-template.php:4494
+#: wp-includes/general-template.php:4495
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "エクトプラズム"
 
-#: wp-includes/general-template.php:4482
+#: wp-includes/general-template.php:4483
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "サンライズ"
@@ -10135,17 +10135,17 @@ msgstr "no-subset"
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "除外する項目の区切りとして %s の代わりにカンマを使ってください。"
 
-#: wp-includes/general-template.php:4470
+#: wp-includes/general-template.php:4471
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "ミッドナイト"
 
-#: wp-includes/general-template.php:4434
+#: wp-includes/general-template.php:4435
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "ライト"
 
-#: wp-includes/general-template.php:4422
+#: wp-includes/general-template.php:4423
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "デフォルト"
@@ -10805,7 +10805,7 @@ msgid "Display post date?"
 msgstr "投稿日を表示しますか ?"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Post type name.
-#: wp-includes/general-template.php:3112
+#: wp-includes/general-template.php:3113
 msgid "%1$s %2$s %3$s Feed"
 msgstr "%1$s %2$s %3$s フィード"
 
@@ -11251,12 +11251,12 @@ msgstr "無効な投稿者 ID。"
 msgid "Sorry, you are not allowed to edit posts in this post type."
 msgstr "この投稿タイプの投稿を編集する権限がありません。"
 
-#: wp-includes/general-template.php:1186 wp-includes/general-template.php:1668
+#: wp-includes/general-template.php:1186 wp-includes/general-template.php:1669
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "Y年n月"
 
-#: wp-includes/general-template.php:1183 wp-includes/general-template.php:1665
+#: wp-includes/general-template.php:1183 wp-includes/general-template.php:1666
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y年"
@@ -11393,7 +11393,7 @@ msgstr "<strong>エラー</strong>: コメント文を入力してください�
 msgid "Documentation"
 msgstr "ドキュメンテーション"
 
-#: wp-includes/general-template.php:4324 wp-includes/formatting.php:3872
+#: wp-includes/general-template.php:4325 wp-includes/formatting.php:3872
 #: wp-admin/themes.php:249
 msgid "&hellip;"
 msgstr "&hellip;"
@@ -11459,7 +11459,7 @@ msgstr "このファイルは画像ではありません。別のファイルを
 msgid "This is larger than the maximum size. Please try another."
 msgstr "ファイルサイズの上限を超えているようです。別のファイルをお試しください。"
 
-#: wp-includes/general-template.php:4458
+#: wp-includes/general-template.php:4459
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "ブルー"
@@ -13706,64 +13706,64 @@ msgstr "ユーザーは HTTP 経由のリクエストをブロックしました
 msgid "Gray"
 msgstr "グレー"
 
-#: wp-includes/general-template.php:4221
+#: wp-includes/general-template.php:4222
 msgid "Next &raquo;"
 msgstr "次へ &raquo;"
 
-#: wp-includes/general-template.php:4220
+#: wp-includes/general-template.php:4221
 msgid "&laquo; Previous"
 msgstr "&laquo; 前へ"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Search query.
-#: wp-includes/general-template.php:3110
+#: wp-includes/general-template.php:3111
 msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
 msgstr "%1$s %2$s 検索結果: &#8220;%3$s&#8221; フィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Author name.
-#: wp-includes/general-template.php:3108
+#: wp-includes/general-template.php:3109
 msgid "%1$s %2$s Posts by %3$s Feed"
 msgstr "%1$s %2$s %3$s による投稿のフィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Tag name.
-#: wp-includes/general-template.php:3104
+#: wp-includes/general-template.php:3105
 msgid "%1$s %2$s %3$s Tag Feed"
 msgstr "%1$s %2$s %3$s タグのフィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Category name.
-#: wp-includes/general-template.php:3102
+#: wp-includes/general-template.php:3103
 msgid "%1$s %2$s %3$s Category Feed"
 msgstr "%1$s %2$s %3$s カテゴリーのフィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Post title.
-#: wp-includes/general-template.php:3100
+#: wp-includes/general-template.php:3101
 msgid "%1$s %2$s %3$s Comments Feed"
 msgstr "%1$s %2$s %3$s のコメントのフィード"
 
 #. translators: 1: Blog title, 2: Separator (raquo).
-#: wp-includes/general-template.php:3060
+#: wp-includes/general-template.php:3061
 msgid "%1$s %2$s Comments Feed"
 msgstr "%1$s %2$s コメントフィード"
 
 #. translators: 1: Blog title, 2: Separator (raquo).
-#: wp-includes/general-template.php:3058
+#: wp-includes/general-template.php:3059
 msgid "%1$s %2$s Feed"
 msgstr "%1$s %2$s フィード"
 
 #. translators: Separator between blog name and feed type in feed links.
-#: wp-includes/general-template.php:3056 wp-includes/general-template.php:3098
+#: wp-includes/general-template.php:3057 wp-includes/general-template.php:3099
 msgctxt "feed link"
 msgid "&raquo;"
 msgstr "&raquo;"
 
 #. translators: Calendar caption: 1: Month name, 2: 4-digit year.
-#: wp-includes/general-template.php:2265
+#: wp-includes/general-template.php:2266
 msgctxt "calendar caption"
 msgid "%1$s %2$s"
 msgstr "%2$s年%1$s"
 
 #. translators: 1: Month, 2: Year.
 #. translators: 1: Month name, 2: 4-digit year.
-#: wp-includes/media.php:4118 wp-includes/general-template.php:2021
+#: wp-includes/media.php:4118 wp-includes/general-template.php:2022
 #: wp-admin/includes/class-wp-list-table.php:628
 msgid "%1$s %2$d"
 msgstr "%2$d年%1$s"
@@ -14393,13 +14393,13 @@ msgid "Sites"
 msgstr "サイト"
 
 #: wp-signup.php:206 wp-admin/includes/class-wp-links-list-table.php:259
-#: wp-admin/includes/class-wp-debug-data.php:99
-#: wp-admin/includes/class-wp-debug-data.php:104
-#: wp-admin/includes/class-wp-debug-data.php:109
-#: wp-admin/includes/class-wp-debug-data.php:119
-#: wp-admin/includes/class-wp-debug-data.php:748
-#: wp-admin/includes/class-wp-debug-data.php:757
-#: wp-admin/includes/class-wp-debug-data.php:766
+#: wp-admin/includes/class-wp-debug-data.php:100
+#: wp-admin/includes/class-wp-debug-data.php:105
+#: wp-admin/includes/class-wp-debug-data.php:110
+#: wp-admin/includes/class-wp-debug-data.php:115
+#: wp-admin/includes/class-wp-debug-data.php:754
+#: wp-admin/includes/class-wp-debug-data.php:763
+#: wp-admin/includes/class-wp-debug-data.php:772
 msgid "Yes"
 msgstr "はい"
 
@@ -14595,9 +14595,9 @@ msgstr "画像"
 #. translators: %s: Theme author link.
 #. translators: %s: Plugin author.
 #: wp-includes/js/dist/block-directory.js:2075
-#: wp-admin/includes/class-wp-debug-data.php:887
-#: wp-admin/includes/class-wp-debug-data.php:934
-#: wp-admin/includes/class-wp-debug-data.php:1263
+#: wp-admin/includes/class-wp-debug-data.php:893
+#: wp-admin/includes/class-wp-debug-data.php:940
+#: wp-admin/includes/class-wp-debug-data.php:1269
 #: wp-admin/includes/class-wp-themes-list-table.php:263
 #: wp-admin/includes/theme.php:815
 #: wp-admin/includes/class-wp-plugins-list-table.php:1026
@@ -14611,9 +14611,9 @@ msgid "By %s"
 msgstr "作者: %s"
 
 #: wp-includes/js/dist/block-library.js:22943
-#: wp-admin/includes/class-wp-debug-data.php:66
-#: wp-admin/includes/class-wp-debug-data.php:1074
-#: wp-admin/includes/class-wp-debug-data.php:1171
+#: wp-admin/includes/class-wp-debug-data.php:67
+#: wp-admin/includes/class-wp-debug-data.php:1080
+#: wp-admin/includes/class-wp-debug-data.php:1177
 #: wp-admin/includes/class-theme-installer-skin.php:238
 #: wp-admin/includes/class-plugin-installer-skin.php:217
 msgid "Version"
@@ -14836,7 +14836,7 @@ msgstr "ユーザー名"
 
 #: wp-includes/widgets/class-wp-widget-archives.php:30
 #: wp-includes/widgets/class-wp-widget-archives.php:43
-#: wp-includes/blocks/archives.php:35 wp-includes/general-template.php:1652
+#: wp-includes/blocks/archives.php:35 wp-includes/general-template.php:1653
 #: wp-includes/theme-compat/sidebar.php:119
 #: wp-includes/js/dist/block-library.js:9281 wp-admin/includes/file.php:26
 msgid "Archives"
@@ -15006,7 +15006,7 @@ msgstr "タグの編集"
 #: wp-includes/js/dist/block-library.js:8373
 #: wp-includes/js/dist/block-library.js:9554
 #: wp-includes/js/dist/block-library.js:23475 wp-admin/edit-tags.php:462
-#: wp-admin/includes/class-wp-debug-data.php:1059
+#: wp-admin/includes/class-wp-debug-data.php:1065
 #: wp-admin/includes/media.php:1099 wp-admin/includes/media.php:1227
 #: wp-admin/includes/media.php:2938 wp-admin/includes/media.php:2954
 #: wp-admin/edit-tag-form.php:173
@@ -15027,8 +15027,8 @@ msgid "Description"
 msgstr "説明"
 
 #: wp-includes/comment-template.php:2341
-#: wp-admin/includes/class-wp-debug-data.php:1065
-#: wp-admin/includes/class-wp-debug-data.php:1162
+#: wp-admin/includes/class-wp-debug-data.php:1071
+#: wp-admin/includes/class-wp-debug-data.php:1168
 #: wp-admin/includes/class-wp-users-list-table.php:357
 #: wp-admin/includes/template.php:476 wp-admin/user-edit.php:401
 #: wp-admin/edit-form-comment.php:49
@@ -15194,13 +15194,13 @@ msgid "Edit"
 msgstr "編集"
 
 #: wp-signup.php:210 wp-admin/includes/class-wp-links-list-table.php:261
-#: wp-admin/includes/class-wp-debug-data.php:99
-#: wp-admin/includes/class-wp-debug-data.php:104
-#: wp-admin/includes/class-wp-debug-data.php:109
-#: wp-admin/includes/class-wp-debug-data.php:119
-#: wp-admin/includes/class-wp-debug-data.php:748
-#: wp-admin/includes/class-wp-debug-data.php:757
-#: wp-admin/includes/class-wp-debug-data.php:766
+#: wp-admin/includes/class-wp-debug-data.php:100
+#: wp-admin/includes/class-wp-debug-data.php:105
+#: wp-admin/includes/class-wp-debug-data.php:110
+#: wp-admin/includes/class-wp-debug-data.php:115
+#: wp-admin/includes/class-wp-debug-data.php:754
+#: wp-admin/includes/class-wp-debug-data.php:763
+#: wp-admin/includes/class-wp-debug-data.php:772
 msgid "No"
 msgstr "いいえ"
 
@@ -15239,8 +15239,8 @@ msgstr "URL"
 
 #: wp-includes/class-wp-editor.php:1209 wp-includes/theme-compat/sidebar.php:29
 #: wp-includes/js/dist/components.js:43008 wp-includes/js/dist/editor.js:8532
-#: wp-admin/includes/class-wp-debug-data.php:1079
-#: wp-admin/includes/class-wp-debug-data.php:1176
+#: wp-admin/includes/class-wp-debug-data.php:1085
+#: wp-admin/includes/class-wp-debug-data.php:1182
 #: wp-admin/includes/class-theme-installer-skin.php:239
 #: wp-admin/includes/class-plugin-installer-skin.php:218
 #: wp-admin/includes/meta-boxes.php:906 wp-admin/includes/meta-boxes.php:1567
