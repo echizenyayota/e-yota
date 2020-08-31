@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>NHKアニメ 大家さんと僕 関連記事</h2>
+  <h2>はね駒 最終回 関連記事</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'ohyasan_to_boku';
+  $the_slug = 'hanekonma';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
@@ -89,7 +89,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>NHKアニメ大家さんと僕 人気記事</h2>
+  <h2>朝ドラ再放送 はね駒 人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
