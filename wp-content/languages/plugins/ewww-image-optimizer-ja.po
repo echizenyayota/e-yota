@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - EWWW Image Optimizer - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-09-14 00:55:43+0000\n"
+"PO-Revision-Date: 2020-09-14 15:53:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -342,7 +342,7 @@ msgstr "待機中"
 
 #: classes/class-ewwwio-gd-editor.php:361
 msgid "Cannot resize the image. Both width and height are not set."
-msgstr "画像をリサイズできまえｓん。幅と高さの両方が指定されていません。"
+msgstr "画像をリサイズできません。幅と高さの両方が指定されていません。"
 
 #: common.php:11196
 msgid "Your site is using Cloudflare, please use JS WebP or <picture> WebP rewriting."
@@ -391,7 +391,7 @@ msgstr "EWWW Image Optimizer で複数の画像の過剰な再ー最適化が検
 
 #: common.php:1815
 msgid "Scheduled Optimization will not work without background/async ability. See the EWWW Image Optimizer Settings for further instructions."
-msgstr "スケジュールされた最適化は、背景/非同期機能がないと動作しません。詳細な手順については、EEWWW Image Optimizer の設定をご覧ください。"
+msgstr "定期的な最適化は、バックグラウンド/非同期機能がないと動作しません。詳細な手順については、EEWWW Image Optimizer の設定をご覧ください。"
 
 #. translators: s: Installation Instructions (link)
 #. translators: %s: Installation Instructions
@@ -461,7 +461,7 @@ msgstr "画像の自動サイズ変換を無効化するには、無効化した
 
 #: common.php:10516
 msgid "One exclusion per line, no wildcards (*) needed. Any pattern or path provided will not be routed through Easy IO."
-msgstr "1行ごとに1つを除外し、ワイルドカード (*) は不要です。指定されたパターンやパスは、Easy IO に含まれません。"
+msgstr "1行ごとに1つを除外し、ワイルドカード (*) は不要です。指定されたパターンやパスは、簡単 IO に含められません。"
 
 #: common.php:10512 common.php:10548
 msgid "Exclusions"
@@ -1005,7 +1005,7 @@ msgstr "上級者向け"
 
 #: common.php:10148 common.php:10162 common.php:10182
 msgid "Basic"
-msgstr "ベーシック"
+msgstr "基本"
 
 #: common.php:10012
 msgid "You got the perfect score!"
@@ -1270,7 +1270,7 @@ msgstr "WordPress の管理画面から解説文書と私たちのサポート�
 
 #: bulk.php:236
 msgid "Please disable Scheduled optimization before continuing."
-msgstr "続ける前にスケジュール最適化を無効化してください。"
+msgstr "続ける前に定期的な最適化を無効化してください。"
 
 #: common.php:10387
 msgid "All methods used by the EWWW Image Optimizer are intended to produce visually identical images."
@@ -1346,11 +1346,11 @@ msgstr "EWWW Image Optimizer は PHP 5.6 以上が必要です。PHP 7.1 や 7.2
 
 #: common.php:10645
 msgid "Provide paths containing images to be optimized using the Bulk Optimizer and Scheduled Optimization."
-msgstr "一括最適化とスケジュール最適化を使用して、最適化する画像を含むパスを提供します。"
+msgstr "一括最適化と定期的な最適化に、最適化する画像を含むパスを提供する。"
 
 #: common.php:10623
 msgid "Scan all images from the latest two folders of the Media Library during the Bulk Optimizer and Scheduled Optimization."
-msgstr "一括最適化とスケジュール最適化が実行されている間、メディアライブラリの最新の2つのフォルダ内のすべての画像がスキャンされます。"
+msgstr "一括最適化と定期的な最適化が実行されている間、メディアライブラリの最新の2つのフォルダ内のすべての画像がスキャンされます。"
 
 #: common.php:10611
 msgid "*Include Media Library Folders has been disabled because it will cause the scanner to ignore the disabled resizes."
