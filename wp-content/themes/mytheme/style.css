@@ -886,6 +886,11 @@ blockquote:after {
   text-decoration: none;
 }
 
+/* .mymenu li a .text {
+  color: #000080;
+} */
+
+
 .mymenu .new_article {
   display: inline;
 }
