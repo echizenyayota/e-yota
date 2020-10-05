@@ -30,7 +30,7 @@ pre {
 }
 
 body a {
-  color: #28b;
+  color: #000080;
 }
 
 
@@ -137,6 +137,7 @@ header, .container, .sub-header {
 .copyright-menu a {
   color: #fff;
 }
+
 
 .footer-category {
   padding: 0 10px;
