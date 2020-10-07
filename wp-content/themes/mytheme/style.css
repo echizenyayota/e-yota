@@ -911,7 +911,9 @@ blockquote:after {
   color: #28b;
 }
 
-
+.mymenu-large li .text {
+  color: #000080;
+}
 
 .mymenu-thumb li:last-child {
   border: none;
