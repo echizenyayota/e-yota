@@ -33,6 +33,10 @@ body a {
   color: #000080;
 }
 
+div.text {
+  color: #000080;
+} 
+
 
 /*　------------------------　基本構造　------------------------　*/
 
@@ -135,7 +139,7 @@ header, .container, .sub-header {
 }
 
 .copyright-menu a {
-  color: #fff;
+  color: #000080;
 }
 
 
@@ -149,7 +153,7 @@ header, .container, .sub-header {
 
 .copyright p {
   margin: 0;
-  color: #fff;
+  color: #000080;
   font-size: 14px;
 }
 
@@ -173,6 +177,7 @@ footer .widget_categories ul {
 .cat-item a:hover {
   text-decoration: underline;
 }
+
 
 
 
@@ -613,7 +618,7 @@ blockquote:after {
 .bread li a {
   display: inline-block;;
   padding: 5px 5px;
-  color: #888888;
+  color: #000080;
   font-size: 12px;
   text-decoration: none;
 }
