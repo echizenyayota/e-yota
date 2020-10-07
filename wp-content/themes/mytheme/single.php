@@ -109,18 +109,18 @@
             <li>
               <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode( get_the_title() . ' - ' . get_bloginfo('name') ); ?>&amp;url=<?php echo urlencode( get_permalink() ); ?>&amp;via=echizenya_yota"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-tw">
-                ツイート 
+                <!-- ツイート  -->
               </a>
             </li>
             <li>
               <a href="http://www.facebook.com/share.php?u=<?php echo urlencode( get_permalink() ); ?>"
             	onclick="window.open(this.href, 'SNS', 'width=500, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="share-fb">
-                シェア
+                <!-- シェア -->
               </a>
             </li>
             <li>
               <a href="//b.hatena.ne.jp/entry/<?php echo urlencode( get_permalink() ); ?>" onclick="window.open(this.href, 'SNS', 'width=1000, height=400, menubar=no, toolbar=no, scrollbars=yes'); return false;"  target="_blank" class="share-hatena" rel="noopener noreferrer">
-                はてな<span>ブックマーク</span>
+                <!-- はてな<span>ブックマーク</span> -->
               </a>
             </li>
           </ul>
