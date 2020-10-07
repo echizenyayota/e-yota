@@ -33,9 +33,7 @@ body a {
   color: #000080;
 }
 
-div.text {
-  color: #000080;
-} 
+
 
 
 /*　------------------------　基本構造　------------------------　*/
@@ -853,7 +851,7 @@ blockquote:after {
 
 .mymenu-large li .text {
   padding: 5px 10px;
-  color: #2288BB;
+  color: #000080;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -891,10 +889,6 @@ blockquote:after {
   text-decoration: none;
 }
 
-/* .mymenu li a .text {
-  color: #000080;
-} */
-
 
 .mymenu .new_article {
   display: inline;
@@ -916,6 +910,8 @@ blockquote:after {
 .mymenu-thumb li a {
   color: #28b;
 }
+
+
 
 .mymenu-thumb li:last-child {
   border: none;
