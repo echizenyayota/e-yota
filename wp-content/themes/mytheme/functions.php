@@ -302,6 +302,14 @@ if ( !is_admin() ) {
   add_filter( 'the_content', 'screen_reader', 10, 2 );
 }
 
+// ウィジェットの検索フォームにaria-label属性を追記する関数の追記
+function my_search_form( $form ) {
+	$form = str_replace( 'name="s"', 'name="s" aria-label="search-box"', $form );
+	return $form;
+}
+add_filter( 'get_search_form', 'my_search_form' );
+
+
 
 
 
