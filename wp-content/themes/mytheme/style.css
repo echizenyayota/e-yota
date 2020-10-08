@@ -907,11 +907,8 @@ blockquote:after {
   color: #2288bb;
 }
 
+.mymenu-thumb li .text,
 .mymenu-thumb li a {
-  color: #28b;
-}
-
-.mymenu-thumb li .text {
   color: #000080;
 }
 
