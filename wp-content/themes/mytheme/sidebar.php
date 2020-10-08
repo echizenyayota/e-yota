@@ -51,7 +51,7 @@
     setup_postdata( $post ); // 記事データの取得
   ?>
   <li>
-      <a href="<?php the_permalink(); ?>" class="img_link">
+      <a href="<?php the_permalink(); ?>" class="img_link" aria-label="thumbnail">
         <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
       </a>
       <div class="text">
