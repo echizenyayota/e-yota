@@ -11,7 +11,6 @@
         <?php $postcat = get_the_category(); ?>
         <?php echo get_category_parents( $postcat[0], true, '</li><li>'); ?>
       <?php endif; ?>
-      <a><?php the_title(); ?></a>
     </li>
 </ol>
 </div>
