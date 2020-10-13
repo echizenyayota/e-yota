@@ -155,6 +155,11 @@ header, .container, .sub-header {
   font-size: 14px;
 }
 
+/* ウィジェット */
+.widgettitle li a {
+  padding: 10px;
+}
+
 .widget_categories {
   list-style:none;
 }
