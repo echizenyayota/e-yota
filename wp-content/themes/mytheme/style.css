@@ -589,6 +589,7 @@ blockquote:after {
   color: #ffffff;
   font-size: 12px;
   text-decoration: none;
+  padding: 10px;
 }
 
 .kiji-tag li a:hover {
@@ -619,6 +620,7 @@ blockquote:after {
   color: #000080;
   font-size: 12px;
   text-decoration: none;
+  padding: 10px;
 }
 
 .bread li a[href]:hover {
