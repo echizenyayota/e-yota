@@ -65,7 +65,7 @@
             $cat_link = get_category_link($catid);
           ?>
           <span class="new_article">
-            <a href="<?php echo esc_url($cat_link); ?>"><?php echo $postcat[1]->name; ?></a>
+            <?php echo $postcat[1]->name; ?>
           </span>
         <?php endif; ?>
         <?php
@@ -73,9 +73,7 @@
           $month  = get_the_date( 'm' );
         ?>
           <span class="new_article">
-            <a href="<?php echo get_month_link( $year, $month ); ?>">
               <?php echo get_the_date(); ?>
-            </a>
           </span>
       </div>
 
