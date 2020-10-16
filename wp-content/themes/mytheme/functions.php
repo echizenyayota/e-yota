@@ -309,6 +309,17 @@ function my_search_form( $form ) {
 }
 add_filter( 'get_search_form', 'my_search_form' );
 
+// maskable_iconの追加
+add_filter( 'web_app_manifest', function( $manifest ) {
+	$manifest['icons'][] = [
+		'src'     => home_url( '/android-app.png' ),
+		'sizes'   => '192x192',
+		'type'    => 'image/png',
+		'purpose' => 'any maskable',
+	];
+	return $manifest;
+} );
+
 
 
 
