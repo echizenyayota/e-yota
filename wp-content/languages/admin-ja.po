@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-02 15:20:53+0000\n"
+"PO-Revision-Date: 2020-10-22 03:17:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -402,10 +402,10 @@ msgstr "%s を今すぐ更新"
 
 #. translators: 1: Plugin name, 2: Version number.
 #. translators: 1: Theme name, 2: Version number.
-#: wp-admin/includes/class-wp-automatic-updater.php:1066
-#: wp-admin/includes/class-wp-automatic-updater.php:1084
-#: wp-admin/includes/class-wp-automatic-updater.php:1107
-#: wp-admin/includes/class-wp-automatic-updater.php:1125
+#: wp-admin/includes/class-wp-automatic-updater.php:1070
+#: wp-admin/includes/class-wp-automatic-updater.php:1088
+#: wp-admin/includes/class-wp-automatic-updater.php:1111
+#: wp-admin/includes/class-wp-automatic-updater.php:1129
 msgid "- %1$s version %2$s"
 msgstr "- %1$s バージョン%2$s"
 
@@ -603,92 +603,92 @@ msgid "Error: You can&#8217;t reply to a comment on a draft post."
 msgstr "エラー: 投稿の下書きについたコメントに返信することはできません。"
 
 #. translators: %s: Themes screen URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1149
+#: wp-admin/includes/class-wp-automatic-updater.php:1153
 msgid "To manage themes on your site, visit the Themes page: %s"
 msgstr "サイトのテーマを管理するには、テーマページにアクセスしてください: %s"
 
 #. translators: %s: Plugins screen URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1140
+#: wp-admin/includes/class-wp-automatic-updater.php:1144
 msgid "To manage plugins on your site, visit the Plugins page: %s"
 msgstr "サイトのプラグインを管理するには、プラグインページにアクセスしてください: %s"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1120
+#: wp-admin/includes/class-wp-automatic-updater.php:1124
 msgid "These themes are now up to date:"
 msgstr "以下のテーマを更新しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1102
+#: wp-admin/includes/class-wp-automatic-updater.php:1106
 msgid "These plugins are now up to date:"
 msgstr "以下のプラグインを更新しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1079
+#: wp-admin/includes/class-wp-automatic-updater.php:1083
 msgid "These themes failed to update:"
 msgstr "以下のテーマの更新に失敗しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1061
+#: wp-admin/includes/class-wp-automatic-updater.php:1065
 msgid "These plugins failed to update:"
 msgstr "以下のプラグインの更新に失敗しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1056
+#: wp-admin/includes/class-wp-automatic-updater.php:1060
 msgid "Please check your site now. It’s possible that everything is working. If there are updates available, you should update."
 msgstr "サイトを確認してみてください。すべて問題なく動いている可能性があります。利用できる更新がある場合は更新をおすすめします。"
 
 #. translators: %s: Home URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1046
+#: wp-admin/includes/class-wp-automatic-updater.php:1050
 msgid "Howdy! Themes failed to update on your site at %s."
 msgstr "%s にあるサイトでのテーマの更新に失敗しました。"
 
 #. translators: %s: Site title.
-#: wp-admin/includes/class-wp-automatic-updater.php:1043
+#: wp-admin/includes/class-wp-automatic-updater.php:1047
 msgid "[%s] Some themes have failed to update"
 msgstr "[%s] 一部のテーマの更新に失敗しました"
 
 #. translators: %s: Home URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1038
+#: wp-admin/includes/class-wp-automatic-updater.php:1042
 msgid "Howdy! Plugins failed to update on your site at %s."
 msgstr "%s にあるサイトでのプラグインの更新に失敗しました。"
 
 #. translators: %s: Site title.
-#: wp-admin/includes/class-wp-automatic-updater.php:1035
+#: wp-admin/includes/class-wp-automatic-updater.php:1039
 msgid "[%s] Some plugins have failed to update"
 msgstr "[%s] 一部のプラグインの更新に失敗しました"
 
 #. translators: %s: Home URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1030
+#: wp-admin/includes/class-wp-automatic-updater.php:1034
 msgid "Howdy! Plugins and themes failed to update on your site at %s."
 msgstr "%s にあるサイトでのプラグインとテーマの更新に失敗しました。"
 
 #. translators: %s: Site title.
-#: wp-admin/includes/class-wp-automatic-updater.php:1027
+#: wp-admin/includes/class-wp-automatic-updater.php:1031
 msgid "[%s] Some plugins and themes have failed to update"
 msgstr "[%s] 一部のプラグインとテーマの更新に失敗しました"
 
 #. translators: %s: Home URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1017
+#: wp-admin/includes/class-wp-automatic-updater.php:1021
 msgid "Howdy! Some themes have automatically updated to their latest versions on your site at %s. No further action is needed on your part."
 msgstr "一部のテーマが、%s のサイト上で自動的に最新バージョンに更新されました。何もする必要はありません。"
 
 #. translators: %s: Site title.
-#: wp-admin/includes/class-wp-automatic-updater.php:1014
+#: wp-admin/includes/class-wp-automatic-updater.php:1018
 msgid "[%s] Some themes were automatically updated"
 msgstr "[%s] 一部のテーマを自動更新しました"
 
 #. translators: %s: Home URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1009
+#: wp-admin/includes/class-wp-automatic-updater.php:1013
 msgid "Howdy! Some plugins have automatically updated to their latest versions on your site at %s. No further action is needed on your part."
 msgstr "一部のプラグインが、%s のサイト上で自動的に最新バージョンに更新されました。何もする必要はありません。"
 
 #. translators: %s: Site title.
-#: wp-admin/includes/class-wp-automatic-updater.php:1006
+#: wp-admin/includes/class-wp-automatic-updater.php:1010
 msgid "[%s] Some plugins were automatically updated"
 msgstr "[%s] 一部のプラグインを自動更新しました"
 
 #. translators: %s: Home URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1001
+#: wp-admin/includes/class-wp-automatic-updater.php:1005
 msgid "Howdy! Some plugins and themes have automatically updated to their latest versions on your site at %s. No further action is needed on your part."
 msgstr "一部のプラグインとテーマが、%s のサイト上で自動的に最新バージョンに更新されました。何もする必要はありません。"
 
 #. translators: %s: Site title.
-#: wp-admin/includes/class-wp-automatic-updater.php:998
+#: wp-admin/includes/class-wp-automatic-updater.php:1002
 msgid "[%s] Some plugins and themes have automatically updated"
 msgstr "[%s] 一部のプラグインとテーマを自動更新しました"
 
@@ -1885,13 +1885,13 @@ msgstr "値 %1$s は %2$s により有効化されたか、構成ファイルに
 
 #. translators: Background update finished notification email subject. %s: Site
 #. title.
-#: wp-admin/includes/class-wp-automatic-updater.php:1286
+#: wp-admin/includes/class-wp-automatic-updater.php:1290
 msgid "[%s] Background Update Finished"
 msgstr "[%s] バックグラウンド更新が終了しました"
 
 #. translators: Background update failed notification email subject. %s: Site
 #. title.
-#: wp-admin/includes/class-wp-automatic-updater.php:1283
+#: wp-admin/includes/class-wp-automatic-updater.php:1287
 msgid "[%s] Background Update Failed"
 msgstr "[%s] バックグラウンド更新に失敗しました"
 
@@ -2662,7 +2662,7 @@ msgstr "WordPress %s のチェックサムのリストの取得に失敗しま�
 
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:327
 msgid "Your installation of WordPress doesn't require FTP credentials to perform updates."
-msgstr "この WordPress サイトでは更新の実行の際に FTP 情報が必要となりません。"
+msgstr "この WordPress サイトでは更新の実行の際に FTP 認証情報を必要としません。"
 
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:318
 msgid "(Your site is performing updates over FTP due to file ownership. Talk to your hosting company.)"
@@ -2670,7 +2670,7 @@ msgstr "(このサイトではファイルの所有権の問題のため、更�
 
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:317
 msgid "Your installation of WordPress prompts for FTP credentials to perform updates."
-msgstr "この WordPress サイトでは更新の実行の際に FTP 情報が必要となります。"
+msgstr "この WordPress サイトでは更新の実行の際に FTP 認証情報が必要となります。"
 
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:300
 msgid "No version control systems were detected."
@@ -6830,7 +6830,7 @@ msgstr ""
 "###SITENAME### 運営者一同\n"
 "###SITEURL###"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1290
+#: wp-admin/includes/class-wp-automatic-updater.php:1294
 msgid ""
 "UPDATE LOG\n"
 "=========="
@@ -6838,7 +6838,7 @@ msgstr ""
 "更新ログ\n"
 "=========="
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1267
+#: wp-admin/includes/class-wp-automatic-updater.php:1271
 msgid ""
 "BETA TESTING?\n"
 "=============\n"
@@ -7489,36 +7489,36 @@ msgid "This screen shows an individual user all of their sites in this network, 
 msgstr "この画面ではユーザーが参加しているこのサイトネットワーク内のすべてのサイトを表示し、その中からメインのサイトを設定できるようになっています。各サイトの下にあるリンクをクリックし、そのサイトのフロントエンドまたはダッシュボードにアクセスできます。"
 
 #. translators: 1: Error code, 2: Error message.
-#: wp-admin/includes/class-wp-automatic-updater.php:1323
+#: wp-admin/includes/class-wp-automatic-updater.php:1327
 msgid "Error: [%1$s] %2$s"
 msgstr "エラー: [%1$s] %2$s"
 
 #. translators: 1: Error code, 2: Error message.
-#: wp-admin/includes/class-wp-automatic-updater.php:1320
+#: wp-admin/includes/class-wp-automatic-updater.php:1324
 msgid "Rollback Error: [%1$s] %2$s"
 msgstr "ロールバックエラー: [%1$s] %2$s"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1249
+#: wp-admin/includes/class-wp-automatic-updater.php:1253
 msgid "The following translations failed to update:"
 msgstr "以下の翻訳ファイルの更新に失敗しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1248
+#: wp-admin/includes/class-wp-automatic-updater.php:1252
 msgid "The following themes failed to update:"
 msgstr "以下のテーマの更新に失敗しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1247
+#: wp-admin/includes/class-wp-automatic-updater.php:1251
 msgid "The following plugins failed to update:"
 msgstr "以下のプラグインの更新に失敗しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1235
+#: wp-admin/includes/class-wp-automatic-updater.php:1239
 msgid "The following translations were successfully updated:"
 msgstr "以下の翻訳ファイルの更新に成功しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1234
+#: wp-admin/includes/class-wp-automatic-updater.php:1238
 msgid "The following themes were successfully updated:"
 msgstr "以下のテーマの更新に成功しました:"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:1233
+#: wp-admin/includes/class-wp-automatic-updater.php:1237
 msgid "The following plugins were successfully updated:"
 msgstr "以下のプラグインの更新に成功しました:"
 
@@ -7610,27 +7610,27 @@ msgid "Activity"
 msgstr "アクティビティ"
 
 #. translators: %s: Name of plugin / theme / translation.
-#: wp-admin/includes/class-wp-automatic-updater.php:1256
+#: wp-admin/includes/class-wp-automatic-updater.php:1260
 msgid "FAILED: %s"
 msgstr "失敗: %s"
 
 #. translators: %s: Name of plugin / theme / translation.
-#: wp-admin/includes/class-wp-automatic-updater.php:1241
+#: wp-admin/includes/class-wp-automatic-updater.php:1245
 msgid "SUCCESS: %s"
 msgstr "成功: %s"
 
 #. translators: %s: WordPress version.
-#: wp-admin/includes/class-wp-automatic-updater.php:1219
+#: wp-admin/includes/class-wp-automatic-updater.php:1223
 msgid "FAILED: WordPress failed to update to %s"
 msgstr "失敗: WordPress バージョン %s への更新に失敗しました"
 
 #. translators: %s: WordPress version.
-#: wp-admin/includes/class-wp-automatic-updater.php:1216
+#: wp-admin/includes/class-wp-automatic-updater.php:1220
 msgid "SUCCESS: WordPress was successfully updated to %s"
 msgstr "成功: WordPress バージョン %s への更新に成功しました"
 
 #. translators: %s: Network home URL.
-#: wp-admin/includes/class-wp-automatic-updater.php:1209
+#: wp-admin/includes/class-wp-automatic-updater.php:1213
 msgid "WordPress site: %s"
 msgstr "WordPress サイト: %s"
 
@@ -7683,7 +7683,7 @@ msgid "We have some data that describes the error your site encountered."
 msgstr "サイトに生じたエラーについて説明するデータがあります。"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:806
-#: wp-admin/includes/class-wp-automatic-updater.php:1158
+#: wp-admin/includes/class-wp-automatic-updater.php:1162
 msgid "The WordPress Team"
 msgstr "WordPress チーム"
 
@@ -7692,7 +7692,7 @@ msgid "You also have some plugins or themes with updates available. Update them 
 msgstr "最新版が利用できるプラグインまたはテーマもあります。今すぐ更新してください。"
 
 #: wp-admin/includes/class-wp-automatic-updater.php:787
-#: wp-admin/includes/class-wp-automatic-updater.php:1156
+#: wp-admin/includes/class-wp-automatic-updater.php:1160
 msgid "If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help."
 msgstr "問題が生じたり、サポートが必要な場合は、WordPress.org のサポートフォーラムのボランティアが助けになるでしょう。"
 
@@ -10775,15 +10775,15 @@ msgstr "<strong>順序</strong> &mdash; 固定ページは通常アルファベ�
 
 #: wp-admin/includes/file.php:2189
 msgid "If you do not remember your credentials, you should contact your web host."
-msgstr "アクセス情報が思い出せない場合は、ホスティング担当者に問い合わせてください。"
+msgstr "認証情報が思い出せない場合は、ホスティング担当者に問い合わせてください。"
 
 #: wp-admin/includes/file.php:2183
 msgid "Please enter your FTP credentials to proceed."
-msgstr "次に進むには FTP のアクセス情報を入力してください。"
+msgstr "次に進むには FTP の認証情報を入力してください。"
 
 #: wp-admin/includes/file.php:2179
 msgid "Please enter your FTP or SSH credentials to proceed."
-msgstr "次に進むには FTP または SSH のアクセス情報を入力してください。"
+msgstr "次に進むには FTP または SSH の認証情報を入力してください。"
 
 #: wp-admin/user-edit.php:49
 msgid "Your profile contains information about you (your &#8220;account&#8221;) as well as some personal options related to using WordPress."
