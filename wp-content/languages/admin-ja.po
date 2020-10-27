@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-22 03:17:24+0000\n"
+"PO-Revision-Date: 2020-10-26 13:08:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1105,29 +1105,29 @@ msgid "This localized version contains both the translation and various other lo
 msgstr "この翻訳バージョンには、翻訳とさまざまなその他の翻訳版修正の両方が含まれています。"
 
 #. translators: 1: Number of issues. 2: URL to Site Health screen.
-#: wp-admin/includes/dashboard.php:1851
+#: wp-admin/includes/dashboard.php:1853
 msgid "Take a look at the <strong>%1$d item</strong> on the <a href=\"%2$s\">Site Health screen</a>."
 msgid_plural "Take a look at the <strong>%1$d items</strong> on the <a href=\"%2$s\">Site Health screen</a>."
 msgstr[0] "<a href=\"%2$s\">サイトヘルス画面</a>上の<strong>%1$d項目</strong>をご確認ください。"
 
-#: wp-admin/includes/dashboard.php:1841
+#: wp-admin/includes/dashboard.php:1843
 msgid "Your site&#8217;s health is looking good, but there are still some things you can do to improve its performance and security."
 msgstr "サイトの状態は健康ですが、まだパフォーマンスやセキュリティを改善する余地があります。"
 
-#: wp-admin/includes/dashboard.php:1839
+#: wp-admin/includes/dashboard.php:1841
 msgid "Great job! Your site currently passes all site health checks."
 msgstr "おめでとうございます ! 現在、サイトはすべてのサイトヘルスチェックに合格しています。"
 
-#: wp-admin/includes/dashboard.php:1837
+#: wp-admin/includes/dashboard.php:1839
 msgid "Your site has critical issues that should be addressed as soon as possible to improve its performance and security."
 msgstr "サイトに重大な問題があります。パフォーマンスやセキュリティを改善するため、できるだけ早く対処する必要があります。"
 
 #. translators: %s: URL to Site Health screen.
-#: wp-admin/includes/dashboard.php:1829
+#: wp-admin/includes/dashboard.php:1831
 msgid "Site health checks will automatically run periodically to gather information about your site. You can also <a href=\"%s\">visit the Site Health screen</a> to gather information about your site now."
 msgstr "サイトヘルスチェックは定期的に自動実行され、サイトの情報を収集します。<a href=\"%s\">サイトヘルス画面にアクセス</a>して、すぐに情報を収集することもできます。"
 
-#: wp-admin/includes/dashboard.php:1817
+#: wp-admin/includes/dashboard.php:1819
 msgid "No information yet&hellip;"
 msgstr "まだ情報がありません&hellip;"
 
@@ -1181,35 +1181,44 @@ msgstr "ゴミ箱にメディアファイルがありません。"
 
 #. translators: Date string for upcoming events. 1: Starting month, 2: Starting
 #. day, 3: Ending month, 4: Ending day, 5: Year.
-#: wp-admin/includes/class-wp-community-events.php:405
+#. translators: Date string for upcoming events. 1: Starting month, 2: Starting
+#. day, 3: Ending month, 4: Ending day, 5: Ending year.
+#: wp-admin/includes/class-wp-community-events.php:422
+#: wp-admin/js/dashboard.js:750
 msgid "%1$s %2$d – %3$s %4$d, %5$d"
 msgstr "%4$d%1$s%2$d – %5$d%3$s"
 
 #. translators: Upcoming events year format. See https://www.php.net/date
-#: wp-admin/includes/class-wp-community-events.php:400
-#: wp-admin/includes/class-wp-community-events.php:410
+#: wp-admin/includes/class-wp-community-events.php:417
+#: wp-admin/includes/class-wp-community-events.php:427
+#: wp-admin/js/dashboard.js:763 wp-admin/js/dashboard.js:774
 msgctxt "upcoming events year format"
 msgid "Y"
 msgstr "Y年"
 
 #. translators: Upcoming events day format. See https://www.php.net/date
-#: wp-admin/includes/class-wp-community-events.php:397
-#: wp-admin/includes/class-wp-community-events.php:398
-#: wp-admin/includes/class-wp-community-events.php:407
-#: wp-admin/includes/class-wp-community-events.php:409
+#: wp-admin/includes/class-wp-community-events.php:414
+#: wp-admin/includes/class-wp-community-events.php:415
+#: wp-admin/includes/class-wp-community-events.php:424
+#: wp-admin/includes/class-wp-community-events.php:426
+#: wp-admin/js/dashboard.js:761 wp-admin/js/dashboard.js:762
+#: wp-admin/js/dashboard.js:771 wp-admin/js/dashboard.js:773
 msgctxt "upcoming events day format"
 msgid "j"
 msgstr "j日"
 
 #. translators: Date string for upcoming events. 1: Month, 2: Starting day, 3:
 #. Ending day, 4: Year.
-#: wp-admin/includes/class-wp-community-events.php:394
+#: wp-admin/includes/class-wp-community-events.php:411
+#: wp-admin/js/dashboard.js:748
 msgid "%1$s %2$d–%3$d, %4$d"
 msgstr "%4$d%1$s%2$d–%3$d"
 
 #. translators: Upcoming events month format. See https://www.php.net/date
-#: wp-admin/includes/class-wp-community-events.php:388
-#: wp-admin/includes/class-wp-community-events.php:389
+#: wp-admin/includes/class-wp-community-events.php:405
+#: wp-admin/includes/class-wp-community-events.php:406
+#: wp-admin/js/dashboard.js:760 wp-admin/js/dashboard.js:770
+#: wp-admin/js/dashboard.js:772
 msgctxt "upcoming events month format"
 msgid "F"
 msgstr "n月"
@@ -1391,7 +1400,7 @@ msgstr "<a href=\"https://ja.wordpress.org/support/article/users-add-new-screen/
 msgid "This page can show you every detail about the configuration of your WordPress website. For any improvements that could be made, see the <a href=\"%s\">Site Health Status</a> page."
 msgstr "このページでは WordPress ウェブサイトの構成に関するすべての詳細が表示されています。何か改良すべき点が見つかれば、<a href=\"%s\">サイトヘルスステータス</a>ページで通知します。"
 
-#: wp-admin/includes/dashboard.php:1819 wp-admin/site-health-info.php:47
+#: wp-admin/includes/dashboard.php:1821 wp-admin/site-health-info.php:47
 #: wp-admin/site-health.php:52
 msgid "Results are still loading&hellip;"
 msgstr "結果を読み込み中 &hellip;"
@@ -1474,7 +1483,7 @@ msgstr "https://wordpress.org/support/article/giving-wordpress-its-own-directory
 msgid "<a href=\"https://wordpress.org/support/article/settings-general-screen/\">Documentation on General Settings</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/settings-general-screen/\">一般設定の解説</a>"
 
-#: wp-admin/includes/dashboard.php:1930
+#: wp-admin/includes/dashboard.php:1932
 msgid "https://wordpress.org/support/article/first-steps-with-wordpress/"
 msgstr "https://ja.wordpress.org/support/article/first-steps-with-wordpress-b/"
 
@@ -1850,7 +1859,7 @@ msgstr "SQL サーバーは、WordPress がサイトのコンテンツや設定�
 msgid "PHP modules perform most of the tasks on the server that make your site run. Any changes to these must be made by your server administrator."
 msgstr "PHP モジュールはサイトの稼働に必要なほとんどのタスクをサーバー上で実行します。変更はサーバー管理者が実施する必要があります。"
 
-#: wp-admin/includes/dashboard.php:1747
+#: wp-admin/includes/dashboard.php:1749
 msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site&#8217;s performance."
 msgstr "PHP は WordPress の開発や保守に使用されているプログラミング言語です。PHP の新しいバージョンはより高速で安全なため、アップグレードするとサイトのパフォーマンスに良い影響を与えます。"
 
@@ -3240,24 +3249,24 @@ msgstr "<a href=\"%1$s\">WordPress %2$s</a> は MySQL のバージョン %3$s �
 msgid "You cannot install because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s."
 msgstr "<a href=\"%1$s\">WordPress %2$s</a> は PHP のバージョン %3$s 以上を必要とするため、インストールすることができません。現在実行中の PHP バージョンは %4$s です。"
 
-#: wp-admin/includes/dashboard.php:1913
+#: wp-admin/includes/dashboard.php:1915
 msgid "Set up your homepage"
 msgstr "ホームページを設定しましょう"
 
 #: wp-admin/includes/class-wp-site-health.php:734
-#: wp-admin/includes/dashboard.php:1754
+#: wp-admin/includes/dashboard.php:1756
 msgid "Learn more about updating PHP"
 msgstr "PHP の更新についてさらに詳しく"
 
-#: wp-admin/includes/dashboard.php:1746
+#: wp-admin/includes/dashboard.php:1748
 msgid "What is PHP and how does it affect my site?"
 msgstr "PHP とは何ですか ? サイトにどう影響しますか ?"
 
-#: wp-admin/includes/dashboard.php:1740
+#: wp-admin/includes/dashboard.php:1742
 msgid "WordPress has detected that your site is running on an outdated version of PHP."
 msgstr "サイトが古いバージョンの PHP を実行していることを検出しました。"
 
-#: wp-admin/includes/dashboard.php:1738
+#: wp-admin/includes/dashboard.php:1740
 msgid "WordPress has detected that your site is running on an insecure version of PHP."
 msgstr "サイトが安全ではないバージョンの PHP を実行していることを検出しました。"
 
@@ -4802,7 +4811,7 @@ msgid "Open"
 msgstr "受付中"
 
 #. translators: %s: Meetup organization documentation URL.
-#: wp-admin/includes/dashboard.php:1407
+#: wp-admin/includes/dashboard.php:1409
 msgid "There aren&#8217;t any events scheduled near you at the moment. Would you like to <a href=\"%s\">organize a WordPress event</a>?"
 msgstr "現在、近くで予定されているイベントはありません。<a href=\"%s\">WordPress のイベントを企画してみませんか</a> ?"
 
@@ -4816,13 +4825,13 @@ msgstr "ユーザー %s を編集"
 msgid "Edit widget: %s"
 msgstr "ウィジェットを編集: %s"
 
-#: wp-admin/includes/dashboard.php:1399 wp-admin/includes/dashboard.php:1408
+#: wp-admin/includes/dashboard.php:1401 wp-admin/includes/dashboard.php:1410
 msgid "https://make.wordpress.org/community/handbook/meetup-organizer/welcome/"
 msgstr "https://ja.wordpress.org/get-involved/meetup/"
 
 #. translators: 1: The city the user searched for, 2: Meetup organization
 #. documentation URL.
-#: wp-admin/includes/dashboard.php:1397
+#: wp-admin/includes/dashboard.php:1399
 msgid "There aren&#8217;t any events scheduled near %1$s at the moment. Would you like to <a href=\"%2$s\">organize a WordPress event</a>?"
 msgstr "現在、%1$sの近くで予定されているイベントはありません。<a href=\"%2$s\">WordPress のイベントを企画してみませんか</a> ?"
 
@@ -4857,17 +4866,20 @@ msgstr "WordPress イベントとニュース"
 
 #. translators: Date format for upcoming events on the dashboard. Include the
 #. day of the week. See https://www.php.net/date
-#: wp-admin/includes/class-wp-community-events.php:379
-#: wp-admin/includes/class-wp-community-events.php:384
+#. translators: Date format for upcoming events on the dashboard. Include the
+#. day of the week. See https://www.php.net/manual/datetime.format.php
+#: wp-admin/includes/class-wp-community-events.php:396
+#: wp-admin/includes/class-wp-community-events.php:401
+#: wp-admin/js/dashboard.js:746
 msgid "l, M j, Y"
 msgstr "Y年n月j日 (D)"
 
-#: wp-admin/includes/class-wp-community-events.php:122
+#: wp-admin/includes/class-wp-community-events.php:124
 msgid "Unknown API error."
 msgstr "不明な API エラー。"
 
 #. translators: %d: Numeric HTTP status code, e.g. 400, 403, 500, 504, etc.
-#: wp-admin/includes/class-wp-community-events.php:117
+#: wp-admin/includes/class-wp-community-events.php:119
 msgid "Invalid API response code (%d)."
 msgstr "無効な API レスポンスコード (%d)。"
 
@@ -5677,7 +5689,7 @@ msgstr "日付テンプレート"
 msgid "Taxonomy Template"
 msgstr "タクソノミーテンプレート"
 
-#: wp-admin/includes/dashboard.php:1633
+#: wp-admin/includes/dashboard.php:1635
 msgid "Dismiss the browser warning panel"
 msgstr "ブラウザーの警告パネルを非表示"
 
@@ -6961,11 +6973,11 @@ msgstr "ユーザー名には、半角英数字、スペース、下線、ハイ
 msgid "Enable full-height editor and distraction-free functionality."
 msgstr "最大行表示エディターと集中執筆モード機能を有効化します。"
 
-#: wp-admin/includes/dashboard.php:1476
+#: wp-admin/includes/dashboard.php:1478
 msgid "https://planet.wordpress.org/feed/"
 msgstr "https://ja.wordpress.org/support/forums/feed"
 
-#: wp-admin/includes/dashboard.php:1467 wp-admin/index.php:88
+#: wp-admin/includes/dashboard.php:1469 wp-admin/index.php:88
 msgid "https://planet.wordpress.org/"
 msgstr "https://ja.wordpress.org/support/"
 
@@ -7331,11 +7343,11 @@ msgstr "公開状態を編集"
 msgid "Edit status"
 msgstr "ステータスを編集"
 
-#: wp-admin/includes/dashboard.php:1925
+#: wp-admin/includes/dashboard.php:1927
 msgid "Manage menus"
 msgstr "メニューの管理"
 
-#: wp-admin/includes/dashboard.php:1922
+#: wp-admin/includes/dashboard.php:1924
 msgid "Manage widgets"
 msgstr "ウィジェットの管理"
 
@@ -7388,12 +7400,12 @@ msgid "If you would like to see more themes to choose from, click on the &#8220;
 msgstr "もっと多くのテーマを見たいのであれば、「新規追加」ボタンをクリックして、 <a href=\"%s\">WordPress テーマディレクトリ</a>から追加テーマを見たり、探したりすることができます。WordPress テーマディレクトリのテーマはサードパーティによってデザイン、開発され、WordPress のライセンスと互換性があります。そして無料なんです !"
 
 #. translators: 1: Number of megabytes, 2: Percentage.
-#: wp-admin/includes/dashboard.php:1570
+#: wp-admin/includes/dashboard.php:1572
 msgid "%1$s MB (%2$s%%) Space Used"
 msgstr "%1$s MB (%2$s%%) 利用中"
 
 #. translators: %s: Number of megabytes.
-#: wp-admin/includes/dashboard.php:1556
+#: wp-admin/includes/dashboard.php:1558
 msgid "%s MB Space Allowed"
 msgstr "%s MB 利用可能"
 
@@ -7568,7 +7580,7 @@ msgstr "<strong>アクティビティ</strong> &mdash; 予約済み投稿、最�
 msgid "<strong>Screen Options</strong> &mdash; Use the Screen Options tab to choose which Dashboard boxes to show."
 msgstr "<strong>表示オプション</strong> &mdash; 表示オプションを使ってどのダッシュボードボックスを表示するか選んでください。"
 
-#: wp-admin/includes/dashboard.php:1563 wp-admin/includes/dashboard.php:1578
+#: wp-admin/includes/dashboard.php:1565 wp-admin/includes/dashboard.php:1580
 msgid "Manage Uploads"
 msgstr "更新を管理"
 
@@ -8493,15 +8505,15 @@ msgstr "背景色を選ぶには、色選択ボタンをクリックして正当
 msgid "You can choose whether or not your site will be crawled by robots, ping services, and spiders. If you want those services to ignore your site, click the checkbox next to &#8220;Discourage search engines from indexing this site&#8221; and click the Save Changes button at the bottom of the screen. Note that your privacy is not complete; your site is still visible on the web."
 msgstr "サイトをロボット、Ping サービス、スパイダーにクロールさせてよいか選べます。これらのサービスにサイトを無視させる場合は、「検索エンジンがサイトをインデックスしないようにする」と書かれた横のチェックボックスをクリックし、画面下の「変更を保存」ボタンをクリックしてください。サイトが完全に非公開になるわけではなく、Web 上ではサイトを閲覧できますのでご注意ください。"
 
-#: wp-admin/includes/dashboard.php:1930
+#: wp-admin/includes/dashboard.php:1932
 msgid "Learn more about getting started"
 msgstr "最初のステップについてさらに詳しく"
 
-#: wp-admin/includes/dashboard.php:1928
+#: wp-admin/includes/dashboard.php:1930
 msgid "Turn comments on or off"
 msgstr "コメントを表示/非表示"
 
-#: wp-admin/includes/dashboard.php:1919
+#: wp-admin/includes/dashboard.php:1921
 msgid "More Actions"
 msgstr "その他の操作"
 
@@ -8585,49 +8597,49 @@ msgstr "WordPress.org ユーザー名:"
 msgid "If you have marked plugins as favorites on WordPress.org, you can browse them here."
 msgstr "WordPress.org でプラグインをお気に入り (favorite) としてマークすると、ここで一覧表示できます。"
 
-#: wp-admin/includes/dashboard.php:1915
+#: wp-admin/includes/dashboard.php:1917
 msgid "View your site"
 msgstr "サイトを表示"
 
-#: wp-admin/includes/dashboard.php:1912
+#: wp-admin/includes/dashboard.php:1914
 msgid "Add an About page"
 msgstr "「サイトについて」固定ページを追加"
 
-#: wp-admin/includes/dashboard.php:1911
+#: wp-admin/includes/dashboard.php:1913
 msgid "Write your first blog post"
 msgstr "ブログに投稿する"
 
-#: wp-admin/includes/dashboard.php:1909
+#: wp-admin/includes/dashboard.php:1911
 msgid "Add a blog post"
 msgstr "ブログ投稿を追加"
 
-#: wp-admin/includes/dashboard.php:1905 wp-admin/includes/dashboard.php:1908
+#: wp-admin/includes/dashboard.php:1907 wp-admin/includes/dashboard.php:1910
 msgid "Add additional pages"
 msgstr "固定ページを追加"
 
-#: wp-admin/includes/dashboard.php:1904 wp-admin/includes/dashboard.php:1907
+#: wp-admin/includes/dashboard.php:1906 wp-admin/includes/dashboard.php:1909
 msgid "Edit your front page"
 msgstr "フロントページを編集"
 
 #: wp-admin/includes/class-wp-privacy-requests-table.php:46
-#: wp-admin/includes/dashboard.php:1901
+#: wp-admin/includes/dashboard.php:1903
 msgid "Next Steps"
 msgstr "次のステップ"
 
 #. translators: %s: URL to Themes panel in Customizer or Themes screen.
-#: wp-admin/includes/dashboard.php:1895
+#: wp-admin/includes/dashboard.php:1897
 msgid "or, <a href=\"%s\">change your theme completely</a>"
 msgstr "または、<a href=\"%s\">別のテーマに変更する</a>"
 
-#: wp-admin/includes/dashboard.php:1886
+#: wp-admin/includes/dashboard.php:1888
 msgid "Get Started"
 msgstr "始めてみよう"
 
-#: wp-admin/includes/dashboard.php:1882
+#: wp-admin/includes/dashboard.php:1884
 msgid "We&#8217;ve assembled some links to get you started:"
 msgstr "初めての方に便利なリンクを集めました。"
 
-#: wp-admin/includes/dashboard.php:1881
+#: wp-admin/includes/dashboard.php:1883
 msgid "Welcome to WordPress!"
 msgstr "WordPress へようこそ !"
 
@@ -9716,7 +9728,7 @@ msgstr "WordPress は、世界中の熱心な人々によって作られてい�
 msgid "For developers"
 msgstr "開発者の方へ"
 
-#: wp-admin/includes/dashboard.php:1887 wp-admin/includes/dashboard.php:1889
+#: wp-admin/includes/dashboard.php:1889 wp-admin/includes/dashboard.php:1891
 msgid "Customize Your Site"
 msgstr "サイトをカスタマイズ"
 
@@ -9812,7 +9824,7 @@ msgid "Tumblr"
 msgstr "Tumblr"
 
 #. translators: 1: Browser update URL, 2: Browser name, 3: Browse Happy URL.
-#: wp-admin/includes/dashboard.php:1628
+#: wp-admin/includes/dashboard.php:1630
 msgid "<a href=\"%1$s\" class=\"update-browser-link\">Update %2$s</a> or learn how to <a href=\"%3$s\" class=\"browse-happy-link\">browse happy</a>"
 msgstr "<a href=\"%1$s\" class=\"update-browser-link\">%2$s を更新</a>するか、<a href=\"%3$s\" class=\"browse-happy-link\">ブラウザーの選択肢を知る Browse Happy サイト</a>を訪れてみてください。"
 
@@ -10162,12 +10174,12 @@ msgid "Featured Image Header"
 msgstr "アイキャッチ画像ヘッダー"
 
 #. translators: %s: Browser name and link.
-#: wp-admin/includes/dashboard.php:1606
+#: wp-admin/includes/dashboard.php:1608
 msgid "It looks like you're using an old version of %s. For the best WordPress experience, please update your browser."
 msgstr "%s の古いバージョンをお使いのようです。 WordPress のすばらしさを体験をするには、ブラウザーを更新してください。"
 
 #. translators: %s: Browser name and link.
-#: wp-admin/includes/dashboard.php:1600
+#: wp-admin/includes/dashboard.php:1602
 msgid "It looks like you're using an insecure version of %s. Using an outdated browser makes your computer unsafe. For the best WordPress experience, please update your browser."
 msgstr "%s の安全ではないバージョンをお使いのようです。古いブラウザーを使っていると、コンピューターを危険に曝してしまいます。WordPress のすばらしさを実感するには、ブラウザーを更新してください。"
 
@@ -10666,11 +10678,11 @@ msgid "%s user"
 msgid_plural "%s users"
 msgstr[0] "%sユーザー"
 
-#: wp-admin/includes/dashboard.php:1443
+#: wp-admin/includes/dashboard.php:1445
 msgid "https://wordpress.org/news/feed/"
 msgstr "https://ja.wordpress.org/news/feed/"
 
-#: wp-admin/includes/dashboard.php:1434
+#: wp-admin/includes/dashboard.php:1436
 msgid "https://wordpress.org/news/"
 msgstr "https://ja.wordpress.org/news"
 
@@ -10693,7 +10705,7 @@ msgstr "新バージョンの %1$s が利用できます。<a href=\"%2$s\" %3$s
 msgid "Click Save Menu to make pending menu items public."
 msgstr "「メニューを保存」をクリックすると、保留中のメニュー項目を公開します。"
 
-#: wp-admin/includes/dashboard.php:1549
+#: wp-admin/includes/dashboard.php:1551
 msgid "Storage Space"
 msgstr "保存スペース"
 
@@ -11195,7 +11207,7 @@ msgstr "スパム解除"
 msgid "This will restore the original background image. You will not be able to restore any customizations."
 msgstr "この操作を行うと元の背景画像を復元します。変更した設定は復元できません。"
 
-#: wp-admin/includes/dashboard.php:1452
+#: wp-admin/includes/dashboard.php:1454
 msgid "WordPress Blog"
 msgstr "WordPress ブログ"
 
@@ -13952,7 +13964,7 @@ msgstr "設定"
 msgid "View all"
 msgstr "すべて表示"
 
-#: wp-admin/includes/dashboard.php:1485
+#: wp-admin/includes/dashboard.php:1487
 msgid "Other WordPress News"
 msgstr "WordPress フォーラム"
 
