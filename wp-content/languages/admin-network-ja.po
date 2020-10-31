@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-03 08:26:55+0000\n"
+"PO-Revision-Date: 2020-10-30 05:04:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -247,7 +247,7 @@ msgstr "既存の %s ファイルをバックアップしておくことをお�
 #. translators: 1: wp-config.php, 2: web.config
 #: wp-admin/includes/network.php:447 wp-admin/includes/network.php:455
 msgid "We recommend you back up your existing %1$s and %2$s files."
-msgstr "既存の %1$s と %2$s ファイルをバックアップしておくことをお勧めします。"
+msgstr "既存の %1$s と %2$s ファイルをバックアップしておくことをおすすめします。"
 
 #. translators: 1: localhost, 2: localhost.localdomain
 #: wp-admin/includes/network.php:306

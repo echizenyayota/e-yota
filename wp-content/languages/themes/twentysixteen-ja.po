@@ -11,13 +11,13 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Themes - Twenty Sixteen\n"
 
-#. Theme Name of the theme
-msgid "Twenty Sixteen"
-msgstr "Twenty Sixteen"
-
 #. Description of the theme
 msgid "Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere."
 msgstr "Twenty Sixteen は ずっと人気の WordPress レイアウト — ブログとウェブサイト用に完全に動作する、オプションの右サイドバーのある水平の題字 — に対するモダンな試みです。美しいデフォルトカラースキームのカラーオプション、モバイルファーストのアプローチによる調和した柔軟なグリッド、細部にまで非の打ち所がない上品さを備えています。Twenty Sixteen は WordPress の外観をどこであろうとも美しく見せるでしょう。"
+
+#. Theme Name of the theme
+msgid "Twenty Sixteen"
+msgstr "Twenty Sixteen"
 
 #: functions.php:204
 msgid "Bright Red"
@@ -183,15 +183,15 @@ msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "投稿日:"
 
-#: inc/template-tags.php:40
-msgctxt "Used before post format."
-msgid "Format"
-msgstr "フォーマット"
-
 #. translators: %s: Post title.
 #: inc/template-tags.php:53
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "<span class=\"screen-reader-text\">%sに</span>コメント"
+
+#: inc/template-tags.php:40
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "フォーマット"
 
 #: inc/template-tags.php:26
 msgctxt "Used before post author name."
@@ -210,10 +210,6 @@ msgstr "グレー"
 msgid "Dark"
 msgstr "ダークカラー"
 
-#: inc/customizer.php:221
-msgid "Main Text Color"
-msgstr "メインのテキストカラー"
-
 #: inc/customizer.php:317
 msgid "Default"
 msgstr "デフォルト"
@@ -221,6 +217,10 @@ msgstr "デフォルト"
 #: inc/customizer.php:242
 msgid "Secondary Text Color"
 msgstr "サブのテキストカラー"
+
+#: inc/customizer.php:221
+msgid "Main Text Color"
+msgstr "メインのテキストカラー"
 
 #: inc/customizer.php:200
 msgid "Link Color"
@@ -230,19 +230,19 @@ msgstr "リンク色"
 msgid "Page Background Color"
 msgstr "ページ背景色"
 
-#: single.php:31 image.php:107
-msgctxt "Parent post link"
-msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
-msgstr "<span class=\"post-title\">%title</span> <span class=\"meta-nav\">内で公開</span>"
+#: inc/customizer.php:153
+msgid "Base Color Scheme"
+msgstr "ベース配色"
 
 #. translators: %s: The current WordPress version.
 #: inc/back-compat.php:42 inc/back-compat.php:56 inc/back-compat.php:75
 msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Sixteen には WordPress 4.4 以降のバージョンが必要です。現在ご利用中のバージョンは %s です。アップグレードしてもう一度お試しください。"
 
-#: inc/customizer.php:153
-msgid "Base Color Scheme"
-msgstr "ベース配色"
+#: single.php:31 image.php:107
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"post-title\">%title</span> <span class=\"meta-nav\">内で公開</span>"
 
 #: image.php:77
 msgctxt "Used before full size attachment link."
@@ -270,33 +270,16 @@ msgstr "メニュー"
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: functions.php:419
-msgid "expand child menu"
-msgstr "サブメニューを展開"
-
 #: functions.php:420
 msgid "collapse child menu"
 msgstr "サブメニューを閉じる"
 
+#: functions.php:419
+msgid "expand child menu"
+msgstr "サブメニューを展開"
+
 #: functions.php:338
 msgctxt "Inconsolata font: on or off"
-msgid "on"
-msgstr "on"
-
-#: functions.php:279
-msgid "Content Bottom 1"
-msgstr "コンテンツ下 1"
-
-#: functions.php:281 functions.php:293
-msgid "Appears at the bottom of the content on posts and pages."
-msgstr "投稿や固定ページのコンテンツの下部に表示されます。"
-
-#: functions.php:291
-msgid "Content Bottom 2"
-msgstr "コンテンツ下 2"
-
-#: functions.php:322
-msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr "on"
 
@@ -304,6 +287,23 @@ msgstr "on"
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr "on"
+
+#: functions.php:322
+msgctxt "Merriweather font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:291
+msgid "Content Bottom 2"
+msgstr "コンテンツ下 2"
+
+#: functions.php:281 functions.php:293
+msgid "Appears at the bottom of the content on posts and pages."
+msgstr "投稿や固定ページのコンテンツの下部に表示されます。"
+
+#: functions.php:279
+msgid "Content Bottom 1"
+msgstr "コンテンツ下 1"
 
 #: functions.php:267
 msgid "Sidebar"
@@ -355,13 +355,13 @@ msgstr "こちらには何もありません。検索をお試しください。
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "お探しのページが見つかりません。"
 
-#. Theme URI of the theme
-msgid "https://wordpress.org/themes/twentysixteen/"
-msgstr "https://ja.wordpress.org/themes/twentysixteen/"
-
 #. Author of the theme
 msgid "the WordPress team"
 msgstr "WordPress チーム"
+
+#. Theme URI of the theme
+msgid "https://wordpress.org/themes/twentysixteen/"
+msgstr "https://ja.wordpress.org/themes/twentysixteen/"
 
 #. Author URI of the theme
 #: footer.php:60

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-27 02:02:55+0000\n"
+"PO-Revision-Date: 2020-10-30 07:19:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +21,7 @@ msgctxt "Comment number declension: on or off"
 msgid "off"
 msgstr "off"
 
-#: wp-includes/general-template.php:839
+#: wp-includes/general-template.php:842
 msgid "html_lang_attribute"
 msgstr "ja"
 
@@ -100,6 +100,11 @@ msgstr "number_format_decimal_point"
 #: wp-includes/js/dist/edit-post.js:5056 wp-admin/includes/upgrade.php:158
 msgid "Uncategorized"
 msgstr "未分類"
+
+#: wp-includes/class-wp-xmlrpc-server.php:3883
+#: wp-includes/class-wp-xmlrpc-server.php:3890
+msgid "Sorry, you are not allowed to comment on this post."
+msgstr "この投稿にコメントする権限がありません。"
 
 #. translators: %s: WP_ENVIRONMENT_TYPES
 #: wp-includes/load.php:164
@@ -219,7 +224,7 @@ msgstr "長い見出しの後に続く2カラムのテキスト。"
 
 #: wp-includes/block-patterns/text-two-columns.php:11
 msgid "The rest of it went in a doublet of fine cloth and velvet breeches and shoes to match for holidays, while on week-days he made a brave figure in his best homespun. He had in his house a housekeeper past forty, a niece under twenty, and a lad for the field and market-place, who used to saddle the hack as well as handle the bill-hook. The age of this gentleman of ours was bordering on fifty; he was of a hardy habit, spare, gaunt-featured, a very early riser and a great sportsman."
-msgstr "残りは休日用の上質な上着、ベルベットのズボン、靴になりましたが、平日の間は最高の手織りの服で勇敢な姿を見せていました。彼の家には、40歳を越えた家政婦、まだ20歳前の姪、そして畑や市場で働く若者がおりました。この郷士はもうすぐ50歳になろうとする年齢で、骨組みは頑丈、肉付きは薄く、細面、たいへんな早寝早起きで、部類の狩猟好きでした。"
+msgstr "残りは休日用の上質な上着、ベルベットのズボン、靴になりましたが、平日の間は最高の手織りの服で勇敢な姿を見せていました。彼の家には、40歳を越えた家政婦、まだ20歳前の姪、そして畑や市場で働く若者がおりました。この郷士はもうすぐ50歳になろうとする年齢で、骨組みは頑丈、肉付きは薄く、細面、たいへんな早寝早起きで、部類の狩猟好きでした。"
 
 #: wp-includes/block-patterns/text-two-columns.php:11
 msgid "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing. An olla of rather more beef than mutton, a salad on most nights, scraps on Saturdays, lentils on Fridays, and a pigeon or so extra on Sundays, made away with three-quarters of his income."
@@ -236,7 +241,7 @@ msgstr "サンプル背景画像と中央寄せの見出しを含む大きなヒ
 
 #: wp-includes/block-patterns/large-header.php:10
 msgid "Don Quixote"
-msgstr "ドン・キホーテ"
+msgstr "ドンキホーテ"
 
 #: wp-includes/block-patterns/large-header.php:9
 msgid "Large header with a heading"
@@ -402,7 +407,7 @@ msgstr "このプラグインを有効化する権限がありません。"
 #. translators: %s: the author.
 #. translators: byline. %s: current author.
 #: wp-includes/blocks/rss.php:60 wp-includes/blocks/latest-posts.php:105
-#: wp-includes/js/dist/block-library.js:17390
+#: wp-includes/js/dist/block-library.js:17407
 msgid "by %s"
 msgstr "投稿者: %s"
 
@@ -416,7 +421,7 @@ msgstr "メニュー項目"
 msgid "Comment"
 msgstr "コメント"
 
-#: wp-includes/js/dist/block-library.js:5285
+#: wp-includes/js/dist/block-library.js:5302
 #: wp-admin/includes/image-edit.php:54
 msgid "Crop"
 msgstr "切り抜き"
@@ -465,7 +470,7 @@ msgid "Buttons"
 msgstr "ボタン"
 
 #. translators: 1: WP_REST_Response, 2: WP_Error
-#: wp-includes/functions.php:4069
+#: wp-includes/functions.php:4073
 msgid "Return a %1$s or %2$s object from your callback when using the REST API."
 msgstr "REST API を使用する際はコールバックで %1$s または %2$s オブジェクトを返してください。"
 
@@ -499,54 +504,54 @@ msgctxt "unit symbol"
 msgid "TB"
 msgstr "TB"
 
-#: wp-includes/general-template.php:4445
+#: wp-includes/general-template.php:4448
 msgctxt "admin color scheme"
 msgid "Modern"
 msgstr "モダン"
 
 #. translators: 1: Title prefix. 2: Title.
-#: wp-includes/general-template.php:1725
+#: wp-includes/general-template.php:1728
 msgctxt "archive title"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
 #. translators: %s: Taxonomy singular name.
-#: wp-includes/general-template.php:1706
+#: wp-includes/general-template.php:1709
 msgctxt "taxonomy term archive title prefix"
 msgid "%s:"
 msgstr "%s:"
 
-#: wp-includes/general-template.php:1698
+#: wp-includes/general-template.php:1701
 msgctxt "post type archive title prefix"
 msgid "Archives:"
 msgstr "アーカイブ:"
 
-#: wp-includes/general-template.php:1675
+#: wp-includes/general-template.php:1678
 msgctxt "date archive title prefix"
 msgid "Day:"
 msgstr "日:"
 
-#: wp-includes/general-template.php:1672
+#: wp-includes/general-template.php:1675
 msgctxt "date archive title prefix"
 msgid "Month:"
 msgstr "月:"
 
-#: wp-includes/general-template.php:1669
+#: wp-includes/general-template.php:1672
 msgctxt "date archive title prefix"
 msgid "Year:"
 msgstr "年:"
 
-#: wp-includes/general-template.php:1666
+#: wp-includes/general-template.php:1669
 msgctxt "author archive title prefix"
 msgid "Author:"
 msgstr "投稿者:"
 
-#: wp-includes/general-template.php:1663
+#: wp-includes/general-template.php:1666
 msgctxt "tag archive title prefix"
 msgid "Tag:"
 msgstr "タグ:"
 
-#: wp-includes/general-template.php:1660
+#: wp-includes/general-template.php:1663
 msgctxt "category archive title prefix"
 msgid "Category:"
 msgstr "カテゴリー:"
@@ -1154,7 +1159,7 @@ msgstr "ブロック名前空間"
 msgid "Block name"
 msgstr "ブロック名"
 
-#: wp-includes/meta.php:1373
+#: wp-includes/meta.php:1374
 msgid "When registering a default meta value the data must match the type provided."
 msgstr "デフォルトメタ値を登録する場合、データは指定するタイプと合致する必要があります。"
 
@@ -1324,23 +1329,23 @@ msgid "Sorry, the category could not be created."
 msgstr "カテゴリーを作成できませんでした。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1786
-#: wp-includes/class-wp-xmlrpc-server.php:5202
+#: wp-includes/class-wp-xmlrpc-server.php:5217
 msgid "Sorry, the post could not be deleted."
 msgstr "投稿を削除できませんでした。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1643
-#: wp-includes/class-wp-xmlrpc-server.php:5142
-#: wp-includes/class-wp-xmlrpc-server.php:5900
+#: wp-includes/class-wp-xmlrpc-server.php:5157
+#: wp-includes/class-wp-xmlrpc-server.php:5915
 msgid "Sorry, the post could not be updated."
 msgstr "投稿を更新できませんでした。"
 
-#: wp-includes/media.php:4288 wp-includes/js/dist/block-library.js:23701
+#: wp-includes/media.php:4288 wp-includes/js/dist/block-library.js:23718
 msgid "Select poster image"
 msgstr "ポスター画像を選択"
 
 #: wp-includes/js/dist/edit-post.js:6875 wp-admin/edit-form-advanced.php:143
 msgid "View post"
-msgstr "投稿の表示"
+msgstr "投稿を表示"
 
 #: wp-includes/js/dist/editor.js:11748 wp-admin/edit-tags.php:446
 #: wp-admin/includes/meta-boxes.php:890 wp-admin/includes/meta-boxes.php:1563
@@ -1367,7 +1372,7 @@ msgstr "投稿ステータス「%1$s」は登録されていないため、こ�
 msgid "In reply to %s."
 msgstr "%s への返信。"
 
-#: wp-includes/general-template.php:2367
+#: wp-includes/general-template.php:2370
 msgid "Previous and next months"
 msgstr "前と次の月"
 
@@ -1526,14 +1531,14 @@ msgstr "投稿とコメントの RSS フィードリンクを head に追加す�
 msgid "Whether theme opts in to wide alignment CSS class."
 msgstr "テーマが幅広や全幅の CSS クラスをオプトインするかどうか。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4989
-#: wp-includes/class-wp-xmlrpc-server.php:5002
+#: wp-includes/class-wp-xmlrpc-server.php:5004
+#: wp-includes/class-wp-xmlrpc-server.php:5017
 msgid "Sorry, this method is not supported."
 msgstr "この方法は非対応です。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1645
-#: wp-includes/class-wp-xmlrpc-server.php:5062
-#: wp-includes/class-wp-xmlrpc-server.php:5555
+#: wp-includes/class-wp-xmlrpc-server.php:5077
+#: wp-includes/class-wp-xmlrpc-server.php:5570
 msgid "Sorry, the post could not be created."
 msgstr "投稿を作成できませんでした。"
 
@@ -1593,15 +1598,15 @@ msgid "Filter media"
 msgstr "メディアを絞り込み"
 
 #: wp-includes/media-template.php:316
-#: wp-includes/js/dist/block-library.js:17332
-#: wp-includes/js/dist/block-library.js:20087
+#: wp-includes/js/dist/block-library.js:17349
+#: wp-includes/js/dist/block-library.js:20104
 #: wp-admin/includes/class-wp-media-list-table.php:45
 msgid "Grid view"
 msgstr "グリッド表示"
 
 #: wp-includes/media-template.php:313
-#: wp-includes/js/dist/block-library.js:17323
-#: wp-includes/js/dist/block-library.js:20078
+#: wp-includes/js/dist/block-library.js:17340
+#: wp-includes/js/dist/block-library.js:20095
 #: wp-admin/includes/class-wp-media-list-table.php:44
 msgid "List view"
 msgstr "リスト表示"
@@ -1651,11 +1656,11 @@ msgstr "WordPress バーション%s"
 
 #: wp-includes/ms-load.php:498
 msgid "https://wordpress.org/support/article/debugging-a-wordpress-network/"
-msgstr "https://wordpress.org/support/article/debugging-a-wordpress-network/"
+msgstr "https://ja.wordpress.org/support/article/debugging-a-wordpress-network/"
 
 #: wp-includes/formatting.php:4857
 msgid "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
-msgstr "https://ja.wordpress.org/support/article/using-permalinks/#%e3%83%91%e3%83%bc%e3%83%9e%e3%83%aa%e3%83%b3%e3%82%af%e6%a7%8b%e9%80%a0%e3%81%ae%e9%81%b8%e6%8a%9e"
+msgstr "https://ja.wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
 
 #: wp-includes/link-template.php:2585 wp-includes/link-template.php:2667
 #: wp-includes/link-template.php:2735
@@ -1665,7 +1670,7 @@ msgstr "投稿"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:54
 msgid "https://wordpress.org/support/article/wordpress-widgets/"
-msgstr "https://wordpress.org/support/article/wordpress-widgets/"
+msgstr "https://ja.wordpress.org/support/article/wordpress-widgets/"
 
 #. translators: 1: UTC abbreviation and offset, 2: UTC offset.
 #: wp-includes/customize/class-wp-customize-date-time-control.php:252
@@ -1698,10 +1703,10 @@ msgstr "WordPress でのデバッグをさらに詳しく見る。"
 
 #. translators: Documentation explaining debugging in WordPress.
 #: wp-includes/class-wp-fatal-error-handler.php:195
-#: wp-includes/functions.php:5214
+#: wp-includes/functions.php:5218
 #: wp-admin/includes/class-wp-site-health.php:1438
 msgid "https://wordpress.org/support/article/debugging-in-wordpress/"
-msgstr "https://wordpress.org/support/article/debugging-in-wordpress/"
+msgstr "https://ja.wordpress.org/support/article/debugging-in-wordpress/"
 
 #: wp-includes/class-wp-fatal-error-handler.php:188
 msgid "There has been a critical error on your website."
@@ -1816,7 +1821,7 @@ msgstr "この投稿のリビジョンを削除する権限がありません。
 msgid "Could not update the meta value of %s in database."
 msgstr "データベース内にある %s のメタデータを更新できませんでした。"
 
-#: wp-includes/meta.php:1331
+#: wp-includes/meta.php:1332
 msgid "When registering an \"array\" meta type to show in the REST API, you must specify the schema for each array item in \"show_in_rest.schema.items\"."
 msgstr "登録する際に「配列」のメタタイプを REST API で表示するには、\"show_in_rest.schema.items\" に各配列項目のスキーマを指定しなければなりません。"
 
@@ -1839,7 +1844,7 @@ msgstr "サーバーから予期しないレスポンスがありました。フ
 
 #: wp-load.php:83 wp-admin/setup-config.php:194
 msgid "https://wordpress.org/support/article/editing-wp-config-php/"
-msgstr "https://wordpress.org/support/article/editing-wp-config-php/"
+msgstr "https://ja.wordpress.org/support/article/editing-wp-config-php/"
 
 #: wp-login.php:740
 msgid "Remind me later"
@@ -1960,7 +1965,7 @@ msgstr "<strong>エラー</strong>: メールを送信できませんでした�
 
 #: wp-login.php:475
 msgid "https://wordpress.org/support/article/resetting-your-password/"
-msgstr "https://wordpress.org/support/article/resetting-your-password/"
+msgstr "https://ja.wordpress.org/support/article/resetting-your-password/"
 
 #: wp-includes/customize/class-wp-customize-theme-control.php:98
 #: wp-admin/themes.php:397 wp-admin/themes.php:736
@@ -2097,7 +2102,7 @@ msgstr "[%s] サイトネットワーク管理者メールアドレス変更リ�
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title.
-#: wp-includes/functions.php:7059
+#: wp-includes/functions.php:7063
 msgid "[%s] Admin Email Changed"
 msgstr "[%s] 管理者メールアドレスが変更されました"
 
@@ -2111,12 +2116,12 @@ msgstr "[%s] メールアドレス変更リクエスト"
 msgid "[%s] Email Changed"
 msgstr "[%s] メールアドレスが変更されました"
 
-#: wp-includes/js/dist/block-library.js:11127 wp-admin/options-reading.php:151
+#: wp-includes/js/dist/block-library.js:11144 wp-admin/options-reading.php:151
 msgid "posts"
-msgstr "投稿"
+msgstr "件"
 
 #: wp-includes/widgets/class-wp-widget-calendar.php:34
-#: wp-includes/js/dist/block-library.js:11125
+#: wp-includes/js/dist/block-library.js:11142
 msgid "A calendar of your site’s posts."
 msgstr "サイトの投稿カレンダー。"
 
@@ -2288,11 +2293,11 @@ msgstr "リカバリーモードを初期化しました。ログインして継
 
 #: wp-login.php:1268
 msgid "https://wordpress.org/support/article/cookies/#enable-cookies-in-your-browser"
-msgstr "https://wordpress.org/support/article/cookies/#enable-cookies-in-your-browser"
+msgstr "https://ja.wordpress.org/support/article/cookies/#enable-cookies-in-your-browser"
 
 #: wp-login.php:1257
 msgid "https://wordpress.org/support/article/cookies/"
-msgstr "https://wordpress.org/support/article/cookies/"
+msgstr "https://ja.wordpress.org/support/article/cookies/"
 
 #: wp-login.php:1178 wp-includes/user.php:3872
 msgid "Missing confirm key."
@@ -2307,7 +2312,7 @@ msgstr "リクエスト ID がありません。"
 msgid "Usage of the title attribute on the login logo is not recommended for accessibility reasons. Use the link text instead."
 msgstr "ログインのロゴのタイトル属性の利用はアクセシビリティの理由から推奨できません。代わりにテキストリンクを使ってください。"
 
-#: wp-includes/functions.php:7479
+#: wp-includes/functions.php:7483
 msgid "Update PHP"
 msgstr "PHP を更新"
 
@@ -2414,11 +2419,11 @@ msgid "%1$s, %2$s"
 msgstr "%1$s、%2$s"
 
 #. translators: %s: Default Update PHP page URL.
-#: wp-includes/functions.php:7422
+#: wp-includes/functions.php:7426
 msgid "This resource is provided by your web host, and is specific to your site. For more information, <a href=\"%s\" target=\"_blank\">see the official WordPress documentation</a>."
 msgstr "このリソースはホスティングサービスが提供しているこのサイト特有の情報です。追加情報は<a href=\"%s\" target=\"_blank\">公式 WordPress ドキュメンテーションをご覧ください</a>。"
 
-#: wp-includes/functions.php:7379
+#: wp-includes/functions.php:7383
 msgctxt "localized PHP upgrade information page"
 msgid "https://wordpress.org/support/update-php/"
 msgstr "https://ja.wordpress.org/support/update-php/"
@@ -2464,7 +2469,7 @@ msgstr "このタクソノミーを管理するデフォルト UI を生成す�
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:378
 msgid "Whether the taxonomy is publicly queryable."
-msgstr "タクソノミーが公開でクエリ可能かどうか。"
+msgstr "タクソノミーが公開でクエリー可能かどうか。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:374
 msgid "Whether a taxonomy is intended for use publicly either via the admin interface or by front-end users."
@@ -2496,22 +2501,22 @@ msgstr "この投稿の自動保存を表示する権限がありません。"
 msgid "Start writing or type / to choose a block"
 msgstr "文章を入力、または / でブロックを選択"
 
-#: wp-includes/media.php:4264 wp-includes/js/dist/block-library.js:5701
-#: wp-includes/js/dist/block-library.js:5702
+#: wp-includes/media.php:4264 wp-includes/js/dist/block-library.js:5718
+#: wp-includes/js/dist/block-library.js:5719
 msgid "Edit image"
 msgstr "画像を編集"
 
 #: wp-includes/media-template.php:506 wp-includes/media-template.php:697
-#: wp-includes/js/dist/block-library.js:15020 wp-admin/includes/media.php:3272
+#: wp-includes/js/dist/block-library.js:15037 wp-admin/includes/media.php:3272
 msgid "Copy URL"
 msgstr "URL をコピー"
 
 #: wp-includes/block-patterns/large-header-button.php:10
 #: wp-includes/block-patterns/large-header.php:10
-#: wp-includes/js/dist/block-library.js:12993
-#: wp-includes/js/dist/block-library.js:13049
-#: wp-includes/js/dist/block-library.js:13095
-#: wp-includes/js/dist/block-library.js:13150
+#: wp-includes/js/dist/block-library.js:13010
+#: wp-includes/js/dist/block-library.js:13066
+#: wp-includes/js/dist/block-library.js:13112
+#: wp-includes/js/dist/block-library.js:13167
 msgid "Write title…"
 msgstr "タイトルを入力..."
 
@@ -2535,7 +2540,7 @@ msgstr "公開状態:"
 
 #: wp-includes/media-template.php:507 wp-includes/media-template.php:698
 #: wp-includes/js/dist/editor.js:11130 wp-includes/js/dist/edit-post.js:1874
-#: wp-includes/js/dist/block-library.js:15020
+#: wp-includes/js/dist/block-library.js:15037
 #: wp-admin/includes/class-wp-privacy-policy-content.php:423
 #: wp-admin/includes/media.php:3273 wp-admin/site-health-info.php:102
 msgid "Copied!"
@@ -2546,7 +2551,7 @@ msgstr "コピーしました。"
 msgid "Submit for Review"
 msgstr "レビュー待ちとして送信"
 
-#: wp-includes/media.php:4262 wp-includes/js/dist/block-library.js:8171
+#: wp-includes/media.php:4262 wp-includes/js/dist/block-library.js:8188
 msgid "Replace image"
 msgstr "画像の置き換え"
 
@@ -2566,7 +2571,7 @@ msgstr "順序"
 msgid "Current"
 msgstr "現在"
 
-#: wp-includes/js/dist/components.js:40069
+#: wp-includes/js/dist/components.js:39885
 #: wp-admin/includes/edit-tag-messages.php:14
 msgid "Item added."
 msgstr "項目を追加しました。"
@@ -2576,11 +2581,11 @@ msgstr "項目を追加しました。"
 #: wp-login.php:689 wp-includes/widgets/class-wp-widget-custom-html.php:317
 #: wp-includes/media-template.php:167
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:59
-#: wp-includes/functions.php:7481
+#: wp-includes/functions.php:7485
 #: wp-includes/class-wp-customize-manager.php:4338
 #: wp-includes/class-wp-customize-manager.php:5660
 #: wp-includes/class-wp-customize-manager.php:5681
-#: wp-includes/js/dist/components.js:37307 wp-includes/js/dist/editor.js:9329
+#: wp-includes/js/dist/components.js:37123 wp-includes/js/dist/editor.js:9329
 #: wp-admin/includes/theme.php:829
 #: wp-admin/includes/class-wp-privacy-policy-content.php:360
 #: wp-admin/includes/meta-boxes.php:80 wp-admin/includes/media.php:3199
@@ -3144,12 +3149,12 @@ msgid "User Requests"
 msgstr "ユーザーリクエスト"
 
 #. translators: Deleted long text.
-#: wp-includes/functions.php:7206
+#: wp-includes/functions.php:7210
 msgid "This content was deleted by the author."
 msgstr "このコンテンツは投稿者により削除されました。"
 
 #. translators: Deleted text.
-#: wp-includes/functions.php:7202
+#: wp-includes/functions.php:7206
 msgid "[deleted]"
 msgstr "[削除済み]"
 
@@ -3280,7 +3285,7 @@ msgstr "所有"
 msgid "Whether or not the post type can be viewed."
 msgstr "投稿タイプを表示させるかどうか。"
 
-#: wp-includes/functions.php:3258
+#: wp-includes/functions.php:3262
 msgid "The link you followed has expired."
 msgstr "辿ったリンクは期限が切れています。"
 
@@ -3300,7 +3305,7 @@ msgid "You need a higher level of permission."
 msgstr "もっと高いレベルの権限が必要です。"
 
 #: wp-includes/script-loader.php:667 wp-includes/script-loader.php:1110
-#: wp-includes/class-wp-xmlrpc-server.php:3934 wp-includes/functions.php:3269
+#: wp-includes/class-wp-xmlrpc-server.php:3949 wp-includes/functions.php:3273
 #: wp-includes/class-wp-customize-manager.php:449
 #: wp-admin/includes/class-custom-image-header.php:775
 #: wp-admin/includes/class-custom-image-header.php:939
@@ -3543,8 +3548,8 @@ msgid "Displays an image gallery."
 msgstr "画像ギャラリーを表示します。"
 
 #: wp-includes/widgets/class-wp-widget-media-gallery.php:28
-#: wp-includes/js/dist/editor.js:8963 wp-includes/js/dist/block-library.js:8743
-#: wp-includes/js/dist/block-library.js:9164 wp-admin/includes/media.php:20
+#: wp-includes/js/dist/editor.js:8963 wp-includes/js/dist/block-library.js:8760
+#: wp-includes/js/dist/block-library.js:9181 wp-admin/includes/media.php:20
 msgid "Gallery"
 msgstr "ギャラリー"
 
@@ -4003,7 +4008,7 @@ msgstr "Nonce チェックに失敗しました。もう一度お試しくださ
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/functions.php:7042
+#: wp-includes/functions.php:7046
 msgid ""
 "Hi,\n"
 "\n"
@@ -4029,7 +4034,7 @@ msgstr ""
 "###SITENAME### 一同\n"
 "###SITEURL###"
 
-#: wp-includes/functions.php:6961
+#: wp-includes/functions.php:6965
 msgid "Only UUID V4 is supported at this time."
 msgstr "現在 UUID バージョン4 のみをサポートしています。"
 
@@ -4129,22 +4134,22 @@ msgid "Hour"
 msgstr "時"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:160
-#: wp-includes/js/dist/components.js:35698
+#: wp-includes/js/dist/components.js:35514
 msgid "Time"
 msgstr "時刻"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:146
-#: wp-includes/js/dist/components.js:35652 wp-admin/includes/template.php:826
+#: wp-includes/js/dist/components.js:35468 wp-admin/includes/template.php:826
 msgid "Day"
 msgstr "日"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:130
-#: wp-includes/js/dist/components.js:35614 wp-admin/includes/template.php:816
+#: wp-includes/js/dist/components.js:35430 wp-admin/includes/template.php:816
 msgid "Month"
 msgstr "月"
 
 #: wp-includes/customize/class-wp-customize-date-time-control.php:127
-#: wp-includes/js/dist/components.js:35684
+#: wp-includes/js/dist/components.js:35500
 #: wp-admin/includes/ajax-actions.php:2183
 #: wp-admin/includes/class-wp-posts-list-table.php:661
 #: wp-admin/includes/class-wp-posts-list-table.php:1567
@@ -4365,7 +4370,7 @@ msgid "Some HTML tags are not permitted, including:"
 msgstr "次を含む一部の HTML タグは許可されていません:"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:53
-#: wp-includes/js/dist/block-library.js:15487
+#: wp-includes/js/dist/block-library.js:15504
 msgid "Custom HTML"
 msgstr "カスタム HTML"
 
@@ -4757,7 +4762,7 @@ msgstr ""
 msgid "Suggested image dimensions: %1$s by %2$s pixels."
 msgstr "推奨画像サイズ: %1$s×%2$sピクセル。"
 
-#: wp-includes/script-loader.php:827 wp-includes/functions.php:2668
+#: wp-includes/script-loader.php:827 wp-includes/functions.php:2672
 #: wp-includes/js/dist/media-utils.js:1103 wp-admin/includes/file.php:857
 msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "このファイルタイプはセキュリティ上の理由から、許可されていません。"
@@ -5528,7 +5533,7 @@ msgstr "投稿タイプに関連付けられているタクソノミー。"
 msgid "Limit result set to posts with one or more specific slugs."
 msgstr "一つ以上の特定のスラッグを持つ投稿に結果を限定します。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3879
+#: wp-includes/class-wp-xmlrpc-server.php:3894
 msgid "Comment is required."
 msgstr "コメントは必須です。"
 
@@ -5861,12 +5866,12 @@ msgstr "タイプに特有な、オブジェクトの英数字識別子。"
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:711
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2093
 msgid "The date the object was last modified, as GMT."
-msgstr "オブジェクトの最終更新日 (GMT での値)"
+msgstr "オブジェクトの最終更新日 (GMT)。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:705
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2086
 msgid "The date the object was last modified, in the site's timezone."
-msgstr "オブジェクトの最終更新日 (サイトのタイムゾーンでの値)"
+msgstr "オブジェクトの最終更新日 (サイトのタイムゾーン)。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2065
 msgid "GUID for the object, transformed for display."
@@ -5885,13 +5890,13 @@ msgstr "そのオブジェクトのグローバル一意識別子 (GUID)"
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:689
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2047
 msgid "The date the object was published, as GMT."
-msgstr "オブジェクトの公開日 (GMT での値)"
+msgstr "オブジェクトの公開日 (GMT)。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1457
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:683
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2041
 msgid "The date the object was published, in the site's timezone."
-msgstr "オブジェクトの公開日 ( サイトのタイムゾーンでの値 )"
+msgstr "オブジェクトの公開日 (サイトのタイムゾーン)。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1317
 msgid "Invalid featured media ID."
@@ -5982,7 +5987,7 @@ msgstr "投稿タイプの編集リストに投稿を含むかどうか。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:326
 msgid "Whether posts with this status should be publicly-queryable."
-msgstr "このステータスの投稿が公開クエリ可能であるべきかどうか。"
+msgstr "このステータスの投稿を公開クエリー可能にするかどうか。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:320
 msgid "Whether posts of this status should be shown in the front end of the site."
@@ -6451,7 +6456,7 @@ msgctxt "previous set of posts"
 msgid "Previous"
 msgstr "前へ"
 
-#: wp-login.php:873 wp-login.php:1411 wp-includes/general-template.php:510
+#: wp-login.php:873 wp-login.php:1411 wp-includes/general-template.php:513
 msgid "Username or Email Address"
 msgstr "ユーザー名またはメールアドレス"
 
@@ -6816,7 +6821,7 @@ msgstr "このタームには名称が必要です。"
 msgid "Inexistent terms."
 msgstr "存在しないタームです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4835
+#: wp-includes/class-wp-xmlrpc-server.php:4850
 msgid "Sorry, you are not allowed to access user data on this site."
 msgstr "このサイトのユーザーデータにアクセスする権限がありません。"
 
@@ -6859,7 +6864,7 @@ msgstr "固定レイアウト"
 
 #: wp-includes/class-wp-theme.php:954
 msgid "Dark"
-msgstr "ダークカラー"
+msgstr "ダーク"
 
 #: wp-includes/class-wp-theme.php:951
 msgid "Tan"
@@ -6876,7 +6881,7 @@ msgid "Sorry, you are not allowed to delete this page."
 msgstr "この固定ページを削除する権限がありません。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1780
-#: wp-includes/class-wp-xmlrpc-server.php:5196
+#: wp-includes/class-wp-xmlrpc-server.php:5211
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:853
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:901
 msgid "Sorry, you are not allowed to delete this post."
@@ -6943,9 +6948,9 @@ msgstr "画像切り抜きエリアのプレビュー。マウス操作が必要
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
 msgstr "カスタムパーマリンクを使用するには構造タグが必要です。<a href=\"%s\">詳細</a>"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4288
-#: wp-includes/class-wp-xmlrpc-server.php:4341
-#: wp-includes/class-wp-xmlrpc-server.php:6318
+#: wp-includes/class-wp-xmlrpc-server.php:4303
+#: wp-includes/class-wp-xmlrpc-server.php:4356
+#: wp-includes/class-wp-xmlrpc-server.php:6333
 #: wp-admin/includes/ajax-actions.php:2430
 #: wp-admin/includes/ajax-actions.php:2496 wp-admin/async-upload.php:38
 #: wp-admin/upload.php:13 wp-admin/media-new.php:16
@@ -6969,7 +6974,7 @@ msgstr "ユーザー一覧を表示する権限がありません。"
 #: wp-includes/class-wp-customize-setting.php:592
 #: wp-includes/class-wp-customize-manager.php:2373
 msgid "Invalid value."
-msgstr "無効な値です。"
+msgstr "無効な値。"
 
 #: wp-includes/script-loader.php:1112
 #: wp-includes/class-wp-customize-manager.php:515 wp-admin/customize.php:18
@@ -6992,7 +6997,7 @@ msgstr "リンク設定"
 msgid "Link inserted."
 msgstr "リンクを挿入しました。"
 
-#: wp-includes/script-loader.php:1064 wp-includes/js/dist/block-editor.js:33366
+#: wp-includes/script-loader.php:1064 wp-includes/js/dist/block-editor.js:33350
 msgid "Link selected."
 msgstr "リンクを選択しました。"
 
@@ -7072,7 +7077,7 @@ msgid "Unregistering a built-in taxonomy is not allowed."
 msgstr "あらかじめ登録されているタクソノミーの削除は許可されていません。"
 
 #: wp-includes/script-loader.php:1117
-#: wp-includes/js/dist/block-library.js:11268
+#: wp-includes/js/dist/block-library.js:11285
 msgid "(Untitled)"
 msgstr "(無題)"
 
@@ -7129,18 +7134,18 @@ msgstr "<strong>エラー</strong>: 無効なユーザー名かメールアド�
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Term name, 4: Taxonomy
 #. singular name.
-#: wp-includes/general-template.php:3105
+#: wp-includes/general-template.php:3108
 msgid "%1$s %2$s %3$s %4$s Feed"
 msgstr "%1$s %2$s %3$s %4$s のフィード"
 
 #: wp-includes/media-template.php:199 wp-includes/media-template.php:347
-#: wp-includes/functions.php:6531 wp-includes/js/dist/components.js:41563
+#: wp-includes/functions.php:6535 wp-includes/js/dist/components.js:41379
 msgid "Close dialog"
 msgstr "ダイアログを閉じる"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: Version number,
 #. 4: __construct() method.
-#: wp-includes/functions.php:4860
+#: wp-includes/functions.php:4864
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "%2$s で呼び出された %1$s のコンストラクターメソッドはバージョン %3$s から<strong>非推奨</strong>になっています ! 代わりに %4$s を使ってください。"
 
@@ -7212,7 +7217,7 @@ msgid "Invalid object type."
 msgstr "無効なオブジェクトの種類。"
 
 #: wp-includes/class-wp-editor.php:1385
-#: wp-includes/js/dist/block-editor.js:33411
+#: wp-includes/js/dist/block-editor.js:33395
 msgid "Paste URL or type to search"
 msgstr "URL をペーストまたは入力して検索"
 
@@ -7268,7 +7273,7 @@ msgid "(Currently set to: %s)"
 msgstr "(現在の設定: %s)"
 
 #. translators: %s: Documentation URL.
-#: wp-includes/functions.php:5213
+#: wp-includes/functions.php:5217
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "詳しくは <a href=\"%s\">WordPress のデバッグ</a>をご覧ください。"
 
@@ -7379,7 +7384,7 @@ msgctxt "genitive"
 msgid "January"
 msgstr "1月"
 
-#: wp-includes/embed.php:1153
+#: wp-includes/embed.php:1158
 msgid "Sharing options"
 msgstr "共有オプション"
 
@@ -7441,7 +7446,7 @@ msgid "Oops! That embed can&#8217;t be found."
 msgstr "埋め込みが見つかりません。"
 
 #. translators: %s: Post title.
-#: wp-includes/embed.php:953 wp-includes/post-template.php:298
+#: wp-includes/embed.php:958 wp-includes/post-template.php:298
 msgid "Continue reading %s"
 msgstr "続きを読む %s"
 
@@ -7593,7 +7598,7 @@ msgstr "指定された名前空間が見つかりませんでした。"
 
 #: wp-includes/rest-api/class-wp-rest-server.php:1092
 msgid "No route was found matching the URL and request method"
-msgstr "URL とリクエストメソッドに一致するルートがありません"
+msgstr "URL とリクエストメソッドに一致するルートが見つかりませんでした"
 
 #: wp-includes/rest-api/class-wp-rest-server.php:962
 msgid "The handler for the route is invalid"
@@ -7801,41 +7806,41 @@ msgid "Older comments"
 msgstr "過去のコメント"
 
 #. translators: Post calendar label. %s: Date.
-#: wp-includes/general-template.php:2340
+#: wp-includes/general-template.php:2343
 msgid "Posts published on %s"
 msgstr "%s に投稿を公開"
 
 #. translators: %s: 'document_title_separator' filter name.
 #: wp-includes/feed.php:106 wp-includes/feed.php:132
 msgid "Use the %s filter instead."
-msgstr "代わりにフィルタ %s を使用してください。"
+msgstr "フィルター %s を代わりに使用してください。"
 
-#: wp-includes/embed.php:1180
+#: wp-includes/embed.php:1185
 msgid "Close sharing dialog"
 msgstr "共有ダイアログを閉じる"
 
-#: wp-includes/embed.php:1175
+#: wp-includes/embed.php:1180
 msgid "Copy and paste this code into your site to embed"
 msgstr "埋め込むにはこのコードをコピーしてサイトに貼り付けてください"
 
-#: wp-includes/embed.php:1168
+#: wp-includes/embed.php:1173
 msgid "Copy and paste this URL into your WordPress site to embed"
 msgstr "埋め込むにはこの URL をコピーして WordPress サイトに貼り付けてください"
 
-#: wp-includes/embed.php:1161
+#: wp-includes/embed.php:1166
 msgid "HTML Embed"
 msgstr "HTML での埋め込み"
 
-#: wp-includes/embed.php:1158
+#: wp-includes/embed.php:1163
 msgid "WordPress Embed"
 msgstr "WordPress への埋め込み"
 
-#: wp-includes/embed.php:1136
+#: wp-includes/embed.php:1141
 msgid "Open sharing dialog"
 msgstr "共有ダイアログを開く"
 
 #. translators: %s: Number of comments.
-#: wp-includes/embed.php:1112
+#: wp-includes/embed.php:1117
 msgid "%s <span class=\"screen-reader-text\">Comment</span>"
 msgid_plural "%s <span class=\"screen-reader-text\">Comments</span>"
 msgstr[0] "%s <span class=\"screen-reader-text\">コメント</span>"
@@ -8031,7 +8036,7 @@ msgid "Username may not be longer than 60 characters."
 msgstr "ユーザー名は60文字以下に設定してください。"
 
 #. translators: 1: PHP class name, 2: Version number, 3: __construct() method.
-#: wp-includes/functions.php:4872
+#: wp-includes/functions.php:4876
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "呼び出された %1$s のコンストラクターメソッドはバージョン %2$s から<strong>非推奨</strong>になっています ! 代わりに %3$s を使ってください。"
 
@@ -8667,13 +8672,13 @@ msgstr "メディアファイルを並び替えるにはドラッグしてドロ
 
 #. translators: 1: 'text_direction' argument, 2: bloginfo() function name, 3:
 #. is_rtl() function name.
-#: wp-includes/general-template.php:851
+#: wp-includes/general-template.php:854
 msgid "The %1$s option is deprecated for the family of %2$s functions. Use the %3$s function instead."
 msgstr "関数群 %2$s のオプション %1$s は非推奨です。代わりに関数 %3$s を使用してください。"
 
 #. translators: 1: 'siteurl'/'home' argument, 2: bloginfo() function name, 3:
 #. 'url' argument.
-#: wp-includes/general-template.php:770
+#: wp-includes/general-template.php:773
 msgid "The %1$s option is deprecated for the family of %2$s functions. Use the %3$s option instead."
 msgstr "関数 %2$s のオプション %1$s は非推奨です。代わりにオプション %3$s を使用してください。"
 
@@ -8846,7 +8851,7 @@ msgstr "ゴミ箱"
 msgid "Edit Selection"
 msgstr "選択範囲を編集"
 
-#: wp-includes/script-loader.php:1678 wp-includes/js/dist/components.js:42054
+#: wp-includes/script-loader.php:1678 wp-includes/js/dist/components.js:41870
 msgid "Previous"
 msgstr "前"
 
@@ -8873,52 +8878,52 @@ msgctxt "translations"
 msgid "Installed"
 msgstr "インストール済み"
 
-#: wp-includes/general-template.php:1694
+#: wp-includes/general-template.php:1697
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "チャット"
 
-#: wp-includes/general-template.php:1692
+#: wp-includes/general-template.php:1695
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "音声"
 
-#: wp-includes/general-template.php:1690
+#: wp-includes/general-template.php:1693
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "ステータス"
 
-#: wp-includes/general-template.php:1688
+#: wp-includes/general-template.php:1691
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "リンク"
 
-#: wp-includes/general-template.php:1686
+#: wp-includes/general-template.php:1689
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "引用"
 
-#: wp-includes/general-template.php:1684
+#: wp-includes/general-template.php:1687
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "動画"
 
-#: wp-includes/general-template.php:1682
+#: wp-includes/general-template.php:1685
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "画像"
 
-#: wp-includes/general-template.php:1680
+#: wp-includes/general-template.php:1683
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "ギャラリー"
 
-#: wp-includes/general-template.php:1678
+#: wp-includes/general-template.php:1681
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "アサイド"
 
-#: wp-includes/general-template.php:1674 wp-includes/general-template.php:2338
+#: wp-includes/general-template.php:1677 wp-includes/general-template.php:2341
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "Y年n月j日"
@@ -8970,13 +8975,13 @@ msgctxt "label for custom color"
 msgid "Custom..."
 msgstr "カスタム…"
 
-#: wp-includes/class-wp-editor.php:1268 wp-includes/js/dist/components.js:30666
+#: wp-includes/class-wp-editor.php:1268 wp-includes/js/dist/components.js:30677
 msgid "Custom color"
 msgstr "カスタムカラー"
 
 #: wp-includes/class-wp-editor.php:1267
-#: wp-includes/js/dist/block-library.js:13458
-#: wp-includes/js/dist/block-library.js:20746
+#: wp-includes/js/dist/block-library.js:13475
+#: wp-includes/js/dist/block-library.js:20763
 msgid "Color"
 msgstr "色"
 
@@ -9260,7 +9265,7 @@ msgstr "時間"
 
 #: wp-includes/media.php:2780
 #: wp-includes/customize/class-wp-customize-date-time-control.php:151
-#: wp-includes/js/dist/components.js:35689 wp-admin/includes/template.php:827
+#: wp-includes/js/dist/components.js:35505 wp-admin/includes/template.php:827
 msgid "Year"
 msgstr "年"
 
@@ -9280,7 +9285,7 @@ msgstr "アーティスト"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:130
 #: wp-includes/media-template.php:1168
-#: wp-includes/js/dist/block-editor.js:36006
+#: wp-includes/js/dist/block-editor.js:35990
 msgid "Link CSS Class"
 msgstr "リンク CSS クラス"
 
@@ -9298,7 +9303,7 @@ msgstr "画像タイトル属性"
 msgid "Advanced Options"
 msgstr "上級者向け設定"
 
-#: wp-includes/media-template.php:1098 wp-includes/js/dist/components.js:38917
+#: wp-includes/media-template.php:1098 wp-includes/js/dist/components.js:38733
 msgid "Custom Size"
 msgstr "カスタムサイズ"
 
@@ -9364,7 +9369,7 @@ msgstr "自動"
 
 #: wp-includes/media.php:4272
 msgid "Cropping&hellip;"
-msgstr "切り抜いています…"
+msgstr "切り抜き中&hellip;"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:87
 #: wp-includes/media-template.php:1379 wp-includes/media-template.php:1395
@@ -9618,7 +9623,7 @@ msgstr "ヒント: パスワードは少なくとも7文字以上であるべき
 #. translators: %s: wpdb::prepare()
 #: wp-includes/wp-db.php:1310
 msgid "The query argument of %s must have a placeholder."
-msgstr "%s のクエリ引数にはプレースホルダーが必要です。"
+msgstr "%s のクエリー引数にはプレースホルダーが必要です。"
 
 #: wp-includes/nav-menu.php:431
 msgid "Invalid menu ID."
@@ -9745,14 +9750,14 @@ msgid "Poster Image"
 msgstr "ポスター画像"
 
 #: wp-includes/media-template.php:1264 wp-includes/media-template.php:1363
-#: wp-includes/js/dist/block-library.js:9526
-#: wp-includes/js/dist/block-library.js:23439
+#: wp-includes/js/dist/block-library.js:9543
+#: wp-includes/js/dist/block-library.js:23456
 msgid "Autoplay"
 msgstr "自動再生"
 
 #: wp-includes/media-template.php:1255 wp-includes/media-template.php:1354
-#: wp-includes/js/dist/block-library.js:9551
-#: wp-includes/js/dist/block-library.js:23472
+#: wp-includes/js/dist/block-library.js:9568
+#: wp-includes/js/dist/block-library.js:23489
 #: wp-admin/includes/meta-boxes.php:1462
 msgid "Metadata"
 msgstr "メタデータ"
@@ -9786,8 +9791,8 @@ msgstr "「続きを読む」タグを挿入"
 msgid "Toolbar Toggle"
 msgstr "ツールバー切り替え"
 
-#: wp-includes/js/dist/block-editor.js:35607
-#: wp-includes/js/dist/block-editor.js:35614
+#: wp-includes/js/dist/block-editor.js:35591
+#: wp-includes/js/dist/block-editor.js:35598
 #: wp-includes/js/dist/edit-post.js:1974 wp-admin/tools.php:42
 #: wp-admin/menu.php:278
 msgid "Tools"
@@ -9798,12 +9803,12 @@ msgid "Show invisible characters"
 msgstr "非表示文字を表示"
 
 #: wp-includes/class-wp-editor.php:1350
-#: wp-includes/js/dist/block-library.js:19308
+#: wp-includes/js/dist/block-library.js:19325
 msgid "Text color"
 msgstr "テキスト色"
 
 #: wp-includes/class-wp-editor.php:1349
-#: wp-includes/js/dist/block-library.js:22615
+#: wp-includes/js/dist/block-library.js:22632
 msgid "Background color"
 msgstr "背景色"
 
@@ -9860,8 +9865,8 @@ msgid "Find and replace"
 msgstr "検索置換"
 
 #: wp-includes/media-template.php:1181 wp-includes/media.php:4192
-#: wp-includes/js/dist/block-editor.js:34392
-#: wp-includes/js/dist/block-library.js:23711
+#: wp-includes/js/dist/block-editor.js:34376
+#: wp-includes/js/dist/block-library.js:23728
 msgid "Replace"
 msgstr "置換"
 
@@ -9874,7 +9879,7 @@ msgid "Paste as text"
 msgstr "テキストとしてペースト"
 
 #: wp-includes/class-wp-editor.php:1243
-#: wp-includes/js/dist/block-library.js:18606
+#: wp-includes/js/dist/block-library.js:18623
 msgid "Page break"
 msgstr "改ページ"
 
@@ -10079,22 +10084,22 @@ msgstr "https://ja.wordpress.org/support/"
 msgid "Status"
 msgstr "ステータス"
 
-#: wp-includes/general-template.php:4517
+#: wp-includes/general-template.php:4520
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "コーヒー"
 
-#: wp-includes/general-template.php:4505
+#: wp-includes/general-template.php:4508
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "オーシャン"
 
-#: wp-includes/general-template.php:4493
+#: wp-includes/general-template.php:4496
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "エクトプラズム"
 
-#: wp-includes/general-template.php:4481
+#: wp-includes/general-template.php:4484
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "サンライズ"
@@ -10104,7 +10109,7 @@ msgid "Attempted to set image quality outside of the range [1,100]."
 msgstr "許容範囲 [1,100] に含まれない値の画質を設定しようとしています。"
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:26
-#: wp-includes/js/dist/block-library.js:24132
+#: wp-includes/js/dist/block-library.js:24149
 msgid "A cloud of your most used tags."
 msgstr "よく使用されているタグのクラウド。"
 
@@ -10114,11 +10119,11 @@ msgstr "任意の RSS/Atom フィードからのエントリー。"
 
 #: wp-includes/widgets/class-wp-widget-recent-comments.php:27
 msgid "Your site&#8217;s most recent comments."
-msgstr "直近のコメント"
+msgstr "このサイトの最近のコメント。"
 
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:27
 msgid "Your site&#8217;s most recent Posts."
-msgstr "直近の投稿"
+msgstr "このサイトの最近の投稿。"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:27
 msgid "A list or dropdown of categories."
@@ -10138,7 +10143,7 @@ msgstr "サイト内検索フォーム。"
 
 #: wp-includes/widgets/class-wp-widget-pages.php:27
 msgid "A list of your site&#8217;s Pages."
-msgstr "固定ページ一覧。"
+msgstr "サイトの固定ページ一覧。"
 
 #. translators: %s: Support forums URL.
 #: wp-includes/update.php:165 wp-includes/update.php:400
@@ -10164,17 +10169,17 @@ msgstr "no-subset"
 msgid "Use commas instead of %s to separate excluded terms."
 msgstr "除外する項目の区切りとして %s の代わりにカンマを使ってください。"
 
-#: wp-includes/general-template.php:4469
+#: wp-includes/general-template.php:4472
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "ミッドナイト"
 
-#: wp-includes/general-template.php:4433
+#: wp-includes/general-template.php:4436
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "ライト"
 
-#: wp-includes/general-template.php:4421
+#: wp-includes/general-template.php:4424
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "デフォルト"
@@ -10375,7 +10380,7 @@ msgstr "お探しのサイト %s は存在しませんが、今すぐ作成で�
 msgid "Have you entered your email correctly? You have entered %s, if it&#8217;s incorrect, you will not receive your email."
 msgstr "メールアドレス (%s) をご確認ください。間違っているとメールを受け取れません。"
 
-#: wp-includes/functions.php:6551
+#: wp-includes/functions.php:6555
 msgid "The login page will open in a new tab. After logging in you can close it and return to this page."
 msgstr "新しいタブでログインページを開きます。ログイン後、そちらを閉じてこのページに戻ることができます。"
 
@@ -10385,22 +10390,22 @@ msgstr "新しいタブでログインページを開きます。ログイン後
 msgid "%s <span class=\"says\">says:</span>"
 msgstr "%s <span class=\"says\">より:</span>"
 
-#: wp-includes/general-template.php:322 wp-includes/general-template.php:329
+#: wp-includes/general-template.php:325 wp-includes/general-template.php:332
 msgctxt "submit button"
 msgid "Search"
 msgstr "検索"
 
-#: wp-includes/general-template.php:319 wp-includes/general-template.php:327
+#: wp-includes/general-template.php:322 wp-includes/general-template.php:330
 msgctxt "label"
 msgid "Search for:"
 msgstr "検索:"
 
-#: wp-includes/general-template.php:320
+#: wp-includes/general-template.php:323
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "検索 &hellip;"
 
-#: wp-includes/script-loader.php:1114 wp-includes/functions.php:6549
+#: wp-includes/script-loader.php:1114 wp-includes/functions.php:6553
 msgid "Session expired"
 msgstr "セッションの有効期限が切れました"
 
@@ -10436,7 +10441,7 @@ msgstr "無効なユーザー ID です。"
 msgid "Random Order"
 msgstr "ランダム"
 
-#: wp-includes/media.php:4244 wp-includes/js/dist/block-editor.js:35125
+#: wp-includes/media.php:4244 wp-includes/js/dist/block-editor.js:35109
 msgid "Insert from URL"
 msgstr "URL から挿入"
 
@@ -10503,8 +10508,8 @@ msgstr "動画の管理"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:28
 #: wp-includes/post.php:2771 wp-includes/js/dist/editor.js:8981
-#: wp-includes/js/dist/block-editor.js:35059
-#: wp-includes/js/dist/block-library.js:23948
+#: wp-includes/js/dist/block-editor.js:35043
+#: wp-includes/js/dist/block-library.js:23965
 msgid "Video"
 msgstr "動画"
 
@@ -10516,7 +10521,7 @@ msgstr[0] "音声 <span class=\"count\">(%s)</span>"
 
 #: wp-includes/post.php:2763
 msgid "Manage Audio"
-msgstr "音声の管理"
+msgstr "音声ファイルを管理"
 
 #. translators: %s: Number of images.
 #: wp-includes/post.php:2756
@@ -10526,7 +10531,7 @@ msgstr[0] "画像 <span class=\"count\">(%s)</span>"
 
 #: wp-includes/post.php:2754
 msgid "Manage Images"
-msgstr "画像の管理"
+msgstr "画像を管理"
 
 #: wp-includes/post.php:1713
 msgid "Uploaded to this page"
@@ -10538,8 +10543,8 @@ msgstr "固定ページに挿入"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:28
 #: wp-includes/post.php:2762 wp-includes/js/dist/editor.js:8984
-#: wp-includes/js/dist/block-editor.js:35055
-#: wp-includes/js/dist/block-library.js:9722
+#: wp-includes/js/dist/block-editor.js:35039
+#: wp-includes/js/dist/block-library.js:9739
 msgid "Audio"
 msgstr "音声"
 
@@ -10561,12 +10566,12 @@ msgstr "&#8592; ライブラリへ戻る"
 msgid "Custom URL"
 msgstr "カスタム URL"
 
-#: wp-includes/media-template.php:858 wp-includes/js/dist/block-library.js:8765
-#: wp-includes/js/dist/block-library.js:12048
-#: wp-includes/js/dist/block-library.js:12387
-#: wp-includes/js/dist/block-library.js:17299
-#: wp-includes/js/dist/block-library.js:20134
-#: wp-includes/js/dist/block-library.js:23039
+#: wp-includes/media-template.php:858 wp-includes/js/dist/block-library.js:8782
+#: wp-includes/js/dist/block-library.js:12065
+#: wp-includes/js/dist/block-library.js:12404
+#: wp-includes/js/dist/block-library.js:17316
+#: wp-includes/js/dist/block-library.js:20151
+#: wp-includes/js/dist/block-library.js:23056
 #: wp-admin/includes/class-wp-screen.php:1153
 msgid "Columns"
 msgstr "カラム"
@@ -10581,9 +10586,9 @@ msgstr "添付ファイルの詳細"
 
 #: wp-includes/media-template.php:811 wp-includes/media-template.php:891
 #: wp-includes/media-template.php:1082 wp-includes/media.php:3842
-#: wp-includes/js/dist/components.js:35981
+#: wp-includes/js/dist/components.js:35797
 #: wp-includes/js/dist/block-editor.js:18472
-#: wp-admin/includes/class-custom-background.php:597
+#: wp-admin/includes/class-custom-background.php:599
 #: wp-admin/includes/media.php:1144 wp-admin/edit-form-blocks.php:219
 msgid "Large"
 msgstr "大"
@@ -10617,7 +10622,7 @@ msgid "Insert gallery"
 msgstr "ギャラリーを挿入"
 
 #: wp-includes/media-template.php:209 wp-includes/media-template.php:216
-#: wp-includes/media-template.php:253 wp-includes/js/dist/components.js:36813
+#: wp-includes/media-template.php:253 wp-includes/js/dist/components.js:36629
 #: wp-admin/includes/media.php:2207
 msgid "Drop files to upload"
 msgstr "ファイルをドロップしてアップロード"
@@ -10626,7 +10631,7 @@ msgstr "ファイルをドロップしてアップロード"
 msgid "Create gallery"
 msgstr "ギャラリーを作成"
 
-#: wp-includes/media.php:4208 wp-includes/js/dist/block-editor.js:35167
+#: wp-includes/media.php:4208 wp-includes/js/dist/block-editor.js:35151
 #: wp-admin/includes/media.php:21 wp-admin/upload.php:79
 #: wp-admin/upload.php:216
 msgid "Media Library"
@@ -10687,15 +10692,15 @@ msgstr ""
 
 #: wp-includes/media-template.php:774 wp-includes/media-template.php:849
 #: wp-includes/media-template.php:1122
-#: wp-includes/js/dist/block-editor.js:35939
-#: wp-includes/js/dist/block-library.js:8370
+#: wp-includes/js/dist/block-editor.js:35923
+#: wp-includes/js/dist/block-library.js:8387
 msgid "Media File"
 msgstr "メディアファイル"
 
 #: wp-includes/media-template.php:781 wp-includes/media-template.php:846
 #: wp-includes/media-template.php:1125
-#: wp-includes/js/dist/block-editor.js:35944
-#: wp-includes/js/dist/block-library.js:8367 wp-admin/includes/media.php:2585
+#: wp-includes/js/dist/block-editor.js:35928
+#: wp-includes/js/dist/block-library.js:8384 wp-admin/includes/media.php:2585
 msgid "Attachment Page"
 msgstr "添付ファイルのページ"
 
@@ -10770,8 +10775,8 @@ msgstr "%2$s%1$s"
 msgid "Could not insert term relationship into the database."
 msgstr "キーワードの関係をデータベースに挿入できませんでした。"
 
-#: wp-includes/media-template.php:711 wp-includes/js/dist/components.js:30669
-#: wp-includes/js/dist/components.js:41364 wp-admin/theme-install.php:209
+#: wp-includes/media-template.php:711 wp-includes/js/dist/components.js:30680
+#: wp-includes/js/dist/components.js:41180 wp-admin/theme-install.php:209
 #: wp-admin/theme-install.php:232 wp-admin/js/color-picker.js:154
 msgid "Clear"
 msgstr "クリア"
@@ -10809,7 +10814,7 @@ msgid "Alternative Text"
 msgstr "代替テキスト"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Post type name.
-#: wp-includes/general-template.php:3111
+#: wp-includes/general-template.php:3114
 msgid "%1$s %2$s %3$s Feed"
 msgstr "%1$s %2$s %3$s フィード"
 
@@ -10817,20 +10822,20 @@ msgstr "%1$s %2$s %3$s フィード"
 msgid "Display post date?"
 msgstr "投稿日を表示しますか ?"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5373 wp-admin/includes/post.php:40
+#: wp-includes/class-wp-xmlrpc-server.php:5388 wp-admin/includes/post.php:40
 #: wp-admin/includes/post.php:85
 msgid "Sorry, you are not allowed to create pages as this user."
 msgstr "このユーザーとして固定ページを作成する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4621
-#: wp-includes/class-wp-xmlrpc-server.php:4704
+#: wp-includes/class-wp-xmlrpc-server.php:4636
+#: wp-includes/class-wp-xmlrpc-server.php:4719
 msgid "Sorry, revisions are disabled."
 msgstr "リビジョンが無効化されています。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3251
-#: wp-includes/class-wp-xmlrpc-server.php:4616
-#: wp-includes/class-wp-xmlrpc-server.php:4942
-#: wp-includes/class-wp-xmlrpc-server.php:6129 wp-admin/includes/post.php:480
+#: wp-includes/class-wp-xmlrpc-server.php:4631
+#: wp-includes/class-wp-xmlrpc-server.php:4957
+#: wp-includes/class-wp-xmlrpc-server.php:6144 wp-admin/includes/post.php:480
 msgid "Sorry, you are not allowed to edit posts."
 msgstr "投稿を編集する権限がありません。"
 
@@ -10899,7 +10904,7 @@ msgstr "この XML-RPC メソッドへ不完全な変数が渡されました。
 msgid "Sorry, you cannot stick a private post."
 msgstr "非公開設定の投稿を固定表示にすることはできません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5851
+#: wp-includes/class-wp-xmlrpc-server.php:5866
 msgid "Sorry, you are not allowed to publish this page."
 msgstr "この投稿を公開する権限がありません。"
 
@@ -10963,7 +10968,7 @@ msgstr "背景画像"
 #: wp-includes/class-wp-customize-manager.php:5279
 #: wp-includes/js/dist/block-editor.js:13970
 #: wp-includes/js/dist/block-editor.js:15347
-#: wp-includes/js/dist/block-library.js:10436
+#: wp-includes/js/dist/block-library.js:10453
 #: wp-admin/includes/class-custom-background.php:454
 #: wp-admin/includes/class-custom-background.php:455
 msgid "Background Color"
@@ -10971,7 +10976,7 @@ msgstr "背景色"
 
 #: wp-includes/js/dist/block-editor.js:13966
 #: wp-includes/js/dist/block-editor.js:15346
-#: wp-includes/js/dist/block-library.js:10432
+#: wp-includes/js/dist/block-library.js:10449
 #: wp-includes/js/dist/format-library.js:1888
 #: wp-admin/includes/class-custom-image-header.php:716
 msgid "Text Color"
@@ -10982,7 +10987,7 @@ msgid "Change image"
 msgstr "画像を変更"
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:140
-#: wp-includes/js/dist/editor.js:8759 wp-includes/js/dist/block-library.js:8176
+#: wp-includes/js/dist/editor.js:8759 wp-includes/js/dist/block-library.js:8193
 msgid "Remove image"
 msgstr "画像を削除"
 
@@ -11008,16 +11013,16 @@ msgstr "アップロードできるファイル"
 #: wp-includes/customize/class-wp-customize-media-control.php:259
 #: wp-includes/class-wp-customize-manager.php:5196
 #: wp-includes/class-wp-editor.php:1383 wp-includes/js/dist/edit-post.js:1795
-#: wp-includes/js/dist/block-library.js:23721
+#: wp-includes/js/dist/block-library.js:23738
 #: wp-admin/includes/class-walker-nav-menu-edit.php:278
 #: wp-admin/includes/class-wp-users-list-table.php:269
 #: wp-admin/includes/class-wp-users-list-table.php:458
 msgid "Remove"
 msgstr "削除"
 
-#: wp-includes/js/dist/block-editor.js:34515
-#: wp-includes/js/dist/block-editor.js:35181
-#: wp-includes/js/dist/block-editor.js:35194
+#: wp-includes/js/dist/block-editor.js:34499
+#: wp-includes/js/dist/block-editor.js:35165
+#: wp-includes/js/dist/block-editor.js:35178
 #: wp-admin/includes/class-custom-background.php:333
 #: wp-admin/includes/media.php:2234 wp-admin/includes/media.php:2236
 #: wp-admin/includes/class-custom-image-header.php:613
@@ -11169,7 +11174,7 @@ msgid "Your latest posts"
 msgstr "最新の投稿"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1405
-#: wp-includes/class-wp-xmlrpc-server.php:5677
+#: wp-includes/class-wp-xmlrpc-server.php:5692
 msgid "The post type may not be changed."
 msgstr "投稿タイプは変更できません。"
 
@@ -11187,14 +11192,14 @@ msgstr "画像リンクタイプの初期設定"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1402
 #: wp-includes/class-wp-xmlrpc-server.php:1881
-#: wp-includes/class-wp-xmlrpc-server.php:4699
-#: wp-includes/class-wp-xmlrpc-server.php:4885
-#: wp-includes/class-wp-xmlrpc-server.php:5124
-#: wp-includes/class-wp-xmlrpc-server.php:5667
-#: wp-includes/class-wp-xmlrpc-server.php:5988
-#: wp-includes/class-wp-xmlrpc-server.php:6361
-#: wp-includes/class-wp-xmlrpc-server.php:6550
-#: wp-includes/class-wp-xmlrpc-server.php:6608
+#: wp-includes/class-wp-xmlrpc-server.php:4714
+#: wp-includes/class-wp-xmlrpc-server.php:4900
+#: wp-includes/class-wp-xmlrpc-server.php:5139
+#: wp-includes/class-wp-xmlrpc-server.php:5682
+#: wp-includes/class-wp-xmlrpc-server.php:6003
+#: wp-includes/class-wp-xmlrpc-server.php:6376
+#: wp-includes/class-wp-xmlrpc-server.php:6565
+#: wp-includes/class-wp-xmlrpc-server.php:6623
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:431
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:708
 #: wp-admin/includes/post.php:267 wp-admin/includes/post.php:1891
@@ -11205,7 +11210,7 @@ msgstr "この投稿を編集する権限がありません。"
 
 #: wp-includes/admin-bar.php:390
 msgid "Edit Site"
-msgstr "サイト編集"
+msgstr "サイトを編集"
 
 #: wp-includes/post.php:4712 wp-admin/includes/meta-boxes.php:538
 #: wp-admin/includes/post.php:540 wp-admin/includes/post.php:2067
@@ -11216,7 +11221,7 @@ msgid ","
 msgstr ","
 
 #: wp-includes/class-wp-xmlrpc-server.php:1947
-#: wp-includes/class-wp-xmlrpc-server.php:4490
+#: wp-includes/class-wp-xmlrpc-server.php:4505
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:143
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:95
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:157
@@ -11257,13 +11262,13 @@ msgid "Sorry, you are not allowed to view this item."
 msgstr "この項目を表示する権限がありません。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1448
-#: wp-includes/class-wp-xmlrpc-server.php:5381
+#: wp-includes/class-wp-xmlrpc-server.php:5396
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1158
 msgid "Invalid author ID."
 msgstr "無効な投稿者 ID。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1442
-#: wp-includes/class-wp-xmlrpc-server.php:5368
+#: wp-includes/class-wp-xmlrpc-server.php:5383
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:537
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:553
 #: wp-admin/includes/post.php:42 wp-admin/includes/post.php:87
@@ -11280,12 +11285,12 @@ msgstr "この投稿タイプでパスワード保護された投稿を作成す
 msgid "Sorry, you are not allowed to create private posts in this post type."
 msgstr "この投稿タイプで非公開の投稿を作成する権限がありません。"
 
-#: wp-includes/general-template.php:1185 wp-includes/general-template.php:1668
+#: wp-includes/general-template.php:1188 wp-includes/general-template.php:1671
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y年"
 
-#: wp-includes/general-template.php:1188 wp-includes/general-template.php:1671
+#: wp-includes/general-template.php:1191 wp-includes/general-template.php:1674
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "Y年n月"
@@ -11343,7 +11348,7 @@ msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> 
 msgstr "アカウントが有効化されました。ユーザー名「%2$s」を使って<a href=\"%1$s\">ログイン</a>できます。%3$s のメールをチェックして、パスワードとログイン方法をお読みください。メールが見つからない場合は、スパムフォルダーを確認してください。それでも1時間以内にメールが届かなければ、<a href=\"%4$s\">パスワードをリセット</a>できます。"
 
 #. translators: %s: Database repair URL.
-#: wp-includes/functions.php:1767
+#: wp-includes/functions.php:1771
 msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
 msgstr "使用できないテーブルがあります。データベースの<a href=\"%s\">修復</a>が必要かもしれません。"
 
@@ -11422,17 +11427,17 @@ msgstr "<strong>エラー</strong>: 必須項目 (名前、メールアドレス
 msgid "Documentation"
 msgstr "ドキュメンテーション"
 
-#: wp-includes/general-template.php:4323 wp-includes/formatting.php:3872
+#: wp-includes/general-template.php:4326 wp-includes/formatting.php:3872
 #: wp-admin/themes.php:249
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/wp-db.php:1683 wp-includes/functions.php:4708
+#: wp-includes/wp-db.php:1683 wp-includes/functions.php:4712
 #: wp-includes/ms-load.php:473
 msgid "Error establishing a database connection"
 msgstr "データベース接続確立エラー"
 
-#: wp-includes/functions.php:4708
+#: wp-includes/functions.php:4712
 msgid "Database Error"
 msgstr "データベースエラー"
 
@@ -11488,7 +11493,7 @@ msgstr "ファイルサイズの上限を超えているようです。別のフ
 msgid "This file is not an image. Please try another."
 msgstr "このファイルは画像ではありません。別のファイルをお試しください。"
 
-#: wp-includes/general-template.php:4457
+#: wp-includes/general-template.php:4460
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "ブルー"
@@ -11530,7 +11535,7 @@ msgid "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a 
 msgstr "アカウントを有効化しました。<a href=\"%1$s\">サイトを表示する</a>か<a href=\"%2$s\">ログイン</a>してください。"
 
 #: wp-includes/class-wp-editor.php:1256 wp-includes/js/dist/editor.js:8966
-#: wp-includes/js/dist/block-library.js:10621
+#: wp-includes/js/dist/block-library.js:10638
 #: wp-includes/js/dist/format-library.js:1462
 msgid "Link"
 msgstr "リンク"
@@ -11562,8 +11567,8 @@ msgstr "ポスター"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:72
 #: wp-includes/widgets/class-wp-widget-media-video.php:74
 #: wp-includes/media-template.php:1251 wp-includes/media-template.php:1350
-#: wp-includes/js/dist/block-library.js:9535
-#: wp-includes/js/dist/block-library.js:23460
+#: wp-includes/js/dist/block-library.js:9552
+#: wp-includes/js/dist/block-library.js:23477
 msgid "Preload"
 msgstr "先読み"
 
@@ -11608,7 +11613,7 @@ msgstr "リンク先 URL を入力してください"
 #: wp-includes/query.php:809 wp-includes/query.php:833
 #: wp-includes/query.php:857 wp-includes/query.php:877
 msgid "Conditional query tags do not work before the query is run. Before then, they always return false."
-msgstr "条件付きクエリタグはクエリが走る前には動作しません。その場合、常に false を返します。"
+msgstr "条件付きクエリータグは、クエリーが実行される前には機能しません。それ以前では、常に false を返します。"
 
 #: wp-includes/ms-functions.php:1173
 msgid "The user is already active."
@@ -11616,12 +11621,12 @@ msgstr "このユーザーはすでに認証済みです。"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: WordPress version number.
-#: wp-includes/functions.php:5220
+#: wp-includes/functions.php:5224
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s が<strong>誤って</strong>呼び出されました。%2$s %3$s"
 
 #. translators: %s: Version number.
-#: wp-includes/functions.php:5208
+#: wp-includes/functions.php:5212
 msgid "(This message was added in version %s.)"
 msgstr "(このメッセージはバージョン %s で追加されました)"
 
@@ -11649,8 +11654,8 @@ msgctxt "Post format"
 msgid "Audio"
 msgstr "音声"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5329
-#: wp-includes/class-wp-xmlrpc-server.php:5684
+#: wp-includes/class-wp-xmlrpc-server.php:5344
+#: wp-includes/class-wp-xmlrpc-server.php:5699
 msgid "Invalid post format."
 msgstr "無効な投稿フォーマットです。"
 
@@ -11723,9 +11728,9 @@ msgid "Shortlink"
 msgstr "短縮リンク"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1498
-#: wp-includes/class-wp-xmlrpc-server.php:4296
-#: wp-includes/class-wp-xmlrpc-server.php:5531
-#: wp-includes/class-wp-xmlrpc-server.php:5925
+#: wp-includes/class-wp-xmlrpc-server.php:4311
+#: wp-includes/class-wp-xmlrpc-server.php:5546
+#: wp-includes/class-wp-xmlrpc-server.php:5940
 msgid "Invalid attachment ID."
 msgstr "無効な添付ファイル ID です。"
 
@@ -11735,8 +11740,8 @@ msgstr "このファイルは含める必要がなくなりました。"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:193
 #: wp-includes/widgets/class-wp-widget-archives.php:224
-#: wp-includes/js/dist/block-library.js:9221
-#: wp-includes/js/dist/block-library.js:11359
+#: wp-includes/js/dist/block-library.js:9238
+#: wp-includes/js/dist/block-library.js:11376
 msgid "Display as dropdown"
 msgstr "ドロップダウンで表示"
 
@@ -11770,7 +11775,7 @@ msgstr "サムネイルの幅"
 
 #: wp-login.php:1002
 msgid "Confirm new password"
-msgstr "新しいパスワードの確認"
+msgstr "新しいパスワードを確認"
 
 #: wp-login.php:984
 msgid "New password"
@@ -11814,7 +11819,7 @@ msgstr "不正な投稿。"
 
 #: wp-includes/admin-bar.php:640
 msgid "Manage Comments"
-msgstr "コメント管理"
+msgstr "コメントを管理"
 
 #: wp-includes/class-wp-theme.php:959
 msgid "Blavatar"
@@ -12039,31 +12044,31 @@ msgid "Theme without %s"
 msgstr "%s のないテーマ"
 
 #: wp-includes/class-wp-xmlrpc-server.php:3485
-#: wp-includes/class-wp-xmlrpc-server.php:6250
-#: wp-includes/class-wp-xmlrpc-server.php:6492
+#: wp-includes/class-wp-xmlrpc-server.php:6265
+#: wp-includes/class-wp-xmlrpc-server.php:6507
 msgid "Sorry, you must be able to edit posts on this site in order to view categories."
 msgstr "カテゴリーを表示するにはこのサイトの投稿を編集する権限が必要です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5287
+#: wp-includes/class-wp-xmlrpc-server.php:5302
 msgid "Sorry, you are not allowed to publish pages on this site."
 msgstr "このサイトでページを公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5300
-#: wp-includes/class-wp-xmlrpc-server.php:5314
-#: wp-includes/class-wp-xmlrpc-server.php:5319
+#: wp-includes/class-wp-xmlrpc-server.php:5315
+#: wp-includes/class-wp-xmlrpc-server.php:5329
+#: wp-includes/class-wp-xmlrpc-server.php:5334
 msgid "Sorry, you are not allowed to publish posts on this site."
 msgstr "このサイトで投稿を公開する権限がありません。"
 
 #: wp-includes/class-wp-xmlrpc-server.php:1409
-#: wp-includes/class-wp-xmlrpc-server.php:5040
+#: wp-includes/class-wp-xmlrpc-server.php:5055
 msgid "Sorry, you are not allowed to post on this site."
 msgstr "このサイトに投稿する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3976
-#: wp-includes/class-wp-xmlrpc-server.php:4060
-#: wp-includes/class-wp-xmlrpc-server.php:4095
-#: wp-includes/class-wp-xmlrpc-server.php:4130
-#: wp-includes/class-wp-xmlrpc-server.php:4397
+#: wp-includes/class-wp-xmlrpc-server.php:3991
+#: wp-includes/class-wp-xmlrpc-server.php:4075
+#: wp-includes/class-wp-xmlrpc-server.php:4110
+#: wp-includes/class-wp-xmlrpc-server.php:4145
+#: wp-includes/class-wp-xmlrpc-server.php:4412
 msgid "Sorry, you are not allowed to access details about this site."
 msgstr "このサイトの詳細へアクセスする権限がありません。"
 
@@ -12181,7 +12186,7 @@ msgstr "あなたをこのサイトに追加する際にエラーが起こりま
 msgid "Your email address will not be published."
 msgstr "メールアドレスが公開されることはありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6786 wp-includes/class-http.php:275
+#: wp-includes/class-wp-xmlrpc-server.php:6801 wp-includes/class-http.php:275
 #: wp-includes/class-http.php:503
 msgid "A valid URL was not provided."
 msgstr "有効な URL ではありません。"
@@ -12228,7 +12233,7 @@ msgid "This action has been disabled by the administrator."
 msgstr "この操作は管理者によって無効化されています。"
 
 #. translators: %s: Page number.
-#: wp-includes/general-template.php:1197
+#: wp-includes/general-template.php:1200
 msgid "Page %s"
 msgstr "ページ %s"
 
@@ -12424,56 +12429,56 @@ msgstr "WordPress データベースエラー: %1$s for query %2$s made by %3$s"
 msgid "Your PHP installation appears to be missing the MySQL extension which is required by WordPress."
 msgstr "お使いのサーバーの PHP では WordPress に必要な MySQL 拡張を利用できないようです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:7020
+#: wp-includes/class-wp-xmlrpc-server.php:7035
 msgid "The specified target URL does not exist."
 msgstr "指定したターゲット URL が存在しません。"
 
 #. translators: 1: URL of the page linked from, 2: URL of the page linked to.
-#: wp-includes/class-wp-xmlrpc-server.php:6987
+#: wp-includes/class-wp-xmlrpc-server.php:7002
 msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 msgstr "%1$s より %2$s へのピンバックが登録されました。ウェブでの会話を続けてください ! :-)"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6943
+#: wp-includes/class-wp-xmlrpc-server.php:6958
 msgid "The source URL does not contain a link to the target URL, and so cannot be used as a source."
 msgstr "ソース URL にターゲット URL へのリンクが含まれていないので、ソースとして使用することができません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6901
+#: wp-includes/class-wp-xmlrpc-server.php:6916
 msgid "We cannot find a title on that page."
 msgstr "そのページのタイトルが見つかりません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6880
+#: wp-includes/class-wp-xmlrpc-server.php:6895
 msgid "The source URL does not exist."
-msgstr "元のURLが存在しません。"
+msgstr "元の URL が存在しません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6853
+#: wp-includes/class-wp-xmlrpc-server.php:6868
 msgid "The pingback has already been registered."
 msgstr "そのピンバックはすでに登録済みです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6843
+#: wp-includes/class-wp-xmlrpc-server.php:6858
 msgid "The source URL and the target URL cannot both point to the same resource."
 msgstr "ソース URL とターゲット URL に同一のリソースを指定することはできません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6832
-#: wp-includes/class-wp-xmlrpc-server.php:6839
-#: wp-includes/class-wp-xmlrpc-server.php:6848
-#: wp-includes/class-wp-xmlrpc-server.php:7013
+#: wp-includes/class-wp-xmlrpc-server.php:6847
+#: wp-includes/class-wp-xmlrpc-server.php:6854
+#: wp-includes/class-wp-xmlrpc-server.php:6863
+#: wp-includes/class-wp-xmlrpc-server.php:7028
 msgid "The specified target URL cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
 msgstr "指定されたターゲット URL はターゲットとして使用できません。この URL は存在しないかピンバックが有効になっていません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:6792
+#: wp-includes/class-wp-xmlrpc-server.php:6807
 msgid "Is there no link to us?"
 msgstr "私たちへのリンクはないのですか ?"
 
 #. translators: 1: File name, 2: Error message.
-#: wp-includes/class-wp-xmlrpc-server.php:6352
+#: wp-includes/class-wp-xmlrpc-server.php:6367
 msgid "Could not write file %1$s (%2$s)."
 msgstr "ファイル %1$s に書き込めませんでした (%2$s)。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5741
+#: wp-includes/class-wp-xmlrpc-server.php:5756
 msgid "Sorry, you are not allowed to change the page author as this user."
 msgstr "ページ投稿者をこのユーザーに変更する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5736
+#: wp-includes/class-wp-xmlrpc-server.php:5751
 msgid "Sorry, you are not allowed to change the post author as this user."
 msgstr "投稿者をこのユーザーに変更する権限がありません。"
 
@@ -12484,11 +12489,11 @@ msgstr "このユーザーとして投稿を更新する権限がありません
 #: wp-includes/class-wp-xmlrpc-server.php:1392
 #: wp-includes/class-wp-xmlrpc-server.php:1940
 #: wp-includes/class-wp-xmlrpc-server.php:3609
-#: wp-includes/class-wp-xmlrpc-server.php:4484
-#: wp-includes/class-wp-xmlrpc-server.php:5304
-#: wp-includes/class-wp-xmlrpc-server.php:5377
-#: wp-includes/class-wp-xmlrpc-server.php:5672
-#: wp-includes/class-wp-xmlrpc-server.php:5745
+#: wp-includes/class-wp-xmlrpc-server.php:4499
+#: wp-includes/class-wp-xmlrpc-server.php:5319
+#: wp-includes/class-wp-xmlrpc-server.php:5392
+#: wp-includes/class-wp-xmlrpc-server.php:5687
+#: wp-includes/class-wp-xmlrpc-server.php:5760
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:141
 #: wp-includes/post.php:1473 wp-includes/class-wp-customize-nav-menus.php:946
 #: wp-admin/async-upload.php:46 wp-admin/post.php:131 wp-admin/post.php:246
@@ -12502,37 +12507,37 @@ msgstr "無効な投稿タイプ。"
 msgid "Sorry, you are not allowed to publish posts in this post type."
 msgstr "この投稿タイプで投稿を公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5118
-#: wp-includes/class-wp-xmlrpc-server.php:5192
-#: wp-includes/class-wp-xmlrpc-server.php:6093
-#: wp-includes/class-wp-xmlrpc-server.php:6673
+#: wp-includes/class-wp-xmlrpc-server.php:5133
+#: wp-includes/class-wp-xmlrpc-server.php:5207
+#: wp-includes/class-wp-xmlrpc-server.php:6108
+#: wp-includes/class-wp-xmlrpc-server.php:6688
 msgid "Sorry, no such post."
 msgstr "そのような投稿はありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:5127
-#: wp-includes/class-wp-xmlrpc-server.php:5853
-#: wp-includes/class-wp-xmlrpc-server.php:6733
+#: wp-includes/class-wp-xmlrpc-server.php:5142
+#: wp-includes/class-wp-xmlrpc-server.php:5868
+#: wp-includes/class-wp-xmlrpc-server.php:6748
 msgid "Sorry, you are not allowed to publish this post."
 msgstr "このブログを公開する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4951
-#: wp-includes/class-wp-xmlrpc-server.php:6439
+#: wp-includes/class-wp-xmlrpc-server.php:4966
+#: wp-includes/class-wp-xmlrpc-server.php:6454
 msgid "Either there are no posts, or something went wrong."
 msgstr "投稿がないか、何かうまくいかなかったようです。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4231
+#: wp-includes/class-wp-xmlrpc-server.php:4246
 msgid "Sorry, you are not allowed to update options."
 msgstr "設定を更新する権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:4018
+#: wp-includes/class-wp-xmlrpc-server.php:4033
 msgid "Sorry, you are not allowed to access details of this post."
 msgstr "この投稿の詳細へアクセスする権限がありません。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3918
+#: wp-includes/class-wp-xmlrpc-server.php:3933
 msgid "A valid email address is required."
 msgstr "有効なメールアドレスが必要です。"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3916
+#: wp-includes/class-wp-xmlrpc-server.php:3931
 msgid "Comment author name and email are required."
 msgstr "コメント投稿者の名前とメールアドレスは入力必須です。"
 
@@ -12543,17 +12548,17 @@ msgstr "コメント投稿者の名前とメールアドレスは入力必須で
 #: wp-includes/class-wp-xmlrpc-server.php:2921
 #: wp-includes/class-wp-xmlrpc-server.php:3867
 #: wp-includes/class-wp-xmlrpc-server.php:3871
-#: wp-includes/class-wp-xmlrpc-server.php:4014
-#: wp-includes/class-wp-xmlrpc-server.php:4612
-#: wp-includes/class-wp-xmlrpc-server.php:4686
-#: wp-includes/class-wp-xmlrpc-server.php:4690
-#: wp-includes/class-wp-xmlrpc-server.php:4695
-#: wp-includes/class-wp-xmlrpc-server.php:4881
-#: wp-includes/class-wp-xmlrpc-server.php:5663
-#: wp-includes/class-wp-xmlrpc-server.php:5984
-#: wp-includes/class-wp-xmlrpc-server.php:6546
-#: wp-includes/class-wp-xmlrpc-server.php:6604
-#: wp-includes/class-wp-xmlrpc-server.php:6729
+#: wp-includes/class-wp-xmlrpc-server.php:4029
+#: wp-includes/class-wp-xmlrpc-server.php:4627
+#: wp-includes/class-wp-xmlrpc-server.php:4701
+#: wp-includes/class-wp-xmlrpc-server.php:4705
+#: wp-includes/class-wp-xmlrpc-server.php:4710
+#: wp-includes/class-wp-xmlrpc-server.php:4896
+#: wp-includes/class-wp-xmlrpc-server.php:5678
+#: wp-includes/class-wp-xmlrpc-server.php:5999
+#: wp-includes/class-wp-xmlrpc-server.php:6561
+#: wp-includes/class-wp-xmlrpc-server.php:6619
+#: wp-includes/class-wp-xmlrpc-server.php:6744
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:361
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:828
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:398
@@ -12616,7 +12621,7 @@ msgstr "認証メールがまだ届いていませんか ?"
 
 #: wp-signup.php:745
 msgid "Signup"
-msgstr "サインアップ"
+msgstr "登録"
 
 #: wp-signup.php:679
 msgid "If you do not activate your username within two days, you will have to sign up again."
@@ -12633,7 +12638,7 @@ msgstr "新しいユーザー名は %s です"
 
 #: wp-includes/script-loader.php:1677
 #: wp-includes/class-wp-customize-nav-menus.php:1110 wp-signup.php:621
-#: wp-includes/js/dist/components.js:42057
+#: wp-includes/js/dist/components.js:41873
 msgid "Next"
 msgstr "次"
 
@@ -12644,7 +12649,7 @@ msgstr "ユーザー登録のみ。"
 #. translators: %s: Name of the network.
 #: wp-signup.php:596
 msgid "Get your own %s account in seconds"
-msgstr "%s のアカウントをいますぐ取得"
+msgstr "%s のアカウントを今すぐ取得"
 
 #: wp-signup.php:345
 msgid "There was a problem, please correct the form below and try again."
@@ -12762,7 +12767,7 @@ msgstr "<strong>エラー</strong>: WordPress %1$s には MySQL %2$s 以上が�
 msgid "Sidebar %d"
 msgstr "サイドバー %d"
 
-#: wp-includes/user.php:291 wp-includes/functions.php:6550
+#: wp-includes/user.php:291 wp-includes/functions.php:6554
 msgid "Please log in again."
 msgstr "もう一度ログインしてください。"
 
@@ -12870,8 +12875,8 @@ msgstr "/"
 #: wp-includes/script-loader.php:809
 #: wp-includes/widgets/class-wp-widget-media-image.php:28
 #: wp-includes/class-wp-editor.php:1212 wp-includes/js/dist/editor.js:8969
-#: wp-includes/js/dist/block-editor.js:35057
-#: wp-includes/js/dist/block-library.js:6082 wp-admin/includes/media.php:2903
+#: wp-includes/js/dist/block-editor.js:35041
+#: wp-includes/js/dist/block-library.js:6099 wp-admin/includes/media.php:2903
 msgid "Image"
 msgstr "画像"
 
@@ -13110,7 +13115,7 @@ msgid "This file is too big. Files must be less than %s KB in size."
 msgstr "このファイルは大きすぎます。ファイルの大きさは%sKB 以下でなくてはなりません。"
 
 #. translators: %s: Allowed space allocation.
-#: wp-includes/class-wp-xmlrpc-server.php:6327 wp-admin/includes/media.php:3059
+#: wp-includes/class-wp-xmlrpc-server.php:6342 wp-admin/includes/media.php:3059
 #: wp-admin/includes/ms.php:233 wp-admin/includes/ms-deprecated.php:35
 msgid "Sorry, you have used your space allocation of %s. Please delete some files to upload more files."
 msgstr "割り当てられているディスク容量 %s を使い切ってしまったようです。アップロードするにはいくつかファイルを削除してください。"
@@ -13172,13 +13177,13 @@ msgstr "選択したユーザーが見つかりません。"
 
 #: wp-includes/class-wp-locale.php:194
 #: wp-includes/customize/class-wp-customize-date-time-control.php:173
-#: wp-includes/js/dist/components.js:35736
+#: wp-includes/js/dist/components.js:35552
 msgid "PM"
 msgstr "PM"
 
 #: wp-includes/class-wp-locale.php:193
 #: wp-includes/customize/class-wp-customize-date-time-control.php:172
-#: wp-includes/js/dist/components.js:35731
+#: wp-includes/js/dist/components.js:35547
 msgid "AM"
 msgstr "AM"
 
@@ -13225,18 +13230,18 @@ msgid "Fill Screen"
 msgstr "フルスクリーン"
 
 #: wp-includes/block-patterns/quote.php:9 wp-includes/js/dist/editor.js:8972
-#: wp-includes/js/dist/block-library.js:7308
+#: wp-includes/js/dist/block-library.js:7325
 msgid "Quote"
 msgstr "引用"
 
 #: wp-includes/class-wp-editor.php:1253
-#: wp-includes/js/dist/block-editor.js:36053
+#: wp-includes/js/dist/block-editor.js:36037
 msgid "Remove link"
 msgstr "リンクの削除"
 
 #: wp-includes/script-loader.php:635 wp-includes/class-wp-editor.php:1257
-#: wp-includes/js/dist/block-editor.js:35719
-#: wp-includes/js/dist/block-editor.js:36017
+#: wp-includes/js/dist/block-editor.js:35703
+#: wp-includes/js/dist/block-editor.js:36001
 msgid "Insert link"
 msgstr "リンクを挿入"
 
@@ -13258,7 +13263,7 @@ msgstr "キー"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:137
 #: wp-includes/media-template.php:1164
-#: wp-includes/js/dist/block-editor.js:36000
+#: wp-includes/js/dist/block-editor.js:35984
 msgid "Link Rel"
 msgstr "リンク rel 属性"
 
@@ -13310,12 +13315,12 @@ msgstr "配置"
 #: wp-includes/widgets/class-wp-widget-media-audio.php:77
 #: wp-includes/widgets/class-wp-widget-media-video.php:80
 #: wp-includes/media-template.php:1269 wp-includes/media-template.php:1368
-#: wp-includes/js/dist/block-library.js:9531
-#: wp-includes/js/dist/block-library.js:23444
+#: wp-includes/js/dist/block-library.js:9548
+#: wp-includes/js/dist/block-library.js:23461
 msgid "Loop"
 msgstr "ループ"
 
-#: wp-includes/js/dist/components.js:41262
+#: wp-includes/js/dist/components.js:41078
 #: wp-admin/includes/ajax-actions.php:2183
 msgid "Type"
 msgstr "タイプ"
@@ -13337,7 +13342,7 @@ msgid "The URL you entered seems to be an email address. Do you want to add the 
 msgstr "入力された URL はメールアドレスのようです。必要な mailto: プレフィックスを付加しますか ?"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:75
-#: wp-includes/class-wp-editor.php:1336 wp-includes/js/dist/components.js:27335
+#: wp-includes/class-wp-editor.php:1336 wp-includes/js/dist/components.js:27346
 #: wp-admin/includes/class-custom-background.php:397
 msgid "Bottom"
 msgstr "下"
@@ -13347,7 +13352,7 @@ msgid "Middle"
 msgstr "中央"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:47
-#: wp-includes/class-wp-editor.php:1334 wp-includes/js/dist/components.js:27334
+#: wp-includes/class-wp-editor.php:1334 wp-includes/js/dist/components.js:27345
 #: wp-admin/includes/class-custom-background.php:369
 msgid "Top"
 msgstr "上"
@@ -13361,7 +13366,7 @@ msgid "Vertical space"
 msgstr "上下余白"
 
 #: wp-includes/class-wp-editor.php:1222
-#: wp-includes/js/dist/block-library.js:13436
+#: wp-includes/js/dist/block-library.js:13453
 msgid "Dimensions"
 msgstr "サイズ"
 
@@ -13383,7 +13388,7 @@ msgstr "貼り付け"
 
 #: wp-includes/class-wp-customize-manager.php:4341
 #: wp-includes/class-wp-editor.php:1171
-#: wp-includes/js/dist/block-editor.js:28861
+#: wp-includes/js/dist/block-editor.js:29118
 msgid "Copy"
 msgstr "コピー"
 
@@ -13422,8 +13427,8 @@ msgid "Bold"
 msgstr "太字"
 
 #: wp-includes/script-loader.php:649 wp-includes/class-wp-editor.php:1158
-#: wp-includes/js/dist/block-library.js:11483
-#: wp-includes/js/dist/block-library.js:11632
+#: wp-includes/js/dist/block-library.js:11500
+#: wp-includes/js/dist/block-library.js:11649
 msgid "Code"
 msgstr "コード"
 
@@ -13642,83 +13647,83 @@ msgstr "日曜日"
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:160 wp-includes/class-wp-locale.php:188
-#: wp-includes/js/dist/components.js:35643
+#: wp-includes/js/dist/components.js:35459
 msgid "December"
 msgstr "12月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:159 wp-includes/class-wp-locale.php:187
-#: wp-includes/js/dist/components.js:35641
+#: wp-includes/js/dist/components.js:35457
 msgid "November"
 msgstr "11月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:158 wp-includes/class-wp-locale.php:186
-#: wp-includes/js/dist/components.js:35639
+#: wp-includes/js/dist/components.js:35455
 msgid "October"
 msgstr "10月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:157 wp-includes/class-wp-locale.php:185
-#: wp-includes/js/dist/components.js:35637
+#: wp-includes/js/dist/components.js:35453
 msgid "September"
 msgstr "9月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:156 wp-includes/class-wp-locale.php:184
-#: wp-includes/js/dist/components.js:35635
+#: wp-includes/js/dist/components.js:35451
 msgid "August"
 msgstr "8月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:155 wp-includes/class-wp-locale.php:183
-#: wp-includes/js/dist/components.js:35633
+#: wp-includes/js/dist/components.js:35449
 msgid "July"
 msgstr "7月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:154 wp-includes/class-wp-locale.php:182
-#: wp-includes/js/dist/components.js:35631
+#: wp-includes/js/dist/components.js:35447
 msgid "June"
 msgstr "6月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:153 wp-includes/class-wp-locale.php:181
-#: wp-includes/js/dist/components.js:35629
+#: wp-includes/js/dist/components.js:35445
 msgid "May"
 msgstr "5月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:152 wp-includes/class-wp-locale.php:180
-#: wp-includes/js/dist/components.js:35627
+#: wp-includes/js/dist/components.js:35443
 msgid "April"
 msgstr "4月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:151 wp-includes/class-wp-locale.php:179
-#: wp-includes/js/dist/components.js:35625
+#: wp-includes/js/dist/components.js:35441
 msgid "March"
 msgstr "3月"
 
 #. translators: Month name.
 #. translators: Three-letter abbreviation of the month.
 #: wp-includes/class-wp-locale.php:150 wp-includes/class-wp-locale.php:178
-#: wp-includes/js/dist/components.js:35623
+#: wp-includes/js/dist/components.js:35439
 msgid "February"
 msgstr "2月"
 
 #. translators: Month name.
 #: wp-includes/class-wp-locale.php:149 wp-includes/class-wp-locale.php:177
-#: wp-includes/js/dist/components.js:35621
+#: wp-includes/js/dist/components.js:35437
 msgid "January"
 msgstr "1月"
 
@@ -13735,127 +13740,127 @@ msgstr "ユーザーは HTTP 経由のリクエストをブロックしました
 msgid "Gray"
 msgstr "グレー"
 
-#: wp-includes/general-template.php:4220
+#: wp-includes/general-template.php:4223
 msgid "Next &raquo;"
 msgstr "次へ &raquo;"
 
-#: wp-includes/general-template.php:4219
+#: wp-includes/general-template.php:4222
 msgid "&laquo; Previous"
 msgstr "&laquo; 前へ"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Search query.
-#: wp-includes/general-template.php:3109
+#: wp-includes/general-template.php:3112
 msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
 msgstr "%1$s %2$s 検索結果: &#8220;%3$s&#8221; フィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Author name.
-#: wp-includes/general-template.php:3107
+#: wp-includes/general-template.php:3110
 msgid "%1$s %2$s Posts by %3$s Feed"
 msgstr "%1$s %2$s %3$s による投稿のフィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Tag name.
-#: wp-includes/general-template.php:3103
+#: wp-includes/general-template.php:3106
 msgid "%1$s %2$s %3$s Tag Feed"
 msgstr "%1$s %2$s %3$s タグのフィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Category name.
-#: wp-includes/general-template.php:3101
+#: wp-includes/general-template.php:3104
 msgid "%1$s %2$s %3$s Category Feed"
 msgstr "%1$s %2$s %3$s カテゴリーのフィード"
 
 #. translators: 1: Blog name, 2: Separator (raquo), 3: Post title.
-#: wp-includes/general-template.php:3099
+#: wp-includes/general-template.php:3102
 msgid "%1$s %2$s %3$s Comments Feed"
 msgstr "%1$s %2$s %3$s のコメントのフィード"
 
 #. translators: 1: Blog title, 2: Separator (raquo).
-#: wp-includes/general-template.php:3059
+#: wp-includes/general-template.php:3062
 msgid "%1$s %2$s Comments Feed"
 msgstr "%1$s %2$s コメントフィード"
 
 #. translators: 1: Blog title, 2: Separator (raquo).
-#: wp-includes/general-template.php:3057
+#: wp-includes/general-template.php:3060
 msgid "%1$s %2$s Feed"
 msgstr "%1$s %2$s フィード"
 
 #. translators: Separator between blog name and feed type in feed links.
-#: wp-includes/general-template.php:3055 wp-includes/general-template.php:3097
+#: wp-includes/general-template.php:3058 wp-includes/general-template.php:3100
 msgctxt "feed link"
 msgid "&raquo;"
 msgstr "&raquo;"
 
 #. translators: Calendar caption: 1: Month name, 2: 4-digit year.
-#: wp-includes/general-template.php:2268
+#: wp-includes/general-template.php:2271
 msgctxt "calendar caption"
 msgid "%1$s %2$s"
 msgstr "%2$s年%1$s"
 
 #. translators: 1: Month, 2: Year.
 #. translators: 1: Month name, 2: 4-digit year.
-#: wp-includes/media.php:4123 wp-includes/general-template.php:2024
+#: wp-includes/media.php:4123 wp-includes/general-template.php:2027
 #: wp-admin/includes/class-wp-list-table.php:628
 msgid "%1$s %2$d"
 msgstr "%2$d年%1$s"
 
-#: wp-includes/general-template.php:1148 wp-includes/general-template.php:1365
+#: wp-includes/general-template.php:1151 wp-includes/general-template.php:1368
 msgid "Page not found"
 msgstr "ページが見つかりませんでした"
 
 #. translators: 1: Separator, 2: Search query.
-#: wp-includes/general-template.php:1360
+#: wp-includes/general-template.php:1363
 msgid "Search Results %1$s %2$s"
 msgstr "検索結果: %1$s %2$s"
 
-#: wp-includes/general-template.php:658
+#: wp-includes/general-template.php:661
 msgid "Site Admin"
 msgstr "サイト管理"
 
 #: wp-login.php:897 wp-login.php:1032 wp-login.php:1125 wp-login.php:1468
-#: wp-includes/general-template.php:653
+#: wp-includes/general-template.php:656
 msgid "Register"
 msgstr "登録"
 
-#: wp-login.php:1434 wp-includes/general-template.php:512
+#: wp-login.php:1434 wp-includes/general-template.php:515
 msgid "Remember Me"
 msgstr "ログイン状態を保存する"
 
-#: wp-includes/general-template.php:373
+#: wp-includes/general-template.php:376
 msgid "Log out"
 msgstr "ログアウト"
 
 #: wp-login.php:893 wp-login.php:968 wp-login.php:1028 wp-login.php:1130
-#: wp-includes/general-template.php:371
+#: wp-includes/general-template.php:374
 msgid "Log in"
 msgstr "ログイン"
 
-#: wp-includes/functions.php:5853
+#: wp-includes/functions.php:5857
 msgid "Manual Offsets"
-msgstr "時差を直接設定"
+msgstr "手動オフセット"
 
-#: wp-includes/functions.php:5844 wp-includes/functions.php:5849
+#: wp-includes/functions.php:5848 wp-includes/functions.php:5853
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:5799
+#: wp-includes/functions.php:5803
 msgid "Select a city"
 msgstr "町を選択してください"
 
 #. translators: 1: PHP function name, 2: Version number.
-#: wp-includes/functions.php:5063
+#: wp-includes/functions.php:5067
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s がバージョン %2$s から<strong>非推奨</strong>になった引数付きで呼び出されました。代替は用意されていません。"
 
 #. translators: 1: PHP function name, 2: Version number, 3: Optional message
 #. regarding the change.
-#: wp-includes/functions.php:5052
+#: wp-includes/functions.php:5056
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s がバージョン %2$s から<strong>非推奨</strong>になった引数付きで呼び出されました。%3$s"
 
 #. translators: 1: PHP function name, 2: Version number.
 #. translators: 1: PHP file name, 2: Version number.
 #. translators: 1: WordPress hook name, 2: Version number.
-#: wp-includes/functions.php:4779 wp-includes/functions.php:4969
-#: wp-includes/functions.php:5154
+#: wp-includes/functions.php:4783 wp-includes/functions.php:4973
+#: wp-includes/functions.php:5158
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になりました。代替は用意されておりません。"
 
@@ -13864,45 +13869,45 @@ msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>�
 #. translators: 1: PHP file name, 2: Version number, 3: Alternative file name.
 #. translators: 1: WordPress hook name, 2: Version number, 3: Alternative hook
 #. name.
-#: wp-includes/functions.php:4768 wp-includes/functions.php:4958
-#: wp-includes/functions.php:5143
+#: wp-includes/functions.php:4772 wp-includes/functions.php:4962
+#: wp-includes/functions.php:5147
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s の使用はバージョン %2$s から<strong>非推奨</strong>になっています ! 代わりに %3$s を使ってください。"
 
 #: wp-load.php:92 wp-includes/sitemaps/class-wp-sitemaps-renderer.php:267
-#: wp-includes/functions.php:3894
+#: wp-includes/functions.php:3898
 msgid "WordPress &rsaquo; Error"
 msgstr "WordPress &rsaquo; エラー"
 
-#: wp-includes/functions.php:3436
+#: wp-includes/functions.php:3440
 msgid "&laquo; Back"
 msgstr "&laquo; 戻る"
 
-#: wp-includes/functions.php:3264
+#: wp-includes/functions.php:3268
 msgid "Please try again."
 msgstr "もう一度お試しください。"
 
 #. translators: %s: Logout URL.
-#: wp-includes/functions.php:3254
+#: wp-includes/functions.php:3258
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "本当に<a href=\"%s\">ログアウト</a>しますか ?"
 
 #. translators: %s: Site title.
-#: wp-includes/functions.php:3247
+#: wp-includes/functions.php:3251
 msgid "You are attempting to log out of %s"
 msgstr "%s からログアウトしようとしています"
 
 #. translators: %s: File name.
-#: wp-includes/functions.php:2722
+#: wp-includes/functions.php:2726
 msgid "Could not write file %s"
 msgstr "ファイル %s に書き込めませんでした"
 
-#: wp-includes/functions.php:2663
+#: wp-includes/functions.php:2667
 msgid "Empty filename"
 msgstr "ファイル名が空です"
 
 #. translators: %s: Directory path.
-#: wp-includes/functions.php:2323 wp-includes/functions.php:2712
+#: wp-includes/functions.php:2327 wp-includes/functions.php:2716
 msgid "Unable to create directory %s. Is its parent directory writable by the server?"
 msgstr "ディレクトリ %s を作成できません。この親ディレクトリのアクセス権はサーバーによる書き込みを許可していますか ?"
 
@@ -13982,7 +13987,7 @@ msgid "new WordPress Loop"
 msgstr "新しい WordPress ループ"
 
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:29
-#: wp-includes/js/dist/block-library.js:24131
+#: wp-includes/js/dist/block-library.js:24148
 msgid "Tag Cloud"
 msgstr "タグクラウド"
 
@@ -14030,7 +14035,7 @@ msgid "Recent Posts"
 msgstr "最近の投稿"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:201
-#: wp-includes/js/dist/block-library.js:11363
+#: wp-includes/js/dist/block-library.js:11380
 msgid "Show hierarchy"
 msgstr "階層を表示"
 
@@ -14049,15 +14054,15 @@ msgid "Text"
 msgstr "テキスト"
 
 #: wp-includes/widgets/class-wp-widget-calendar.php:37
-#: wp-includes/js/dist/block-library.js:11124
+#: wp-includes/js/dist/block-library.js:11141
 msgid "Calendar"
 msgstr "カレンダー"
 
 #: wp-includes/widgets/class-wp-widget-categories.php:197
 #: wp-includes/widgets/class-wp-widget-archives.php:227
-#: wp-includes/js/dist/block-library.js:9229
-#: wp-includes/js/dist/block-library.js:11367
-#: wp-includes/js/dist/block-library.js:24071
+#: wp-includes/js/dist/block-library.js:9246
+#: wp-includes/js/dist/block-library.js:11384
+#: wp-includes/js/dist/block-library.js:24088
 msgid "Show post counts"
 msgstr "投稿数を表示"
 
@@ -14286,10 +14291,10 @@ msgstr "&laquo; 前ページへ"
 
 #. translators: 'Label. Used to signify a layout property (eg: margin, padding)
 #. will apply uniformly to all screensizes.'
-#: wp-includes/js/dist/components.js:27333
-#: wp-includes/js/dist/components.js:42991
-#: wp-includes/js/dist/components.js:43010
-#: wp-includes/js/dist/block-editor.js:35386 wp-admin/export.php:187
+#: wp-includes/js/dist/components.js:27344
+#: wp-includes/js/dist/components.js:42807
+#: wp-includes/js/dist/components.js:42826
+#: wp-includes/js/dist/block-editor.js:35370 wp-admin/export.php:187
 #: wp-admin/export.php:199 wp-admin/export.php:224 wp-admin/export.php:246
 #: wp-admin/export.php:271
 msgid "All"
@@ -14302,7 +14307,7 @@ msgid "Sorry, comments are closed for this item."
 msgstr "この投稿へのコメントは受け付けていません。"
 
 #: wp-includes/admin-bar.php:973 wp-includes/class-wp-customize-widgets.php:415
-#: wp-includes/functions.php:4655 wp-includes/js/dist/blocks.js:5988
+#: wp-includes/functions.php:4659 wp-includes/js/dist/blocks.js:5988
 #: wp-admin/widgets.php:49
 msgid "Widgets"
 msgstr "ウィジェット"
@@ -14345,16 +14350,16 @@ msgstr "タイトル:"
 #: wp-includes/customize/class-wp-customize-media-control.php:248
 #: wp-includes/customize/class-wp-customize-media-control.php:258
 #: wp-includes/class-wp-customize-manager.php:5197
-#: wp-includes/js/dist/components.js:36042
-#: wp-includes/js/dist/components.js:38837
-#: wp-includes/js/dist/block-library.js:20898
-#: wp-includes/js/dist/block-library.js:24602 wp-admin/js/color-picker.js:149
+#: wp-includes/js/dist/components.js:35858
+#: wp-includes/js/dist/components.js:38653
+#: wp-includes/js/dist/block-library.js:20915
+#: wp-includes/js/dist/block-library.js:24619 wp-admin/js/color-picker.js:149
 msgid "Default"
 msgstr "デフォルト"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:84
 #: wp-includes/media-template.php:1110 wp-includes/class-wp-editor.php:1324
-#: wp-includes/js/dist/block-editor.js:32495 wp-admin/options-media.php:61
+#: wp-includes/js/dist/block-editor.js:32479 wp-admin/options-media.php:61
 msgid "Height"
 msgstr "高さ"
 
@@ -14436,7 +14441,7 @@ msgstr "はい"
 msgid "Edit Category"
 msgstr "カテゴリーを編集"
 
-#: wp-login.php:1392 wp-login.php:1436 wp-includes/general-template.php:513
+#: wp-login.php:1392 wp-login.php:1436 wp-includes/general-template.php:516
 #: wp-admin/install.php:219 wp-admin/install.php:439
 #: wp-admin/includes/network.php:679
 msgid "Log In"
@@ -14473,7 +14478,7 @@ msgstr "<strong>エラー</strong>: ユーザー名を入力してください�
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:78
 #: wp-includes/media-template.php:1105 wp-includes/class-wp-editor.php:1325
-#: wp-includes/js/dist/block-editor.js:32484
+#: wp-includes/js/dist/block-editor.js:32468
 #: wp-includes/js/dist/format-library.js:1029 wp-admin/options-media.php:58
 msgid "Width"
 msgstr "幅"
@@ -14484,7 +14489,7 @@ msgstr "ライト"
 
 #: wp-includes/class-wp-theme.php:953
 msgid "Yellow"
-msgstr "黄"
+msgstr "黄色"
 
 #: wp-includes/class-wp-theme.php:952 wp-includes/js/dist/block-editor.js:18403
 msgid "White"
@@ -14541,7 +14546,7 @@ msgstr "ヘルプ"
 #: wp-includes/blocks/latest-posts.php:93 wp-includes/media.php:3801
 #: wp-includes/js/dist/editor.js:11111 wp-includes/js/dist/editor.js:13760
 #: wp-includes/js/dist/edit-post.js:7395
-#: wp-includes/js/dist/block-library.js:17386 wp-admin/includes/revision.php:59
+#: wp-includes/js/dist/block-library.js:17403 wp-admin/includes/revision.php:59
 #: wp-admin/includes/revision.php:62 wp-admin/includes/template.php:1975
 #: wp-admin/includes/ajax-actions.php:2186 wp-admin/js/inline-edit-post.js:201
 msgid "(no title)"
@@ -14560,8 +14565,8 @@ msgid "New Page"
 msgstr "新規固定ページ"
 
 #: wp-includes/media.php:4189 wp-includes/js/dist/editor.js:7528
-#: wp-includes/js/dist/block-editor.js:35625
-#: wp-includes/js/dist/block-library.js:23711
+#: wp-includes/js/dist/block-editor.js:35609
+#: wp-includes/js/dist/block-library.js:23728
 #: wp-admin/includes/template.php:1940 wp-admin/theme-editor.php:238
 #: wp-admin/plugin-editor.php:235 wp-admin/nav-menus.php:893
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:515
@@ -14572,8 +14577,8 @@ msgstr "選択"
 #: wp-includes/script-loader.php:1673
 #: wp-includes/class-wp-customize-manager.php:5688
 #: wp-includes/class-wp-editor.php:1179 wp-includes/class-wp-editor.php:1835
-#: wp-includes/js/dist/components.js:35855
-#: wp-includes/js/dist/block-editor.js:35736
+#: wp-includes/js/dist/components.js:35671
+#: wp-includes/js/dist/block-editor.js:35720
 #: wp-includes/js/dist/edit-post.js:4788 wp-includes/js/dist/edit-post.js:5120
 #: wp-includes/js/dist/edit-post.js:5380
 #: wp-admin/includes/class-wp-theme-install-list-table.php:385
@@ -14631,7 +14636,7 @@ msgstr "画像"
 msgid "By %s"
 msgstr "作者: %s"
 
-#: wp-includes/js/dist/block-library.js:22943
+#: wp-includes/js/dist/block-library.js:22960
 #: wp-admin/includes/class-wp-debug-data.php:67
 #: wp-admin/includes/class-wp-debug-data.php:1080
 #: wp-admin/includes/class-wp-debug-data.php:1177
@@ -14644,9 +14649,9 @@ msgstr "バージョン"
 #: wp-includes/blocks/search.php:25 wp-includes/blocks/search.php:26
 #: wp-includes/blocks/search.php:44 wp-includes/media.php:4188
 #: wp-includes/media.php:4232 wp-includes/class-wp-editor.php:1856
-#: wp-includes/js/dist/block-library.js:20289
-#: wp-includes/js/dist/block-library.js:20290
-#: wp-includes/js/dist/block-library.js:20337
+#: wp-includes/js/dist/block-library.js:20306
+#: wp-includes/js/dist/block-library.js:20307
+#: wp-includes/js/dist/block-library.js:20354
 #: wp-admin/includes/class-wp-media-list-table.php:298
 #: wp-admin/includes/theme-install.php:126
 #: wp-admin/includes/class-wp-theme-install-list-table.php:59
@@ -14724,7 +14729,7 @@ msgstr "画像の URL"
 #. translators: Default privacy policy heading.
 #: wp-includes/media.php:4185 wp-includes/media.php:4750
 #: wp-includes/class-wp-editor.php:1229
-#: wp-includes/js/dist/block-editor.js:35052 wp-includes/js/dist/blocks.js:5982
+#: wp-includes/js/dist/block-editor.js:35036 wp-includes/js/dist/blocks.js:5982
 #: wp-includes/js/dist/core-data.js:2063
 #: wp-admin/includes/class-wp-privacy-policy-content.php:525
 #: wp-admin/includes/media.php:2543 wp-admin/export.php:291
@@ -14759,16 +14764,16 @@ msgstr "サイズ"
 #: wp-includes/media-template.php:812 wp-includes/media-template.php:892
 #: wp-includes/media-template.php:1083 wp-includes/media.php:3843
 #: wp-includes/js/dist/block-editor.js:18475
-#: wp-admin/includes/class-custom-background.php:598
+#: wp-admin/includes/class-custom-background.php:600
 #: wp-admin/includes/media.php:1145 wp-admin/edit-form-blocks.php:220
 msgid "Full Size"
 msgstr "フルサイズ"
 
 #: wp-includes/media-template.php:810 wp-includes/media-template.php:890
 #: wp-includes/media-template.php:1081 wp-includes/media.php:3841
-#: wp-includes/js/dist/components.js:35978
+#: wp-includes/js/dist/components.js:35794
 #: wp-includes/js/dist/block-editor.js:18469
-#: wp-admin/includes/class-custom-background.php:596
+#: wp-admin/includes/class-custom-background.php:598
 #: wp-admin/includes/media.php:1143 wp-admin/edit-form-blocks.php:218
 msgid "Medium"
 msgstr "中"
@@ -14776,7 +14781,7 @@ msgstr "中"
 #: wp-includes/media-template.php:737 wp-includes/media-template.php:993
 #: wp-includes/media-template.php:1057
 #: wp-includes/customize/class-wp-customize-background-position-control.php:65
-#: wp-includes/class-wp-editor.php:1331 wp-includes/js/dist/components.js:27337
+#: wp-includes/class-wp-editor.php:1331 wp-includes/js/dist/components.js:27348
 #: wp-admin/includes/class-custom-background.php:387
 #: wp-admin/includes/media.php:1102 wp-admin/includes/media.php:2944
 msgid "Right"
@@ -14794,7 +14799,7 @@ msgstr "中央"
 #: wp-includes/media-template.php:731 wp-includes/media-template.php:987
 #: wp-includes/media-template.php:1051
 #: wp-includes/customize/class-wp-customize-background-position-control.php:57
-#: wp-includes/class-wp-editor.php:1329 wp-includes/js/dist/components.js:27336
+#: wp-includes/class-wp-editor.php:1329 wp-includes/js/dist/components.js:27347
 #: wp-admin/includes/class-custom-background.php:379
 #: wp-admin/includes/media.php:1100 wp-admin/includes/media.php:2940
 msgid "Left"
@@ -14826,7 +14831,7 @@ msgstr "ファイル &#8220;%s&#8221; は存在しますか ?"
 #: wp-includes/media-template.php:809 wp-includes/media-template.php:889
 #: wp-includes/media-template.php:1080 wp-includes/media.php:3840
 #: wp-includes/js/dist/block-editor.js:18466
-#: wp-admin/includes/class-custom-background.php:595
+#: wp-admin/includes/class-custom-background.php:597
 #: wp-admin/includes/image-edit.php:234 wp-admin/includes/media.php:1142
 #: wp-admin/edit-form-blocks.php:217
 msgid "Thumbnail"
@@ -14837,7 +14842,7 @@ msgstr "サムネイル"
 msgid "Redo"
 msgstr "やり直す"
 
-#: wp-login.php:1416 wp-includes/general-template.php:511
+#: wp-login.php:1416 wp-includes/general-template.php:514
 #: wp-admin/options-writing.php:166 wp-admin/includes/file.php:2174
 #: wp-admin/includes/class-wp-posts-list-table.php:1613
 #: wp-admin/install.php:137 wp-admin/install.php:427 wp-admin/user-new.php:531
@@ -14857,9 +14862,9 @@ msgstr "ユーザー名"
 
 #: wp-includes/widgets/class-wp-widget-archives.php:30
 #: wp-includes/widgets/class-wp-widget-archives.php:43
-#: wp-includes/blocks/archives.php:35 wp-includes/general-template.php:1655
+#: wp-includes/blocks/archives.php:35 wp-includes/general-template.php:1658
 #: wp-includes/theme-compat/sidebar.php:119
-#: wp-includes/js/dist/block-library.js:9281 wp-admin/includes/file.php:26
+#: wp-includes/js/dist/block-library.js:9298 wp-admin/includes/file.php:26
 msgid "Archives"
 msgstr "アーカイブ"
 
@@ -14913,14 +14918,14 @@ msgstr "タグ"
 #: wp-includes/revision.php:33 wp-includes/js/dist/edit-post.js:4171
 #: wp-admin/includes/dashboard.php:547 wp-admin/index.php:98
 msgid "Content"
-msgstr "内容"
+msgstr "コンテンツ"
 
 #: wp-includes/script-loader.php:1106 wp-includes/media.php:4190
 #: wp-includes/class-wp-editor.php:1178 wp-includes/class-wp-editor.php:1881
 #: wp-includes/js/dist/editor.js:11267
-#: wp-includes/js/dist/block-editor.js:35101
-#: wp-includes/js/dist/block-editor.js:35104
-#: wp-includes/js/dist/block-library.js:5005
+#: wp-includes/js/dist/block-editor.js:35085
+#: wp-includes/js/dist/block-editor.js:35088
+#: wp-includes/js/dist/block-library.js:5022
 #: wp-admin/includes/image-edit.php:97
 #: wp-admin/includes/class-walker-nav-menu-edit.php:296
 #: wp-admin/includes/meta-boxes.php:155 wp-admin/includes/meta-boxes.php:208
@@ -14954,9 +14959,9 @@ msgstr "最近のコメント"
 #: wp-includes/media-template.php:1443
 #: wp-includes/class-wp-customize-manager.php:4295
 #: wp-includes/class-wp-editor.php:1245
-#: wp-includes/js/dist/block-editor.js:28015
-#: wp-includes/js/dist/block-editor.js:36100
-#: wp-includes/js/dist/block-library.js:15393
+#: wp-includes/js/dist/block-editor.js:28271
+#: wp-includes/js/dist/block-editor.js:36084
+#: wp-includes/js/dist/block-library.js:15410
 #: wp-admin/includes/class-custom-background.php:258
 #: wp-admin/includes/meta-boxes.php:73 wp-admin/includes/post.php:1766
 #: wp-admin/includes/class-custom-image-header.php:509
@@ -14969,12 +14974,12 @@ msgid "Preview"
 msgstr "プレビュー"
 
 #: wp-includes/widgets/class-wp-widget-rss.php:33
-#: wp-includes/js/dist/block-library.js:20213 wp-admin/includes/import.php:214
+#: wp-includes/js/dist/block-library.js:20230 wp-admin/includes/import.php:214
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/js/dist/block-editor.js:33616
-#: wp-includes/js/dist/block-editor.js:35743
+#: wp-includes/js/dist/block-editor.js:33600
+#: wp-includes/js/dist/block-editor.js:35727
 #: wp-admin/includes/dashboard.php:226 wp-admin/includes/dashboard.php:1322
 #: wp-admin/setup-config.php:252
 msgid "Submit"
@@ -15003,7 +15008,7 @@ msgstr "ユーザー"
 
 #: wp-includes/post.php:1701
 msgid "Edit Post"
-msgstr "投稿の編集"
+msgstr "投稿を編集"
 
 #: wp-includes/post.php:1703
 msgid "View Post"
@@ -15016,17 +15021,17 @@ msgstr "新規追加"
 
 #: wp-includes/taxonomy.php:593
 msgid "Edit Tag"
-msgstr "タグの編集"
+msgstr "タグを編集"
 
 #: wp-includes/script-loader.php:925 wp-includes/media-template.php:740
 #: wp-includes/media-template.php:767 wp-includes/media-template.php:852
 #: wp-includes/media-template.php:996 wp-includes/media-template.php:1013
 #: wp-includes/media-template.php:1060 wp-includes/media-template.php:1136
 #: wp-includes/media-template.php:1256 wp-includes/media-template.php:1355
-#: wp-includes/deprecated.php:706 wp-includes/js/dist/components.js:35972
-#: wp-includes/js/dist/block-library.js:8373
-#: wp-includes/js/dist/block-library.js:9554
-#: wp-includes/js/dist/block-library.js:23475 wp-admin/edit-tags.php:462
+#: wp-includes/deprecated.php:706 wp-includes/js/dist/components.js:35788
+#: wp-includes/js/dist/block-library.js:8390
+#: wp-includes/js/dist/block-library.js:9571
+#: wp-includes/js/dist/block-library.js:23492 wp-admin/edit-tags.php:462
 #: wp-admin/includes/class-wp-debug-data.php:1065
 #: wp-admin/includes/media.php:1099 wp-admin/includes/media.php:1227
 #: wp-admin/includes/media.php:2938 wp-admin/includes/media.php:2954
@@ -15058,7 +15063,7 @@ msgid "Name"
 msgstr "名前"
 
 #: wp-includes/class-wp-editor.php:1215
-#: wp-includes/js/dist/block-editor.js:36570 wp-admin/edit-link-form.php:34
+#: wp-includes/js/dist/block-editor.js:36554 wp-admin/edit-link-form.php:34
 msgid "Advanced"
 msgstr "高度な設定"
 
@@ -15071,17 +15076,17 @@ msgstr "リンクターゲット"
 #: wp-includes/widgets/class-wp-widget-categories.php:47
 #: wp-includes/category-template.php:545
 #: wp-includes/theme-compat/sidebar.php:129
-#: wp-includes/js/dist/components.js:42996
-#: wp-includes/js/dist/block-library.js:11323
-#: wp-includes/js/dist/block-library.js:11375
-#: wp-includes/js/dist/block-library.js:11448
+#: wp-includes/js/dist/components.js:42812
+#: wp-includes/js/dist/block-library.js:11340
+#: wp-includes/js/dist/block-library.js:11392
+#: wp-includes/js/dist/block-library.js:11465
 #: wp-admin/includes/class-wp-links-list-table.php:133
 #: wp-admin/edit-link-form.php:31
 msgid "Categories"
 msgstr "カテゴリー"
 
 #: wp-includes/class-wp-editor.php:1247 wp-includes/js/dist/editor.js:7766
-#: wp-includes/js/dist/block-library.js:19715
+#: wp-includes/js/dist/block-library.js:19732
 #: wp-admin/includes/image-edit.php:98 wp-admin/includes/meta-boxes.php:44
 #: wp-admin/includes/meta-boxes.php:398 wp-admin/includes/meta-boxes.php:1046
 #: wp-admin/includes/meta-boxes.php:1458 wp-admin/includes/widgets.php:302
@@ -15101,7 +15106,7 @@ msgstr "カテゴリーを更新"
 
 #: wp-includes/taxonomy.php:135
 msgid "Edit Link Category"
-msgstr "リンクカテゴリーの編集"
+msgstr "リンクカテゴリーを編集"
 
 #: wp-includes/taxonomy.php:588
 msgid "Search Categories"
@@ -15118,7 +15123,7 @@ msgstr "リビジョン"
 
 #: wp-includes/revision.php:34 wp-includes/js/dist/edit-post.js:5410
 #: wp-includes/js/dist/edit-post.js:6763
-#: wp-includes/js/dist/block-library.js:17181
+#: wp-includes/js/dist/block-library.js:17198
 #: wp-admin/includes/meta-boxes.php:702 wp-admin/includes/meta-boxes.php:1510
 msgid "Excerpt"
 msgstr "抜粋"
@@ -15151,10 +15156,10 @@ msgstr "コメント"
 
 #: wp-includes/class-wp-customize-widgets.php:775 wp-includes/media.php:4229
 #: wp-includes/class-wp-editor.php:1386
-#: wp-includes/js/dist/block-editor.js:34668
-#: wp-includes/js/dist/block-editor.js:34833
-#: wp-includes/js/dist/block-library.js:5001
-#: wp-includes/js/dist/block-library.js:25733
+#: wp-includes/js/dist/block-editor.js:34652
+#: wp-includes/js/dist/block-editor.js:34817
+#: wp-includes/js/dist/block-library.js:5018
+#: wp-includes/js/dist/block-library.js:25750
 #: wp-includes/js/dist/format-library.js:1035
 #: wp-admin/includes/class-wp-screen.php:1095
 #: wp-admin/includes/class-wp-list-table.php:480
@@ -15171,7 +15176,7 @@ msgid "Undo"
 msgstr "元に戻す"
 
 #. translators: %s: Search query.
-#: wp-includes/general-template.php:1153
+#: wp-includes/general-template.php:1156
 msgid "Search Results for &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; の検索結果"
 
@@ -15190,10 +15195,10 @@ msgstr "%s前"
 #: wp-includes/class-wp-editor.php:1384
 #: wp-includes/class-walker-comment.php:250
 #: wp-includes/class-walker-comment.php:438
-#: wp-includes/js/dist/block-editor.js:34276
-#: wp-includes/js/dist/block-editor.js:34627
-#: wp-includes/js/dist/block-editor.js:35622
-#: wp-includes/js/dist/block-library.js:19694
+#: wp-includes/js/dist/block-editor.js:34260
+#: wp-includes/js/dist/block-editor.js:34611
+#: wp-includes/js/dist/block-editor.js:35606
+#: wp-includes/js/dist/block-library.js:19711
 #: wp-admin/includes/class-wp-links-list-table.php:328
 #: wp-admin/includes/class-walker-nav-menu-edit.php:176
 #: wp-admin/includes/meta-boxes.php:134 wp-admin/includes/meta-boxes.php:186
@@ -15246,9 +15251,9 @@ msgstr "コメント"
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:94
 #: wp-includes/class-wp-editor.php:1261 wp-includes/class-wp-editor.php:1840
 #: wp-includes/class-wp-customize-nav-menus.php:1257
-#: wp-includes/js/dist/block-editor.js:33455
-#: wp-includes/js/dist/block-editor.js:34826
-#: wp-includes/js/dist/block-library.js:14714
+#: wp-includes/js/dist/block-editor.js:33439
+#: wp-includes/js/dist/block-editor.js:34810
+#: wp-includes/js/dist/block-library.js:14731
 #: wp-admin/includes/class-wp-links-list-table.php:132
 #: wp-admin/includes/class-walker-nav-menu-edit.php:187
 #: wp-admin/includes/media.php:2911 wp-admin/includes/template.php:486
@@ -15259,7 +15264,7 @@ msgid "URL"
 msgstr "URL"
 
 #: wp-includes/class-wp-editor.php:1209 wp-includes/theme-compat/sidebar.php:29
-#: wp-includes/js/dist/components.js:43009 wp-includes/js/dist/editor.js:8532
+#: wp-includes/js/dist/components.js:42825 wp-includes/js/dist/editor.js:8532
 #: wp-admin/includes/class-wp-debug-data.php:1085
 #: wp-admin/includes/class-wp-debug-data.php:1182
 #: wp-admin/includes/class-theme-installer-skin.php:241
@@ -15332,7 +15337,7 @@ msgstr "公開済み"
 msgid "Title"
 msgstr "タイトル"
 
-#: wp-includes/post.php:1706 wp-includes/js/dist/block-library.js:17316
+#: wp-includes/post.php:1706 wp-includes/js/dist/block-library.js:17333
 msgid "No posts found."
 msgstr "投稿が見つかりませんでした。"
 
