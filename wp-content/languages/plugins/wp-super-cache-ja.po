@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - WP Super Cache - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-13 23:19:07+0000\n"
+"PO-Revision-Date: 2020-11-01 09:02:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - WP Super Cache - Stable (latest release)\n"
 
@@ -153,7 +153,7 @@ msgstr "<a href=\"%s\">Yahoo! Yslow</a> は Web ページを解析し、ルー�
 
 #: wp-cache.php:1025 wp-cache.php:1970 wp-cache.php:2178
 msgid "Save Settings"
-msgstr "設定の保存"
+msgstr "設定を保存"
 
 #: plugins/badbehaviour.php:77
 msgid "disable"
@@ -245,7 +245,7 @@ msgstr "ログ記録の無効化"
 
 #: wp-cache.php:2146
 msgid "Enable Logging"
-msgstr "ログ記録の有効化"
+msgstr "ログを有効化"
 
 #: wp-cache.php:2136
 msgid "Username/Password: %s"
@@ -671,7 +671,7 @@ msgstr "ファイルリストを隠す"
 
 #: wp-cache.php:2141 wp-cache.php:2888
 msgid "Delete"
-msgstr "削除 "
+msgstr "削除"
 
 #: wp-cache.php:2888
 msgid "Age"
@@ -784,7 +784,7 @@ msgstr "キャッシュディレクトリー (<strong>%1$s</strong>) が存在�
 #: wp-cache.php:2493 wp-cache.php:2498 wp-cache.php:2532 wp-cache.php:2537
 #: wp-cache.php:2543
 msgid "Error"
-msgstr "エラー "
+msgstr "エラー"
 
 #: wp-cache.php:2277
 msgid "GZIP compression is enabled in WordPress, wp-cache will be bypassed until you disable gzip compression."
@@ -868,7 +868,7 @@ msgstr "投稿者ページ"
 
 #: wp-cache.php:1967
 msgid "Search Pages"
-msgstr "検索ページ"
+msgstr "固定ページを検索"
 
 #: wp-cache.php:1966
 msgid "Feeds"
@@ -896,7 +896,7 @@ msgstr "フロントページ"
 
 #: wp-cache.php:1960
 msgid "Pages"
-msgstr "ページ"
+msgstr "固定ページ"
 
 #: wp-cache.php:1959
 msgid "Single Posts"
@@ -1177,7 +1177,7 @@ msgstr "プラグイン"
 
 #: wp-cache.php:1425
 msgid "Preload"
-msgstr "プリロード"
+msgstr "先読み"
 
 #: wp-cache.php:1424
 msgid "Contents"
@@ -1189,7 +1189,7 @@ msgstr "CDN"
 
 #: wp-cache.php:1421
 msgid "Easy"
-msgstr "簡易"
+msgstr "簡単"
 
 #: wp-cache.php:1405
 msgid "Available Plugins"
@@ -1366,7 +1366,7 @@ msgstr "このプラグインは管理画面の「プラグイン」メニュー
 
 #: wp-cache.php:1168
 msgid "Note:"
-msgstr "メモ:"
+msgstr "注:"
 
 #: wp-cache.php:1133
 msgid "<strong>DO NOT CACHE PAGE</strong> secret key: <a href=\"%s\">%s</a>"
@@ -1410,7 +1410,7 @@ msgstr "ダイナミックキャッシュの有効化 (<a href=\"https://wordpre
 
 #: wp-cache.php:1115 wp-cache.php:1422 wp-cache.php:2168
 msgid "Advanced"
-msgstr "詳細"
+msgstr "高度な設定"
 
 #: wp-cache.php:1100
 msgid "Cache rebuild. Serve a supercache file to anonymous users while a new file is being generated."
@@ -1861,7 +1861,7 @@ msgstr "承認待ち"
 
 #: plugins/awaitingmoderation.php:4
 msgid "Your comment is awaiting moderation."
-msgstr "あなたのコメントは管理者の承認待ちです。"
+msgstr "あなたのコメントは承認待ちです。"
 
 #: ossdl-cdn.php:375
 msgid "CDN functionality provided by <a href=\"https://wordpress.org/plugins/ossdl-cdn-off-linker/\">OSSDL CDN Off Linker</a> by <a href=\"http://mark.ossdl.de/\">Mark Kubacki</a>"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-30 07:19:42+0000\n"
+"PO-Revision-Date: 2020-10-31 23:32:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1865,7 +1865,7 @@ msgstr "現在の管理者メールアドレス: %s"
 
 #: wp-login.php:694
 msgid "Why is this important?"
-msgstr "なぜ、これが大事なの ?"
+msgstr "これが重要な理由"
 
 #. translators: URL to the WordPress help section about admin email.
 #: wp-login.php:686
@@ -1874,7 +1874,7 @@ msgstr "https://wordpress.org/support/article/settings-general-screen/#email-add
 
 #: wp-login.php:682
 msgid "Please verify that the <strong>administration email</strong> for this website is still correct."
-msgstr "このサイトの<strong>管理者メールアドレス</strong>が、今なお正しいものであることを確認してください。"
+msgstr "このサイトの<strong>管理者メールアドレス</strong>が、現在も正しいことを確認してください。"
 
 #: wp-login.php:679
 msgid "Administration email verification"
