@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>NHK アンという名の少女</h2>
+  <h2>朝ドラ おちょやん モデル</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'nhk_kaigai';
+  $the_slug = 'ocyoyan';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
