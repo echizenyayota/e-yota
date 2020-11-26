@@ -71,7 +71,6 @@ class rsssl_admin extends rsssl_front_end
 	    if ($this->ssl_enabled) {
             add_action('admin_footer', array($this, 'deactivate_popup'), 40);
         }
-
     }
 
     static function this()
@@ -401,13 +400,19 @@ class rsssl_admin extends rsssl_front_end
 
     public function deactivate_ssl()
     {
-        $this->ssl_enabled = false;
-        $this->wp_redirect = false;
-        $this->htaccess_redirect = false;
-
-        $this->remove_ssl_from_siteurl();
-        $this->save_options();
+        //only revert if SSL was enabled first.
+        if ($this->ssl_enabled) {
+	        $this->ssl_enabled       = false;
+	        $this->wp_redirect       = false;
+	        $this->htaccess_redirect = false;
+	        $this->remove_ssl_from_siteurl();
+	        $this->save_options();
+        }
     }
+
+	/**
+	 * redirect to settings page
+	 */
 
     public function redirect_to_settings_page() {
         if (isset($_GET['page']) && $_GET['page'] == 'rlrsssl_really_simple_ssl') return;
@@ -1347,36 +1352,38 @@ class rsssl_admin extends rsssl_front_end
 
     public function deactivate($networkwide)
     {
-        $this->remove_ssl_from_siteurl();
-        $this->remove_ssl_from_siteurl_in_wpconfig();
+        if ( $this->ssl_enabled ) {
+	        $this->remove_ssl_from_siteurl();
+	        $this->remove_ssl_from_siteurl_in_wpconfig();
 
-        $this->site_has_ssl = FALSE;
-        $this->hsts = FALSE;
-        $this->htaccess_warning_shown = FALSE;
-        $this->review_notice_shown = FALSE;
-        $this->ssl_success_message_shown = FALSE;
-        $this->autoreplace_insecure_links = TRUE;
-        $this->do_not_edit_htaccess = FALSE;
-        $this->htaccess_redirect = FALSE;
-        $this->javascript_redirect = FALSE;
-        $this->wp_redirect = FALSE;
-        $this->ssl_enabled = FALSE;
-        $this->switch_mixed_content_fixer_hook = FALSE;
-	    $this->dismiss_all_notices = FALSE;
-	    $this->dismiss_review_notice = FALSE;
+	        $this->site_has_ssl = FALSE;
+	        $this->hsts = FALSE;
+	        $this->htaccess_warning_shown = FALSE;
+	        $this->review_notice_shown = FALSE;
+	        $this->ssl_success_message_shown = FALSE;
+	        $this->autoreplace_insecure_links = TRUE;
+	        $this->do_not_edit_htaccess = FALSE;
+	        $this->htaccess_redirect = FALSE;
+	        $this->javascript_redirect = FALSE;
+	        $this->wp_redirect = FALSE;
+	        $this->ssl_enabled = FALSE;
+	        $this->switch_mixed_content_fixer_hook = FALSE;
+	        $this->dismiss_all_notices = FALSE;
+	        $this->dismiss_review_notice = FALSE;
 
 
-	    $this->save_options();
+	        $this->save_options();
 
-        //when on multisite, per site activation, recreate domain list for htaccess and wpconfig rewrite actions
-        if (is_multisite()) {
-            RSSSL()->rsssl_multisite->deactivate();
-            if (!RSSSL()->rsssl_multisite->ssl_enabled_networkwide) $this->build_domain_list();
+	        //when on multisite, per site activation, recreate domain list for htaccess and wpconfig rewrite actions
+	        if (is_multisite()) {
+		        RSSSL()->rsssl_multisite->deactivate();
+		        if (!RSSSL()->rsssl_multisite->ssl_enabled_networkwide) $this->build_domain_list();
+	        }
+	        do_action("rsssl_deactivate");
+
+	        $this->remove_wpconfig_edit();
+	        $this->removeHtaccessEdit();
         }
-        do_action("rsssl_deactivate");
-
-        $this->remove_wpconfig_edit();
-        $this->removeHtaccessEdit();
     }
 
 
@@ -2622,6 +2629,11 @@ class rsssl_admin extends rsssl_front_end
         $args = wp_parse_args($args, $defaults);
 
 	    $cache_admin_notices = !$this->is_settings_page() && $args['admin_notices'];
+
+	    //if we're on the settings page, we need to clear the admin notices transient, because this list never gets requested on the settings page, and won'd get cleared otherwise
+	    if ($this->is_settings_page()) {
+	        delete_transient('rsssl_admin_notices');
+	    }
 	    if ( $cache_admin_notices) {
 		    $cached_notices = get_transient('rsssl_admin_notices');
 		    if ( $cached_notices ) return $cached_notices;
@@ -2659,7 +2671,6 @@ class rsssl_admin extends rsssl_front_end
                         'icon' => 'warning',
                         'admin_notice' =>true,
                         'plusone' => true,
-
                     ),
                 ),
             ),
@@ -2789,15 +2800,15 @@ class rsssl_admin extends rsssl_front_end
             ),
 
             'wordpress_redirect' => array(
-	            'condition' => array('rsssl_wp_redirect_condition'),
-	            'callback' => 'rsssl_wordpress_redirect',
+	            'condition' => array('rsssl_ssl_enabled'),
+	            'callback' => 'RSSSL()->really_simple_ssl->has_301_redirect',
                 'score' => 10,
                 'output' => array(
-                     '301-wp-redirect' => array(
-                        'msg' => __('301 redirect to https set: WordPress redirect.', 'really-simple-ssl'),
+                     'true' => array(
+                        'msg' => __('301 redirect to https set.', 'really-simple-ssl'),
                         'icon' => 'success'
                         ),
-                     'no-redirect' => array(
+                     'false' => array(
                          'msg' => __('No 301 redirect is set. Enable the WordPress 301 redirect in the settings to get a 301 permanent redirect.', 'really-simple-ssl'),
                          'icon' => 'open'
                      ),
@@ -3431,7 +3442,7 @@ class rsssl_admin extends rsssl_front_end
 		    $footer = $this->get_template_part($grid_item, 'footer', $index);
 		    $content = $this->get_template_part($grid_item, 'content', $index);
 		    $header = $this->get_template_part($grid_item, 'header', $index);
-            $instructions = $grid_item['instructions'] ? '<a href="'.esc_url($grid_item['instructions']).'" target="_blank">'.__("Instructions manual").'</a>' : '';
+            $instructions = $grid_item['instructions'] ? '<a href="'.esc_url($grid_item['instructions']).'" target="_blank">'.__("Instructions manual", "really-simple-ssl").'</a>' : '';
 		    // Add form if type is settings
 		    $block = str_replace(array('{class}', '{title}', '{header}', '{content}', '{footer}', '{instructions}'), array($grid_item['class'], $grid_item['title'], $header, $content, $footer, $instructions), $element);
 		    $output .= $block;
@@ -3894,6 +3905,9 @@ class rsssl_admin extends rsssl_front_end
 
     public function deactivate_popup()
     {
+        //only on plugins page
+        $screen = get_current_screen();
+        if (!$screen || $screen->base !=='plugins' ) return;
 
         ?>
 	    <?php add_thickbox();?>
@@ -4329,6 +4343,10 @@ if (!function_exists('rsssl_ssl_enabled')) {
 if (!function_exists('rsssl_ssl_detected')) {
 	function rsssl_ssl_detected() {
 
+	    if ( RSSSL()->really_simple_ssl->ssl_enabled ) {
+		    return apply_filters('rsssl_ssl_detected', 'ssl-detected');
+	    }
+
 		if ( ! RSSSL()->really_simple_ssl->wpconfig_ok() ) {
 			return apply_filters('rsssl_ssl_detected', 'fail');
 		}
@@ -4405,26 +4423,6 @@ if (!function_exists('rsssl_ssl_activation_time_no_longer_then_3_days_ago')) {
 			return true;
 		} else {
 			return false;
-		}
-	}
-}
-
-if (!function_exists('rsssl_wp_redirect_condition')) {
-	function rsssl_wp_redirect_condition() {
-		if ( RSSSL()->really_simple_ssl->has_301_redirect() && RSSSL()->really_simple_ssl->wp_redirect && ! RSSSL()->really_simple_ssl->htaccess_redirect ) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-}
-
-if (!function_exists('rsssl_wordpress_redirect')) {
-	function rsssl_wordpress_redirect() {
-		if ( RSSSL()->really_simple_ssl->has_301_redirect() && RSSSL()->really_simple_ssl->wp_redirect ) {
-			return '301-wp-redirect';
-		} else {
-			return 'no-redirect';
 		}
 	}
 }

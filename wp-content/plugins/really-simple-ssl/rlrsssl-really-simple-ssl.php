@@ -3,7 +3,7 @@
  * Plugin Name: Really Simple SSL
  * Plugin URI: https://really-simple-ssl.com
  * Description: Lightweight plugin without any setup to make your site SSL proof
- * Version: 4.0.0
+ * Version: 4.0.1
  * Author: Really Simple Plugins
  * Author URI: https://really-simple-plugins.com
  * License: GPL2
@@ -96,9 +96,9 @@ class REALLY_SIMPLE_SSL
 		define('rsssl_template_path', trailingslashit(plugin_dir_path(__FILE__)).'grid/templates/');
 		define('rsssl_plugin', plugin_basename(__FILE__));
 		require_once(ABSPATH . 'wp-admin/includes/plugin.php');
-		$debug = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? time() : '';
 		$plugin_data = get_plugin_data(__FILE__);
-		define('rsssl_version', $plugin_data['Version'] . $debug);
+		$debug = defined('RSSSL_DEBUG') && RSSSL_DEBUG ? time() : '';
+		define('rsssl_version', $plugin_data['Version'].$debug);
 	}
 
 	private function includes()
@@ -156,7 +156,7 @@ class REALLY_SIMPLE_SSL
 			?>
 			<div id="message" class="error notice really-simple-plugins">
 				<h1><?php echo __("Plugin dependency error","really-simple-ssl-pro");?></h1>
-				<p><?php echo __("You have a premium add with a version that is not compatible with the >4.0 release of Really Simple SSL.","really-simple-ssl");?></p>
+				<p><?php echo __("You have a premium add-on with a version that is not compatible with the >4.0 release of Really Simple SSL.","really-simple-ssl");?></p>
 				<p><?php echo __("Please upgrade to the latest version to be able use the full functionality of the plugin.","really-simple-ssl");?></p>
 			</div>
 			<?php
