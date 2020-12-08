@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>朝ドラ おちょやん モデル</h2>
+  <h2>朝ドラ 再放送 花子とアン</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
