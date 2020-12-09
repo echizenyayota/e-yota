@@ -16,6 +16,7 @@ msgid "Twenty Seventeen brings your site to life with header video and immersive
 msgstr "Twenty Seventeen は、没入感のあるアイキャッチ画像と繊細なアニメーションを用いて、サイトに命を吹き込みます。ビジネスサイトにフォーカスをあて、ウィジェット、ナビゲーション、ソーシャルメニュー、ロゴ等はもちろんフロントページの複数のセクションを目立たせます。カスタム配色で非対称のグリッドの個性を出し、投稿フォーマットでマルチメディアコンテンツを際立たせます。2017年のデフォルトテーマは、多くの言語において、どんな才能に対しても、どのようなデバイスでも、うまく動作します。"
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:17
 msgid "Twenty Seventeen"
 msgstr "Twenty Seventeen"
 
@@ -23,11 +24,11 @@ msgstr "Twenty Seventeen"
 msgid "Footer"
 msgstr "フッター"
 
-#: functions.php:340
+#: functions.php:346
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr "ブログ投稿やアーカイブページのサイドバーに表示されるウィジェットをここに追加してください。"
 
-#: functions.php:338 sidebar.php:18
+#: sidebar.php:18 functions.php:344
 msgid "Blog Sidebar"
 msgstr "ブログサイドバー"
 
@@ -36,17 +37,17 @@ msgstr "ブログサイドバー"
 msgid "Scroll down to content"
 msgstr "本文までスクロール"
 
-#: functions.php:181
+#: functions.php:187
 msgctxt "Theme starter content"
 msgid "Coffee"
 msgstr "コーヒー"
 
-#: functions.php:177
+#: functions.php:183
 msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "サンドイッチ"
 
-#: functions.php:173
+#: functions.php:179
 msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "エスプレッソ"
@@ -148,24 +149,24 @@ msgstr "配色"
 msgid "Default Header Image"
 msgstr "デフォルトのヘッダー画像"
 
-#: functions.php:362
+#: functions.php:368
 msgid "Footer 2"
 msgstr "フッター2"
 
-#: functions.php:352 functions.php:364
+#: functions.php:358 functions.php:370
 msgid "Add widgets here to appear in your footer."
 msgstr "フッターに表示させるにはここにウィジェットを追加してください。"
 
-#: functions.php:350
+#: functions.php:356
 msgid "Footer 1"
 msgstr "フッター1"
 
-#: functions.php:290
+#: functions.php:296
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "off"
 
-#: functions.php:64 functions.php:205
+#: functions.php:69 functions.php:211
 #: template-parts/navigation/navigation-top.php:12
 msgid "Top Menu"
 msgstr "トップメニュー"
@@ -187,7 +188,7 @@ msgstr "検索キーワードに一致するものが見つかりませんでし
 msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
 msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%s\">ここから始めましょう</a>。"
 
-#: template-parts/post/content-none.php:17 search.php:26
+#: search.php:26 template-parts/post/content-none.php:17
 msgid "Nothing Found"
 msgstr "何も見つかりませんでした"
 
@@ -195,11 +196,11 @@ msgstr "何も見つかりませんでした"
 msgid "Previous Post"
 msgstr "過去の投稿"
 
-#: comments.php:71 single.php:33
+#: single.php:33 comments.php:71
 msgid "Previous"
 msgstr "前"
 
-#: comments.php:72 single.php:34
+#: single.php:34 comments.php:72
 msgid "Next"
 msgstr "次"
 
@@ -224,12 +225,12 @@ msgid "Search Results for: %s"
 msgstr "「%s」の検索結果"
 
 #. translators: %s: Post title.
-#: functions.php:392 template-parts/post/content-gallery.php:71
+#: functions.php:398 template-parts/post/content-gallery.php:71
+#: template-parts/post/content.php:57 template-parts/post/content-image.php:61
+#: template-parts/post/content-audio.php:84
 #: template-parts/post/content-video.php:83
-#: template-parts/post/content-image.php:61
-#: template-parts/post/content-audio.php:84 template-parts/post/content.php:57
-#: template-parts/page/content-front-page-panels.php:45
 #: template-parts/page/content-front-page.php:42
+#: template-parts/page/content-front-page-panels.php:45
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" の</span>続きを読む"
 
@@ -248,11 +249,11 @@ msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" を</span>編集"
 
 #: template-parts/post/content-gallery.php:78
+#: template-parts/post/content.php:64 template-parts/post/content-image.php:68
+#: template-parts/post/content-audio.php:91
 #: template-parts/post/content-video.php:90
-#: template-parts/post/content-image.php:68
-#: template-parts/post/content-audio.php:91 template-parts/post/content.php:64
-#: template-parts/page/content-page.php:26
 #: template-parts/page/content-front-page.php:48
+#: template-parts/page/content-page.php:26
 msgid "Pages:"
 msgstr "ページ:"
 
@@ -264,15 +265,15 @@ msgstr "メニュー"
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: functions.php:484
+#: functions.php:490
 msgid "Collapse child menu"
 msgstr "サブメニューを閉じる"
 
-#: functions.php:483
+#: functions.php:489
 msgid "Expand child menu"
 msgstr "サブメニューを展開"
 
-#: functions.php:65 functions.php:216
+#: functions.php:70 functions.php:222
 msgid "Social Links Menu"
 msgstr "﻿ソーシャルリンクメニュー"
 
@@ -302,15 +303,15 @@ msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr "&ldquo;%s&rdquo; への1件の返信"
 
-#: archive.php:51 index.php:55 search.php:52
+#: index.php:55 archive.php:51 search.php:52
 msgid "Page"
 msgstr "ページ"
 
-#: archive.php:50 index.php:54 search.php:51
+#: index.php:54 archive.php:50 search.php:51
 msgid "Next page"
 msgstr "次のページ"
 
-#: archive.php:49 index.php:53 search.php:50
+#: index.php:53 archive.php:49 search.php:50
 msgid "Previous page"
 msgstr "前のページ"
 
