@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-22 02:29:39+0000\n"
+"PO-Revision-Date: 2021-01-02 11:31:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,12 +20,15 @@ msgstr "Twenty Twenty-One はアイデアのための真っ白なキャンバス
 msgid "Twenty Twenty-One"
 msgstr "Twenty Twenty-One"
 
-#. translators: %s is the wordpress.org Twenty Twenty-One support article URL.
-#: classes/class-twenty-twenty-one-dark-mode.php:189
-msgid "https://wordpress.org/support/article/twenty-twenty-one/"
-msgstr "https://wordpress.org/support/article/twenty-twenty-one/"
+#: inc/template-tags.php:245
+msgid "Older <span class=\"nav-short\">posts</span>"
+msgstr "過去の<span class=\"nav-short\">投稿</span>"
 
-#. translators: %s is the wordpress.org Twenty Twenty-One support article URL.
+#: inc/template-tags.php:234
+msgid "Newer <span class=\"nav-short\">posts</span>"
+msgstr "新しい<span class=\"nav-short\">投稿</span>"
+
+#. translators: %s: Twenty Twenty-One support article URL.
 #: classes/class-twenty-twenty-one-dark-mode.php:188
 msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
 msgstr "ダークモードは端末設定です。サイトへの訪問者が要求した場合、サイトを暗い背景と明るいテキストで表示します。<a href=\"%s\">ダークモードについての詳細はこちら</a>をご覧ください。"
@@ -33,16 +36,6 @@ msgstr "ダークモードは端末設定です。サイトへの訪問者が要
 #: classes/class-twenty-twenty-one-dark-mode.php:192
 msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
 msgstr "ダークモードはページの右下にあるボタンからも有効化・無効化できます。"
-
-#. translators: %s: The post-type name.
-#: inc/template-tags.php:255
-msgid "Older %s"
-msgstr "過去の%s"
-
-#. translators: %s: The post-type name.
-#: inc/template-tags.php:247
-msgid "Newer %s"
-msgstr "新しい%s"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:408
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
@@ -117,25 +110,15 @@ msgctxt "Customizer control"
 msgid "Background color"
 msgstr "背景色"
 
-#. translators: %s: The post-type singlular name (example: Post, Page etc)
-#: single.php:53
-msgid "Previous %s"
-msgstr "前の%s"
-
-#. translators: %s: The post-type singlular name (example: Post, Page etc)
-#: single.php:51
-msgid "Next %s"
-msgstr "次の%s"
-
 #. translators: %s: WordPress Version.
 #: inc/back-compat.php:42 inc/back-compat.php:61 inc/back-compat.php:86
 msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
 msgstr "このテーマは WordPress 5.3 より新しいバージョンが必要です。現在のバージョンは %s です。アップグレードしてください。"
 
 #. translators: %: page number.
+#: image.php:46 template-parts/content/content-page.php:36
 #: template-parts/content/content.php:36
-#: template-parts/content/content-page.php:36
-#: template-parts/content/content-single.php:30 image.php:46
+#: template-parts/content/content-single.php:30
 msgid "Page %"
 msgstr "ページ%"
 
@@ -174,7 +157,7 @@ msgctxt "Font size"
 msgid "XS"
 msgstr "XS"
 
-#: comments.php:88
+#: comments.php:87
 msgid "Leave a comment"
 msgstr "コメントする"
 
@@ -222,8 +205,8 @@ msgstr "「自画像」ベルト・モリゾ作"
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "「水仙」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:72 inc/block-patterns.php:107
-#: inc/starter-content.php:43
+#: inc/starter-content.php:43 inc/block-patterns.php:72
+#: inc/block-patterns.php:107
 msgid "&#8220;Roses Tremieres&#8221; by Berthe Morisot"
 msgstr "「立葵」ベルト・モリゾ作"
 
@@ -318,13 +301,13 @@ msgstr "ベルト・モリゾによって1800年代後半に描かれた美し�
 msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
 msgstr "「ブージヴァルの庭」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:72 inc/block-patterns.php:107
-#: inc/starter-content.php:61
+#: inc/starter-content.php:61 inc/block-patterns.php:72
+#: inc/block-patterns.php:107
 msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
 msgstr "「モーブで若い女性」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:72 inc/block-patterns.php:107
-#: inc/starter-content.php:51
+#: inc/starter-content.php:51 inc/block-patterns.php:72
+#: inc/block-patterns.php:107
 msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
 msgstr "「ブローニュの森で」ベルト・モリゾ作"
 
@@ -344,11 +327,6 @@ msgstr "「泥まんじゅう遊び」ベルト・モリゾ作"
 #: image.php:59
 msgid "Published in %s"
 msgstr "投稿: %s"
-
-#. translators: There is a space after page.
-#: comments.php:63 inc/template-tags.php:240
-msgid "Page "
-msgstr "ページ"
 
 #: classes/class-twenty-twenty-one-customize.php:113
 msgid "Summary"
@@ -389,6 +367,14 @@ msgstr "検索キーワードに一致するものが見つかりませんでし
 #: template-parts/content/content-none.php:43
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+
+#: single.php:40
+msgid "Previous post"
+msgstr "前の投稿"
+
+#: single.php:39
+msgid "Next post"
+msgstr "次の投稿"
 
 #. translators: %s: parent post link.
 #: single.php:25
@@ -432,7 +418,7 @@ msgid ", "
 msgstr "、"
 
 #. translators: %s: Name of current post. Only visible to screen readers.
-#: template-parts/content/content-page.php:48 image.php:68 image.php:93
+#: image.php:68 image.php:93 template-parts/content/content-page.php:48
 #: inc/template-tags.php:92 inc/template-tags.php:135
 msgid "Edit %s"
 msgstr "編集 %s"
@@ -560,11 +546,12 @@ msgstr "フルサイズ"
 msgid "Published %s"
 msgstr "投稿日: %s"
 
+#: image.php:43 template-parts/content/content-page.php:33
 #: template-parts/content/content.php:33
-#: template-parts/content/content-page.php:33
-#: template-parts/content/content-single.php:27 image.php:43
+#: template-parts/content/content-single.php:27 inc/template-tags.php:228
+#: comments.php:62
 msgid "Page"
-msgstr "固定ページ"
+msgstr "ページ"
 
 #: template-parts/header/site-nav.php:19
 msgid "Close"
@@ -574,7 +561,7 @@ msgstr "閉じる"
 msgid "Menu"
 msgstr "メニュー"
 
-#: template-parts/header/site-nav.php:13 functions.php:76
+#: functions.php:76 template-parts/header/site-nav.php:13
 #: inc/starter-content.php:154
 msgid "Primary menu"
 msgstr "メインメニュー"
@@ -700,15 +687,15 @@ msgstr "Proudly powered by %s."
 msgid "Secondary menu"
 msgstr "サブメニュー"
 
-#: comments.php:80
+#: comments.php:79
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
 
-#: comments.php:72
+#: comments.php:71
 msgid "Newer comments"
 msgstr "新しいコメント"
 
-#: comments.php:68
+#: comments.php:67
 msgid "Older comments"
 msgstr "過去のコメント"
 
@@ -724,7 +711,7 @@ msgstr "サイトタイトルとキャッチフレーズを表示"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "こちらには何もありません。検索をお試しください。"
 
-#: template-parts/content/content-none.php:30 404.php:16
+#: 404.php:16 template-parts/content/content-none.php:30
 msgid "Nothing here"
 msgstr "ここには何もありません"
 
