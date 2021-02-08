@@ -51,25 +51,25 @@ msgstr "PHP は WordPress の開発や保守に使用されているプログラ
 msgid "Your website appears to use Basic Authentication, which is not currently compatible with Application Passwords."
 msgstr "サイトでは Basic 認証が使われているようですが、現在、アプリケーションパスワードとは互換性がありません。"
 
-#: wp-admin/about.php:227
+#: wp-admin/about.php:260
 msgid "https://wordpress.org/plugins/enable-jquery-migrate-helper/"
 msgstr "https://ja.wordpress.org/plugins/enable-jquery-migrate-helper/"
 
-#: wp-admin/about.php:216
+#: wp-admin/about.php:249
 msgid "https://wordpress.org/plugins/wp-jquery-update-test/"
 msgstr "https://ja.wordpress.org/plugins/wp-jquery-update-test/"
 
 #. translators: 1: WordPress accessibility-ready guidelines link, 2: WCAG
 #. information link.
-#: wp-admin/about.php:123
+#: wp-admin/about.php:156
 msgid "What’s more, this default theme puts accessibility at the heart of your website. It conforms to the <a href=\"%1$s\">WordPress accessibility-ready guidelines</a> and addresses several more specialized standards from the <a href=\"%2$s\">Web Content Accessibility Guidelines (WCAG) 2.1 at level AAA</a>. It will help you meet the highest level of international accessibility standards when you create accessible content and choose plugins which are accessible too!"
 msgstr "さらに、デフォルトテーマはサイトの中心にアクセシビリティを据えます。<a href=\"%1$s\">WordPress アクセシビリティ対応ガイドライン</a>に準拠し、<a href=\"%2$s\">Web Content Accessibility Guidelines (WCAG) 2.1 適合レベル AAA</a> の特別な標準にも一部対応します。アクセシビリティに対応したコンテンツを作成し、プラグインを選択すれば、最高レベルで国際的なアクセシビリティ標準を達成できます。"
 
-#: wp-admin/about.php:91
+#: wp-admin/about.php:124
 msgid "To help you add subtitles or captions to your videos, you can now upload them within your post or page. This makes it easier than ever to make your videos accessible for anyone who needs or prefers to use subtitles."
 msgstr "動画に字幕やキャプションを追加する場合、投稿やページ内で直接アップロードできます。かつてないほど簡単に字幕が必要なユーザーや字幕を好むユーザーのために動画をアクセシビリティ対応します。"
 
-#: wp-admin/about.php:90
+#: wp-admin/about.php:123
 msgid "Upload video captions directly in the block editor"
 msgstr "ブロックエディターで動画のキャプションを直接アップロード"
 
@@ -78,99 +78,99 @@ msgid "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-
 msgstr "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-is-authentication-not-working"
 
 #. translators: %s: WordPress 5.6 Field Guide link.
-#: wp-admin/about.php:243
+#: wp-admin/about.php:276
 msgid "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.6 Field Guide.</a>"
 msgstr "WordPress フィールドガイドの最新バージョンを参照してください。各変更の開発者向けノートをまとめた必読のガイドです。<a href=\"%s\">WordPress 5.6 フィールドガイド</a>。"
 
 #. translators: %s: jQuery Migrate plugin link.
-#: wp-admin/about.php:224
+#: wp-admin/about.php:257
 msgid "If you find issues with the way your site looks (e.g. a slider doesn’t work, a button is stuck — that sort of thing), install the <a href=\"%s\">jQuery Migrate plugin</a>."
 msgstr "スライダーが動かない、ボタンの動きがおかしいなどサイトの見た目で問題がある場合は <a href=\"%s\">jQuery Migrate プラグイン</a>をインストールしてください。"
 
 #. translators: %s: jQuery update test plugin link.
-#: wp-admin/about.php:213
+#: wp-admin/about.php:246
 msgid "Updates to jQuery in WordPress take place across three releases: 5.5, 5.6, and 5.7. As we reach the mid-point of this process, run the <a href=\"%s\">update test plugin</a> to check your sites for errors ahead of time."
 msgstr "WordPress の jQuery は5.5、5.6、5.7の3回のリリースにわたって更新されます。このプロセスの中間点に到達した今、<a href=\"%s\">更新テストプラグイン</a>を実行して事前にサイトでのエラーを確認してください。"
 
-#: wp-admin/about.php:208
+#: wp-admin/about.php:241
 msgid "jQuery"
 msgstr "jQuery"
 
 #. translators: %s: WordPress and PHP 8 dev note link.
-#: wp-admin/about.php:199
+#: wp-admin/about.php:232
 msgid "5.6 marks the first steps toward WordPress Core support for PHP 8. Now is a great time to start planning how your WordPress products, services and sites can support the latest PHP version. For more information about what to expect next, <a href=\"%s\">read the PHP 8 developer note</a>."
 msgstr "5.6は WordPress コアにおける PHP 8サポートに向けての最初のステップとなります。今こそ、WordPress のプロダクト、サービス、サイトがどのように最新 PHP バージョンに対応できるかを計画し始めるのに絶好のタイミングです。今後のプランについての詳細は<a href=\"%s\">開発者ノート</a>を参照してください。"
 
-#: wp-admin/about.php:194
+#: wp-admin/about.php:227
 msgid "More PHP 8 support"
 msgstr "PHP 8 サポートの強化"
 
-#: wp-admin/about.php:191
+#: wp-admin/about.php:224
 msgid "Thanks to the API’s new Application Passwords authorization feature, third-party apps can connect to your site seamlessly and securely. This new REST API feature lets you see what apps are connecting to your site and control what they do."
 msgstr "API の新しいアプリケーションパスワード認証機能により、サードパーティ製のアプリケーションはシームレスにかつ安全にサイトに接続できます。この新しい REST API 機能を使用してアプリケーションはサイトに接続し、実行を制御できます。"
 
-#: wp-admin/about.php:190
+#: wp-admin/about.php:223
 msgid "REST API authentication with Application Passwords"
 msgstr "アプリケーションパスワードでの REST API 認証"
 
-#: wp-admin/about.php:181
+#: wp-admin/about.php:214
 msgid "If you’ve not had the chance to play with block patterns yet, all default themes now feature a range of block patterns that let you master complex layouts with minimal effort. Customize the patterns to your liking with the copy, images and colors that fit your story or brand."
 msgstr "まだブロックパターンを使ったことがない方のためにも、すべてのデフォルトテーマで複数のブロックパターンを提供するようにしました。最小の努力で、複雑なレイアウトを使いこなせます。サイトのストーリーやブランドに合った文章、画像、色を使って、パターンをお好み通りにカスタマイズしましょう。"
 
-#: wp-admin/about.php:180
+#: wp-admin/about.php:213
 msgid "Built-in patterns"
 msgstr "ビルトインのパターン"
 
 #. translators: %s: Accessibility statement feature plugin link.
-#: wp-admin/about.php:173
+#: wp-admin/about.php:206
 msgid "Even if you’re not an expert, you can start letting folks know about your site’s commitment to accessibility at the click of a button! The new <a href=\"%s\">feature plugin</a> includes template copy for you to update and publish, and it’s written to support different contexts and jurisdictions."
 msgstr "エキスパートでなくても、サイトのアクセシビリティへの取り組みをボタンをクリックするだけで読者に知らせられます。新しい<a href=\"%s\">機能プラグイン</a>には、異なるコンテキストや法的な管轄区域に合わせて書かれたテンプレートコピーが含まれているため、更新して公開できます。"
 
-#: wp-admin/about.php:168
+#: wp-admin/about.php:201
 msgid "Accessibility statement template"
 msgstr "アクセシビリティステートメントのテンプレート"
 
-#: wp-admin/about.php:165
+#: wp-admin/about.php:198
 msgid "For years, only developers have been able to update WordPress automatically. But now, you have that option, right in your dashboard. If this is your first site, you have auto-updates ready to go, right now! Upgrading an existing site? No problem! Everything is the same as it was before."
 msgstr "長年の間、開発者だけが WordPress を自動的に更新できました。しかし今やダッシュボードにオプションがあります。初めてのサイトであれば自動更新はすでに有効化されています。既存のサイトを更新した場合も問題ありません。すべては前と同じです。"
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:197
 msgid "Expanding auto-updates"
 msgstr "自動更新の拡張"
 
-#: wp-admin/about.php:143
+#: wp-admin/about.php:176
 msgid "Need more flexibility than that? You can also choose your own color palette from the color picker."
 msgstr "さらに柔軟性が必要なら、カラーピッカーから独自のカラーパレットも選択できます。 "
 
-#: wp-admin/about.php:142
+#: wp-admin/about.php:175
 msgid "Perfect for a new year, Twenty Twenty-One gives you a range of pre-selected color palettes in pastel, all of which meet AAA standards for contrast. You can also choose your own background color for the theme, and the theme chooses accessibility-conscious text colors for you — automatically!"
 msgstr "Twenty Twenty-One では新年を新しい気持ちで迎えるのにふさわしい、色とりどりの設定済みパステル調カラーパレットを提供しています。すべてのパレットのコントラストは AAA 規格を満たしています。また、独自の背景色を選択することもできる上、アクセシビリティを意識したテキスト色をテーマが自動的に選んでくれます。"
 
-#: wp-admin/about.php:139
+#: wp-admin/about.php:172
 msgid "A rainbow of soft pastels"
 msgstr "ソフトパステルカラーのレインボー"
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:135
 msgid "Twenty Twenty-One is a blank canvas for your ideas, and the block editor is the best brush. It is built for the block editor and packed with brand-new block patterns you can only get in the default themes. Try different layouts in a matter of seconds, and let the theme’s eye-catching, yet timeless design make your work shine."
 msgstr "Twenty Twenty-One はアイデアのための空白のキャンバスで、ブロックエディターは最高の絵筆です。このテーマには、ブロックエディター用に構築された、デフォルトテーマだけで入手可能な最新のブロックパターンが数多く含まれています。様々なレイアウトを数秒で切り替えて試してみましょう。そして、印象的ながら時代を超越したデザインで作品を輝かせましょう。"
 
-#: wp-admin/about.php:99
+#: wp-admin/about.php:132
 msgid "Twenty Twenty-One is here!"
 msgstr "Twenty Twenty-One の登場です !"
 
-#: wp-admin/about.php:85
+#: wp-admin/about.php:118
 msgid "In select themes, preconfigured block patterns make setting up standard pages on your site a breeze. Find the power of patterns to streamline your workflow, or share some of that power with your clients and save yourself a few clicks."
 msgstr "一部のテーマでは、あらかじめ設定されたブロックパターンのおかげで、サイトの基本的なページを簡単に設定できます。ワークフローをスムーズにするパターンの力を発見しましょう。または、そのいくつかをクライアントと共有することで、自分でクリックする回数を少し減らせます。"
 
-#: wp-admin/about.php:84
+#: wp-admin/about.php:117
 msgid "More block patterns"
 msgstr "さらに多くのブロックパターン"
 
-#: wp-admin/about.php:78
+#: wp-admin/about.php:111
 msgid "Bring your stories to life with more tools that let you edit your layout with or without code. Single column blocks, designs using mixed widths and columns, full-width headers, and videos in your cover block—make small changes or big statements with equal ease!"
 msgstr "コードを使っても使わなくてもレイアウト編集可能な追加ツールで、ストーリーに魂を吹き込みましょう。シングルカラムブロック、異なる横幅やカラムの組み合わせを使ったデザイン、全幅ヘッダー、カバーブロック内の動画で、小さな変更も大胆なメッセージのどちらも簡単に実現できます。"
 
-#: wp-admin/about.php:77
+#: wp-admin/about.php:110
 msgid "Greater layout flexibility"
 msgstr "さらに柔軟なレイアウト"
 
@@ -256,7 +256,7 @@ msgstr "新しいアプリケーションパスワードを追加"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "アプリケーションパスワードの作成に必要ですが、ユーザーの更新には不要です。"
 
-#: wp-admin/about.php:256
+#: wp-admin/about.php:289
 msgid "Go to Updates"
 msgstr "更新へ移動"
 
@@ -644,7 +644,7 @@ msgstr "\"%1$s\" の値が \"%2$s\" の値より小さくなっています。"
 msgid "Environment type"
 msgstr "環境タイプ"
 
-#: wp-admin/about.php:238
+#: wp-admin/about.php:271
 msgid "Check the Field Guide for more!"
 msgstr "詳細はフィールドガイドを参照してください。"
 
@@ -2169,7 +2169,7 @@ msgstr "%1$s は %2$s オブジェクトである必要があります。"
 msgid "You are in recovery mode. This means there may be an error with a theme or plugin. To exit recovery mode, log out or use the Exit button. <a href=\"%s\">Exit Recovery Mode</a>"
 msgstr "現在、リカバリーモードです。テーマまたはプラグインにエラーがあるかもしれません。リカバリーモードを終了するにはログアウトするか終了ボタンを使用してください。<a href=\"%s\">リカバリーモードを終了</a>"
 
-#: wp-admin/about.php:158
+#: wp-admin/about.php:191
 msgid "Improvements for everyone"
 msgstr "すべての方のための改善"
 
@@ -3718,8 +3718,9 @@ msgid "Cannot Install"
 msgstr "インストール不可"
 
 #. translators: %s: WordPress version.
+#. translators: %s: WordPress version
 #: wp-admin/includes/update.php:305 wp-admin/install.php:238
-#: wp-admin/update-core.php:82 wp-admin/upgrade.php:80
+#: wp-admin/update-core.php:82 wp-admin/upgrade.php:80 wp-admin/about.php:96
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -6156,7 +6157,7 @@ msgid "(Currently set to: %s)"
 msgstr "(現在の設定: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:279
+#: wp-admin/about.php:312
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>バージョン %s</strong> ではセキュリティ問題1件に対応しました。"
 
@@ -6168,15 +6169,15 @@ msgstr "https://ja.gravatar.com/"
 msgid "Profile Picture"
 msgstr "プロフィール写真"
 
-#: wp-admin/about.php:276
+#: wp-admin/about.php:309
 msgid "Maintenance and Security Releases"
 msgstr "メンテナンスとセキュリティのリリース"
 
-#: wp-admin/about.php:273
+#: wp-admin/about.php:306
 msgid "Security Releases"
 msgstr "セキュリティリリース"
 
-#: wp-admin/about.php:270
+#: wp-admin/about.php:303
 msgid "Maintenance Releases"
 msgstr "メンテナンスリリース"
 
@@ -9643,27 +9644,28 @@ msgstr "サイトネットワーク上の既存のユーザーをこのサイト
 msgid "Show Toolbar when viewing site"
 msgstr "サイトを見るときにツールバーを表示する"
 
+#. translators: %s: HelpHub URL
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:302
+#: wp-admin/about.php:93 wp-admin/about.php:335
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "詳しくは<a href=\"%s\">リリースノート</a>をご覧ください。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:296
+#: wp-admin/about.php:329
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はいくつかのセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:290
+#: wp-admin/about.php:323
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:284
+#: wp-admin/about.php:81 wp-admin/about.php:317
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> では%2$s個のバグを修正しました。"
@@ -9673,19 +9675,19 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "WordPress のダッシュボードへようこそ ! これはサイトにログインすると表示される画面で、ここから WordPress のすべてのサイト管理機能へアクセスできます。どの画面にいても画面のタイトルの上にあるヘルプタブをクリックすればヘルプ情報を得られます。"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:281
+#: wp-admin/about.php:314
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>バージョン %s</strong> では複数のセキュリティ問題に対応しました。"
 
-#: wp-admin/about.php:275
+#: wp-admin/about.php:308
 msgid "Maintenance and Security Release"
 msgstr "メンテナンスとセキュリティのリリース"
 
-#: wp-admin/about.php:272
+#: wp-admin/about.php:305
 msgid "Security Release"
 msgstr "セキュリティリリース"
 
-#: wp-admin/about.php:269
+#: wp-admin/about.php:76 wp-admin/about.php:302
 msgid "Maintenance Release"
 msgstr "メンテナンスリリース"
 
@@ -9975,11 +9977,11 @@ msgstr "このサイトはマルチサイトインストールのため、サイ
 msgid "Welcome to WordPress %s."
 msgstr "WordPress %s へようこそ。"
 
-#: wp-admin/about.php:259
+#: wp-admin/about.php:292
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ダッシュボード &rarr; ホームへ移動"
 
-#: wp-admin/about.php:256
+#: wp-admin/about.php:289
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "ダッシュボード &rarr; 更新へ移動"
 
@@ -9987,7 +9989,7 @@ msgstr "ダッシュボード &rarr; 更新へ移動"
 msgid "WordPress is created by a worldwide team of passionate individuals."
 msgstr "WordPress は、世界中の熱心な人々によって作られています。"
 
-#: wp-admin/about.php:188
+#: wp-admin/about.php:221
 msgid "For developers"
 msgstr "開発者の方へ"
 
@@ -11809,7 +11811,7 @@ msgstr "WordPress の更新"
 msgid "Edit menu item"
 msgstr "メニュー項目を編集"
 
-#: wp-admin/about.php:259 wp-admin/includes/network.php:148
+#: wp-admin/about.php:292 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "ダッシュボードへ移動"
 

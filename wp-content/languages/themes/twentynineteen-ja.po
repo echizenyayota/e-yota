@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Nineteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-15 07:10:40+0000\n"
+"PO-Revision-Date: 2021-01-16 05:40:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,22 +20,121 @@ msgstr "2019年のデフォルトテーマは、ブロックエディターの�
 msgid "Twenty Nineteen"
 msgstr "Twenty Nineteen"
 
-#: functions.php:149
-msgid "Blue"
-msgstr "青"
+#: inc/block-patterns.php:164
+msgid "Doug Watson"
+msgstr "Doug Watson"
+
+#: inc/block-patterns.php:156
+msgid "Eva Young"
+msgstr "Eva Young"
+
+#: inc/block-patterns.php:145 inc/block-patterns.php:152
+msgid "Team"
+msgstr "チーム"
+
+#: inc/block-patterns.php:131
+msgid "Content Strategy"
+msgstr "コンテンツストラテジー"
+
+#: inc/block-patterns.php:126
+msgid "Copywriting"
+msgstr "コピーライティング"
+
+#: inc/block-patterns.php:121
+msgid "Marketing"
+msgstr "マーケティング"
+
+#: inc/block-patterns.php:114
+msgid "Social Media"
+msgstr "ソーシャルメディア"
+
+#: inc/block-patterns.php:109
+msgid "Mobile"
+msgstr "モバイル"
+
+#: inc/block-patterns.php:104
+msgid "Website Design"
+msgstr "サイトデザイン"
+
+#: inc/block-patterns.php:103 inc/block-patterns.php:108
+#: inc/block-patterns.php:113 inc/block-patterns.php:120
+#: inc/block-patterns.php:125 inc/block-patterns.php:130
+#: inc/block-patterns.php:155 inc/block-patterns.php:163
+msgid "Gradient"
+msgstr "グラデーション"
+
+#: inc/block-patterns.php:92 inc/block-patterns.php:98
+msgid "Services"
+msgstr "サービス"
+
+#: inc/block-patterns.php:80
+msgid "Contact Us"
+msgstr "お問い合わせ"
+
+#: inc/block-patterns.php:74
+msgid "example@example.com"
+msgstr "example@example.com"
+
+#: inc/block-patterns.php:74
+msgid "(555) 555-5555"
+msgstr "(555) 555-5555"
+
+#: inc/block-patterns.php:58 inc/block-patterns.php:64
+msgid "Get In Touch"
+msgstr "お問い合わせ"
+
+#: inc/block-patterns.php:46
+msgid "Learn More"
+msgstr "さらに詳しく"
+
+#: classes/class-twentynineteen-walker-comment.php:98
+msgid "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
+msgstr "あなたのコメントは管理者の承認待ちです。これはプレビューで、コメントは承認後に表示されます。"
 
 #: functions.php:154
 msgid "Dark Blue"
 msgstr "ダークブルー"
+
+#: functions.php:149
+msgid "Blue"
+msgstr "青"
 
 #. translators: %s: Parent post link.
 #: single.php:31
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
 msgstr "<span class=\"meta-nav\">公開: </span><span class=\"post-title\">%s</span>"
 
+#: image.php:87
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><br><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">投稿:</span><br><span class=\"post-title\">%title</span>"
+
+#: template-parts/content/content.php:18
+#: template-parts/content/content-excerpt.php:18
+msgctxt "post"
+msgid "Featured"
+msgstr "おすすめ"
+
+#. translators: %s: WordPress version.
+#: inc/back-compat.php:40 inc/back-compat.php:55 inc/back-compat.php:76
+msgid "Twenty Nineteen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Nineteen テーマには WordPress version 4.7以降が必須ですが、現在バージョン%sをお使いです。アップグレードしてもう一度お試しください。"
+
 #: inc/template-functions.php:143
 msgid "Back"
 msgstr "戻る"
+
+#: inc/template-functions.php:136
+msgid "More"
+msgstr "続き"
+
+#: inc/customizer.php:98
+msgid "Apply a filter to featured images using the primary color"
+msgstr "アイキャッチ画像にメインカラーのフィルターを適用する"
+
+#: inc/customizer.php:78
+msgid "Apply a custom color for buttons, links, featured images, etc."
+msgstr "ボタン、リンク、アイキャッチ画像などにカスタムカラーを適用する"
 
 #: inc/customizer.php:56
 msgctxt "primary color"
@@ -83,45 +182,30 @@ msgstr "M"
 msgid "Normal"
 msgstr "通常"
 
-#: functions.php:118
-msgid "Small"
-msgstr "小"
-
 #: functions.php:119
 msgid "S"
 msgstr "S"
+
+#: functions.php:118
+msgid "Small"
+msgstr "小"
 
 #: functions.php:60 footer.php:37
 msgid "Footer Menu"
 msgstr "フッターメニュー"
 
-#: template-parts/content/content.php:18
-#: template-parts/content/content-excerpt.php:18
-msgctxt "post"
-msgid "Featured"
-msgstr "おすすめ"
+#: image.php:70
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "フルサイズ"
 
-#: image.php:87
-msgctxt "Parent post link"
-msgid "<span class=\"meta-nav\">Published in</span><br><span class=\"post-title\">%title</span>"
-msgstr "<span class=\"meta-nav\">投稿:</span><br><span class=\"post-title\">%title</span>"
+#: image.php:56
+msgid "Page"
+msgstr "固定ページ"
 
-#. translators: %s: WordPress version.
-#: inc/back-compat.php:40 inc/back-compat.php:55 inc/back-compat.php:76
-msgid "Twenty Nineteen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Nineteen テーマには WordPress version 4.7以降が必須ですが、現在バージョン%sをお使いです。アップグレードしてもう一度お試しください。"
-
-#: inc/template-functions.php:136
-msgid "More"
-msgstr "続き"
-
-#: inc/customizer.php:78
-msgid "Apply a custom color for buttons, links, featured images, etc."
-msgstr "ボタン、リンク、アイキャッチ画像などにカスタムカラーを適用する"
-
-#: inc/customizer.php:98
-msgid "Apply a filter to featured images using the primary color"
-msgstr "アイキャッチ画像にメインカラーのフィルターを適用する"
+#: functions.php:196
+msgid "Add widgets here to appear in your footer."
+msgstr "フッターに表示させるにはここにウィジェットを追加してください。"
 
 #: functions.php:194 template-parts/footer/footer-widgets.php:12
 msgid "Footer"
@@ -131,96 +215,9 @@ msgstr "フッター"
 msgid "Primary Color"
 msgstr "メインカラー"
 
-#: image.php:70
-msgctxt "Used before full size attachment link."
-msgid "Full size"
-msgstr "フルサイズ"
-
-#: image.php:56
-msgid "Page"
-msgstr "ページ"
-
-#: functions.php:196
-msgid "Add widgets here to appear in your footer."
-msgstr "フッターに表示するウィジェットを追加します。"
-
-#: 404.php:24
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "こちらには何もありません。検索をお試しください。"
-
-#: 404.php:20
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "お探しのページが見つかりません。"
-
-#: comments.php:116
-msgid "Comments are closed."
-msgstr "コメントは受け付けていません。"
-
-#: functions.php:61 template-parts/header/site-branding.php:46
-msgid "Social Links Menu"
-msgstr "﻿ソーシャルリンクメニュー"
-
-#: header.php:25
-msgid "Skip to content"
-msgstr "コンテンツへスキップ"
-
-#: image.php:52 template-parts/content/content-page.php:27
-#: template-parts/content/content.php:49
-#: template-parts/content/content-single.php:40
-msgid "Pages:"
-msgstr "ページ:"
-
-#. translators: %s: Post title. Only visible to screen readers.
-#: template-parts/content/content.php:36
-#: template-parts/content/content-single.php:27
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "<span class=\"screen-reader-text\">\"%s\" の</span>続きを読む"
-
-#: comments.php:96
-msgid "Next"
-msgstr "次"
-
-#: comments.php:95
-msgid "Previous"
-msgstr "前"
-
-#: single.php:41
-msgid "Previous Post"
-msgstr "過去の投稿"
-
-#: template-parts/content/content-none.php:16
-msgid "Nothing Found"
-msgstr "何も見つかりませんでした"
-
-#. translators: 1: Link to WP admin new post page.
-#: template-parts/content/content-none.php:26
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
-
-#: template-parts/content/content-none.php:39
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
-
-#: template-parts/content/content-none.php:46
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "お探しのものが見つからないようです。検索すると良いかもしれません。"
-
-#: template-parts/header/site-branding.php:33
-msgid "Top Menu"
-msgstr "トップメニュー"
-
-#. translators: Used between list items, there is a space after the comma.
-#: inc/template-tags.php:86 inc/template-tags.php:98
-msgid ", "
-msgstr ", "
-
-#: single.php:38
-msgid "Next Post"
-msgstr "次の投稿"
-
 #: template-parts/post/discussion-meta.php:18
 msgid "No comments"
-msgstr "コメントなし"
+msgstr "コメントはありません"
 
 #. translators: %d: Number of comments.
 #: template-parts/post/discussion-meta.php:16
@@ -228,59 +225,102 @@ msgid "%d Comment"
 msgid_plural "%d Comments"
 msgstr[0] "%d件のコメント"
 
-#: inc/template-tags.php:234
-msgid "Older posts"
-msgstr "過去の投稿"
-
-#: inc/template-tags.php:230
-msgid "Newer posts"
-msgstr "次の投稿"
-
-#: single.php:39
-msgid "Next post:"
-msgstr "次の投稿:"
-
-#: single.php:42
-msgid "Previous post:"
-msgstr "過去の投稿:"
-
-#: inc/template-tags.php:104
-msgid "Tags:"
-msgstr "タグ:"
-
-#: inc/template-functions.php:76
-msgid "Tag Archives: "
-msgstr "タグアーカイブ:"
-
-#. translators: %s: Post title. Only visible to screen readers.
-#: inc/template-tags.php:63
-msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "<span class=\"screen-reader-text\">%sに</span>コメント"
-
-#: classes/class-twentynineteen-walker-comment.php:89
-msgid "Edit"
-msgstr "編集"
-
-#: comments.php:92 comments.php:95 comments.php:96
-msgid "Comments"
-msgstr "コメント"
+#: template-parts/post/author-bio.php:26
+msgid "View more posts"
+msgstr "他の投稿を表示"
 
 #. translators: %s: Post author.
 #: template-parts/post/author-bio.php:17
 msgid "Published by %s"
 msgstr "投稿者: %s"
 
+#: template-parts/header/site-branding.php:33
+msgid "Top Menu"
+msgstr "トップメニュー"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: template-parts/content/content.php:36
+#: template-parts/content/content-single.php:27
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "<span class=\"screen-reader-text\">\"%s\" の</span>続きを読む"
+
+#: image.php:52 template-parts/content/content.php:49
+#: template-parts/content/content-single.php:40
+#: template-parts/content/content-page.php:27
+msgid "Pages:"
+msgstr "固定ページ:"
+
+#: template-parts/content/content-none.php:46
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "お探しのコンテンツを見つけられませんでした。検索をお試しください。"
+
+#: template-parts/content/content-none.php:39
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
+
+#. translators: 1: Link to WP admin new post page.
+#: template-parts/content/content-none.php:26
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+
+#: template-parts/content/content-none.php:16
+msgid "Nothing Found"
+msgstr "何も見つかりませんでした"
+
+#: single.php:42
+msgid "Previous post:"
+msgstr "前の投稿:"
+
+#: single.php:41
+msgid "Previous Post"
+msgstr "前の投稿"
+
+#: single.php:39
+msgid "Next post:"
+msgstr "次の投稿:"
+
+#: single.php:38
+msgid "Next Post"
+msgstr "次の投稿"
+
 #: search.php:22
 msgid "Search results for: "
 msgstr "検索結果:"
+
+#: inc/template-tags.php:234
+msgid "Older posts"
+msgstr "過去の投稿"
+
+#: inc/template-tags.php:230
+msgid "Newer posts"
+msgstr "新しい投稿"
+
+#: inc/template-tags.php:104
+msgid "Tags:"
+msgstr "タグ:"
 
 #: inc/template-tags.php:92
 msgid "Posted in"
 msgstr "カテゴリー:"
 
+#. translators: Used between list items, there is a space after the comma.
+#: inc/template-tags.php:86 inc/template-tags.php:98
+msgid ", "
+msgstr "、"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: inc/template-tags.php:63
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "コメントをどうぞ<span class=\"screen-reader-text\"> (%s)</span>"
+
 #: inc/template-tags.php:46
 msgid "Posted by"
 msgstr "投稿者:"
+
+#: inc/template-functions.php:82
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "Y年n月"
 
 #: inc/template-functions.php:80
 msgctxt "yearly archives date format"
@@ -291,33 +331,77 @@ msgstr "Y年"
 msgid "Archives:"
 msgstr "アーカイブ:"
 
+#. translators: %s: Taxonomy singular name.
+#: inc/template-functions.php:90
+msgid "%s Archives:"
+msgstr "%sのアーカイブ:"
+
 #: inc/template-functions.php:86
 msgid "Post Type Archives: "
-msgstr "投稿タイプアーカイブ:"
+msgstr "投稿タイプアーカイブ: "
 
 #: inc/template-functions.php:84
 msgid "Daily Archives: "
-msgstr "日別アーカイブ:"
+msgstr "日別アーカイブ: "
 
 #: inc/template-functions.php:82
 msgid "Monthly Archives: "
-msgstr "月別アーカイブ:"
+msgstr "月別アーカイブ: "
 
 #: inc/template-functions.php:80
 msgid "Yearly Archives: "
-msgstr "年別アーカイブ:"
+msgstr "年別アーカイブ: "
 
 #: inc/template-functions.php:78
 msgid "Author Archives: "
-msgstr "投稿者アーカイブ:"
+msgstr "投稿者アーカイブ: "
+
+#: inc/template-functions.php:76
+msgid "Tag Archives: "
+msgstr "タグアーカイブ: "
 
 #: inc/template-functions.php:74
 msgid "Category Archives: "
-msgstr "カテゴリーアーカイブ:"
+msgstr "カテゴリーアーカイブ: "
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: inc/template-tags.php:120 template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "コンテンツへスキップ"
+
+#: functions.php:61 template-parts/header/site-branding.php:46
+msgid "Social Links Menu"
+msgstr "﻿ソーシャルリンクメニュー"
 
 #: functions.php:59
 msgid "Primary"
 msgstr "メイン"
+
+#. translators: %s: WordPress.
+#: footer.php:28
+msgid "Proudly powered by %s."
+msgstr "Proudly powered by %s."
+
+#: comments.php:116
+msgid "Comments are closed."
+msgstr "コメントは受け付けていません。"
+
+#: comments.php:96
+msgid "Next"
+msgstr "次"
+
+#: comments.php:95
+msgid "Previous"
+msgstr "前"
+
+#: comments.php:92 comments.php:95 comments.php:96
+msgid "Comments"
+msgstr "コメント"
 
 #. translators: 1: Number of comments, 2: Post title.
 #: comments.php:44
@@ -326,9 +410,15 @@ msgid "%1$s reply on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
 msgstr[0] "「%2$s」への%1$s件の返信"
 
+#. translators: %s: Post title.
+#: comments.php:40
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr "「%s」への1件の返信"
+
 #: comments.php:35 comments.php:105 comments.php:107
 msgid "Leave a comment"
-msgstr "コメントを残す"
+msgstr "コメントをどうぞ"
 
 #: comments.php:33
 msgid "Join the Conversation"
@@ -336,48 +426,29 @@ msgstr "ディスカッションに参加"
 
 #: classes/class-twentynineteen-walker-comment.php:96
 msgid "Your comment is awaiting moderation."
-msgstr "コメントは承認待ちです。"
+msgstr "あなたのコメントは承認待ちです。"
 
-#. translators: %s: Post title.
-#: comments.php:40
-msgctxt "comments title"
-msgid "One reply on &ldquo;%s&rdquo;"
-msgstr "「%s」への1件の返信"
+#: classes/class-twentynineteen-walker-comment.php:89
+msgid "Edit"
+msgstr "編集"
 
-#: inc/template-functions.php:82
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr "Y年n月"
-
-#. translators: %s: Post title. Only visible to screen readers.
-#: template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "編集 <span class=\"screen-reader-text\">%s</span>"
-
-#. translators: %s: Taxonomy singular name.
-#: inc/template-functions.php:90
-msgid "%s Archives:"
-msgstr "%sアーカイブ: "
+#. translators: 1: Comment date, 2: Comment time.
+#: classes/class-twentynineteen-walker-comment.php:78
+msgid "%1$s at %2$s"
+msgstr "%1$s %2$s"
 
 #. translators: %s: Comment author link.
 #: classes/class-twentynineteen-walker-comment.php:59
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">さんの発言:</span>"
 
-#: template-parts/post/author-bio.php:26
-msgid "View more posts"
-msgstr "他の投稿を表示"
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "こちらには何もありません。検索をお試しください。"
 
-#. translators: %s: WordPress.
-#: footer.php:28
-msgid "Proudly powered by %s."
-msgstr "Proudly powered by %s."
-
-#. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentynineteen-walker-comment.php:78
-msgid "%1$s at %2$s"
-msgstr "%1$s %2$s"
+#: 404.php:20
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "お探しのページが見つかりません。"
 
 #. Theme URI of the theme
 msgid "https://wordpress.org/themes/twentynineteen/"
