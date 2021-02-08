@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WP Super Cache - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-01 09:02:21+0000\n"
+"PO-Revision-Date: 2021-02-05 13:10:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -59,6 +59,10 @@ msgstr "304 ブラウザーキャッシング。ブラウザーが最後にリ�
 msgid "Warning! The following settings are disabled because Expert caching is enabled."
 msgstr "警告: エキスパートキャッシングが有効になっているため、以下の設定は無効になっています。"
 
+#: wp-cache.php:2610
+msgid "The file %s already exists. Please manually delete it before using this plugin. If you continue to see this message after deleting it please contact your hosting support."
+msgstr "ファイル %s がすでに存在しています。このプラグインを使う前に手動で削除してください。削除後もこのメッセージが表示された場合は、ホスティングのサポートへご相談ください。"
+
 #: wp-cache-phase2.php:1294
 msgid "Caching disabled. Page not cached."
 msgstr "キャッシュが無効になっています。ページはキャッシュされていません。"
@@ -66,6 +70,10 @@ msgstr "キャッシュが無効になっています。ページはキャッシ
 #: wp-cache.php:1090
 msgid "Disable caching for logged in visitors."
 msgstr "ログイン中のユーザーに対してはキャッシュを無効化する。"
+
+#: wp-cache.php:1089
+msgid "Disable caching for visitors who have a cookie set in their browser."
+msgstr "ブラウザーに cookie をセットした訪問者にはキャッシュを無効化する。"
 
 #: wp-cache.php:1088
 msgid "Enable caching for all visitors."
@@ -78,6 +86,22 @@ msgstr "キャッシュ制限"
 #: ossdl-cdn.php:316
 msgid "Simple CDN"
 msgstr "Simple CDN"
+
+#: ossdl-cdn.php:306
+msgid "%1$sJetpack%2$s was not found on your site but %3$syou can install it%2$s. The Site Accelerator feature is free to use on any WordPress site and offers the same benefit as other CDN services. You should give it a try!"
+msgstr "サイトに %1$sJetpack%2$s がありませんが %3$sインストールできます%2$s。サイトアクセラレーター機能はどの WordPress サイトでも無料で使えて、他の CDN サービスと同じ利点があります。お試しください !"
+
+#: ossdl-cdn.php:298
+msgid "You already have Jetpack installed but %1$sSite Accelerator%2$s is disabled on this blog. Enable it on the %3$sJetpack settings page%2$s."
+msgstr "Jetpack をインストール済みですが%1$sサイトアクセラレーター%2$sが無効です。%3$sJetpack 設定ページ%2$sで有効化できます。"
+
+#: ossdl-cdn.php:292
+msgid "You already have Jetpack installed and %1$sSite Accelerator%2$s enabled on this blog. The CDN here is disabled to avoid conflicts with Jetpack."
+msgstr "Jetpack をインストール済みで%1$sサイトアクセラレーター%2$sが有効です。こちらの CDN は Jetpack との競合を避けるために無効化しています。"
+
+#: ossdl-cdn.php:283
+msgid "The free %1$sJetpack plugin%2$s has a %3$sSite Accelerator%2$s feature that is easier to use than the CDN functionality in this plugin. However files will be cached \"forever\" and will not update if you update the local file. Files will need to be renamed to refresh them. The %3$sJetpack documentation%2$s explains more about this."
+msgstr "無料の %1$sJetpack プラグイン%2$s には、このプラグインの CDN より簡単に使える%3$sサイトアクセラレーター%2$s機能があります。ただし、ファイルは「永久に」キャッシュされ、ローカルファイルを更新しても更新されません。更新するにはファイル名を変える必要があります。%3$sJetpack のドキュメント%2$sで詳細が説明されています。"
 
 #: ossdl-cdn.php:281
 msgid "Jetpack CDN"
@@ -225,7 +249,7 @@ msgstr "<strong style=\"color: red\">警告 :</strong> サイト URL とホー�
 
 #: wp-cache.php:2918
 msgid "Preload mode is enabled. Supercache files will never be expired."
-msgstr "プリロードモードが有効です。Supercache ファイルは期限切れになりません。"
+msgstr "プリロードモードが有効です。キャッシュファイルは期限切れになりません。"
 
 #: wp-cache.php:2888
 msgid "Files"
@@ -507,7 +531,7 @@ msgstr ""
 
 #: wp-cache.php:3798
 msgid "Supercache Uninstall Problems"
-msgstr "Supercache アンインストール時の問題"
+msgstr "Super Cache アンインストール時の問題"
 
 #: wp-cache.php:3720
 msgid ""
@@ -523,7 +547,7 @@ msgstr "[%s] プリロードは停滞しています。"
 
 #: wp-cache.php:3675
 msgid "Cleaning up old supercache files."
-msgstr "古い supercache のファイルを片付けています。"
+msgstr "古いキャッシュファイルを片付けています。"
 
 #: wp-cache.php:3675
 msgid "[%s] Cache Preload Completed"
@@ -531,7 +555,7 @@ msgstr "[%s] キャッシュのプリロードを完了"
 
 #: wp-cache.php:3664
 msgid "Scheduling next preload refresh in %d minutes."
-msgstr "次のプレロードリフレッシュは %d 分後の予定です。"
+msgstr "次のプリロード更新を%d分後に予約しています。"
 
 #: wp-cache.php:3653
 msgid "Refreshed the following posts:"
@@ -715,7 +739,7 @@ msgstr "wp-cache ファイルを削除しています: <strong>%s</strong><br />
 
 #: wp-cache.php:2792
 msgid "Deleting supercache file: <strong>%s</strong><br />"
-msgstr "supercache ファイルを削除しています: <strong>%s</strong><br />"
+msgstr "キャッシュファイルを削除しています: <strong>%s</strong><br />"
 
 #: wp-cache.php:2773
 msgid "Cache Contents"
@@ -1024,7 +1048,7 @@ msgstr "キャッシュのタイムアウト"
 
 #: wp-cache.php:1826
 msgid "Warning! <strong>PRELOAD MODE</strong> activated. Supercache files will not be deleted regardless of age."
-msgstr "警告: <strong>プリロードモード</strong>を有効化しました。Supercache ファイルは期限に関わらず削除されません。"
+msgstr "警告 ! <strong>プリロードモード</strong>を有効化しました。キャッシュファイルは期限に関わらず削除されません。"
 
 #: wp-cache.php:1822
 msgid "Next scheduled garbage collection will be at <strong>%s UTC</strong>"
@@ -1414,11 +1438,11 @@ msgstr "高度な設定"
 
 #: wp-cache.php:1100
 msgid "Cache rebuild. Serve a supercache file to anonymous users while a new file is being generated."
-msgstr "キャッシュリビルド。新しいファイルの生成中にこのサイトの登録ユーザー以外のユーザーに supercache のファイルを供給する。"
+msgstr "キャッシュリビルド。新しいファイルの生成中にこのサイトの登録ユーザー以外のユーザーにキャッシュファイルを供給する。"
 
 #: wp-cache.php:1109
 msgid "Make known users anonymous so they&#8217;re served supercached static files."
-msgstr "既知のユーザーを匿名にして、supercache でキャッシュした静的なファイルを供給する。"
+msgstr "既知のユーザーを匿名にして、キャッシュした静的なファイルを供給する。"
 
 #: wp-cache.php:1091
 msgid "Don&#8217;t cache pages with GET parameters. (?x=y at the end of a url)"
@@ -1487,7 +1511,7 @@ msgstr "ファイルリフレッシュ時にステータスメールを送信す
 
 #: wp-cache.php:1011
 msgid "Preload tags, categories and other taxonomies."
-msgstr "プリロードタグ、カテゴリー、その他のタクソノミー"
+msgstr "タグ、カテゴリー、その他のタクソノミーをプリロードする。"
 
 #: wp-cache.php:1001
 msgid "Preload %s posts."
@@ -1511,7 +1535,7 @@ msgstr "この機能はこのサイトで公開されているすべての投稿
 
 #: wp-cache.php:1034
 msgid "Preload Cache Now"
-msgstr "キャッシュプリロードをすぐに実行"
+msgstr "キャッシュを今すぐプリロード"
 
 #: wp-cache.php:3954
 msgid "Scheduled preloading of cache cancelled."
@@ -1563,15 +1587,15 @@ msgstr "欠けている Apache モジュール"
 
 #: wp-cache.php:451
 msgid "Set the expiry date on supercached pages. Visitors may not see new pages when they refresh or leave comments without this module."
-msgstr "supercached ページで有効期限を設定してください。このモジュールがないと、読者は再読込みしたりコメントを残しても新しいページを参照できないかもしれません。"
+msgstr "キャッシュしたページの有効期限を設定します。このモジュールがないと、訪問者は再読込みしたりコメントを残しても新しいページを参照できないかもしれません。"
 
 #: wp-cache.php:451
 msgid "Required to set caching information on supercache pages. IE7 users will see old pages without this module."
-msgstr "supercache のページでキャッシングの設定が必要です。IE7 ユーザーはこのモジュールがないと古いページを参照します。"
+msgstr "キャッシュしたページにキャッシュ情報を設定するために必要です。このモジュールがないと IE7 ユーザーは古いページを参照します。"
 
 #: wp-cache.php:451
 msgid "Required to serve compressed supercache files properly."
-msgstr "正しく圧縮された supercache ファイルを提供する必要があります。"
+msgstr "圧縮されたキャッシュファイルを正しく提供するために必要です。"
 
 #: wp-cache.php:438
 msgid "Add the rules yourself. Edit %s.htaccess and find the block of code enclosed by the lines <code># BEGIN WPSuperCache</code> and <code># END WPSuperCache</code>. There are two sections that look very similar. Just below the line <code>%%{HTTP:Cookie} !^.*(comment_author_|%s|wp-postpass_).*$</code> add these lines: (do it twice, once for each section)"
@@ -1705,6 +1729,10 @@ msgstr "パーマリンク構造エラー"
 msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
 msgstr "あなたもしくは管理者がこの機能を無効にする必要があります。詳細は <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> をご覧ください。残念ながら .htaccess ファイル内では無効にできません。php.ini 設定ファイルで無効にする必要があります。"
 
+#: wp-cache.php:260
+msgid "You or an administrator may be able to make it work by changing the group owner of the plugin scripts to match that of the web server user. The group owner of the %s/cache/ directory must also be changed. See the  <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details."
+msgstr "あなたもしくは管理者が、このプラグインスクリプトのグループオーナーを web サーバーのユーザーと一致するように変更すれば動作するようになるかもしれません。%s/cache/ ディレクトリのグループオーナーも変更する必要があります。詳細は <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> を参照してください。"
+
 #: wp-cache.php:258
 msgid "Your server is set up to check the owner of PHP scripts before allowing them to read and write files."
 msgstr "お使いのサーバーではファイルの読み書きの許可の前に PHP スクリプトのオーナーを確認するように設定されています。"
@@ -1783,7 +1811,7 @@ msgstr "Jetpack モバイルテーマ"
 
 #: plugins/domain-mapping.php:108
 msgid "Domain Mapping plugin detected! Please go to the Supercache plugins page and enable the domain mapping helper plugin."
-msgstr "ドメインマッピングプラグインを検知しました。Supercache プラグインの設定ページを開いてドメインマッピングのヘルパープラグインを有効化してください。"
+msgstr "ドメインマッピングプラグインを検知しました。Super Cache プラグインの設定ページを開いてドメインマッピングのヘルパープラグインを有効化してください。"
 
 #: plugins/domain-mapping.php:89
 msgid "Domain Mapping support is now %s"
@@ -1875,6 +1903,10 @@ msgstr "変更を保存"
 msgid "Skip https URLs to avoid \"mixed content\" errors"
 msgstr "\"mixed content\" エラーを避けるために https の URL をスキップする"
 
+#: ossdl-cdn.php:365
+msgid "These <a href=\"https://www.wikipedia.org/wiki/CNAME_record\">CNAMES</a> will be used in place of %1$s for rewriting (in addition to the off-site URL above). Use a comma as the delimiter. For pages with a large number of static files, this can improve browser performance. CNAMEs may also need to be configured on your CDN.<br />Example: %2$s"
+msgstr "上記 <a href=\"https://www.wikipedia.org/wiki/CNAME_record\">CNAME</a> は %1$s の代わりに rewriteで使用されます (さらに上のオフサイト URL に加えて)。複数の場合はコンマで区切ってください。静的ファイルが多数あるページの場合にブラウザーのパフォーマンスを改善できます。CNAME は CDN で設定する必要があるかもしれません。<br />例: %2$s"
+
 #: ossdl-cdn.php:362
 msgid "Additional CNAMES"
 msgstr "追加 CNAME"
@@ -1914,3 +1946,7 @@ msgstr "マルチサイトネットワーク上の場合は各サイトに別々
 #: ossdl-cdn.php:318
 msgid "<strong style=\"color: red\">WARNING:</strong> Test some static urls e.g., %s  to ensure your CDN service is fully working before saving changes."
 msgstr "<strong style=\"color: red\">注意:</strong> 変更を保存する前に静的な URL、%s などで CDN サービスが完全に動作していることを確認してください。"
+
+#: ossdl-cdn.php:317
+msgid "Your website probably uses lots of static files. Image, Javascript and CSS files are usually static files that could just as easily be served from another site or CDN. Therefore, this plugin replaces any links in the <code>wp-content</code> and <code>wp-includes</code> directories (except for PHP files) on your site with the URL you provide below. That way you can either copy all the static content to a dedicated host or mirror the files to a CDN by <a href=\"https://www.google.com/search?q=cdn+origin+pull\" target=\"_blank\">origin pull</a>."
+msgstr "サイトにはおそらく大量の静的ファイルがあるでしょう。通常、画像、JavaScript、CSS ファイルは、他のサイトや CDN からも同じように簡単に読み込める静的ファイルです。そのため、このプラグインはサイト上の <code>wp-content</code> や <code>wp-includes</code> ディレクトリ内のリンク (PHP ファイルを除く) を以下で指定した URL で置換します。こうすればすべての静的コンテンツを新しい専用ホストに移動したり、ファイルを <a href=\"https://www.google.com/search?q=cdn+origin+pull\" target=\"_blank\">Origin Pull</a> で CDN にミラーリングできます。"
