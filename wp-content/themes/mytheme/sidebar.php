@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>朝ドラ 再放送 花子とアン</h2>
+  <h2>NHK大河ドラマ2023 どうする家康</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
