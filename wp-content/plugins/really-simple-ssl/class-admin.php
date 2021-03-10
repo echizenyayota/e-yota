@@ -203,6 +203,8 @@ class rsssl_admin extends rsssl_front_end
             }
         }
 
+        add_action( 'admin_init', array( $this, 'check_upgrade' ), 10, 2 );
+
         //when SSL is enabled, and not enabled by user, ask for activation.
         add_action("admin_notices", array($this, 'show_notice_activate_ssl'), 10);
         add_action('rsssl_activation_notice', array($this, 'ssl_detected'), 10);
@@ -215,7 +217,6 @@ class rsssl_admin extends rsssl_front_end
         //settings page, form  and settings link in the plugins page
         add_action('admin_menu', array($this, 'add_settings_page'), 40);
 	    add_action('admin_init', array($this, 'create_form'), 40);
-	    add_action('admin_init', array($this, 'backward_compatibility'), 40);
         add_action('admin_init', array($this, 'listen_for_deactivation'), 40);
         add_action( 'update_option_rlrsssl_options', array( $this, 'maybe_remove_highlight_from_url' ), 50 );
 
@@ -246,14 +247,16 @@ class rsssl_admin extends rsssl_front_end
         if ( $prev_version && version_compare( $prev_version, '4.0', '<' ) ) {
             update_option('rsssl_remaining_tasks', true);
         }
-        update_option( 'rsssl_current_version', rsssl_version );
-    }
 
-	/**
-	 * Because of breaking changes in 4.0 we need to remove some legacy actions to ensure no issues occur
-	 */
-    public function backward_compatibility(){
-	    if ( function_exists('RSSSL_PRO') ) remove_action( 'admin_init', array(RSSSL_PRO()->rsssl_premium_options, 'add_pro_settings'),60);
+        if ( $prev_version && version_compare( $prev_version, '4.0.10', '<=' ) ) {
+            if (function_exists('is_wpe') && is_wpe()) {
+                $this->wp_redirect = true;
+                $this->htaccess_redirect = false;
+                $this->save_options();
+            }
+        }
+
+        update_option( 'rsssl_current_version', rsssl_version );
     }
 
     /**
@@ -2931,6 +2934,19 @@ class rsssl_admin extends rsssl_front_end
 		            ),
 	            ),
             ),
+            'uses_wp_engine' => array(
+                'condition' => array('rsssl_uses_wp_engine'),
+                'callback' => '_true_',
+                'score' => 5,
+                'output' => array(
+                    'true' => array(
+                        'msg' =>__('Due to a recent update by WP Engine, we have changed your settings automatically to adapt.', 'really-simple-ssl'),
+                        'url' => 'https://really-simple-ssl.com/really-simple-ssl-adapts-to-recent-wp-engine-changes/',
+                        'icon' => 'open',
+                        'dismissible' => true
+                    ),
+                ),
+            ),
         );
 
         $notices = apply_filters('rsssl_notices', $notices);
@@ -3849,7 +3865,7 @@ class rsssl_admin extends rsssl_front_end
             <span class="rsssl-slider rsssl-round"></span>
         </label>
         <?php
-        if (!$this->do_not_edit_htaccess && !is_writable($this->htaccess_file()))  {
+        if ( !$this->do_not_edit_htaccess && !is_writable($this->htaccess_file()))  {
             $comment = sprintf(__(".htaccess is currently not %swritable%s.", "really-simple-ssl"), '<a target="_blank" href="https://really-simple-ssl.com/knowledge-base/htaccess-wp-config-files-not-writable/">', '</a>');
 	        RSSSL()->rsssl_help->get_comment($comment);
         }
@@ -4386,6 +4402,15 @@ if (!function_exists('rsssl_uses_divi')) {
 	function rsssl_uses_divi() {
 		return defined( 'ET_CORE_PATH' );
 	}
+}
+
+if (!function_exists('rsssl_uses_wp_engine')) {
+    function rsssl_uses_wp_engine() {
+        if (function_exists('is_wpe') && is_wpe()) {
+            return true;
+        }
+        return false;
+    }
 }
 
 if (!function_exists('rsssl_ssl_activation_time_no_longer_then_3_days_ago')) {
