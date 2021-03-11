@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-05 14:16:01+0000\n"
+"PO-Revision-Date: 2021-03-10 05:44:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -626,7 +626,7 @@ msgstr "トップへ移動"
 #. whenever possible.
 #: wp-admin/includes/dashboard.php:1374
 msgid "We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland."
-msgstr "%s を見つけることができませんでした。別のお近くの都市でお試しください。例: 名古屋、神戸、長岡"
+msgstr "「%s」は見つかりませんでした。付近の他の都市をお試しください。例: 名古屋、神戸、長岡。"
 
 #: wp-admin/authorize-application.php:302
 msgid "You will be returned to the WordPress Dashboard, and no changes will be made."
@@ -2769,7 +2769,7 @@ msgstr "個人データリストナビゲーションを消去"
 
 #: wp-admin/erase-personal-data.php:91
 msgid "Filter erase personal data list"
-msgstr "個人データ消去リストを絞り込む"
+msgstr "個人データ消去一覧の絞り込み"
 
 #: wp-admin/export-personal-data.php:93
 msgid "Export personal data list"
@@ -2781,7 +2781,7 @@ msgstr "個人データリストナビゲーションをエクスポート"
 
 #: wp-admin/export-personal-data.php:91
 msgid "Filter export personal data list"
-msgstr "個人データエクスポートリストを絞り込む"
+msgstr "個人データエクスポート一覧の絞り込み"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:564
 #: wp-admin/includes/plugin-install.php:876
@@ -4094,7 +4094,7 @@ msgstr "第一の自由"
 
 #: wp-admin/includes/class-wp-application-passwords-list-table.php:30
 msgid "Created"
-msgstr "作成しました"
+msgstr "作成日"
 
 #. translators: First post content. %s: Site link.
 #: wp-admin/includes/upgrade.php:228
@@ -6581,7 +6581,7 @@ msgstr "ユーザー一覧ナビゲーション"
 
 #: wp-admin/users.php:81 wp-admin/network/users.php:236
 msgid "Filter users list"
-msgstr "ユーザー一覧を絞り込み"
+msgstr "ユーザー一覧の絞り込み"
 
 #: wp-admin/upload.php:260
 msgid "Media items list"
@@ -6666,7 +6666,7 @@ msgstr "バージョン %s を入手する"
 #. translators: %s: Meta box title.
 #: wp-admin/includes/template.php:1361
 msgid "Toggle panel: %s"
-msgstr "パネルを閉じる: %s"
+msgstr "パネルを切り替え: %s"
 
 #: wp-admin/includes/post.php:1787
 msgid "Saving revision&hellip;"
@@ -7524,7 +7524,7 @@ msgstr "すべてのカテゴリー"
 
 #: wp-admin/includes/class-wp-comments-list-table.php:499
 msgid "Filter by comment type"
-msgstr "コメントの種類で絞り込み"
+msgstr "コメントの種類で絞り込む"
 
 #. translators: %s: User's display name.
 #: wp-admin/includes/ajax-actions.php:3851
@@ -11771,7 +11771,7 @@ msgstr "表示オプション"
 #: wp-admin/includes/class-custom-background.php:299
 #: wp-admin/includes/class-custom-image-header.php:677
 msgid "Remove Image"
-msgstr "画像の削除"
+msgstr "画像を削除"
 
 #: wp-admin/users.php:584
 msgid "Other users have been removed."

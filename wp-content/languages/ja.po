@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-03 02:35:06+0000\n"
+"PO-Revision-Date: 2021-03-10 05:44:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2010,7 +2010,7 @@ msgstr "市区町村"
 #. translators: %s: wp_privacy_additional_user_profile_data
 #: wp-includes/user.php:3440
 msgid "Filter %s returned items with reserved names."
-msgstr "%s フィルターが予約済みの名称ををつ項目を返しました。"
+msgstr "%s フィルターが予約済みの名称を持つ項目を返しました。"
 
 #: wp-includes/media-template.php:441 wp-includes/media-template.php:664
 #: wp-admin/includes/media.php:3472
@@ -2174,7 +2174,7 @@ msgstr "メディア一覧"
 
 #: wp-includes/media.php:4481
 msgid "Filter media"
-msgstr "メディアを絞り込み"
+msgstr "メディアを絞り込む"
 
 #: wp-includes/media-template.php:316
 #: wp-includes/js/dist/block-library.js:19287
@@ -4829,7 +4829,7 @@ msgstr "「カスタム HTML」ウィジェットが追加されたのをご存�
 
 #: wp-includes/widgets/class-wp-widget-text.php:531
 msgid "New Custom HTML Widget"
-msgstr "新カスタム HTML ウィジェット"
+msgstr "新規カスタム HTML ウィジェット"
 
 #: wp-includes/widgets/class-wp-widget-text.php:496
 msgid "This widget may contain code that may work better in the &#8220;Custom HTML&#8221; widget. How about trying that widget instead?"
@@ -6745,7 +6745,7 @@ msgstr "このサイトにメディアをアップロードする権限があり
 #. translators: %s: rest_authentication_errors
 #: wp-includes/rest-api/class-wp-rest-server.php:353
 msgid "The REST API can no longer be completely disabled, the %s filter can be used to restrict access to the API, instead."
-msgstr "REST API を完全に無効化することはできなくなりました。代わりに %s フィルターを使って API へのアクセスを制限できます。"
+msgstr "REST API を完全に無効化することはできなくなりました。代わりに %s フィルターを使って API へのアクセスを制限できます。"
 
 #: wp-includes/post.php:1744 wp-admin/edit-form-advanced.php:419
 msgid "Page Attributes"
@@ -8076,11 +8076,11 @@ msgstr "投稿リストナビゲーション"
 
 #: wp-includes/post.php:1751
 msgid "Filter pages list"
-msgstr "固定ページリストの絞り込み"
+msgstr "固定ページ一覧を絞り込む"
 
 #: wp-includes/post.php:1751
 msgid "Filter posts list"
-msgstr "投稿リストの絞り込み"
+msgstr "投稿一覧を絞り込む"
 
 #: wp-includes/post.php:1743
 msgid "Page Archives"
@@ -9510,11 +9510,11 @@ msgstr "メディアを検索"
 #: wp-includes/media.php:4400
 #: wp-admin/includes/class-wp-media-list-table.php:271
 msgid "Filter by type"
-msgstr "タイプで絞り込み"
+msgstr "タイプで絞り込む"
 
 #: wp-includes/post.php:1752 wp-includes/media.php:4399
 msgid "Filter by date"
-msgstr "日付で絞り込み"
+msgstr "日付で絞り込む"
 
 #: wp-includes/media.php:4387
 #: wp-admin/includes/class-wp-media-list-table.php:150
@@ -10841,7 +10841,7 @@ msgstr "検索:"
 #: wp-includes/general-template.php:326
 msgctxt "placeholder"
 msgid "Search &hellip;"
-msgstr "検索 &hellip;"
+msgstr "検索&hellip;"
 
 #: wp-includes/script-loader.php:1171 wp-includes/functions.php:6642
 msgid "Session expired"
@@ -15167,7 +15167,7 @@ msgstr "OK"
 
 #: wp-includes/media-template.php:1052 wp-includes/media-template.php:1174
 msgid "Image URL"
-msgstr "画像の URL"
+msgstr "画像 URL"
 
 #. translators: Default privacy policy heading.
 #: wp-includes/media.php:4354 wp-includes/media.php:4919

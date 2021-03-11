@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-26 10:27:31+0000\n"
+"PO-Revision-Date: 2021-03-10 07:29:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -120,10 +120,10 @@ msgstr "背景色"
 msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
 msgstr "このテーマは WordPress 5.3 より新しいバージョンが必要です。現在のバージョンは %s です。アップグレードしてください。"
 
-#. translators: %: page number.
-#: image.php:46 template-parts/content/content-page.php:36
+#. translators: %: Page number.
+#: image.php:46 template-parts/content/content-single.php:30
+#: template-parts/content/content-page.php:36
 #: template-parts/content/content.php:36
-#: template-parts/content/content-single.php:30
 msgid "Page %"
 msgstr "ページ%"
 
@@ -166,7 +166,7 @@ msgstr "XS"
 msgid "Leave a comment"
 msgstr "コメントする"
 
-#. translators: %s: comment count number.
+#. translators: %s: Comment count number.
 #: comments.php:40
 msgctxt "Comments title"
 msgid "%s comment"
@@ -209,11 +209,6 @@ msgstr "「自画像」ベルト・モリゾ作"
 #: inc/block-patterns.php:84
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "「水仙」ベルト・モリゾ作"
-
-#: inc/starter-content.php:43 inc/block-patterns.php:72
-#: inc/block-patterns.php:107
-msgid "&#8220;Roses Tremieres&#8221; by Berthe Morisot"
-msgstr "「立葵」ベルト・モリゾ作"
 
 #: inc/template-functions.php:399
 msgctxt "Post password form"
@@ -290,10 +285,6 @@ msgstr "ブローニュの森で"
 msgid "Villa with Orange Trees, Nice"
 msgstr "オレンジのなかのヴィラ、ニース"
 
-#: inc/block-patterns.php:107
-msgid "Roses Tremieres"
-msgstr "立葵"
-
 #: inc/block-patterns.php:96
 msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
 msgstr "「オレンジのなかのヴィラ、ニース」ベルト・モリゾ作"
@@ -328,7 +319,7 @@ msgstr "泥まんじゅう遊び"
 msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
 msgstr "「泥まんじゅう遊び」ベルト・モリゾ作"
 
-#. translators: %s: parent post.
+#. translators: %s: Parent post.
 #: image.php:59
 msgid "Published in %s"
 msgstr "投稿: %s"
@@ -349,14 +340,13 @@ msgstr "厚みのある"
 msgid "On Archive Pages, posts show:"
 msgstr "アーカイブページで投稿に表示:"
 
-#. translators: 1: Link to authors posts. 2: Author name.
-#: template-parts/post/author-bio.php:20
-msgid "View all of %2$s's posts."
-msgstr "%2$sのすべての投稿を表示。"
+#. translators: %s: Author name.
+#: template-parts/post/author-bio.php:31
+msgid "View all of %s's posts."
+msgstr "%sのすべての投稿を表示。"
 
-#. translators: 1: Author name.
-#. translators: %s author name.
-#: template-parts/post/author-bio.php:15 inc/template-tags.php:49
+#. translators: %s: Author name.
+#: inc/template-tags.php:49 template-parts/post/author-bio.php:19
 msgid "By %s"
 msgstr "作成者: %s"
 
@@ -368,10 +358,10 @@ msgstr "お探しのコンテンツを見つけられませんでした。検索
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "検索キーワードに一致するものが見つかりませんでした。 別のキーワードで試してみてください。"
 
-#. translators: 1: link to WP admin new post page.
+#. translators: %s: Link to WP admin new post page.
 #: template-parts/content/content-none.php:43
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%1$s\">ここから始めましょう</a>。"
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "最初の投稿を公開する準備はできましたか ? <a href=\"%s\">ここから始めましょう</a>。"
 
 #: single.php:40
 msgid "Previous post"
@@ -381,7 +371,7 @@ msgstr "前の投稿"
 msgid "Next post"
 msgstr "次の投稿"
 
-#. translators: %s: parent post link.
+#. translators: %s: Parent post link.
 #: single.php:25
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
 msgstr "<span class=\"meta-nav\">公開: </span><span class=\"post-title\">%s</span>"
@@ -395,36 +385,36 @@ msgstr "検索"
 msgid "Search&hellip;"
 msgstr "検索&hellip;"
 
-#. translators: %d: the number of search results.
+#. translators: %d: The number of search results.
 #: search.php:33
 msgid "We found %d result for your search."
 msgid_plural "We found %d results for your search."
 msgstr[0] "検索結果が%d件見つかりました。"
 
-#. translators: %s: search term.
+#. translators: %s: Search term.
 #: template-parts/content/content-none.php:22 search.php:21
 msgid "Results for \"%s\""
 msgstr "「%s」の検索結果"
 
-#. translators: %s: list of tags.
+#. translators: %s: List of tags.
 #: inc/template-tags.php:118 inc/template-tags.php:162
 msgid "Tagged %s"
 msgstr "タグ: %s"
 
-#. translators: %s: list of categories.
+#. translators: %s: List of categories.
 #: inc/template-tags.php:108 inc/template-tags.php:152
 msgid "Categorized as %s"
 msgstr "カテゴリー: %s"
 
-#. translators: used between list items, there is a space after the comma.
+#. translators: Used between list items, there is a space after the comma.
 #: inc/template-tags.php:104 inc/template-tags.php:114
 #: inc/template-tags.php:148 inc/template-tags.php:158
 msgid ", "
 msgstr "、"
 
 #. translators: %s: Name of current post. Only visible to screen readers.
-#: image.php:68 image.php:93 template-parts/content/content-page.php:48
-#: inc/template-tags.php:92 inc/template-tags.php:135
+#: inc/template-tags.php:92 inc/template-tags.php:135 image.php:68 image.php:93
+#: template-parts/content/content-page.php:48
 msgid "Edit %s"
 msgstr "編集 %s"
 
@@ -546,15 +536,15 @@ msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "フルサイズ"
 
-#. translators: %s: publish date.
+#. translators: %s: Publish date.
 #: inc/template-tags.php:29
 msgid "Published %s"
 msgstr "投稿日: %s"
 
-#: image.php:43 template-parts/content/content-page.php:33
+#: comments.php:62 inc/template-tags.php:228 image.php:43
+#: template-parts/content/content-single.php:27
+#: template-parts/content/content-page.php:33
 #: template-parts/content/content.php:33
-#: template-parts/content/content-single.php:27 inc/template-tags.php:228
-#: comments.php:62
 msgid "Page"
 msgstr "ページ"
 
@@ -566,8 +556,8 @@ msgstr "閉じる"
 msgid "Menu"
 msgstr "メニュー"
 
-#: functions.php:76 template-parts/header/site-nav.php:13
-#: inc/starter-content.php:154
+#: inc/starter-content.php:154 functions.php:76
+#: template-parts/header/site-nav.php:13
 msgid "Primary menu"
 msgstr "メインメニュー"
 
@@ -647,7 +637,7 @@ msgstr "緑"
 msgid "Gray"
 msgstr "グレー"
 
-#: functions.php:223 inc/block-styles.php:107
+#: inc/block-styles.php:107 functions.php:223
 msgid "Dark gray"
 msgstr "ダークグレー"
 
@@ -688,7 +678,7 @@ msgstr "極小"
 msgid "Proudly powered by %s."
 msgstr "Proudly powered by %s."
 
-#: functions.php:77 inc/starter-content.php:165 footer.php:24
+#: footer.php:24 inc/starter-content.php:165 functions.php:77
 msgid "Secondary menu"
 msgstr "サブメニュー"
 
