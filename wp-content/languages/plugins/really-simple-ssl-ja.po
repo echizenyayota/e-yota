@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-02 07:41:57+0000\n"
+"PO-Revision-Date: 2021-03-11 05:22:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,7 +11,11 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
 
-#: class-admin.php:2679
+#: class-admin.php:2943
+msgid "Due to a recent update by WP Engine, we have changed your settings automatically to adapt."
+msgstr "最近の WP エンジンの更新に基づいて、自動で設定を変更し適応させました。"
+
+#: class-admin.php:2682
 msgid "The Really Simple SSL plugin folder in the /wp-content/plugins/ directory has been renamed to %s. This might cause issues when deactivating, or with premium add-ons. To fix this you can rename the Really Simple SSL folder back to the default %s."
 msgstr "wp-content/plugins/ ディレクトリ内の Really Simple SSL プラグインのフォルダ名が %s に変更されました。このことで無効化したり、プレミアム拡張機能を使用する際に問題が発生する可能性があります。修正するには、Really Simple SSL フォルダ名を標準名の %s に戻してください。"
 
@@ -39,7 +43,7 @@ msgstr "セキュリティー用ヘッダーのテスト"
 msgid "SSL Status Test"
 msgstr "SSL 状態のテスト"
 
-#: class-admin.php:2757
+#: class-admin.php:2760
 msgid "No SSL detected"
 msgstr "SSL 検出無し"
 
@@ -75,171 +79,171 @@ msgstr "Really Simple SSL は SSL 証明書を検出しましたが、SSL 利用
 msgid "SSL is not enabled."
 msgstr "SSL は有効化されていません。"
 
-#: class-admin.php:4038
+#: class-admin.php:4054
 msgid "Deactivate, revert to http"
 msgstr "無効化、HTTP に戻す"
 
-#: class-admin.php:4037
+#: class-admin.php:4053
 msgid "Deactivate, keep https"
 msgstr "無効化、HTTPS のままに"
 
-#: class-admin.php:4024
+#: class-admin.php:4040
 msgid "The WordPress 301 redirect will stop working"
 msgstr "WordPress による301転送は動作を停止します"
 
-#: class-admin.php:4019
+#: class-admin.php:4035
 msgid "Deactivate, and revert to http. This will remove all changes by the plugin."
 msgstr "無効化し、HTTP に戻す。これは本プラグインによるすべての変更を消去します。"
 
-#: class-admin.php:4018
+#: class-admin.php:4034
 msgid "Deactivate, but stay on SSL."
 msgstr "無効化しますが、SSL のままを保ちます。"
 
-#: class-admin.php:4016
+#: class-admin.php:4032
 msgid "To deactivate the plugin correctly, please select if you want to:"
 msgstr "本プラグインを正しく無効化するために選択してください:"
 
-#: class-admin.php:3821
+#: class-admin.php:3837
 msgid "If the setting 'stop editing the .htaccess file' is enabled, you can't change this setting."
 msgstr "設定の「.htaccess ファイルの編集を停止」が有効であれば、この設定は変更できません。"
 
-#: class-admin.php:3680
+#: class-admin.php:3696
 msgid "Enable this option to permanently dismiss all +1 notices in the 'Your progress' tab"
 msgstr "このオプションを有効にすると、「進行状態」タブのすべての+1通知が永久的に削除されます。"
 
-#: class-admin.php:3677
+#: class-admin.php:3693
 msgid "Fire mixed content fixer with different method"
 msgstr "混在コンテンツ修正機能を異なる方法で実行"
 
-#: class-admin.php:3659
+#: class-admin.php:3675
 msgid "Enable WordPress 301 redirect"
 msgstr "WordPress 301転送の有効化"
 
-#: class-admin.php:3658
+#: class-admin.php:3674
 msgid "Redirects all requests over HTTP to HTTPS using a PHP 301 redirect. Enable if the .htaccess redirect cannot be used, for example on NGINX servers."
 msgstr "PHP の301転送を使い、HTTP へのすべてのアクセスを HTTPS に転送します。NGINX サーバーなど、.htaccess 転送が利用できない場合に有効にします。"
 
-#: class-admin.php:3626
+#: class-admin.php:3642
 msgid "Copied!"
 msgstr "コピーしました !"
 
-#: class-admin.php:3620
+#: class-admin.php:3636
 msgid " You still have %s tasks open."
 msgstr "%s個の作業待ちがあります。"
 
-#: class-admin.php:3525
+#: class-admin.php:3541
 msgid "Premium"
 msgstr "プレミアム"
 
-#: class-admin.php:3523
+#: class-admin.php:3539
 msgid "Open"
 msgstr "作業待ち"
 
-#: class-admin.php:3521
+#: class-admin.php:3537
 msgid "Warning"
 msgstr "警告"
 
-#: class-admin.php:3519
+#: class-admin.php:3535
 msgid "Completed"
 msgstr "完了"
 
-#: class-admin.php:3452
+#: class-admin.php:3468
 msgid "Instructions manual"
 msgstr "説明書"
 
-#: class-admin.php:3397
+#: class-admin.php:3413
 msgid "Upgrade to pro"
 msgstr "プロへアップグレード"
 
-#: class-admin.php:3399
+#: class-admin.php:3415
 msgid "Installed"
 msgstr "インストール済み"
 
-#: class-admin.php:3394
+#: class-admin.php:3410
 msgid "Install"
 msgstr "インストール"
 
-#: class-admin.php:3281
+#: class-admin.php:3297
 msgid "Tips & Tricks"
 msgstr "ヒント"
 
-#: class-admin.php:3035
+#: class-admin.php:3051
 msgid "%sEnable%s or %sdismiss%s"
 msgstr "%s有効化%sまたは%s非表示%s"
 
-#: class-admin.php:3032
+#: class-admin.php:3048
 msgid "%sMore info%s or %sdismiss%s"
 msgstr "%s詳細%sまたは%s非表示%s"
 
-#: class-admin.php:2929
+#: class-admin.php:2932
 msgid "Recommended security headers not enabled (%sRead more%s)."
 msgstr "推奨するセキュリティヘッダーが有効ではありません (%s詳細%s)"
 
-#: class-admin.php:2885
+#: class-admin.php:2888
 msgid "Your site uses Divi. This can require some additional steps before getting the secure lock."
 msgstr "このサイトは Divi を使用中です。そのため安全性を示す鍵マークを取得するには、少し追加の手順が必要です。"
 
-#: class-admin.php:2871
+#: class-admin.php:2874
 msgid "Your site uses Elementor. This can require some additional steps before getting the secure lock."
 msgstr "このサイトは Elementor を使用中です。そのため安全性を示す鍵マークを取得するには、少し追加の手順が必要です。"
 
-#: class-admin.php:2856
+#: class-admin.php:2859
 msgid "The .htaccess redirect rules selected by this plugin failed in the test. Set manually or dismiss to leave on WordPress redirect."
 msgstr "本プラグインに選択された .htaccess による転送ルールはテストに失敗しました。手動で設定するか、WordPress による転送にするため非表示にしてください。"
 
-#: class-admin.php:2850
+#: class-admin.php:2853
 msgid "The %s file is not writable. You can either use the WordPress redirect, add the rules manually, or set the file to %swritable%s."
 msgstr "%s ファイルは書き込み可能ではありません。WordPress による転送を使用するか、手動でルールを追加するか、ファイルを%s書き込み可能%sに設定してください。"
 
-#: class-admin.php:2838
+#: class-admin.php:2841
 msgid "WordPress 301 redirect enabled. We recommend to enable a 301 .htaccess redirect."
 msgstr "WordPress による301転送が有効です。.htaccess による.301転送を推奨します。"
 
-#: class-admin.php:2798
+#: class-admin.php:2801
 msgid "Mixed content fixer not enabled. Enable the option to fix mixed content on your site."
 msgstr "混合コンテンツ修正機能が有効になっていません。このサイトの混合コンテンツを修正するオプションを有効にします。"
 
-#: class-admin.php:2787
+#: class-admin.php:2790
 msgid "The mixed content fixer is active, but was not detected on the frontpage."
 msgstr "混在コンテンツ修正機能は有効化されていますが、フロントページからは検出されませんでした。"
 
-#: class-admin.php:2780
+#: class-admin.php:2783
 msgid "Really Simple SSL has received no response from the webpage."
 msgstr "このウェブページからの応答がありませんでした。"
 
-#: class-admin.php:2758
+#: class-admin.php:2761
 msgid "No SSL detected. See our guide on how to %sget a free SSL certificate%s. If you do have an SSL certificate, try to reload this page over https by clicking this link: %sReload over https.%s"
 msgstr "SSL の検出なし。%s無料の SSL 証明書を取得する%sための解説をご覧ください。SSL証明書をお持ちであれば、以下のリンクをクリックして、このページを https で再読み込みしてください。%shttps を介して再読み込み。%s"
 
-#: class-admin.php:2753
+#: class-admin.php:2756
 msgid "Cannot activate SSL due to system configuration."
 msgstr "システムの設定が原因で SSL を有効化できません"
 
-#: class-admin.php:2742
+#: class-admin.php:2745
 msgid "SSL is not enabled yet."
 msgstr "SSL はまだ有効化されていません。"
 
-#: class-admin.php:2725
+#: class-admin.php:2728
 msgid "Really Simple SSL 4.0. Learn more about our newest major release."
 msgstr "Really Simple SSL バージョン 4.0。最新版についてご確認ください。"
 
-#: class-admin.php:2724
+#: class-admin.php:2727
 msgid "https://really-simple-ssl.com/really-simple-ssl-4-a-new-dashboard"
 msgstr "https://really-simple-ssl.com/really-simple-ssl-4-a-new-dashboard"
 
-#: class-admin.php:2695
+#: class-admin.php:2698
 msgid "SSL is now activated. Check if your website is secure by following this article."
 msgstr "SSLが有効になりました。この記事をお読みになり、このサイトが安全かご確認ください。"
 
-#: class-admin.php:2646
+#: class-admin.php:2649
 msgid "No recommended redirect rules detected."
 msgstr "推奨する転送ルールが検出されません。"
 
-#: class-admin.php:2567
+#: class-admin.php:2570
 msgid "General"
 msgstr "全般"
 
-#: class-admin.php:497
+#: class-admin.php:500
 msgid "Before you migrate, please check for: "
 msgstr "移行前に以下をご確認ください:"
 
@@ -283,15 +287,15 @@ msgstr "サイトを変換中。この処理が完了したかは、このペー
 msgid "Setup"
 msgstr "設定"
 
-#: class-admin.php:3289 class-multisite.php:398
+#: class-multisite.php:398 class-admin.php:3305
 msgid "Our plugins"
 msgstr "私たちのほかのプラグイン"
 
-#: class-admin.php:3296 class-multisite.php:390
+#: class-multisite.php:390 class-admin.php:3312
 msgid "Support forum"
 msgstr "サポート用掲示板"
 
-#: class-admin.php:3266 class-multisite.php:374
+#: class-multisite.php:374 class-admin.php:3282
 msgid "Your progress"
 msgstr "進行状態"
 
@@ -299,12 +303,12 @@ msgstr "進行状態"
 msgid "Choose option"
 msgstr "選択してください"
 
-#: class-admin.php:4098 class-multisite.php:236
+#: class-multisite.php:236 class-admin.php:4114
 msgid "Upgrade to premium"
 msgstr "プレミアム版入手"
 
-#: class-admin.php:2591 class-admin.php:4090 class-multisite.php:228
-#: class-multisite.php:447
+#: class-multisite.php:228 class-multisite.php:447 class-admin.php:2594
+#: class-admin.php:4106
 msgid "Support"
 msgstr "サポート掲示板"
 
@@ -340,11 +344,11 @@ msgstr "プロ版を入手 !"
 msgid "SSL Not activated"
 msgstr "SSL は有効化されていません"
 
-#: class-admin.php:3616 grid/templates/progress.php:39
+#: grid/templates/progress.php:39 class-admin.php:3632
 msgid "SSL is not yet enabled on this site."
 msgstr "このサイトでまだ SSL が有効化されていません。"
 
-#: class-admin.php:3612 grid/templates/progress.php:33
+#: grid/templates/progress.php:33 class-admin.php:3628
 msgid "Basic SSL configuration finished! Improve your score with %sReally Simple SSL Pro%s."
 msgstr "基本的な SSL 設定は完了です ! %sReally Simple SSL プロ%sでさらに評価を改善できます。"
 
@@ -352,12 +356,12 @@ msgstr "基本的な SSL 設定は完了です ! %sReally Simple SSL プロ%sで
 msgid "SSL configuration finished!"
 msgstr "SSL の設定は完了です !"
 
-#: class-admin.php:3619 grid/templates/progress.php:25
+#: grid/templates/progress.php:25 class-admin.php:3635
 msgid "You still have %s task open."
 msgid_plural "You still have %s tasks open."
 msgstr[0] "まだ%s作業あります。"
 
-#: class-admin.php:3614 grid/templates/progress.php:25
+#: grid/templates/progress.php:25 class-admin.php:3630
 msgid "SSL is activated on your site."
 msgstr "SSL はこのサイト上で有効化されています。"
 
@@ -443,31 +447,31 @@ msgstr "Really Simple プラグイン"
 msgid "Really Simple SSL Pro"
 msgstr "Really Simple SSL プロ"
 
-#: class-admin.php:2315
+#: class-admin.php:2318
 msgid "Hi, Really Simple SSL has kept your site secure for some time now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
 msgstr "こんにちは Really Simple SSL は、このサイトの安全性を維持しています! お時間があれば、評判を広めるために WordPress.org に評価を残すことをご検討ください。私たちは強く感謝します。質問や意見があれば、私たちへの%sメッセージ%sをお待ちしております。"
 
-#: class-admin.php:517
+#: class-admin.php:520
 msgid "Check out Really Simple SSL Pro"
 msgstr "Really Simple SSL プロを検討"
 
-#: class-admin.php:666
+#: class-admin.php:669
 msgid "Get ready with PRO!"
 msgstr "プロ版で備える"
 
-#: class-admin.php:501
+#: class-admin.php:504
 msgid "Images, stylesheets or scripts from a domain without an SSL certificate: remove them or move to your own server"
 msgstr "SSL 証明書のないドメインからの画像やスタイルシート、スクリプト: 削除するか、自身のサーバーに移動してください"
 
-#: class-admin.php:2325
+#: class-admin.php:2328
 msgid "Don't show again"
 msgstr "今後表示しない"
 
-#: class-admin.php:2804
+#: class-admin.php:2807
 msgid "The mixed content fixer could not be detected due to a cURL error: %s. cURL errors are often caused by an outdated version of PHP or cURL and don't affect the front-end of your site. Contact your hosting provider for a fix."
 msgstr "cURL エラーが原因で混在コンテンツ修正機能が検出できませんでした: %s。cURL エラーは多くの場合、古いバージョンの PHP や cURL が原因で発生し、このサイトのフロントエンドには影響しません。修正するにはホスティング業者にお問い合わせください。"
 
-#: class-admin.php:2792
+#: class-admin.php:2795
 msgid "Error occurred when retrieving the webpage."
 msgstr "ページの取得中にエラーが発生しました。"
 
@@ -487,19 +491,19 @@ msgstr "SSL へと301転送するよう設定しました。これは SEO 対策
 msgid "301 SSL redirect enabled"
 msgstr "301 SSL 転送は有効です"
 
-#: class-admin.php:3681
+#: class-admin.php:3697
 msgid "Dismiss all Really Simple SSL notices"
 msgstr "Really Simple SSL の通知をすべて非表示"
 
-#: class-admin.php:2918
+#: class-admin.php:2921
 msgid "Secure cookie settings not enabled (%sRead more%s)."
 msgstr "セキュアクッキーの設定が有効化されていません (%s詳細%s)"
 
-#: class-admin.php:2902
+#: class-admin.php:2905
 msgid "HTTP Strict Transport Security is not enabled %s(Read more)%s."
 msgstr "HTTP Strict Transport Security が有効化されていません (%s詳細%s)"
 
-#: class-admin.php:2833
+#: class-admin.php:2836
 msgid "301 redirect to https set: .htaccess redirect."
 msgstr "https への301転送を設定中: .htaccess による転送です。"
 
@@ -507,7 +511,7 @@ msgstr "https への301転送を設定中: .htaccess による転送です。"
 msgid "If the conversion does not proceed after a few minutes, click %shere%s to force the conversion process."
 msgstr "数分経過後に変換が進まなければ、%s強制的に変換を実行%sをクリックしてください。"
 
-#: class-admin.php:2665
+#: class-admin.php:2668
 msgid "The 'force-deactivate.php' file has to be renamed to .txt. Otherwise your ssl can be deactivated by anyone on the internet."
 msgstr "ファイル force-deactivate.php の名前を .txt に変更する必要があります。そうしなければ、インターネット上の誰でもが SSL を無効化できてしまいます。"
 
@@ -519,15 +523,15 @@ msgstr "毎分"
 msgid "Conversion of websites %s percent complete."
 msgstr "サイト変換が%s%完了しました。"
 
-#: class-admin.php:2324
+#: class-admin.php:2327
 msgid "Maybe later"
 msgstr "後ほど"
 
-#: class-admin.php:2323
+#: class-admin.php:2326
 msgid "Leave a review"
 msgstr "レビューを書く"
 
-#: class-admin.php:2317
+#: class-admin.php:2320
 msgid "Hi, Really Simple SSL has kept your site secure for a month now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
 msgstr "こんにちは Really Simple SSL は、1か月間このサイトを安全性を維持しました! お時間があれば、WordPress.org に評価を残すことをご検討ください。私たちはとても感謝することでしょう。質問や意見があれば、私たちへの%sメッセージ%sをお待ちしております。"
 
@@ -543,31 +547,31 @@ msgstr "有効な証明書がなければ、サブドメインでも強制的に
 msgid "You run a Multisite installation with subdomains, but your site doesn't have a wildcard certificate."
 msgstr "サブドメインのあるマルチサイトのインストールを実行していますが、このサイトにはワイルドカード証明書がありません。"
 
-#: class-admin.php:4036
+#: class-admin.php:4052
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: class-admin.php:4026
+#: class-admin.php:4042
 msgid "The .htaccess redirect will remain active"
 msgstr "* .htaccess 転送は有効なままです"
 
-#: class-admin.php:4025
+#: class-admin.php:4041
 msgid "Your site address will remain https://"
 msgstr "* サイトのアドレスは https:// のままです"
 
-#: class-admin.php:4023
+#: class-admin.php:4039
 msgid "The mixed content fixer will stop working"
 msgstr "* 混在コンテンツ修正機能は動作を停止"
 
-#: class-admin.php:4021
+#: class-admin.php:4037
 msgid "Deactivating the plugin while keeping SSL will do the following:"
 msgstr "SSL を維持したままプラグインを停止するとこうなります。"
 
-#: class-admin.php:4003
+#: class-admin.php:4019
 msgid "Are you sure?"
 msgstr "本当によろしいですか ?"
 
-#: class-admin.php:3573
+#: class-admin.php:3589
 msgid "More info"
 msgstr "詳細"
 
@@ -575,7 +579,7 @@ msgstr "詳細"
 msgid "Really Simple SSL and Really Simple SSL add-ons do not process any personal identifiable information, so the GDPR does not apply to these plugins or usage of these plugins on your website. You can find our privacy policy <a href=\"%s\" target=\"_blank\">here</a>."
 msgstr "Really Simple SSL とその拡張機能は、個人を特定する情報を扱いません。そのため GDPR (EU一般データ保護規則) はこれらのプラグインの使用には適用されません。<a href=\"%s\" target=\"_blank\">個人情報保護方針</a>は、こちらでご覧になれます。"
 
-#: class-admin.php:507
+#: class-admin.php:510
 msgid "We strongly recommend to create a %sbackup%s of your site before activating SSL"
 msgstr "SSL を有効化する前に、このサイトを%sバックアップ%sすることを強く推奨します"
 
@@ -583,19 +587,19 @@ msgstr "SSL を有効化する前に、このサイトを%sバックアップ%s�
 msgid "https://really-simple-plugins.com"
 msgstr "https://really-simple-plugins.com"
 
-#: class-admin.php:2914
+#: class-admin.php:2917
 msgid "Secure cookies set."
 msgstr "セキュアクッキーを設定しました"
 
-#: class-admin.php:2710
+#: class-admin.php:2713
 msgid "Don't forget to change your settings in Google Analytics and Search Console."
 msgstr "Google アナリティクスと Search Console の設定変更をお忘れなく。"
 
-#: class-admin.php:3676
+#: class-admin.php:3692
 msgid "If this option is set to true, the mixed content fixer will fire on the init hook instead of the template_redirect hook. Only use this option when you experience problems with the mixed content fixer.\""
 msgstr "このオプションを有効にすると、混合コンテンツ修正機能は、template_redirect のフックではなく init のフックで実行されます。このオプションは、混合コンテンツ修正に問題がある場合にのみ使用してください。"
 
-#: class-admin.php:513
+#: class-admin.php:516
 msgid "You can also let the automatic scan of the pro version handle this for you, and get premium support, increased security with HSTS and more!"
 msgstr "また、有料版の自動スキャンにこれを処理させ、プレミアムサポートと HSTS を含むセキュリティ強化を入手することもできます。"
 
@@ -623,47 +627,47 @@ msgstr "ネットワーク全体"
 msgid "Enable SSL"
 msgstr "SSL の有効化"
 
-#: class-admin.php:3788 class-admin.php:3818 class-admin.php:4059
+#: class-admin.php:3804 class-admin.php:3834 class-admin.php:4075
 msgid "This option is enabled on the network menu."
 msgstr "この設定はネットワークメニューから有効化されています。"
 
-#: class-admin.php:508
+#: class-admin.php:511
 msgid "You may need to login in again."
 msgstr "再度ログインしてください。"
 
-#: class-admin.php:3814
+#: class-admin.php:3830
 msgid "Before you enable the htaccess redirect, make sure you know how to %sregain access%s to your site in case of a redirect loop."
 msgstr "htaccess による転送を有効にする前に、転送ループが起きた場合にこのサイトへの%sアクセスを回復%sする方法を確認してください。"
 
-#: class-admin.php:3663
+#: class-admin.php:3679
 msgid "A .htaccess redirect is faster and works better with caching. Really Simple SSL detects the redirect code that is most likely to work (99% of websites), but this is not 100%. Make sure you know how to regain access to your site if anything goes wrong!"
 msgstr ".htaccess による転送は高速で、キャッシュともうまく動作します。Really Simple SSL は最も動作する可能性の高い (99%のサイトで動作) 転送コードを検出しますが、100%ではありません。問題発生時に、サイトへのアクセスを回復する方法について確認してください !"
 
-#: class-admin.php:3664 class-site-health.php:155
+#: class-site-health.php:155 class-admin.php:3680
 msgid "Enable 301 .htaccess redirect"
 msgstr "301 .htaccess 転送を有効化"
 
-#: class-admin.php:2821
+#: class-admin.php:2824
 msgid "No 301 redirect is set. Enable the WordPress 301 redirect in the settings to get a 301 permanent redirect."
 msgstr "301転送が設定されていません。301による恒久的転送を行うには、設定から WordPress の301転送を有効にしてください。"
 
-#: class-admin.php:2844
+#: class-admin.php:2847
 msgid "Enable a .htaccess redirect or WordPress redirect in the settings to create a 301 redirect."
 msgstr "301転送を作成するには、設定から .htaccess による転送か、WordPress による転送を有効にします。"
 
-#: class-admin.php:3653
+#: class-admin.php:3669
 msgid "In most cases you need to leave this enabled, to prevent mixed content issues on your site."
 msgstr "多くの場合、サイト内の混在コンテンツの問題が発生することを防ぐために、有効のままにしておく必要があります。"
 
-#: class-admin.php:3670
+#: class-admin.php:3686
 msgid "If you want to customize the Really Simple SSL .htaccess, you need to prevent Really Simple SSL from rewriting it. Enabling this option will do that."
 msgstr "Really Simple SSL の .htaccess をカスタマイズするには、Really Simple SSL 上書きしないようにする必要があります。この設定を有効化してください。"
 
-#: class-admin.php:2898
+#: class-admin.php:2901
 msgid "HTTP Strict Transport Security was enabled."
 msgstr "HTTP Strict Transport Security が有効化されました。"
 
-#: class-admin.php:2817
+#: class-admin.php:2820
 msgid "301 redirect to https set."
 msgstr "HTTPS への301転送を設定: "
 
@@ -671,7 +675,7 @@ msgstr "HTTPS への301転送を設定: "
 msgid "You can also let the automatic scan of the pro version handle this for you, and get premium support and increased security with HSTS included."
 msgstr "また、プロ版の自動スキャンにこれを処理させ、プレミアムサポートと HSTS を含むセキュリティ強化を入手することもできます。"
 
-#: class-admin.php:4092 class-multisite.php:230
+#: class-multisite.php:230 class-admin.php:4108
 msgid "Premium Support"
 msgstr "プレミアムサポート"
 
@@ -679,7 +683,7 @@ msgstr "プレミアムサポート"
 msgid "Check out Really Simple SSL Premium"
 msgstr "Really Simple SSL プレミアムを検討する"
 
-#: class-admin.php:663
+#: class-admin.php:666
 msgid "Go ahead, activate SSL!"
 msgstr "はい、SSL を有効化します。"
 
@@ -687,7 +691,7 @@ msgstr "はい、SSL を有効化します。"
 msgid "SSL is not enabled yet"
 msgstr "SSL はまだ有効化されていません"
 
-#: class-admin.php:2738
+#: class-admin.php:2741
 msgid "SSL is enabled on your site."
 msgstr "SSL はこのサイト上で有効化されています。"
 
@@ -695,31 +699,31 @@ msgstr "SSL はこのサイト上で有効化されています。"
 msgid "SSL Activated"
 msgstr "SSL 有効化済み"
 
-#: class-admin.php:2219
+#: class-admin.php:2222
 msgid "Because your server does not pass a variable with which WordPress can detect SSL, WordPress may create redirect loops on SSL."
 msgstr "WordPress が SSL 上で転送ループを起こす可能性があります。WordPress が SSL を検出するための変数を、このサーバーが出力していないことが原因です。"
 
-#: class-admin.php:2213
+#: class-admin.php:2216
 msgid "Or set your wp-config.php to %swritable%s and reload this page."
 msgstr "または wp-config.php を%s書き込み可能%sに設定し、このページを再読み込みしてください。"
 
-#: class-admin.php:2197
+#: class-admin.php:2200
 msgid "Because your site is behind a loadbalancer and is_ssl() returns false, you should add the following line of code to your wp-config.php."
 msgstr "サイトがロードバランサーの後ろにあり、is_ssl() が false を返しているため、以下のコードを wp-config.php に追加する必要があります。"
 
-#: class-admin.php:2196
+#: class-admin.php:2199
 msgid "Your wp-config.php has to be edited, but is not writable."
 msgstr "wp-config.php を編集する必要がありますが、書き込み可能ではありません。"
 
-#: class-admin.php:2193 class-admin.php:2220
+#: class-admin.php:2196 class-admin.php:2223
 msgid "Set your wp-config.php to %swritable%s and reload this page."
 msgstr "wp-config.php を%s書き込み可能%sに設定し、このページを再読み込みしてください。"
 
-#: class-admin.php:2191
+#: class-admin.php:2194
 msgid "A definition of a siteurl or homeurl was detected in your wp-config.php, but the file is not writable."
 msgstr "siteurl または homeurl が wp-config.php で定義されていることが検出されましたが、ファイルが書き込み可能ではありません。"
 
-#: class-admin.php:2226
+#: class-admin.php:2229
 msgid "System detection encountered issues"
 msgstr "システム検出の際に問題が発生しました"
 
@@ -727,7 +731,7 @@ msgstr "システム検出の際に問題が発生しました"
 msgid "Images, stylesheets or scripts from a domain without an SSL certificate: remove them or move to your own server."
 msgstr "SSL 証明書のないドメインからの画像やスタイルシート、スクリプト: 削除するか、自身のサーバーに移動してください。"
 
-#: class-admin.php:500 class-multisite.php:545
+#: class-multisite.php:545 class-admin.php:503
 msgid "Http references in your .css and .js files: change any http:// into https://"
 msgstr ".css と .js ファイル内の HTTP 参照: すべての http:// を https:// に変更してください"
 
@@ -735,7 +739,7 @@ msgstr ".css と .js ファイル内の HTTP 参照: すべての http:// を ht
 msgid "Some things can't be done automatically. Before you migrate, please check for: "
 msgstr "一部の項目は自動実行できません。移行前に以下をご確認ください。"
 
-#: class-admin.php:487
+#: class-admin.php:490
 msgid "Almost ready to migrate to SSL!"
 msgstr "SSL に移行する準備がほぼ完了しました。"
 
@@ -751,23 +755,22 @@ msgstr "サイトごとに SSL を有効化"
 msgid "Activate SSL networkwide"
 msgstr "ネットワーク全体で SSL を有効化"
 
-#: class-admin.php:49 class-multisite.php:27 class-help.php:9
-#: class-certificate.php:14 class-cache.php:10 class-server.php:10
-#: class-site-health.php:12 class-front-end.php:18
-#: class-mixed-content-fixer.php:13
+#: class-mixed-content-fixer.php:13 class-certificate.php:14
+#: class-site-health.php:12 class-multisite.php:27 class-help.php:9
+#: class-cache.php:10 class-front-end.php:18 class-admin.php:49
 msgid "%s is a singleton class and you cannot create a second instance."
 msgstr "%s は singleton クラスであり、2つ目のインスタンスを作成することはできません。"
 
-#: class-admin.php:3853
+#: class-admin.php:3869
 msgid ".htaccess is currently not %swritable%s."
 msgstr ".htaccess は、%s書き込み可能%sになっていません。 "
 
-#: class-admin.php:2775
+#: class-admin.php:2778
 msgid "Mixed content fixer was successfully detected on the front-end."
 msgstr "フロントエンドの混在コンテンツ修正機能が正常に検出されました。"
 
-#: class-admin.php:2585 grid/templates/tips-tricks-footer.php:3
-#: class-multisite.php:441
+#: grid/templates/tips-tricks-footer.php:3 class-multisite.php:441
+#: class-admin.php:2588
 msgid "Documentation"
 msgstr "文書"
 
@@ -783,7 +786,7 @@ msgstr "https://really-simple-ssl.com"
 msgid "Really Simple SSL"
 msgstr "Really Simple SSL"
 
-#: class-admin.php:3671
+#: class-admin.php:3687
 msgid "Stop editing the .htaccess file"
 msgstr ".htaccess ファイルの編集を中止"
 
@@ -791,7 +794,7 @@ msgstr ".htaccess ファイルの編集を中止"
 msgid "Save"
 msgstr "保存"
 
-#: class-admin.php:2763
+#: class-admin.php:2766
 msgid "An SSL certificate was detected on your site."
 msgstr "このサイト上に SSL 証明書を検出しました。"
 
@@ -799,21 +802,21 @@ msgstr "このサイト上に SSL 証明書を検出しました。"
 msgid "No SSL detected."
 msgstr "SSL の検出なし"
 
-#: class-admin.php:2530 class-admin.php:3274 class-admin.php:3651
-#: class-admin.php:4086 class-multisite.php:224 class-multisite.php:335
-#: class-multisite.php:382
+#: class-multisite.php:224 class-multisite.php:335 class-multisite.php:382
+#: class-admin.php:2533 class-admin.php:3290 class-admin.php:3667
+#: class-admin.php:4102
 msgid "Settings"
 msgstr "設定"
 
-#: class-admin.php:3654
+#: class-admin.php:3670
 msgid "Mixed content fixer"
 msgstr "混合コンテンツ修正"
 
-#: class-admin.php:2508
+#: class-admin.php:2511
 msgid "SSL"
 msgstr "SSL"
 
-#: class-admin.php:2507
+#: class-admin.php:2510
 msgid "SSL settings"
 msgstr "SSL 設定"
 
@@ -829,10 +832,10 @@ msgstr "$_SERVER[\"HTTPS\"] 変数が設定されていないため、サイト�
 msgid "You run a Multisite installation with subfolders, which prevents this plugin from fixing your missing server variable in the wp-config.php."
 msgstr "マルチサイトをサブフォルダーで運用しています。このため、プラグインは wp-config.php 内に不足しているサーバー変数を修正できません。"
 
-#: class-admin.php:2666
+#: class-admin.php:2669
 msgid "Check again"
 msgstr "再び確認"
 
-#: class-admin.php:2664
+#: class-admin.php:2667
 msgid "Major security issue!"
 msgstr "重大なセキュリティ問題。"

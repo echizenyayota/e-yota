@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-10 07:29:07+0000\n"
+"PO-Revision-Date: 2021-03-11 02:03:13+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -210,6 +210,11 @@ msgstr "「自画像」ベルト・モリゾ作"
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "「水仙」ベルト・モリゾ作"
 
+#: inc/starter-content.php:43 inc/block-patterns.php:72
+#: inc/block-patterns.php:107
+msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
+msgstr "「立葵」ベルト・モリゾ作"
+
 #: inc/template-functions.php:399
 msgctxt "Post password form"
 msgid "Enter"
@@ -284,6 +289,10 @@ msgstr "ブローニュの森で"
 #: inc/block-patterns.php:107
 msgid "Villa with Orange Trees, Nice"
 msgstr "オレンジのなかのヴィラ、ニース"
+
+#: inc/block-patterns.php:107
+msgid "Roses Trémières"
+msgstr "立葵"
 
 #: inc/block-patterns.php:96
 msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
@@ -452,7 +461,7 @@ msgstr "連絡先情報"
 #: inc/block-patterns.php:106
 msgctxt "Block pattern description"
 msgid "A list of projects with thumbnail images."
-msgstr "アイキャッチ画像付きのプロジェクトリスト。"
+msgstr "サムネイル画像付きのプロジェクトリスト。"
 
 #: inc/block-patterns.php:104
 msgid "Portfolio list"
