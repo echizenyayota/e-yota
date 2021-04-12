@@ -4,7 +4,7 @@ Donate link: http://www.ramoonus.nl/donate/
 Tags: jquery, update, jquery ui, javascript, jq
 Requires at least: 5.6
 Tested up to: 5.7
-Stable tag: 3.6.0
+Stable tag: 3.6.0.1
 Requires PHP: 5.6
 
 This plugin updates jQuery to the latest stable version on your website.
@@ -52,6 +52,9 @@ A: Using an up-to-date jQuery could break your site on the client-side.
 Please clear the server and browser cache after upgrading/disabling this plugin.
 
 == Changelog ==
+= 3.6.0.1 =
+* Fixes missing jQuery Migrate minified file
+
 = 3.6.0 =
 * Updated [jQuery to 3.6.0](http://blog.jquery.com/2021/03/02/jquery-3-6-0-released/)
 * Updated jQuery Migrate to 3.3.2
