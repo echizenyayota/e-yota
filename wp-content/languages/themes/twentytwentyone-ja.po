@@ -121,9 +121,9 @@ msgid "This theme requires WordPress 5.3 or newer. You are running version %s. P
 msgstr "このテーマは WordPress 5.3 より新しいバージョンが必要です。現在のバージョンは %s です。アップグレードしてください。"
 
 #. translators: %: Page number.
-#: image.php:46 template-parts/content/content-single.php:30
-#: template-parts/content/content-page.php:36
 #: template-parts/content/content.php:36
+#: template-parts/content/content-page.php:36
+#: template-parts/content/content-single.php:30 image.php:46
 msgid "Page %"
 msgstr "ページ%"
 
@@ -210,8 +210,8 @@ msgstr "「自画像」ベルト・モリゾ作"
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "「水仙」ベルト・モリゾ作"
 
-#: inc/starter-content.php:43 inc/block-patterns.php:72
-#: inc/block-patterns.php:107
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:43
 msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
 msgstr "「立葵」ベルト・モリゾ作"
 
@@ -306,13 +306,13 @@ msgstr "ベルト・モリゾによって1800年代後半に描かれた美し�
 msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
 msgstr "「ブージヴァルの庭」ベルト・モリゾ作"
 
-#: inc/starter-content.php:61 inc/block-patterns.php:72
-#: inc/block-patterns.php:107
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:61
 msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
 msgstr "「モーブで若い女性」ベルト・モリゾ作"
 
-#: inc/starter-content.php:51 inc/block-patterns.php:72
-#: inc/block-patterns.php:107
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:51
 msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
 msgstr "「ブローニュの森で」ベルト・モリゾ作"
 
@@ -355,7 +355,7 @@ msgid "View all of %s's posts."
 msgstr "%sのすべての投稿を表示。"
 
 #. translators: %s: Author name.
-#: inc/template-tags.php:49 template-parts/post/author-bio.php:19
+#: template-parts/post/author-bio.php:19 inc/template-tags.php:49
 msgid "By %s"
 msgstr "作成者: %s"
 
@@ -422,8 +422,8 @@ msgid ", "
 msgstr "、"
 
 #. translators: %s: Name of current post. Only visible to screen readers.
-#: inc/template-tags.php:92 inc/template-tags.php:135 image.php:68 image.php:93
-#: template-parts/content/content-page.php:48
+#: template-parts/content/content-page.php:48 image.php:68 image.php:93
+#: inc/template-tags.php:92 inc/template-tags.php:135
 msgid "Edit %s"
 msgstr "編集 %s"
 
@@ -550,10 +550,10 @@ msgstr "フルサイズ"
 msgid "Published %s"
 msgstr "投稿日: %s"
 
-#: comments.php:62 inc/template-tags.php:228 image.php:43
-#: template-parts/content/content-single.php:27
-#: template-parts/content/content-page.php:33
 #: template-parts/content/content.php:33
+#: template-parts/content/content-page.php:33
+#: template-parts/content/content-single.php:27 comments.php:62 image.php:43
+#: inc/template-tags.php:228
 msgid "Page"
 msgstr "ページ"
 
@@ -565,8 +565,8 @@ msgstr "閉じる"
 msgid "Menu"
 msgstr "メニュー"
 
-#: inc/starter-content.php:154 functions.php:76
-#: template-parts/header/site-nav.php:13
+#: template-parts/header/site-nav.php:13 functions.php:76
+#: inc/starter-content.php:154
 msgid "Primary menu"
 msgstr "メインメニュー"
 
@@ -646,7 +646,7 @@ msgstr "緑"
 msgid "Gray"
 msgstr "グレー"
 
-#: inc/block-styles.php:107 functions.php:223
+#: functions.php:223 inc/block-styles.php:107
 msgid "Dark gray"
 msgstr "ダークグレー"
 
@@ -687,7 +687,7 @@ msgstr "極小"
 msgid "Proudly powered by %s."
 msgstr "Proudly powered by %s."
 
-#: footer.php:24 inc/starter-content.php:165 functions.php:77
+#: functions.php:77 inc/starter-content.php:165 footer.php:24
 msgid "Secondary menu"
 msgstr "サブメニュー"
 
@@ -715,7 +715,7 @@ msgstr "サイトタイトルとキャッチフレーズを表示"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "こちらには何もありません。検索をお試しください。"
 
-#: 404.php:16 template-parts/content/content-none.php:30
+#: template-parts/content/content-none.php:30 404.php:16
 msgid "Nothing here"
 msgstr "ここには何もありません"
 
