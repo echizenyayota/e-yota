@@ -27,105 +27,105 @@ msgstr "Asia/Tokyo"
 msgid "Continue"
 msgstr "次へ"
 
-#: wp-admin/about.php:143
+#: wp-admin/about.php:164
 msgid "<strong>Buttons block:</strong> now you can choose a vertical or a horizontal layout. And you can set the width of a button to a preset percentage."
 msgstr "<strong>ボタンブロック:</strong> 縦または横のレイアウトを選択できます。また、ボタンの幅を事前に設定したパーセンテージに設定できます。"
 
-#: wp-admin/about.php:239
+#: wp-admin/about.php:260
 msgid "Now it’s simple to let iframes lazy-load. By default, WordPress will add a <code>loading=\"lazy\"</code> attribute to iframe tags when both width and height are specified."
 msgstr "簡単に iframe を遅延読み込みできます。幅と高さの両方を指定すると、デフォルトで WordPress は iframe タグに <code>loading=\"lazy\"</code> 属性を追加します。"
 
-#: wp-admin/about.php:237
+#: wp-admin/about.php:258
 msgid "In 5.7, jQuery gets more focused and less intrusive, with fewer messages in the console."
 msgstr "5.7では jQuery はさらに焦点を絞って干渉することが減り、コンソール内のメッセージも少なくなりました。"
 
-#: wp-admin/about.php:230
+#: wp-admin/about.php:251
 msgid "The new Robots API lets you include the filter directives in the robots meta tag, and the API includes the <code>max-image-preview: large</code> directive by default. That means search engines can show bigger image previews, which can boost your traffic (unless the site is marked <em>not-public</em>)."
 msgstr "新しい Robots API では robots メタタグにフィルターディレクティブを含めることができ、API には <code>max-image-preview: large</code> ディレクティブがデフォルトで含まれています。つまり、検索エンジンはより大きな画像プレビューを表示できます。これがトラフィックを後押ししてくれることもあるでしょう (サイトが <em>not-public</em>、つまり非公開とマークされている場合を除く)。"
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:194
 msgid "Above, the Dashboard before and after the color update in 5.7."
 msgstr "上、5.7での配色更新前後のダッシュボード。"
 
-#: wp-admin/about.php:170
+#: wp-admin/about.php:191
 msgid "Dashboard with new color scheme."
 msgstr "新配色のダッシュボード。"
 
-#: wp-admin/about.php:168
+#: wp-admin/about.php:189
 msgid "Dashboard with old color scheme."
 msgstr "旧配色のダッシュボード。"
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:169
 msgid "<strong>Social Icons block:</strong> now you can change the size of the icons."
 msgstr "<strong>ソーシャルアイコンブロック:</strong> アイコンのサイズを変更できるようになりました。"
 
-#: wp-admin/about.php:238
+#: wp-admin/about.php:259
 msgid "Lazy-load your iframes"
 msgstr "iframe の遅延読み込み"
 
-#: wp-admin/about.php:236
+#: wp-admin/about.php:257
 msgid "For years jQuery helped make things move on the screen in ways the basic tools couldn’t—but that keeps changing, and so does jQuery."
 msgstr "長年 jQuery は、ベーシックなツールではできなかった画面上の物に動きをつけるのを支援してきましたが、それは変化し続けており、jQuery もまた変化しています。"
 
-#: wp-admin/about.php:235
+#: wp-admin/about.php:256
 msgid "Ongoing cleanup after update to jQuery 3.5.1"
 msgstr "jQuery 3.5.1 へのアップデート後の継続的なクリーンアップ"
 
-#: wp-admin/about.php:227
+#: wp-admin/about.php:248
 msgid "New Robots API"
 msgstr "新しい Robots API"
 
-#: wp-admin/about.php:226
+#: wp-admin/about.php:247
 msgid "Starting now, switching a site from HTTP to HTTPS is a one-click move. WordPress will automatically update database URLs when you make the switch. No more hunting and guessing!"
 msgstr "これからは、ワンクリックでサイトを HTTP から HTTPS へ切り替えられます。切り替えを行うと、WordPress はデータベースの URL を自動更新します。探したり推測したりする必要はもうありません。"
 
-#: wp-admin/about.php:225
+#: wp-admin/about.php:246
 msgid "From HTTP to HTTPS in a single click"
 msgstr "ワンクリックで HTTP から HTTPS へ"
 
 #. translators: %s: Color palette dev note link.
-#: wp-admin/about.php:204
+#: wp-admin/about.php:225
 msgid "Find the new palette in the default WordPress Dashboard color scheme, and use it when you’re building themes, plugins, or any other components. For all the details, <a href=\"%s\">check out the Color Palette dev note</a>."
 msgstr "デフォルトの WordPress ダッシュボード配色の新しい配色を、テーマやプラグイン、またはその他のコンポーネントを作成するときに使用しましょう。詳細については<a href=\"%s\">カラーパレットの開発メモ</a>をご覧ください。"
 
-#: wp-admin/about.php:197
+#: wp-admin/about.php:218
 msgid "Half the range has a 4.5 or higher contrast ratio against black, and the other half maintains the same contrast against white."
 msgstr "範囲の半分は黒に対して4.5以上のコントラスト比があり、残りの半分は白に対して同様のコントラストを維持します。"
 
-#: wp-admin/about.php:190
+#: wp-admin/about.php:211
 msgid "The colors are perceptually uniform from light to dark in each range, which means they start at white and get darker by the same amount with each step."
 msgstr "色は、各範囲内で明るい色から暗い色までが知覚的に均一になっています。これはつまり、白から始まり、各段階で同じ量だけ暗くなっていくということです。"
 
 #. translators: %s: WCAG information link.
-#: wp-admin/about.php:183
+#: wp-admin/about.php:204
 msgid "This new streamlined color palette collapses all the colors that used to be in the WordPress source code down to seven core colors and a range of 56 shades that meet the <a href=\"%s\">WCAG 2.0 AA recommended contrast ratio</a> against white or black."
 msgstr "この新しく効率化されたカラーパレットでは、WordPress のソースコードに含まれていたすべての色を、白と黒に対して<a href=\"%s\">WCAG 2.0AA 推奨コントラスト比</a>を満たす7つのコアカラーと56の色調範囲にまとめました。"
 
-#: wp-admin/about.php:161
+#: wp-admin/about.php:182
 msgid "A Simpler Default Color Palette"
 msgstr "よりシンプルなデフォルトカラーパレット"
 
-#: wp-admin/about.php:138
+#: wp-admin/about.php:159
 msgid "<strong>Full-height alignment:</strong> have you ever wanted to make a block, like the Cover block, fill the whole window? Now you can."
 msgstr "<strong>最大高の配置:</strong> カバーブロックのようなブロックを、ウィンドウ全体に表示できるようになりました。"
 
-#: wp-admin/about.php:133
+#: wp-admin/about.php:154
 msgid "You can do more without writing custom code"
 msgstr "カスタムコードを書くことなく、さらに多くのことを実現"
 
-#: wp-admin/about.php:119
+#: wp-admin/about.php:140
 msgid "<strong>Inserter drag-and-drop:</strong> drag blocks and block patterns from the inserter right into your post."
 msgstr "<strong>インサーターのドラッグ & ドロップ:</strong> インサーターから直接、ブロックとブロックパターンを投稿にドラッグできます。"
 
-#: wp-admin/about.php:114
+#: wp-admin/about.php:135
 msgid "<strong>Reusable blocks:</strong> several enhancements make reusable blocks more stable and easier to use. And now they save automatically with the post when you click the Update button."
 msgstr "<strong>再利用可能ブロック: </strong> いくつかの機能強化により、再利用可能ブロックがより安定し、使いやすくなりました。また、「更新」ボタンをクリックすると、投稿時に自動保存されるようになりました。"
 
-#: wp-admin/about.php:109
+#: wp-admin/about.php:130
 msgid "<strong>Font-size adjustment in more places:</strong> now, font-size controls are right where you need them in the List and Code blocks. No more trekking to another screen to make that single change!"
 msgstr "<strong>より多くの場所でのフォントサイズ調整:</strong> リストブロックとコードブロックでフォントサイズの制御が必要な時には、ブロック内でできるようになりました。この変更を行うためだけに別の画面に移動する必要はもうありません。"
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:125
 msgid "Now the editor is easier to use"
 msgstr "エディターがもっと使いやすくなりました"
 
@@ -502,7 +502,7 @@ msgid "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-
 msgstr "https://developer.wordpress.org/rest-api/frequently-asked-questions/#why-is-authentication-not-working"
 
 #. translators: %s: WordPress 5.7 Field Guide link.
-#: wp-admin/about.php:252
+#: wp-admin/about.php:273
 msgid "Check out the latest version of the WordPress Field Guide. It highlights developer notes for each change you may want to be aware of. <a href=\"%s\">WordPress 5.7 Field Guide.</a>"
 msgstr "WordPress フィールドガイドの最新バージョンを参照してください。各変更の開発者向けノートをまとめた必読のガイドです。<a href=\"%s\">WordPress 5.7 フィールドガイド</a>。"
 
@@ -573,7 +573,7 @@ msgstr "新しいアプリケーションパスワードを追加"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "アプリケーションパスワードの作成に必要ですが、ユーザーの更新には不要です。"
 
-#: wp-admin/about.php:265
+#: wp-admin/about.php:286
 msgid "Go to Updates"
 msgstr "更新へ移動"
 
@@ -923,7 +923,7 @@ msgstr "\"%1$s\" の値が \"%2$s\" の値より小さくなっています。"
 msgid "Environment type"
 msgstr "環境タイプ"
 
-#: wp-admin/about.php:247
+#: wp-admin/about.php:268
 msgid "Check the Field Guide for more!"
 msgstr "詳細はフィールドガイドを参照してください。"
 
@@ -3978,7 +3978,8 @@ msgstr "インストール不可"
 
 #. translators: %s: WordPress version.
 #: wp-admin/includes/update.php:302 wp-admin/install.php:238
-#: wp-admin/update-core.php:84 wp-admin/upgrade.php:80 wp-admin/about.php:91
+#: wp-admin/update-core.php:84 wp-admin/upgrade.php:80 wp-admin/about.php:86
+#: wp-admin/about.php:112
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -6382,7 +6383,7 @@ msgid "(Currently set to: %s)"
 msgstr "(現在の設定: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:366
+#: wp-admin/about.php:76 wp-admin/about.php:387
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>バージョン %s</strong> ではセキュリティ問題1件に対応しました。"
 
@@ -6394,15 +6395,15 @@ msgstr "https://ja.gravatar.com/"
 msgid "Profile Picture"
 msgstr "プロフィール写真"
 
-#: wp-admin/about.php:71 wp-admin/about.php:363
+#: wp-admin/about.php:71 wp-admin/about.php:384
 msgid "Maintenance and Security Releases"
 msgstr "メンテナンスとセキュリティのリリース"
 
-#: wp-admin/about.php:360
+#: wp-admin/about.php:381
 msgid "Security Releases"
 msgstr "セキュリティリリース"
 
-#: wp-admin/about.php:357
+#: wp-admin/about.php:378
 msgid "Maintenance Releases"
 msgstr "メンテナンスリリース"
 
@@ -9866,26 +9867,26 @@ msgstr "サイトを見るときにツールバーを表示する"
 
 #. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:88 wp-admin/about.php:389
+#: wp-admin/about.php:83 wp-admin/about.php:109 wp-admin/about.php:410
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "詳しくは<a href=\"%s\">リリースノート</a>をご覧ください。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:76 wp-admin/about.php:383
+#: wp-admin/about.php:97 wp-admin/about.php:404
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はいくつかのセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:377
+#: wp-admin/about.php:398
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> はセキュリティ問題に対応し、%2$s個のバグを修正しました。"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:371
+#: wp-admin/about.php:392
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>バージョン %1$s</strong> では%2$s個のバグを修正しました。"
@@ -9895,19 +9896,19 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "WordPress のダッシュボードへようこそ ! これはサイトにログインすると表示される画面で、ここから WordPress のすべてのサイト管理機能へアクセスできます。どの画面にいても画面のタイトルの上にあるヘルプタブをクリックすればヘルプ情報を得られます。"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:368
+#: wp-admin/about.php:389
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>バージョン %s</strong> では複数のセキュリティ問題に対応しました。"
 
-#: wp-admin/about.php:362
+#: wp-admin/about.php:383
 msgid "Maintenance and Security Release"
 msgstr "メンテナンスとセキュリティのリリース"
 
-#: wp-admin/about.php:359
+#: wp-admin/about.php:380
 msgid "Security Release"
 msgstr "セキュリティリリース"
 
-#: wp-admin/about.php:356
+#: wp-admin/about.php:377
 msgid "Maintenance Release"
 msgstr "メンテナンスリリース"
 
@@ -10192,11 +10193,11 @@ msgstr "<strong>編集</strong>をクリックするとその投稿の編集画�
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "このサイトはマルチサイトインストールのため、サイトネットワーク上にすでに存在するアカウントのユーザー名またはメールアドレスを指定し、権限グループを選択して追加することができます。パスワードを設定するといった追加オプションを使うには、「ネットワーク管理 > ユーザー一覧」ページで、サイトネットワーク管理者として既存のユーザーの名前をマウスオーバーしたときに表示される「編集」リンクを使う必要があります。"
 
-#: wp-admin/about.php:268
+#: wp-admin/about.php:289
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ダッシュボード &rarr; ホームへ移動"
 
-#: wp-admin/about.php:265
+#: wp-admin/about.php:286
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "ダッシュボード &rarr; 更新へ移動"
 
@@ -12025,7 +12026,7 @@ msgstr "WordPress の更新"
 msgid "Edit menu item"
 msgstr "メニュー項目を編集"
 
-#: wp-admin/about.php:268 wp-admin/includes/network.php:148
+#: wp-admin/about.php:289 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "ダッシュボードへ移動"
 
