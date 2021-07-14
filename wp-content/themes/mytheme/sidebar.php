@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>2021年前期 朝ドラ再放送 あぐり</h2>
+  <h2>朝ドラ再放送 花子とアンの次</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'taiheiki';
+  $the_slug = 'Aguri';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
@@ -87,7 +87,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>NHK大河ドラマ再放送 太平記</h2>
+  <h2>NHK朝ドラ再放送 あぐり</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
