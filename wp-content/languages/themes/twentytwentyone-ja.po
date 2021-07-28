@@ -28,45 +28,45 @@ msgstr "過去の<span class=\"nav-short\">投稿</span>"
 msgid "Newer <span class=\"nav-short\">posts</span>"
 msgstr "新しい<span class=\"nav-short\">投稿</span>"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:189
-#: classes/class-twenty-twenty-one-customize-notice-control.php:42
+#: classes/class-twenty-twenty-one-customize-notice-control.php:40
+#: classes/class-twenty-twenty-one-dark-mode.php:178
 msgid "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 msgstr "https://wordpress.org/support/article/twenty-twenty-one/#dark-mode-support"
 
 #. translators: %s: Twenty Twenty-One support article URL.
-#: classes/class-twenty-twenty-one-dark-mode.php:188
+#: classes/class-twenty-twenty-one-dark-mode.php:177
 msgid "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. <a href=\"%s\">Learn more about Dark Mode.</a>"
 msgstr "ダークモードは端末設定です。サイトへの訪問者が要求した場合、サイトを暗い背景と明るいテキストで表示します。<a href=\"%s\">ダークモードについての詳細はこちら</a>をご覧ください。"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:192
+#: classes/class-twenty-twenty-one-dark-mode.php:181
 msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
 msgstr "ダークモードはページの右下にあるボタンからも有効化・無効化できます。"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:408
+#: classes/class-twenty-twenty-one-dark-mode.php:380
 msgid "This website uses LocalStorage to save the setting when Dark Mode support is turned on or off.<br> LocalStorage is necessary for the setting to work and is only used when a user clicks on the Dark Mode button.<br> No data is saved in the database or transferred."
 msgstr "このサイトでは、ダークモード対応のオン/オフ時の設定を保存するために LocalStorage を使用しています。<br>LocalStorage は設定を動作させるために必要なもので、ユーザーがダークモードボタンをクリックしたときにのみ使用されます。<br>データベースにデータが保存されたり、転送されたりすることはありません。"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:407
+#: classes/class-twenty-twenty-one-dark-mode.php:379
 msgid "Suggested text:"
 msgstr "提案テキスト:"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:406
+#: classes/class-twenty-twenty-one-dark-mode.php:378
 msgid "Twenty Twenty-One uses LocalStorage when Dark Mode support is enabled."
 msgstr "Twenty Twenty-One は、ダークモードのサポートが有効な場合に LocalStorage を使用します。"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:199
+#: classes/class-twenty-twenty-one-dark-mode.php:188
 msgid "Dark Mode support"
 msgstr "ダークモード対応"
 
-#: classes/class-twenty-twenty-one-customize-notice-control.php:43
+#: classes/class-twenty-twenty-one-customize-notice-control.php:41
 msgid "Learn more about Dark Mode."
 msgstr "ダークモードについてさらに詳しく読む。"
 
-#: classes/class-twenty-twenty-one-customize-notice-control.php:41
+#: classes/class-twenty-twenty-one-customize-notice-control.php:39
 msgid "To access the Dark Mode settings, select a light background color."
 msgstr "ダークモード設定にアクセスするには、明るい背景色を選択してください。"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:145
+#: classes/class-twenty-twenty-one-dark-mode.php:134
 msgid "Colors & Dark Mode"
 msgstr "色とダークモード"
 
@@ -75,17 +75,17 @@ msgctxt "Label for sticky posts"
 msgid "Featured post"
 msgstr "注目記事"
 
-#: inc/template-functions.php:399
+#: inc/template-functions.php:424
 msgctxt "Post password form"
 msgid "Submit"
 msgstr "送信"
 
-#: inc/template-functions.php:399
+#: inc/template-functions.php:424
 msgctxt "Post password form"
 msgid "Password"
 msgstr "パスワード"
 
-#: inc/template-functions.php:174
+#: inc/template-functions.php:183
 msgctxt "Added to posts and pages that are missing titles"
 msgid "Untitled"
 msgstr "名称未設定"
@@ -110,20 +110,25 @@ msgctxt "Block pattern sample content"
 msgid "example@example.com"
 msgstr "example@example.com"
 
-#: classes/class-twenty-twenty-one-customize.php:143
+#: classes/class-twenty-twenty-one-customize.php:138
 msgctxt "Customizer control"
 msgid "Background color"
 msgstr "背景色"
 
+#. translators: %s: WordPress Version.
+#. translators: %s: WordPress Version.
 #. translators: %s: WordPress Version.
 #: inc/back-compat.php:42 inc/back-compat.php:61 inc/back-compat.php:86
 msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
 msgstr "このテーマは WordPress 5.3 より新しいバージョンが必要です。現在のバージョンは %s です。アップグレードしてください。"
 
 #. translators: %: Page number.
+#. translators: %: Page number.
+#. translators: %: Page number.
+#. translators: %: Page number.
+#: image.php:48 template-parts/content/content-page.php:36
+#: template-parts/content/content-single.php:30
 #: template-parts/content/content.php:36
-#: template-parts/content/content-page.php:36
-#: template-parts/content/content-single.php:30 image.php:46
 msgid "Page %"
 msgstr "ページ%"
 
@@ -177,24 +182,24 @@ msgstr[0] "%s件のコメント"
 msgid "1 comment"
 msgstr "1件のコメント"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:358
+#: classes/class-twenty-twenty-one-dark-mode.php:334
 msgid "On"
 msgstr "オン"
 
-#: classes/class-twenty-twenty-one-dark-mode.php:355
+#: classes/class-twenty-twenty-one-dark-mode.php:331
 msgid "Off"
 msgstr "オフ"
 
 #. translators: %s: On/Off
-#: classes/class-twenty-twenty-one-dark-mode.php:345
+#: classes/class-twenty-twenty-one-dark-mode.php:321
 msgid "Dark Mode: %s"
 msgstr "ダークモード: %s"
 
-#: inc/template-functions.php:397
+#: inc/template-functions.php:422
 msgid "This content is password protected. Please enter a password to view."
 msgstr "このコンテンツはパスワードで保護されています。表示するにはパスワードを入力してください。"
 
-#: inc/menu-functions.php:35
+#: inc/menu-functions.php:34
 msgid "Open menu"
 msgstr "メニューを開く"
 
@@ -215,7 +220,7 @@ msgstr "「水仙」ベルト・モリゾ作"
 msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
 msgstr "「立葵」ベルト・モリゾ作"
 
-#: inc/template-functions.php:399
+#: inc/template-functions.php:424
 msgctxt "Post password form"
 msgid "Enter"
 msgstr "確定"
@@ -329,15 +334,15 @@ msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
 msgstr "「泥まんじゅう遊び」ベルト・モリゾ作"
 
 #. translators: %s: Parent post.
-#: image.php:59
+#: image.php:61
 msgid "Published in %s"
 msgstr "投稿: %s"
 
-#: classes/class-twenty-twenty-one-customize.php:113
+#: classes/class-twenty-twenty-one-customize.php:108
 msgid "Summary"
 msgstr "概要"
 
-#: classes/class-twenty-twenty-one-customize.php:90
+#: classes/class-twenty-twenty-one-customize.php:85
 msgid "Excerpt Settings"
 msgstr "抜粋の設定"
 
@@ -345,7 +350,7 @@ msgstr "抜粋の設定"
 msgid "Thick"
 msgstr "厚みのある"
 
-#: classes/class-twenty-twenty-one-customize.php:111
+#: classes/class-twenty-twenty-one-customize.php:106
 msgid "On Archive Pages, posts show:"
 msgstr "アーカイブページで投稿に表示:"
 
@@ -355,7 +360,8 @@ msgid "View all of %s's posts."
 msgstr "%sのすべての投稿を表示。"
 
 #. translators: %s: Author name.
-#: template-parts/post/author-bio.php:19 inc/template-tags.php:49
+#. translators: %s: Author name.
+#: inc/template-tags.php:49 template-parts/post/author-bio.php:19
 msgid "By %s"
 msgstr "作成者: %s"
 
@@ -401,20 +407,26 @@ msgid_plural "We found %d results for your search."
 msgstr[0] "検索結果が%d件見つかりました。"
 
 #. translators: %s: Search term.
-#: template-parts/content/content-none.php:22 search.php:21
+#. translators: %s: Search term.
+#: search.php:21 template-parts/content/content-none.php:22
 msgid "Results for \"%s\""
 msgstr "「%s」の検索結果"
 
+#. translators: %s: List of tags.
 #. translators: %s: List of tags.
 #: inc/template-tags.php:118 inc/template-tags.php:162
 msgid "Tagged %s"
 msgstr "タグ: %s"
 
 #. translators: %s: List of categories.
+#. translators: %s: List of categories.
 #: inc/template-tags.php:108 inc/template-tags.php:152
 msgid "Categorized as %s"
 msgstr "カテゴリー: %s"
 
+#. translators: Used between list items, there is a space after the comma.
+#. translators: Used between list items, there is a space after the comma.
+#. translators: Used between list items, there is a space after the comma.
 #. translators: Used between list items, there is a space after the comma.
 #: inc/template-tags.php:104 inc/template-tags.php:114
 #: inc/template-tags.php:148 inc/template-tags.php:158
@@ -422,13 +434,17 @@ msgid ", "
 msgstr "、"
 
 #. translators: %s: Name of current post. Only visible to screen readers.
-#: template-parts/content/content-page.php:48 image.php:68 image.php:93
-#: inc/template-tags.php:92 inc/template-tags.php:135
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:135
+#: template-parts/content/content-page.php:48
 msgid "Edit %s"
 msgstr "編集 %s"
 
 #. translators: %s: Name of current post.
-#: inc/template-functions.php:132
+#: inc/template-functions.php:138
 msgid "Continue reading %s"
 msgstr "続きを読む %s"
 
@@ -540,7 +556,7 @@ msgstr "WordPress の新しいポートフォリオデフォルトテーマ"
 msgid "Large text"
 msgstr "大きな文字"
 
-#: image.php:81
+#: image.php:83
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "フルサイズ"
@@ -550,10 +566,10 @@ msgstr "フルサイズ"
 msgid "Published %s"
 msgstr "投稿日: %s"
 
-#: template-parts/content/content.php:33
+#: comments.php:62 image.php:45 inc/template-tags.php:228
 #: template-parts/content/content-page.php:33
-#: template-parts/content/content-single.php:27 comments.php:62 image.php:43
-#: inc/template-tags.php:228
+#: template-parts/content/content-single.php:27
+#: template-parts/content/content.php:33
 msgid "Page"
 msgstr "ページ"
 
@@ -565,8 +581,8 @@ msgstr "閉じる"
 msgid "Menu"
 msgstr "メニュー"
 
-#: template-parts/header/site-nav.php:13 functions.php:76
-#: inc/starter-content.php:154
+#: functions.php:76 inc/starter-content.php:154
+#: template-parts/header/site-nav.php:13
 msgid "Primary menu"
 msgstr "メインメニュー"
 
@@ -687,7 +703,7 @@ msgstr "極小"
 msgid "Proudly powered by %s."
 msgstr "Proudly powered by %s."
 
-#: functions.php:77 inc/starter-content.php:165 footer.php:24
+#: footer.php:24 functions.php:77 inc/starter-content.php:165
 msgid "Secondary menu"
 msgstr "サブメニュー"
 
@@ -703,11 +719,11 @@ msgstr "新しいコメント"
 msgid "Older comments"
 msgstr "過去のコメント"
 
-#: classes/class-twenty-twenty-one-customize.php:114
+#: classes/class-twenty-twenty-one-customize.php:109
 msgid "Full text"
 msgstr "全文を表示"
 
-#: classes/class-twenty-twenty-one-customize.php:80
+#: classes/class-twenty-twenty-one-customize.php:75
 msgid "Display Site Title & Tagline"
 msgstr "サイトタイトルとキャッチフレーズを表示"
 
@@ -715,7 +731,7 @@ msgstr "サイトタイトルとキャッチフレーズを表示"
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "こちらには何もありません。検索をお試しください。"
 
-#: template-parts/content/content-none.php:30 404.php:16
+#: 404.php:16 template-parts/content/content-none.php:30
 msgid "Nothing here"
 msgstr "ここには何もありません"
 
