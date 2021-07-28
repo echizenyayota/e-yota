@@ -29,36 +29,42 @@ class rsssl_letsencrypt_handler {
 		if ( isset( self::$_this ) ) {
 			wp_die( sprintf( __( '%s is a singleton class and you cannot create a second instance.', 'really-simple-ssl' ), get_class( $this ) ) );
 		}
-		add_action( 'rsssl_before_save_lets-encrypt_option', array( $this, 'before_save_wizard_option' ), 10, 4 );
-		add_action( 'rsssl_le_activation', array( $this, 'cleanup_on_ssl_activation'));
-		add_action( 'rsssl_le_activation', array( $this, 'plugin_activation_actions'));
-		add_action( 'admin_init', array( $this, 'maybe_add_htaccess_exclude'));
-		add_action( 'admin_init', array( $this, 'maybe_create_htaccess_directories'));
 
-		$this->key_directory = $this->key_directory();
-		$this->challenge_directory = $this->challenge_directory();
-		$this->certs_directory = $this->certs_directory();
+		//loading of these hooks is stricter. The class can be used in the notices, which are needed on the generic dashboard
+		//These functionality is not needed on the dashboard, so should only be loaded in strict circumstances
+		if ( rsssl_letsencrypt_generation_allowed( true ) ) {
+			add_action( 'rsssl_before_save_lets-encrypt_option', array( $this, 'before_save_wizard_option' ), 10, 4 );
+			add_action( 'rsssl_le_activation', array( $this, 'cleanup_on_ssl_activation'));
+			add_action( 'rsssl_le_activation', array( $this, 'plugin_activation_actions'));
+			add_action( 'admin_init', array( $this, 'maybe_add_htaccess_exclude'));
+			add_action( 'admin_init', array( $this, 'maybe_create_htaccess_directories'));
 
-		// Config the desired paths
-        if ( $this->key_directory ) {
-	        Account::setCommonKeyDirectoryPath( $this->key_directory );
-        }
+			$this->key_directory = $this->key_directory();
+			$this->challenge_directory = $this->challenge_directory();
+			$this->certs_directory = $this->certs_directory();
 
-        if ( $this->challenge_directory ) {
-	        HTTP::setDirectoryPath( $this->challenge_directory );
-        }
+			// Config the desired paths
+			if ( $this->key_directory ) {
+				Account::setCommonKeyDirectoryPath( $this->key_directory );
+			}
 
-		// General configs
-		Connector::getInstance()->useStagingServer( false );
-		Logger::getInstance()->setDesiredLevel( Logger::LEVEL_DISABLED );
+			if ( $this->challenge_directory ) {
+				HTTP::setDirectoryPath( $this->challenge_directory );
+			}
 
-		if ( !get_option('rsssl_disable_ocsp') ) {
-			Certificate::enableFeatureOCSPMustStaple();
+			// General configs
+			Connector::getInstance()->useStagingServer( false );
+			Logger::getInstance()->setDesiredLevel( Logger::LEVEL_DISABLED );
+
+			if ( !get_option('rsssl_disable_ocsp') ) {
+				Certificate::enableFeatureOCSPMustStaple();
+			}
+
+			Order::setPreferredChain('ISRG Root X1');
+			$this->subjects = $this->get_subjects();
+			$this->verify_dns();
 		}
 
-		Order::setPreferredChain('ISRG Root X1');
-        $this->subjects = $this->get_subjects();
-        $this->verify_dns();
 		self::$_this = $this;
 	}
 
@@ -443,10 +449,22 @@ class rsssl_letsencrypt_handler {
 						    }
 					    } catch ( Exception $e ) {
 						    error_log( print_r( $e, true ) );
+						    $error = $this->get_error( $e );
+						    if (strpos($error, 'Order has status "invalid"')!==false) {
+							    $order->clear();
+							    $error = __("The order is invalid, possibly due to too many failed authorization attempts. Please start at the previous step.","really-simple-ssl");
+						    } else
+						    //fixing a plesk bug
+						    if ( strpos($error, 'No order for ID ') !== FALSE){
+							    $error .= '&nbsp;'.__("Order ID mismatch, regenerate order.","really-simple-ssl");
+							    $order->clear();
+							    rsssl_progress_remove('dns-verification');
+							    $error .= '&nbsp;'.__("If you entered your DNS records before, they need to be changed.","really-simple-ssl");
+						    }
 						    $response = new RSSSL_RESPONSE(
 							    'error',
 							    'retry',
-							    $this->get_error( $e )
+							    $error
 						    );
 					    }
 				    }
@@ -481,7 +499,7 @@ class rsssl_letsencrypt_handler {
 
 	/**
 	 * Check DNS txt records.
-	 * @return string|void
+	 * @return RSSSL_RESPONSE
 	 */
 
 	public function verify_dns(){
@@ -552,7 +570,7 @@ class rsssl_letsencrypt_handler {
 
 	/**
      * Authorize the order
-	 * @return string|void
+	 * @return RSSSL_RESPONSE
 	 */
 
     public function create_bundle_or_renew(){
@@ -663,8 +681,6 @@ class rsssl_letsencrypt_handler {
 							    $response->status = 'warning';
 							    $response->message = __("OCSP not supported, the certificate will be generated without OCSP.","really-simple-ssl");
 						    }
-
-
 					    }
 				    }
 
@@ -750,6 +766,7 @@ class rsssl_letsencrypt_handler {
 
 	/**
 	 * Get the order object
+	 *
 	 * @return RSSSL_RESPONSE
 	 */
     public function get_order(){
@@ -1585,7 +1602,11 @@ class rsssl_letsencrypt_handler {
 		if (rsssl_is_ready_for('installation')) {
 			try {
 				if ( $server === 'cpanel' ) {
-					$response = rsssl_install_cpanel_default();
+					if ($type==='default') {
+						$response = rsssl_install_cpanel_default();
+					} else if ( function_exists('rsssl_install_cpanel_shell') ) {
+						$response = rsssl_install_cpanel_shell();
+					}
 
 					if ( $response->status === 'success' ) {
 						delete_option( "rsssl_le_start_installation" );
