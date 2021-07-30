@@ -3,7 +3,7 @@
  * Plugin Name: Really Simple SSL
  * Plugin URI: https://really-simple-ssl.com
  * Description: Lightweight plugin without any setup to make your site SSL proof
- * Version: 5.0.4
+ * Version: 5.0.5
  * Author: Really Simple Plugins
  * Author URI: https://really-simple-plugins.com
  * License: GPL2
@@ -107,6 +107,7 @@ class REALLY_SIMPLE_SSL
 
 	private function setup_constants()
 	{
+		define('rsssl_le_php_version', '7.1');
 		define('rsssl_url', plugin_dir_url(__FILE__));
 		define('rsssl_path', trailingslashit(plugin_dir_path(__FILE__)));
         define('rsssl_template_path', trailingslashit(plugin_dir_path(__FILE__)).'grid/templates/');
@@ -146,11 +147,17 @@ class REALLY_SIMPLE_SSL
 			require_once(rsssl_path . 'class-certificate.php');
 			require_once(rsssl_path . 'class-certificate.php');
 			require_once(rsssl_path . 'class-site-health.php');
+        }
 
+		if ( is_admin() || wp_doing_cron() ) {
 			if (!defined('rsssl_beta_addon')) {
 				require_once( rsssl_path . 'lets-encrypt/letsencrypt.php' );
 			}
         }
+
+		if (version_compare(PHP_VERSION, rsssl_le_php_version, '>=')) {
+			require_once( rsssl_path . 'lets-encrypt/cron.php' );
+		}
 	}
 
 	private function hooks()
