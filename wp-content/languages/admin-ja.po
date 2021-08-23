@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-02 06:00:17+0000\n"
+"PO-Revision-Date: 2021-08-19 05:15:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -231,15 +231,15 @@ msgstr "変更を保存する前にファイル %1$s を書き込み可能にす
 msgid "Rewrite rules:"
 msgstr "リライトルール:"
 
-#: wp-admin/nav-menus.php:1022
+#: wp-admin/nav-menus.php:1028
 msgid "List of menu items selected for deletion:"
 msgstr "削除するものとして選択されたメニュー項目一覧:"
 
-#: wp-admin/nav-menus.php:1020
+#: wp-admin/nav-menus.php:1026
 msgid "Remove Selected Items"
 msgstr "選択した項目を削除"
 
-#: wp-admin/nav-menus.php:987 wp-admin/nav-menus.php:1018
+#: wp-admin/nav-menus.php:989 wp-admin/nav-menus.php:1024
 msgid "Bulk Select"
 msgstr "一括選択"
 
@@ -1809,7 +1809,7 @@ msgstr "インストールできません"
 
 #: wp-admin/includes/theme.php:334
 msgid "Full Site Editing"
-msgstr "サイト全体編集"
+msgstr "フルサイト編集"
 
 #: wp-admin/includes/theme.php:324
 msgid "Block Editor Patterns"
@@ -5597,7 +5597,7 @@ msgstr "コントロールを非表示"
 msgid "Expand Sidebar"
 msgstr "サイドバーを展開"
 
-#: wp-admin/nav-menus.php:1052
+#: wp-admin/nav-menus.php:1060
 msgid "Display location"
 msgstr "メニューの位置"
 
@@ -6528,7 +6528,7 @@ msgid "Send User Notification"
 msgstr "ユーザーに通知を送信"
 
 #. translators: %s: Menu name.
-#: wp-admin/nav-menus.php:1072
+#: wp-admin/nav-menus.php:1080
 msgctxt "menu location"
 msgid "(Currently set to: %s)"
 msgstr "(現在の設定: %s)"
@@ -8963,7 +8963,7 @@ msgstr "拒否されました: %s"
 msgid "Capabilities"
 msgstr "権限"
 
-#: wp-admin/nav-menus.php:1027 wp-admin/network/settings.php:490
+#: wp-admin/nav-menus.php:1035 wp-admin/network/settings.php:490
 msgid "Menu Settings"
 msgstr "メニュー設定"
 
@@ -9019,11 +9019,11 @@ msgstr "この部分のインストールは無事完了しました。WordPress
 msgid "Client version"
 msgstr "現在のバージョン"
 
-#: wp-admin/nav-menus.php:1043
+#: wp-admin/nav-menus.php:1051
 msgid "Auto add pages"
 msgstr "固定ページを自動追加"
 
-#: wp-admin/nav-menus.php:1001
+#: wp-admin/nav-menus.php:1005
 msgid "Give your menu a name, then click Create Menu."
 msgstr "メニューに名前をつけ、「メニューを作成」ボタンをクリックしてください。"
 
@@ -12031,7 +12031,7 @@ msgstr "CSS class (オプション)"
 msgid "Link Target"
 msgstr "リンクターゲット"
 
-#: wp-admin/nav-menus.php:961 wp-admin/nav-menus.php:1118
+#: wp-admin/nav-menus.php:961 wp-admin/nav-menus.php:1126
 msgid "Save Menu"
 msgstr "メニューを保存"
 
