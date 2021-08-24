@@ -277,7 +277,7 @@ class rsssl_letsencrypt_handler {
 			    $status = 'success';
 			    $message = sprintf(__("Your certificate will expire on %s.", "really-simple-ssl" ).' '.__("Continue to renew.", "really-simple-ssl" ), $expiry_date);   ;
 		    } else {
-			    $action = 'stop';
+			    $action = 'continue';
 			    $status = 'error';
 			    $message = __("You already have a valid SSL certificate.", "really-simple-ssl" );
 		    }
@@ -1571,7 +1571,8 @@ class rsssl_letsencrypt_handler {
 	 */
 	public function cron_renew_installation() {
 		$install_method = get_option('rsssl_le_certificate_installed_by_rsssl');
-		$data = explode($install_method, ':');
+		$data = explode(':', $install_method );
+
 		$server = isset($data[0]) ? $data[0] : false;
 		$type = isset($data[1]) ? $data[1] : false;
 
