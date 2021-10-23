@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>アンという名の少女 打ち切りの理由</h2>
+  <h2>NHK朝ドラ カムカムエヴリバディ</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
