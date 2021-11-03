@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'nhk_kaigai';
+  $the_slug = 'come_come_everybody';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
