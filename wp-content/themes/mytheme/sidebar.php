@@ -87,7 +87,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>NHK海外ドラマ</h2>
+  <h2>カムカムエヴリバディ人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
