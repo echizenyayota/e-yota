@@ -282,7 +282,3 @@ function ecoteki_resource_hints( $urls, $relation_type) {
   return $urls;
 }
 add_filter( 'wp_resource_hints', 'ecoteki_resource_hints', 10, 2);
-
-
-
-
