@@ -88,7 +88,7 @@
 </aside>
 
 <!-- 人気の記事 -->
-<aside class="mymenu mymenu-thumb">
+<!-- <aside class="mymenu mymenu-thumb">
   <h2>鎌倉殿の13人 人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
@@ -116,7 +116,7 @@
       </li>
     <?php endforeach; ?>
   </ul>
-</aside>
+</aside> -->
 <?php wp_reset_postdata(); endif; ?>
 
 <?php dynamic_sidebar('submenu'); ?>
