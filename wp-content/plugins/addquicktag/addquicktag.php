@@ -6,7 +6,7 @@
  * Text Domain: addquicktag
  * Domain Path: /languages
  * Description: Allows you to easily add custom Quicktags to the html- and visual-editor.
- * Version:     2.5.3
+ * Version:     2.6.1
  * Author:      Frank Bültge
  * Author URI:  https://bueltge.de
  * License:     GPLv3+
@@ -23,14 +23,14 @@ class Add_Quicktag {
 	 *
 	 * @var string
 	 */
-	static private $option_string = 'rmnlQuicktagSettings';
+	private static $option_string = 'rmnlQuicktagSettings';
 
 	/**
 	 * Use filter 'addquicktag_pages' for add custom pages
 	 *
 	 * @var array
 	 */
-	static private $admin_pages_for_js = array(
+	private static $admin_pages_for_js = array(
 		'post.php',
 		'post-new.php',
 		'comment.php',
@@ -43,13 +43,14 @@ class Add_Quicktag {
 	 *
 	 * @var array
 	 */
-	static private $post_types_for_js = array( 'comment', 'edit-comments', 'widgets' );
+	private static $post_types_for_js = array( 'comment', 'edit-comments', 'widgets' );
 
 	/**
+	 * Store plugin string.
 	 *
 	 * @var string
 	 */
-	static private $plugin;
+	private static $plugin;
 
 	/**
 	 * Handler for the action 'init'. Instantiates this class.
@@ -59,7 +60,6 @@ class Add_Quicktag {
 	 * @return  \Add_Quicktag $instance
 	 */
 	public static function get_object() {
-
 		static $instance;
 
 		if ( null === $instance ) {
@@ -75,7 +75,6 @@ class Add_Quicktag {
 	 * @since   2.0.0
 	 */
 	private function __construct() {
-
 		if ( ! is_admin() ) {
 			return;
 		}
@@ -103,7 +102,6 @@ class Add_Quicktag {
 	 * @return  null|void
 	 */
 	public function on_admin_init() {
-
 		if ( ! is_admin() ) {
 			return null;
 		}
@@ -185,7 +183,6 @@ class Add_Quicktag {
 	 * @return  void
 	 */
 	public static function uninstall() {
-
 		delete_site_option( self::$option_string );
 	}
 
@@ -260,7 +257,7 @@ class Add_Quicktag {
 		global $current_screen;
 
 		if ( null !== $current_screen->id &&
-		     ! in_array(
+			! in_array(
 				$current_screen->id,
 				$this->get_post_types_for_js(),
 				true
@@ -271,26 +268,13 @@ class Add_Quicktag {
 
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '.dev' : '';
 
-		if ( version_compare( $GLOBALS['wp_version'], '3.3alpha', '>=' ) ) {
-			wp_enqueue_script(
-				$this->get_textdomain() . '_script',
-				plugins_url( '/js/add-quicktags' . $suffix . '.js', __FILE__ ),
-				array( 'jquery', 'quicktags' ),
-				'',
-				true
-			);
-			// Load only for WPs, there version is smaller then 3.2.
-		} else {
-			wp_enqueue_script(
-				$this->get_textdomain() . '_script',
-				plugins_url( '/js/add-quicktags_32' . $suffix . '.js', __FILE__ ),
-				array( 'jquery', 'quicktags' ),
-				'',
-				true
-			);
-		}
-		// Alternative to JSON function
-		// wp_localize_script( self :: get_textdomain() . '_script', 'addquicktag_tags', get_option( self :: $option_string ) );
+		wp_enqueue_script(
+			$this->get_textdomain() . '_script',
+			plugins_url( '/js/add-quicktags' . $suffix . '.js', __FILE__ ),
+			array( 'jquery', 'quicktags' ),
+			'2021-05-26',
+			true
+		);
 	}
 
 	/**
@@ -302,7 +286,6 @@ class Add_Quicktag {
 	 * @return  void
 	 */
 	public function localize_plugin() {
-
 		load_plugin_textdomain(
 			$this->get_textdomain(),
 			false,
@@ -316,14 +299,10 @@ class Add_Quicktag {
 	 * @since  2.0.0
 	 * @access public
 	 *
-	 * @param  $value string
-	 *                default = 'TextDomain'
-	 *                Name, PluginURI, Version, Description, Author, AuthorURI, TextDomain, DomainPath, Network, Title
-	 *
+	 * @param  string $value default = 'TextDomain'.
 	 * @return string
 	 */
 	public function get_plugin_data( $value = 'TextDomain' ) {
-
 		static $plugin_data = array();
 
 		// fetch the data just once.
@@ -348,7 +327,6 @@ class Add_Quicktag {
 	 * @return  string
 	 */
 	public function get_plugin_string() {
-
 		return self::$plugin;
 	}
 
@@ -377,7 +355,6 @@ class Add_Quicktag {
 	 * @return  array
 	 */
 	public function get_post_types_for_js() {
-
 		return apply_filters( 'addquicktag_post_types', $this->get_post_types() );
 	}
 
@@ -389,7 +366,6 @@ class Add_Quicktag {
 	 * @return  array
 	 */
 	public function get_admin_pages_for_js() {
-
 		return apply_filters( 'addquicktag_pages', self::$admin_pages_for_js );
 	}
 
@@ -401,7 +377,6 @@ class Add_Quicktag {
 	 * @return  string
 	 */
 	public function get_textdomain() {
-
 		return $this->get_plugin_data();
 	}
 
@@ -412,7 +387,6 @@ class Add_Quicktag {
 	 * @return  string
 	 */
 	public function get_option_string() {
-
 		return self::$option_string;
 	}
 

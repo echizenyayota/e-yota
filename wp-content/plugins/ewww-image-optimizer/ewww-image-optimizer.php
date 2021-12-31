@@ -1,6 +1,6 @@
 <?php
 /**
- * Loader for Standard EWWW I.O. plugin.
+ * Loader for Standard EWWW IO plugin.
  *
  * This file bootstraps the rest of the EWWW IO plugin after some basic checks.
  *
@@ -13,7 +13,9 @@ Plugin Name: EWWW Image Optimizer
 Plugin URI: https://wordpress.org/plugins/ewww-image-optimizer/
 Description: Reduce file sizes for images within WordPress including NextGEN Gallery and GRAND FlAGallery. Uses jpegtran, optipng/pngout, and gifsicle.
 Author: Exactly WWW
-Version: 5.1.2
+Version: 6.3.0
+Requires at least: 5.5
+Requires PHP: 7.1
 Author URI: https://ewww.io/
 License: GPLv3
 */
@@ -47,31 +49,7 @@ if ( ! defined( 'PHP_VERSION_ID' ) || PHP_VERSION_ID < 50600 ) {
 	add_action( 'admin_notices', 'ewww_image_optimizer_dual_plugin' );
 	// Loads the plugin translations.
 	add_action( 'plugins_loaded', 'ewww_image_optimizer_false_init' );
-} elseif ( defined( 'KINSTAMU_VERSION' ) ) {
-	add_action( 'network_admin_notices', 'ewww_image_optimizer_notice_kinsta' );
-	add_action( 'admin_notices', 'ewww_image_optimizer_notice_kinsta' );
-	require_once( plugin_dir_path( __FILE__ ) . 'classes/class-ewwwio-install-cloud.php' );
-	// Loads the plugin translations.
-	add_action( 'plugins_loaded', 'ewww_image_optimizer_false_init' );
-} elseif ( defined( 'WPE_PLUGIN_VERSION' ) ) {
-	add_action( 'network_admin_notices', 'ewww_image_optimizer_notice_wpengine' );
-	add_action( 'admin_notices', 'ewww_image_optimizer_notice_wpengine' );
-	require_once( plugin_dir_path( __FILE__ ) . 'classes/class-ewwwio-install-cloud.php' );
-	// Loads the plugin translations.
-	add_action( 'plugins_loaded', 'ewww_image_optimizer_false_init' );
-} elseif ( defined( 'FLYWHEEL_CONFIG_DIR' ) ) {
-	add_action( 'network_admin_notices', 'ewww_image_optimizer_notice_flywheel' );
-	add_action( 'admin_notices', 'ewww_image_optimizer_notice_flywheel' );
-	require_once( plugin_dir_path( __FILE__ ) . 'classes/class-ewwwio-install-cloud.php' );
-	// Loads the plugin translations.
-	add_action( 'plugins_loaded', 'ewww_image_optimizer_false_init' );
-} elseif ( defined( 'WPNET_INIT_PLUGIN_VERSION' ) ) {
-	add_action( 'network_admin_notices', 'ewww_image_optimizer_notice_wpnetnz' );
-	add_action( 'admin_notices', 'ewww_image_optimizer_notice_wpnetnz' );
-	require_once( plugin_dir_path( __FILE__ ) . 'classes/class-ewwwio-install-cloud.php' );
-	// Loads the plugin translations.
-	add_action( 'plugins_loaded', 'ewww_image_optimizer_false_init' );
-} elseif ( empty( $_GET['ewwwio_disable'] ) ) {
+} elseif ( false === strpos( add_query_arg( null, null ), 'ewwwio_disable=1' ) ) {
 	/**
 	 * The full path of the plugin file (this file).
 	 *
@@ -83,7 +61,7 @@ if ( ! defined( 'PHP_VERSION_ID' ) || PHP_VERSION_ID < 50600 ) {
 	 *
 	 * @var string EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL
 	 */
-	define( 'EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL', basename( plugin_dir_path( __FILE__ ) ) . '/' . basename( __FILE__ ) );
+	define( 'EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL', plugin_basename( __FILE__ ) );
 	/**
 	 * This is the full system path to the plugin folder.
 	 *
@@ -128,9 +106,18 @@ if ( ! defined( 'PHP_VERSION_ID' ) || PHP_VERSION_ID < 50600 ) {
 	 */
 	require_once( EWWW_IMAGE_OPTIMIZER_PLUGIN_PATH . 'classes/class-ewwwio-tracking.php' );
 	/**
-	 * EWWWIO_HS_Beacon class for embedding the HelpScout Beacon.
+	 * The main function to return a single EIO_Base object to functions elsewhere.
+	 *
+	 * @return object object|EIO_Base The one true EIO_Base instance.
 	 */
-	require_once( EWWW_IMAGE_OPTIMIZER_PLUGIN_PATH . 'classes/class-eio-hs-beacon.php' );
+	function eio_plugin() {
+		// TODO: create an intermediary EIO_Plugin class that inherits from EIO_Base. This
+		// can be used for things like defining constants, including other files, and adding hooks.
+		if ( method_exists( 'EIO_Base', 'instance' ) ) {
+			return EIO_Base::instance();
+		}
+		return new EIO_Base();
+	}
 } // End if().
 
 if ( ! function_exists( 'ewww_image_optimizer_unsupported_php' ) ) {
@@ -154,36 +141,4 @@ if ( ! function_exists( 'ewww_image_optimizer_unsupported_php' ) ) {
 	function ewww_image_optimizer_false_init() {
 		load_plugin_textdomain( 'ewww-image-optimizer', false, plugin_dir_path( __FILE__ ) . 'languages/' );
 	}
-}
-
-/**
- * Inform the user that only ewww-image-optimizer-cloud is permitted on WP Engine.
- */
-function ewww_image_optimizer_notice_wpengine() {
-	echo "<div id='ewww-image-optimizer-warning-wpengine' class='error'><p>" . esc_html__( 'The regular version of the EWWW Image Optimizer plugin is not permitted on WP Engine sites. However, the cloud version has been approved by WP Engine. Please deactivate EWWW Image Optimizer and install EWWW Image Optimizer Cloud to optimize your images.', 'ewww-image-optimizer' ) .
-		' <a href="admin.php?action=ewwwio_install_cloud_plugin">' . esc_html__( 'Install now.', 'ewww-image-optimizer' ) . '</a></p></div>';
-}
-
-/**
- * Inform the user that only ewww-image-optimizer-cloud is permitted on Kinsta.
- */
-function ewww_image_optimizer_notice_kinsta() {
-	echo "<div id='ewww-image-optimizer-warning-kinsta' class='error'><p>" . esc_html__( 'The regular version of the EWWW Image Optimizer plugin is not permitted on Kinsta sites. Please deactivate EWWW Image Optimizer and install EWWW Image Optimizer Cloud to optimize your images.', 'ewww-image-optimizer' ) .
-		' <a href="admin.php?action=ewwwio_install_cloud_plugin">' . esc_html__( 'Install now.', 'ewww-image-optimizer' ) . '</a></p></div>';
-}
-
-/**
- * Inform the user that only ewww-image-optimizer-cloud is permitted on Flywheel.
- */
-function ewww_image_optimizer_notice_flywheel() {
-	echo "<div id='ewww-image-optimizer-warning-flywheel' class='error'><p>" . esc_html__( 'The regular version of the EWWW Image Optimizer plugin is not permitted on Flywheel sites. Please deactivate EWWW Image Optimizer and install EWWW Image Optimizer Cloud to optimize your images.', 'ewww-image-optimizer' ) .
-		' <a href="admin.php?action=ewwwio_install_cloud_plugin">' . esc_html__( 'Install now.', 'ewww-image-optimizer' ) . '</a></p></div>';
-}
-
-/**
- * Inform the user that only ewww-image-optimizer-cloud is permitted on WP NET (nz).
- */
-function ewww_image_optimizer_notice_wpnetnz() {
-	echo "<div id='ewww-image-optimizer-warning-wpnetnz' class='error'><p>" . esc_html__( 'The regular version of the EWWW Image Optimizer plugin is not permitted on WP NET sites. Please deactivate EWWW Image Optimizer and install EWWW Image Optimizer Cloud to optimize your images.', 'ewww-image-optimizer' ) .
-		' <a href="admin.php?action=ewwwio_install_cloud_plugin">' . esc_html__( 'Install now.', 'ewww-image-optimizer' ) . '</a></p></div>';
 }

@@ -1,17 +1,20 @@
 <?php
 /**
  * Plugin Name: Public Post Preview
- * Version: 2.9.0
+ * Version: 2.9.3
  * Description: Allow anonymous users to preview a post before it is published.
  * Author: Dominik Schilling
  * Author URI: https://dominikschilling.de/
  * Plugin URI: https://dominikschilling.de/wp-plugins/public-post-preview/en/
  * Text Domain: public-post-preview
+ * Requires at least: 5.0
+ * Tested up to: 5.7
+ * Requires PHP: 5.6
  * License: GPLv2 or later
  *
  * Previously (2009-2011) maintained by Jonathan Dingman and Matt Martz.
  *
- *  Copyright (C) 2012-2019 Dominik Schilling
+ *  Copyright (C) 2012-2021 Dominik Schilling
  *
  *  This program is free software; you can redistribute it and/or
  *  modify it under the terms of the GNU General Public License
@@ -48,12 +51,11 @@ class DS_Public_Post_Preview {
 	 * @since 1.0.0
 	 */
 	public static function init() {
-		add_action( 'init', array( __CLASS__, 'load_textdomain' ) );
 		add_action( 'transition_post_status', array( __CLASS__, 'unregister_public_preview_on_status_change' ), 20, 3 );
 		add_action( 'post_updated', array( __CLASS__, 'unregister_public_preview_on_edit' ), 20, 2 );
 
 		if ( ! is_admin() ) {
-			add_filter( 'pre_get_posts', array( __CLASS__, 'show_public_preview' ) );
+			add_action( 'pre_get_posts', array( __CLASS__, 'show_public_preview' ) );
 			add_filter( 'query_vars', array( __CLASS__, 'add_query_var' ) );
 			// Add the query var to WordPress SEO by Yoast whitelist.
 			add_filter( 'wpseo_whitelist_permalink_vars', array( __CLASS__, 'add_query_var' ) );
@@ -64,15 +66,6 @@ class DS_Public_Post_Preview {
 			add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_script' ) );
 			add_filter( 'display_post_states', array( __CLASS__, 'display_preview_state' ), 20, 2 );
 		}
-	}
-
-	/**
-	 * Registers the textdomain.
-	 *
-	 * @since 2.0.0
-	 */
-	public static function load_textdomain() {
-		return load_plugin_textdomain( 'public-post-preview' );
 	}
 
 	/**
@@ -88,25 +81,31 @@ class DS_Public_Post_Preview {
 		}
 
 		if ( get_current_screen()->is_block_editor() ) {
-			$script_dependencies_path = plugin_dir_path( __FILE__ ) . 'js/gutenberg-integration.deps.json';
-			$script_dependencies      = file_exists( $script_dependencies_path ) ? json_decode( file_get_contents( $script_dependencies_path ) ) : array();
+			$script_assets_path = plugin_dir_path( __FILE__ ) . 'js/dist/gutenberg-integration.asset.php';
+			$script_assets      = file_exists( $script_assets_path ) ?
+				require $script_assets_path :
+				array(
+					'dependencies' => array(),
+					'version'      => '',
+				);
 			wp_enqueue_script(
 				'public-post-preview-gutenberg',
-				plugins_url( 'js/gutenberg-integration.js', __FILE__ ),
-				$script_dependencies,
-				'20190720',
+				plugins_url( 'js/dist/gutenberg-integration.js', __FILE__ ),
+				$script_assets['dependencies'],
+				$script_assets['version'],
 				true
 			);
 
 			wp_set_script_translations( 'public-post-preview-gutenberg', 'public-post-preview' );
 
-			$post = get_post();
+			$post            = get_post();
+			$preview_enabled = self::is_public_preview_enabled( $post );
 			wp_localize_script(
 				'public-post-preview-gutenberg',
 				'DSPublicPostPreviewData',
 				array(
-					'previewEnabled' => self::is_public_preview_enabled( $post ),
-					'previewUrl'     => self::get_preview_link( $post ),
+					'previewEnabled' => $preview_enabled,
+					'previewUrl'     => $preview_enabled ? self::get_preview_link( $post ) : '',
 					'nonce'          => wp_create_nonce( 'public-post-preview_' . $post->ID ),
 				)
 			);
@@ -219,7 +218,7 @@ class DS_Public_Post_Preview {
 
 		<div id="public-post-preview-link" style="margin-top:6px"<?php echo $enabled ? '' : ' class="hidden"'; ?>>
 			<label>
-				<input type="text" name="public_post_preview_link" class="regular-text" value="<?php echo esc_attr( self::get_preview_link( $post ) ); ?>" style="width:99%" readonly />
+				<input type="text" name="public_post_preview_link" class="regular-text" value="<?php echo esc_attr( $enabled ? self::get_preview_link( $post ) : '' ); ?>" style="width:99%" readonly />
 				<span class="description"><?php _e( 'Copy and share this preview URL.', 'public-post-preview' ); ?></span>
 			</label>
 		</div>
@@ -279,13 +278,13 @@ class DS_Public_Post_Preview {
 	/**
 	 * (Un)Registers a post for a public preview.
 	 *
-	 * Don't runs on an autosave and ignores post revisions.
+	 * Runs when a post is saved, ignores revisions and autosaves.
 	 *
 	 * @since 2.0.0
 	 *
 	 * @param int    $post_id The post id.
 	 * @param object $post    The post object.
-	 * @return bool Returns false on a failure, true on a success.
+	 * @return bool Returns true on a success, false on a failure.
 	 */
 	public static function register_public_preview( $post_id, $post ) {
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
@@ -296,7 +295,11 @@ class DS_Public_Post_Preview {
 			return false;
 		}
 
-		if ( empty( $_POST['public_post_preview_wpnonce'] ) || ! wp_verify_nonce( $_POST['public_post_preview_wpnonce'], 'public_post_preview' ) ) {
+		if ( empty( $_POST['public_post_preview_wpnonce'] ) || ! wp_verify_nonce( $_POST['public_post_preview_wpnonce'], 'public-post-preview_' . $post_id ) ) {
+			return false;
+		}
+
+		if ( ! current_user_can( 'edit_post', $post_id ) ) {
 			return false;
 		}
 
@@ -330,7 +333,7 @@ class DS_Public_Post_Preview {
 	 * @param string  $new_status New post status.
 	 * @param string  $old_status Old post status.
 	 * @param WP_Post $post       Post object.
-	 * @return bool Returns false on a failure, true on a success.
+	 * @return bool Returns true on a success, false on a failure.
 	 */
 	public static function unregister_public_preview_on_status_change( $new_status, $old_status, $post ) {
 		$disallowed_status   = self::get_published_statuses();
@@ -350,7 +353,7 @@ class DS_Public_Post_Preview {
 	 *
 	 * @param int     $post_id Post ID.
 	 * @param WP_Post $post    Post object.
-	 * @return bool Returns false on a failure, true on a success.
+	 * @return bool Returns true on a success, false on a failure.
 	 */
 	public static function unregister_public_preview_on_edit( $post_id, $post ) {
 		$disallowed_status   = self::get_published_statuses();
@@ -369,7 +372,7 @@ class DS_Public_Post_Preview {
 	 * @since 2.5.0
 	 *
 	 * @param int $post_id Post ID.
-	 * @return bool Returns false on a failure, true on a success.
+	 * @return bool Returns true on a success, false on a failure.
 	 */
 	private static function unregister_public_preview( $post_id ) {
 		$post_id          = (int) $post_id;
@@ -390,7 +393,12 @@ class DS_Public_Post_Preview {
 	 * @since 2.0.0
 	 */
 	public static function ajax_register_public_preview() {
+		if ( ! isset( $_POST['post_ID'], $_POST['checked'] ) ) {
+			wp_send_json_error( 'incomplete_data' );
+		}
+
 		$preview_post_id = (int) $_POST['post_ID'];
+		$checked         = (string) $_POST['checked'];
 
 		check_ajax_referer( 'public-post-preview_' . $preview_post_id );
 
@@ -406,9 +414,9 @@ class DS_Public_Post_Preview {
 
 		$preview_post_ids = self::get_preview_post_ids();
 
-		if ( 'false' === $_POST['checked'] && in_array( $preview_post_id, $preview_post_ids, true ) ) {
+		if ( 'false' === $checked && in_array( $preview_post_id, $preview_post_ids, true ) ) {
 			$preview_post_ids = array_diff( $preview_post_ids, (array) $preview_post_id );
-		} elseif ( 'true' === $_POST['checked'] && ! in_array( $preview_post_id, $preview_post_ids, true ) ) {
+		} elseif ( 'true' === $checked && ! in_array( $preview_post_id, $preview_post_ids, true ) ) {
 			$preview_post_ids = array_merge( $preview_post_ids, (array) $preview_post_id );
 		} else {
 			wp_send_json_error( 'unknown_status' );
@@ -420,7 +428,12 @@ class DS_Public_Post_Preview {
 			wp_send_json_error( 'not_saved' );
 		}
 
-		wp_send_json_success();
+		$data = null;
+		if ( 'true' === $checked ) {
+			$data = array( 'preview_url' => self::get_preview_link( $post ) );
+		}
+
+		wp_send_json_success( $data );
 	}
 
 	/**
@@ -446,7 +459,6 @@ class DS_Public_Post_Preview {
 	 * @since 2.0.0
 	 *
 	 * @param object $query The WP_Query object.
-	 * @return object The WP_Query object, unchanged.
 	 */
 	public static function show_public_preview( $query ) {
 		if (
@@ -457,13 +469,16 @@ class DS_Public_Post_Preview {
 		) {
 			if ( ! headers_sent() ) {
 				nocache_headers();
+				header( 'X-Robots-Tag: noindex' );
 			}
-			add_action( 'wp_head', 'wp_no_robots' );
+			if ( function_exists( 'wp_robots_no_robots' ) ) { // WordPress 5.7+
+				add_filter( 'wp_robots', 'wp_robots_no_robots' );
+			} else {
+				add_action( 'wp_head', 'wp_no_robots' );
+			}
 
 			add_filter( 'posts_results', array( __CLASS__, 'set_post_to_publish' ), 10, 2 );
 		}
-
-		return $query;
 	}
 
 	/**
@@ -481,11 +496,11 @@ class DS_Public_Post_Preview {
 		}
 
 		if ( ! self::verify_nonce( get_query_var( '_ppp' ), 'public_post_preview_' . $post_id ) ) {
-			wp_die( __( 'This link has expired!', 'public-post-preview' ) );
+			wp_die( __( 'This link has expired!', 'public-post-preview' ), 403 );
 		}
 
 		if ( ! in_array( $post_id, self::get_preview_post_ids(), true ) ) {
-			wp_die( __( 'No public preview available!', 'public-post-preview' ) );
+			wp_die( __( 'No public preview available!', 'public-post-preview' ), 404 );
 		}
 
 		return true;
@@ -575,7 +590,7 @@ class DS_Public_Post_Preview {
 	 * @return int The time-dependent variable.
 	 */
 	private static function nonce_tick() {
-		$nonce_life = apply_filters( 'ppp_nonce_life', 60 * 60 * 48 ); // 48 hours
+		$nonce_life = apply_filters( 'ppp_nonce_life', 2 * DAY_IN_SECONDS ); // 2 days.
 
 		return ceil( time() / ( $nonce_life / 2 ) );
 	}
@@ -644,7 +659,7 @@ class DS_Public_Post_Preview {
 	 * @since 2.0.0
 	 *
 	 * @param array $post_ids List of post IDs that have a preview.
-	 * @return array The post IDs. (Empty array if no IDs are registered.)
+	 * @return bool Returns true on a success, false on a failure.
 	 */
 	private static function set_preview_post_ids( $post_ids = array() ) {
 		$post_ids = array_map( 'absint', $post_ids );

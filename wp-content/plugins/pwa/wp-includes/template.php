@@ -34,12 +34,17 @@ function pwa_locate_template( $template_names, $load = false, $require_once = tr
 		if ( ! $template_name ) {
 			continue;
 		}
+		$theme_slug = get_template();
 		if ( file_exists( STYLESHEETPATH . '/' . $template_name ) ) {
 			$located = STYLESHEETPATH . '/' . $template_name;
 			break;
 		} elseif ( file_exists( TEMPLATEPATH . '/' . $template_name ) ) {
 			$located = TEMPLATEPATH . '/' . $template_name;
 			break;
+		} elseif ( preg_match( '/^twenty\w+$/', $theme_slug ) && file_exists( PWA_PLUGIN_DIR . '/bundled-theme-support/' . $theme_slug . '/offline.php' ) ) {
+			$located = PWA_PLUGIN_DIR . '/bundled-theme-support/' . $theme_slug . '/offline.php';
+			break;
+			// Begin core patch.
 		} elseif ( file_exists( PWA_PLUGIN_DIR . '/' . WPINC . '/theme-compat/' . $template_name ) ) {
 			$located = PWA_PLUGIN_DIR . '/' . WPINC . '/theme-compat/' . $template_name;
 			break;
@@ -139,7 +144,7 @@ function wp_service_worker_get_error_messages() {
 		'wp_service_worker_error_messages',
 		array(
 			'clientOffline' => __( 'It seems you are offline. Please check your internet connection and try again.', 'pwa' ),
-			'serverOffline' => __( 'The server appears to be down. Please try again later.', 'pwa' ),
+			'serverOffline' => __( 'The server appears to be down, or your connection isn\'t working as expected. Please try again later.', 'pwa' ),
 			'error'         => __( 'Something prevented the page from being rendered. Please try again.', 'pwa' ),
 			'comment'       => __( 'Your comment will be submitted once you are back online!', 'pwa' ),
 		)

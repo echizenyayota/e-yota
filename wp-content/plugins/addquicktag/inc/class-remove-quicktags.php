@@ -18,7 +18,11 @@ if ( ! function_exists( 'add_action' ) ) {
  */
 class Add_Quicktag_Remove_Quicktags extends Add_Quicktag_Settings {
 
-	// default buttons from WP Core
+	/**
+	 * Default buttons from WP Core.
+	 *
+	 * @var string
+	 */
 	private static $core_quicktags = 'strong,em,link,block,del,ins,img,ul,ol,li,code,more,close,fullscreen';
 
 	/**
@@ -29,10 +33,9 @@ class Add_Quicktag_Remove_Quicktags extends Add_Quicktag_Settings {
 	 * @return \Add_Quicktag|\Add_Quicktag_Remove_Quicktags|\Add_Quicktag_Settings $instance
 	 */
 	public static function get_object() {
-
 		static $instance;
 
-		if ( NULL === $instance ) {
+		if ( null === $instance ) {
 			$instance = new self();
 		}
 
@@ -47,30 +50,28 @@ class Add_Quicktag_Remove_Quicktags extends Add_Quicktag_Settings {
 	 * @uses    register_activation_hook, register_uninstall_hook, add_action
 	 */
 	private function __construct() {
-
 		add_action( 'addquicktag_settings_form_page', array( $this, 'get_remove_quicktag_area' ) );
 	}
 
 	/**
-	 * Add settings area
+	 * Add settings area.
 	 *
-	 * @param array $options
+	 * @param array $options Store options content.
 	 */
 	public function get_remove_quicktag_area( $options ) {
-
 		if ( ! array_key_exists( 'core_buttons', $options ) ) {
-			$options[ 'core_buttons' ] = array();
+			$options['core_buttons'] = array();
 		}
 		?>
 		<h3><?php esc_html_e( 'Remove Core Quicktag buttons', 'addquicktag' ); ?></h3>
 		<p><?php esc_html_e( 'Select the checkbox below to remove a core quicktags in the editors of the respective post type.', 'addquicktag' ); ?></p>
 
 		<?php
-		// loop about the post types, create html an values for title in table
+		// Loop about the post types, create html an values for title in table.
 		$pt_title    = '';
 		$pt_colgroup = '';
 		foreach ( $this->get_post_types_for_js() as $post_type ) {
-			$pt_title .= '<th class="row-title rotate" title="Post Type"><span><code>' . $post_type . '</code></span></th>' . "\n";
+			$pt_title    .= '<th class="row-title rotate" title="Post Type"><span><code>' . $post_type . '</code></span></th>' . "\n";
 			$pt_colgroup .= '<colgroup></colgroup>' . "\n";
 		}
 		?>
@@ -90,26 +91,26 @@ class Add_Quicktag_Remove_Quicktags extends Add_Quicktag_Settings {
 
 			<tbody>
 			<?php
-			// Convert string to array
+			// Convert string to array.
 			$core_buttons = explode( ',', self::$core_quicktags );
-			// Loop over items to remove and unset them from the buttons
+			// Loop over items to remove and unset them from the buttons.
 			$i = 999;
 			foreach ( $core_buttons as $key => $value ) {
 
-				// same style as in editor
+				// Same style as in editor.
 				if ( 'strong' === $value ) {
 					$text  = 'b';
 					$style = ' style="font-weight: bold;"';
-				} else if ( 'em' === $value ) {
+				} elseif ( 'em' === $value ) {
 					$text  = 'i';
 					$style = ' style="font-style: italic;"';
-				} else if ( 'link' === $value ) {
+				} elseif ( 'link' === $value ) {
 					$text  = $value;
 					$style = ' style="text-decoration: underline;"';
-				} else if ( 'del' === $value ) {
+				} elseif ( 'del' === $value ) {
 					$text  = $value;
 					$style = ' style="text-decoration: line-through;"';
-				} else if ( 'block' === $value ) {
+				} elseif ( 'block' === $value ) {
 					$text  = 'b-quote';
 					$style = '';
 				} else {
@@ -121,20 +122,19 @@ class Add_Quicktag_Remove_Quicktags extends Add_Quicktag_Settings {
 				echo '<td><input type="button" class="ed_button" title="" value="'
 					. $text . '"' . $style . '> <code>' . $value . '</code></td>';
 
-				// loop about the post types, create html an values
+				// Loop about the post types, create html an values.
 				$pt_checkboxes = '';
 				foreach ( $this->get_post_types_for_js() as $post_type ) {
-
 					$pt_checked = '';
-					if ( isset( $options[ 'core_buttons' ][ $value ][ $post_type ] )
-						&& 1 === (int) $options[ 'core_buttons' ][ $value ][ $post_type ] ) {
+					if ( isset( $options['core_buttons'][ $value ][ $post_type ] )
+						&& 1 === (int) $options['core_buttons'][ $value ][ $post_type ] ) {
 						$pt_checked = ' checked="checked"';
 					}
 
 					$pt_checkboxes .= '<td class="num"><input type="checkbox" name="' .
-					                  parent :: get_option_string() . '[core_buttons][' .
-					                  $value . '][' . $post_type . ']" value="1"' .
-					                  $pt_checked . '/></td>' . "\n";
+									parent::get_option_string() . '[core_buttons][' .
+									$value . '][' . $post_type . ']" value="1"' .
+									$pt_checked . '/></td>' . "\n";
 				}
 				echo $pt_checkboxes;
 
@@ -145,12 +145,12 @@ class Add_Quicktag_Remove_Quicktags extends Add_Quicktag_Settings {
 				$i ++;
 			}
 
-			// Convert new buttons array back into a comma-separated string
+			// Convert new buttons array back into a comma-separated string.
 			$core_qt = implode( ',', $core_buttons );
 			?>
 			</tbody>
 		</table>
-	<?php
+		<?php
 	}
 
 } // end class

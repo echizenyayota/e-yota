@@ -10,7 +10,7 @@
  *
  * @since 0.2
  */
-class WP_Service_Worker_Configuration_Component implements WP_Service_Worker_Component {
+final class WP_Service_Worker_Configuration_Component implements WP_Service_Worker_Component {
 
 	/**
 	 * Adds the component functionality to the service worker.
@@ -52,25 +52,31 @@ class WP_Service_Worker_Configuration_Component implements WP_Service_Worker_Com
 	 */
 	public function get_script() {
 		$current_scope = wp_service_workers()->get_current_scope();
-		$workbox_dir   = 'wp-includes/js/workbox/';
+		$workbox_dir   = sprintf( 'wp-includes/js/workbox-v%s/', PWA_WORKBOX_VERSION );
 
-		if ( WP_DEBUG ) {
+		$script = '';
+		if ( SCRIPT_DEBUG ) {
+			$enable_debug_log = defined( 'WP_SERVICE_WORKER_DEBUG_LOG' ) && WP_SERVICE_WORKER_DEBUG_LOG;
+			if ( ! $enable_debug_log ) {
+				$script .= "self.__WB_DISABLE_DEV_LOGS = true;\n";
+			}
+
 			// Load with importScripts() so that source map is available.
-			$script = sprintf(
+			$script .= sprintf(
 				"importScripts( %s );\n",
-				wp_service_worker_json_encode( PWA_PLUGIN_URL . $workbox_dir . 'workbox-sw.js' )
+				wp_json_encode( PWA_PLUGIN_URL . $workbox_dir . 'workbox-sw.js' )
 			);
 		} else {
 			// Inline the workbox-sw.js to avoid an additional HTTP request.
-			$script = file_get_contents( PWA_PLUGIN_DIR . '/' . $workbox_dir . 'workbox-sw.js' ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
-			$script = preg_replace( '://# sourceMappingURL=.+?\.map:', '', $script );
+			$wbjs    = file_get_contents( PWA_PLUGIN_DIR . '/' . $workbox_dir . 'workbox-sw.js' ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+			$script .= preg_replace( '://# sourceMappingURL=.+?\.map\s*$:s', '', $wbjs );
 		}
 
 		$options = array(
-			'debug'            => WP_DEBUG,
+			'debug'            => SCRIPT_DEBUG, // When true, the dev builds are loaded. Otherwise, the prod builds are used.
 			'modulePathPrefix' => PWA_PLUGIN_URL . $workbox_dir,
 		);
-		$script .= sprintf( "workbox.setConfig( %s );\n", wp_service_worker_json_encode( $options ) );
+		$script .= sprintf( "workbox.setConfig( %s );\n", wp_json_encode( $options ) );
 
 		// Vary the prefix by the root directory of the site to ensure multisite subdirectory installs don't pollute each other's caches.
 		$prefix = sprintf(
@@ -85,7 +91,7 @@ class WP_Service_Worker_Configuration_Component implements WP_Service_Worker_Com
 			'suffix'   => 'v1',
 		);
 
-		$script .= sprintf( "workbox.core.setCacheNameDetails( %s );\n", wp_service_worker_json_encode( $cache_name_details ) );
+		$script .= sprintf( "workbox.core.setCacheNameDetails( %s );\n", wp_json_encode( $cache_name_details ) );
 
 		$skip_waiting = wp_service_worker_skip_waiting();
 
@@ -96,15 +102,16 @@ class WP_Service_Worker_Configuration_Component implements WP_Service_Worker_Com
 		 * within scope will be controlled by a service worker immediately after that service worker activates.
 		 * Without enabling it, they won't be controlled until the next navigation.
 		 *
-		 * For optioning in for .clientsClaim(), you could do:
+		 * For opting-out of client claiming, the following code may be used:
 		 *
-		 *     add_filter( 'wp_service_worker_clients_claim', '__return_true' );
+		 *     add_filter( 'wp_service_worker_clients_claim', '__return_false' );
 		 *
 		 * @since 0.2
+		 * @since 0.4.1 Enabled by default.
 		 *
-		 * @param bool $clients_claim Whether to run clientsClaim() after skipWaiting().
+		 * @param bool $clients_claim Whether to run clientsClaim() after skipWaiting(). Defaults to true.
 		 */
-		$clients_claim = apply_filters( 'wp_service_worker_clients_claim', false );
+		$clients_claim = apply_filters( 'wp_service_worker_clients_claim', true );
 
 		if ( true === $skip_waiting ) {
 			$script .= "workbox.core.skipWaiting();\n";

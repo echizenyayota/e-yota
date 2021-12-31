@@ -10,7 +10,7 @@
  *
  * Mainly copied from Jetpack_PWA_Manifest and Jetpack_PWA_Helpers.
  */
-class WP_Web_App_Manifest {
+final class WP_Web_App_Manifest {
 
 	/**
 	 * The theme color to use if no dynamic value is present.
@@ -34,6 +34,16 @@ class WP_Web_App_Manifest {
 	const REST_ROUTE = '/web-app-manifest';
 
 	/**
+	 * Maximum length for short_name.
+	 *
+	 * @since 0.4
+	 * @link https://developers.google.com/web/tools/lighthouse/audits/manifest-contains-short_name
+	 * @link https://developer.chrome.com/apps/manifest/name#short_name
+	 * @var int
+	 */
+	const SHORT_NAME_MAX_LENGTH = 12;
+
+	/**
 	 * The default manifest icon sizes.
 	 *
 	 * Copied from Jetpack_PWA_Helpers::get_default_manifest_icon_sizes().
@@ -51,6 +61,7 @@ class WP_Web_App_Manifest {
 	public function init() {
 		add_action( 'wp_head', array( $this, 'manifest_link_and_meta' ) );
 		add_action( 'rest_api_init', array( $this, 'register_manifest_rest_route' ) );
+		add_filter( 'site_status_tests', array( $this, 'add_short_name_site_status_test' ) );
 	}
 
 	/**
@@ -61,7 +72,7 @@ class WP_Web_App_Manifest {
 	public function manifest_link_and_meta() {
 		$manifest = $this->get_manifest();
 		?>
-		<link rel="manifest" href="<?php echo esc_url( rest_url( self::REST_NAMESPACE . self::REST_ROUTE ) ); ?>">
+		<link rel="manifest" href="<?php echo esc_url( static::get_url() ); ?>">
 		<meta name="theme-color" content="<?php echo esc_attr( $manifest['theme_color'] ); ?>">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
@@ -118,11 +129,25 @@ class WP_Web_App_Manifest {
 	 */
 	public function get_manifest() {
 		$manifest = array(
-			'name'      => wp_kses_decode_entities( get_bloginfo( 'name' ) ),
+			'name'      => html_entity_decode( get_bloginfo( 'name' ), ENT_QUOTES, 'utf-8' ),
 			'start_url' => home_url( '/' ),
 			'display'   => 'minimal-ui',
 			'dir'       => is_rtl() ? 'rtl' : 'ltr',
 		);
+
+		/*
+		 * If the name is 12 characters or less, use it as the short_name. Lighthouse complains when the short_name
+		 * is absent, even when the name is 12 characters or less. Chrome's max recommended short_name length is 12
+		 * characters.
+		 *
+		 * @todo This should probably use mb_strlen().
+		 * https://developers.google.com/web/tools/lighthouse/audits/manifest-contains-short_name
+		 * https://developer.chrome.com/apps/manifest/name#short_name
+		 */
+		if ( strlen( $manifest['name'] ) <= self::SHORT_NAME_MAX_LENGTH ) {
+			$manifest['short_name'] = $manifest['name'];
+		}
+
 		$language = get_bloginfo( 'language' );
 		if ( $language ) {
 			$manifest['lang'] = $language;
@@ -134,7 +159,7 @@ class WP_Web_App_Manifest {
 			$manifest['theme_color']      = $theme_color;
 		}
 
-		$description = wp_kses_decode_entities( get_bloginfo( 'description' ) );
+		$description = html_entity_decode( get_bloginfo( 'description' ), ENT_QUOTES, 'utf-8' );
 		if ( $description ) {
 			$manifest['description'] = $description;
 		}
@@ -156,6 +181,96 @@ class WP_Web_App_Manifest {
 	}
 
 	/**
+	 * Register test for lacking short_name in web app manifest.
+	 *
+	 * @since 0.4
+	 *
+	 * @param array $tests Tests.
+	 * @return array Tests.
+	 */
+	public function add_short_name_site_status_test( $tests ) {
+		$tests['direct']['web_app_manifest_short_name'] = array(
+			'label' => __( 'Short Name in Web App Manifest', 'pwa' ),
+			'test'  => array( $this, 'test_short_name_present_in_manifest' ),
+		);
+		return $tests;
+	}
+
+	/**
+	 * Test that web app manifest contains a short_name.
+	 *
+	 * @since 0.4
+	 * @todo Add test for PNG site icon.
+	 *
+	 * @return array Test results.
+	 */
+	public function test_short_name_present_in_manifest() {
+		$manifest = $this->get_manifest();
+
+		$description = sprintf(
+			/* translators: %1$s is `short_name`, %2$d is the max length as a number */
+			__( 'The %1$s is a short version of your website&#8217;s name. It is displayed when there is not enough space for the full name, for example with the site icon on a phone&#8217;s homescreen. It should be a maximum of %2$d characters long.', 'pwa' ),
+			'<code>short_name</code>',
+			self::SHORT_NAME_MAX_LENGTH
+		);
+
+		$actions = sprintf(
+			/* translators: %1$s is `web_app_manifest`, %2$s is `functions.php` */
+			__( 'You currently may use %1$s filter to set the short name, for example in your theme&#8217;s %2$s.', 'pwa' ),
+			'<code>web_app_manifest</code>',
+			'<code>functions.php</code>'
+		);
+
+		if ( empty( $manifest['short_name'] ) ) {
+			$result = array(
+				'label'       => __( 'Web App Manifest lacks a short name entry', 'pwa' ),
+				'status'      => 'recommended',
+				'badge'       => array(
+					'label' => __( 'Progressive Web App', 'pwa' ),
+					'color' => 'orange',
+				),
+				'description' => wp_kses_post( sprintf( '<p>%s</p>', $description ) ),
+				'actions'     => wp_kses_post( $actions ),
+			);
+		} elseif ( strlen( $manifest['short_name'] ) > self::SHORT_NAME_MAX_LENGTH ) {
+			$result = array(
+				'label'       =>
+					sprintf(
+						/* translators: %1$s is the short name */
+						__( 'Web App Manifest has a short name (%s) that is too long', 'pwa' ),
+						esc_html( $manifest['short_name'] )
+					),
+				'status'      => 'recommended',
+				'badge'       => array(
+					'label' => __( 'Progressive Web App', 'pwa' ),
+					'color' => 'orange',
+				),
+				'description' => wp_kses_post( sprintf( '<p>%s</p>', $description ) ),
+				'actions'     => wp_kses_post( $actions ),
+			);
+		} else {
+			$result = array(
+				'label'       =>
+					sprintf(
+						/* translators: %1$s is the short name */
+						__( 'Web App Manifest has a short name (%s)', 'pwa' ),
+						esc_html( $manifest['short_name'] )
+					),
+				'status'      => 'good',
+				'badge'       => array(
+					'label' => __( 'Progressive Web App', 'pwa' ),
+					'color' => 'green',
+				),
+				'description' => wp_kses_post( sprintf( '<p>%s</p>', $description ) ),
+			);
+		}
+
+		$result['test'] = 'web_app_manifest_short_name';
+
+		return $result;
+	}
+
+	/**
 	 * Registers the rest route to get the manifest.
 	 */
 	public function register_manifest_rest_route() {
@@ -164,10 +279,24 @@ class WP_Web_App_Manifest {
 			self::REST_ROUTE,
 			array(
 				'methods'             => 'GET',
-				'callback'            => array( $this, 'get_manifest' ),
+				'callback'            => array( $this, 'rest_serve_manifest' ),
 				'permission_callback' => array( $this, 'rest_permission' ),
 			)
 		);
+	}
+
+	/**
+	 * Serve the manifest file.
+	 *
+	 * This serves our manifest file and sets the content type to `application/manifest+json`.
+	 *
+	 * @return WP_REST_Response Response containing the manifest and the right content-type header.
+	 */
+	public function rest_serve_manifest() {
+		$response = rest_ensure_response( $this->get_manifest() );
+		$response->header( 'Content-Type', 'application/manifest+json' );
+
+		return $response;
 	}
 
 	/**
@@ -222,5 +351,14 @@ class WP_Web_App_Manifest {
 	 */
 	public function sort_icons_callback( $a, $b ) {
 		return (int) strtok( $a['sizes'], 'x' ) - (int) strtok( $b['sizes'], 'x' );
+	}
+
+	/**
+	 * Return manifest URL.
+	 *
+	 * @return string
+	 */
+	public static function get_url() {
+		return rest_url( self::REST_NAMESPACE . self::REST_ROUTE );
 	}
 }

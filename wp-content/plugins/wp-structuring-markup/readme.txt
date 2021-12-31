@@ -2,8 +2,8 @@
 Contributors: miiitaka
 Tags: schema, schema.org, json, json-ld, seo, post, posts, google, shortcode, breadcrumb
 Requires at least: 4.3.1
-Tested up to: 5.1.0
-Stable tag: 4.6.5
+Tested up to: 5.6.1
+Stable tag: 4.8.1
 
 Allows you to include schema.org JSON-LD syntax markup on your website
 
@@ -14,12 +14,12 @@ Base knowledge is "https://schema.org/" and "https://developers.google.com/struc
 
 = Schema.org Type =
 
-* Article: http://schema.org/Article
-* BlogPosting: http://schema.org/BlogPosting
+* Article: https://schema.org/Article
+* BlogPosting: https://schema.org/BlogPosting
 * BreadcrumbList: https://schema.org/BreadcrumbList
 * Event: https://schema.org/Event
-* LocalBusiness : http://schema.org/LocalBusiness
-* NewsArticle: http://schema.org/NewsArticle
+* LocalBusiness : https://schema.org/LocalBusiness
+* NewsArticle: https://schema.org/NewsArticle
 * Organization: https://schema.org/Organization
 * Person: https://schema.org/Person
 * SiteNavigation: https://schema.org/SiteNavigationElement
@@ -67,6 +67,32 @@ if ( shortcode_exists( 'wp-structuring-markup-breadcrumb' ) ) {
 * Open 'Schema.org Setting' menu.
 
 == Changelog ==
+
+= 4.8.1 (2020-04-26)
+* Fixed : http://schema.org/ -> https://schema.org/.
+* Checked : WordPress version 5.7.1 operation check.
+* Checked : WordPress version 5.7.0 operation check.
+
+= 4.8.0 (2020-02-14) =
+* Fixed : Schema Type Local Business: Nesting of ternary operators.
+* Checked : WordPress version 5.6.1 operation check.
+
+= 4.7.0 (2020-01-13) =
+* Updated : Added categories to videos and event types.
+* Fixed : HTML tags are removed when outputting breadcrumbs.
+* Fixed : Schema type Article: bug: 1st image in content is always used if check is on, even if no image present.
+* Checked : WordPress version 5.3.2 operation check.
+* Checked : WordPress version 5.3.1 operation check.
+* Checked : WordPress version 5.3.0 operation check.
+* Checked : WordPress version 5.2.5 operation check.
+* Checked : WordPress version 5.2.4 operation check.
+* Checked : WordPress version 5.2.3 operation check.
+* Checked : WordPress version 5.2.2 operation check.
+* Checked : WordPress version 5.2.1 operation check.
+* Checked : WordPress version 5.2.0 operation check.
+* Checked : WordPress version 5.1.3 operation check.
+* Checked : WordPress version 5.1.2 operation check.
+* Checked : WordPress version 5.1.1 operation check.
 
 = 4.6.5 (2019-03-11) =
 * Fixed : A bug where the modification date is fixed to GMT time.
