@@ -1,160 +1,236 @@
-# Translation of Stable (latest release) in Japanese
-# This file is distributed under the same license as the Stable (latest release) package.
+# Translation of Plugins - Markup (JSON-LD) structured in schema.org - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Markup (JSON-LD) structured in schema.org - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-05-09 09:23:41+0000\n"
+"PO-Revision-Date: 2017-07-09 06:45:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Stable (latest release)\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Markup (JSON-LD) structured in schema.org - Stable (latest release)\n"
 
-#: includes/wp-structuring-admin-post.php:287
+#: includes/custom/wp-structuring-custom-post-event.php:270
+msgid "Event Performer"
+msgstr "イベント出演者"
+
+#: includes/custom/wp-structuring-custom-post-event.php:240
+msgid "Availability"
+msgstr "有効"
+
+#: includes/custom/wp-structuring-custom-post-event.php:264
+msgid "validFrom"
+msgstr "有効日付"
+
+#: includes/admin/wp-structuring-admin-list.php:73
+msgid "Show more details"
+msgstr "詳細を見る"
+
+#: includes/admin/wp-structuring-admin-post.php:169
+#: includes/admin/wp-structuring-admin-post.php:181
+#: includes/admin/wp-structuring-admin-post.php:223
+msgid "Posts(AMP)"
+msgstr "投稿（AMP）"
+
+#: includes/custom/wp-structuring-custom-post-video.php:150
+msgid "Thumbnail Url"
+msgstr "サムネイル Url"
+
+#: includes/custom/wp-structuring-custom-post-video.php:155
+msgid "Upload Date"
+msgstr "アップロード日付"
+
+#: includes/custom/wp-structuring-custom-post-video.php:145
+msgid "Video Description"
+msgstr "ビデオ説明"
+
+#: includes/custom/wp-structuring-custom-post-video.php:140
+msgid "Video Name"
+msgstr "ビデオ名"
+
+#: includes/custom/wp-structuring-custom-post-event.php:214
+msgid "End Date"
+msgstr "終了日"
+
+#: includes/custom/wp-structuring-custom-post-event.php:203
+msgid "Event Image"
+msgstr "イベント画像"
+
+#: includes/custom/wp-structuring-custom-post-event.php:198
+msgid "Event Description"
+msgstr "イベント説明"
+
+#. Author URI of the plugin
+msgid "https://www.terakoya.work/"
+msgstr "https://www.terakoya.work/"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/miiitaka/wp-structuring-markup"
+msgstr "https://github.com/miiitaka/wp-structuring-markup"
+
+#: includes/custom/wp-structuring-custom-post-event.php:180
+msgid "Event Type"
+msgstr "イベントタイプ"
+
+#: includes/admin/wp-structuring-admin-post.php:271
+msgid "Video Post Page"
+msgstr "ビデオ投稿ページ"
+
+#: includes/custom/wp-structuring-custom-post-video.php:181
+msgid "expires"
+msgstr "有効期限"
+
+#: includes/custom/wp-structuring-custom-post-event.php:94
+msgid "All Event Posts"
+msgstr "イベント投稿一覧"
+
+#: includes/custom/wp-structuring-custom-post-video.php:54
+msgid "All Video Posts"
+msgstr "ビデオ投稿一覧"
+
+#: includes/custom/wp-structuring-custom-post-video.php:52
+#: includes/custom/wp-structuring-custom-post-video.php:53
+msgid "Video Posts"
+msgstr "ビデオ投稿"
+
+#: includes/admin/wp-structuring-admin-post.php:329
 msgid "Output On(Custom Posts)"
 msgstr "出力ページ（カスタム投稿）"
 
-#: includes/wp-structuring-admin-post.php:169
-#: includes/wp-structuring-admin-post.php:185
-#: includes/wp-structuring-admin-post.php:211
-#: includes/wp-structuring-admin-post.php:225
-#: includes/wp-structuring-admin-post.php:239
-msgid "All Pages (In Header)"
-msgstr "全てのページ（ヘッダー）"
-
-#: includes/wp-structuring-admin-post.php:186
-#: includes/wp-structuring-admin-post.php:212
-#: includes/wp-structuring-admin-post.php:226
-#: includes/wp-structuring-admin-post.php:240
+#: includes/admin/wp-structuring-admin-post.php:208
+#: includes/admin/wp-structuring-admin-post.php:235
+#: includes/admin/wp-structuring-admin-post.php:249
+#: includes/admin/wp-structuring-admin-post.php:263
+#: includes/admin/wp-structuring-admin-post.php:280
 msgid "Homepage"
 msgstr "ホームページ"
 
-#: includes/wp-structuring-admin-post.php:148
-#: includes/wp-structuring-admin-post.php:159
-#: includes/wp-structuring-admin-post.php:188
-#: includes/wp-structuring-admin-post.php:200
-#: includes/wp-structuring-admin-post.php:214
-#: includes/wp-structuring-admin-post.php:228
-#: includes/wp-structuring-admin-post.php:242
-msgid "Pages"
-msgstr "ページ一覧"
+#: includes/admin/wp-structuring-admin-post.php:191
+#: includes/admin/wp-structuring-admin-post.php:207
+#: includes/admin/wp-structuring-admin-post.php:234
+#: includes/admin/wp-structuring-admin-post.php:248
+#: includes/admin/wp-structuring-admin-post.php:262
+#: includes/admin/wp-structuring-admin-post.php:279
+msgid "All Pages (In Header)"
+msgstr "全てのページ（ヘッダー）"
 
-#: includes/wp-structuring-admin-list.php:51
+#: includes/admin/wp-structuring-admin-post.php:168
+#: includes/admin/wp-structuring-admin-post.php:180
+#: includes/admin/wp-structuring-admin-post.php:210
+#: includes/admin/wp-structuring-admin-post.php:222
+#: includes/admin/wp-structuring-admin-post.php:237
+#: includes/admin/wp-structuring-admin-post.php:251
+#: includes/admin/wp-structuring-admin-post.php:282
+msgid "Pages"
+msgstr "固定ページ"
+
+#: includes/admin/wp-structuring-admin-list.php:50
 msgid "Schema.org Type"
 msgstr "Schema.org タイプ"
 
-#: includes/wp-structuring-admin-list.php:52
-#: includes/wp-structuring-admin-post.php:142
+#: includes/admin/wp-structuring-admin-list.php:51
+#: includes/admin/wp-structuring-admin-list.php:75
+#: includes/admin/wp-structuring-admin-post.php:162
 msgid "Output On"
 msgstr "出力ページ"
 
-#: includes/wp-structuring-admin-post.php:147
-#: includes/wp-structuring-admin-post.php:158
-#: includes/wp-structuring-admin-post.php:187
-#: includes/wp-structuring-admin-post.php:199
-#: includes/wp-structuring-admin-post.php:213
-#: includes/wp-structuring-admin-post.php:227
-#: includes/wp-structuring-admin-post.php:241
+#: includes/admin/wp-structuring-admin-post.php:167
+#: includes/admin/wp-structuring-admin-post.php:179
+#: includes/admin/wp-structuring-admin-post.php:209
+#: includes/admin/wp-structuring-admin-post.php:221
+#: includes/admin/wp-structuring-admin-post.php:236
+#: includes/admin/wp-structuring-admin-post.php:250
+#: includes/admin/wp-structuring-admin-post.php:281
 msgid "Posts"
-msgstr "ポスト"
+msgstr "投稿"
 
-#. Description of the plugin/theme
+#. Description of the plugin
 msgid "Allows you to include schema.org JSON-LD syntax markup on your website"
 msgstr "ウェブサイト上でschema.org定義をJSON-LDの構文マークアップすることができます。"
 
-#: includes/wp-structuring-custom-post-event.php:111
-msgid "Event URL"
-msgstr "イベントURL"
-
-#: includes/wp-structuring-custom-post-event.php:116
-msgid "Place Name"
-msgstr "場所名"
-
-#: includes/wp-structuring-custom-post-event.php:121
-msgid "Place URL"
-msgstr "会場URL"
-
-#: includes/wp-structuring-custom-post-event.php:126
-msgid "Place Address"
-msgstr "会場住所"
-
-#: includes/wp-structuring-custom-post-event.php:131
+#: includes/custom/wp-structuring-custom-post-event.php:253
 msgid "Price"
 msgstr "値段"
 
-#: includes/wp-structuring-custom-post-event.php:136
+#: includes/custom/wp-structuring-custom-post-event.php:258
 msgid "Currency"
 msgstr "通貨"
 
-#: includes/wp-structuring-custom-post-event.php:100
+#: includes/custom/wp-structuring-custom-post-event.php:220
+msgid "Event URL"
+msgstr "イベントURL"
+
+#: includes/custom/wp-structuring-custom-post-event.php:225
+msgid "Place Name"
+msgstr "場所名"
+
+#: includes/custom/wp-structuring-custom-post-event.php:230
+msgid "Place URL"
+msgstr "会場URL"
+
+#: includes/custom/wp-structuring-custom-post-event.php:235
+msgid "Place Address"
+msgstr "会場住所"
+
+#: includes/custom/wp-structuring-custom-post-event.php:193
 msgid "Event Name"
 msgstr "イベント名"
 
-#: includes/wp-structuring-custom-post-event.php:105
+#: includes/custom/wp-structuring-custom-post-event.php:208
 msgid "Start Date"
 msgstr "開始日時"
 
-#: includes/wp-structuring-admin-post.php:177
+#: includes/admin/wp-structuring-admin-post.php:199
 msgid "Event Post Page"
 msgstr "イベント投稿ページ"
 
-#: includes/wp-structuring-custom-post-event.php:34
-#: includes/wp-structuring-custom-post-event.php:35
+#: includes/custom/wp-structuring-custom-post-event.php:92
+#: includes/custom/wp-structuring-custom-post-event.php:93
 msgid "Event Posts"
 msgstr "イベント投稿"
 
-#: includes/wp-structuring-custom-post-event.php:73
+#: includes/custom/wp-structuring-custom-post-event.php:156
 msgid "Schema.org Type Event"
 msgstr "Schema.org Type Event"
 
-#: includes/wp-structuring-custom-post-event.php:95
+#: includes/custom/wp-structuring-custom-post-event.php:315
 msgid "USD"
-msgstr "円"
+msgstr "USD"
 
-#: includes/wp-structuring-admin-list.php:87
+#: includes/admin/wp-structuring-admin-list.php:80
 msgid "Without registration."
 msgstr "登録されていません。"
 
-#: includes/wp-structuring-admin-post.php:117
-msgid "Schema.org Register"
-msgstr "Schema.org 登録"
-
-#: wp-structuring-markup.php:146 wp-structuring-markup.php:147
+#: wp-structuring-markup.php:148 wp-structuring-markup.php:149
 msgid "Schema.org Settings"
 msgstr "Schema.org 設定"
 
-#: wp-structuring-markup.php:154
+#: wp-structuring-markup.php:164
 msgid "Schema.org Setting Edit"
 msgstr "Schema.org 編集"
 
-#. Plugin Name of the plugin/theme
+#: includes/admin/wp-structuring-admin-post.php:130
+msgid "Schema.org Register"
+msgstr "Schema.org 登録"
+
+#. Plugin Name of the plugin
 msgid "Markup (JSON-LD) structured in schema.org"
 msgstr "Markup (JSON-LD) structured in schema.org"
 
-#. Plugin URI of the plugin/theme
-msgid "https://wordpress.org/plugins/wp-structuring-markup/"
-msgstr "https://wordpress.org/plugins/wp-structuring-markup/\t"
-
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "Kazuya Takami"
 msgstr "Kazuya Takami"
 
-#. Author URI of the plugin/theme
-msgid "http://programp.com/"
-msgstr "http://programp.com/"
-
-#: includes/wp-structuring-admin-list.php:53
-msgid "ShortCode"
-msgstr "ショートコード"
-
-#: includes/wp-structuring-admin-list.php:81 wp-structuring-markup.php:155
+#: includes/admin/wp-structuring-admin-list.php:71
+#: wp-structuring-markup.php:165
 msgid "Edit"
 msgstr "編集"
 
-#: includes/wp-structuring-admin-list.php:43
+#: includes/admin/wp-structuring-admin-list.php:43
 msgid "Schema.org Settings List"
 msgstr "Schema.org 設定一覧"
 
-#: includes/wp-structuring-admin-list.php:50
+#: includes/admin/wp-structuring-admin-list.php:50
 msgid "Status"
 msgstr "状態"

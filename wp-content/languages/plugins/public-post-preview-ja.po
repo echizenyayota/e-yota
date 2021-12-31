@@ -2,76 +2,59 @@
 # This file is distributed under the same license as the Plugins - Public Post Preview - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-11-28 00:19:25+0000\n"
+"PO-Revision-Date: 2020-03-10 15:18:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Public Post Preview - Stable (latest release)\n"
 
-#: languages/public-post-preview.php:5 js/gutenberg-integration.js:1
-#: js/src/components/preview-toggle/index.js:103
-msgid "Preview URL copied"
-msgstr "プレビュー URL をコピーしました"
+#: public-post-preview.php:499
+msgid "This link has expired!"
+msgstr "リンクの有効期限が切れています !"
 
-#: languages/public-post-preview.php:17 public-post-preview.php:239
-#: js/gutenberg-integration.js:1 js/src/components/preview-toggle/index.js:137
+#. Author URI of the plugin
+msgid "https://dominikschilling.de/"
+msgstr "https://dominikschilling.de/"
+
+#. Description of the plugin
+msgid "Allow anonymous users to preview a post before it is published."
+msgstr "投稿が公開される前に、匿名のユーザーがプレビューを見られるようにします。"
+
+#: public-post-preview.php:222 js/dist/gutenberg-integration.js:1
 msgid "Copy and share this preview URL."
 msgstr "プレビュー URL をコピーし、シェアします。"
-
-#: languages/public-post-preview.php:14 js/gutenberg-integration.js:1
-#: js/src/components/preview-toggle/index.js:117
-msgid "Preview URL"
-msgstr "プレビュー URL"
-
-#: languages/public-post-preview.php:8 js/gutenberg-integration.js:1
-#: js/src/components/preview-toggle/index.js:103
-msgid "Copy the preview URL"
-msgstr "プレビュー URL をコピー"
 
 #. Plugin URI of the plugin
 msgid "https://dominikschilling.de/wp-plugins/public-post-preview/en/"
 msgstr "https://dominikschilling.de/wp-plugins/public-post-preview/en/"
 
-#. Author URI of the plugin
-msgid "https://wphelper.de/"
-msgstr "http://wphelper.de/"
-
 #. Author of the plugin
 msgid "Dominik Schilling"
 msgstr "Dominik Schilling"
-
-#. Description of the plugin
-msgid "Enables you to give a link to anonymous users for public preview of any post type before it is published."
-msgstr "プレビュー可能な一時URLを生成することにより、未登録ユーザーであっても公開前の投稿を可能にする、外部確認機能を追加します。"
 
 #. Plugin Name of the plugin
 msgid "Public Post Preview"
 msgstr "Public Post Preview"
 
-#: public-post-preview.php:505
+#: public-post-preview.php:503
 msgid "No public preview available!"
 msgstr "外部確認は利用できません !"
 
-#: public-post-preview.php:501
-msgid "The link has been expired!"
-msgstr "このリンクは無効になりました。"
-
-#: languages/public-post-preview.php:11 public-post-preview.php:234
-#: js/gutenberg-integration.js:1 js/src/components/preview-toggle/index.js:109
+#: public-post-preview.php:217 js/dist/gutenberg-integration.js:1
 msgid "Enable public preview"
 msgstr "外部確認を許可する"
 
-#: public-post-preview.php:162
+#: public-post-preview.php:145
 msgid "Public Preview"
 msgstr "外部確認"
 
-#: public-post-preview.php:145
+#: public-post-preview.php:128
 msgid "Disabled!"
 msgstr "無効化中"
 
-#: public-post-preview.php:144
+#: public-post-preview.php:127
 msgid "Enabled!"
 msgstr "有効化中"
