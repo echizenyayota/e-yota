@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>おすすめ記事</h2>
+  <h2>朝ドラ カムカムエヴリバディ</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -15,7 +15,7 @@
        setup_postdata($post); ?>
       <li>
         <a href="<?php the_permalink(); ?>">
-          <div class="thumb" style="background-image: url(<?php echo mythumb('medium'); ?>)"></div>
+          <!-- <div class="thumb" style="background-image: url(<?php echo mythumb('medium'); ?>)"></div> -->
           <div class="text">
             <?php the_title(); ?>
           </div>
@@ -28,11 +28,11 @@
 
 
 <?php
-  $the_slug = 'tomioka_highschool_danceclub';
+  $the_slug = 'kamakuradono_13';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
-    `posts_per_page` =>'6',
+    `posts_per_page` =>'4',
     'meta_key' => 'postviews',
     'orderby' => 'meta_value_num',
   ));
@@ -44,7 +44,7 @@
   <ul>
   <?php
     $args = array(
-      'posts_per_page' => 5 // 表示件数の指定
+      'posts_per_page' => 3 // 表示件数の指定
     );
     $posts = get_posts( $args );
     foreach ( $posts as $post ): // ループの開始
@@ -87,9 +87,9 @@
   </ul>
 </aside>
 
-<!-- 登美丘高校ダンス部人気の記事 -->
+<!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>登美丘高校ダンス部人気記事</h2>
+  <h2>鎌倉殿の13人 人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
