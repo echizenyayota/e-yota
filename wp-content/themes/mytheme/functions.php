@@ -238,9 +238,10 @@ add_image_size('large-thumbnail', 650, 350, true);
 // ページによってCSSやJavaScriptの読み込みを制御
 function performance_dequeue_scripts() {
 	if ( is_home() || is_archive()) {
-		wp_deregister_style( 'wp-block-library' );
 		wp_deregister_script( 'jquery' );
-	}
+  }
+  /* Gutenbergを使用するときはif文の中に入れる */
+  wp_deregister_style( 'wp-block-library' );
 }
 if ( ! is_admin() ) {
 	add_action( 'wp_enqueue_scripts', 'performance_dequeue_scripts', 99 );
@@ -248,7 +249,7 @@ if ( ! is_admin() ) {
 
 // PWAアイコン表示用 'short_name'の記述を追加
 add_filter( 'web_app_manifest', function( $manifest ) {
-	$manifest['short_name'] = 'エコテキブログ';
+	$manifest['short_name'] = 'e_yota';
 	return $manifest;
 } );
 
@@ -264,24 +265,60 @@ if ( !is_admin() ) {
   add_filter( 'script_loader_tag', 'add_defer_to_scripts', 10, 2 );
 }
 
-// dns-prefetchを追加
-// https://qiita.com/ryo_hisano/items/e525616e5026b015aafe
-function ecoteki_resource_hints( $urls, $relation_type) {
-  if ( 'dns-prefetch' === $relation_type ) {
-    $urls = array_merge( $urls, array(
-      "www.facebook.com",
-      "twitter.com",
-      "t.co",
-      "p.twitter.com",
-      "picture.twitter.com",
-      "platform.twitter.com",
-      "b.hatena.ne.jp",
-      "www.youtube.com"
-    ) );
+// wp_targeted_link_rel関数の活用で target属性がついているaタグにrel="noopener noreferrer"の追加
+add_filter( 'the_content', 'wp_targeted_link_rel' );
+
+
+//  記事本文中target属性をもつaタグにスクリーンリーダーを読み込む
+function screen_reader( $text ) {
+  if ( stripos( $text, 'target' ) !== false && stripos( $text, '<a ' ) !== false ) {
+      // spanタグの追加(コンテンツに script/style タグを含まないことを前提にした場合)
+      // $after = '<span class="screen-reader-text">(新しいタブを開く)</span><span aria-hidden="true" class="dashicons dashicons-external"></span>';
+      // $text = preg_replace( '|(<a\s[^>]*target\s*=[^>]*>.*)(</a>)|i', '${1}' . $after . '${2}', $text );
+      // spanタグの追加(コンテンツに script/styleタグを含まないことを前提する場合)
+      $after = '<span class="screen-reader-text">(新しいタブで開く)</span><span aria-hidden="true" class="dashicons dashicons-external"></span>';
+
+      $script_and_style_regex = '/<(script|style).*?<\/\\1>/si';
+
+      preg_match_all( $script_and_style_regex, $text, $matches );
+      $extra_parts = $matches[0];
+      $html_parts  = preg_split( $script_and_style_regex, $text );
+      foreach ( $html_parts as &$part ) {
+        $part = preg_replace( '|(<a\s[^>]*target\s*=[^>]*>.*)(</a>)|i', '${1}' . $after . '${2}', $part );
+      }
+
+    $text = '';
+    for ( $i = 0; $i < count( $html_parts ); $i++ ) {
+      $text .= $html_parts[ $i ];
+      if ( isset( $extra_parts[ $i ] ) ) {
+        $text .= $extra_parts[ $i ];
+      }
+    }
   }
-  return $urls;
+  return $text;
 }
-add_filter( 'wp_resource_hints', 'ecoteki_resource_hints', 10, 2);
+
+if ( !is_admin() ) {
+  add_filter( 'the_content', 'screen_reader', 10, 2 );
+}
+
+// ウィジェットの検索フォームにaria-label属性を追記する関数の追記
+function my_search_form( $form ) {
+	$form = str_replace( 'name="s"', 'name="s" aria-label="search-box"', $form );
+	return $form;
+}
+add_filter( 'get_search_form', 'my_search_form' );
+
+// maskable_iconの追加
+add_filter( 'web_app_manifest', function( $manifest ) {
+	$manifest['icons'][] = [
+		'src'     => home_url( '/android-app.png' ),
+		'sizes'   => '192x192',
+		'type'    => 'image/png',
+		'purpose' => 'any maskable',
+	];
+	return $manifest;
+} );
 
 define( 'FS_METHOD', 'direct' );
 

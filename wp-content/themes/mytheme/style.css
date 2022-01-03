@@ -30,8 +30,10 @@ pre {
 }
 
 body a {
-  color: #28b;
+  color: #000080;
 }
+
+
 
 
 /*　------------------------　基本構造　------------------------　*/
@@ -135,8 +137,9 @@ header, .container, .sub-header {
 }
 
 .copyright-menu a {
-  color: #fff;
+  color: #000080;
 }
+
 
 .footer-category {
   padding: 0 10px;
@@ -148,9 +151,14 @@ header, .container, .sub-header {
 
 .copyright p {
   margin: 0;
-  color: #fff;
+  color: #000080;
   font-size: 14px;
 }
+
+/* ウィジェット */
+/* .widgettitle li a {
+  padding: 10px;
+} */
 
 .widget_categories {
   list-style:none;
@@ -172,6 +180,7 @@ footer .widget_categories ul {
 .cat-item a:hover {
   text-decoration: underline;
 }
+
 
 
 
@@ -478,8 +487,6 @@ footer .widget_categories ul {
     font-size: 14px;
   }
   .kiji h2 {
-    /* padding-left: 21px; */
-    /* スマホのときに飾り罫線ができているかどうか確認 */
     padding-left: 16px;
     padding-bottom: 1px;
     border-bottom: 1px solid #000080;
@@ -587,6 +594,7 @@ blockquote:after {
   color: #ffffff;
   font-size: 12px;
   text-decoration: none;
+  padding: 10px;
 }
 
 .kiji-tag li a:hover {
@@ -614,9 +622,10 @@ blockquote:after {
 .bread li a {
   display: inline-block;;
   padding: 5px 5px;
-  color: #888888;
+  color: #000080;
   font-size: 12px;
   text-decoration: none;
+  padding: 10px;
 }
 
 .bread li a[href]:hover {
@@ -672,7 +681,7 @@ blockquote:after {
   display: block;
   padding: 8px 17px;
   border-radius: 10px;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 12px;
   text-decoration: none;
 }
@@ -740,12 +749,8 @@ blockquote:after {
     margin-bottom: 20px;
   }
   .share span {
-    /* display: inline-block; */
     display: none;
     text-indent: -9999px;
-    /*overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;*/
   }
   .share li a {
     padding: 8px 10px;
@@ -852,15 +857,12 @@ blockquote:after {
 }
 
 .mymenu-large li .text {
-  /*position: absolute;*/
   padding: 5px 10px;
-  /*width: 100%;*/
-  background-color: rgba(0,0,0,0.5);
-  color: #ffffff;
+  color: #000080;
+  font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /*word-wrap: break-word;*/
 }
 
 @media(min-width: 400px) and (max-width: 767px) {
@@ -869,20 +871,6 @@ blockquote:after {
     display: block;
     clear: both;
   }
-  .mymenu-large li {
-    /* float:left;
-    width:50%; */
-    /*-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;*/
-  }
-  /*.mymenu-large li:nth-child(odd) {
-    clear:both;
-    padding-right: 7px;
-  }
-  .mymenu-large li:nth-child(even) {
-    clear:both;
-    padding-left: 7px;
-  }*/
 }
 
 
@@ -908,9 +896,6 @@ blockquote:after {
   text-decoration: none;
 }
 
-.mymenu li a:hover {
-  /* background-color: #eeeeee; */
-}
 
 .mymenu .new_article {
   display: inline;
@@ -929,8 +914,9 @@ blockquote:after {
   color: #2288bb;
 }
 
+.mymenu-thumb li .text,
 .mymenu-thumb li a {
-  color: #28b;
+  color: #000080;
 }
 
 .mymenu-thumb li:last-child {
@@ -946,8 +932,6 @@ blockquote:after {
 .mymenu-thumb li a.img_link:after {
   content: none;
 }
-
-
 
 .mymenu-thumb li .thumb {
   float: left;
@@ -992,11 +976,6 @@ blockquote:after {
   border: none;
   color: #000000;
 }
-
-/* スタイルシートが反映されない
-.mymenu-archivess {
-  font-size: 10px;
-}*/
 
 @media (max-width: 599px) {
   .mymenu-related {
@@ -1072,7 +1051,6 @@ blockquote:after {
 }
 
 .textwidget a {
-  /*text-decoration: none;*/
   color: #000000;
 }
 
@@ -1085,39 +1063,10 @@ blockquote:after {
 /* ウィジェット */
 .widget_archive li a {
   font-size: 14px;
-  padding: 3px 5px;
+  padding: 10px;
 }
 
-/* タグクラウド  間違い */
-/*.tag-cloud-link li a {
-  display: block;
-  margin-right: 5px;
-  margin-bottom: 2px;
-  padding: 3px 5px;
-  border-radius:2px;
-  background-color: #75dbe7;
-  color: #ffffff;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.tag-cloud-link li a:hover {
-  background-color: #94ecf6;
-}
-
-.tag-cloud-link ul:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.tag-cloud-link li {
-  float: left;
-  width: auto;
-}*/
-
-
-/* タグクラウド  正解 */
+/* タグクラウド */
 a.tag-cloud-link {
   float: left;
   width: auto;
@@ -1140,16 +1089,6 @@ a.tag-cloud-link:hover {
   overflow:hidden;
 }
 
-/*月別アーカイブリスト*/
-/*.mymenu-archives li {
-  list-style:none;
-  margin: 0;
-}
-
-.mymenu-archives a {
-  margin: 0;
-}*/
-
 /* アーカイブ */
 label.screen-reader-text {
   display: none;
@@ -1157,23 +1096,22 @@ label.screen-reader-text {
 
 /* PV */
 .pv {
-    background: pink;
+    /* background: pink; */
     border-radius: 5px;
     font-weight: bold;
     font-size: 10px;
-    text-align: center;
+    font-weight: bold;
+    text-align: left;
     margin-bottom: 3px;
 }
 
 
 /* 広告 */
-
 .myad {
   text-align: center;
 }
 
 /* Google Adsence */
-
 .google-mobile {
   padding: 0;
 }
@@ -1194,10 +1132,10 @@ label.screen-reader-text {
   }
 }
 
-/* さくらインターネット広告 */
-/* .sakura-vps-ad {
-  margin-top: 20px;
-} */
+/* WordCamp Osaka 2019 */
+.dmm-en {
+  padding-top: 10px;
+}
 
 
 /*
@@ -1229,13 +1167,22 @@ label.screen-reader-text {
 
 .ad2 {
   float: left;
-  width 50%;
+  width: 50%;
 }
 
 /* .ad3 {
   float: right;
   width: 50%;
 } */
+
+/* WorCamp バナー */
+#custom_html-2 > .textwidget {
+  text-align: center;
+}
+
+#custom_html-2 > .textwidget img {
+  float: none;
+}
 
 @media (max-width: 768px) {
   .ad2 {
@@ -1246,6 +1193,7 @@ label.screen-reader-text {
     text-align: center;
   }
   .ad3 p {
+    /* text-align: center; */
     display: none;
   }
 }
@@ -1296,27 +1244,6 @@ img, .wp-caption {
 iframe {
   max-width: 100%;
 }
-
-/* YouTubeのビデオ(キャッシュをクリアした場合いらない) */
-/*
-.ytvideo	{
-  position: relative;
-	width: 100%;
-	height: 0;
-	padding-top: 56.25%;
-	overflow: hidden;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.ytvideo iframe	{
-  position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-*/
 
 /*　------------------------　カテゴリー　/ タグ　------------------------　*/
 
@@ -1465,4 +1392,36 @@ iframe {
 #navbtn span {
   display: inline-block;
   text-indent: -9999px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
 }

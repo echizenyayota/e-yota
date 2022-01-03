@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>朝ドラ カムカムエヴリバディ</h2>
+  <h2>NHK朝ドラ カムカムエヴリバディ</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -28,11 +28,11 @@
 
 
 <?php
-  $the_slug = 'kamakuradono_13';
+  $the_slug = 'come_come_everybody';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
-    `posts_per_page` =>'4',
+    'posts_per_page' =>'3',
     'meta_key' => 'postviews',
     'orderby' => 'meta_value_num',
   ));
@@ -51,7 +51,7 @@
     setup_postdata( $post ); // 記事データの取得
   ?>
   <li>
-      <a href="<?php the_permalink(); ?>" class="img_link">
+      <a href="<?php the_permalink(); ?>" class="img_link" aria-label="thumbnail">
         <div class="thumb" style="background-image: url(<?php echo mythumb('thumbnail'); ?>)"></div>
       </a>
       <div class="text">
@@ -65,7 +65,7 @@
             $cat_link = get_category_link($catid);
           ?>
           <span class="new_article">
-            <a href="<?php echo esc_url($cat_link); ?>"><?php echo $postcat[1]->name; ?></a>
+            <?php echo $postcat[1]->name; ?>
           </span>
         <?php endif; ?>
         <?php
@@ -73,9 +73,7 @@
           $month  = get_the_date( 'm' );
         ?>
           <span class="new_article">
-            <a href="<?php echo get_month_link( $year, $month ); ?>">
               <?php echo get_the_date(); ?>
-            </a>
           </span>
       </div>
 
@@ -88,8 +86,8 @@
 </aside>
 
 <!-- 人気の記事 -->
-<!-- <aside class="mymenu mymenu-thumb">
-  <h2>鎌倉殿の13人 人気記事</h2>
+<aside class="mymenu mymenu-thumb">
+  <h2>カムカムエヴリバディ人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
@@ -116,7 +114,7 @@
       </li>
     <?php endforeach; ?>
   </ul>
-</aside> -->
+</aside>
 <?php wp_reset_postdata(); endif; ?>
 
 <?php dynamic_sidebar('submenu'); ?>
