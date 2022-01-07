@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>NHK朝ドラ カムカムエヴリバディ</h2>
+  <h2>鎌倉殿の13人 2022年大河ドラマ</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'kamakuradono_13';
+  $the_slug = 'come_come_everybody';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
@@ -87,7 +87,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>鎌倉殿の13人 人気記事</h2>
+  <h2>カムカムエヴリバディ 人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
