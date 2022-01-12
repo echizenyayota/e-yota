@@ -11,8 +11,16 @@
   <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-114x114.png" sizes="114x114">
   <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-120x120.png" sizes="120x120">
   <link rel="apple-touch-icon" href="/wp-content/uploads/2019/09/icon-144x144.png" sizes="144x144">
-  
+  <!-- Preload web fonts to improve loading speed -->
+  <!-- <link rel="preload" href="/assets/Pacifico-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
 
+  <!-- Preload web fonts to improve loading speed https://fonts.google.com/noto/specimen/Noto+Serif+JP?subset=japanese -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet"> -->
+
+  
   <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css"> -->
 
   <?php if ( is_single() || is_page() ) : // 記事の個別ページ用のメタデータ?>
