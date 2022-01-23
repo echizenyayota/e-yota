@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>カムカムエヴリバディ ひなた編</h2>
+  <h2>カムカムエヴリバディ ひなた(川栄李奈さん)編</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
