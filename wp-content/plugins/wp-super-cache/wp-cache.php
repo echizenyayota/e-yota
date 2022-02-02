@@ -3,7 +3,7 @@
 Plugin Name: WP Super Cache
 Plugin URI: https://wordpress.org/plugins/wp-super-cache/
 Description: Very fast caching plugin for WordPress.
-Version: 1.7.6
+Version: 1.7.7
 Author: Automattic
 Author URI: https://automattic.com/
 License: GPL2+
@@ -988,6 +988,7 @@ table.wpsc-settings-table {
 					'wp_cache_preload_taxonomies',
 					'wp_cache_preload_email_me',
 					'wp_cache_preload_email_volume',
+					'currently_preloading',
 					'wp_cache_preload_posts'
 				)
 			);
@@ -997,6 +998,9 @@ table.wpsc-settings-table {
 			wpsc_plugins_tab();
 			break;
 		case 'debug':
+			global $wp_super_cache_debug, $wp_cache_debug_log, $wp_cache_debug_ip, $wp_cache_debug_ip;
+			global $wp_super_cache_front_page_text, $wp_super_cache_front_page_notification;
+			global $wp_super_cache_advanced_debug, $wp_cache_debug_username, $wp_super_cache_front_page_clear;
 			wpsc_render_partial(
 				'debug',
 				compact( 'wp_super_cache_debug', 'wp_cache_debug_log', 'wp_cache_debug_ip', 'cache_path', 'valid_nonce', 'wp_cache_config_file', 'wp_super_cache_comments', 'wp_super_cache_front_page_check', 'wp_super_cache_front_page_clear', 'wp_super_cache_front_page_text', 'wp_super_cache_front_page_notification', 'wp_super_cache_advanced_debug', 'wp_cache_debug_username' )
@@ -1052,6 +1056,7 @@ table.wpsc-settings-table {
 					'cache_schedule_interval',
 					'cache_time_interval',
 					'cache_gc_email_me',
+					'wp_cache_mobile_prefixes',
 					'wp_cache_preload_on'
 				)
 			);
@@ -1072,6 +1077,7 @@ table.wpsc-settings-table {
 					'is_nginx'      => $is_nginx,
 					'wp_cache_mod_rewrite' => $wp_cache_mod_rewrite,
 					'valid_nonce' => $valid_nonce,
+					'cache_path'              => $cache_path,
 					'wp_super_cache_comments' => $wp_super_cache_comments,
 				)
 			);
