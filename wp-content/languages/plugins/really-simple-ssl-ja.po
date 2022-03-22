@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-03-19 12:06:55+0000\n"
+"PO-Revision-Date: 2022-03-21 14:59:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,49 +11,1302 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
 
+#: upgrade/upgrade-to-pro.php:549
+msgid "Your license key has reached its activation limit."
+msgstr "このライセンスキーは有効化の限度に達しました。"
+
+#: upgrade/upgrade-to-pro.php:546
+msgid "This appears to be an invalid license key for this plugin."
+msgstr "本プラグイン用の無効なライセンスキーのようです。"
+
+#: upgrade/upgrade-to-pro.php:543
+msgid "Your license is not active for this URL."
+msgstr "このライセンスは、この URL に対して有効ではありません。"
+
+#: upgrade/upgrade-to-pro.php:540
+msgid "Invalid license."
+msgstr "ライセンスが無効です。"
+
+#: upgrade/upgrade-to-pro.php:537
+msgid "Missing license."
+msgstr "ライセンスがありません。"
+
+#: upgrade/upgrade-to-pro.php:534
+msgid "Your license key has been disabled."
+msgstr "このライセンスキーは無効になっています。"
+
+#: upgrade/upgrade-to-pro.php:528
+msgid "Your license key expired on %s."
+msgstr "このライセンスキーの有効期限は、%s です。"
+
+#: upgrade/upgrade-to-pro.php:520 upgrade/upgrade-to-pro.php:552
+msgid "An error occurred, please try again."
+msgstr "エラーが発生。再度お試しください。"
+
+#: upgrade/upgrade-to-pro.php:420
+msgid "Plugin already installed!"
+msgstr "プラグインはインストール済みです !"
+
+#: upgrade/upgrade-to-pro.php:363
+msgid "Check your %slicense%s."
+msgstr "%sライセンス%sを確認。"
+
+#: upgrade/upgrade-to-pro.php:362
+msgid "Install %sManually%s."
+msgstr " %s手動で%sインストール。"
+
+#: upgrade/upgrade-to-pro.php:362 upgrade/upgrade-to-pro.php:363
+msgid "An Error Occurred:"
+msgstr "エラーが発生:"
+
+#: upgrade/upgrade-to-pro.php:357
+msgid "Visit Dashboard"
+msgstr "ダッシュボードを表示"
+
+#: upgrade/upgrade-to-pro.php:346
+msgid "Installing"
+msgstr "インストール中"
+
+#: upgrade/upgrade-to-pro.php:321
+msgid "Recommended by Really Simple Plugins"
+msgstr "Really Simple Plugins からのおすすめ"
+
+#: upgrade/upgrade-to-pro.php:223
+msgid "Installation finished"
+msgstr "インストール完了"
+
+#: upgrade/upgrade-to-pro.php:169
+msgid "Really Simple SSL automatically detects your settings and configures your website to run over HTTPS. To keep it lightweight, we kept the options to a minimum. Your website will move to SSL with one click."
+msgstr "Really Simple SSL は、HTTPS で動作するよう、サイトの構成と設定を自動で検出します。軽快にするためオプションは最小限に抑えています。ワンクリックであなたのサイトが SSL に移行します。"
+
+#: upgrade/upgrade-to-pro.php:165
+msgid "One click SSL optimization"
+msgstr "ワンクリックで SSL 最適化"
+
+#: upgrade/upgrade-to-pro.php:152
+msgid "Configure your Cookie Notice, Cookie Consent and Cookie Policy with our Wizard and Cookie Scan. Supports GDPR, DSGVO, TTDSG, LGPD, POPIA, RGPD, CCPA and PIPEDA."
+msgstr "私たちによるウィザードとクッキー検査は、クッキーの通知、クッキーへの同意とクッキーの方針を設定します。GDPR、DSGVO、TTDSG、LGPD、POPIA、RGPD、CCPA また PIPEDAに対応します。"
+
+#: upgrade/upgrade-to-pro.php:148
+msgid "GDPR/CCPA Privacy Suite"
+msgstr "GDPR/CCPA 個人情報スイート"
+
+#: upgrade/upgrade-to-pro.php:139
+msgid "Get detailed insights into visitors' behaviour with Burst Statistics, the privacy-friendly analytics dashboard from Really Simple Plugins."
+msgstr "Really Simple プラグインの個人情報に配慮した解析用の管理画面、Burst Statistics で訪問者の行動を詳細に把握しましょう。"
+
+#: upgrade/upgrade-to-pro.php:135
+msgid "Self-hosted and privacy-friendly analytics tool."
+msgstr "セルフホスティングされ個人情報に配慮した解析ツールです。"
+
+#: upgrade/upgrade-to-pro.php:102
+msgid "Failed to activate plugin"
+msgstr "プラグインの有効化に失敗"
+
+#: upgrade/upgrade-to-pro.php:101
+msgid "Plugin activated"
+msgstr "プラグインを有効化しました"
+
+#: upgrade/upgrade-to-pro.php:100
+msgid "Activating plugin..."
+msgstr "プラグインの有効化中..."
+
+#: upgrade/upgrade-to-pro.php:95
+msgid "Failed to install plugin"
+msgstr "プラグインのインストールに失敗"
+
+#: upgrade/upgrade-to-pro.php:94
+msgid "Plugin installed"
+msgstr "プラグインをインストールしました"
+
+#: upgrade/upgrade-to-pro.php:93
+msgid "Installing plugin..."
+msgstr "プラグインのインストール中..."
+
+#: upgrade/upgrade-to-pro.php:88
+msgid "Failed to gather package information"
+msgstr "パッケージ情報の取得に失敗"
+
+#: upgrade/upgrade-to-pro.php:87
+msgid "Package information retrieved"
+msgstr "パッケージ情報を取得しました"
+
+#: upgrade/upgrade-to-pro.php:86
+msgid "Retrieving package information..."
+msgstr "パッケージ情報の取得中..."
+
+#: upgrade/upgrade-to-pro.php:81
+msgid "License invalid"
+msgstr "ライセンス無効"
+
+#: upgrade/upgrade-to-pro.php:80
+msgid "License valid"
+msgstr "ライセンス有効"
+
+#: upgrade/upgrade-to-pro.php:79
+msgid "Validating license..."
+msgstr "ライセンス認証中..."
+
+#: upgrade/upgrade-to-pro.php:74
+msgid "Destination folder already exists"
+msgstr "保存フォルダーは既に存在します"
+
+#: upgrade/upgrade-to-pro.php:73
+msgid "Able to create destination folder"
+msgstr "保存フォルダーを作成できます"
+
+#: upgrade/upgrade-to-pro.php:72
+msgid "Checking if plugin folder exists..."
+msgstr "プラグインフォルダが存在するか確認中..."
+
+#: class-admin.php:3375
+msgid "Improve security with Really Simple SSL Pro."
+msgstr "Really Simple SSL Pro でセキュリティを向上。"
+
+#: class-admin.php:3168
+msgid "Check manually"
+msgstr "手動で確認"
+
+#: class-admin.php:3165
+msgid "Could not test certificate"
+msgstr "証明書を検査できません"
+
+#: class-admin.php:3106
+msgid "Remember to change your URLs in external services like Google Analytics, Search Console and others. This should prevent any data loss resulting from the switch to https."
+msgstr "Google Analytics や Search Console などの外部サービスのURLも忘れずに変更しましょう。これにより、 https への移行に伴うデータ損失を防ぐことができるはずです。"
+
+#: class-admin.php:906
+msgid "Override SSL detection if %smanual check%s clears."
+msgstr "%s手動で確認できている%sなら、SSL 検出を上書きします。"
+
+#: class-admin.php:607
+msgid "This detection method is not 100% accurate."
+msgstr "この検出方法は100％の精度ではありません。"
+
+#: class-admin.php:602 class-admin.php:607
+msgid "If you’re certain an SSL certificate is present, please check “Override SSL detection” to continue activating SSL."
+msgstr "SSL 証明書が存在することが確実な場合は、 「SSL検出を上書きする」 にチェックを入れて、 SSL の有効化を続けてください。"
+
+#: class-admin.php:601 class-admin.php:3166
+msgid "Automatic certificate detection is not possible on your server."
+msgstr "お使いのサーバーでは、証明書の自動検出はできません。"
+
+#: class-admin.php:601
+msgid "Could not test certificate."
+msgstr "証明書を検査できませんでした。"
+
+#: lets-encrypt/wizard/config/steps.php:67
+msgid "Checking host..."
+msgstr "ホストを確認中..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1099
+msgid "After completing the installation, you can let Really Simple SSL automatically configure your site for SSL by using the 'Activate SSL' button."
+msgstr "インストールの完了後、 「SSLの有効化」 ボタンで Really Simple SSL にこのサイトの SSL 化を自動的に行わせることができます。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1084
+msgid "We have not detected any known hosting limitations."
+msgstr "ホスティング会社による既知の制限は検出されていません。"
+
+#: class-admin.php:3546
+msgid "%sEnable%s"
+msgstr "%s有効%s"
+
+#: class-admin.php:3152
+msgid "The wp-config.php file is not writable, and needs to be edited. Please set this file to writable."
+msgstr "ファイル wp-config.php が書き込み可能でなく、また編集が必要です。このファイルを書き込み可能に設定してください。"
+
+#: grid/templates/tips-tricks.php:55
+msgid "Install a Let's Encrypt SSL Certificate with Really Simple SSL"
+msgstr "Really Simple SSL で Let's Encrypt の SSL 証明書をインストール"
+
+#: grid/templates/tips-tricks.php:7
+msgid "Improve security: Add Cross-Site Protection Headers to prevent malicious attacks"
+msgstr "セキュリティ向上: クロスサイトプロテクションヘッダーを追加し、悪意のある攻撃を防止"
+
+#: class-site-health.php:76
+msgid "Your website does not send all recommended security headers."
+msgstr "このウェブサイトは、すべての推奨するセキュリティヘッダーを送信していません。"
+
 #: class-site-health.php:58 class-site-health.php:102
 msgid "Security"
 msgstr "セキュリティ"
+
+#: class-admin.php:3364
+msgid "Recommended security headers enabled."
+msgstr "推奨するセキュリティヘッダーは有効です。"
+
+#: class-admin.php:3357
+msgid "The following recommended security headers are not detected:"
+msgstr "以下の推奨するセキュリティヘッダーが検出されていません:"
+
+#: lets-encrypt/wizard/config/questions.php:64
+msgid "Disable OCSP Stapling"
+msgstr "OCSP ステープリングの無効化"
+
+#: lets-encrypt/wizard/config/questions.php:63
+msgid "OCSP Stapling"
+msgstr "OCSP ステープリング"
+
+#: lets-encrypt/wizard/config/questions.php:62
+msgid "OCSP stapling should be enabled by default. You can disable if this is not supported by your hosting provider."
+msgstr "OCSP ステープリングは標準で有効になっているはずです。お使いのホスティング会社によって対応していない場合、無効にできます。"
+
+#: lets-encrypt/functions.php:504
+msgid "For more information, please read this %sarticle%s"
+msgstr "詳細は%sこの記事%sをご覧ください。"
+
+#: class-admin.php:4195
+msgid "Enable High Contrast mode"
+msgstr "ハイコントラストモードの有効化"
+
+#: class-admin.php:4194
+msgid "If enabled, all the Really Simple SSL pages within the WordPress admin will be in high contrast"
+msgstr "有効にすると、 WordPress 管理画面内のすべての Really Simple SSL のページがハイコントラストで表示されます"
+
+#: class-admin.php:3430
+msgid "Black Friday sale! Get 40% Off Really Simple SSL Pro"
+msgstr "ブラックフライデーセール ! Really Simple SSL Pro が40％オフ"
+
+#: lets-encrypt/wizard/templates/content.php:18
+msgid "Reset Let's Encrypt"
+msgstr "Let's Encrypt をリセット"
+
+#: lets-encrypt/wizard/templates/content.php:18
+msgid "This will clear all settings for Really Simple SSL Let\\'s Encrypt, and will clear the order in the ssl/keys directory."
+msgstr "Really Simple SSL の Let's Encrypt のすべての設定を消去し、 ssl/keys フォルダーの順序を初期化します。"
+
+#: lets-encrypt/wizard/config/steps.php:129
+msgid "Checking if Terms & Conditions are accepted..."
+msgstr "利用規約に同意しているか確認中..."
 
 #: lets-encrypt/wizard/class-wizard.php:823
 msgid "Save and continue"
 msgstr "保存して続行"
 
+#: lets-encrypt/class-letsencrypt-handler.php:941
+msgid "The Terms & Conditions were not accepted. Please accept in the general settings."
+msgstr "利用規約に同意していません。一般設定から同意してください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:937
+msgid "Terms & Conditions are accepted."
+msgstr "利用規約に同意されました。"
+
+#: class-admin.php:3322
+msgid "HttpOnly Secure cookies have been set automatically!"
+msgstr "HttpOnly の secure cookie が自動的に設定されました !"
+
+#: lets-encrypt/wizard/templates/dns-verification.php:21
+msgid "Value"
+msgstr "値"
+
 #: lets-encrypt/wizard/templates/dns-verification.php:20
 msgid "domain"
 msgstr "ドメイン"
 
-#: class-admin.php:598 lets-encrypt/wizard/templates/activate.php:58
-msgid "An SSL certificate has been detected"
-msgstr "SSL 証明書が検出されました"
+#: class-admin.php:3414
+msgid "As Really Simple SSL handles all the functionality this plugin provides, we recommend to disable this plugin to prevent unexpected behaviour."
+msgstr "Really Simple SSL は、プラグインが提供するすべての機能を処理できるよう、予期せぬ動作を防ぐために、このプラグインを無効化することを推奨します。"
+
+#: class-admin.php:3414
+msgid "We have detected the %s plugin on your website."
+msgstr "このサイトで %s プラグインが検出されました。"
+
+#: class-admin.php:606
+msgid "Please %srefresh detection%s if a certificate has been installed recently."
+msgstr "証明書が最近インストールされているなら、%s検出を更新%sしてください。"
+
+#: class-admin.php:605
+msgid "No SSL certificate has been detected."
+msgstr "SSL 証明書が検出されませんでした。"
+
+#: lets-encrypt/wizard/notices.php:99
+msgid "Read more about this add on."
+msgstr "この拡張機能の詳細。"
+
+#: lets-encrypt/wizard/notices.php:96
+msgid "Your server provides shell functionality, which offers additional methods to install SSL. If installing SSL using the default methods is not possible, you can install the shell add on."
+msgstr "お使いのサーバーにはシェル機能があるため、 SSL をインストールするための追加の方法があります。標準の方法で SSL をインストールできない場合、シェル拡張機能をインストールできます。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:450
+msgid "If you entered your DNS records before, they need to be changed."
+msgstr "以前に DNS レコードを入力している場合、変更する必要があります。"
+
+#: class-admin.php:4667 class-multisite.php:238
+msgid "Improve security - Upgrade to Pro"
+msgstr "セキュリティ向上 - プロにアップグレード"
+
+#: class-admin.php:3543
+msgid "%sMore info%s"
+msgstr "%s詳細%s"
+
+#: class-admin.php:3091
+msgid "Really Simple SSL pro is not up to date. Update Really Simple SSL pro to ensure compatibility."
+msgstr "Really Simple SSL Pro は最新版ではありません。互換性を保つため Really Simple SSL Pro を更新してください。"
+
+#: lets-encrypt/wizard/templates/other-plugins.php:38
+msgid "Our Plugins"
+msgstr "私たちの他のプラグイン"
+
+#: lets-encrypt/wizard/templates/other-plugins.php:29
+msgid "Beautiful recipes optimized for Google."
+msgstr "Google に最適化された綺麗なレシピ集。"
+
+#: lets-encrypt/wizard/templates/other-plugins.php:21
+msgid "The Privacy Suite for WordPress"
+msgstr "WordPress 用の個人情報スイート"
+
+#: lets-encrypt/wizard/templates/other-plugins.php:12
+msgid "Easily migrate your website to SSL."
+msgstr "お使いのサイトを簡単に SSL に移行します。"
+
+#: lets-encrypt/wizard/templates/installation.php:42
+msgid "The CA Bundle will sometimes be automatically detected. If not, you can use this file."
+msgstr "CA バンドルは自動検出されることがあります。されていない場合、このファイルを使用できます。"
+
+#: lets-encrypt/wizard/templates/installation.php:35
+msgid "The private key can be uploaded or pasted in the appropriate field on your hosting dashboard."
+msgstr "秘密鍵は、ホスティング管理画面の適した入力欄に、貼り付けまたはアップロードできます。"
+
+#: lets-encrypt/wizard/templates/installation.php:34
+msgid "Private Key (KEY)"
+msgstr "秘密鍵 (キー)"
+
+#: lets-encrypt/wizard/templates/installation.php:31
+#: lets-encrypt/wizard/templates/installation.php:39
+#: lets-encrypt/wizard/templates/installation.php:46
+msgid "Copy content"
+msgstr "内容をコピー"
+
+#: lets-encrypt/wizard/templates/installation.php:30
+#: lets-encrypt/wizard/templates/installation.php:38
+#: lets-encrypt/wizard/templates/installation.php:45
+msgid "Download"
+msgstr "ダウンロード"
+
+#: lets-encrypt/wizard/templates/installation.php:26
+msgid "This is the certificate, which you need to install in your hosting dashboard."
+msgstr "これは、お使いのホスティング管理画面でインストールする必要がある証明書です。"
+
+#: lets-encrypt/wizard/templates/installation.php:25
+msgid "Certificate (CRT)"
+msgstr "証明書 (CRT)"
+
+#: lets-encrypt/wizard/templates/installation.php:22
+msgid "Install your certificate."
+msgstr "証明書をインストール"
+
+#: lets-encrypt/wizard/templates/installation.php:14
+msgid "copied!"
+msgstr "コピーしました !"
+
+#: lets-encrypt/wizard/templates/generation.php:16
+msgid "Skip DNS check"
+msgstr "DNS 確認を省略"
+
+#: lets-encrypt/wizard/templates/generation.php:13
+msgid "If you're sure it's set correctly, you can click the button to skip the DNS check."
+msgstr "正しく設定されているなら、「DNS 確認を省略」ボタンを押すことができます。"
+
+#: lets-encrypt/wizard/templates/generation.php:12
+msgid "You can manually check the DNS records in an %sonline tool%s."
+msgstr "DNS レコードを手動で確認するには、%sオンラインツール%sを開きます。"
+
+#: lets-encrypt/wizard/templates/generation.php:11
+msgid "We could not check the DNS records. If you just added the record, please check in a few minutes."
+msgstr "DNS レコードが確認できませんでした。レコードの追加直後であれば、数分後に確認してください。"
+
+#: lets-encrypt/wizard/templates/directories.php:76
+msgid "Inside the folder called “ssl” create a new folder called “certs”, with 644 writing permissions."
+msgstr "ssl フォルダー内に、644の書き込み権限で certs フォルダーを作成。"
+
+#: lets-encrypt/wizard/templates/directories.php:66
+msgid "The certificate will get stored in this directory."
+msgstr "証明書はこのフォルダーに保管されます。"
+
+#: lets-encrypt/wizard/templates/directories.php:65
+msgid "Create a certs directory"
+msgstr "certs フォルダー作成"
+
+#: lets-encrypt/wizard/templates/directories.php:57
+msgid "Inside the folder called “ssl” create a new folder called “keys”, with 644 writing permissions."
+msgstr "ssl フォルダー内に、644の書き込み権限で keys フォルダーを作成。"
+
+#: lets-encrypt/wizard/templates/directories.php:54
+#: lets-encrypt/wizard/templates/directories.php:73
+msgid "Create a folder called “ssl”"
+msgstr "ssl フォルダー作成"
+
+#: lets-encrypt/wizard/templates/directories.php:50
+#: lets-encrypt/wizard/templates/directories.php:69
+msgid "Navigate in FTP or File Manager to one level above the root of your WordPress installation:"
+msgstr "FTP またはファイルマネージャーで、WordPress をインストールしたルートより1つ上の階層に移動:"
+
+#: lets-encrypt/wizard/templates/directories.php:47
+#: lets-encrypt/wizard/templates/directories.php:66
+msgid "By placing it outside the root folder, it is not accessible over the internet."
+msgstr "ルートフォルダーの外側にすることで、インターネットからアクセスできないようになっています。"
+
+#: lets-encrypt/wizard/templates/directories.php:47
+msgid "The key directory is needed to store the generated keys."
+msgstr "key フォルダーは、生成したキーの保管に使われます。"
+
+#: lets-encrypt/wizard/templates/directories.php:46
+msgid "Create a key directory"
+msgstr "key フォルダー作成"
+
+#: lets-encrypt/wizard/templates/directories.php:41
+msgid "If the challenge directory cannot be created, you can either remove the server limitation, or change to DNS verification."
+msgstr "もし challenge フォルダを作成できないなら、サーバーの制限をなくすか、DNS 認証へと変更するかのいずれかになります。"
+
+#: lets-encrypt/wizard/templates/directories.php:39
+msgid "Or you can switch to DNS verification"
+msgstr "あるいは、DNS 認証へ切り替え"
+
+#: lets-encrypt/wizard/templates/directories.php:35
+#: lets-encrypt/wizard/templates/directories.php:60
+#: lets-encrypt/wizard/templates/directories.php:79
+msgid "Click the refresh button."
+msgstr "更新ボタンを押します。"
+
+#: lets-encrypt/wizard/templates/directories.php:32
+msgid "Inside the folder called “.well-known” create a new folder called “acme-challenge”, with 644 writing permissions."
+msgstr ".well-known フォルダー内に、644の書き込み権限で acme-challenge フォルダーを作成。"
+
+#: lets-encrypt/wizard/templates/directories.php:29
+msgid "Create a folder called “.well-known”"
+msgstr ".well-known フォルダー作成"
+
+#: lets-encrypt/wizard/templates/directories.php:25
+msgid "Navigate in FTP or File Manager to the root of your WordPress installation:"
+msgstr "FTP またはファイルマネージャーで、WordPress をインストールしたルートに移動:"
+
+#: lets-encrypt/wizard/templates/directories.php:21
+msgid "Create a challenge directory"
+msgstr "challenge フォルダー作成"
+
+#: lets-encrypt/wizard/templates/directories.php:15
+msgid "If the challenge directory cannot be created, or is not reachable, you can either remove the server limitation, or change to DNS verification."
+msgstr "もし challenge フォルダを作成できない、またはアクセスできないなら、サーバーの制限をなくすか、DNS 認証へと変更するかのいずれかになります。"
+
+#: lets-encrypt/wizard/templates/directories.php:9
+#: lets-encrypt/wizard/templates/dns-verification.php:7
+#: lets-encrypt/wizard/templates/installation.php:18
+msgid "Next step"
+msgstr "次の手順"
+
+#: lets-encrypt/wizard/templates/content.php:22
+msgid "Notifications"
+msgstr "通知"
+
+#: lets-encrypt/wizard/templates/activate.php:60
+msgid "No SSL certificate has been detected yet. In some cases this takes a few minutes."
+msgstr "SSL 証明書はまだ検出されていません。一部では数分間かかります。"
+
+#: lets-encrypt/wizard/templates/activate.php:42
+msgid "Almost ready to activate SSL!"
+msgstr "SSL 有効化はほぼ完了 !"
+
+#: lets-encrypt/wizard/templates/activate.php:21
+msgid "SSL was already activated on your website!"
+msgstr "このサイトの SSL はすでに有効になっています !"
+
+#: lets-encrypt/wizard/templates/activate.php:16
+msgid "If you just activated SSL, please check for: "
+msgstr "SSL を有効化しただけであれば、以下を確認:"
+
+#: lets-encrypt/wizard/templates/activate.php:13
+#: lets-encrypt/wizard/templates/activate.php:42
+msgid "In some cases it takes a few minutes for the certificate to get detected. In that case, check back in a few minutes."
+msgstr "一部の例では、証明書を検出するまでに数分間かかります。数分後に確認してください。"
+
+#: lets-encrypt/wizard/templates/activate.php:13
+msgid "Your site is secured with a valid SSL certificate!"
+msgstr "お使いのサイトは、有効な SSL 証明書で保護されています !"
+
+#: lets-encrypt/wizard/notices.php:155
+#: lets-encrypt/wizard/templates/directories.php:17
+#: lets-encrypt/wizard/templates/directories.php:42
+msgid "Switch to DNS verification"
+msgstr "DNS 認証へ切り替え"
+
+#: lets-encrypt/wizard/notices.php:150
+msgid "Switch to directory verification"
+msgstr "フォルダー認証に切り替え"
+
+#: lets-encrypt/wizard/notices.php:149
+msgid "You can switch back to directory verification here."
+msgstr "フォルダー認証に戻すにはこちら。"
+
+#: lets-encrypt/wizard/notices.php:148
+msgid "You have switched to DNS verification."
+msgstr "DNS 認証に切り替えました。"
+
+#: lets-encrypt/wizard/notices.php:81
+msgid "Your certificate will be renewed and installed automatically."
+msgstr "証明書は自動で更新されインストールされます。"
+
+#: lets-encrypt/wizard/notices.php:74
+msgid "Automatic renewal of your certificate was not possible. The SSL certificate should be %srenewed%s manually."
+msgstr "証明書の自動更新はできませんでした。SSL 証明書は手動で%s更新%sしてください。"
+
+#: lets-encrypt/wizard/notices.php:67
+msgid "The SSL certificate has been renewed, and requires manual %sinstallation%s in your hosting dashboard."
+msgstr "SSL 証明書は更新され、ホスティング管理画面から手動で%sインストール%sが必要です。"
+
+#: lets-encrypt/wizard/notices.php:60
+msgid "The automatic installation of your certificate has failed. Please check your credentials, and retry the %sinstallation%s."
+msgstr "お使いの証明書の自動インストールに失敗しました。認証情報を確認し%sインストール%sを再度お試しください。"
+
+#: lets-encrypt/wizard/notices.php:45
+msgid "Your certificate will expire on %s. You can renew it %shere%s."
+msgstr "お使いの証明書の有効期限は %s です。%sこちら%sから更新できます。"
+
+#: lets-encrypt/wizard/notices.php:41
+msgid "Your certificate is valid to: %s"
+msgstr "証明書の有効期限: %s"
+
+#: lets-encrypt/wizard/config/steps.php:153
+msgid "Searching for link to SSL installation page on your server..."
+msgstr "お使いのサーバー用の SSL インストールページへのリンクを検索中..."
+
+#: lets-encrypt/wizard/config/steps.php:150
+#: lets-encrypt/wizard/templates/menu.php:2
+msgid "Installation"
+msgstr "インストール"
+
+#: lets-encrypt/wizard/config/steps.php:126
+msgid "We will now generate your SSL Certificate"
+msgstr "SSL 証明書を生成します"
+
+#: lets-encrypt/wizard/config/steps.php:125
+msgid "Generation"
+msgstr "生成"
+
+#: lets-encrypt/wizard/config/steps.php:116
+msgid "Retrieving DNS verification token..."
+msgstr "DNS 認証用トークンを再取得中..."
+
+#: lets-encrypt/wizard/config/steps.php:110
+#: lets-encrypt/wizard/config/steps.php:135
+msgid "Creating account..."
+msgstr "アカウントを作成中..."
+
+#: lets-encrypt/wizard/config/steps.php:107
+msgid "DNS Verification"
+msgstr "DNS 認証"
+
+#: lets-encrypt/wizard/config/steps.php:98
+msgid "Checking challenge directory reachable over http..."
+msgstr "http を介して challenge フォルダーに到達できるか確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:91
+msgid "Checking permissions..."
+msgstr "パーミッションを確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:85
+msgid "Checking certs directory..."
+msgstr "certs フォルダーを確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:79
+msgid "Checking key directory..."
+msgstr " key フォルダーを確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:73
+msgid "Checking challenge directory..."
+msgstr "challenge フォルダーを確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:64
+msgid "Directories"
+msgstr "フォルダー"
+
+#: lets-encrypt/wizard/config/steps.php:56
+msgid "Below you will find the instructions for different hosting environments and configurations. If you start the process with the necessary instructions and credentials the next view steps will be done in no time."
+msgstr "以下は、さまざまなホスティング環境と構成のための手順です。必要な手順と認証情報で開始すれば、次に表示される手順はすぐに完了します。"
+
+#: lets-encrypt/wizard/config/steps.php:55
+msgid "Hosting"
+msgstr "ホスティング"
+
+#: lets-encrypt/wizard/config/steps.php:52
+msgid "Letʼs Encrypt is a free, automated and open certificate authority brought to you by the nonprofit Internet Security Research Group (ISRG)."
+msgstr "Let's Encrypt は無料です。非営利の Internet Security Research Group (ISRG) が提供する、自動かつオープンな認証局です。"
+
+#: lets-encrypt/wizard/config/steps.php:48
+msgid " Please note that you can always save and finish the wizard later, use our %sdocumentation%s for additional information or log a %ssupport ticket%s if you need our assistance."
+msgstr "いつでも保存して、後でウィザードを完了できます。追加の情報は%s私たちによる解説文書%sや、手助けが必要なら%sサポートチケット%sを発行してください。"
+
+#: lets-encrypt/wizard/config/steps.php:47
+msgid "We have tried to make our Wizard as simple and fast as possible. Although these questions are all necessary, if there’s any way you think we can improve the plugin, please let us %sknow%s!"
+msgstr "ウィザードを、シンプルかつ高速に保っています。すべて必要な質問かと思いますが、本プラグインをさらに改善できるなら%sお知らせください%s !"
+
+#: lets-encrypt/wizard/config/steps.php:45
+msgid "General settings"
+msgstr "一般設定"
+
+#: lets-encrypt/wizard/config/steps.php:37
+msgid "Checking for website configuration..."
+msgstr "サイトの設定を確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:32
+msgid "Checking alias domain..."
+msgstr "ドメインのエイリアスを確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:27
+msgid "Checking server software..."
+msgstr "サーバソフトウェアを確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:22
+msgid "Checking if CURL is available..."
+msgstr "cURL が利用可能か確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:17
+msgid "Checking SSL certificate..."
+msgstr "SSL 証明書を確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:12
+msgid "Checking PHP version..."
+msgstr "PHP バージョンを確認中..."
+
+#: lets-encrypt/wizard/config/steps.php:9
+msgid "Detected status of your setup."
+msgstr "検出されたセットアップの状態"
+
+#: lets-encrypt/wizard/config/steps.php:8
+msgid "System Status"
+msgstr "システムの状態"
+
+#: lets-encrypt/wizard/config/questions.php:300
+msgid "Store for renewal purposes. If not stored, renewal may need to be done manually."
+msgstr "更新のための保存です。保存されていなければ、更新を手動で行う必要があることがあります。"
+
+#: lets-encrypt/wizard/config/questions.php:299
+msgid "Credentials storage"
+msgstr "認証情報の保存"
+
+#: lets-encrypt/wizard/config/questions.php:282
+msgid "Plesk password"
+msgstr "Plesk パスワード"
+
+#: lets-encrypt/wizard/config/questions.php:265
+msgid "You can find your Plesk username and password in %s"
+msgstr "Plesk のユーザー名とパスワードは、%sにあります。"
+
+#: lets-encrypt/wizard/config/questions.php:264
+msgid "Plesk username"
+msgstr "Plesk ユーザー名"
+
+#: lets-encrypt/wizard/config/questions.php:248
+msgid "The URL you use to access your Plesk dashboard. Ends on :8443."
+msgstr "Plesk の管理画面へのアクセスに使用する URL です。末尾は :8443です。"
+
+#: lets-encrypt/wizard/config/questions.php:247
+msgid "Plesk host"
+msgstr "Plesk ホスト"
+
+#: lets-encrypt/wizard/config/questions.php:235
+msgid "You can find your api key %shere%s (make sure you're logged in with your main account)."
+msgstr "API キーは、%sこちら%sにあります (メインアカウントでのログインを確かにしてください)。"
+
+#: lets-encrypt/wizard/config/questions.php:232
+msgid "CloudWays api key"
+msgstr "CloudWays API キー"
+
+#: lets-encrypt/wizard/config/questions.php:219
+msgid "CloudWays user email"
+msgstr "CloudWays メールアドレス"
+
+#: lets-encrypt/wizard/config/questions.php:201
+msgid "DirectAdmin password"
+msgstr "DirectAdmin パスワード"
+
+#: lets-encrypt/wizard/config/questions.php:184
+msgid "DirectAdmin username"
+msgstr "DirectAdmin ユーザー名"
+
+#: lets-encrypt/wizard/config/questions.php:167
+msgid "The URL you use to access your DirectAdmin dashboard. Ends on :2222."
+msgstr "DirectAdmin の管理画面へのアクセスに使用する URL です。末尾は :2222です。"
+
+#: lets-encrypt/wizard/config/questions.php:166
+msgid "DirectAdmin host"
+msgstr "DirectAdmin ホスト"
+
+#: lets-encrypt/wizard/config/questions.php:150
+msgid "CPanel password"
+msgstr "CPanel パスワード"
+
+#: lets-encrypt/wizard/config/questions.php:133
+msgid "CPanel username"
+msgstr "CPanel ユーザー名"
+
+#: lets-encrypt/wizard/config/questions.php:116
+msgid "The URL you use to access your cPanel dashboard. Ends on :2083."
+msgstr "cPanel の管理画面へのアクセスに使用する URL です。末尾は :2083です。"
+
+#: lets-encrypt/wizard/config/questions.php:115
+msgid "CPanel host"
+msgstr "CPanel ホスト"
+
+#: lets-encrypt/wizard/config/questions.php:104
+msgid "Hosting provider"
+msgstr "ホスティング会社"
+
+#: lets-encrypt/wizard/config/questions.php:102
+msgid "If your hosting provider is not listed, and there's an SSL activation/installation link, please let us %sknow%s."
+msgstr "もしお使いのホスティング会社が一覧になく、また SSL 有効化/インストールのリンクがなければ、私たちに%sお知らせください%s。"
+
+#: lets-encrypt/wizard/config/questions.php:101
+msgid "By selecting your hosting provider we can tell you if your hosting provider already supports free SSL, and/or where you can activate it."
+msgstr "ホスティング会社を選択することで、すでに無料の SSL に対応しているか、また、どこでそれを有効化するかを知ることができます。"
+
+#: lets-encrypt/wizard/config/questions.php:99
+msgid "By selecting your hosting provider we can tell you if your hosting provider already supports free SSL, and how you can activate it."
+msgstr "ホスティング会社を選択することで、すでに無料の SSL に対応するか、またどうやって有効化するか知ることができます。"
+
+#: lets-encrypt/wizard/config/questions.php:85
+msgid "This will include both the www. and non-www. version of your domain."
+msgstr "これはお使いのドメインの www. および 非-www. 版の両方を含みます。"
+
+#: lets-encrypt/wizard/config/questions.php:73
+#: lets-encrypt/wizard/config/steps.php:51
+msgid "Domain"
+msgstr "ドメイン"
+
+#: lets-encrypt/wizard/config/questions.php:54
+msgid "I agree to the Let's Encrypt %sTerms & Conditions%s"
+msgstr "Let's Encrypt の%s利用規約%sに同意"
+
+#: lets-encrypt/wizard/config/questions.php:53
+msgid "Terms & Conditions"
+msgstr "利用規約"
+
+#: lets-encrypt/wizard/config/questions.php:42
+#: lets-encrypt/wizard/config/questions.php:74
+msgid "This field is prefilled based on your configuration"
+msgstr "この欄はあなたの設定に基づいて事前に入力されています。"
+
+#: lets-encrypt/wizard/config/questions.php:41
+msgid "Email address"
+msgstr "メールアドレス"
+
+#: lets-encrypt/wizard/config/questions.php:39
+msgid "This email address will used to create a Let's Encrypt account. This is also where you will receive renewal notifications."
+msgstr "このメールアドレスは、Let's Encrypt のアカウント作成に用います。また更新のお知らせも届きます。"
+
+#: lets-encrypt/wizard/config/class-config.php:539
+msgid "No"
+msgstr "いいえ"
+
+#: lets-encrypt/wizard/config/class-config.php:538
+msgid "Yes"
+msgstr "はい"
+
+#: lets-encrypt/wizard/class-wizard.php:953
+#: lets-encrypt/wizard/config/class-config.php:545
+msgid "I don't know, or not listed, proceed with installation"
+msgstr "知らない、一覧にない、インストールを続行"
+
+#: lets-encrypt/wizard/class-wizard.php:884
+msgid "Go to dashboard"
+msgstr "管理画面へ"
+
+#: lets-encrypt/wizard/class-wizard.php:814
+msgid "Previous"
+msgstr "前へ"
+
+#: grid/templates/grid-container.php:6
+#: lets-encrypt/wizard/templates/content.php:8
+msgid "Changes saved successfully"
+msgstr "変更は正常に保存されました"
+
+#: lets-encrypt/wizard/class-wizard.php:633
+msgid "If this user stops editing, the lock will expire after %s minutes."
+msgstr "この利用者が編集を中止したら、%s 分後にロックを解除します。"
+
+#: lets-encrypt/wizard/class-wizard.php:631
+msgid "The wizard is currently being edited by %s"
+msgstr "このウィザードは現在 %s が編集中です"
+
+#: lets-encrypt/wizard/class-wizard.php:63
+#: lets-encrypt/wizard/config/steps.php:141
+msgid "Generating SSL certificate..."
+msgstr "SSL 証明書の生成中..."
+
+#: lets-encrypt/wizard/class-wizard.php:57
+msgid "Verifying DNS records..."
+msgstr "DNS レコードの検証中..."
+
+#: lets-encrypt/wizard/class-field.php:1314
+msgid "Refresh"
+msgstr "更新"
+
+#: lets-encrypt/wizard/class-field.php:1297
+msgid "Start"
+msgstr "開始"
+
+#: lets-encrypt/integrations/plesk/plesk.php:88
+msgid "Successfully installed SSL"
+msgstr "SSL を正常にインストール"
+
+#: lets-encrypt/integrations/plesk/functions.php:34
+msgid "Installing SSL certificate using PLESK API..."
+msgstr "PLESK API を介して SSL 証明書をインストール中..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:102
+#: lets-encrypt/integrations/directadmin/functions.php:30
+msgid "Attempting to install certificate..."
+msgstr "証明書のインストールを試行中..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:86
+msgid "Attempting to install certificate using AutoSSL..."
+msgstr "AutoSSL を介して SSL 証明書のインストールを試行中..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:61
+msgid "The system is not ready for the DNS verification yet. Please run the wizard again."
+msgstr "システムは、まだ DNS 認証の準備ができていません。ウィザードを再度実行してください。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:246
+msgid "Login credentials incorrect"
+msgstr "ログイン認証情報が正しくありません"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:242
+msgid "Unable to connect to cPanel"
+msgstr "cPanel に接続できません"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:157
+msgid "Errors were reported during installation."
+msgstr "インストール中にエラーが報告されました。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:117
+msgid "Errors were reported during installation"
+msgstr "インストール中にエラーが報告されました"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:111
+#: lets-encrypt/integrations/directadmin/directadmin.php:124
+msgid "SSL successfully installed on %s"
+msgstr "%s への SSL のインストールが成功"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:64
+#: lets-encrypt/integrations/directadmin/directadmin.php:64
+msgid "No valid list of domains."
+msgstr "ドメイン一覧が正しくありません。"
+
+#: lets-encrypt/integrations/cloudways/functions.php:51
+msgid "Enabling auto renew..."
+msgstr "自動更新を有効化中..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:45
+msgid "Installing SSL certificate..."
+msgstr "SSL 証明書をインストール中..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:39
+msgid "Retrieving Cloudways server data..."
+msgstr "Cloudways のサーバーデータを取得中..."
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:259
+msgid "Could not retrieve server list"
+msgstr "サーバー一覧を取得できません"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:217
+#: lets-encrypt/integrations/cloudways/cloudways.php:252
+msgid "Successfully retrieved server id and app id"
+msgstr "サーバー ID と アプリ ID の取得に成功"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:201
+msgid "Error enabling auto renew for Let's Encrypt"
+msgstr "Let's Encrypt 自動更新の有効時のエラー"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:186
+#: lets-encrypt/integrations/cloudways/cloudways.php:192
+msgid "Successfully installed Let's Encrypt"
+msgstr "Let's Encrypt のインストールに成功"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:166
+msgid "Failed retrieving access token"
+msgstr "アクセストークンの取得に失敗"
+
+#: lets-encrypt/functions.php:405
+msgid "You can follow these %sinstructions%s."
+msgstr "%sこの手順%sに従ってください。"
+
+#: lets-encrypt/functions.php:403
+msgid "Your hosting environment does not allow automatic SSL installation."
+msgstr "お使いのホスト環境では、自動的な SSL のインストールが許可されていません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1091
+#: lets-encrypt/functions.php:401
+msgid "According to our information, your hosting provider does not allow any kind of SSL installation, other then their own paid certificate. For an alternative hosting provider with SSL, see this %sarticle%s."
+msgstr "我々の情報では、お使いのホスティング会社は、その会社の有料の証明書以外の SSL 証明書を許可していません。SSL の使える別のホスティング会社については、この%s記事%sをご覧ください。"
+
+#: lets-encrypt/functions.php:396
+msgid "You already have free SSL on your hosting environment."
+msgstr "お使いのホスト環境には既に無料の SSL があります。"
+
+#: lets-encrypt/functions.php:394 lets-encrypt/functions.php:398
+#: lets-encrypt/functions.php:406
+msgid "After completing the installation, you can continue to the next step to complete your configuration."
+msgstr "インストール完了後、設定を完了するための次の手順に進むことができます。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1098
+#: lets-encrypt/functions.php:393
+msgid "According to our information, your hosting provider supplies your account with an SSL certificate by default. Please contact your %shosting support%s if this is not the case."
+msgstr "我々の情報では、お使いのホスティング会社は、標準で SSL 証明書を提供しています。そうなっていない場合、お使いの%sホスティング会社のサポート%sにお問い合わせください。"
+
+#: lets-encrypt/functions.php:389
+msgid "Go to installation"
+msgstr "インストールへ"
+
+#: lets-encrypt/functions.php:388
+msgid "Go to activation"
+msgstr "有効化へ"
+
+#: lets-encrypt/functions.php:387
+msgid "Please activate it on your dashboard %smanually%s"
+msgstr "管理画面から%s手動で%s有効化してください"
+
+#: lets-encrypt/functions.php:386
+msgid "Please complete %smanually%s"
+msgstr "%s手動で%s完了してください"
+
+#: lets-encrypt/functions.php:384
+msgid "Please activate it manually on your hosting dashboard."
+msgstr "お使いのホスティング会社の管理画面で、手動で有効化してください。"
+
+#: lets-encrypt/functions.php:383
+msgid "Please complete manually in your hosting dashboard."
+msgstr "お使いのホスティング会社の管理画面で、手動で完了してください。"
+
+#: lets-encrypt/functions.php:321
+msgid "You have the required PHP version to continue."
+msgstr "続行できる PHP のバージョンです。"
+
+#: lets-encrypt/functions.php:317
+msgid "The minimum requirements for the PHP version have not been met. Please upgrade to %s"
+msgstr "PHP のバージョンが最小要件を満たしていません。%s にアップグレードしてください"
+
+#: lets-encrypt/download.php:49
+msgid "File missing. Please retry the previous steps."
+msgstr "ファイルがありません。前の段階を再度お試しください。"
+
+#: lets-encrypt/cron.php:84
+msgid "Once every 5 minutes"
+msgstr "5分ごと"
+
+#: lets-encrypt/cron.php:80
+msgid "Once every day"
+msgstr "1日ごと"
+
+#: lets-encrypt/cron.php:76
+msgid "Once every week"
+msgstr "1週間ごと"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1679
+#: lets-encrypt/integrations/cloudways/functions.php:22
+#: lets-encrypt/integrations/cpanel/functions.php:16
+#: lets-encrypt/integrations/cpanel/functions.php:33
+#: lets-encrypt/integrations/directadmin/functions.php:16
+#: lets-encrypt/integrations/plesk/functions.php:16
+msgid "The system is not ready for the installation yet. Please run the wizard again."
+msgstr "システムは、まだインストールの準備ができていません。ウィザードを再度実行してください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1674
+msgid "Installation failed."
+msgstr "インストールに失敗。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1668
+msgid "Not recognized server."
+msgstr "サーバーを認識できません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1642
+msgid "The certificate installation was rate limited. Please try again later."
+msgstr "短時間での証明書のインストールの限度です。後で再度お試しください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1562
+msgid "Error code %s"
+msgstr "エラーコード %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1545
+msgid "Please create a folder 'rsssl' in the uploads directory, with 644 permissions."
+msgstr "uploads フォルダー内に、644のパーミッションで rsssl フォルダーを作成してください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1544
+msgid "Could not create test folder and file."
+msgstr "テスト用のフォルダーとファイルが作成できませんでした。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1515
+msgid "If this is not the case, don't add this alias to your certificate."
+msgstr "そうでない場合、このエイリアスを証明書に追加しないでください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1515
+msgid "Could not verify alias domain."
+msgstr "ドメインのエイリアスを検証できませんでした。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1259
+#: lets-encrypt/class-letsencrypt-handler.php:1522
+#: lets-encrypt/class-letsencrypt-handler.php:1573
+msgid "Successfully verified alias domain."
+msgstr "ドメインのエイリアスの検証に成功。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1246
+#: lets-encrypt/class-letsencrypt-handler.php:1250
+msgid "Error code %s."
+msgstr "エラーコード %s。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1232
+msgid "Challenge directory not writable."
+msgstr "Challenge フォルダーが書き込み可能ではありません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1226
+msgid "Could not reach challenge directory over %s."
+msgstr "%s の challenge フォルダーと応答できません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1222
+#: lets-encrypt/class-letsencrypt-handler.php:1499
+msgid "no response"
+msgstr "反応なし"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1163
+msgid "The certs directory was successfully created."
+msgstr "certs フォルダーは正常に作成されました。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1159
+msgid "The certs directory is not created yet."
+msgstr "certs フォルダーはまだ作成されていません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1144
+msgid "The key directory was successfully created."
+msgstr "key フォルダーは正常に作成されました。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1136
+msgid "Trying to create directory in root of website."
+msgstr "サイトのルート上にフォルダーの作成を試行中です。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1132
+msgid "The key directory is not created yet."
+msgstr "key フォルダーはまだ作成されていません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1119
+msgid "The challenge directory was successfully created."
+msgstr "challenge フォルダーは正常に作成されました。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1115
+msgid "The challenge directory is not created yet."
+msgstr "challenge フォルダーはまだ作成されていません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1073
+msgid "The required directories have the necessary writing permissions."
+msgstr "必要なフォルダーは、必要とされる書き込み権限を持っています。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1066
+msgid "Set permissions to 644 to enable SSL generation."
+msgstr "SSL 生成を有効にするには、パーミッションを644に設定します。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1066
+msgid "The following directories do not have the necessary writing permissions."
+msgstr "以下のフォルダーには、必要な書き込み権限がありません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1050
+msgid "Please complete the following step(s) first: %s"
+msgstr "まず以下の手順を完了してください: %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:724
+msgid "Bundle not available yet..."
+msgstr "バンドルはまだ利用できません..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:716
+msgid "Files not created yet..."
+msgstr "ファイルはまだ作成されていません..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:710
+msgid "Successfully generated certificate."
+msgstr "証明書は正常に精製されました。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:672
+msgid "OCSP not supported, the certificate will be generated without OCSP."
+msgstr "OCSP に未対応です。証明書は OCSP なしで生成されます。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:644
+msgid "Authorization not completed yet."
+msgstr "権限付与はまだ完了していません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:619
+msgid "Certificate already generated. It was renewed if required."
+msgstr "証明書は既に生成されています。必要な場合、更新もされました。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:588
+msgid "DNS records were not verified yet. Please complete the previous step."
+msgstr "DNS レコードはまだ検証されていません。次の手順を完了してください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:572
+msgid "The certificate generation was rate limited for 10 minutes because the authorization failed."
+msgstr "権限付与に失敗。証明書の生成が10分間の生成限度に達しています。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:515
+msgid "Successfully verified DNS records"
+msgstr "DNS レコードの検証に成功"
+
+#: lets-encrypt/class-letsencrypt-handler.php:501
+#: lets-encrypt/integrations/cpanel/functions.php:45
+msgid "Token not generated. Please complete the previous step."
+msgstr "トークンが生成されていません。前の手順を完了してください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:474
+msgid "Configured for HTTP challenge"
+msgstr "HTTP チャレンジの設定"
+
+#: lets-encrypt/class-letsencrypt-handler.php:433
+msgid "Token not received yet."
+msgstr "まだトークンを受信していません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:418
+#: lets-encrypt/class-letsencrypt-handler.php:426
+msgid "Token successfully retrieved."
+msgstr "トークンの取得に成功。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:381
+msgid "The email address was not set. Please set the email address"
+msgstr "メールアドレスが設定されていません。設定してください"
+
+#: lets-encrypt/class-letsencrypt-handler.php:372
+msgid "Please change your email address %shere%s and try again."
+msgstr "メールアドレスを%sここから%s変更し、再度お試しください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:371
+msgid "The used domain for your email address is not allowed."
+msgstr "このメールアドレスに使用されたドメインは許可されていません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:363
+msgid "Successfully retrieved account"
+msgstr "アカウントの取得に成功"
+
+#: lets-encrypt/class-letsencrypt-handler.php:343
+msgid "The PHP function CURL has successfully been detected."
+msgstr "PHP 関数の cURL は正常に検出されました。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:339
+msgid "The PHP function CURL is not available on your server, which is required. Please contact your hosting provider."
+msgstr "必要とされる PHP 関数の cURL は、このサーバーでは利用できません。お使いのホスティング会社にお問い合わせください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:323
+msgid "DirectAdmin recognized. Possibly the certificate can be installed automatically."
+msgstr "DirectAdmin を認識しました。証明書を自動でインストールできる可能性があります。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:320
+msgid "Plesk recognized. Possibly the certificate can be installed automatically."
+msgstr "Plesk を認識しました。証明書を自動でインストールできる可能性があります。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:317
+msgid "CPanel recognized. Possibly the certificate can be installed automatically."
+msgstr "CPanel を認識しました。証明書を自動でインストールできる可能性があります。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:313
+msgid "The Hosting Panel software was not recognized. Depending on your hosting provider, the generated certificate may need to be installed manually."
+msgstr "サーバー管理ツールを認識できませんでした。お使いのホスティング会社によっては、生成された証明書を手動でインストールする必要があります。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:282
+msgid "SSL certificate should be generated and installed."
+msgstr "SSL 証明書を生成し、インストールする必要があります。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:276
+msgid "You already have a valid SSL certificate."
+msgstr "すでに有効な SSL 証明書があります。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:272
+msgid "Continue to renew."
+msgstr "更新を続行。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:272
+msgid "Your certificate will expire on %s."
+msgstr "この証明書の有効期限は、%s です。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:266
+msgid "(unknown)"
+msgstr "(不明)"
+
+#: lets-encrypt/class-letsencrypt-handler.php:202
+msgid "Your domain meets the requirements for Let's Encrypt."
+msgstr "このドメインは、Let's Encrypt の要件を満たしています。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:188
+msgid "It is not possible to install Let's Encrypt on a localhost environment."
+msgstr "Let's Encrypt は、ローカルホストの環境にはインストールできません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:198
+msgid "It is not possible to install Let's Encrypt on a subfolder configuration."
+msgstr "サブフォルダー構成では Let's Encrypt をインストールできません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:193
+msgid "It is not possible to install Let's Encrypt on a subsite. Please go to the main site of your website."
+msgstr "サブサイトには Let's Encrypt をインストールできません。このサイトのメインサイトから行ってください。"
+
+#: class-admin.php:3402
+msgid "You have the Really Simple SSL Let's Encrypt beta add-on activated. This functionality has now been integrated in core, so you can deactivate the add-on."
+msgstr "Really Simple SSL Let's Encrypt ベータ版拡張機能が有効になっています。今ではこの機能はコアに統合されているので、拡張機能を無効化できます。"
+
+#: class-admin.php:3183
+msgid "Re-check"
+msgstr "再確認"
+
+#: class-admin.php:3181
+msgid "Depending on your hosting provider, %smanual installation%s may be required."
+msgstr "ホスティング会社によっては、%s手動でのインストール%sが必要です。"
+
+#: class-admin.php:3180
+msgid "If your hosting provider auto-renews your certificate, no action is required. Alternatively, you have the option to generate an SSL certificate with Really Simple SSL."
+msgstr "お使いのホスティング会社が証明書を自動更新していれば、何もする必要はありません。あるいは、Really Simple SSL で SSL 証明書を生成するオプションもあります。"
+
+#: class-admin.php:3180
+msgid "SSL certificate will expire on %s."
+msgstr "SSL 証明書の有効期限は、%s です。"
+
+#: class-admin.php:3179
+msgid "Your SSL certificate will expire soon."
+msgstr "SSL 証明書の有効期限が近づいています。"
+
+#: class-admin.php:3157
+msgid "No SSL detected. Use the retry button to check again."
+msgstr "SSL が検出されませんでした。再確認には取得ボタンを使ってください。"
+
+#: class-admin.php:3036
+msgid "(Unknown)"
+msgstr "(不明)"
+
+#: class-admin.php:903 class-admin.php:3158 class-admin.php:3167
+#: class-admin.php:3182
+msgid "Install SSL certificate"
+msgstr "SSL 証明書をインストール"
 
 #: class-admin.php:3159 lets-encrypt/wizard/class-wizard.php:891
 msgid "Retry"
 msgstr "再試行"
 
-#: class-admin.php:3334
-msgid "Add the following lines of code to your wp-config.php."
-msgstr "以下のコードを wp-config.php に追加してください。"
-
-#: class-admin.php:3342
-msgid "Or set your wp-config.php to writable and reload this page."
-msgstr "または、wp-config.php を書き込み可能に設定し、このページを再読み込みしてください。"
-
-#: grid/templates/tips-tricks.php:31
-msgid "Adding a Content Security Policy"
-msgstr "Content Security Policy を追加"
+#: class-admin.php:598 lets-encrypt/wizard/templates/activate.php:58
+msgid "An SSL certificate has been detected"
+msgstr "SSL 証明書が検出されました"
 
 #: grid/templates/tips-tricks.php:39
 msgid "Adding a Permission Policy"
 msgstr "Permissions Policy を追加"
 
-#: class-admin.php:3327
-msgid "HttpOnly Secure cookies not set."
-msgstr "HttpOnly の secure cookie が未設定です。"
+#: grid/templates/tips-tricks.php:31
+msgid "Adding a Content Security Policy"
+msgstr "Content Security Policy を追加"
+
+#: class-admin.php:3342
+msgid "Or set your wp-config.php to writable and reload this page."
+msgstr "または、wp-config.php を書き込み可能に設定し、このページを再読み込みしてください。"
+
+#: class-admin.php:3334
+msgid "Add the following lines of code to your wp-config.php."
+msgstr "以下のコードを wp-config.php に追加してください。"
 
 #: class-admin.php:3334
 msgid "To set the httponly secure cookie settings, your wp-config.php has to be edited, but the file is not writable."
 msgstr "HttpOnly の secure cookie を設定するには、wp-config.php を編集する必要がありますが、このファイルは書き込み可能になっていません。"
+
+#: class-admin.php:3327
+msgid "HttpOnly Secure cookies not set."
+msgstr "HttpOnly の secure cookie が未設定です。"
 
 #: class-admin.php:3389
 msgid "Due to a recent update by WP Engine, we have changed your settings automatically to adapt."
@@ -71,14 +1324,6 @@ msgstr "推奨セキュリティヘッダーがインストール済みではあ
 msgid "Beautiful recipes optimized for Google "
 msgstr "Google に最適化された綺麗なレシピ集"
 
-#: class-site-health.php:32
-msgid "SSL Status Test"
-msgstr "SSL 状態のテスト"
-
-#: class-site-health.php:38
-msgid "Security Headers Test"
-msgstr "セキュリティー用ヘッダーのテスト"
-
 #: class-site-health.php:63
 msgid "The recommended security headers are detected on your site."
 msgstr "推奨するセキュリティヘッダーが検出されています。"
@@ -87,29 +1332,37 @@ msgstr "推奨するセキュリティヘッダーが検出されています。
 msgid "Recommended security headers installed"
 msgstr "推奨するセキュリティヘッダーはインストール済み"
 
+#: class-site-health.php:38
+msgid "Security Headers Test"
+msgstr "セキュリティー用ヘッダーのテスト"
+
+#: class-site-health.php:32
+msgid "SSL Status Test"
+msgstr "SSL 状態のテスト"
+
 #: class-admin.php:3156
 msgid "No SSL detected"
 msgstr "SSL 検出無し"
-
-#: class-site-health.php:132
-msgid "Really Simple SSL is installed, but no valid SSL certificate is detected."
-msgstr "Really Simple SSL はインストール済みですが、有効な SSL 証明書が検出できません。"
 
 #: class-site-health.php:80
 msgid "Learn more about security headers"
 msgstr "セキュリティヘッダーについての詳細"
 
-#: class-site-health.php:141
-msgid "To ensure all traffic passes through SSL, please enable a 301 redirect."
-msgstr "すべてのアクセスを SSL に渡すには、301転送を有効にしてください。"
-
 #: class-site-health.php:146
 msgid "Enable 301 redirect"
 msgstr "301転送を有効化"
 
+#: class-site-health.php:141
+msgid "To ensure all traffic passes through SSL, please enable a 301 redirect."
+msgstr "すべてのアクセスを SSL に渡すには、301転送を有効にしてください。"
+
 #: class-site-health.php:138
 msgid "No 301 redirect to SSL enabled."
 msgstr "SSL への301転送が有効ではありません"
+
+#: class-site-health.php:132
+msgid "Really Simple SSL is installed, but no valid SSL certificate is detected."
+msgstr "Really Simple SSL はインストール済みですが、有効な SSL 証明書が検出できません。"
 
 #: class-site-health.php:119
 msgid "Really Simple SSL detected an SSL certificate, but has not been configured to enforce SSL."
@@ -143,42 +1396,41 @@ msgstr "無効化しますが、SSL のままを保ちます。"
 msgid "To deactivate the plugin correctly, please select if you want to:"
 msgstr "本プラグインを正しく無効化するために選択してください:"
 
-#: class-admin.php:4188
-msgid "Fire mixed content fixer with different method"
-msgstr "混在コンテンツ修正機能を異なる方法で実行"
+#: class-admin.php:4341
+msgid "If the setting 'stop editing the .htaccess file' is enabled, you can't change this setting."
+msgstr "設定の「.htaccess ファイルの編集を停止」が有効であれば、この設定は変更できません。"
 
 #: class-admin.php:4191 class-multisite.php:342
 msgid "Enable this option to permanently dismiss all +1 notices in the 'Your progress' tab"
 msgstr "このオプションを有効にすると、「進行状態」タブのすべての+1通知が永久的に削除されます。"
 
-#: class-admin.php:4341
-msgid "If the setting 'stop editing the .htaccess file' is enabled, you can't change this setting."
-msgstr "設定の「.htaccess ファイルの編集を停止」が有効であれば、この設定は変更できません。"
-
-#: class-admin.php:3791
-msgid "Tips & Tricks"
-msgstr "ヒント"
-
-#: class-admin.php:3904 upgrade/upgrade-to-pro.php:137
-#: upgrade/upgrade-to-pro.php:150 upgrade/upgrade-to-pro.php:167
-msgid "Install"
-msgstr "インストール"
-
-#: class-admin.php:3909 upgrade/upgrade-to-pro.php:180
-msgid "Installed"
-msgstr "インストール済み"
-
-#: class-admin.php:4141
-msgid "Copied!"
-msgstr "コピーしました !"
+#: class-admin.php:4188
+msgid "Fire mixed content fixer with different method"
+msgstr "混在コンテンツ修正機能を異なる方法で実行"
 
 #: class-admin.php:4170
 msgid "Enable WordPress 301 redirect"
 msgstr "WordPress 301転送の有効化"
 
+#: class-admin.php:4169
+msgid "Redirects all requests over HTTP to HTTPS using a PHP 301 redirect. Enable if the .htaccess redirect cannot be used, for example on NGINX servers."
+msgstr "PHP の301転送を使い、HTTP へのすべてのアクセスを HTTPS に転送します。NGINX サーバーなど、.htaccess 転送が利用できない場合に有効にします。"
+
+#: class-admin.php:4141
+msgid "Copied!"
+msgstr "コピーしました !"
+
+#: class-admin.php:4135
+msgid " You still have %s tasks open."
+msgstr "%s個の作業待ちがあります。"
+
 #: class-admin.php:4036
 msgid "Premium"
 msgstr "プレミアム"
+
+#: class-admin.php:4034
+msgid "Open"
+msgstr "作業待ち"
 
 #: class-admin.php:4032
 msgid "Warning"
@@ -188,17 +1440,26 @@ msgstr "警告"
 msgid "Completed"
 msgstr "完了"
 
+#: class-admin.php:3965
+msgid "Instructions manual"
+msgstr "説明書"
+
 #: class-admin.php:3907
 msgid "Upgrade to pro"
 msgstr "プロへアップグレード"
 
-#: class-admin.php:4034
-msgid "Open"
-msgstr "作業待ち"
+#: class-admin.php:3909 upgrade/upgrade-to-pro.php:180
+msgid "Installed"
+msgstr "インストール済み"
 
-#: class-admin.php:3965
-msgid "Instructions manual"
-msgstr "説明書"
+#: class-admin.php:3904 upgrade/upgrade-to-pro.php:137
+#: upgrade/upgrade-to-pro.php:150 upgrade/upgrade-to-pro.php:167
+msgid "Install"
+msgstr "インストール"
+
+#: class-admin.php:3791
+msgid "Tips & Tricks"
+msgstr "ヒント"
 
 #: class-admin.php:3306
 msgid "Your site uses Divi. This can require some additional steps before getting the secure lock."
@@ -208,25 +1469,177 @@ msgstr "このサイトは Divi を使用中です。そのため安全性を示
 msgid "Your site uses Elementor. This can require some additional steps before getting the secure lock."
 msgstr "このサイトは Elementor を使用中です。そのため安全性を示す鍵マークを取得するには、少し追加の手順が必要です。"
 
-#: class-admin.php:3259
-msgid "WordPress 301 redirect enabled. We recommend to enable a 301 .htaccess redirect."
-msgstr "WordPress による301転送が有効です。.htaccess による.301転送を推奨します。"
-
 #: class-admin.php:3277
 msgid "The .htaccess redirect rules selected by this plugin failed in the test. Set manually or dismiss to leave on WordPress redirect."
 msgstr "本プラグインに選択された .htaccess による転送ルールはテストに失敗しました。手動で設定するか、WordPress による転送にするため非表示にしてください。"
 
-#: class-admin.php:4135
-msgid " You still have %s tasks open."
-msgstr "%s個の作業待ちがあります。"
-
-#: class-admin.php:4169
-msgid "Redirects all requests over HTTP to HTTPS using a PHP 301 redirect. Enable if the .htaccess redirect cannot be used, for example on NGINX servers."
-msgstr "PHP の301転送を使い、HTTP へのすべてのアクセスを HTTPS に転送します。NGINX サーバーなど、.htaccess 転送が利用できない場合に有効にします。"
-
 #: class-admin.php:3271
 msgid "The %s file is not writable. You can either use the WordPress redirect, add the rules manually, or set the file to %swritable%s."
 msgstr "%s ファイルは書き込み可能ではありません。WordPress による転送を使用するか、手動でルールを追加するか、ファイルを%s書き込み可能%sに設定してください。"
+
+#: class-admin.php:3259
+msgid "WordPress 301 redirect enabled. We recommend to enable a 301 .htaccess redirect."
+msgstr "WordPress による301転送が有効です。.htaccess による.301転送を推奨します。"
+
+#: class-admin.php:3219
+msgid "Mixed content fixer not enabled. Enable the option to fix mixed content on your site."
+msgstr "混合コンテンツ修正機能が有効になっていません。このサイトの混合コンテンツを修正するオプションを有効にします。"
+
+#: class-admin.php:3208
+msgid "The mixed content fixer is active, but was not detected on the frontpage."
+msgstr "混在コンテンツ修正機能は有効化されていますが、フロントページからは検出されませんでした。"
+
+#: class-admin.php:3201
+msgid "Really Simple SSL has received no response from the webpage."
+msgstr "このウェブページからの応答がありませんでした。"
+
+#: class-admin.php:3138
+msgid "SSL is not enabled yet."
+msgstr "SSL はまだ有効化されていません。"
+
+#: class-admin.php:3121
+msgid "Really Simple SSL 4.0. Learn more about our newest major release."
+msgstr "Really Simple SSL バージョン 4.0。最新版についてご確認ください。"
+
+#: class-admin.php:3120
+msgid "https://really-simple-ssl.com/really-simple-ssl-4-a-new-dashboard"
+msgstr "https://really-simple-ssl.com/really-simple-ssl-4-a-new-dashboard"
+
+#: class-admin.php:3076
+msgid "SSL is now activated. Check if your website is secure by following this article."
+msgstr "SSLが有効になりました。この記事をお読みになり、このサイトが安全かご確認ください。"
+
+#: class-admin.php:3020
+msgid "No recommended redirect rules detected."
+msgstr "推奨する転送ルールが検出されません。"
+
+#: class-admin.php:2941
+msgid "General"
+msgstr "全般"
+
+#: class-admin.php:591 lets-encrypt/wizard/templates/activate.php:45
+msgid "Before you migrate, please check for: "
+msgstr "移行前に以下をご確認ください:"
+
+#: rlrsssl-really-simple-ssl.php:194
+msgid "Please upgrade to the latest version to be able use the full functionality of the plugin."
+msgstr "本プラグインの完全な機能を利用するには、最新版にアップグレードしてください。"
+
+#: rlrsssl-really-simple-ssl.php:193
+msgid "You have a premium add-on with a version that is not compatible with the >4.0 release of Really Simple SSL."
+msgstr "お使いの Really Simple SSL のプレミアム拡張機能は、>4.0リリースに未対応のバージョンです。"
+
+#: rlrsssl-really-simple-ssl.php:192
+msgid "Plugin dependency error"
+msgstr "プラグインの依存関係のエラー"
+
+#: rlrsssl-really-simple-ssl.php:41
+msgid "Really Simple SSL cannot be activated. The plugin requires WordPress 4.8 or higher"
+msgstr "Really Simple SSL を有効化できませんでした。本プラグインには WordPress 4.8以上が必要です"
+
+#: rlrsssl-really-simple-ssl.php:35
+msgid "Really Simple SSL cannot be activated. The plugin requires PHP 5.6 or higher"
+msgstr "Really Simple SSL を有効化できませんでした。本プラグインには PHP 5.6以上が必要です"
+
+#: class-multisite.php:1045
+msgid "Really Simple SSL has converted all your websites to non SSL."
+msgstr "Really Simple SSL はこのサイトのすべてで SSL を使わないよう変換しました。"
+
+#: class-multisite.php:1042
+msgid "Really Simple SSL has converted all your websites to SSL."
+msgstr "Really Simple SSL はこのサイトのすべてを SSL に変換しました。"
+
+#: class-multisite.php:1040
+msgid "Conversion of websites completed."
+msgstr "サイトの変換は完了しました。"
+
+#: class-multisite.php:1035
+msgid "Site conversion in progress. Please refresh this page to check if the process has finished. It will proceed in the background."
+msgstr "サイトを変換中。この処理が完了したかは、このページを更新しご確認ください。バックグラウンドで進行しています。"
+
+#: class-multisite.php:571
+msgid "Setup"
+msgstr "設定"
+
+#: class-admin.php:3799 class-multisite.php:426
+msgid "Our plugins"
+msgstr "私たちのほかのプラグイン"
+
+#: class-admin.php:3806 class-multisite.php:418
+msgid "Support forum"
+msgstr "サポート用掲示板"
+
+#: class-admin.php:3776 class-multisite.php:402
+msgid "Your progress"
+msgstr "進行状態"
+
+#: class-multisite.php:360
+msgid "Choose option"
+msgstr "選択してください"
+
+#: class-admin.php:2965 class-admin.php:4659 class-multisite.php:230
+#: class-multisite.php:475
+msgid "Support"
+msgstr "サポート掲示板"
+
+#: class-multisite.php:130
+msgid "SSL is enabled per site."
+msgstr "サイトごとに SSL を有効化しています。"
+
+#: class-multisite.php:126
+msgid "SSL is enabled networkwide."
+msgstr "SSL はネットワーク上で有効化されています。"
+
+#: class-multisite.php:97
+msgid "SSL is activated network wide."
+msgstr "SSL はネットワーク上で有効化されています。"
+
+#: class-multisite.php:95
+msgid "No choice has been made regarding networkwide or per site activation."
+msgstr "ネットワーク全体、またはサイトごとに有効化する以外に選択肢はありません。"
+
+#: grid/templates/progress-footer.php:39
+msgid "301 Redirect"
+msgstr "301転送"
+
+#: class-admin.php:897 class-site-health.php:125
+#: grid/templates/progress-footer.php:25
+#: lets-encrypt/wizard/config/steps.php:162
+msgid "Activate SSL"
+msgstr "SSL を有効化"
+
+#: grid/templates/progress-footer.php:19
+msgid "Go PRO!"
+msgstr "プロ版を入手 !"
+
+#: grid/templates/progress-footer.php:9
+msgid "SSL Not activated"
+msgstr "SSL は有効化されていません"
+
+#: class-admin.php:4131 grid/templates/progress.php:43
+msgid "SSL is not yet enabled on this site."
+msgstr "このサイトでまだ SSL が有効化されていません。"
+
+#: class-admin.php:4127 grid/templates/progress.php:37
+msgid "Basic SSL configuration finished! Improve your score with %sReally Simple SSL Pro%s."
+msgstr "基本的な SSL 設定は完了です ! %sReally Simple SSL プロ%sでさらに評価を改善できます。"
+
+#: grid/templates/progress.php:32
+msgid "SSL configuration finished!"
+msgstr "SSL の設定は完了です !"
+
+#: class-admin.php:4134 grid/templates/progress.php:29
+msgid "You still have %s task open."
+msgid_plural "You still have %s tasks open."
+msgstr[0] "まだ%s作業あります。"
+
+#: class-admin.php:4129 grid/templates/progress.php:29
+msgid "SSL is activated on your site."
+msgstr "SSL はこのサイト上で有効化されています。"
+
+#: grid/templates/support.php:42
+msgid "Elementor"
+msgstr "Elementor"
 
 #: grid/templates/support.php:35
 msgid "Mixed Content"
@@ -248,17 +1661,6 @@ msgstr "一般的な問題"
 msgid "Save settings"
 msgstr "設定の保存"
 
-#: grid/templates/tips-tricks.php:10 grid/templates/tips-tricks.php:18
-#: grid/templates/tips-tricks.php:26 grid/templates/tips-tricks.php:34
-#: grid/templates/tips-tricks.php:42 grid/templates/tips-tricks.php:50
-#: grid/templates/tips-tricks.php:58
-msgid "Read more"
-msgstr "詳細"
-
-#: grid/templates/tips-tricks.php:47
-msgid "Information about landing page redirects"
-msgstr "最初のページへの転送に関する情報"
-
 #: grid/templates/support-footer.php:7
 msgid "SSL type:"
 msgstr "SSL 種別:"
@@ -267,177 +1669,13 @@ msgstr "SSL 種別:"
 msgid "Server type:"
 msgstr "サーバ種別:"
 
-#: class-admin.php:2965 class-admin.php:4659 class-multisite.php:230
-#: class-multisite.php:475
-msgid "Support"
-msgstr "サポート掲示板"
-
-#: class-multisite.php:130
-msgid "SSL is enabled per site."
-msgstr "サイトごとに SSL を有効化しています。"
-
-#: class-multisite.php:126
-msgid "SSL is enabled networkwide."
-msgstr "SSL はネットワーク上で有効化されています。"
-
-#: class-multisite.php:97
-msgid "SSL is activated network wide."
-msgstr "SSL はネットワーク上で有効化されています。"
-
-#: grid/templates/progress-footer.php:39
-msgid "301 Redirect"
-msgstr "301転送"
-
-#: grid/templates/progress-footer.php:19
-msgid "Go PRO!"
-msgstr "プロ版を入手 !"
-
-#: grid/templates/progress-footer.php:9
-msgid "SSL Not activated"
-msgstr "SSL は有効化されていません"
-
-#: grid/templates/progress-header.php:15
-msgid "Remaining tasks"
-msgstr "残りの作業"
-
-#: grid/templates/progress-header.php:7
-msgid "All tasks"
-msgstr "すべての作業"
-
-#: class-admin.php:897 class-site-health.php:125
-#: grid/templates/progress-footer.php:25
-#: lets-encrypt/wizard/config/steps.php:162
-msgid "Activate SSL"
-msgstr "SSL を有効化"
-
-#: class-multisite.php:95
-msgid "No choice has been made regarding networkwide or per site activation."
-msgstr "ネットワーク全体、またはサイトごとに有効化する以外に選択肢はありません。"
-
-#: class-admin.php:4131 grid/templates/progress.php:43
-msgid "SSL is not yet enabled on this site."
-msgstr "このサイトでまだ SSL が有効化されていません。"
-
-#: class-admin.php:4127 grid/templates/progress.php:37
-msgid "Basic SSL configuration finished! Improve your score with %sReally Simple SSL Pro%s."
-msgstr "基本的な SSL 設定は完了です ! %sReally Simple SSL プロ%sでさらに評価を改善できます。"
-
-#: grid/templates/progress.php:32
-msgid "SSL configuration finished!"
-msgstr "SSL の設定は完了です !"
-
-#: class-admin.php:4134 grid/templates/progress.php:29
-msgid "You still have %s task open."
-msgid_plural "You still have %s tasks open."
-msgstr[0] "まだ%s作業あります。"
-
-#: class-admin.php:3799 class-multisite.php:426
-msgid "Our plugins"
-msgstr "私たちのほかのプラグイン"
-
-#: class-admin.php:3806 class-multisite.php:418
-msgid "Support forum"
-msgstr "サポート用掲示板"
-
-#: class-admin.php:3776 class-multisite.php:402
-msgid "Your progress"
-msgstr "進行状態"
-
-#: class-multisite.php:1035
-msgid "Site conversion in progress. Please refresh this page to check if the process has finished. It will proceed in the background."
-msgstr "サイトを変換中。この処理が完了したかは、このページを更新しご確認ください。バックグラウンドで進行しています。"
-
-#: class-multisite.php:1040
-msgid "Conversion of websites completed."
-msgstr "サイトの変換は完了しました。"
-
-#: class-multisite.php:1042
-msgid "Really Simple SSL has converted all your websites to SSL."
-msgstr "Really Simple SSL はこのサイトのすべてを SSL に変換しました。"
-
-#: class-multisite.php:1045
-msgid "Really Simple SSL has converted all your websites to non SSL."
-msgstr "Really Simple SSL はこのサイトのすべてで SSL を使わないよう変換しました。"
-
-#: rlrsssl-really-simple-ssl.php:35
-msgid "Really Simple SSL cannot be activated. The plugin requires PHP 5.6 or higher"
-msgstr "Really Simple SSL を有効化できませんでした。本プラグインには PHP 5.6以上が必要です"
-
-#: rlrsssl-really-simple-ssl.php:41
-msgid "Really Simple SSL cannot be activated. The plugin requires WordPress 4.8 or higher"
-msgstr "Really Simple SSL を有効化できませんでした。本プラグインには WordPress 4.8以上が必要です"
-
-#: rlrsssl-really-simple-ssl.php:192
-msgid "Plugin dependency error"
-msgstr "プラグインの依存関係のエラー"
-
-#: rlrsssl-really-simple-ssl.php:194
-msgid "Please upgrade to the latest version to be able use the full functionality of the plugin."
-msgstr "本プラグインの完全な機能を利用するには、最新版にアップグレードしてください。"
-
-#: class-multisite.php:360
-msgid "Choose option"
-msgstr "選択してください"
-
-#: class-admin.php:2941
-msgid "General"
-msgstr "全般"
-
-#: class-admin.php:3120
-msgid "https://really-simple-ssl.com/really-simple-ssl-4-a-new-dashboard"
-msgstr "https://really-simple-ssl.com/really-simple-ssl-4-a-new-dashboard"
-
-#: class-multisite.php:571
-msgid "Setup"
-msgstr "設定"
-
-#: class-admin.php:3020
-msgid "No recommended redirect rules detected."
-msgstr "推奨する転送ルールが検出されません。"
-
-#: grid/templates/support.php:42
-msgid "Elementor"
-msgstr "Elementor"
-
-#: class-admin.php:3076
-msgid "SSL is now activated. Check if your website is secure by following this article."
-msgstr "SSLが有効になりました。この記事をお読みになり、このサイトが安全かご確認ください。"
-
-#: class-admin.php:3121
-msgid "Really Simple SSL 4.0. Learn more about our newest major release."
-msgstr "Really Simple SSL バージョン 4.0。最新版についてご確認ください。"
-
-#: class-admin.php:3138
-msgid "SSL is not enabled yet."
-msgstr "SSL はまだ有効化されていません。"
-
-#: class-admin.php:3201
-msgid "Really Simple SSL has received no response from the webpage."
-msgstr "このウェブページからの応答がありませんでした。"
-
-#: class-admin.php:3208
-msgid "The mixed content fixer is active, but was not detected on the frontpage."
-msgstr "混在コンテンツ修正機能は有効化されていますが、フロントページからは検出されませんでした。"
-
-#: class-admin.php:3219
-msgid "Mixed content fixer not enabled. Enable the option to fix mixed content on your site."
-msgstr "混合コンテンツ修正機能が有効になっていません。このサイトの混合コンテンツを修正するオプションを有効にします。"
-
-#: class-admin.php:4129 grid/templates/progress.php:29
-msgid "SSL is activated on your site."
-msgstr "SSL はこのサイト上で有効化されています。"
-
 #: grid/templates/support-footer.php:3
 msgid "Download system status"
 msgstr "システムの状態情報をダウンロード"
 
-#: class-admin.php:591 lets-encrypt/wizard/templates/activate.php:45
-msgid "Before you migrate, please check for: "
-msgstr "移行前に以下をご確認ください:"
-
-#: rlrsssl-really-simple-ssl.php:193
-msgid "You have a premium add-on with a version that is not compatible with the >4.0 release of Really Simple SSL."
-msgstr "お使いの Really Simple SSL のプレミアム拡張機能は、>4.0リリースに未対応のバージョンです。"
+#: grid/templates/tips-tricks.php:47
+msgid "Information about landing page redirects"
+msgstr "最初のページへの転送に関する情報"
 
 #: grid/templates/tips-tricks.php:23
 msgid "Improve security: Add security headers"
@@ -446,6 +1684,21 @@ msgstr "安全性改善: セキュリティ用のヘッダーを追加"
 #: grid/templates/tips-tricks.php:15
 msgid "Improve security: Enable HTTP Strict Transport Security (HSTS)"
 msgstr "安全性改善: HTTP Strict Transport Security (HSTS) 有効化"
+
+#: grid/templates/tips-tricks.php:10 grid/templates/tips-tricks.php:18
+#: grid/templates/tips-tricks.php:26 grid/templates/tips-tricks.php:34
+#: grid/templates/tips-tricks.php:42 grid/templates/tips-tricks.php:50
+#: grid/templates/tips-tricks.php:58
+msgid "Read more"
+msgstr "詳細"
+
+#: grid/templates/progress-header.php:15
+msgid "Remaining tasks"
+msgstr "残りの作業"
+
+#: grid/templates/progress-header.php:7
+msgid "All tasks"
+msgstr "すべての作業"
 
 #. Author of the plugin
 msgid "Really Simple Plugins"
@@ -459,10 +1712,6 @@ msgstr "Really Simple SSL プロ"
 msgid "Hi, Really Simple SSL has kept your site secure for some time now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
 msgstr "こんにちは Really Simple SSL は、このサイトの安全性を維持しています! お時間があれば、評判を広めるために WordPress.org に評価を残すことをご検討ください。私たちは強く感謝します。質問や意見があれば、私たちへの%sメッセージ%sをお待ちしております。"
 
-#: class-admin.php:594
-msgid "Images, stylesheets or scripts from a domain without an SSL certificate: remove them or move to your own server"
-msgstr "SSL 証明書のないドメインからの画像やスタイルシート、スクリプト: 削除するか、自身のサーバーに移動してください"
-
 #: class-admin.php:613 lets-encrypt/wizard/templates/activate.php:30
 #: lets-encrypt/wizard/templates/activate.php:70
 msgid "Check out Really Simple SSL Pro"
@@ -471,6 +1720,10 @@ msgstr "Really Simple SSL プロを検討"
 #: class-admin.php:900 lets-encrypt/wizard/class-wizard.php:896
 msgid "Get ready with PRO!"
 msgstr "プロ版で備える"
+
+#: class-admin.php:594
+msgid "Images, stylesheets or scripts from a domain without an SSL certificate: remove them or move to your own server"
+msgstr "SSL 証明書のないドメインからの画像やスタイルシート、スクリプト: 削除するか、自身のサーバーに移動してください"
 
 #: class-admin.php:2699
 msgid "Don't show again"
@@ -484,9 +1737,9 @@ msgstr "cURL エラーが原因で混在コンテンツ修正機能が検出で�
 msgid "Error occurred when retrieving the webpage."
 msgstr "ページの取得中にエラーが発生しました。"
 
-#: class-admin.php:4192 class-multisite.php:343
-msgid "Dismiss all Really Simple SSL notices"
-msgstr "Really Simple SSL の通知をすべて非表示"
+#: class-site-health.php:153
+msgid "The 301 .htaccess redirect is the fastest and most reliable redirect option."
+msgstr "301 .htaccess 転送は、最速で最も信頼性の高い転送の選択肢です。"
 
 #: class-site-health.php:150
 msgid "301 .htaccess redirect is not enabled."
@@ -500,9 +1753,9 @@ msgstr "SSL へと301転送するよう設定しました。これは SEO 対策
 msgid "301 SSL redirect enabled"
 msgstr "301 SSL 転送は有効です"
 
-#: class-site-health.php:153
-msgid "The 301 .htaccess redirect is the fastest and most reliable redirect option."
-msgstr "301 .htaccess 転送は、最速で最も信頼性の高い転送の選択肢です。"
+#: class-admin.php:4192 class-multisite.php:343
+msgid "Dismiss all Really Simple SSL notices"
+msgstr "Really Simple SSL の通知をすべて非表示"
 
 #: class-admin.php:3254
 msgid "301 redirect to https set: .htaccess redirect."
@@ -516,10 +1769,6 @@ msgstr "数分経過後に変換が進まなければ、%s強制的に変換を�
 msgid "The 'force-deactivate.php' file has to be renamed to .txt. Otherwise your ssl can be deactivated by anyone on the internet."
 msgstr "ファイル force-deactivate.php の名前を .txt に変更する必要があります。そうしなければ、インターネット上の誰でもが SSL を無効化できてしまいます。"
 
-#: class-admin.php:2698
-msgid "Maybe later"
-msgstr "後ほど"
-
 #: multisite-cron.php:11
 msgid "Once every minute"
 msgstr "毎分"
@@ -527,6 +1776,10 @@ msgstr "毎分"
 #: class-multisite.php:1034
 msgid "Conversion of websites %s percent complete."
 msgstr "サイト変換が%s%完了しました。"
+
+#: class-admin.php:2698
+msgid "Maybe later"
+msgstr "後ほど"
 
 #: class-admin.php:2697
 msgid "Leave a review"
@@ -540,13 +1793,33 @@ msgstr "こんにちは Really Simple SSL は、1か月間このサイトを安�
 msgid "Activate SSL per site or install a wildcard certificate to fix this."
 msgstr "サイトごとに SSL を有効にするか、ワイルドカード証明書をインストールしこれを修正します。"
 
+#: class-multisite.php:159
+msgid "This leads to issues when activating SSL networkwide since subdomains will be forced over SSL as well while they don't have a valid certificate."
+msgstr "有効な証明書がなければ、サブドメインでも強制的に SSL を通すことになるため、ネットワーク全体で SSL を有効化する際の問題につながります。"
+
 #: class-multisite.php:158
 msgid "You run a Multisite installation with subdomains, but your site doesn't have a wildcard certificate."
 msgstr "サブドメインのあるマルチサイトのインストールを実行していますが、このサイトにはワイルドカード証明書がありません。"
 
-#: class-multisite.php:159
-msgid "This leads to issues when activating SSL networkwide since subdomains will be forced over SSL as well while they don't have a valid certificate."
-msgstr "有効な証明書がなければ、サブドメインでも強制的に SSL を通すことになるため、ネットワーク全体で SSL を有効化する際の問題につながります。"
+#: class-admin.php:4605 upgrade/upgrade-to-pro.php:360
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: class-admin.php:4595
+msgid "The .htaccess redirect will remain active"
+msgstr "* .htaccess 転送は有効なままです"
+
+#: class-admin.php:4594
+msgid "Your site address will remain https://"
+msgstr "* サイトのアドレスは https:// のままです"
+
+#: class-admin.php:4592
+msgid "The mixed content fixer will stop working"
+msgstr "* 混在コンテンツ修正機能は動作を停止"
+
+#: class-admin.php:4590
+msgid "Deactivating the plugin while keeping SSL will do the following:"
+msgstr "SSL を維持したままプラグインを停止するとこうなります。"
 
 #: class-admin.php:4572
 msgid "Are you sure?"
@@ -556,29 +1829,9 @@ msgstr "本当によろしいですか ?"
 msgid "More info"
 msgstr "詳細"
 
-#: class-admin.php:4605 upgrade/upgrade-to-pro.php:360
-msgid "Cancel"
-msgstr "キャンセル"
-
 #: class-admin.php:120
 msgid "Really Simple SSL and Really Simple SSL add-ons do not process any personal identifiable information, so the GDPR does not apply to these plugins or usage of these plugins on your website. You can find our privacy policy <a href=\"%s\" target=\"_blank\">here</a>."
 msgstr "Really Simple SSL とその拡張機能は、個人を特定する情報を扱いません。そのため GDPR (EU一般データ保護規則) はこれらのプラグインの使用には適用されません。<a href=\"%s\" target=\"_blank\">個人情報保護方針</a>は、こちらでご覧になれます。"
-
-#: class-admin.php:4590
-msgid "Deactivating the plugin while keeping SSL will do the following:"
-msgstr "SSL を維持したままプラグインを停止するとこうなります。"
-
-#: class-admin.php:4592
-msgid "The mixed content fixer will stop working"
-msgstr "* 混在コンテンツ修正機能は動作を停止"
-
-#: class-admin.php:4594
-msgid "Your site address will remain https://"
-msgstr "* サイトのアドレスは https:// のままです"
-
-#: class-admin.php:4595
-msgid "The .htaccess redirect will remain active"
-msgstr "* .htaccess 転送は有効なままです"
 
 #: lets-encrypt/wizard/templates/activate.php:55
 msgid "We strongly recommend to create a %sbackup%s of your site before activating SSL"
@@ -595,15 +1848,19 @@ msgstr "このオプションを有効にすると、混合コンテンツ修正
 #: class-admin.php:612 lets-encrypt/wizard/templates/activate.php:26
 #: lets-encrypt/wizard/templates/activate.php:66
 msgid "You can also let the automatic scan of the pro version handle this for you, and get premium support, increased security with HSTS and more!"
-msgstr "また、有料版の自動スキャンにこれを処理させ、プレミアムサポートと HSTS を含むセキュリティ強化を入手することもできます。"
+msgstr "また、プロ版の自動スキャンにこれを処理させ、プレミアムサポートと HSTS などによりセキュリティを強化できます。"
 
-#: class-multisite.php:340
-msgid "Enable SSL"
-msgstr "SSL の有効化"
+#: class-multisite.php:99
+msgid "SSL is activated per site."
+msgstr "サイトごとに SSL を有効化しています。"
 
 #: class-multisite.php:457
 msgid "Options saved."
 msgstr "設定を保存しました。"
+
+#: class-multisite.php:339
+msgid "Select to enable SSL networkwide or per site."
+msgstr "SSL の有効化をサイトネットワーク全体で行うか、サイトごとに行うか選択してください。"
 
 #: class-multisite.php:363
 msgid "per site"
@@ -613,18 +1870,14 @@ msgstr "サイトごと"
 msgid "networkwide"
 msgstr "ネットワーク全体"
 
-#: class-multisite.php:339
-msgid "Select to enable SSL networkwide or per site."
-msgstr "SSL の有効化をサイトネットワーク全体で行うか、サイトごとに行うか選択してください。"
+#: class-multisite.php:340
+msgid "Enable SSL"
+msgstr "SSL の有効化"
 
 #: class-admin.php:4308 class-admin.php:4338 class-admin.php:4415
 #: class-admin.php:4628
 msgid "This option is enabled on the network menu."
 msgstr "この設定はネットワークメニューから有効化されています。"
-
-#: class-multisite.php:99
-msgid "SSL is activated per site."
-msgstr "サイトごとに SSL を有効化しています。"
 
 #: class-admin.php:595 lets-encrypt/wizard/templates/activate.php:56
 msgid "You may need to login in again."
@@ -650,13 +1903,13 @@ msgstr "301転送が設定されていません。301による恒久的転送を
 msgid "Enable a .htaccess redirect or WordPress redirect in the settings to create a 301 redirect."
 msgstr "301転送を作成するには、設定から .htaccess による転送か、WordPress による転送を有効にします。"
 
-#: class-admin.php:4181
-msgid "If you want to customize the Really Simple SSL .htaccess, you need to prevent Really Simple SSL from rewriting it. Enabling this option will do that."
-msgstr "Really Simple SSL の .htaccess をカスタマイズするには、Really Simple SSL 上書きしないようにする必要があります。この設定を有効化してください。"
-
 #: class-admin.php:4164
 msgid "In most cases you need to leave this enabled, to prevent mixed content issues on your site."
 msgstr "多くの場合、サイト内の混在コンテンツの問題が発生することを防ぐために、有効のままにしておく必要があります。"
+
+#: class-admin.php:4181
+msgid "If you want to customize the Really Simple SSL .htaccess, you need to prevent Really Simple SSL from rewriting it. Enabling this option will do that."
+msgstr "Really Simple SSL の .htaccess をカスタマイズするには、Really Simple SSL 上書きしないようにする必要があります。この設定を有効化してください。"
 
 #: class-admin.php:3238
 msgid "301 redirect to https set."
@@ -670,13 +1923,13 @@ msgstr "また、プロ版の自動スキャンにこれを処理させ、プレ
 msgid "Premium Support"
 msgstr "プレミアムサポート"
 
-#: lets-encrypt/wizard/class-wizard.php:887
-msgid "Go ahead, activate SSL!"
-msgstr "はい、SSL を有効化します。"
-
 #: class-multisite.php:579 class-multisite.php:607
 msgid "Check out Really Simple SSL Premium"
 msgstr "Really Simple SSL プレミアムを検討する"
+
+#: lets-encrypt/wizard/class-wizard.php:887
+msgid "Go ahead, activate SSL!"
+msgstr "はい、SSL を有効化します。"
 
 #: lets-encrypt/functions.php:379 lets-encrypt/functions.php:380
 msgid "Instructions"
@@ -694,48 +1947,33 @@ msgstr "SSL はこのサイト上で有効化されています。"
 msgid "SSL Activated"
 msgstr "SSL 有効化済み"
 
-#: class-multisite.php:584
-msgid "Activate SSL networkwide"
-msgstr "ネットワーク全体で SSL を有効化"
+#: class-admin.php:2568
+msgid "Because your server does not pass a variable with which WordPress can detect SSL, WordPress may create redirect loops on SSL."
+msgstr "WordPress が SSL 上で転送ループを起こす可能性があります。WordPress が SSL を検出するための変数を、このサーバーが出力していないことが原因です。"
 
-#: class-admin.php:582 lets-encrypt/wizard/templates/last-step.php:13
-msgid "Almost ready to migrate to SSL!"
-msgstr "SSL に移行する準備がほぼ完了しました。"
-
-#: class-multisite.php:587
-msgid "Activate SSL per site"
-msgstr "サイトごとに SSL を有効化"
-
-#: class-admin.php:2545
-msgid "Your wp-config.php has to be edited, but is not writable."
-msgstr "wp-config.php を編集する必要がありますが、書き込み可能ではありません。"
+#: class-admin.php:2562
+msgid "Or set your wp-config.php to %swritable%s and reload this page."
+msgstr "または wp-config.php を%s書き込み可能%sに設定し、このページを再読み込みしてください。"
 
 #: class-admin.php:2546
 msgid "Because your site is behind a loadbalancer and is_ssl() returns false, you should add the following line of code to your wp-config.php."
 msgstr "サイトがロードバランサーの後ろにあり、is_ssl() が false を返しているため、以下のコードを wp-config.php に追加する必要があります。"
 
-#: class-admin.php:51 class-cache.php:11 class-certificate.php:14
-#: class-front-end.php:18 class-help.php:9 class-mixed-content-fixer.php:13
-#: class-multisite.php:28 class-site-health.php:12
-#: lets-encrypt/class-letsencrypt-handler.php:30
-msgid "%s is a singleton class and you cannot create a second instance."
-msgstr "%s は singleton クラスであり、2つ目のインスタンスを作成することはできません。"
+#: class-admin.php:2545
+msgid "Your wp-config.php has to be edited, but is not writable."
+msgstr "wp-config.php を編集する必要がありますが、書き込み可能ではありません。"
 
-#: class-admin.php:2575
-msgid "System detection encountered issues"
-msgstr "システム検出の際に問題が発生しました"
+#: class-admin.php:2542 class-admin.php:2569
+msgid "Set your wp-config.php to %swritable%s and reload this page."
+msgstr "wp-config.php を%s書き込み可能%sに設定し、このページを再読み込みしてください。"
 
 #: class-admin.php:2540
 msgid "A definition of a siteurl or homeurl was detected in your wp-config.php, but the file is not writable."
 msgstr "siteurl または homeurl が wp-config.php で定義されていることが検出されましたが、ファイルが書き込み可能ではありません。"
 
-#: class-multisite.php:572
-msgid "Some things can't be done automatically. Before you migrate, please check for: "
-msgstr "一部の項目は自動実行できません。移行前に以下をご確認ください。"
-
-#: class-multisite.php:590
-msgid "Networkwide activation does not check if a site has an SSL certificate. It just migrates all sites to SSL."
-msgstr "ネットワーク全体での有効化を行っても、各サイトが SSL 証明書を持っているかはチェックされません。すべてのサイトを SSL へ移行するだけです。"
+#: class-admin.php:2575
+msgid "System detection encountered issues"
+msgstr "システム検出の際に問題が発生しました"
 
 #: class-multisite.php:575 lets-encrypt/wizard/templates/activate.php:20
 #: lets-encrypt/wizard/templates/activate.php:49
@@ -748,17 +1986,32 @@ msgstr "SSL 証明書のないドメインからの画像やスタイルシー�
 msgid "Http references in your .css and .js files: change any http:// into https://"
 msgstr ".css と .js ファイル内の HTTP 参照: すべての http:// を https:// に変更してください"
 
-#: class-admin.php:2568
-msgid "Because your server does not pass a variable with which WordPress can detect SSL, WordPress may create redirect loops on SSL."
-msgstr "WordPress が SSL 上で転送ループを起こす可能性があります。WordPress が SSL を検出するための変数を、このサーバーが出力していないことが原因です。"
+#: class-multisite.php:572
+msgid "Some things can't be done automatically. Before you migrate, please check for: "
+msgstr "一部の項目は自動実行できません。移行前に以下をご確認ください。"
 
-#: class-admin.php:2542 class-admin.php:2569
-msgid "Set your wp-config.php to %swritable%s and reload this page."
-msgstr "wp-config.php を%s書き込み可能%sに設定し、このページを再読み込みしてください。"
+#: class-admin.php:582 lets-encrypt/wizard/templates/last-step.php:13
+msgid "Almost ready to migrate to SSL!"
+msgstr "SSL に移行する準備がほぼ完了しました。"
 
-#: class-admin.php:2562
-msgid "Or set your wp-config.php to %swritable%s and reload this page."
-msgstr "または wp-config.php を%s書き込み可能%sに設定し、このページを再読み込みしてください。"
+#: class-multisite.php:590
+msgid "Networkwide activation does not check if a site has an SSL certificate. It just migrates all sites to SSL."
+msgstr "ネットワーク全体での有効化を行っても、各サイトが SSL 証明書を持っているかはチェックされません。すべてのサイトを SSL へ移行するだけです。"
+
+#: class-multisite.php:587
+msgid "Activate SSL per site"
+msgstr "サイトごとに SSL を有効化"
+
+#: class-multisite.php:584
+msgid "Activate SSL networkwide"
+msgstr "ネットワーク全体で SSL を有効化"
+
+#: class-admin.php:51 class-cache.php:11 class-certificate.php:14
+#: class-front-end.php:18 class-help.php:9 class-mixed-content-fixer.php:13
+#: class-multisite.php:28 class-site-health.php:12
+#: lets-encrypt/class-letsencrypt-handler.php:30
+msgid "%s is a singleton class and you cannot create a second instance."
+msgstr "%s は singleton クラスであり、2つ目のインスタンスを作成することはできません。"
 
 #: class-admin.php:4373
 msgid ".htaccess is currently not %swritable%s."
@@ -773,10 +2026,6 @@ msgstr "フロントエンドの混在コンテンツ修正機能が正常に検
 msgid "Documentation"
 msgstr "文書"
 
-#. Plugin Name of the plugin
-msgid "Really Simple SSL"
-msgstr "Really Simple SSL"
-
 #. Description of the plugin
 msgid "Lightweight plugin without any setup to make your site SSL proof"
 msgstr "設定なしでサイトを SSL 対応にする軽量プラグイン"
@@ -785,9 +2034,18 @@ msgstr "設定なしでサイトを SSL 対応にする軽量プラグイン"
 msgid "https://really-simple-ssl.com"
 msgstr "https://really-simple-ssl.com"
 
+#. Plugin Name of the plugin
+msgid "Really Simple SSL"
+msgstr "Really Simple SSL"
+
 #: class-admin.php:4182
 msgid "Stop editing the .htaccess file"
 msgstr ".htaccess ファイルの編集を中止"
+
+#: grid/templates/settings-footer.php:3
+#: lets-encrypt/wizard/class-field.php:1305
+msgid "Save"
+msgstr "保存"
 
 #: class-admin.php:3174
 msgid "An SSL certificate was detected on your site."
@@ -797,20 +2055,15 @@ msgstr "このサイト上に SSL 証明書を検出しました。"
 msgid "No SSL detected."
 msgstr "SSL の検出なし"
 
-#: grid/templates/settings-footer.php:3
-#: lets-encrypt/wizard/class-field.php:1305
-msgid "Save"
-msgstr "保存"
-
-#: class-admin.php:4165
-msgid "Mixed content fixer"
-msgstr "混合コンテンツ修正"
-
 #: class-admin.php:2904 class-admin.php:3784 class-admin.php:4162
 #: class-admin.php:4655 class-multisite.php:226 class-multisite.php:338
 #: class-multisite.php:410
 msgid "Settings"
 msgstr "設定"
+
+#: class-admin.php:4165
+msgid "Mixed content fixer"
+msgstr "混合コンテンツ修正"
 
 #: class-admin.php:2882
 msgid "SSL"
@@ -820,22 +2073,22 @@ msgstr "SSL"
 msgid "SSL settings"
 msgstr "SSL 設定"
 
-#: class-admin.php:3045
-msgid "Major security issue!"
-msgstr "重大なセキュリティ問題。"
-
 #: class-multisite.php:147
 msgid "Activate networkwide to fix this."
 msgstr "これを修正するにはネットワーク全体で有効化してください。"
-
-#: class-multisite.php:145
-msgid "You run a Multisite installation with subfolders, which prevents this plugin from fixing your missing server variable in the wp-config.php."
-msgstr "マルチサイトをサブフォルダーで運用しています。このため、プラグインは wp-config.php 内に不足しているサーバー変数を修正できません。"
 
 #: class-multisite.php:146
 msgid "Because the $_SERVER[\"HTTPS\"] variable is not set, your website may experience redirect loops."
 msgstr "$_SERVER[\"HTTPS\"] 変数が設定されていないため、サイトに転送ループが発生する可能性があります。"
 
+#: class-multisite.php:145
+msgid "You run a Multisite installation with subfolders, which prevents this plugin from fixing your missing server variable in the wp-config.php."
+msgstr "マルチサイトをサブフォルダーで運用しています。このため、プラグインは wp-config.php 内に不足しているサーバー変数を修正できません。"
+
 #: class-admin.php:3047
 msgid "Check again"
 msgstr "再び確認"
+
+#: class-admin.php:3045
+msgid "Major security issue!"
+msgstr "重大なセキュリティ問題。"
