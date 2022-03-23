@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-03-22 01:05:47+0000\n"
+"PO-Revision-Date: 2022-03-22 12:46:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -331,6 +331,10 @@ msgstr "お使いのサーバーにはシェル機能があるため、 SSL を�
 msgid "If you entered your DNS records before, they need to be changed."
 msgstr "以前に DNS レコードを入力している場合、変更する必要があります。"
 
+#: lets-encrypt/class-letsencrypt-handler.php:447
+msgid "Order ID mismatch, regenerate order."
+msgstr "発注 ID が一致しません。発注を再生成します。"
+
 #: class-admin.php:4667 class-multisite.php:238
 msgid "Improve security - Upgrade to Pro"
 msgstr "セキュリティ向上 - Pro にアップグレード"
@@ -362,6 +366,10 @@ msgstr "お使いのサイトを簡単に SSL に移行します。"
 #: lets-encrypt/wizard/templates/installation.php:42
 msgid "The CA Bundle will sometimes be automatically detected. If not, you can use this file."
 msgstr "CA バンドルは自動検出されることがあります。されていない場合、このファイルを使用できます。"
+
+#: lets-encrypt/wizard/templates/installation.php:41
+msgid "Certificate Authority Bundle (CABUNDLE)"
+msgstr "証明書承認バンドル (CABUNDLE)"
 
 #: lets-encrypt/wizard/templates/installation.php:35
 msgid "The private key can be uploaded or pasted in the appropriate field on your hosting dashboard."
@@ -414,6 +422,10 @@ msgstr "DNS レコードを手動で確認するには、%sオンラインツー
 #: lets-encrypt/wizard/templates/generation.php:11
 msgid "We could not check the DNS records. If you just added the record, please check in a few minutes."
 msgstr "DNS レコードが確認できませんでした。レコードの追加直後であれば、数分後に確認してください。"
+
+#: lets-encrypt/wizard/templates/dns-verification.php:8
+msgid "Add the following token as text record to your DNS records. We recommend to use a short TTL during installation, in case you need to change it."
+msgstr "DNS レコードに、テキストレコードとして以下のトークンを追加します。インストール中に変更する場合に備えて、短い TTL を使うことを推奨します。"
 
 #: lets-encrypt/wizard/templates/directories.php:76
 msgid "Inside the folder called “ssl” create a new folder called “certs”, with 644 writing permissions."
@@ -541,6 +553,10 @@ msgstr "フォルダー認証に戻すにはこちら。"
 msgid "You have switched to DNS verification."
 msgstr "DNS 認証に切り替えました。"
 
+#: lets-encrypt/wizard/notices.php:116
+msgid "Your Key and Certificate directories are not properly protected."
+msgstr "キーと証明書用のフォルダが適切に保護されていません。"
+
 #: lets-encrypt/wizard/notices.php:81
 msgid "Your certificate will be renewed and installed automatically."
 msgstr "証明書は自動で更新されインストールされます。"
@@ -564,6 +580,14 @@ msgstr "お使いの証明書の有効期限は %s です。%sこちら%sから�
 #: lets-encrypt/wizard/notices.php:41
 msgid "Your certificate is valid to: %s"
 msgstr "証明書の有効期限: %s"
+
+#: lets-encrypt/wizard/notices.php:8
+msgid "The www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "このサイトの www 版は、このサイトを指していません。これは推奨されます。証明書にも追加できるようになるためです。"
+
+#: lets-encrypt/wizard/notices.php:6
+msgid "The non-www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "このサイトの非 www 版は、このサイトを指していません。これは推奨されます。証明書にも追加できるようになるためです。"
 
 #: lets-encrypt/wizard/config/steps.php:153
 msgid "Searching for link to SSL installation page on your server..."
@@ -763,9 +787,17 @@ msgstr "ホスティング会社を選択することで、すでに無料の SS
 msgid "By selecting your hosting provider we can tell you if your hosting provider already supports free SSL, and how you can activate it."
 msgstr "ホスティング会社を選択することで、すでに無料の SSL に対応するか、またどうやって有効化するか知ることができます。"
 
+#: lets-encrypt/wizard/config/questions.php:87
+msgid "Include alias domain too?"
+msgstr "ドメインのエイリアスも含める ?"
+
+#: lets-encrypt/wizard/config/questions.php:85
+msgid "You should have the www domain pointed to the same website as the non-www domain."
+msgstr "www のドメインは、非 www のドメインと同じサイトを指すようにする必要があります。"
+
 #: lets-encrypt/wizard/config/questions.php:85
 msgid "This will include both the www. and non-www. version of your domain."
-msgstr "これはお使いのドメインの www. および 非-www. 版の両方を含みます。"
+msgstr "これはお使いのドメインの www. および 非 www. 版の両方を含みます。"
 
 #: lets-encrypt/wizard/config/questions.php:73
 #: lets-encrypt/wizard/config/steps.php:51
@@ -827,6 +859,14 @@ msgstr "この利用者が編集を中止したら、%s 分後にロックを解
 msgid "The wizard is currently being edited by %s"
 msgstr "このウィザードは現在 %s が編集中です"
 
+#: lets-encrypt/wizard/class-wizard.php:180
+msgid "Attempt %s."
+msgstr "試行%s回目。"
+
+#: lets-encrypt/wizard/class-wizard.php:86
+msgid "Checking for subdomain setup..."
+msgstr "サブドメイン設定を確認中..."
+
 #: lets-encrypt/wizard/class-wizard.php:63
 #: lets-encrypt/wizard/config/steps.php:141
 msgid "Generating SSL certificate..."
@@ -857,6 +897,10 @@ msgstr "PLESK API を介して SSL 証明書をインストール中..."
 msgid "Attempting to install certificate..."
 msgstr "証明書のインストールを試行中..."
 
+#: lets-encrypt/integrations/cpanel/functions.php:95
+msgid "Attempting to set DNS txt record..."
+msgstr "DNS txt レコードの設定を施行中..."
+
 #: lets-encrypt/integrations/cpanel/functions.php:86
 msgid "Attempting to install certificate using AutoSSL..."
 msgstr "AutoSSL を介して SSL 証明書のインストールを試行中..."
@@ -864,6 +908,16 @@ msgstr "AutoSSL を介して SSL 証明書のインストールを試行中..."
 #: lets-encrypt/integrations/cpanel/functions.php:61
 msgid "The system is not ready for the DNS verification yet. Please run the wizard again."
 msgstr "システムは、まだ DNS 認証の準備ができていません。ウィザードを再度実行してください。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:258
+#: lets-encrypt/integrations/cpanel/cpanel.php:278
+msgid "Could not automatically add TXT record. Please proceed manually, following the steps below."
+msgstr "TXT レコードを自動で追加できませんでした。以下の手順で、手動で続行してください。"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:254
+#: lets-encrypt/integrations/cpanel/cpanel.php:273
+msgid "Successfully added TXT record."
+msgstr "TXT レコードを正常に追加しました。"
 
 #: lets-encrypt/integrations/cpanel/cpanel.php:246
 msgid "Login credentials incorrect"
@@ -1041,6 +1095,26 @@ msgstr "そうでない場合、このエイリアスを証明書に追加しな
 msgid "Could not verify alias domain."
 msgstr "ドメインのエイリアスを検証できませんでした。"
 
+#: lets-encrypt/class-letsencrypt-handler.php:1513
+msgid "Please check if the www version of your site also points to this website."
+msgstr "このサイトの www 版も、このサイトを指しているか確認してください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1511
+msgid "Please check if the non www version of your site also points to this website."
+msgstr "このサイトの非 www 版も、このサイトを指しているか確認してください。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1492
+msgid "Alias domain check is not relevant for a subdomain"
+msgstr "ドメインのエイリアスの確認は、サブドメインとは関係ありません"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1462
+msgid "No subdomain setup detected."
+msgstr "サブドメイン設定の検出なし。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1457
+msgid "This is a multisite configuration with subdomains, which requires a wildcard certificate. Wildcard certificates are part of the %spremium%s plan."
+msgstr "これはサブドメインでのマルチサイト構成で、ワイルドカード証明書が必要です。ワイルドカード証明書は、%sプレミアムプラン%sに含まれる機能です。"
+
 #: lets-encrypt/class-letsencrypt-handler.php:1259
 #: lets-encrypt/class-letsencrypt-handler.php:1522
 #: lets-encrypt/class-letsencrypt-handler.php:1573
@@ -1109,6 +1183,14 @@ msgstr "以下のフォルダーには、必要な書き込み権限がありま
 msgid "Please complete the following step(s) first: %s"
 msgstr "まず以下の手順を完了してください: %s"
 
+#: lets-encrypt/class-letsencrypt-handler.php:785
+msgid "Order successfully retrieved."
+msgstr "発注は正常に取得されました。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:768
+msgid "Order successfully created."
+msgstr "発注は正常に作成されました。"
+
 #: lets-encrypt/class-letsencrypt-handler.php:724
 msgid "Bundle not available yet..."
 msgstr "バンドルはまだ利用できません..."
@@ -1125,9 +1207,18 @@ msgstr "証明書は正常に精製されました。"
 msgid "OCSP not supported, the certificate will be generated without OCSP."
 msgstr "OCSP に未対応です。証明書は OCSP なしで生成されます。"
 
+#: lets-encrypt/class-letsencrypt-handler.php:664
+msgid "As your order will be regenerated, you'll need to update your DNS text records."
+msgstr "発注が再生成されたため、DNS text レコードを更新する必要があります。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:443
+#: lets-encrypt/class-letsencrypt-handler.php:661
+msgid "The order is invalid, possibly due to too many failed authorization attempts. Please start at the previous step."
+msgstr "この発注は正しくありません、おそらく承認の試行に何度も失敗しているためです。前の段階からお試しください。"
+
 #: lets-encrypt/class-letsencrypt-handler.php:644
 msgid "Authorization not completed yet."
-msgstr "権限付与はまだ完了していません。"
+msgstr "承認はまだ完了していません。"
 
 #: lets-encrypt/class-letsencrypt-handler.php:619
 msgid "Certificate already generated. It was renewed if required."
@@ -1137,9 +1228,21 @@ msgstr "証明書は既に生成されています。必要な場合、更新も
 msgid "DNS records were not verified yet. Please complete the previous step."
 msgstr "DNS レコードはまだ検証されていません。次の手順を完了してください。"
 
+#: lets-encrypt/class-letsencrypt-handler.php:574
+msgid "Please double check your DNS txt record."
+msgstr "念のため DNS txt レコードを確認してください。"
+
 #: lets-encrypt/class-letsencrypt-handler.php:572
 msgid "The certificate generation was rate limited for 10 minutes because the authorization failed."
-msgstr "権限付与に失敗。証明書の生成が10分間の生成限度に達しています。"
+msgstr "承認に失敗。証明書の生成が10分間の生成限度に達しています。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:531
+msgid "Could not verify TXT record for domain %s"
+msgstr "ドメイン %s 用の TXT レコードを検証できませんでした"
+
+#: lets-encrypt/class-letsencrypt-handler.php:522
+msgid "The DNS response for %s was %s, while it should be %s."
+msgstr "%s への DNS レスポンスは %s でしたが %s である必要がります。"
 
 #: lets-encrypt/class-letsencrypt-handler.php:515
 msgid "Successfully verified DNS records"
