@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-04-14 02:40:14+0000\n"
+"PO-Revision-Date: 2022-06-20 06:46:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/3.0.0\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
 
@@ -544,6 +544,10 @@ msgstr "お使いのサイトは、有効な SSL 証明書で保護されてい�
 #: lets-encrypt/wizard/templates/directories.php:42
 msgid "Switch to DNS verification"
 msgstr "DNS 認証へ切り替え"
+
+#: lets-encrypt/wizard/notices.php:153
+msgid "If you also want to secure subdomains like mail.domain.com, cpanel.domain.com, you have to use the %sDNS%s challenge."
+msgstr "mail.domain.com、cpanel.domain.com などのサブドメインも安全にするには、%sDNS%s challenge の使用が必要です。"
 
 #: lets-encrypt/wizard/notices.php:150
 msgid "Switch to directory verification"
