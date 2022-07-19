@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-07-01 13:15:11+0000\n"
+"PO-Revision-Date: 2022-07-15 13:20:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -284,6 +284,10 @@ msgstr "1月"
 #, gp-priority: high
 msgid "Uncategorized"
 msgstr "未分類"
+
+#: wp-includes/theme.php:3824
+msgid "Whether a theme uses block-based templates."
+msgstr "テーマがブロックベーステンプレートを使用するかどうか。"
 
 #: wp-includes/option.php:2250
 msgid "The ID of the page that should display the latest posts"
@@ -3067,6 +3071,10 @@ msgstr "パターンプレビュー時の viewport の適切な幅。ピクセ�
 #: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:285
 msgid "A description of the pattern."
 msgstr "パターンの説明。"
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:277
+msgid "The pattern's keywords."
+msgstr "パターンのキーワード。"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:269
 msgid "The pattern's category slugs."
