@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-08 08:43:11+0000\n"
+"PO-Revision-Date: 2022-08-17 02:19:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: class-multisite.php:604
 msgid "Per site activation is not available above 50 sites"
-msgstr "50サイト以上では、サイト単位の有効化はできません"
+msgstr "50サイト以上ある場合、サイト単位での有効化はできません"
 
 #: grid/templates/other-plugins.php:40
 msgid "Self-hosted, Privacy-friendly analytics tool"
@@ -21,7 +21,7 @@ msgstr "セルフホスティング型で個人情報に配慮した解析ツー
 
 #: upgrade/upgrade-to-pro.php:549
 msgid "Your license key has reached its activation limit."
-msgstr "このライセンスキーは有効化の限度に達しました。"
+msgstr "ライセンスキーの有効化上限に達しています。"
 
 #: upgrade/upgrade-to-pro.php:546
 msgid "This appears to be an invalid license key for this plugin."
@@ -169,7 +169,7 @@ msgstr "プラグインフォルダが存在するか確認中..."
 
 #: class-admin.php:3378
 msgid "Improve security with Really Simple SSL Pro."
-msgstr "Really Simple SSL Pro でセキュリティを向上。"
+msgstr "Really Simple SSL Pro でセキュリティを改善しましょう。"
 
 #: class-admin.php:3171
 msgid "Check manually"
@@ -245,7 +245,7 @@ msgstr "推奨するセキュリティヘッダーは有効です。"
 
 #: class-admin.php:3360
 msgid "The following recommended security headers are not detected:"
-msgstr "以下の推奨するセキュリティヘッダーが検出されていません:"
+msgstr "以下の推奨するセキュリティヘッダーが検出できませんでした:"
 
 #: lets-encrypt/wizard/config/questions.php:64
 msgid "Disable OCSP Stapling"
@@ -1742,11 +1742,11 @@ msgstr "SSL の設定は完了です !"
 #: class-admin.php:4137 grid/templates/progress.php:29
 msgid "You still have %s task open."
 msgid_plural "You still have %s tasks open."
-msgstr[0] "まだ%s作業あります。"
+msgstr[0] "まだ%s件の作業があります。"
 
 #: class-admin.php:4132 grid/templates/progress.php:29
 msgid "SSL is activated on your site."
-msgstr "SSL はこのサイト上で有効化されています。"
+msgstr "SSL はサイト上で有効化済みです。"
 
 #: grid/templates/support.php:42
 msgid "Elementor"
@@ -1821,7 +1821,7 @@ msgstr "Really Simple SSL Pro"
 
 #: class-admin.php:2692
 msgid "Hi, Really Simple SSL has kept your site secure for some time now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
-msgstr "こんにちは Really Simple SSL は、このサイトの安全性を維持しています! お時間があれば、評判を広めるために WordPress.org に評価を残すことをご検討ください。私たちは強く感謝します。質問や意見があれば、私たちへの%sメッセージ%sをお待ちしております。"
+msgstr "現在、Really Simple SSL がサイトの安全を維持しています。お時間がありましたら、WordPress.org にてプラグインをおすすめするレビューをいただると大変嬉しいです。ご質問やご意見があれば、%sメッセージ%sをお送りください。"
 
 #: class-admin.php:629 lets-encrypt/wizard/templates/activate.php:30
 #: lets-encrypt/wizard/templates/activate.php:70
@@ -1890,7 +1890,7 @@ msgstr "サイト変換が%s%完了しました。"
 
 #: class-admin.php:2701
 msgid "Maybe later"
-msgstr "後ほど"
+msgstr "後で"
 
 #: class-admin.php:2700
 msgid "Leave a review"
@@ -1898,7 +1898,7 @@ msgstr "レビューを書く"
 
 #: class-admin.php:2694
 msgid "Hi, Really Simple SSL has kept your site secure for a month now, awesome! If you have a moment, please consider leaving a review on WordPress.org to spread the word. We greatly appreciate it! If you have any questions or feedback, leave us a %smessage%s."
-msgstr "こんにちは Really Simple SSL は、1か月間このサイトを安全性を維持しました! お時間があれば、WordPress.org に評価を残すことをご検討ください。私たちはとても感謝することでしょう。質問や意見があれば、私たちへの%sメッセージ%sをお待ちしております。"
+msgstr "Really Simple SSL は、この1か月間サイトの安全を維持しています。お時間がありましたら、WordPress.org にてプラグインをおすすめするレビューをいただけましたら、大変感謝いたします。ご質問やご意見があれば、%sメッセージ%sをお送りください。"
 
 #: class-multisite.php:160
 msgid "Activate SSL per site or install a wildcard certificate to fix this."
@@ -2160,7 +2160,7 @@ msgstr "保存"
 
 #: class-admin.php:3177
 msgid "An SSL certificate was detected on your site."
-msgstr "このサイト上に SSL 証明書を検出しました。"
+msgstr "サイト上で SSL 証明書を検出しました。"
 
 #: class-site-health.php:129
 msgid "No SSL detected."
