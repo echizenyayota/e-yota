@@ -87,7 +87,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>舞い上がれ！ 2022年後期朝ドラ</h2>
+  <h2>朝ドラ再放送本日も晴天なり 人気記事</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
