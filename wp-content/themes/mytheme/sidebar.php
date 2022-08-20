@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>ちむどんどん 2022年前期朝ドラ</h2>
+  <h2>朝ドラ次 2022年後期 舞い上がれ！</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'mai_agare';
+  $the_slug = 'honjitsu_mo_seitennari';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
