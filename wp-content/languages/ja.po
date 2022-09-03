@@ -7671,7 +7671,7 @@ msgid "oEmbed Responses"
 msgstr "oEmbed Response"
 
 #. translators: %s: Post custom field name.
-#: wp-includes/post-template.php:1109
+#: wp-includes/post-template.php:1110
 msgctxt "Post custom field name"
 msgid "%s:"
 msgstr "%s:"
@@ -10059,7 +10059,7 @@ msgstr "添付ファイルの属性"
 
 #. translators: Post revision title. 1: Author avatar, 2: Author name, 3: Time
 #. ago, 4: Date.
-#: wp-includes/post-template.php:1891
+#: wp-includes/post-template.php:1892
 msgid "%1$s %2$s, %3$s ago (%4$s)"
 msgstr "%1$s %2$s, %3$s前 (%4$s)"
 
@@ -10788,7 +10788,7 @@ msgctxt "post status"
 msgid "Published"
 msgstr "公開済み"
 
-#: wp-includes/post-template.php:1728
+#: wp-includes/post-template.php:1729
 msgctxt "post password form"
 msgid "Enter"
 msgstr "確定"
@@ -12221,7 +12221,7 @@ msgstr "投稿タイプ名の長さは1から20文字でなければいけませ
 
 #. translators: Revision date format, see
 #. https://www.php.net/manual/datetime.format.php
-#: wp-includes/post-template.php:1837 wp-includes/post-template.php:1879
+#: wp-includes/post-template.php:1838 wp-includes/post-template.php:1880
 msgctxt "revision date format"
 msgid "F j, Y @ H:i:s"
 msgstr "Y年n月j日 H:i:s"
@@ -13883,7 +13883,7 @@ msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
 msgstr "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
 
-#: wp-includes/post-template.php:1727
+#: wp-includes/post-template.php:1728
 msgid "This content is password protected. To view it please enter your password below:"
 msgstr "このコンテンツはパスワードで保護されています。閲覧するには以下にパスワードを入力してください。"
 
@@ -13968,7 +13968,7 @@ msgstr[0] "%s週間"
 msgid "#%d (no title)"
 msgstr "#%d (タイトルなし)"
 
-#: wp-includes/post-template.php:1964
+#: wp-includes/post-template.php:1965
 msgid "JavaScript must be enabled to use this feature."
 msgstr "この機能を使うには JavaScript を有効にする必要があります。"
 
@@ -16652,18 +16652,18 @@ msgstr "投稿リビジョン"
 
 #. translators: %s: Revision date.
 #. translators: %s: Revision date with author avatar.
-#: wp-includes/post-template.php:1841 wp-includes/post-template.php:1901
+#: wp-includes/post-template.php:1842 wp-includes/post-template.php:1902
 msgid "%s [Current Revision]"
 msgstr "%s [現在のリビジョン]"
 
 #. translators: %s: Revision date.
 #. translators: %s: Revision date with author avatar.
-#: wp-includes/post-template.php:1839 wp-includes/post-template.php:1899
+#: wp-includes/post-template.php:1840 wp-includes/post-template.php:1900
 msgid "%s [Autosave]"
 msgstr "%s [自動保存]"
 
 #. translators: 'Home' as in a website's home page.
-#: wp-includes/post-template.php:1438
+#: wp-includes/post-template.php:1439
 #: wp-includes/js/dist/block-library.js:19407
 #: wp-includes/js/dist/block-library.js:27331 wp-admin/menu.php:26
 #: wp-admin/network/menu.php:13
@@ -17518,7 +17518,7 @@ msgstr "%s へのコメント"
 msgid "Comments for %1$s searching on %2$s"
 msgstr "%1$s へのコメント: %2$s 上の検索"
 
-#: wp-includes/deprecated.php:1872 wp-includes/post-template.php:1620
+#: wp-includes/deprecated.php:1872 wp-includes/post-template.php:1621
 msgid "Missing Attachment"
 msgstr "添付ファイルが見つかりません"
 
@@ -18188,7 +18188,7 @@ msgstr "選択"
 msgid "Close"
 msgstr "閉じる"
 
-#: wp-includes/post-template.php:1274 wp-includes/theme-compat/sidebar.php:117
+#: wp-includes/post-template.php:1275 wp-includes/theme-compat/sidebar.php:117
 #: wp-includes/widgets/class-wp-widget-pages.php:31
 #: wp-includes/widgets/class-wp-widget-pages.php:44 wp-admin/export.php:237
 msgid "Pages"
@@ -19032,7 +19032,7 @@ msgstr "タイトル"
 msgid "No posts found."
 msgstr "投稿が見つかりませんでした。"
 
-#: wp-activate.php:183 wp-includes/post-template.php:1728
+#: wp-activate.php:183 wp-includes/post-template.php:1729
 #: wp-admin/includes/meta-boxes.php:203
 msgid "Password:"
 msgstr "パスワード:"
