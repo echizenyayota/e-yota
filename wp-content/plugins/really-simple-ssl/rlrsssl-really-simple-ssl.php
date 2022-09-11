@@ -3,7 +3,7 @@
  * Plugin Name: Really Simple SSL
  * Plugin URI: https://really-simple-ssl.com
  * Description: Lightweight plugin without any setup to make your site SSL proof
- * Version: 5.3.3
+ * Version: 5.3.4
  * Author: Really Simple Plugins
  * Author URI: https://really-simple-plugins.com
  * License: GPL2
@@ -117,7 +117,7 @@ class REALLY_SIMPLE_SSL
             define('rsssl_file', __FILE__);
         }
 		$debug = defined('RSSSL_DEBUG') && RSSSL_DEBUG ? time() : '';
-		define('rsssl_version', '5.3.3'.$debug);
+		define('rsssl_version', '5.3.4'.$debug);
 		define('rsssl_le_cron_generation_renewal_check', 20);
 		define('rsssl_le_manual_generation_renewal_check', 15);
 	}
@@ -223,13 +223,12 @@ if ( ! function_exists('rsssl_add_manage_security_capability')){
 	 * Add a user capability to WordPress and add to admin and editor role
 	 */
 	function rsssl_add_manage_security_capability(){
-		$capability = 'manage_security';
 		$roles = apply_filters('rsssl_add_manage_security_capability', array('administrator') );
 		foreach( $roles as $role ){
 			$role = get_role( $role );
-			if( ! $role->has_cap( $capability ) ){
-				$role->add_cap( $capability );
-			}
+            if( $role && !$role->has_cap( 'manage_security' ) ){
+                $role->add_cap( 'manage_security' );
+            }
 		}
 	}
 
