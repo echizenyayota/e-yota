@@ -136,6 +136,22 @@ if (!class_exists('rsssl_multisite')) {
 			        ),
 		        ),
 	        );
+	        $notices['6_multisite_networkwide'] = array(
+		        'callback' => 'RSSSL()->rsssl_multisite->ssl_activation_status',
+		        'score'     => 0,
+		        'output'    => array(
+			        'ssl-per-site' => array(
+                        'title'       => __( "End of Per Site Management support.", "really-simple-ssl"  ),
+				        'msg'         => __( "Really Simple SSL 6.0 drops SSL activation per website. Upgrading to 6.0 will upgrade all subsites to SSL.", "really-simple-ssl" ),
+				        'icon'        => 'warning',
+				        'url'         => 'https://really-simple-ssl.com/ssl-per-website-deprecated/',
+				        'dismissible' => true,
+				        'plusone' => true,
+				        'admin_notice' => true,
+			        ),
+		        ),
+	        );
+
 
 	        $notices['multisite_server_variable_warning'] = array(
 		        'callback' => 'RSSSL()->rsssl_multisite->multisite_server_variable_warning',
@@ -1024,7 +1040,8 @@ if (!class_exists('rsssl_multisite')) {
 		        foreach ( $notices as $id => $notice ){
 			        $notice = $notice['output'];
 			        $class = ( $notice['status'] !== 'completed' ) ? 'error' : 'updated';
-			        echo RSSSL()->really_simple_ssl->notice_html( $class.' '.$id, $notice['title'], $notice['msg'] );
+			        $footer = isset($notice['url']) ? '<a class="button" target="_blank" href="' . esc_url_raw($notice['url']) . '">'.__("More info", "really-simple-ssl").'</a>' : '';
+			        echo RSSSL()->really_simple_ssl->notice_html( $class.' '.$id, $notice['title'], $notice['msg'], $footer );
 		        }
             }
 
