@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.0.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-08-24 06:10:37+0000\n"
+"PO-Revision-Date: 2022-10-18 10:26:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -324,7 +324,7 @@ msgstr "ソーシャルアイコン"
 #: wp-includes/blocks/site-title/block.json
 msgctxt "block description"
 msgid "Displays the name of this site. Update the block, and the changes apply everywhere it’s used. This will also appear in the browser title bar and in search results."
-msgstr "このサイトの名前を表示します。ブロックを更新すると、ブロックが使われているすべての場所で変更が適用されます。ブラウザのタイトルバーや検索結果にも表示されます。"
+msgstr "このサイトの名前を表示します。ブロックを更新すると、ブロックが使われているすべての場所で変更が適用されます。ブラウザーのタイトルバーや検索結果にも表示されます。"
 
 #: wp-includes/blocks/site-title/block.json
 msgctxt "block title"
@@ -349,7 +349,7 @@ msgstr "サイトのキャッチフレーズ"
 #: wp-includes/blocks/site-logo/block.json
 msgctxt "block description"
 msgid "Display a graphic to represent this site. Update the block, and the changes apply everywhere it’s used. This is different than the site icon, which is the smaller image visible in your dashboard, browser tabs, etc used to help others recognize this site."
-msgstr "このサイトを表すグラフィックを表示します。更新すると、このブロックが使用されているすべての場所で変更が適用されます。これはサイトのアイコンとは異なる小さな画像で、ダッシュボードやブラウザのタブなどに表示されて、ユーザーによるサイトの認識に使用されます。"
+msgstr "このサイトを表すグラフィックを表示します。更新すると、このブロックが使用されているすべての場所で変更が適用されます。これはサイトのアイコンとは異なる小さな画像で、ダッシュボードやブラウザーのタブなどに表示されて、ユーザーによるサイトの認識に使用されます。"
 
 #: wp-includes/blocks/site-logo/block.json
 msgctxt "block title"
