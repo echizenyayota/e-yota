@@ -137,15 +137,10 @@ function rsssl_upgrade() {
 	}
 
 	#clean up old rest api optimizer on upgrade
-	if ( $prev_version && version_compare( $prev_version, '6.0.3', '<' ) ) {
+	if ( $prev_version && version_compare( $prev_version, '6.0.5', '<' ) ) {
 		if ( file_exists(trailingslashit( WPMU_PLUGIN_DIR ) . 'rsssl_rest_api_optimizer.php') ) {
 			unlink( trailingslashit( WPMU_PLUGIN_DIR ) . 'rsssl_rest_api_optimizer.php' );
 		}
-	}
-
-	#fix htaccess redirect.
-	if ( $prev_version && version_compare( $prev_version, '6.0.0', '>=' ) && version_compare( $prev_version, '6.0.4', '<' ) ) {
-		rsssl_wrap_htaccess(true);
 	}
 
 	//delete in future upgrade. We want to check the review notice dismissed as fallback still.
