@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>朝ドラ2022後期 舞いあがれ！</h2>
+  <h2>DOC（ドック）明日へのカルテ</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'nhk_kaigai';
+  $the_slug = 'hirari';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
@@ -87,7 +87,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>NHK海外ドラマ</h2>
+  <h2>朝ドラ再放送ひらり</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
