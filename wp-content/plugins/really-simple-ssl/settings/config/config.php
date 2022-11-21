@@ -348,7 +348,7 @@ function rsssl_fields( $load_values = true ) {
 			'menu_id'  => 'general',
 			'group_id' => 'general',
 			'type'     => 'checkbox',
-			'label'    => __( "Mixed content fixer - back-end", "really-simple-ssl-pro" ),
+			'label'    => __( "Mixed content fixer - back-end", "really-simple-ssl" ),
 			'disabled' => false,
 			'default'  => false,
 		],
@@ -534,6 +534,13 @@ function rsssl_fields( $load_values = true ) {
 					'rename_admin_user' => 1,
 				]
 			],
+			'server_conditions' => [
+				'relation' => 'AND',
+				[
+					'rsssl_has_admin_user()' => true,
+				]
+			],
+
 		],
 		[
 			'id'       => 'disable_xmlrpc',

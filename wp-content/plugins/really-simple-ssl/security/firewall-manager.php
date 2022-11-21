@@ -42,13 +42,10 @@ class rsssl_firewall_manager {
 	 * @return int
 	 */
 	public function get_headers_nonce(){
-		if ( !rsssl_user_can_manage() && !defined( 'RSSSL_LEARNING_MODE' ) ) {
-			return false;
-		}
 		if ( !get_site_option("rsssl_header_detection_nonce")) {
 			update_site_option("rsssl_header_detection_nonce", rand(1000, 999999999) );
 		}
-		return get_site_option("rsssl_header_detection_nonce");
+		return (int) get_site_option("rsssl_header_detection_nonce");
 	}
 
 	/**

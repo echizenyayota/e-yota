@@ -1530,7 +1530,7 @@ class rsssl_admin
 //	    rsssl_update_option('review_notice_shown', false);
         //prevent showing the review on edit screen, as gutenberg removes the class which makes it editable.
         $screen = get_current_screen();
-	    if ( $screen->base === 'post' ) {
+	    if ( $screen && $screen->base === 'post' ) {
             return;
 	    }
 
@@ -2233,7 +2233,7 @@ class rsssl_admin
 
             'upgraded_to_6' => array(
 	            'condition'  => array(
-                        'RSSSL()->admin->is_upgraded_to_6'
+                        'RSSSL()->admin->is_upgraded_to_6',
                 ),
 	            'callback' => '_true_',
 	            'output' => array(
@@ -2249,8 +2249,11 @@ class rsssl_admin
             ),
         );
         //on multisite, don't show the notice on subsites.
-        if ( is_multisite() && !is_network_admin() ) {
+        //we can't make different sets for network admin and for subsites (at least not for admin notices), as these notices are cached,
+        //so the same cache will be used on both types of site
+        if ( is_multisite() ) {
             unset($notices['secure_cookies_set']);
+            unset($notices['upgraded_to_6']);
         }
 
         $notices = apply_filters('rsssl_notices', $notices);

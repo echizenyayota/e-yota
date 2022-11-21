@@ -151,28 +151,16 @@ function rsssl_has_admin_user() {
  * @return bool
  */
 function rsssl_new_username_valid(): bool {
-
-	$new_user_login = rsssl_get_option('new_admin_user_login');
+	$new_user_login = trim(sanitize_user(rsssl_get_option('new_admin_user_login')));
 	if ( $new_user_login === 'admin' ) {
+		return false;
+	}
+	$user_exists = get_user_by('login', $new_user_login);
+	if ( $user_exists ) {
 		return false;
 	}
 
 	return is_string($new_user_login) && strlen($new_user_login)>2;
-}
-
-/**
- * @return bool
- *
- * Check if user ID 1 exists end if user enumeration has been disabled
- */
-
-function rsssl_id_one_no_enumeration() {
-	$user_id_one = get_user_by( 'id', 1 );
-	if ( $user_id_one && ! rsssl_get_option( 'disable_user_enumeration' ) ) {
-		return true;
-	}
-
-	return false;
 }
 
 /**
