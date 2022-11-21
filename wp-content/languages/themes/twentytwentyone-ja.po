@@ -17,7 +17,7 @@ msgid "Twenty Twenty-One is a blank canvas for your ideas and it makes the block
 msgstr "Twenty Twenty-One はアイデアのための真っ白なキャンバスであり、ブロックエディタは最高の絵筆です。一瞬で美しいレイアウトを作成可能な新しいブロックパターンとテーマの柔らかなカラーリング、目を引き時代を超越したデザインが作品を輝かせます。今すぐ試してみてください。Twenty Twenty-One はポートフォリオ、ビジネスサイト、個人ブログに最適です。"
 
 #. Theme Name of the theme
-#: inc/block-patterns.php:24
+#: classes/class-twenty-twenty-one-dark-mode.php:381 inc/block-patterns.php:24
 #, gp-priority: high
 msgid "Twenty Twenty-One"
 msgstr "Twenty Twenty-One"
@@ -92,22 +92,22 @@ msgctxt "Added to posts and pages that are missing titles"
 msgid "Untitled"
 msgstr "名称未設定"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "Cambridge, MA, 02139"
 msgstr "千代田1-1"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "123 Main Street"
 msgstr "〒100-0001 東京都千代田区"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "123-456-7890"
 msgstr "123-456-7890"
 
-#: inc/block-patterns.php:131
+#: inc/block-patterns.php:136
 msgctxt "Block pattern sample content"
 msgid "example@example.com"
 msgstr "example@example.com"
@@ -200,19 +200,19 @@ msgstr "このコンテンツはパスワードで保護されています。表
 msgid "Open menu"
 msgstr "メニューを開く"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "&#8220;Reading&#8221; by Berthe Morisot"
 msgstr "「読書する少女」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:98
+#: inc/block-patterns.php:101
 msgid "&#8220;Self portrait&#8221; by Berthe Morisot"
 msgstr "「自画像」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:98
+#: inc/block-patterns.php:101
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "「水仙」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:86 inc/block-patterns.php:121
+#: inc/block-patterns.php:89 inc/block-patterns.php:125
 #: inc/starter-content.php:43
 msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
 msgstr "「立葵」ベルト・モリゾ作"
@@ -272,61 +272,61 @@ msgctxt "Theme starter content"
 msgid "Create your website with blocks"
 msgstr "ブロックでサイトを作成"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Reading"
 msgstr "読書"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Young Woman in Mauve"
 msgstr "モーブで若い女性"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "The Garden at Bougival"
 msgstr "ブージヴァルの庭"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "In the Bois de Boulogne"
 msgstr "ブローニュの森で"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Villa with Orange Trees, Nice"
 msgstr "オレンジのなかのヴィラ、ニース"
 
-#: inc/block-patterns.php:121
+#: inc/block-patterns.php:125
 msgid "Roses Trémières"
 msgstr "立葵"
 
-#: inc/block-patterns.php:110
+#: inc/block-patterns.php:114
 msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
 msgstr "「オレンジのなかのヴィラ、ニース」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:110
+#: inc/block-patterns.php:114
 msgid "Beautiful gardens painted by Berthe Morisot in the late 1800s"
 msgstr "ベルト・モリゾによって1800年代後半に描かれた美しい庭園"
 
-#: inc/block-patterns.php:110 inc/block-patterns.php:121
+#: inc/block-patterns.php:114 inc/block-patterns.php:125
 msgid "&#8220;The Garden at Bougival&#8221; by Berthe Morisot"
 msgstr "「ブージヴァルの庭」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:86 inc/block-patterns.php:121
+#: inc/block-patterns.php:89 inc/block-patterns.php:125
 #: inc/starter-content.php:61
 msgid "&#8220;Young Woman in Mauve&#8221; by Berthe Morisot"
 msgstr "「モーブで若い女性」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:86 inc/block-patterns.php:121
+#: inc/block-patterns.php:89 inc/block-patterns.php:125
 #: inc/starter-content.php:51
 msgid "&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot"
 msgstr "「ブローニュの森で」ベルト・モリゾ作"
 
-#: inc/block-patterns.php:74
+#: inc/block-patterns.php:76
 msgid "Berthe Morisot<br>(French, 1841-1895)"
 msgstr "ベルト・モリゾ<br>(フランス、1841-1895)"
 
-#: inc/block-patterns.php:74
+#: inc/block-patterns.php:76
 msgid "Playing in the Sand"
 msgstr "泥まんじゅう遊び"
 
-#: inc/block-patterns.php:74
+#: inc/block-patterns.php:76
 msgid "&#8220;Playing in the Sand&#8221; by Berthe Morisot"
 msgstr "「泥まんじゅう遊び」ベルト・モリゾ作"
 
@@ -450,90 +450,90 @@ msgstr "枠線"
 msgid "Overlap"
 msgstr "重ね合わせ"
 
-#: inc/block-patterns.php:130
+#: inc/block-patterns.php:135
 msgctxt "Block pattern description"
 msgid "A block with 3 columns that display contact information and social media links."
 msgstr "連絡先情報とソーシャルメディアリンクを表示する3カラムブロック。"
 
-#: inc/block-patterns.php:128
+#: inc/block-patterns.php:132
 msgid "Contact information"
 msgstr "連絡先情報"
 
-#: inc/block-patterns.php:120
+#: inc/block-patterns.php:124
 msgctxt "Block pattern description"
 msgid "A list of projects with thumbnail images."
 msgstr "サムネイル画像付きのプロジェクトリスト。"
 
-#: inc/block-patterns.php:118
+#: inc/block-patterns.php:122
 msgid "Portfolio list"
 msgstr "ポートフォリオリスト"
 
-#: inc/block-patterns.php:109
+#: inc/block-patterns.php:113
 msgctxt "Block pattern description"
 msgid "An overlapping columns block with two images and a text description."
 msgstr "2つの画像とテキスト説明付きの重ね合わせカラムブロック。"
 
-#: inc/block-patterns.php:106
+#: inc/block-patterns.php:109
 msgid "Overlapping images and text"
 msgstr "画像とテキストの重ね合わせ"
 
-#: inc/block-patterns.php:97
+#: inc/block-patterns.php:100
 msgctxt "Block pattern description"
 msgid "A media & text block with a big image on the left and a smaller one with bordered frame on the right."
 msgstr "左側に大きな画像、右側にフレームで囲まれた小さな画像付きのメディアとテキストブロック。"
 
-#: inc/block-patterns.php:94
+#: inc/block-patterns.php:97
 msgid "Two images showcase"
 msgstr "2つの画像のショーケース"
 
-#: inc/block-patterns.php:85
+#: inc/block-patterns.php:88
 msgctxt "Block pattern description"
 msgid "Three images inside an overlapping columns block."
 msgstr "重ね合わせカラムブロック内の3つの画像。"
 
-#: inc/block-patterns.php:82
+#: inc/block-patterns.php:84
 msgid "Overlapping images"
 msgstr "画像の重ね合わせ"
 
-#: inc/block-patterns.php:73
+#: inc/block-patterns.php:75
 msgctxt "Block pattern description"
 msgid "A Media & Text block with a big image on the left and a heading on the right. The heading is followed by a separator and a description paragraph."
 msgstr "左側に大きな画像、右側に見出しの付いたメディアとテキストブロック。見出しの下には区切りと説明の段落があります。"
 
-#: inc/block-patterns.php:70
+#: inc/block-patterns.php:72
 msgid "Media and text article title"
 msgstr "メディアと投稿のテキストタイトル"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "example@example.com"
 msgstr "example@example.com"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Dribbble"
 msgstr "Dribbble"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Instagram"
 msgstr "Instagram"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Twitter"
 msgstr "Twitter"
 
-#: inc/block-patterns.php:62
+#: inc/block-patterns.php:64
 msgid "Let&#8217;s Connect."
 msgstr "つながりましょう。"
 
-#: inc/block-patterns.php:61
+#: inc/block-patterns.php:63
 msgctxt "Block pattern description"
 msgid "A huge text followed by social networks and email address links."
 msgstr "超特大のテキストと、それに続くソーシャルネットワークとメールアドレスのリンク。"
 
-#: inc/block-patterns.php:58
+#: inc/block-patterns.php:59
 msgid "Links area"
 msgstr "リンクエリア"
 
-#: inc/block-patterns.php:50
+#: inc/block-patterns.php:51
 msgid "A new portfolio default theme for WordPress"
 msgstr "WordPress の新しいポートフォリオデフォルトテーマ"
 
