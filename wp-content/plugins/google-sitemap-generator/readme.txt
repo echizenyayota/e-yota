@@ -3,7 +3,7 @@ Contributors: auctollo
 Tags: seo, google, bing, yahoo, msn, ask, live, sitemaps, google sitemaps, xml sitemap, xml
 Requires at least: 3.3
 Tested up to: 6.0
-Stable tag: 4.1.6
+Stable tag: 4.1.7
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,7 +77,11 @@ The WordPress.org repository is just another place to download this plugin. I do
 
 == Changelog ==
 
-= 4.1.5 (2022-11-23) =
+= 4.1.7 (2022-11-24) =
+* Fixed custom taxonomy unit generation issue
+* Fixed plugin deactivation notice
+
+= 4.1.6 (2022-11-23) =
 * Fixed mishandling of empty categories
 * Fixed _url undefined notice error
 * Fixed error when build_taxonomies throws a fatal error when accessing sub-sitemap without pagination
