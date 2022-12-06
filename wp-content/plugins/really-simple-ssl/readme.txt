@@ -6,7 +6,7 @@ Requires at least: 5.7
 License: GPL2
 Tested up to: 6.1
 Requires PHP: 7.2
-Stable tag: 6.0.11
+Stable tag: 6.0.12
 
 The easiest way to improve security! Leverage your SSL certificate and protect your website visitors.
 
@@ -96,6 +96,14 @@ The plugin checks your certificate before enabling, but if, for example, you mig
 If you can't deactivate, do not just remove the plugin folder to uninstall! Follow these [instructions](https://really-simple-ssl.com/knowledge-base/uninstall-websitebackend-not-accessible/) instead.
 
 == Changelog ==
+= 6.0.12 =
+* Fix: on multisite, the test for users with admin username did not use the correct prefix, $wpdb->base_prefix, props @jg-visual
+* Improvement: allow submenu in back-end react application
+* Improvement: Skip value update when no change has been made
+* Improvement: no redirect on dismiss of admin notice, props @gangesh, @rtpHarry, @dumel
+* Improvement: remove obsolete warning
+* Improvement: qtranslate support on settings page
+
 = 6.0.11 =
 * Fix: on some environments, the HTTP_X_WP_NONCE is not available in the code, changed logged in check to accomodate such environments
 * Fix: dismiss on admin notices not immediately dismissing, requiring dismiss through dashboard, props @dumel
