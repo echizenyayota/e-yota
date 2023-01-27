@@ -297,7 +297,7 @@ function rsssl_run_test($request){
 
 	$test = sanitize_title($request->get_param('test'));
     $state = $request->get_param('state');
-    $state =  $state !== 'undefined' ? $state : false;
+	$state =  $state !== 'undefined' && $state !== 'false' ? $state : false;
 	switch($test){
         case 'ssl_status_data':
             $data = rsssl_ssl_status_data();
@@ -533,7 +533,6 @@ function rsssl_update_option( $name, $value ) {
 	if ( !rsssl_user_can_manage() ) {
 		return;
 	}
-
 	$config_fields = rsssl_fields(false);
 	$config_ids = array_column($config_fields, 'id');
 	$config_field_index = array_search($name, $config_ids);
