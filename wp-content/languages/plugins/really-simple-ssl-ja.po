@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-03-04 13:38:51+0000\n"
+"PO-Revision-Date: 2023-03-13 09:06:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,26 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
+
+#: mailer/class-mail.php:45
+msgid "This email is part of the Really Simple SSL Notification System"
+msgstr "このメールは Really Simple SSL の通知システムによるものです"
+
+#: mailer/class-mail.php:44
+msgid "What now?"
+msgstr "これは何？"
+
+#: mailer/class-mail.php:43
+msgid "This email was sent to"
+msgstr "このメールの送信先"
+
+#: mailer/class-mail.php:42
+msgid "I didn't change any settings in the plugin."
+msgstr "私はこのプラグインの設定を何も変更していません。"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1519
+msgid "This is a multisite configuration with subdomains. You should generate a wildcard certificate on the root domain."
+msgstr "サブドメインを持つマルチサイトとして構成されています。ルートのドメインにワイルドカード証明書を生成する必要があります。"
 
 #: settings/config/disable-fields-filter.php:24
 msgid "The .htaccess redirect has been enabled on your site. If the server configuration is non-standard, this might cause issues. Please check if all pages on your site are functioning properly. ."
@@ -1050,7 +1070,7 @@ msgstr "SSL 有効化を進行中"
 msgid "SSL is not enabled on your network"
 msgstr "SSL はこのネットワーク上で有効になっていません。"
 
-#: class-admin.php:2717 class-multisite.php:223
+#: class-admin.php:2717 class-multisite.php:227
 msgid "Improve security - Upgrade"
 msgstr "セキュリティ改善 - アップグレード"
 
@@ -2272,7 +2292,7 @@ msgstr "Really Simple SSL を有効化できませんでした。本プラグイ
 msgid "Really Simple SSL cannot be activated. The plugin requires PHP 7.2 or higher"
 msgstr "Really Simple SSL を有効化できませんでした。本プラグインには PHP 7.2以上が必要です"
 
-#: class-admin.php:2712 class-multisite.php:219 settings/build/index.js:382
+#: class-admin.php:2712 class-multisite.php:223 settings/build/index.js:382
 #: settings/src/Header.js:48
 msgid "Support"
 msgstr "サポート掲示板"
@@ -2541,7 +2561,7 @@ msgid "No SSL detected."
 msgstr "SSL の検出なし"
 
 #: class-admin.php:1750 class-admin.php:2704 class-admin.php:2707
-#: class-multisite.php:87 class-multisite.php:216 settings/config/config.php:17
+#: class-multisite.php:87 class-multisite.php:220 settings/config/config.php:17
 #: settings/build/index.js:382
 #: settings/src/Dashboard/SecurityFeaturesBlock/SecurityFeaturesFooter.js:14
 msgid "Settings"
