@@ -464,6 +464,14 @@ class GoogleSitemapGeneratorUI {
 				} elseif ( 'sm_i_tid' === $k ) {
 					// $_POST[ $k ] = trim( self::escape( sanitize_text_field( wp_unslash( $_POST[ $k ] ) ) ) );
 					$this->sg->set_option( $k, trim( self::escape( sanitize_text_field( wp_unslash( $_POST[ $k ] ) ) ) ) );
+				} elseif ( 'sm_user_consent' === $k ) {
+
+					$allow_cookies = (bool) sanitize_text_field( wp_unslash( $_POST[ $k ] ) );
+					if ( $allow_cookies ) {
+						update_option( 'sm_user_consent', 'yes' );
+					} else {
+						update_option( 'sm_user_consent', 'no' );
+					}
 				} elseif ( substr( $k, 0, 6 ) === 'sm_in_' ) {
 					if ( 'sm_in_tax' === $k ) {
 
@@ -537,6 +545,7 @@ class GoogleSitemapGeneratorUI {
 			delete_option( 'sm_beta_banner_discarded_count' );
 			delete_option( 'sm_beta_notice_dismissed_from_wp_admin' );
 			delete_option( 'sm_user_consent' );
+			delete_option( 'sm_hide_auto_update_banner' );
 			$this->sg->init_options();
 			$this->sg->save_options();
 			$message .= __( 'The default configuration was restored.', 'sitemap' );
@@ -746,7 +755,14 @@ class GoogleSitemapGeneratorUI {
 				text-decoration: none;
 				border: none;
 			}
-
+			input#sm_user_consent{
+				margin-top: 0px;
+			}
+			label#sm_user_consent_label{
+				display: flex;
+				align-items: center;
+				text-align: center;
+			}
 			a.sm_button:hover {
 				border-bottom-width: 1px;
 			}
@@ -817,7 +833,7 @@ class GoogleSitemapGeneratorUI {
 			}
 			.modal-wrapper {
 				position: fixed;
-				display: none;
+				display: flex;
 				z-index: 100;
 				left: 0;
 				top: 0;
@@ -828,6 +844,21 @@ class GoogleSitemapGeneratorUI {
 				visibility: visible;
 				transform: scale(1.0);
 				transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+			}
+			#close_popup {
+				border: none;
+				height: 20px;
+				width: 25px;
+				padding: 0px;
+				position: absolute;
+				right: 15px;
+				top: 0;
+				margin-top: 25px;
+				cursor: pointer;
+			}
+			.close_cookie_information{
+				height: 20px;
+				width: 25px;
 			}
 
 			.modal-container {
@@ -854,6 +885,19 @@ class GoogleSitemapGeneratorUI {
 				padding: 12px 10px;
 				cursor: pointer;
 			}
+			.cookie-info-banner-wrapper {
+				position: fixed;
+				z-index: 100;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+				opacity: 1;
+				display: none;
+				transform: scale(1.0);
+				transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+			}
 			.decline_consent {
 				background-color: #fff;
 				border-color:  #ef4056 ;
@@ -866,6 +910,17 @@ class GoogleSitemapGeneratorUI {
 				word-wrap: break-word;
 				padding: 12px 10px;
 				cursor: pointer;
+			}
+			.more_info_button {
+				border: none;
+				height: 25px;
+				width: 25px;
+				padding: 0px;
+				cursor: pointer;
+			}
+			.more_info {
+				height: 20px;
+				width: 20px;
 			}
 			<?php
 			if ( version_compare( $wp_version, '3.4', '<' ) ) : // Fix style for WP 3.4 (dirty way for now..) .
@@ -953,9 +1008,9 @@ class GoogleSitemapGeneratorUI {
 									<?php $this->html_print_box_header( 'sm_pnres', __( 'About this Plugin:', 'sitemap' ), true ); ?>
 									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-home' ) ); ?>'><?php esc_html_e( 'Plugin Homepage', 'sitemap' ); ?></a>
 									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-support' ) ); ?>'><?php esc_html_e( 'Suggest a Feature', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-help' ) ); ?>'><?php esc_html_e( 'Help / FAQ', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-list' ) ); ?>'><?php esc_html_e( 'Notify List', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-support' ) ); ?>'><?php esc_html_e( 'Support Forum', 'sitemap' ); ?></a>
+									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-help' ) ); ?>'><?php esc_html_e( 'View Frequently Asked Questions', 'sitemap' ); ?></a>
+									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-list' ) ); ?>'><?php esc_html_e( 'Follow the Forum', 'sitemap' ); ?></a>
+									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-support' ) ); ?>'><?php esc_html_e( 'Visit Support Forum', 'sitemap' ); ?></a>
 									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-bugs' ) ); ?>'><?php esc_html_e( 'Report a Bug', 'sitemap' ); ?></a>
 									<?php
 									if ( __( 'translator_name', 'sitemap' ) !== 'translator_name' ) {
@@ -964,15 +1019,13 @@ class GoogleSitemapGeneratorUI {
 									<?php $this->html_print_box_footer( true ); ?>
 
 									<?php $this->html_print_box_header( 'sm_smres', __( 'Sitemap Resources:', 'sitemap' ), true ); ?>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-gwt' ) ); ?>'><?php esc_html_e( 'Webmaster Tools', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-gwb' ) ); ?>'><?php esc_html_e( 'Webmaster Blog', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-ywb' ) ); ?>'><?php esc_html_e( 'Search Blog', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-lwt' ) ); ?>'><?php esc_html_e( 'Webmaster Tools', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-lswcb' ) ); ?>'><?php esc_html_e( 'Webmaster Center Blog', 'sitemap' ); ?></a>
+									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-gwt' ) ); ?>'><?php esc_html_e( 'Google Search Console', 'sitemap' ); ?></a>
+									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-ywb' ) ); ?>'><?php esc_html_e( 'Google Search Blog', 'sitemap' ); ?></a>
+									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-gwb' ) ); ?>'><?php esc_html_e( 'Bing Webmaster Tools', 'sitemap' ); ?></a>
+									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-lswcb' ) ); ?>'><?php esc_html_e( 'Microsoft Bing Blog', 'sitemap' ); ?></a>
 									<br />
 									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'redir/sitemap-prot' ) ); ?>'><?php esc_html_e( 'Sitemaps Protocol', 'sitemap' ); ?></a>
 									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'projects/wordpress-plugins/google-xml-sitemaps-generator/help' ) ); ?>'><?php esc_html_e( 'Official Sitemaps FAQ', 'sitemap' ); ?></a>
-									<a class='sm_button' href='<?php echo esc_url( $this->sg->get_redirect_link( 'projects/wordpress-plugins/google-xml-sitemaps-generator/help' ) ); ?>'><?php esc_html_e( 'My Sitemaps FAQ', 'sitemap' ); ?></a>
 									<?php $this->html_print_box_footer( true ); ?>
 
 
@@ -1716,6 +1769,19 @@ class GoogleSitemapGeneratorUI {
 									<?php $this->html_print_box_footer(); ?>
 
 								</div>
+								<?php
+								if ( get_option( 'sm_user_consent' ) === 'yes' ) {
+									?>
+								<div>
+									<label for='sm_user_consent' id="sm_user_consent_label">
+										<input type='checkbox' id='sm_user_consent' name='sm_user_consent' <?php echo ( get_option( 'sm_user_consent' ) === 'yes' ? 'checked=\'checked\'' : '' ); ?> />
+										<?php esc_html_e( 'Opt in for XML Sitemaps analytics events tracking and provide you better experience.', 'sitemap' ); ?>
+										<button class="more_info_button" id="more_info_button" type="button" ><img class='more_info' src='<?php echo esc_attr( $this->sg->get_plugin_url() . 'img/help.png' ); ?>' /></button>
+										</label>
+										</div>
+										<?php
+								}
+								?>
 								<div>
 									<p class='submit'>
 										<?php wp_nonce_field( 'sitemap' ); ?>
