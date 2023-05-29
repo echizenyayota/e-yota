@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-19 08:10:54+0000\n"
+"PO-Revision-Date: 2023-05-25 10:51:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,272 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
+
+#: settings/config/config.php:106
+msgid "Only enable this if you experience mixed content in the admin environment of your WordPress website."
+msgstr "この WordPress サイトの管理環境に混在コンテンツが起きている場合にのみ有効化してください。"
+
+#: settings/config/config.php:92
+msgid "Only enable if the default mixed content fixer does not fix your front-end mixed content."
+msgstr "通常の混在コンテンツ修正機能で、フロントエンドの混在コンテンツが修正されない場合のみ有効にしてください。"
+
+#: settings/config/menu.php:101
+msgid "Improve Security with %sReally Simple SSL Pro%s"
+msgstr "%sReally Simple SSL プロ%sでセキュリティを改善"
+
+#: settings/config/menu.php:100
+msgid "You can choose to automate the most common actions for a vulnerability. Each action is set to a minimum risk level, similar to the notifications. Please read the instructions to learn more about the process."
+msgstr "脆弱性に対して、最も一般的な自動操作を選択できます。それぞれの操作は、通知と同様、最低限のリスク許容値が設定されています。処理の詳細については説明をご覧ください。"
+
+#: settings/config/menu.php:99
+msgid "Measures"
+msgstr "対策"
+
+#: settings/config/menu.php:93
+msgid "This is the vulnerability overview. Here you will find current known vulnerabilities on your system. You can find more information and helpful, actionable insights for every vulnerability under details."
+msgstr "脆弱性の概要です。現在、利用中のシステム内に見つかっている脆弱性です。それぞれの脆弱性の詳細から、詳細情報と有用で実行可能なヒントを確認できます。"
+
+#: settings/config/menu.php:92
+msgid "Overview"
+msgstr "概要"
+
+#: settings/config/menu.php:87
+msgid "These notifications are set to the minimum risk level that triggers a notification. For example, the default site-wide notification triggers on high-risk and critical vulnerabilities."
+msgstr "通知は、通知を実行するための最低限のリスク許容値が設定されています。例えば、サイト全体の通知の初期設定は、リスク高、また重大な脆弱性の発見時となります。"
+
+#: settings/config/menu.php:81
+msgid "Here you can configure vulnerability detection, notifications and measures. To learn more about the features displayed, please use the instructions linked in the top-right corner."
+msgstr "脆弱性の検出、通知、対策を設定できます。機能の詳細は、右上の説明のリンクからお読みください。"
+
+#: settings/config/config.php:734
+msgid "I have read and understood the risks to intervene with these measures."
+msgstr "これらの対策に干渉する際の危険性について、私は読んで理解しました。"
+
+#: settings/config/config.php:672
+msgid "Date"
+msgstr "日時"
+
+#: settings/config/config.php:666 settings/config/config.php:713
+msgid "Risk"
+msgstr "リスク"
+
+#: settings/config/config.php:659
+msgid "Component"
+msgstr "構成要素"
+
+#: settings/config/config.php:647
+msgid "Vulnerabilities Overview"
+msgstr "脆弱性の概要"
+
+#: settings/config/config.php:630
+msgid "Test notifications can be used to test email delivery and shows how vulnerabilities will be reported on your WordPress installation."
+msgstr "テストメールの配信にテスト通知が使われ、この WordPress インストール上の脆弱性がどのように報告されるか表示します。"
+
+#: settings/config/config.php:629 settings/config/config.php:632
+#: settings/build/967.js:1
+#: settings/src/Settings/RiskConfiguration/NotificationTester.js:39
+msgid "Test notifications"
+msgstr "通知テスト"
+
+#: settings/config/config.php:609
+msgid "This will send emails about vulnerabilities directly from your server. Make sure you can receive emails by the testing a preview below. If this feature is disabled, please enable notifications under general settings."
+msgstr "サーバーから直接、脆弱性についてのメールを送信します。以下のテストにより、メールを受信可能であることを確認してください。この機能が無効になっていれば、設定の全般から通知を有効化してください"
+
+#: settings/config/config.php:608
+msgid "Email"
+msgstr "メール"
+
+#: settings/config/config.php:606
+msgid "Critical (default)"
+msgstr "重大 (初期設定)"
+
+#: settings/config/config.php:603 settings/config/config.php:692
+msgid "Low-risk"
+msgstr "リスク低"
+
+#: settings/config/config.php:586
+msgid "Site-wide, admin notification"
+msgstr "サイト全体、管理者通知"
+
+#: settings/config/config.php:583
+msgid "High-risk (default)"
+msgstr "リスク高 (初期設定)"
+
+#: settings/config/config.php:581
+msgid "Low-risk "
+msgstr "リスク低 "
+
+#: settings/config/config.php:564
+msgid "Really Simple SSL dashboard"
+msgstr "Really Simple SSL ダッシュボード"
+
+#: settings/config/config.php:562 settings/config/config.php:584
+#: settings/config/config.php:695
+msgid "Critical"
+msgstr "重大"
+
+#: settings/config/config.php:561 settings/config/config.php:605
+#: settings/config/config.php:694
+msgid "High-risk"
+msgstr "リスク高"
+
+#: settings/config/config.php:560 settings/config/config.php:582
+#: settings/config/config.php:604 settings/config/config.php:693
+msgid "Medium-risk"
+msgstr "リスク中"
+
+#: settings/config/config.php:559
+msgid "Low-risk (default)"
+msgstr "リスク低 (初期設定)"
+
+#: settings/config/config.php:558 settings/config/config.php:580
+#: settings/config/config.php:602 settings/config/config.php:691
+msgid "None"
+msgstr "なし"
+
+#: settings/config/config.php:541
+msgid "Feedback in plugin overview"
+msgstr "プラグイン概要から通知"
+
+#: settings/config/config.php:538
+msgid "If there's a vulnerability, you will also get feedback on the themes and plugin overview."
+msgstr "脆弱性があれば、テーマやプラグインの概要からも通知できます。"
+
+#: settings/config/config.php:522
+msgid "Really Simple SSL collects information about plugins, themes, and core vulnerabilities from our database powered by WPVulnerability. Anonymized data about these vulnerable components will be sent to Really Simple SSL for statistical analysis to improve open-source contributions. For more information, please read our privacy statement."
+msgstr "Really Simple SSL は、WPVulnerability 提供のデータベースから、プラグイン、テーマ、またコアの脆弱性に関する情報を取得します。こうした脆弱性のある構成要素のデータは匿名化され、オープンソースのプログラムを改善する統計分析を行うため、Really Simple SSL に送信されます。詳細は、私たちの個人情報保護方針をご覧ください。"
+
+#: settings/config/config.php:521
+msgid "About Vulnerabilities"
+msgstr "脆弱性について"
+
+#: settings/config/config.php:514
+msgid "This feature depends on multiple standard background processes. If a process fails or is unavailable on your system, detection might not work. We run frequent tests for this purpose. We will notify you accordingly if there are any issues."
+msgstr "この機能は、複数の標準的なバックグラウンドプロセスに依存しています。このシステムでプロセスが失敗したり、利用できない際には検出できないことがあります。この目的で検査を頻繁に実行します。なんらかの問題があれば通知します。"
+
+#: settings/config/config.php:513
+msgid "Vulnerability detection"
+msgstr "脆弱性の検出"
+
+#: security/wordpress/vulnerabilities.php:1422
+msgid "Get more information from the Really Simple SSL dashboard on %s"
+msgstr "%s の Really Simple SSL ダッシュボードから詳細をご覧ください"
+
+#: security/wordpress/vulnerabilities.php:1421
+msgid "Based on your settings, Really Simple SSL will take appropriate action, or you will need to solve it manually."
+msgstr "設定によって Really Simple SSL が適切な対策を実行しているか、または手動で解決する必要があります。"
+
+#: security/wordpress/vulnerabilities.php:1416
+msgid "Multiple %s vulnerabilities have been found."
+msgstr "複数の%sの脆弱性が見つかりました。"
+
+#: security/wordpress/vulnerabilities.php:1416
+msgid "A %s vulnerability is found in %s."
+msgstr "%sの脆弱性が %s に見つかりました。"
+
+#: security/wordpress/vulnerabilities.php:1384
+msgid "This is a vulnerability alert from Really Simple SSL for %s. "
+msgstr "%s 上の Really Simple SSL による脆弱性の警報です。 "
+
+#: security/wordpress/vulnerabilities.php:1383
+msgid "%s: %s vulnerabilities found"
+msgstr "%s: %s個の脆弱性を発見"
+
+#: security/wordpress/vulnerabilities.php:1382
+msgid "Vulnerability Alert: %s"
+msgstr "脆弱性の警報: %s"
+
+#: security/wordpress/vulnerabilities.php:1049
+msgid "Vulnerability: %s"
+msgstr "脆弱性: %s"
+
+#: security/wordpress/vulnerabilities.php:602
+#: security/wordpress/vulnerabilities.php:1066
+msgid "Quarantined"
+msgstr "隔離済み"
+
+#: security/wordpress/vulnerabilities.php:530
+msgid "Components will be quarantined if the update process fails."
+msgstr "更新処理に失敗したた、構成要素は隔離されます。"
+
+#: security/wordpress/vulnerabilities.php:528
+msgid "Quarantine"
+msgstr "隔離"
+
+#: security/wordpress/vulnerabilities.php:524
+msgid "Will run a frequent update process on vulnerable components."
+msgstr "脆弱性のある構成要素の更新処理を頻繁に実行する。"
+
+#: security/wordpress/vulnerabilities.php:522
+msgid "Force update"
+msgstr "強制的に更新"
+
+#: security/wordpress/vulnerabilities.php:507 settings/config/menu.php:74
+#: settings/config/menu.php:80 settings/build/688.js:1
+#: settings/src/Dashboard/Vulnerabilities/VulnerabilitiesHeader.js:15
+msgid "Vulnerabilities"
+msgstr "脆弱性"
+
+#: security/wordpress/vulnerabilities.php:306
+msgid "Dashboard - Test Notification"
+msgstr "ダッシュボード - 通知テスト"
+
+#: security/wordpress/vulnerabilities.php:285
+#: security/wordpress/vulnerabilities.php:307
+msgid "This is a test notification from Really Simple SSL. You can safely dismiss this message."
+msgstr "この通知テストは Really Simple SSL が発信しています。無視しても問題ありません。"
+
+#: security/wordpress/vulnerabilities.php:284
+msgid "Site wide - Test Notification"
+msgstr "サイト全体 - テスト通知"
+
+#: security/wordpress/vulnerabilities.php:255
+msgid "You have %s %s %s. Please take appropriate action."
+msgstr "%s個の%sの%sあり。適切に対策しましょう。"
+
+#: security/wordpress/vulnerabilities.php:254
+#: security/wordpress/vulnerabilities.php:1419
+msgid "You have %s %s %s"
+msgstr "%s個の%sの%sあり"
+
+#: security/wordpress/vulnerabilities.php:247
+#: security/wordpress/vulnerabilities.php:1414 settings/build/688.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:38
+msgid "vulnerability"
+msgid_plural "vulnerabilities"
+msgstr[0] "脆弱性"
+
+#: security/hardening.php:16 security/wordpress/vulnerabilities.php:55
+msgid "critical"
+msgstr "重大"
+
+#: security/hardening.php:15 security/wordpress/vulnerabilities.php:54
+msgid "high-risk"
+msgstr "リスク高"
+
+#: security/hardening.php:14 security/wordpress/vulnerabilities.php:53
+msgid "medium-risk"
+msgstr "リスク中"
+
+#: security/hardening.php:13 security/wordpress/vulnerabilities.php:52
+msgid "low-risk"
+msgstr "リスク低"
+
+#: security/cron.php:70
+msgid "Every three hours"
+msgstr "3時間ごと"
+
+#: mailer/class-mail.php:72
+msgid "Email could not be sent. No message or subject set."
+msgstr "メールを送信できませんでした。題名か本文が設定されていません。"
+
+#: mailer/class-mail.php:29
+msgid "Why did I receive this email?"
+msgstr "なぜこのメールを受信していますか？"
+
+#: class-admin.php:2110
+msgid "The 301 redirect with .htaccess to HTTPS is now enabled."
+msgstr "HTTPS への、.htaccess による301転送が有効です。"
 
 #: settings/config/config.php:54
 msgid "Settings update: .htaccess redirect"
@@ -31,35 +297,35 @@ msgstr "通知の受信 !"
 msgid "Our vulnerability reporting is in beta. Signup for the beta to discover the new features!"
 msgstr "脆弱性報告はベータ版です。新機能を試すにはベータ版に登録してください !"
 
-#: settings/config/config.php:432
+#: settings/config/config.php:434
 msgid "Users trying to enter via /wp-admin or /wp-login.php will be redirected to this URL."
 msgstr "/wp-admin や /wp-login.php にアクセスしたユーザーは、この URL に転送されます。"
 
-#: settings/config/config.php:416
+#: settings/config/config.php:418
 msgid "Custom login URL"
 msgstr "独自のログイン URL"
 
-#: settings/config/config.php:415
+#: settings/config/config.php:417
 msgid "Example: If you want to change your login page from /wp-admin/ to /control/ answer: control"
 msgstr "例: ログインページを /wp-admin/ から /control/ に変更したいなら: control"
 
-#: settings/config/config.php:414
+#: settings/config/config.php:416
 msgid "Enter a custom login URL. This allows you to log in via this custom URL instead of /wp-admin or /wp-login.php"
 msgstr "独自のログイン URL を入力します。/wp-admin や /wp-login.php ではない指定の URL からログインするようにできます。"
 
-#: settings/config/config.php:403
+#: settings/config/config.php:405
 msgid "Your login URL has changed to {login_url} to prevent common bot attacks on standard login URLs. Learn more about this feature, common questions and measures to prevent any issues."
 msgstr "ログインURLが {login_url} に変更され、標準のログイン URL に対するボット攻撃を防ぎます。この機能、よくある質問、問題を防ぐための詳細はこちら。"
 
-#: settings/config/config.php:402
+#: settings/config/config.php:404
 msgid "You have changed your login URL"
 msgstr "ログイン URL を変更しました"
 
-#: settings/config/config.php:400
+#: settings/config/config.php:402
 msgid "Enable Custom login URL"
 msgstr "独自のログイン URL を使用"
 
-#: settings/config/config.php:399
+#: settings/config/config.php:401
 msgid "Allows you to enter a custom login URL."
 msgstr "独自のログイン URL の使用を許可します。"
 
@@ -91,71 +357,71 @@ msgstr ".htaccess の有効化は、問題発生時にブログへのアクセ�
 msgid "On Apache you can use a .htaccess redirect, which is usually faster, but may cause issues on some configurations. Read the instructions in the sidebar first."
 msgstr "Apacheでは、.htaccess による転送を行い通常より高速ですが、一部の構成では問題が発生することあります。最初にサイドバーの説明を読んでください。"
 
-#: settings/config/config.php:377
+#: settings/config/config.php:379
 msgid "From now on, the debug.log won’t be publicly accessible whenever wp-debugging is enabled. The debug log will be stored in a randomly named folder in /wp-content/. This prevents possible leakage of sensitive debugging information."
 msgstr "今後、wp-debugging を有効化しても、debug.log が広く公開されなくなります。デバッグのログは、/wp-content/ 内のランダムな名前のフォルダ内に保存されます。機密性のあるデバッグ情報の漏洩を防止できます。"
 
-#: settings/config/config.php:376
+#: settings/config/config.php:378
 msgid "Settings update: Debug.log file relocated"
 msgstr "設定の更新: Debug.log ファイルを再配置"
 
-#: settings/config/config.php:374
+#: settings/config/config.php:376
 msgid "A debug.log is publicly accessibile and has a standard location. This will change the location to a randomly named folder in /wp-content/"
 msgstr "debug.log は公開状態で、標準状態の場所に配置されています。このオプションにより /wp-content/ 内のランダムな名前のフォルダに場所を変更します。"
 
-#: settings/config/config.php:362 settings/config/config.php:363
+#: settings/config/config.php:364 settings/config/config.php:365
 msgid "This will permanently change your database prefixes and you can NOT rollback this feature. Please make sure you have a back-up."
 msgstr "データベースの接頭辞が永久に変更されます。以前のものへ戻すことはできません。必ずバックアップをとってください。"
 
-#: settings/config/config.php:359
+#: settings/config/config.php:361
 msgid "Security through obscurity. Your site is no longer using the default wp_ prefix for database tables. The process has been designed to only complete and replace the tables after all wp_ tables are successfully renamed. In the unlikely event that this does lead to database issues on your site, please navigate to our troubleshooting article."
 msgstr "難しくすることによる安全性。このサイトでは、データベース用のテーブルに使う標準の接頭辞 wp_  をやめました。この処理は、すべてのテーブルの wp_ が正常に改名できた時にのみテーブルを置換するようになっています。万が一、これが原因でデータベースに問題が起きたら、トラブルシューティングの記事をお読みください。"
 
-#: settings/config/config.php:358
+#: settings/config/config.php:360
 msgid "Settings update: Database prefix changed"
 msgstr "設定の更新 :データベースの接頭辞が変更されました"
 
-#: settings/config/config.php:348
+#: settings/config/config.php:350
 msgid "This will limit or fully disable HTTP requests that are not needed, but could be used with malicious intent."
 msgstr "必要ないけど悪意を持って使用できる HTTP リクエストを制限、または完全に無効化します。"
 
-#: settings/config/config.php:296
+#: settings/config/config.php:298
 msgid "If the username 'admin' currently exists, you can rename it here. Please note that you can no longer use this username, and should use the new username or an email address"
 msgstr "ユーザー名 admin が存在していれば、ここから名前を変更できます。このユーザー名はもう使用できなくなるので、新しいユーザー名またはメールアドレスを使用してください。"
 
-#: settings/config/config.php:292
+#: settings/config/config.php:294
 msgid "As a security precaution, the username ‘admin’ has been changed on %s. From now on, you can login with '%s' or an email address."
 msgstr "安全対策として、%s 上のユーザ名 admin は変更されました。今後、%s、またはメールアドレスでログインしてください。"
 
-#: settings/config/config.php:291
+#: settings/config/config.php:293
 msgid "Settings update: Username 'admin' renamed"
 msgstr "設定の更新: ユーザー名 admin は改名されました"
 
-#: settings/config/config.php:289
+#: settings/config/config.php:291
 msgid "Block the username 'admin'"
 msgstr "ユーザー名 admin を禁止"
 
-#: settings/config/config.php:258
+#: settings/config/config.php:260
 msgid "Prevent login feedback"
 msgstr "ログインの応答を隠す"
 
-#: settings/config/config.php:257
+#: settings/config/config.php:259
 msgid "By default, WordPress shows if a username or email address exists when a login fails. This will change it to generic feedback."
 msgstr "標準状態では、WordPress は、ログイン失敗時にユーザー名やメールアドレスが登録されているかを表示します。これを一般的なメッセージに変更します。"
 
-#: settings/config/config.php:157
+#: settings/config/config.php:159
 msgid "Dismiss all notifications"
 msgstr "すべての通知を無視する"
 
-#: settings/config/config.php:141
+#: settings/config/config.php:143
 msgid "Send test notification by email"
 msgstr "通知メールをテスト送信"
 
-#: settings/config/config.php:114
+#: settings/config/config.php:116
 msgid "Get notified of important changes, updates and settings. Recommended when using security features."
 msgstr "重要な更変更や更新、また設定を通知します。安全性に関する機能を使用する場合に推奨します。"
 
-#: settings/config/config.php:113
+#: settings/config/config.php:115
 msgid "Notifications by email"
 msgstr "メールで通知"
 
@@ -223,7 +489,7 @@ msgstr "%s の機能を有効にしました。この機能を安心して使う
 msgid "You are using the Really Simple SSL Shell Exec add on, but your current version needs to be updated."
 msgstr "Really Simple SSL Shell Exec 拡張機能を使用中ですが、このバージョンはアップデートが必要です。"
 
-#: settings/config/config.php:752
+#: settings/config/config.php:754
 msgid "(recommended)"
 msgstr "(推奨)"
 
@@ -251,7 +517,7 @@ msgstr "ユーザー admin の改名を有効化: 新しいユーザー名は、
 msgid "Could not rename folder!"
 msgstr "フォルダー名をできませんでした !"
 
-#: settings/config/config.php:306
+#: settings/config/config.php:308
 msgid "Choose new username to replace 'admin'"
 msgstr "admin から改名するユーザー名を入力"
 
@@ -267,7 +533,7 @@ msgstr "推奨するセキュリティヘッダー"
 msgid "Terms & Conditions."
 msgstr "利用規約"
 
-#: settings/config/config.php:140 settings/build/967.js:1
+#: settings/config/config.php:142 settings/build/967.js:1
 #: settings/src/Settings/Support.js:43
 msgid "Send"
 msgstr "送信"
@@ -275,12 +541,11 @@ msgstr "送信"
 #: class-admin.php:503 settings/build/688.js:1 settings/build/967.js:1
 #: settings/src/Dashboard/TaskElement.js:51
 #: settings/src/Dashboard/TaskElement.js:52
-#: settings/src/Settings/MixedContentScan.js:220
 #: settings/src/Settings/MixedContentScan/MixedContentScan.js:79
 msgid "View"
 msgstr "表示"
 
-#: settings/config/config.php:751
+#: settings/config/config.php:753
 msgid "disabled"
 msgstr "無効"
 
@@ -288,279 +553,276 @@ msgstr "無効"
 msgid "Complianz - Cookie Consent Management as it should be"
 msgstr "Complianz - 理想的なクッキーの同意管理"
 
-#: settings/config/config.php:1170
+#: settings/config/config.php:1172
 msgid "Source"
 msgstr "入力元 (Source)"
 
-#: settings/config/config.php:1165
+#: settings/config/config.php:1167
 msgid "Directive"
 msgstr "指示"
 
-#: settings/config/config.php:1127
+#: settings/config/config.php:1129
 msgid "Add additional domains which can embed your website, if needed. Comma seperated."
 msgstr "必要に応じて、このサイトを埋め込みできるドメインを追加してください。カンマ区切りにします。"
 
-#: settings/config/config.php:1118
+#: settings/config/config.php:1120
 msgid "Allow your domain to be embedded"
 msgstr "このドメインの埋め込みを許可"
 
-#: settings/config/config.php:1114
+#: settings/config/config.php:1116
 msgid "Disable (Default)"
 msgstr "無効 (標準)"
 
-#: settings/config/config.php:1099
+#: settings/config/config.php:1101
 msgid "The content security policy has many options, so we always recommend starting in ‘learning mode’ to see what files and scripts are loaded."
 msgstr "コンテンツセキュリティポリシーには多くのオプションがあるため、どのファイルとスクリプトが読み込まれるかを見るために、常に「学習モード」で開始することを推奨します。"
 
-#: settings/config/config.php:1098
+#: settings/config/config.php:1100
 msgid "About the Content Security Policy"
 msgstr "コンテンツセキュリティポリシーについて"
 
-#: settings/config/config.php:1092
+#: settings/config/config.php:1094
 msgid "Serve encrypted and authenticated responses"
 msgstr "暗号化また認証されたレスポンスを提供"
 
-#: settings/config/config.php:1083
+#: settings/config/config.php:1085
 msgid "Enable Permissions Policy"
 msgstr "アクセス許可のポリシーを有効化"
 
-#: settings/config/config.php:1010
+#: settings/config/config.php:1012
 msgid "Options"
 msgstr "設定"
 
-#: settings/config/config.php:1005
+#: settings/config/config.php:1007
 msgid "Feature"
 msgstr "機能"
 
-#: settings/config/config.php:1001
+#: settings/config/config.php:1003
 msgid "They might be misused if you don’t actively tell the browser to disable these features."
 msgstr "これらの機能を無効にするようブラウザに積極的に指示しないと、誤用されることがあります。"
 
-#: settings/config/config.php:1001
+#: settings/config/config.php:1003
 msgid "Browser features are plentiful, but most are not needed on your website."
 msgstr "ブラウザの機能は豊富ですが、ほとんどはこのサイトに不要です。"
 
-#: settings/config/config.php:1000
+#: settings/config/config.php:1002
 msgid "About the Permission Policy"
 msgstr "アクセス許可のポリシーについて"
 
-#: settings/config/config.php:994
+#: settings/config/config.php:996
 msgid "Self (Default)"
 msgstr "自己参照 (標準)"
 
-#: settings/config/config.php:994 settings/build/967.js:1
-#: settings/src/Settings/LearningMode.js:260
+#: settings/config/config.php:996 settings/build/967.js:1
 #: settings/src/Settings/LearningMode/LearningMode.js:202
 #: settings/src/Settings/LearningMode/LearningMode.js:208
 #: settings/src/Settings/PermissionsPolicy.js:126
 msgid "Disable"
 msgstr "無効"
 
-#: settings/config/config.php:994 settings/build/967.js:1
-#: settings/src/Settings/ChangeStatus.js:4
+#: settings/config/config.php:996 settings/build/967.js:1
 #: settings/src/Settings/LearningMode/ChangeStatus.js:7
 msgid "Allow"
 msgstr "許可"
 
-#: settings/config/config.php:979 settings/build/187.js:1
+#: settings/config/config.php:981 settings/build/187.js:1
 #: settings/build/967.js:1 settings/src/Modal/Modal.js:66
-#: settings/src/Settings/MixedContentScan.js:233
 #: settings/src/Settings/MixedContentScan/MixedContentScan.js:97
 msgid "Fix"
 msgstr "修正"
 
-#: settings/config/config.php:966 settings/config/config.php:1160
+#: settings/config/config.php:968 settings/config/config.php:1162
 msgid "Location"
 msgstr "場所"
 
-#: settings/config/config.php:717 settings/config/config.php:960
+#: settings/config/config.php:719 settings/config/config.php:962
 msgid "Description"
 msgstr "説明"
 
-#: settings/config/config.php:954
+#: settings/config/config.php:956
 msgid "Type"
 msgstr "種類"
 
-#: settings/config/config.php:950
+#: settings/config/config.php:952
 msgid "The extensive mixed content scan will list all current and future issues and provide a fix, or instructions to fix manually."
 msgstr "混合コンテンツの存在を広く検査し、現在また将来起こりそうな問題をすべて把握して、修正法や手動で修正する手順を提供します。"
 
-#: settings/config/config.php:949
+#: settings/config/config.php:951
 msgid "About the Mixed Content Scan"
 msgstr "混在コンテンツの検出について"
 
-#: settings/config/config.php:945
+#: settings/config/config.php:947
 msgid "Mixed content scan"
 msgstr "混在コンテンツの検出"
 
-#: settings/config/config.php:903
+#: settings/config/config.php:905
 msgid "One of the most powerful features, and therefore the most complex are the Cross-Origin headers that can isolate your website so any data leaks are minimized."
 msgstr "最も強力な機能の1つであるため最も複雑なのが Cross Origin ヘッダーで、サイトを分離してデータ漏えいを最小限にできます。"
 
-#: settings/config/config.php:902
+#: settings/config/config.php:904
 msgid "About Cross Origin Policies"
 msgstr "Cross Origin Policy について"
 
-#: settings/config/config.php:878
+#: settings/config/config.php:880
 msgid "Choose the max-age for HSTS"
 msgstr "HSTS の最長期間を選択"
 
-#: settings/config/config.php:876
+#: settings/config/config.php:878
 msgid "Two years (required for preload)"
 msgstr "2年 (プリロードが必要)"
 
-#: settings/config/config.php:875
+#: settings/config/config.php:877
 msgid "One year"
 msgstr "1年"
 
-#: settings/config/config.php:874
+#: settings/config/config.php:876
 msgid "One day (for testing only)"
 msgstr "1年 (テスト目的用)"
 
-#: settings/config/config.php:858
+#: settings/config/config.php:860
 msgid "Include subdomains"
 msgstr "サブドメインを含める"
 
-#: settings/config/config.php:836
+#: settings/config/config.php:838
 msgid "After enabling this feature, you can submit your site to %shstspreload.org%s"
 msgstr "この機能の有効化後、%shstspreload.org%s にこのサイトを送信できます"
 
-#: settings/config/config.php:835
+#: settings/config/config.php:837
 msgid "Include preload"
 msgstr "プリロードに含める"
 
-#: settings/config/config.php:820
+#: settings/config/config.php:822
 msgid "Leveraging your SSL certificate with HSTS is a staple for every website. Force your website over SSL, mitigating risks of malicious counterfeit websites in your name."
 msgstr "HSTS による SSL 証明書の活用は、すべてのウェブサイトに必需です。強制的にウェブサイトに SSL を経由させることで、悪意のある、あなた名義の偽サイトのリスクを軽減します。"
 
-#: settings/config/config.php:819
+#: settings/config/config.php:821
 msgid "About HTTP Strict Transport Security"
 msgstr "HTTP Strict Transport Security について"
 
-#: settings/config/config.php:804
+#: settings/config/config.php:806
 msgid "Referrer Policy"
 msgstr "Referrer Policy"
 
-#: settings/config/config.php:795
+#: settings/config/config.php:797
 msgid "recommended"
 msgstr "推奨"
 
-#: settings/config/config.php:784
+#: settings/config/config.php:786
 msgid "X-Frame options"
 msgstr "X-Frame options"
 
-#: settings/config/config.php:780 settings/config/config.php:794
-#: settings/config/config.php:894 settings/config/config.php:916
-#: settings/config/config.php:931
+#: settings/config/config.php:782 settings/config/config.php:796
+#: settings/config/config.php:896 settings/config/config.php:918
+#: settings/config/config.php:933
 msgid "Off"
 msgstr "オフ"
 
-#: settings/config/config.php:770
+#: settings/config/config.php:772
 msgid "X-Content-Type options"
 msgstr "X-Content-Type options"
 
-#: settings/config/config.php:762
+#: settings/config/config.php:764
 msgid "These security headers are the fundamental security measures to protect your website visitors while visiting your website."
 msgstr "これらのセキュリティヘッダーは、サイトの訪問者を保護する基本的なセキュリティ対策です。"
 
-#: settings/config/config.php:761
+#: settings/config/config.php:763
 msgid "About Recommended Security Headers"
 msgstr "推奨するセキュリティヘッダー について"
 
-#: settings/config/config.php:749
+#: settings/config/config.php:751
 msgid "X-XSS-Protection"
 msgstr "X-XSS-Protection"
 
-#: settings/config/config.php:499
+#: settings/config/config.php:501
 msgid "Delete"
 msgstr "削除"
 
-#: settings/config/config.php:494 settings/config/config.php:676
-#: settings/config/config.php:705 settings/config/config.php:1175
+#: settings/config/config.php:496 settings/config/config.php:678
+#: settings/config/config.php:707 settings/config/config.php:1177
 msgid "Action"
 msgstr "操作"
 
-#: settings/config/config.php:489
+#: settings/config/config.php:491
 msgid "Count"
 msgstr "数"
 
-#: settings/config/config.php:484
+#: settings/config/config.php:486
 msgid "Login status"
 msgstr "ログイン状態"
 
-#: settings/config/config.php:479
+#: settings/config/config.php:481
 msgid "Method"
 msgstr "方法"
 
-#: settings/config/config.php:389
+#: settings/config/config.php:391
 msgid "Disable application passwords"
 msgstr "アプリケーションパスワードを無効化"
 
-#: settings/config/config.php:380
+#: settings/config/config.php:382
 msgid "Change debug.log file location"
 msgstr "debug.log ファイルの場所を変更"
 
-#: settings/config/config.php:365
+#: settings/config/config.php:367
 msgid "Rename and randomize your database prefix"
 msgstr "データベース接頭辞のランダム化"
 
-#: settings/config/config.php:349
+#: settings/config/config.php:351
 msgid "Disable HTTP methods"
 msgstr "HTTP メソッドを無効化"
 
-#: settings/config/config.php:339
+#: settings/config/config.php:341
 msgid "Block user registrations when login and display name are the same"
 msgstr "ログインと表示名が同じユーザーの登録を禁止"
 
-#: settings/config/config.php:330
+#: settings/config/config.php:332
 msgid "Disable XML-RPC"
 msgstr "XML-RPC を無効化"
 
-#: settings/config/config.php:278
+#: settings/config/config.php:280
 msgid "Disable user enumeration"
 msgstr "ユーザー列挙を無効化"
 
-#: settings/config/config.php:268
+#: settings/config/config.php:270
 msgid "Disable directory browsing"
 msgstr "ディレクトリ参照を無効化"
 
-#: settings/config/config.php:247
+#: settings/config/config.php:249
 msgid "Hide your WordPress version"
 msgstr "WordPress のバージョンを隠す"
 
-#: settings/config/config.php:237
+#: settings/config/config.php:239
 msgid "Prevent code execution in the public 'Uploads' folder"
 msgstr "共用の uploads フォルダー内でのコード実行を防止"
 
-#: settings/config/config.php:227
+#: settings/config/config.php:229
 msgid "Disable the built-in file editors"
 msgstr "組み込みのファイルエディターを無効化"
 
-#: settings/config/config.php:218
+#: settings/config/config.php:220
 msgid "Hardening features limit the possibility of potential weaknesses and vulnerabilities which can be misused."
 msgstr "堅牢化の機能は、悪用可能な潜在的な弱点や脆弱性を制限します。"
 
-#: settings/config/config.php:217
+#: settings/config/config.php:219
 msgid "About Hardening"
 msgstr "堅牢化について"
 
-#: settings/config/config.php:211
+#: settings/config/config.php:213
 msgid "Disable \"anyone can register\""
 msgstr "「誰でも登録可能」を無効化"
 
-#: settings/config/config.php:202
+#: settings/config/config.php:204
 msgid "Premium support"
 msgstr "プレミアムサポート"
 
-#: settings/config/config.php:177
+#: settings/config/config.php:179
 msgid "Delete all data on plugin deletion"
 msgstr "プラグイン削除時にすべてのデータを削除"
 
-#: settings/config/config.php:168
+#: settings/config/config.php:170
 msgid "System status"
 msgstr "システムの状態"
 
-#: settings/config/config.php:104
+#: settings/config/config.php:105
 msgid "Mixed content fixer - back-end"
 msgstr "混在コンテンツ修正機能 - バックエンド"
 
@@ -613,7 +875,7 @@ msgstr "安全でないリクエストを %sReally Simple SSL Pro%s で管理"
 msgid "Get the Permissions Policy with %sReally Simple SSL Pro%s"
 msgstr "アクセス許可のポリシーを %sReally Simple SSL Pro%s で管理"
 
-#: settings/config/config.php:995
+#: settings/config/config.php:997
 msgid "Permissions Policy"
 msgstr "アクセス許可のポリシー"
 
@@ -621,7 +883,7 @@ msgstr "アクセス許可のポリシー"
 msgid "Get HTTP Strict Transport Security with %sReally Simple SSL Pro%s"
 msgstr "HTTP Strict Transport Security を %sReally Simple SSL Pro%s で利用"
 
-#: settings/config/config.php:813 settings/config/menu.php:150
+#: settings/config/config.php:815 settings/config/menu.php:150
 msgid "HTTP Strict Transport Security"
 msgstr "HTTP Strict Transport Security"
 
@@ -641,7 +903,7 @@ msgstr "混在コンテンツの検出"
 msgid "Get XML-RPC with %sReally Simple SSL Pro%s"
 msgstr "XML-RPC を %sReally Simple SSL Pro%s で利用"
 
-#: settings/config/config.php:468 settings/config/menu.php:67
+#: settings/config/config.php:470 settings/config/menu.php:67
 msgid "XML-RPC"
 msgstr "XML-RPC"
 
@@ -899,9 +1161,8 @@ msgstr "%s 中の混在コンテンツ"
 #: placeholders/class-placeholder.php:205
 #: placeholders/class-placeholder.php:222
 #: placeholders/class-placeholder.php:248
-#: placeholders/class-placeholder.php:273 settings/config/config.php:973
+#: placeholders/class-placeholder.php:273 settings/config/config.php:975
 #: settings/build/688.js:1 settings/build/885.js:1 settings/build/967.js:1
-#: settings/src/Settings/MixedContentScan.js:227
 #: settings/src/Settings/MixedContentScan/MixedContentScan.js:89
 #: settings/src/Settings/RiskConfiguration/RiskData.js:111
 msgid "Details"
@@ -913,9 +1174,7 @@ msgstr "%s の PHP ファイル内にある混在コンテンツ"
 
 #: onboarding/class-onboarding.php:327 onboarding/config.php:138
 #: settings/config/menu.php:268 settings/build/688.js:1 settings/build/967.js:1
-#: settings/src/Dashboard/OtherPlugins.js:74
 #: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:74
-#: settings/src/Settings/License.js:134
 #: settings/src/Settings/License/License.js:71
 msgid "Activate"
 msgstr "有効化"
@@ -1021,32 +1280,32 @@ msgstr "テストが見つかりません。"
 msgid "Permission denied."
 msgstr "アクセスが拒否されました。"
 
-#: class-site-health.php:118
+#: class-site-health.php:113
 msgid "Read more about security concerns with debug display enabled"
 msgstr "デバッグ表示を有効にしている場合のセキュリティ上の懸念の詳細を読む"
 
-#: class-site-health.php:112
+#: class-site-health.php:107
 msgid "The value, WP_DEBUG_DISPLAY, has either been enabled by WP_DEBUG or added to your configuration file. This will make errors display on the front end of your site."
 msgstr "値 WP_DEBUG_DISPLAY が、サイトの構成ファイルに追加されたか、WP_DEBUG により有効化されています。これにより、エラーがサイトの画面上に表示されます。"
 
-#: class-site-health.php:104
+#: class-site-health.php:99
 msgid "Your site is set to display errors on your website"
 msgstr "このサイトは、エラー表示を行う設定になっています"
 
 #. translators: Accessibility text.
-#: class-site-health.php:90 class-site-health.php:120
+#: class-site-health.php:85 class-site-health.php:115
 msgid "(opens in a new tab)"
 msgstr "(新しいタブで開く)"
 
-#: class-site-health.php:88
+#: class-site-health.php:83
 msgid "Remove from public location with Really Simple SSL"
 msgstr "Really Simple SSL を使い公開された場所から除去"
 
-#: class-site-health.php:82
+#: class-site-health.php:77
 msgid "The value, WP_DEBUG_LOG, has been added to this website’s configuration file. This means any errors on the site will be written to a file which is potentially available to all users."
 msgstr "値 WP_DEBUG_LOG が、サイトの構成ファイルに追加されています。サイト上のエラーは、すべてのユーザーがアクセスできるファイルに書き込まれます。"
 
-#: class-site-health.php:74
+#: class-site-health.php:69
 msgid "Your site is set to log errors to a potentially public file"
 msgstr "このサイトは、誰もがアクセスできるファイルにエラー記録しています"
 
@@ -1079,7 +1338,7 @@ msgid "To safely enable SSL on your server configuration, you should add the fol
 msgstr "サーバー設定上で、安全に SSL を有効化するには、次のコード行を wp-config.php に追加する必要があります。"
 
 #: class-admin.php:1829 settings/build/688.js:1 settings/build/772.js:1
-#: settings/build/829.js:1 settings/src/Dashboard/OtherPlugins.js:90
+#: settings/build/829.js:1
 #: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:21
 #: settings/src/Menu/Menu.js:27 settings/src/Settings/SettingsGroup.js:109
 msgid "Upgrade"
@@ -1274,12 +1533,13 @@ msgstr "ホスティング会社による既知の制限は検出されていま
 msgid "The wp-config.php file is not writable, and needs to be edited. Please set this file to writable."
 msgstr "ファイル wp-config.php が書き込み可能でなく、また編集が必要です。このファイルを書き込み可能に設定してください。"
 
-#: class-site-health.php:156
+#: class-site-health.php:151
 msgid "Your website does not send all recommended security headers."
 msgstr "このウェブサイトは、すべての推奨するセキュリティヘッダーを送信していません。"
 
-#: class-site-health.php:77 class-site-health.php:107 class-site-health.php:138
-#: class-site-health.php:178
+#: class-site-health.php:72 class-site-health.php:102 class-site-health.php:133
+#: class-site-health.php:173 security/wordpress/vulnerabilities.php:182
+#: security/wordpress/vulnerabilities.php:202
 msgid "Security"
 msgstr "セキュリティ"
 
@@ -1351,7 +1611,7 @@ msgstr "発注 ID が一致しません。発注を再生成します。"
 msgid "Really Simple SSL Pro is not up to date. Update Really Simple SSL Pro to ensure compatibility."
 msgstr "Really Simple SSL Pro は最新版ではありません。互換性を保つため Really Simple SSL Pro を更新してください。"
 
-#: settings/config/config.php:167 settings/build/967.js:1
+#: settings/config/config.php:169 settings/build/967.js:1
 #: settings/src/LetsEncrypt/Installation.js:96
 #: settings/src/LetsEncrypt/Installation.js:101
 #: settings/src/LetsEncrypt/Installation.js:105
@@ -1596,7 +1856,7 @@ msgid "Terms and Conditions"
 msgstr "利用規約"
 
 #: lets-encrypt/config/fields.php:94 lets-encrypt/config/fields.php:97
-#: settings/config/config.php:123
+#: settings/config/config.php:125
 msgid "Email address"
 msgstr "メールアドレス"
 
@@ -2131,23 +2391,23 @@ msgstr "最近の WP エンジンの更新に基づいて、自動で設定を�
 msgid "The Really Simple SSL plugin folder in the /wp-content/plugins/ directory has been renamed to %s. This might cause issues when deactivating, or with premium add-ons. To fix this you can rename the Really Simple SSL folder back to the default %s."
 msgstr "wp-content/plugins/ ディレクトリ内の Really Simple SSL プラグインのフォルダ名が %s に変更されました。このことで無効化したり、プレミアム拡張機能を使用する際に問題が発生する可能性があります。修正するには、Really Simple SSL フォルダ名を標準名の %s に戻してください。"
 
-#: class-site-health.php:155
+#: class-site-health.php:150
 msgid "Not all recommended security headers are installed"
 msgstr "推奨するセキュリティヘッダーがインストール済みではありません"
 
-#: class-site-health.php:143
+#: class-site-health.php:138
 msgid "The recommended security headers are detected on your site."
 msgstr "推奨するセキュリティヘッダーが検出されています。"
 
-#: class-site-health.php:135
+#: class-site-health.php:130
 msgid "Recommended security headers installed"
 msgstr "推奨するセキュリティヘッダーはインストール済み"
 
-#: class-site-health.php:36
+#: class-site-health.php:34
 msgid "Security Headers Test"
 msgstr "セキュリティー用ヘッダーのテスト"
 
-#: class-site-health.php:31
+#: class-site-health.php:29
 msgid "SSL Status Test"
 msgstr "SSL 状態のテスト"
 
@@ -2155,31 +2415,31 @@ msgstr "SSL 状態のテスト"
 msgid "No SSL detected"
 msgstr "SSL 検出無し"
 
-#: class-site-health.php:160
+#: class-site-health.php:155
 msgid "Learn more about security headers"
 msgstr "セキュリティヘッダーについての詳細"
 
-#: class-site-health.php:222
+#: class-site-health.php:217
 msgid "Enable 301 redirect"
 msgstr "301転送を有効化"
 
-#: class-site-health.php:217
+#: class-site-health.php:212
 msgid "To ensure all traffic passes through SSL, please enable a 301 redirect."
 msgstr "すべてのアクセスを SSL に渡すには、301転送を有効にしてください。"
 
-#: class-site-health.php:214
+#: class-site-health.php:209
 msgid "No 301 redirect to SSL enabled."
 msgstr "SSL への301転送が有効ではありません"
 
-#: class-site-health.php:208
+#: class-site-health.php:203
 msgid "Really Simple SSL is installed, but no valid SSL certificate is detected."
 msgstr "Really Simple SSL はインストール済みですが、有効な SSL 証明書が検出できません。"
 
-#: class-site-health.php:195
+#: class-site-health.php:190
 msgid "Really Simple SSL detected an SSL certificate, but has not been configured to enforce SSL."
 msgstr "Really Simple SSL は SSL 証明書を検出しましたが、SSL 利用を強化するように設定されていません。"
 
-#: class-site-health.php:192
+#: class-site-health.php:187
 msgid "SSL is not enabled."
 msgstr "SSL は有効化されていません。"
 
@@ -2212,7 +2472,6 @@ msgid "Open"
 msgstr "作業待ち"
 
 #: class-admin.php:1827 settings/build/967.js:1
-#: settings/src/Settings/MixedContentScan.js:198
 #: settings/src/Settings/MixedContentScan/MixedContentScan.js:57
 msgid "Warning"
 msgstr "警告"
@@ -2222,7 +2481,6 @@ msgid "Completed"
 msgstr "完了"
 
 #: upgrade/upgrade-to-pro.php:190 settings/build/688.js:1
-#: settings/src/Dashboard/OtherPlugins.js:93
 #: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:24
 msgid "Installed"
 msgstr "インストール済み"
@@ -2230,7 +2488,6 @@ msgstr "インストール済み"
 #: onboarding/class-onboarding.php:317 onboarding/config.php:129
 #: upgrade/upgrade-to-pro.php:146 upgrade/upgrade-to-pro.php:159
 #: upgrade/upgrade-to-pro.php:176 settings/build/688.js:1
-#: settings/src/Dashboard/OtherPlugins.js:73
 #: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:73
 msgid "Install"
 msgstr "インストール"
@@ -2288,9 +2545,8 @@ msgstr "サポート掲示板"
 msgid "SSL is enabled networkwide."
 msgstr "SSL はネットワーク全体で有効化済みです。"
 
-#: class-site-health.php:201 settings/build/688.js:1 settings/build/885.js:1
+#: class-site-health.php:196 settings/build/688.js:1 settings/build/885.js:1
 #: settings/build/967.js:1 settings/src/Dashboard/Progress/ProgressFooter.js:24
-#: settings/src/Dashboard/ProgressFooter.js:42
 #: settings/src/Onboarding/Onboarding.js:209
 msgid "Activate SSL"
 msgstr "SSL を有効化"
@@ -2316,9 +2572,8 @@ msgstr[0] "まだ%s件の作業があります。"
 msgid "SSL is activated on your site."
 msgstr "SSL はサイト上で有効化済みです。"
 
-#: settings/config/config.php:733 settings/build/688.js:1
-#: settings/build/967.js:1 settings/src/Dashboard/SslLabs.js:409
-#: settings/src/Dashboard/SslLabs/SslLabs.js:319
+#: settings/config/config.php:735 settings/build/688.js:1
+#: settings/build/967.js:1 settings/src/Dashboard/SslLabs/SslLabs.js:319
 #: settings/src/LetsEncrypt/DnsVerification.js:91
 msgid "Read more"
 msgstr "詳細"
@@ -2347,19 +2602,19 @@ msgstr "cURL エラーが原因で混在コンテンツ修正機能が検出で�
 msgid "Error occurred when retrieving the webpage."
 msgstr "ページの取得中にエラーが発生しました。"
 
-#: class-site-health.php:229
+#: class-site-health.php:224
 msgid "The 301 .htaccess redirect is the fastest and most reliable redirect option."
 msgstr "301 .htaccess 転送は、最速で最も信頼性の高い転送の選択肢です。"
 
-#: class-site-health.php:226
+#: class-site-health.php:221
 msgid "301 .htaccess redirect is not enabled."
 msgstr "301 .htaccess 転送が無効です。"
 
-#: class-site-health.php:183
+#: class-site-health.php:178
 msgid "You have set a 301 redirect to SSL. This is important for SEO purposes"
 msgstr "SSL へと301転送するよう設定しました。これは SEO 対策として重要です"
 
-#: class-site-health.php:175
+#: class-site-health.php:170
 msgid "301 SSL redirect enabled"
 msgstr "301 SSL 転送は有効です"
 
@@ -2458,7 +2713,7 @@ msgstr "また、プロ版の自動スキャンにこれを処理させ、プレ
 msgid "You may need to login in again."
 msgstr "再度ログインしてください。"
 
-#: class-site-health.php:234
+#: class-site-health.php:229
 msgid "Enable 301 .htaccess redirect"
 msgstr "301 .htaccess 転送を有効化"
 
@@ -2531,13 +2786,6 @@ msgstr "%s は singleton クラスであり、2つ目のインスタンスを作
 msgid "Mixed content fixer was successfully detected on the front-end."
 msgstr "フロントエンドの混在コンテンツ修正機能が正常に検出されました。"
 
-#: settings/templates/tips-tricks-footer.php:3 settings/build/688.js:1
-#: settings/build/index.js:1
-#: settings/src/Dashboard/TipsTricks/TipsTricksFooter.js:8
-#: settings/src/Header.js:29
-msgid "Documentation"
-msgstr "解説文書"
-
 #. Plugin URI of the plugin
 msgid "https://really-simple-ssl.com"
 msgstr "https://really-simple-ssl.com"
@@ -2546,7 +2794,7 @@ msgstr "https://really-simple-ssl.com"
 msgid "Really Simple SSL"
 msgstr "Really Simple SSL"
 
-#: settings/config/config.php:185
+#: settings/config/config.php:187
 msgid "Stop editing the .htaccess file"
 msgstr ".htaccess ファイルの編集を中止"
 
@@ -2554,14 +2802,13 @@ msgstr ".htaccess ファイルの編集を中止"
 msgid "An SSL certificate was detected on your site."
 msgstr "サイト上で SSL 証明書を検出しました。"
 
-#: class-site-health.php:205
+#: class-site-health.php:200
 msgid "No SSL detected."
 msgstr "SSL の検出なし"
 
 #: class-admin.php:1766 class-admin.php:2757 class-admin.php:2760
 #: class-multisite.php:87 class-multisite.php:220 settings/config/menu.php:18
 #: settings/build/688.js:1
-#: settings/src/Dashboard/SecurityFeaturesBlock/SecurityFeaturesFooter.js:4
 #: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:233
 #: settings/src/Dashboard/Vulnerabilities/VulnerabilitiesFooter.js:24
 msgid "Settings"

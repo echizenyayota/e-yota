@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-Spam: Spam Protection - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-09 03:52:19+0000\n"
+"PO-Revision-Date: 2023-05-25 04:22:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,9 +11,77 @@ msgstr ""
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Akismet Anti-Spam: Spam Protection - Stable (latest release)\n"
 
+#. Author of the plugin
+msgid "Automattic - Anti Spam Team"
+msgstr "Automattic - Anti Spam Team"
+
+#. Plugin Name of the plugin
+msgid "Akismet Anti-Spam: Spam Protection"
+msgstr "Akismet Anti-Spam: Spam Protection"
+
+#: views/config.php:65
+msgid "Akismet is active and ready to stop spam. Your site&#8217;s spam statistics will be displayed here."
+msgstr "Akismet は有効で、スパムを止める準備ができています。 サイトのスパム統計はこちらに表示されます。"
+
+#: views/notice.php:32
+msgid "WP-Cron has been disabled using the DISABLE_WP_CRON constant. Comment rechecks may not work properly."
+msgstr "「DISABLE_WP_CRON」定数を使用して WP-Cron が無効化されました。コメントの再確認が正常に動作しない可能性があります。"
+
+#. translators: %1$s is a human-readable time difference, like "3 hours ago",
+#. and %2$s is an already-translated phrase describing how a comment's status
+#. changed, like "This comment was reported as spam."
+#: class.akismet-admin.php:689
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+#: views/get.php:11
+msgid "(opens in a new tab)"
+msgstr "(新しいタブで開く)"
+
+#. translators: The placeholder is the name of a subscription level, like
+#. "Plus" or "Enterprise" .
+#: views/notice.php:248
+msgid "Upgrade to %s"
+msgstr "%s へのアップグレード"
+
+#: views/notice.php:243
+msgid "Upgrade your Subscription Level"
+msgstr "サブスクリプションレベルのアップグレード"
+
+#: views/notice.php:204 views/notice.php:212 views/notice.php:220
+#: views/notice.php:229
+msgid "Learn more about usage limits."
+msgstr "利用制限について詳しくはこちら。"
+
+#. translators: The first placeholder is a date, the second is a (formatted)
+#. number, the third is another formatted number.
+#: views/notice.php:196
+msgid "Since %1$s, your account made %2$s API calls, compared to your plan&#8217;s limit of %3$s."
+msgstr "%1$s 以降、このアカウントはプランの制限 %3$s を超えて %2$s API 呼び出しを行いました。"
+
+#: views/notice.php:226
+msgid "Your Akismet usage has been over your plan&#8217;s limit for three consecutive months. We have restricted your account for the rest of the month. Upgrade your plan so Akismet can continue blocking spam."
+msgstr "Akismet の使用量が3か月連続でプラン上限を超えました。今月末までアカウント利用に制限をかけました。Akismet がスパムをブロックし続けることができるように、プランをアップグレードしてください。"
+
+#: views/notice.php:217
+msgid "Your Akismet usage is nearing your plan&#8217;s limit for the third consecutive month. We will restrict your account after you reach the limit. Upgrade your plan so Akismet can continue blocking spam."
+msgstr "Akismet の使用量が3か月連続でプラン上限に近づいています。上限に達した場合はアカウントを制限します。 Akismet がスパムをブロックし続けることができるように、プランをアップグレードしてください。"
+
+#: views/notice.php:209
+msgid "Your Akismet usage has been over your plan&#8217;s limit for two consecutive months. Next month, we will restrict your account after you reach the limit. Please consider upgrading your plan."
+msgstr "Akismet の使用量が2か月連続でプラン上限を超えました。来月また上限に達した場合はアカウントを制限します。 Akismet がスパムをブロックし続けることができるように、プランのアップグレードを検討してみてください。"
+
 #: views/notice.php:183
 msgid "Your account has been restricted"
 msgstr "あなたのアカウントには制限がかかっています"
+
+#: views/notice.php:179
+msgid "Your Akismet account usage is approaching your plan&#8217;s limit"
+msgstr "Akismet アカウントの使用量がプランの上限に近づいています"
+
+#: views/notice.php:176
+msgid "Your Akismet account usage is over your plan&#8217;s limit"
+msgstr "Akismet アカウントの使用量がプランの制限を超えています"
 
 #. translators: The placeholder is a URL.
 #: views/notice.php:128
@@ -70,6 +138,10 @@ msgstr "Akismet アカウントを設定して、このサイトでスパムフ�
 #: class.akismet-admin.php:1140
 msgid "Akismet could not recheck your comments for spam."
 msgstr "Akismet はコメントスパムを再チェックできませんでした。"
+
+#: class.akismet-admin.php:439
+msgid "You don&#8217;t have permission to do that."
+msgstr "この操作を行う権限がありません。"
 
 #: class.akismet-cli.php:165
 msgid "Stats response could not be decoded."
@@ -160,6 +232,10 @@ msgstr "手動構成"
 #: class.akismet-admin.php:236
 msgid "On this page, you are able to update your Akismet settings and view spam stats."
 msgstr "このページで、Akismet の設定を更新し、スパム統計情報を表示することができます。"
+
+#. Description of the plugin
+msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. Akismet anti spam keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key."
+msgstr "何百万もの利用実績がある Akismet は<strong>あなたのブログをスパムから保護する</strong>最良の方法といえるでしょう。あなたが眠りについている時間でさえ、Akismet は常時サイトを守り続けます。始めるのは簡単。Akismet プラグインを有効化したら設定ページで API キーを設定するだけです。"
 
 #: class.akismet-admin.php:114 class.akismet-admin.php:117
 msgid "Akismet Anti-Spam"
