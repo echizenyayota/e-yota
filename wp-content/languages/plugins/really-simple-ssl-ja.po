@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-25 10:51:07+0000\n"
+"PO-Revision-Date: 2023-06-01 07:50:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,31 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
+
+#: security/wordpress/vulnerabilities.php:213
+msgid "View vulnerabilities"
+msgstr "脆弱性を表示"
+
+#: security/wordpress/vulnerabilities.php:208
+msgid "Please check the vulnerabilities overview for more information and take appropriate action."
+msgstr "詳細から脆弱性の概要を確認し、適切に対策しましょう。"
+
+#: security/wordpress/vulnerabilities.php:207
+msgid "%s vulnerability has been detected."
+msgid_plural "%s vulnerabilities have been detected."
+msgstr[0] "%s個の脆弱性が検出されました。"
+
+#: security/wordpress/vulnerabilities.php:199
+msgid "Vulnerabilities detected"
+msgstr "脆弱性の検出あり"
+
+#: security/wordpress/vulnerabilities.php:187
+msgid "No known vulnerabilities detected."
+msgstr "既知の脆弱性の検出なし。"
+
+#: security/wordpress/vulnerabilities.php:179
+msgid "No known vulnerabilities detected"
+msgstr "既知の脆弱性の検出なし"
 
 #: settings/config/config.php:106
 msgid "Only enable this if you experience mixed content in the admin environment of your WordPress website."
