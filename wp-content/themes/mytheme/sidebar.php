@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>大富豪同心3 2023年6月23日放送開始</h2>
+  <h2>朝ドラ再放送ひらり</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
