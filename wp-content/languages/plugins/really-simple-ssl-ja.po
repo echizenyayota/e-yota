@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-06-15 08:39:48+0000\n"
+"PO-Revision-Date: 2023-07-20 13:20:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
+
+#: security/wordpress/vulnerabilities.php:271
+msgid "Please take appropriate action."
+msgstr "対策してください。"
 
 #: security/notices.php:221
 msgid "Really Simple SSL has a new feature! Introducing Vulnerability Detection, enable it now."
@@ -1212,6 +1216,10 @@ msgstr "Really Simple SSL の推奨する堅牢化機能を有効化"
 msgid "SSL has been activated"
 msgstr "SSL が有効になりました"
 
+#: settings/settings.php:498
+msgid "Complianz - Consent Management as it should be"
+msgstr "Complianz - 理想的なクッキーの同意管理"
+
 #: onboarding/class-onboarding.php:182
 msgid "Now have a look at our new features."
 msgstr "新機能を紹介します。"
@@ -1422,6 +1430,10 @@ msgstr "Really Simple SSL は、HTTPS で動作するよう、サイトの構成
 #: upgrade/upgrade-to-pro.php:174
 msgid "One click SSL optimization"
 msgstr "ワンクリックで SSL 最適化"
+
+#: upgrade/upgrade-to-pro.php:161
+msgid "Configure your Cookie Notice, Consent Management and Cookie Policy with our Wizard and Cookie Scan. Supports GDPR, DSGVO, TTDSG, LGPD, POPIA, RGPD, CCPA and PIPEDA."
+msgstr "私たちによるウィザードとクッキー検査は、クッキーの通知、クッキーへの同意とクッキーの方針を設定します。GDPR、DSGVO、TTDSG、LGPD、POPIA、RGPD、CCPA また PIPEDAに対応します。"
 
 #: upgrade/upgrade-to-pro.php:157
 msgid "GDPR/CCPA Privacy Suite"
@@ -2393,6 +2405,10 @@ msgstr "wp-content/plugins/ ディレクトリ内の Really Simple SSL プラグ
 #: class-site-health.php:150
 msgid "Not all recommended security headers are installed"
 msgstr "推奨するセキュリティヘッダーがインストール済みではありません"
+
+#: onboarding/class-onboarding.php:260
+msgid "Consent Management as it should be"
+msgstr "理想的なクッキーの同意管理"
 
 #: class-site-health.php:138
 msgid "The recommended security headers are detected on your site."
