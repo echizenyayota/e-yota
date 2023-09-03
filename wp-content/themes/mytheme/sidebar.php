@@ -28,7 +28,7 @@
 
 
 <?php
-  $the_slug = 'hirari';
+  $the_slug = 'astridandraphael';
   $myposts = get_posts( array(
     'category_name' => $the_slug,
     'post_type' => 'post',
@@ -87,7 +87,7 @@
 
 <!-- 人気の記事 -->
 <aside class="mymenu mymenu-thumb">
-  <h2>朝ドラ再放送ひらり</h2>
+  <h2>アストリッドとラファエル</h2>
   <ul>
     <?php foreach($myposts as $post): setup_postdata($post); ?>
       <li>
