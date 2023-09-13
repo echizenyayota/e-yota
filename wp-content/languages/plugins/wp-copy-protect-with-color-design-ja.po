@@ -1,0 +1,165 @@
+# Translation of Plugins - WP Content Copy Protection with Color Design - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WP Content Copy Protection with Color Design - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-31 03:55:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WP Content Copy Protection with Color Design - Stable (latest release)\n"
+
+#: manage/admin.php:180
+msgid "Disable F12 to open the console window and Ctr+U"
+msgstr "コンソールウィンドウの表示をF12で無効化とCtr+U"
+
+#: manage/admin.php:162
+msgid "Give a white blank page when the browser javascript is off to prevent your content"
+msgstr "ブラウザのjavascriptがオフの時にはすべての内容を非表示にします。"
+
+#: manage/admin.php:156
+msgid "Protect when Javascript is off"
+msgstr "Javascriptがオフの時に保護"
+
+#: manage/admin.php:186
+msgid "\"Not allowed\" message on print preview page<br>(CTRL + P)"
+msgstr "プリントプレビューページに保護メッセージ<br>(CTRL + P)"
+
+#: wp_copy_design.php:483
+msgid "You cannot print preview this page"
+msgstr "このページの印刷は保護されています"
+
+#: manage/admin.php:149
+msgid "Selecting Text"
+msgstr "テキストを選択"
+
+#: wp_copy_design.php:115
+msgid "This plugin will display how many times post and page viewed. It shows total view of access per day, week, month, and all days. Those view are showed with titles and permalink so that you can keep track of each pages in details."
+msgstr "このプラグインは投稿記事とページのアクセス数を表示します。日、週、月、全日程に対応しています。また、タイトルやパーマリンクと合わせて表示します。"
+
+#: wp_copy_design.php:98 wp_copy_design.php:109
+msgid "You can install \"Post Views Stats Counter\""
+msgstr "「Post Views Stats Counter」をインストール"
+
+#: wp_copy_design.php:94 wp_copy_design.php:105
+msgid "Would you like to install another recommended SEO plugin? :Free"
+msgstr "SEOに関するオススメプラグインをインストールしますか？無料"
+
+#: manage/admin.php:275
+msgid "Additional plugins are available for free."
+msgstr "追加のプラグインを無料でご利用いただけます。"
+
+#: manage/admin.php:270 manage/admin.php:272
+msgid "Post Views Stats Counter"
+msgstr "Post Views Stats Counter"
+
+#: manage/admin.php:267
+msgid "Another recommended SEO plugin:"
+msgstr "他のオススメＳＥＯプラグイン："
+
+#: manage/admin.php:228
+msgid "Protect only specified posts"
+msgstr "指定した投稿のみを保護"
+
+#: manage/admin.php:217 manage/admin.php:231
+msgid "Input post ID. ex: 1,2,3,4"
+msgstr "投稿IDを記入 例: 1,2,3,4"
+
+#: manage/admin.php:214
+msgid "Exclude posts"
+msgstr "特定の投稿を省く"
+
+#: manage/admin.php:200
+msgid "Exclude admin user"
+msgstr "管理者を除く"
+
+#: manage/admin.php:221
+msgid "Protect only specified pages"
+msgstr "指定したページのみを保護"
+
+#: manage/admin.php:161 manage/admin.php:179
+msgid "Pro version from here!"
+msgstr "プロバージョンはこちらから！"
+
+#: manage/admin.php:174
+msgid "Disable F12 for Windows"
+msgstr "WindowsでF12を無効"
+
+#. Author of the plugin
+msgid "Kazuki Yanamoto"
+msgstr "Kazuki Yanamoto"
+
+#. Description of the plugin
+msgid "This plugin wll protect the posts content from copying by disable right click and disable selecting text. You can exclude pages and posts. It also keeps from dragging images.  The message window can change color design. You can protect only specified pages and posts."
+msgstr "あなたの大切なテキストコンテンツをコピーから守ります。右クリック禁止、テキストの選択禁止します。特定のページを省くことが出来ます。そして画像のドラッグを禁止します。アラートウィンドウはデザインカラーを変更できます。指定したページと投稿のみを保護することもできます。"
+
+#. Plugin URI of the plugin
+msgid "https://global-s-h.com/wp_protect/en/"
+msgstr "https://global-s-h.com/wp_protect/en/"
+
+#. Plugin Name of the plugin
+msgid "WP Content Copy Protection with Color Design"
+msgstr "WP Content Copy Protection with Color Design"
+
+#: wp_copy_design.php:233
+msgid "WP Protect setting"
+msgstr "WP Protect設定"
+
+#: wp_copy_design.php:157
+msgid "Don`t copy text!"
+msgstr "テキストのコピーはできません。"
+
+#: manage/admin.php:288
+msgid "Donate"
+msgstr "寄付"
+
+#: manage/admin.php:288
+msgid "Help page for troubles"
+msgstr "トラブルヘルプページ"
+
+#: manage/admin.php:284
+msgid "Please see the explanation of this plugin from here!"
+msgstr "プラグインについての説明はこちらから！"
+
+#: manage/admin.php:235
+msgid "Save this setting"
+msgstr "設定を保存する"
+
+#: manage/admin.php:210 manage/admin.php:224
+msgid "Input page ID. ex: 1,2,3,4"
+msgstr "ページIDを記入 例: 1,2,3,4"
+
+#: manage/admin.php:207
+msgid "Exclude pages"
+msgstr "特定のページを省く"
+
+#: manage/admin.php:152 manage/admin.php:159 manage/admin.php:177
+#: manage/admin.php:189 manage/admin.php:196 manage/admin.php:203
+msgid "Yes"
+msgstr "はい"
+
+#: manage/admin.php:193
+msgid "Exclude login users"
+msgstr "ログインユーザーを除く"
+
+#: manage/admin.php:168
+msgid "Warning back color"
+msgstr "アラートの背景色"
+
+#: manage/admin.php:145
+msgid "Less than 159 letters"
+msgstr "80文字以下"
+
+#: manage/admin.php:143
+msgid "No right click + Message"
+msgstr "右クリックを無効 + メッセージあり"
+
+#: manage/admin.php:141
+msgid "No right click + No message"
+msgstr "右クリックを無効 + メッセージなし"
+
+#: manage/admin.php:138
+msgid "Disable right mouse click"
+msgstr "マウスの右クリックを無効 "
