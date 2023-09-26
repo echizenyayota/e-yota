@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.3.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-09-04 04:40:32+0000\n"
+"PO-Revision-Date: 2023-09-20 05:55:42+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"X-Generator: GlotPress/4.0.0-alpha.8\n"
 "Language: ja_JP\n"
 "Project-Id-Version: WordPress - 6.3.x - Development\n"
 
@@ -713,15 +713,15 @@ msgstr "任意のメディア添付のために存在する専用ページを閲
 
 #: wp-includes/block-template-utils.php:162
 msgid "Displays a post tag archive. This template will serve as a fallback when a more specific template (e.g. Tag: Pizza) cannot be found."
-msgstr "投稿タグのアーカイブを表示します。このテンプレートは、より特化したテンプレート（例：タグ: ピザ）が見つからない場合のフォールバックとして機能します。"
+msgstr "投稿タグのアーカイブを表示します。このテンプレートは、より特定したテンプレート (例: タグ = ピザ) が見つからない場合のフォールバックとして機能します。"
 
 #: wp-includes/block-template-utils.php:158
 msgid "Displays a post archive when a specific date is visited (e.g., example.com/2023/)."
-msgstr "特定の日付にアクセスしたときに、投稿アーカイブを表示します（例：example.com/2023/）。"
+msgstr "特定の日付にアクセスした際に、投稿アーカイブを表示します (例: example.com/2023/)。"
 
 #: wp-includes/block-template-utils.php:154
 msgid "Displays a custom taxonomy archive. Like categories and tags, taxonomies have terms which you use to classify things. For example: a taxonomy named \"Art\" can have multiple terms, such as \"Modern\" and \"18th Century.\" This template will serve as a fallback when a more specific template (e.g. Taxonomy: Art) cannot be found."
-msgstr "カスタムタクソノミーアーカイブを表示します。カテゴリーやタグと同様、タクソノミーには、ものを分類するために使用する用語があります。例えば、「アート」というタクソノミーには、「モダン」や「18世紀」などの用語が複数存在することがあります。より特化したテンプレート (例: タクソノミー: アート) が見つからない場合、このテンプレートがフォールバックとして機能します。"
+msgstr "カスタムタクソノミーアーカイブを表示します。カテゴリーやタグと同様、タクソノミーには、ものを分類するために使用する用語があります。例えば、「アート」というタクソノミーには、「モダン」や「18世紀」などの用語が複数存在することがあります。このテンプレートは、より特定したテンプレート (例: タクソノミー = アート) が見つからない場合のフォールバックとして機能します。"
 
 #: wp-includes/block-template-utils.php:150
 msgid "Displays a post category archive. This template will serve as a fallback when a more specific template (e.g. Category: Recipes) cannot be found."
@@ -729,7 +729,7 @@ msgstr "投稿カテゴリーアーカイブを表示します。より特化し
 
 #: wp-includes/block-template-utils.php:146
 msgid "Displays a single author's post archive. This template will serve as a fallback when a more specific template (e.g. Author: Admin) cannot be found."
-msgstr "1人の投稿者の投稿アーカイブを表示します。 このテンプレートは、より具体的なテンプレート (例：投稿者: 管理者) が見つからない場合のフォールバックとして機能します。"
+msgstr "個別投稿者の投稿アーカイブを表示します。このテンプレートは、より特定したテンプレート (例: 投稿者 = 管理者) が見つからない場合のフォールバックとして機能します。"
 
 #: wp-includes/block-template-utils.php:142
 msgid "Displays any archive, including posts by a single author, category, tag, taxonomy, custom post type, and date. This template will serve as a fallback when more specific templates (e.g. Category or Tag) cannot be found."
@@ -745,7 +745,7 @@ msgstr "その投稿にカスタムテンプレートが適用されていない
 
 #: wp-includes/block-template-utils.php:130
 msgid "Displays any single entry, such as a post or a page. This template will serve as a fallback when a more specific template (e.g. Single Post, Page, or Attachment) cannot be found."
-msgstr "投稿や固定ページなどの単一のエントリーを表示します。このテンプレートは、より特化したテンプレート（例: 個別投稿、固定ページ、添付）が見つからない場合のフォールバックとして機能します。"
+msgstr "投稿や固定ページなどの個別項目を表示します。このテンプレートは、より特化したテンプレート (例: 個別投稿、固定ページ、添付ファイル) が見つからない場合のフォールバックとして機能します。"
 
 #: wp-includes/block-template-utils.php:126
 msgid "Displays your site's homepage, whether it is set to display latest posts or a static page. The Front Page template takes precedence over all templates."
@@ -863,23 +863,23 @@ msgstr "%s PHP 拡張機能がインストールされ、有効になってい�
 msgid "When using the %1$s constant, make sure to set these globals to an array: %2$s."
 msgstr "%1$s 定数を使用する場合は、これらのグローバルを配列 %2$s に設定してください。"
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:2195
+#: wp-includes/html-api/class-wp-html-tag-processor.php:2241
 msgid "The query argument must be an array or a tag name."
 msgstr "クエリー引数は配列かタグ名である必要があります。"
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1891
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1937
 msgid "Invalid attribute name."
 msgstr "無効な属性名。"
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1544
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1590
 msgid "Too many calls to seek() - this can lead to performance issues."
 msgstr "seek() の呼び出しが多すぎます。パフォーマンスの問題につながります。"
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1535
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1581
 msgid "Unknown bookmark name."
 msgstr "不明なブックマーク名。"
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:679
+#: wp-includes/html-api/class-wp-html-tag-processor.php:707
 msgid "Too many bookmarks: cannot create any more."
 msgstr "ブックマークが多すぎます: これ以上作成できません。"
 
