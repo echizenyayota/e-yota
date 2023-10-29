@@ -107,6 +107,7 @@ class ezTOC_Post {
                 'divi-bodycommerce/divi-bodyshop-woocommerce.php',
                 'social-pug/index.php',
 				'fusion-builder/fusion-builder.php',
+				'modern-footnotes/modern-footnotes.php',
             )
         );
 
@@ -1132,7 +1133,7 @@ class ezTOC_Post {
 	 * @param string $prefix
 	 * @return void|mixed|string|null
 	 */
-	private function createTOCParent( $prefix = "ez-toc" )
+	private function createTOCParent( $prefix = "ez-toc",$toc_origin = '' )
 	{
 		$html = ''; 
 		$first_page = 1;
@@ -1144,7 +1145,7 @@ class ezTOC_Post {
 
 		if( !empty( $headings ) )
 		{
-			$html .= $this->createTOC( $first_page, $headings, $prefix );
+			$html .= $this->createTOC( $first_page, $headings, $prefix, $toc_origin );
 		}
 
 		return $html;
@@ -1158,13 +1159,13 @@ class ezTOC_Post {
 	 *
 	 * @return string
 	 */
-	public function getTOCList($prefix = "ez-toc", $options = []) {
+	public function getTOCList($prefix = "ez-toc", $options = [], $toc_origin = '') {
 
 		$html = '';
 
 		if ( $this->hasTOCItems ) {
 			
-			$html = $this->createTOCParent();
+			$html = $this->createTOCParent($prefix, $toc_origin);
 			$visiblityClass = '';
 			if( ezTOC_Option::get( 'visibility_hide_by_default' ) && 'js' == ezTOC_Option::get( 'toc_loading' ) &&  ezTOC_Option::get( 'visibility' ))
 			{
@@ -1253,7 +1254,7 @@ class ezTOC_Post {
 	 *
 	 * @return string
 	 */
-	public function getTOC($options = []) {
+	public function getTOC($options = [], $toc_origin = '') {
 
 		$class = array( 'ez-toc-v' . str_replace( '.', '_', ezTOC::VERSION ) );
 		$html  = '';
@@ -1355,7 +1356,7 @@ class ezTOC_Post {
 			do_action( 'ez_toc_before' );
 			$html .= ob_get_clean();
 
-			$html .= '<nav>' . $this->getTOCList('ez-toc', $options) . '</nav>';
+			$html .= '<nav>' . $this->getTOCList('ez-toc', $options, $toc_origin) . '</nav>';
 
 			ob_start();
 			do_action( 'ez_toc_after' );
@@ -1512,11 +1513,14 @@ class ezTOC_Post {
 	 *
 	 * @return string The HTML list of TOC items.
 	 */
-	private function createTOC( $page, $matches, $prefix = "ez-toc" ) {
+	private function createTOC( $page, $matches, $prefix = "ez-toc", $toc_origin = '' ) {
 
 		// Whether or not the TOC should be built flat or hierarchical.
 		$hierarchical = ezTOC_Option::get( 'show_hierarchy' );
+
 		$html         = '';
+
+		$count_matches = is_array($matches) ? count($matches) : '';
 
 		if ( $hierarchical ) {
 
@@ -1592,21 +1596,52 @@ class ezTOC_Post {
 			}
 
 		} else {
-
-			foreach ( $matches as $i => $match ) {
-
-				$count = $i + 1;
-
-				$title = isset( $matches[ $i ]['alternate'] ) ? $matches[ $i ]['alternate'] : $matches[ $i ][0];
-				$title = strip_tags( apply_filters( 'ez_toc_title', $title ), apply_filters( 'ez_toc_title_allowable_tags', '' ) );
-
-				$html .= "<li class='{$prefix}-page-" . $page . "'>";
-
-				$html .= $this->createTOCItemAnchor( $matches[ $i ]['page'], $matches[ $i ]['id'], $title, $count );
-
-				$html .= '</li>';
+			if($toc_origin == 'insert' && ezTOC_Option::get( 'ctrl_headings' ) == true){
+				//No. of Headings
+				$no_of_headings = ezTOC_Option::get( 'limit_headings_num' ) != '' ? ezTOC_Option::get( 'limit_headings_num' ) : count($matches);
+				if(is_array($matches)){
+					foreach ( $matches as $i => $match ) {
+						$count = $i + 1;
+						$title = isset( $matches[ $i ]['alternate'] ) ? $matches[ $i ]['alternate'] : $matches[ $i ][0];
+						$title = strip_tags( apply_filters( 'ez_toc_title', $title ), apply_filters( 'ez_toc_title_allowable_tags', '' ) );
+						if($count <= $no_of_headings){
+							$html .= "<li class='{$prefix}-page-" . $page . "'>";
+							$html .= $this->createTOCItemAnchor( $matches[ $i ]['page'], $matches[ $i ]['id'], $title, $count );
+							$html .= '</li>';
+						}else{
+							$detect = '';
+							$is_more_last = false;
+							if('css' == ezTOC_Option::get( 'toc_loading' ) && $i == $no_of_headings && function_exists('ez_toc_non_amp') && ez_toc_non_amp()){
+								$html .= '<input type="checkbox" id="ez-toc-more-toggle-css"/><span class="toc-more-wrp">';
+							}
+							if($i == count($matches)-1){
+								$detect = 'm-last';
+								$is_more_last = true;
+							}
+							$html .= "<li class='{$prefix}-page-" . $page . " toc-more-link " . $detect . "'>";
+							$html .= $this->createTOCItemAnchor( $matches[ $i ]['page'], $matches[ $i ]['id'], $title, $count );
+							$html .= '</li>';
+							if($is_more_last && 'css' == ezTOC_Option::get( 'toc_loading' ) && function_exists('ez_toc_non_amp') && ez_toc_non_amp()){
+								$html .= '</span>';
+							}
+						}
+					}
+				}
+			}else{
+				if(is_array($matches)){
+					foreach ( $matches as $i => $match ) {
+						$count = $i + 1;
+						$title = isset( $matches[ $i ]['alternate'] ) ? $matches[ $i ]['alternate'] : $matches[ $i ][0];
+						$title = strip_tags( apply_filters( 'ez_toc_title', $title ), apply_filters( 'ez_toc_title_allowable_tags', '' ) );
+						$html .= "<li class='{$prefix}-page-" . $page . "'>";
+						$html .= $this->createTOCItemAnchor( $matches[ $i ]['page'], $matches[ $i ]['id'], $title, $count );
+						$html .= '</li>';
+					}
+				}
 			}
 		}
+
+		$html = apply_filters('ez_toc_pro_html_modifier', $html, $toc_origin, $count_matches);
 
 		return do_shortcode($html);
 	}
