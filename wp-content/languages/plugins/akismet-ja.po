@@ -7,7 +7,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/4.0.0-alpha.9\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
 "Language: ja_JP\n"
 "Project-Id-Version: Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release)\n"
 
@@ -211,7 +211,7 @@ msgstr "このページで、Akismet の設定を更新し、スパム統計情�
 
 #: class.akismet-admin.php:114 class.akismet-admin.php:117
 msgid "Akismet Anti-spam"
-msgstr "Akismet アンチスパム"
+msgstr "Akismet Anti-Spam (アンチスパム)"
 
 #: views/enter.php:10
 msgid "Connect with API key"
