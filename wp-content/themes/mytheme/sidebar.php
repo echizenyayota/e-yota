@@ -7,7 +7,7 @@
   if ($myposts) : ?>
 
 <aside class="mymenu mymenu-large">
-  <h2>お登勢 NHK特選時代劇</h2>
+  <h2>あきない世傳(せいでん) 金と銀</h2>
   <ul>
     <?php foreach($myposts as $post):
        if ($post->object == 'post'):
