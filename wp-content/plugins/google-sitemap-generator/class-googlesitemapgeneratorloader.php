@@ -214,6 +214,8 @@ class GoogleSitemapGeneratorLoader {
 		self::setup_rewrite_hooks();
 		self::activate_rewrite();
 
+		self::activation_indexnow_setup(); //activtion indexNow
+
 		if ( self::load_plugin() ) {
 			$gsg = GoogleSitemapGenerator::get_instance();
 			if ( $gsg->old_file_exists() ) {
@@ -235,6 +237,7 @@ class GoogleSitemapGeneratorLoader {
 		wp_clear_scheduled_hook( 'sm_ping_daily' );
 		self::remove_rewrite_hooks();
 		$wp_rewrite->flush_rules( false );
+		self::deactivation_indexnow(); // deactivation indexNow plugin
 	}
 
 
@@ -530,9 +533,7 @@ class GoogleSitemapGeneratorLoader {
 				$qs = 'settings_page_google-sitemap-generator/sitemap' === $current_screen ? '&action=no' : '?action=no';
 				/* translators: %s: search term */
 				echo wp_kses(
-					__(
-						'
-						<h4>Do you want the best SEO indexation technology for your website? Join the Google XML Sitemaps Beta Program now!</h4>
+					__('<h4>Do you want the best SEO indexation technology for your website? Join the Google XML Sitemaps Beta Program now!</h4>
 						<input type="hidden" id="action" name="action" value="my_action" >
 						<div class="justify-content">
 						<a href="' . $consent_url . '?action=yes" id="user_consent" class="allow_beta_consent" target="blank" name="user_consent" >Yes, I am in</a>
@@ -554,27 +555,20 @@ class GoogleSitemapGeneratorLoader {
 		if ( $default_value === $consent_value && 'google-sitemap-generator/sitemap.php' === $current_page ) {
 			/* translators: %s: search term */
 			echo wp_kses(
-				sprintf(
-					__(
-						'
-						<div class="modal-wrapper" id="modal-wrapper">
-							<div class="modal-container">
-							<h3>Help Us Improve!</h3>
-							<p>Would you help us improve Google XML Sitemaps by sharing anonymous usage data?</p>
-							<p>Understanding feature usage and use cases better means we can provide you with the best indexation and indexing performance.</p>
-							<p><a href="https://auctollo.com/policies/privacy/" target="_blank">We respect your privacy!</a></p>
-							<p>&nbsp;</p>
-							<form method="POST">
-								<input type="submit" name="user_consent_yes" class="allow_consent" value="I want the best!" />
-								<input type="submit" name="user_consent_no" class "decline_consent" value="I don\'t know what I want" />' . wp_nonce_field("user_consent_yesno_nonce", "user_consent_yesno_nonce_token") . 
-							'</form>
-							</div>
-						</div>',
-					'google-sitemap-generator'
-					),
-					function() {
-					}
-				),
+				__('<div class="modal-wrapper" id="modal-wrapper">
+						<div class="modal-container">
+						<h3>Help Us Improve!</h3>
+						<p>Would you help us improve Google XML Sitemaps by sharing anonymous usage data?</p>
+						<p>Understanding feature usage and use cases better means we can provide you with the best indexation and indexing performance.</p>
+						<p><a href="https://auctollo.com/policies/privacy/" target="_blank">We respect your privacy!</a></p>
+						<p>&nbsp;</p>
+						<form method="POST">
+							<input type="submit" name="user_consent_yes" class="allow_consent" value="I want the best!" />
+							<input type="submit" name="user_consent_no" class "decline_consent" value="I don\'t know what I want" />' . wp_nonce_field("user_consent_yesno_nonce", "user_consent_yesno_nonce_token") . 
+						'</form>
+						</div>
+					</div>',
+					'google-sitemap-generator'),
 				$arr
 			);
 		}
@@ -584,23 +578,16 @@ class GoogleSitemapGeneratorLoader {
 		if ( 'google-sitemap-generator/sitemap.php' === $current_page ) {
 			/* translators: %s: search term */
 			echo wp_kses(
-				sprintf(
-					__(
-						'
-						<div class="cookie-info-banner-wrapper" id="cookie-info-banner-wrapper">
-							<div class="modal-container">
-							<h3>Help Us Improve!</h3>
-								<button class="close_popup" id="close_popup">
-								<img height="25" width="20" class="close_cookie_information" src="' . $image_url . '" />
-								</button>
-								<p>Would you help us improve our indexation technology by sharing usage data anonymously?</p>
-							</div>
+				__('<div class="cookie-info-banner-wrapper" id="cookie-info-banner-wrapper">
+						<div class="modal-container">
+						<h3>Help Us Improve!</h3>
+							<button class="close_popup" id="close_popup">
+							<img height="25" width="20" class="close_cookie_information" src="' . $image_url . '" />
+							</button>
+							<p>Would you help us improve our indexation technology by sharing usage data anonymously?</p>
 						</div>
-						',
-						'google-sitemap-generator'
-					),
-					function() {
-					}
+					</div>',
+					'google-sitemap-generator'
 				),
 				$arr
 			);
@@ -655,21 +642,16 @@ class GoogleSitemapGeneratorLoader {
 			<?php
 			/* translators: %s: search term */
 			echo wp_kses(
-				sprintf(
-					__(
-						'
-						<h4>Auto-updates aren not enabled for Sitemap Generator. Would you like to enable auto-updates to always have the best indexation features?
-						</h4>
-						<form method="post" id="enable-updates-form">
-						<input type="hidden" id="enable_updates" name="enable_updates" value="false" />' . wp_nonce_field("enable_updates_nonce", "enable_updates_nonce_token") .
-						'</form>
-						<div class="justify-content">
-						<a id="enable_auto_update" class="enable_auto_update" name="enable_auto_update">Enable Auto-Updates!</a>
-						<a id="do_not_enable_auto_update" class="do_not_enable_auto_update" name="do_not_enable_auto_update">X</a>
-						</div>',
-						'google-sitemap-generator',
-					),
-					''
+				__('<h4>Auto-updates aren not enabled for Sitemap Generator. Would you like to enable auto-updates to always have the best indexation features?
+					</h4>
+					<form method="post" id="enable-updates-form">
+					<input type="hidden" id="enable_updates" name="enable_updates" value="false" />' . wp_nonce_field("enable_updates_nonce", "enable_updates_nonce_token") .
+					'</form>
+					<div class="justify-content">
+					<a id="enable_auto_update" class="enable_auto_update" name="enable_auto_update">Enable Auto-Updates!</a>
+					<a id="do_not_enable_auto_update" class="do_not_enable_auto_update" name="do_not_enable_auto_update">X</a>
+					</div>',
+					'google-sitemap-generator'
 				),
 				$arr
 			);
@@ -797,14 +779,18 @@ class GoogleSitemapGeneratorLoader {
 		if(strlen($current_url['path']) > 1){
 			$currentUrl = substr($current_url['path'], 1);
 			$arrayType = explode('.', $currentUrl);
-			if($arrayType[1] === 'xml'){
-				$postType = explode('-', $currentUrl);
+			if (in_array($arrayType[1], array('xml', 'html'))){
+				if( strpos($arrayType[0], 'sitemap-misc') !== false ) {
+					$postType[0] = 'sitemap';
+					$postType[1] = $arrayType[1];
+				}
+				else $postType = explode('-sitemap', $currentUrl);
 				if(count($postType) > 1 ){
 					preg_match('/\d+/', $postType[1], $matches);
 					if(empty($matches)) $matches[0] = 1;
 
 					if($postType[0] === 'sitemap') return 'params=misc';
-					else if($postType[0] === 'post_tag' || $postType[0] === 'category' ) return 'params=tax-' . $postType[0] . '-' . $matches[0];
+					else if($postType[0] === 'post_tag' || $postType[0] === 'category' || taxonomy_exists($postType[0])) return 'params=tax-' . $postType[0] . '-' . $matches[0];
 					else if($postType[0] === 'productcat') return 'params=productcat-' . $matches[0];
 					else if($postType[0] === 'authors' || $postType[0] === 'archives') return 'params=' . $postType[0];
 					else if($postType[0] === 'productcat') return 'params=productcat-' . $matches[0];					
@@ -1042,6 +1028,15 @@ class GoogleSitemapGeneratorLoader {
 			$aio_seo_options    = json_decode( $aio_seo_options );
 			$aio_seo_sm_enabled = $aio_seo_options->sitemap->general->enable;
 		}
+
+		$jetpack_options    = get_option( 'jetpack_active_modules', $default_value );
+		$jetpack_sm_enabled = 0;
+		if(is_array($jetpack_options)) {
+            if (in_array('sitemaps', $jetpack_options)) {
+                $jetpack_sm_enabled = 1;
+            }
+        }
+
 		$sitemap_plugins  = array();
 		$plugins          = get_plugins();
 		foreach ( $plugins as $key => $value ) {
@@ -1059,6 +1054,7 @@ class GoogleSitemapGeneratorLoader {
 				array_push( $sitemap_plugins, $plug );
 			}
 		}
+
 		$conflict_plugins = explode( ',', SM_CONFLICT_PLUGIN_LIST );
 
 		$plugin_title = array();
@@ -1071,7 +1067,7 @@ class GoogleSitemapGeneratorLoader {
 			}
 		}
 
-		if(('google-sitemap-generator/sitemap.php' === $current_page || $_SERVER['REQUEST_URI'] === '/wp-admin/index.php' || $_SERVER['REQUEST_URI'] === '/wp-admin/' ) && count( $sitemap_plugins ) > 0 && ( 0 !== $yoast_sm_enabled || 0 !== $aio_seo_sm_enabled ) && count($plugin_name) > 0){
+		if(('google-sitemap-generator/sitemap.php' === $current_page || $_SERVER['REQUEST_URI'] === '/wp-admin/index.php' || $_SERVER['REQUEST_URI'] === '/wp-admin/' ) && count( $sitemap_plugins ) > 0 && ( 0 !== $yoast_sm_enabled || 0 !== $aio_seo_sm_enabled || 0 !== $jetpack_sm_enabled ) && count($plugin_name) > 0){
 			$plug_name = [];
 			$plug_title = [];
 			if($yoast_options = get_option('wpseo')){
@@ -1093,6 +1089,12 @@ class GoogleSitemapGeneratorLoader {
 					$plug_title[] = 'all-in-one-seo-pack/all_in_one_seo_pack.php';
 				}
 			}
+
+			if($jetpack_sm_enabled){
+				$plug_name[] = 'Jetpack Sitemap';
+				$plug_title[] = 'jetpack/jetpack.php';
+			}
+
 			if(count($plug_name) > 0){
 				?>
 				<style>
@@ -1201,6 +1203,21 @@ class GoogleSitemapGeneratorLoader {
 			}
 		}
 	}
+
+	/*
+	* activation indexNow and adding tables for indexation plugin
+	*/
+	public static function activation_indexnow_setup(){
+		$api_key = wp_generate_uuid4();
+		update_option( 'gsg_indexnow-is_valid_api_key', '2' );
+		update_option( 'gsg_indexnow-admin_api_key', base64_encode( $api_key ) );
+	}
+
+	public static function deactivation_indexnow() {
+		delete_option( 'gsg_indexnow-is_valid_api_key' );
+		delete_option( 'gsg_indexnow-admin_api_key' );
+	}
+
 }
 
 // Enable the plugin for the init hook, but only if WP is loaded. Calling this php file directly will do nothing.
